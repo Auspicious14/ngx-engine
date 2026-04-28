@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# --- DATABASE CONFIGURATION (SQLAlchemy 2.0 Style) ---
+# --- DATABASE CONFIGURATION ---
 class Base(DeclarativeBase):
     pass
 
@@ -34,7 +34,7 @@ class StockPriceDB(Base):
     volume = Column(BigInteger)
     trade_date = Column(Date, default=datetime.now().date())
 
-# --- DATA VALIDATION (Pydantic 2.0 Style) ---
+# --- DATA VALIDATION ---
 class StockSchema(BaseModel):
     symbol: str
     company_name: str
@@ -71,11 +71,7 @@ class TelegramNotifier:
             return
         
         url = f"https://api.telegram.org/bot{self.token}/sendMessage"
-        payload = {
-            "chat_id": self.chat_id, 
-            "text": message, 
-            "parse_mode": "Markdown"
-        }
+        payload = {"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"}
         
         async with httpx.AsyncClient() as client:
             try:
@@ -87,55 +83,48 @@ class TelegramNotifier:
 
 # --- NGX INGESTION ENGINE ---
 class NGXEngine:
-   def __init__(self):
+    def __init__(self):
         raw_url = os.getenv("DATABASE_URL")
         if not raw_url:
             raise ValueError("DATABASE_URL not found.")
 
         try:
-            # Split the protocol (postgresql://) from the rest
+            # Robust split to handle passwords with symbols and connection poolers
             prefix, rest = raw_url.split("://")
-            
-            # Split the credentials from the host/db
-            # This handles the '@' in the hostname correctly
             user_pass, host_port_db = rest.rsplit("@", 1)
             
             if ":" in user_pass:
                 user, password = user_pass.split(":", 1)
-                # URL-encode the password to handle any special characters
                 password = urllib.parse.quote_plus(password)
                 auth_part = f"{user}:{password}"
             else:
                 auth_part = user_pass
 
-            # Reconstruct the URL
             final_url = f"{prefix}://{auth_part}@{host_port_db}"
             
-            # Supabase Pooler usually requires SSL
+            # Essential for Supabase: SSL and a timeout for unreliable network routes
             if "sslmode" not in final_url:
                 separator = "&" if "?" in final_url else "?"
-                final_url += f"{separator}sslmode=require"
+                final_url += f"{separator}sslmode=require&connect_timeout=10"
             
             self.db_url = final_url
-        except Exception as e:
-            print(f"URL parsing note: {e}")
+        except Exception:
             self.db_url = raw_url
 
-        # pool_pre_ping=True is vital for poolers to check if a connection is still alive
+        # pool_pre_ping checks for stale connections, common with cloud poolers
         self.engine = create_engine(self.db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
         
-        # This will now connect to the pooler and verify the table exists
+        # Ensure table exists
         Base.metadata.create_all(self.engine)
 
-    
     async def download_report(self):
         date_str = datetime.now().strftime("%d%m%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
         
-        print(f"Attempting download: {url}")
-        async with httpx.AsyncClient(timeout=60.0, follow_redirects=True) as client:
+        print(f"Checking for report: {url}")
+        async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
             try:
                 response = await client.get(url)
                 if response.status_code == 200:
@@ -198,16 +187,16 @@ class NGXEngine:
             session.close()
 
     async def execute(self):
-        print(f"[{datetime.now()}] Ingestion started.")
+        print(f"[{datetime.now()}] Engine Active.")
         pdf_path = await self.download_report()
         
         if not pdf_path:
-            await self.notifier.send("⚠️ *NGX Report Missing*\nNot available yet. Market usually uploads after 4:30 PM WAT.")
+            await self.notifier.send("⚠️ *NGX Report Missing*\nNot published yet. Will retry on next scheduled run.")
             return
 
         stocks = self.parse_pdf(pdf_path)
         if not stocks:
-            await self.notifier.send("❌ *Parsing Failed*\nTable not found in PDF.")
+            await self.notifier.send("❌ *Parsing Failed*\nCould not extract data from the PDF.")
             return
 
         saved_count = self.save_to_supabase(stocks)
@@ -215,15 +204,12 @@ class NGXEngine:
             top_mover = max(stocks, key=lambda x: x.volume)
             summary = (
                 f"✅ *NGX Data Sync Success*\n"
-                f"📅 Date: {datetime.now().strftime('%Y-%m-%d')}\n"
-                f"📈 Stocks Tracked: {saved_count}\n\n"
-                f"🔥 *Top Volume:* {top_mover.symbol}\n"
-                f"📦 Volume: {top_mover.volume:,}\n"
-                f"💰 Close: ₦{top_mover.close_price:.2f}"
+                f"📈 Stocks Updated: {saved_count}\n"
+                f"🔥 *High Volume:* {top_mover.symbol} ({top_mover.volume:,})"
             )
             await self.notifier.send(summary)
         else:
-            print("No new records saved.")
+            print("No new data to save.")
 
 if __name__ == "__main__":
     engine = NGXEngine()
