@@ -49,7 +49,6 @@ class StockSchema(BaseModel):
     @classmethod
     def clean_currency(cls, v):
         if isinstance(v, str):
-            # Removes ₦, commas, and whitespace
             return float(v.replace('₦', '').replace(',', '').replace(' ', ''))
         return float(v or 0)
 
@@ -68,7 +67,7 @@ class TelegramNotifier:
 
     async def send(self, message: str):
         if not self.token or not self.chat_id:
-            print("Telegram credentials missing. Check your .env or GitHub Secrets.")
+            print("Telegram credentials missing.")
             return
         
         url = f"https://api.telegram.org/bot{self.token}/sendMessage"
@@ -87,53 +86,43 @@ class TelegramNotifier:
                 print(f"Failed to send Telegram message: {e}")
 
 # --- NGX INGESTION ENGINE ---
-def __init__(self):
-        # 1. Get the raw URL
+class NGXEngine:
+    def __init__(self):
         raw_url = os.getenv("DATABASE_URL")
         if not raw_url:
-            raise ValueError("DATABASE_URL not found in environment variables.")
+            raise ValueError("DATABASE_URL not found.")
 
         try:
-            # 2. Manually split to avoid the 'Port' ValueError
-            # Format expected: postgresql://user:password@host:port/dbname
+            # Manual URL split to handle passwords with symbols like '&' or '@'
             prefix, rest = raw_url.split("://")
             user_pass, host_port_db = rest.rsplit("@", 1)
             
             if ":" in user_pass:
                 user, password = user_pass.split(":", 1)
-                # Encode the password to handle special characters (@, #, &, etc.)
                 password = urllib.parse.quote_plus(password)
-                
-                # Reconstruct the authenticated part
                 auth_part = f"{user}:{password}"
             else:
                 auth_part = user_pass
 
-            # 3. Handle the host/db part and force SSL
             final_url = f"{prefix}://{auth_part}@{host_port_db}"
             if "sslmode" not in final_url:
                 separator = "&" if "?" in final_url else "?"
                 final_url += f"{separator}sslmode=require"
             
             self.db_url = final_url
-            
-        except Exception as e:
-            # Fallback to the raw URL if manual parsing fails
-            print(f"Manual parse failed, using raw: {e}")
+        except Exception:
             self.db_url = raw_url
 
         self.engine = create_engine(self.db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
-        
-        # Initialize tables
         Base.metadata.create_all(self.engine)
+
     async def download_report(self):
-        """Fetches the Daily Official List PDF from NGX DocLib"""
         date_str = datetime.now().strftime("%d%m%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
         
-        print(f"Attempting to download: {url}")
+        print(f"Attempting download: {url}")
         async with httpx.AsyncClient(timeout=60.0, follow_redirects=True) as client:
             try:
                 response = await client.get(url)
@@ -148,20 +137,16 @@ def __init__(self):
                 return None
 
     def parse_pdf(self, path: str) -> List[StockSchema]:
-        """Parses the NGX PDF to extract equity data"""
         extracted = []
         try:
             with pdfplumber.open(path) as pdf:
-                # Scan the first 5 pages for the 'Equities' price list
                 for page in pdf.pages[:5]:
                     tables = page.extract_tables()
                     for table in tables:
-                        # Identify the table by checking for 'Symbol' in the header
                         if table and any("Symbol" in str(cell) for cell in table[0]):
                             for row in table[1:]:
                                 try:
                                     if not row[0] or len(row) < 7: continue
-                                    
                                     stock = StockSchema(
                                         symbol=row[0],
                                         company_name=row[1],
@@ -180,11 +165,9 @@ def __init__(self):
         return extracted
 
     def save_to_supabase(self, stocks: List[StockSchema]):
-        """Upserts data into Supabase (Postgres)"""
         session = self.Session()
         try:
             for stock in stocks:
-                # Using PostgreSQL ON CONFLICT for upsert logic
                 stmt = text("""
                     INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, volume, trade_date)
                     VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :volume, :trade_date)
@@ -203,23 +186,19 @@ def __init__(self):
             session.close()
 
     async def execute(self):
-        """The main workflow execution"""
         print(f"[{datetime.now()}] Ingestion started.")
-        
         pdf_path = await self.download_report()
         
         if not pdf_path:
-            await self.notifier.send("⚠️ *NGX Report Missing*\nThe Daily Official List PDF is not yet available. This is normal if the market just closed.")
+            await self.notifier.send("⚠️ *NGX Report Missing*\nNot available yet. Market usually uploads after 4:30 PM WAT.")
             return
 
         stocks = self.parse_pdf(pdf_path)
-        
         if not stocks:
-            await self.notifier.send("❌ *Parsing Failed*\nFound the PDF, but couldn't find the Equities table. The format may have changed.")
+            await self.notifier.send("❌ *Parsing Failed*\nTable not found in PDF.")
             return
 
         saved_count = self.save_to_supabase(stocks)
-        
         if saved_count > 0:
             top_mover = max(stocks, key=lambda x: x.volume)
             summary = (
@@ -231,9 +210,8 @@ def __init__(self):
                 f"💰 Close: ₦{top_mover.close_price:.2f}"
             )
             await self.notifier.send(summary)
-            print(f"Processed {saved_count} stocks.")
         else:
-            print("Process complete, but no new records were saved.")
+            print("No new records saved.")
 
 if __name__ == "__main__":
     engine = NGXEngine()
