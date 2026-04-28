@@ -87,30 +87,47 @@ class TelegramNotifier:
                 print(f"Failed to send Telegram message: {e}")
 
 # --- NGX INGESTION ENGINE ---
-class NGXEngine:
-    def __init__(self):
-        # 1. Parse and Encode the Database URL to handle special characters in passwords
+def __init__(self):
+        # 1. Get the raw URL
         raw_url = os.getenv("DATABASE_URL")
         if not raw_url:
             raise ValueError("DATABASE_URL not found in environment variables.")
 
-        parsed = urllib.parse.urlparse(raw_url)
-        username = parsed.username
-        password = urllib.parse.quote_plus(parsed.password) if parsed.password else ""
-        host = parsed.hostname
-        port = parsed.port or 5432
-        database = parsed.path.lstrip('/')
-        
-        # 2. Reconstruct with encoded password and forced SSL for Supabase
-        self.db_url = f"postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=require"
+        try:
+            # 2. Manually split to avoid the 'Port' ValueError
+            # Format expected: postgresql://user:password@host:port/dbname
+            prefix, rest = raw_url.split("://")
+            user_pass, host_port_db = rest.rsplit("@", 1)
             
+            if ":" in user_pass:
+                user, password = user_pass.split(":", 1)
+                # Encode the password to handle special characters (@, #, &, etc.)
+                password = urllib.parse.quote_plus(password)
+                
+                # Reconstruct the authenticated part
+                auth_part = f"{user}:{password}"
+            else:
+                auth_part = user_pass
+
+            # 3. Handle the host/db part and force SSL
+            final_url = f"{prefix}://{auth_part}@{host_port_db}"
+            if "sslmode" not in final_url:
+                separator = "&" if "?" in final_url else "?"
+                final_url += f"{separator}sslmode=require"
+            
+            self.db_url = final_url
+            
+        except Exception as e:
+            # Fallback to the raw URL if manual parsing fails
+            print(f"Manual parse failed, using raw: {e}")
+            self.db_url = raw_url
+
         self.engine = create_engine(self.db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
         
         # Initialize tables
         Base.metadata.create_all(self.engine)
-
     async def download_report(self):
         """Fetches the Daily Official List PDF from NGX DocLib"""
         date_str = datetime.now().strftime("%d%m%Y")
