@@ -93,7 +93,6 @@ class NGXEngine:
             raise ValueError("DATABASE_URL not found.")
 
         try:
-            # Manual URL split to handle passwords with symbols like '&' or '@'
             prefix, rest = raw_url.split("://")
             user_pass, host_port_db = rest.rsplit("@", 1)
             
@@ -104,20 +103,23 @@ class NGXEngine:
             else:
                 auth_part = user_pass
 
+            # Force IPv4 by using the pooler address if you have it
             final_url = f"{prefix}://{auth_part}@{host_port_db}"
+            
+            # Ensure SSL and add a connection timeout
             if "sslmode" not in final_url:
                 separator = "&" if "?" in final_url else "?"
-                final_url += f"{separator}sslmode=require"
+                final_url += f"{separator}sslmode=require&connect_timeout=10"
             
             self.db_url = final_url
         except Exception:
             self.db_url = raw_url
 
-        self.engine = create_engine(self.db_url)
+        # Use 'pool_pre_ping' to handle dropped connections
+        self.engine = create_engine(self.db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
         Base.metadata.create_all(self.engine)
-
     async def download_report(self):
         date_str = datetime.now().strftime("%d%m%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
