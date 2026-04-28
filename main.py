@@ -87,39 +87,49 @@ class TelegramNotifier:
 
 # --- NGX INGESTION ENGINE ---
 class NGXEngine:
-    def __init__(self):
+   def __init__(self):
         raw_url = os.getenv("DATABASE_URL")
         if not raw_url:
             raise ValueError("DATABASE_URL not found.")
 
         try:
+            # Split the protocol (postgresql://) from the rest
             prefix, rest = raw_url.split("://")
+            
+            # Split the credentials from the host/db
+            # This handles the '@' in the hostname correctly
             user_pass, host_port_db = rest.rsplit("@", 1)
             
             if ":" in user_pass:
                 user, password = user_pass.split(":", 1)
+                # URL-encode the password to handle any special characters
                 password = urllib.parse.quote_plus(password)
                 auth_part = f"{user}:{password}"
             else:
                 auth_part = user_pass
 
-            # Force IPv4 by using the pooler address if you have it
+            # Reconstruct the URL
             final_url = f"{prefix}://{auth_part}@{host_port_db}"
             
-            # Ensure SSL and add a connection timeout
+            # Supabase Pooler usually requires SSL
             if "sslmode" not in final_url:
                 separator = "&" if "?" in final_url else "?"
-                final_url += f"{separator}sslmode=require&connect_timeout=10"
+                final_url += f"{separator}sslmode=require"
             
             self.db_url = final_url
-        except Exception:
+        except Exception as e:
+            print(f"URL parsing note: {e}")
             self.db_url = raw_url
 
-        # Use 'pool_pre_ping' to handle dropped connections
+        # pool_pre_ping=True is vital for poolers to check if a connection is still alive
         self.engine = create_engine(self.db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
+        
+        # This will now connect to the pooler and verify the table exists
         Base.metadata.create_all(self.engine)
+
+    
     async def download_report(self):
         date_str = datetime.now().strftime("%d%m%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
