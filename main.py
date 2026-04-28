@@ -3,19 +3,24 @@ import asyncio
 import httpx
 import pdfplumber
 import pandas as pd
+import urllib.parse
 from datetime import datetime
 from typing import List, Optional
+
+# SQLAlchemy 2.0 Imports
 from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, text
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
+
+# Pydantic 2.0 Imports
 from pydantic import BaseModel, field_validator
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
 
-# --- DATABASE CONFIGURATION ---
-Base = declarative_base()
+# --- DATABASE CONFIGURATION (SQLAlchemy 2.0 Style) ---
+class Base(DeclarativeBase):
+    pass
 
 class StockPriceDB(Base):
     __tablename__ = 'stock_prices'
@@ -29,7 +34,7 @@ class StockPriceDB(Base):
     volume = Column(BigInteger)
     trade_date = Column(Date, default=datetime.now().date())
 
-# --- DATA VALIDATION (PYDANTIC) ---
+# --- DATA VALIDATION (Pydantic 2.0 Style) ---
 class StockSchema(BaseModel):
     symbol: str
     company_name: str
@@ -44,8 +49,8 @@ class StockSchema(BaseModel):
     @classmethod
     def clean_currency(cls, v):
         if isinstance(v, str):
-            # Removes currency symbols, commas, and whitespace
-            return float(v.replace(',', '').replace(' ', '').replace('₦', ''))
+            # Removes ₦, commas, and whitespace
+            return float(v.replace('₦', '').replace(',', '').replace(' ', ''))
         return float(v or 0)
 
     @field_validator('volume', mode='before')
@@ -63,34 +68,55 @@ class TelegramNotifier:
 
     async def send(self, message: str):
         if not self.token or not self.chat_id:
-            print("Telegram credentials missing.")
+            print("Telegram credentials missing. Check your .env or GitHub Secrets.")
             return
+        
         url = f"https://api.telegram.org/bot{self.token}/sendMessage"
-        payload = {"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"}
+        payload = {
+            "chat_id": self.chat_id, 
+            "text": message, 
+            "parse_mode": "Markdown"
+        }
+        
         async with httpx.AsyncClient() as client:
             try:
-                await client.post(url, json=payload)
+                response = await client.post(url, json=payload)
+                if response.status_code != 200:
+                    print(f"Telegram Error: {response.text}")
             except Exception as e:
-                print(f"Telegram Notification Failed: {e}")
+                print(f"Failed to send Telegram message: {e}")
 
 # --- NGX INGESTION ENGINE ---
 class NGXEngine:
     def __init__(self):
-        # Supabase usually requires sslmode=require
-        db_url = os.getenv("DATABASE_URL")
-        if "sslmode" not in db_url:
-            db_url += "?sslmode=require"
+        # 1. Parse and Encode the Database URL to handle special characters in passwords
+        raw_url = os.getenv("DATABASE_URL")
+        if not raw_url:
+            raise ValueError("DATABASE_URL not found in environment variables.")
+
+        parsed = urllib.parse.urlparse(raw_url)
+        username = parsed.username
+        password = urllib.parse.quote_plus(parsed.password) if parsed.password else ""
+        host = parsed.hostname
+        port = parsed.port or 5432
+        database = parsed.path.lstrip('/')
+        
+        # 2. Reconstruct with encoded password and forced SSL for Supabase
+        self.db_url = f"postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=require"
             
-        self.engine = create_engine(db_url)
+        self.engine = create_engine(self.db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.notifier = TelegramNotifier()
+        
+        # Initialize tables
         Base.metadata.create_all(self.engine)
 
     async def download_report(self):
-        """Fetches the Daily Official List PDF from NGX"""
+        """Fetches the Daily Official List PDF from NGX DocLib"""
         date_str = datetime.now().strftime("%d%m%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
         
+        print(f"Attempting to download: {url}")
         async with httpx.AsyncClient(timeout=60.0, follow_redirects=True) as client:
             try:
                 response = await client.get(url)
@@ -105,37 +131,43 @@ class NGXEngine:
                 return None
 
     def parse_pdf(self, path: str) -> List[StockSchema]:
+        """Parses the NGX PDF to extract equity data"""
         extracted = []
-        with pdfplumber.open(path) as pdf:
-            # We check the first 5 pages for the 'Equities' price list table
-            for page in pdf.pages[:5]:
-                tables = page.extract_tables()
-                for table in tables:
-                    # Logic: Look for the table that has 'Symbol' in the first row
-                    if table and any("Symbol" in str(cell) for cell in table[0]):
-                        for row in table[1:]:
-                            try:
-                                if not row[0] or len(row) < 7: continue
-                                stock = StockSchema(
-                                    symbol=row[0],
-                                    company_name=row[1],
-                                    open_price=row[2],
-                                    high_price=row[3],
-                                    low_price=row[4],
-                                    close_price=row[5],
-                                    volume=row[6]
-                                )
-                                extracted.append(stock)
-                            except Exception:
-                                continue
-                        return extracted
+        try:
+            with pdfplumber.open(path) as pdf:
+                # Scan the first 5 pages for the 'Equities' price list
+                for page in pdf.pages[:5]:
+                    tables = page.extract_tables()
+                    for table in tables:
+                        # Identify the table by checking for 'Symbol' in the header
+                        if table and any("Symbol" in str(cell) for cell in table[0]):
+                            for row in table[1:]:
+                                try:
+                                    if not row[0] or len(row) < 7: continue
+                                    
+                                    stock = StockSchema(
+                                        symbol=row[0],
+                                        company_name=row[1],
+                                        open_price=row[2],
+                                        high_price=row[3],
+                                        low_price=row[4],
+                                        close_price=row[5],
+                                        volume=row[6]
+                                    )
+                                    extracted.append(stock)
+                                except Exception:
+                                    continue
+                            return extracted
+        except Exception as e:
+            print(f"Parsing error: {e}")
         return extracted
 
     def save_to_supabase(self, stocks: List[StockSchema]):
+        """Upserts data into Supabase (Postgres)"""
         session = self.Session()
         try:
             for stock in stocks:
-                # PostgreSQL Upsert (ON CONFLICT)
+                # Using PostgreSQL ON CONFLICT for upsert logic
                 stmt = text("""
                     INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, volume, trade_date)
                     VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :volume, :trade_date)
@@ -154,16 +186,19 @@ class NGXEngine:
             session.close()
 
     async def execute(self):
-        print(f"🚀 Execution started at {datetime.now()}")
-        path = await self.download_report()
+        """The main workflow execution"""
+        print(f"[{datetime.now()}] Ingestion started.")
         
-        if not path:
-            await self.notifier.send("⚠️ *NGX Report Missing*\nThe Daily Official List PDF is not yet available on the NGX server.")
+        pdf_path = await self.download_report()
+        
+        if not pdf_path:
+            await self.notifier.send("⚠️ *NGX Report Missing*\nThe Daily Official List PDF is not yet available. This is normal if the market just closed.")
             return
 
-        stocks = self.parse_pdf(path)
+        stocks = self.parse_pdf(pdf_path)
+        
         if not stocks:
-            await self.notifier.send("❌ *Parsing Error*\nFound the PDF but could not extract the Equities table.")
+            await self.notifier.send("❌ *Parsing Failed*\nFound the PDF, but couldn't find the Equities table. The format may have changed.")
             return
 
         saved_count = self.save_to_supabase(stocks)
@@ -171,7 +206,7 @@ class NGXEngine:
         if saved_count > 0:
             top_mover = max(stocks, key=lambda x: x.volume)
             summary = (
-                f"✅ *NGX Ingestion Successful*\n"
+                f"✅ *NGX Data Sync Success*\n"
                 f"📅 Date: {datetime.now().strftime('%Y-%m-%d')}\n"
                 f"📈 Stocks Tracked: {saved_count}\n\n"
                 f"🔥 *Top Volume:* {top_mover.symbol}\n"
@@ -179,7 +214,9 @@ class NGXEngine:
                 f"💰 Close: ₦{top_mover.close_price:.2f}"
             )
             await self.notifier.send(summary)
-            print(f"Ingested {saved_count} stocks successfully.")
+            print(f"Processed {saved_count} stocks.")
+        else:
+            print("Process complete, but no new records were saved.")
 
 if __name__ == "__main__":
     engine = NGXEngine()
