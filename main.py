@@ -42,15 +42,30 @@ class StockSchema(BaseModel):
     trade_date: datetime = datetime.now().date()
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
+    @classmethod
     def clean_currency(cls, v):
+        if not v or str(v).strip() in ["-", ""]:
+            return 0.0
         if isinstance(v, str):
-            return float(v.replace('₦', '').replace(',', '').strip())
+            # Handles Naira symbol, commas, and whitespace
+            cleaned = v.replace('₦', '').replace(',', '').strip()
+            try:
+                return float(cleaned)
+            except ValueError:
+                return 0.0
         return float(v or 0)
 
     @field_validator('volume', mode='before')
+    @classmethod
     def clean_volume(cls, v):
+        if not v or str(v).strip() in ["-", ""]:
+            return 0
         if isinstance(v, str):
-            return int(float(v.replace(',', '').strip()))
+            cleaned = v.replace(',', '').strip()
+            try:
+                return int(float(cleaned))
+            except ValueError:
+                return 0
         return int(v or 0)
 
 # -------------------- PRODUCTION TELEGRAM NOTIFIER --------------------
@@ -61,7 +76,7 @@ class TelegramNotifier:
         self.chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
         if not self.token or not self.chat_id:
-            raise ValueError("❌ TELEGRAM_TOKEN or TELEGRAM_CHAT_ID missing")
+            raise ValueError("❌ TELEGRAM_TOKEN or TELEGRAM_CHAT_ID missing in GitHub Secrets")
 
         self.url = f"https://api.telegram.org/bot{self.token}/sendMessage"
 
@@ -82,7 +97,6 @@ class TelegramNotifier:
                     print(f"✅ Telegram sent (attempt {attempt})")
                     return
 
-                # Retry without Markdown (common hidden failure)
                 if attempt == 1:
                     print("⚠️ Markdown failed, retrying without parse_mode...")
                     async with httpx.AsyncClient(timeout=15.0) as client:
@@ -103,9 +117,6 @@ class TelegramNotifier:
                 print(f"⚠️ Telegram exception (attempt {attempt}): {e}")
 
             await asyncio.sleep(2 ** attempt)
-
-        # HARD FAIL (important for observability)
-        raise RuntimeError("❌ Telegram failed after retries")
 
 # -------------------- ENGINE --------------------
 
@@ -129,7 +140,8 @@ class NGXEngine:
             final_url = f"{prefix}://{auth}@{host_port_db}"
 
             if "sslmode" not in final_url:
-                final_url += "?sslmode=require&connect_timeout=10"
+                separator = "&" if "?" in final_url else "?"
+                final_url += f"{separator}sslmode=require&connect_timeout=10"
 
             self.db_url = final_url
         except Exception:
@@ -141,61 +153,79 @@ class NGXEngine:
 
         Base.metadata.create_all(self.engine)
 
-    # -------------------- DOWNLOAD --------------------
-
     async def download_report(self):
-        date_str = datetime.now().strftime("%d%m%Y")
+        # Updated to the dashed format based on your discovery
+        date_str = datetime.now().strftime("%d-%m-%Y")
         url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{date_str}.pdf"
 
         print(f"📥 Checking: {url}")
 
-        async with httpx.AsyncClient(timeout=30.0) as client:
+        async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
             try:
                 res = await client.get(url)
                 if res.status_code == 200:
-                    file = f"ngx_{date_str}.pdf"
+                    file = f"ngx_equities_{date_str}.pdf"
                     with open(file, "wb") as f:
                         f.write(res.content)
                     return file
             except Exception as e:
-                print("Download error:", e)
+                print(f"Download error: {e}")
 
         return None
 
-    # -------------------- PARSE --------------------
-
     def parse_pdf(self, path: str) -> List[StockSchema]:
         data = []
-
         try:
             with pdfplumber.open(path) as pdf:
-                for page in pdf.pages[:5]:
-                    tables = page.extract_tables()
+                for page in pdf.pages:
+                    table = page.extract_table()
+                    if not table:
+                        continue
 
-                    for table in tables:
-                        if table and "Symbol" in str(table[0]):
-                            for row in table[1:]:
-                                if not row or len(row) < 7:
-                                    continue
-                                try:
-                                    data.append(StockSchema(
-                                        symbol=row[0],
-                                        company_name=row[1],
-                                        open_price=row[2],
-                                        high_price=row[3],
-                                        low_price=row[4],
-                                        close_price=row[5],
-                                        volume=row[6]
-                                    ))
-                                except:
-                                    continue
-                            return data
+                    # The header logic: Find the row containing 'Symbol'
+                    header_idx = -1
+                    for i, row in enumerate(table[:5]):
+                        if row and any("Symbol" in str(cell) for cell in row if cell):
+                            header_idx = i
+                            break
+                    
+                    if header_idx == -1:
+                        continue
+
+                    # Start parsing after the header row
+                    for row in table[header_idx + 1:]:
+                        try:
+                            # Skip empty rows or rows that aren't stock data
+                            if not row or len(row) < 12 or not row[0]:
+                                continue
+                            
+                            # Based on your image:
+                            # 0: Symbol, 1: Name, 3: Open, 5: Close, 11: Qty
+                            
+                            symbol = str(row[0]).strip()
+                            # Basic validation to ensure it's a stock symbol (usually all caps)
+                            if not symbol.isupper():
+                                continue
+
+                            close_p = row[5]
+                            open_p = row[3] if row[3] and str(row[3]).strip() not in ["-", ""] else close_p
+
+                            data.append(StockSchema(
+                                symbol=symbol,
+                                company_name=row[1],
+                                open_price=open_p,
+                                high_price=close_p, # Use close as fallback for High/Low if not explicit
+                                low_price=close_p,
+                                close_price=close_p,
+                                volume=row[11], # 'Qty' is index 11
+                                trade_date=datetime.now()
+                            ))
+                        except Exception:
+                            continue
+            return data
         except Exception as e:
-            print("Parse error:", e)
-
-        return data
-
-    # -------------------- SAVE --------------------
+            print(f"Parse error: {e}")
+            return data
 
     def save(self, stocks: List[StockSchema]):
         session = self.Session()
@@ -205,63 +235,51 @@ class NGXEngine:
                     INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, volume, trade_date)
                     VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :volume, :trade_date)
                     ON CONFLICT (symbol, trade_date)
-                    DO UPDATE SET close_price = EXCLUDED.close_price, volume = EXCLUDED.volume
+                    DO UPDATE SET 
+                        close_price = EXCLUDED.close_price, 
+                        volume = EXCLUDED.volume,
+                        open_price = EXCLUDED.open_price;
                 """), stock.model_dump())
 
             session.commit()
             return len(stocks)
-
         except Exception as e:
             session.rollback()
-            print("DB error:", e)
+            print(f"DB error: {e}")
             return 0
         finally:
             session.close()
 
-    # -------------------- EXECUTE --------------------
-
     async def execute(self):
-        start = datetime.now()
-
-        await self.notifier.send(f"🚀 *NGX Job Started*\n🕒 {start}")
-
+        print(f"🚀 Job Started: {datetime.now()}")
         try:
             pdf = await self.download_report()
 
             if not pdf:
-                await self.notifier.send("⚠️ NGX report not available yet.")
+                await self.notifier.send("⚠️ *NGX Data Alert*\nToday's Equities Report is not available yet.")
                 return
 
             stocks = self.parse_pdf(pdf)
 
             if not stocks:
-                await self.notifier.send("❌ Parsing failed.")
+                await self.notifier.send("❌ *Parsing Error*\nFound the PDF but couldn't extract stock data.")
                 return
 
             saved = self.save(stocks)
 
-            if saved == 0:
-                await self.notifier.send("ℹ️ No new records to update.")
-                return
-
-            top = max(stocks, key=lambda x: x.volume)
-
-            await self.notifier.send(
-                f"✅ *NGX Sync Complete*\n"
-                f"📊 Records: {saved}\n"
-                f"🔥 Top Volume: {top.symbol} ({top.volume:,})"
-            )
+            if saved > 0:
+                top = max(stocks, key=lambda x: x.volume)
+                await self.notifier.send(
+                    f"✅ *NGX Sync Success*\n"
+                    f"📊 Stocks Updated: {saved}\n"
+                    f"🔥 *Top Volume:* {top.symbol} ({top.volume:,})"
+                )
+            else:
+                await self.notifier.send("ℹ️ No new trading data was found in the report.")
 
         except Exception as e:
             await self.notifier.send(f"💥 *System Error*\n`{str(e)}`")
             raise
-
-        finally:
-            end = datetime.now()
-            print(f"⏱ Finished in {end - start}")
-
-
-# -------------------- ENTRY --------------------
 
 if __name__ == "__main__":
     engine = NGXEngine()
