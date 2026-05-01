@@ -253,7 +253,8 @@ class NGXEngine:
     async def execute(self):
         print(f"🚀 Job Started: {datetime.now()}")
         try:
-            pdf = await self.download_report()
+            # pdf = await self.download_report()
+            pdf = "ngx_equities_01-05-2026.pdf"
 
             if not pdf:
                 await self.notifier.send("⚠️ *NGX Data Alert*\nToday's Equities Report is not available yet.")
