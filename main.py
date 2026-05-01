@@ -253,34 +253,33 @@ class NGXEngine:
     async def execute(self):
         print(f"🚀 Job Started: {datetime.now()}")
         try:
-            # pdf = await self.download_report()
+            # pdf = await self.download_report() # Or your local test file
             pdf = "ngx_equities_01-05-2026.pdf"
-
             if not pdf:
-                await self.notifier.send("⚠️ *NGX Data Alert*\nToday's Equities Report is not available yet.")
+                await self.notifier.send("⚠️ *NGX Data Alert*\nReport not available.")
                 return
 
             stocks = self.parse_pdf(pdf)
-
             if not stocks:
-                await self.notifier.send("❌ *Parsing Error*\nFound the PDF but couldn't extract stock data.")
+                await self.notifier.send("❌ *Parsing Error*\nNo data extracted.")
                 return
 
             saved = self.save(stocks)
 
-            if saved > 0:
-                top = max(stocks, key=lambda x: x.volume)
-                await self.notifier.send(
-                    f"✅ *NGX Sync Success*\n"
-                    f"📊 Stocks Updated: {saved}\n"
-                    f"🔥 *Top Volume:* {top.symbol} ({top.volume:,})"
-                )
-            else:
-                await self.notifier.send("ℹ️ No new trading data was found in the report.")
+            # Sort stocks by volume to get the Top 5
+            top_movers = sorted(stocks, key=lambda x: x.volume, reverse=True)[:5]
+            
+            # Format the list for Telegram
+            movers_text = "\n".join([f"• {s.symbol}: {s.volume:,}" for s in top_movers])
+
+            await self.notifier.send(
+                f"✅ *NGX Sync Success*\n"
+                f"📊 Stocks Updated: {saved}\n\n"
+                f"🔥 *Top 5 by Volume:*\n{movers_text}"
+            )
 
         except Exception as e:
             await self.notifier.send(f"💥 *System Error*\n`{str(e)}`")
-            raise
 
 if __name__ == "__main__":
     engine = NGXEngine()
