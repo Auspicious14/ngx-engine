@@ -85,43 +85,43 @@ class NGXEngine:
 
     async def download_report(self, target_date: date):
     # 1. Define possible delimiters used by NGX staff
-    delimiters = ["-", " ", "", "."]
+        delimiters = ["-", " ", "", "."]
     
     # 2. Build a list of candidate date strings to try in the URL
     # We start with the correct month, then add the 'February' fallback just in case
-    months_to_try = [target_date.month]
-    if target_date.month == 4: # Specific fix for the April/February mixup
-        months_to_try.append(2)
-        
-    candidate_strings = []
-    for m in months_to_try:
-        for sep in delimiters:
-            # Generates formats like "15-04-2026", "15 04 2026", "15042026", etc.
-            fmt = f"%d{sep}%m{sep}%Y"
-            candidate_strings.append(target_date.replace(month=m).strftime(fmt))
-
-    # 3. Execution loop
-    async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
-        for attempt_str in candidate_strings:
-            encoded_date = urllib.parse.quote(attempt_str)
-            url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{encoded_date}.pdf"
+        months_to_try = [target_date.month]
+        if target_date.month == 4: # Specific fix for the April/February mixup
+            months_to_try.append(2)
             
-            try:
-                res = await client.get(url)
-                if res.status_code == 200:
-                    # Always save locally with a consistent, standard name
-                    path = f"ngx_{target_date.strftime('%Y-%m-%d')}.pdf"
-                    with open(path, "wb") as f:
-                        f.write(res.content)
-                    
-                    # Log if it was a weird format so you can track it in GitHub Action logs
-                    actual_date_str = target_date.strftime("%d-%m-%Y")
-                    if attempt_str != actual_date_str:
-                        print(f"   🎯 Recovery: Found {actual_date_str} hidden as '{attempt_str}'")
-                    return path
-            except Exception:
-                continue
-    return None
+        candidate_strings = []
+        for m in months_to_try:
+            for sep in delimiters:
+                # Generates formats like "15-04-2026", "15 04 2026", "15042026", etc.
+                fmt = f"%d{sep}%m{sep}%Y"
+                candidate_strings.append(target_date.replace(month=m).strftime(fmt))
+    
+        # 3. Execution loop
+        async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
+            for attempt_str in candidate_strings:
+                encoded_date = urllib.parse.quote(attempt_str)
+                url = f"https://doclib.ngxgroup.com/DownloadsContent/Daily%20Official%20List%20-%20Equities%20for%20{encoded_date}.pdf"
+                
+                try:
+                    res = await client.get(url)
+                    if res.status_code == 200:
+                        # Always save locally with a consistent, standard name
+                        path = f"ngx_{target_date.strftime('%Y-%m-%d')}.pdf"
+                        with open(path, "wb") as f:
+                            f.write(res.content)
+                        
+                        # Log if it was a weird format so you can track it in GitHub Action logs
+                        actual_date_str = target_date.strftime("%d-%m-%Y")
+                        if attempt_str != actual_date_str:
+                            print(f"   🎯 Recovery: Found {actual_date_str} hidden as '{attempt_str}'")
+                        return path
+                except Exception:
+                    continue
+        return None
     
     def parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
         data = []
