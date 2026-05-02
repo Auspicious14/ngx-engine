@@ -5,24 +5,35 @@ from datetime import datetime, timedelta
 from main import NGXEngine
 
 class AlphaCrawler(NGXEngine):
+    def __init__(self):
+        super().__init__()
+        # NGX 2026 Market Holidays
+        self.holidays = [
+            "01-01-2026", "20-03-2026", "23-03-2026", 
+            "03-04-2026", "06-04-2026", "01-05-2026", 
+            "27-05-2026", "28-05-2026"
+        ]
+
     async def backfill(self, days: int = 45):
         print(f"🕵️ Alpha Engine: Starting {days}-day historical backfill...")
         
-        # 1. Define range (Oldest -> Today)
         end_date = datetime.now().date()
         start_date = end_date - timedelta(days=days)
         
-        # 2. Get Business Days (Mon-Fri) only
+        # Get Business Days (Mon-Fri)
         business_days = pd.bdate_range(start=start_date, end=end_date)
-        
         total_records = 0
 
-        # 3. Iterate FORWARD so each day has access to the day before
+        # Iterating FORWARD (Oldest to Newest) is critical for percent_change math
         for current_ts in business_days:
             current_date = current_ts.date()
             date_str = current_date.strftime("%d-%m-%Y")
             
-            print(f"📡 Downloading report for: {date_str}")
+            if date_str in self.holidays:
+                print(f"🌴 Skipping holiday: {date_str}")
+                continue
+
+            print(f"📡 Processing: {date_str}")
             pdf_path = await self.download_report(target_date=current_date)
             
             if pdf_path:
@@ -33,17 +44,13 @@ class AlphaCrawler(NGXEngine):
                     print(f"   ✅ Saved {saved} stocks.")
                 
                 if os.path.exists(pdf_path): os.remove(pdf_path)
-                
-                # Ethical pause
-                await asyncio.sleep(1.2)
+                await asyncio.sleep(1.5) # Anti-ban delay
             else:
                 print(f"   ⚠️ No report available for {date_str}")
 
-        report = f"🏁 *Backfill Complete*\nTotal Records: {total_records:,}\nMemory primed for Alpha Engine."
-        await self.notifier.send(report)
-        print("Done.")
+        msg = f"🏁 *Backfill Complete*\nTotal Records: {total_records:,}\nMarket trends calculated."
+        await self.notifier.send(msg)
 
 if __name__ == "__main__":
     crawler = AlphaCrawler()
-    # Run the backfill (Default 45 days)
     asyncio.run(crawler.backfill(days=45))
