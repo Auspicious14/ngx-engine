@@ -83,6 +83,59 @@ class NGXEngine:
         self.notifier = TelegramNotifier()
         Base.metadata.create_all(self.engine)
 
+    def get_market_alerts(self, stocks: List[StockSchema]):
+        session = self.Session()
+        breakouts = []
+        volume_spikes = []
+        
+        try:
+            for stock in stocks:
+                # 1. Price Breakout (> 5% gain)
+                if stock.percent_change >= 5.0:
+                    breakouts.append(stock)
+
+                # 2. Volume Spike (Current Volume > 2x 10-day Average)
+                # We calculate the avg volume for this symbol over the last 10 trading days
+                avg_vol_res = session.query(text("AVG(volume)")).from_statement(text("""
+                    SELECT volume FROM stock_prices 
+                    WHERE symbol = :symbol AND trade_date < :today
+                    ORDER BY trade_date DESC LIMIT 10
+                """)).params(symbol=stock.symbol, today=stock.trade_date).scalar()
+
+                if avg_vol_res and stock.volume > (float(avg_vol_res) * 2):
+                    volume_spikes.append(stock)
+
+            return breakouts, volume_spikes
+        finally:
+            session.close()
+
+    async def send_daily_recap(self, stocks: List[StockSchema], breakouts: List[StockSchema], volume_spikes: List[StockSchema]):
+        today_str = datetime.now().strftime("%B %d, %Y")
+        
+        # Calculate market sentiment
+        gainers = [s for s in stocks if s.percent_change > 0]
+        losers = [s for s in stocks if s.percent_change < 0]
+        
+        msg = f"📊 *NGX Daily Recap - {today_str}*\n"
+        msg += f"━━━━━━━━━━━━━━━━━━━━\n"
+        msg += f"📈 Gainers: {len(gainers)} | 📉 Losers: {len(losers)}\n\n"
+
+        if breakouts:
+            msg += "🚀 *PRICE BREAKOUTS (>5%)*\n"
+            for s in breakouts[:5]: # Top 5
+                msg += f"• {s.symbol}: ₦{s.close_price} (+{s.percent_change:.2f}%)\n"
+            msg += "\n"
+
+        if volume_spikes:
+            msg += "🔊 *VOLUME SPIKES (>2x Avg)*\n"
+            for s in volume_spikes[:5]:
+                msg += f"• {s.symbol}: {s.volume:,} units\n"
+            msg += "\n"
+
+        msg += "🔗 _Data synced to Supabase Engine_"
+        
+        await self.notifier.send(msg)
+
     async def download_report(self, target_date: date):
         # 1. Define possible delimiters used by NGX staff
         delimiters = ["-", " ", "", "."]
@@ -190,5 +243,31 @@ class NGXEngine:
         return saved_count
 
 if __name__ == "__main__":
-    engine = NGXEngine()
+    async def run_daily_sync():
+        engine = NGXEngine()
+        today = datetime.now().date()
+        
+        # 1. Download and Parse
+        pdf = await engine.download_report(today)
+        if not pdf:
+            print("No report found today.")
+            return
+            
+        stocks = engine.parse_pdf(pdf, today)
+        if not stocks: return
+        
+        # 2. Save to DB (this also calculates percent_change)
+        engine.save(stocks)
+        
+        # 3. Generate Alerts
+        breakouts, spikes = engine.get_market_alerts(stocks)
+        
+        # 4. Send the Telegram Recap
+        await engine.send_daily_recap(stocks, breakouts, spikes)
+        
+        # Cleanup
+        if os.path.exists(pdf): os.remove(pdf)
+
+    asyncio.run(run_daily_sync())
+    # engine = NGXEngine()
     # Logic for daily run omitted here for brevity; focus is on the engine logic.
