@@ -84,22 +84,31 @@ class NGXEngine:
         Base.metadata.create_all(self.engine)
 
     async def download_report(self, target_date: date):
-    # 1. Define possible delimiters used by NGX staff
+        # 1. Define possible delimiters used by NGX staff
         delimiters = ["-", " ", "", "."]
-    
-    # 2. Build a list of candidate date strings to try in the URL
-    # We start with the correct month, then add the 'February' fallback just in case
+        
+        # 2. Build a list of candidate date strings
+        # We start with the correct month
         months_to_try = [target_date.month]
         if target_date.month == 4: # Specific fix for the April/February mixup
             months_to_try.append(2)
             
         candidate_strings = []
         for m in months_to_try:
-            for sep in delimiters:
-                # Generates formats like "15-04-2026", "15 04 2026", "15042026", etc.
-                fmt = f"%d{sep}%m{sep}%Y"
-                candidate_strings.append(target_date.replace(month=m).strftime(fmt))
-    
+            # Check if the day exists in the target month (e.g., skip Feb 29/30/31)
+            try:
+                # This creates a date object for the candidate month/day/year
+                candidate_date = target_date.replace(month=m)
+                
+                for sep in delimiters:
+                    # Generates formats like "15-04-2026", "15 04 2026", etc.
+                    fmt = f"%d{sep}%m{sep}%Y"
+                    candidate_strings.append(candidate_date.strftime(fmt))
+            except ValueError:
+                # If target_date is April 29, and we try month=2, it raises ValueError.
+                # We catch it here and simply move to the next month/delimiter.
+                continue
+
         # 3. Execution loop
         async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
             for attempt_str in candidate_strings:
@@ -114,7 +123,6 @@ class NGXEngine:
                         with open(path, "wb") as f:
                             f.write(res.content)
                         
-                        # Log if it was a weird format so you can track it in GitHub Action logs
                         actual_date_str = target_date.strftime("%d-%m-%Y")
                         if attempt_str != actual_date_str:
                             print(f"   🎯 Recovery: Found {actual_date_str} hidden as '{attempt_str}'")
@@ -122,7 +130,7 @@ class NGXEngine:
                 except Exception:
                     continue
         return None
-    
+        
     def parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
         data = []
         try:
