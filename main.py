@@ -94,7 +94,7 @@ class WhatsAppNotifier:
         self.id_instance = os.getenv("GREEN_API_ID")
         self.api_token = os.getenv("GREEN_API_TOKEN")
         self.group_id = os.getenv("WHATSAPP_GROUP_ID") 
-        self.base_url = f"https://api.green-api.com/waInstance{self.id_instance}/sendMessage/{self.api_token}"
+        self.base_url = f"https://7107.api.green-api.com/waInstance{self.id_instance}/sendMessage/{self.api_token}"
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
