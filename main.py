@@ -94,20 +94,34 @@ class WhatsAppNotifier:
         self.id_instance = os.getenv("GREEN_API_ID")
         self.api_token = os.getenv("GREEN_API_TOKEN")
         self.group_id = os.getenv("WHATSAPP_GROUP_ID") 
-        self.base_url = f"https://7107.api.green-api.com/waInstance{self.id_instance}/sendMessage/{self.api_token}"
+        # Use the specific host you discovered
+        self.api_url = os.getenv("WHATSAPP_API_URL", "https://7107.api.greenapi.com")
+        
+        # Construct the full endpoint URL
+        self.base_url = f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
-            print("⚠️ WhatsApp configuration missing.")
-            return
+            print("⚠️ WhatsApp configuration missing in .env/Secrets.")
+            return False
             
-        payload = {"chatId": self.group_id, "message": message}
+        payload = {
+            "chatId": self.group_id, 
+            "message": message
+        }
+        
         async with httpx.AsyncClient(timeout=30.0) as client:
             try:
                 response = await client.post(self.base_url, json=payload)
-                return response.status_code == 200
+                if response.status_code == 200:
+                    print(f"✅ WhatsApp message sent to {self.group_id}")
+                    return True
+                else:
+                    # This will tell you exactly WHY it failed (e.g., "Unauthorized")
+                    print(f"❌ WhatsApp Failed ({response.status_code}): {response.text}")
+                    return False
             except Exception as e:
-                print(f"WhatsApp Error: {e}")
+                print(f"📡 WhatsApp Connection Error: {e}")
                 return False
 
 # --- CORE ENGINE ---
