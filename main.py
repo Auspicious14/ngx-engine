@@ -143,23 +143,29 @@ class NGXEngine:
         
         try:
             for stock in stocks:
-                # 1. Technical Level Detection
+                # Flag corporate actions (>10.5% move) immediately
+                stock.is_corporate_action = abs(stock.percent_change) > 10.5
+                
+                # 1. Technical Level Detection (Resistance/Support)
                 levels = self.detect_levels(stock.symbol, stock.trade_date)
                 if levels:
                     res = float(levels[0]) if levels[0] else 0
                     sup = float(levels[1]) if levels[1] else 0
+                    
                     if res > 0 and stock.close_price > res:
                         stock.old_resistance = res
                         breakouts.append(stock)
-                    if sup > 0 and stock.close_price < sup:
+                    
+                    # Ignore support breakdowns if they are caused by dividend mark-downs
+                    if sup > 0 and stock.close_price < sup and not stock.is_corporate_action:
                         stock.old_support = sup
                         breakdowns.append(stock)
 
-                # 2. Price Momentum
-                if stock.percent_change >= 5.0:
+                # 2. Price Momentum (Normalized for Corporate Actions)
+                if stock.percent_change >= 5.0 and not stock.is_corporate_action:
                     momentum.append(stock)
 
-                # 3. Volume Spikes (Corrected Subquery)
+                # 3. Volume Spikes (The 'Smart Money' Tracker)
                 avg_vol = session.execute(text("""
                     SELECT AVG(volume) FROM (
                         SELECT volume FROM stock_prices 
@@ -205,32 +211,48 @@ class NGXEngine:
         
     async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
         upcoming_earn, recently_reported = self.get_earnings_watch()
-        today_str = datetime.now().strftime("%d %b %Y")
         gainers, losers = self.get_top_performers(stocks)
-        upcoming_earn, recently_reported = self.get_earnings_watch()
+        today_str = datetime.now().strftime("%d %b %Y")
+        has_anomaly = False
         
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
+
+        # --- SECTION 0: TOP GAINERS ---
         msg += "📈 *TOP 5 GAINERS*\n"
-        
         for s in gainers:
-            msg += f"`{s.symbol:<10} ₦{s.close_price:>6.2f}  (+{s.percent_change:>5.2f}%)`\n"
+            # Monospace layout for clean columns on desktop, stacked for mobile
+            msg += f"• *{s.symbol}*  (+{s.percent_change:.2f}%)\n"
+            msg += f"  └ `₦{s.close_price:>7.2f}`\n"
         
+        # --- SECTION 1: TOP LOSERS ---
         msg += "\n📉 *TOP 5 LOSERS*\n"
         for s in losers:
-            msg += f"`{s.symbol:<10} ₦{s.close_price:>6.2f}  ({s.percent_change:>6.2f}%)`\n"
-        msg += "━━━━━━━━━━━━━━━━\n\n"
+            change_val = s.percent_change
+            label = f"{change_val:.2f}%"
+            
+            # Detect Anomaly for disclaimer
+            if abs(change_val) > 10.5:
+                label += " 🔸"
+                has_anomaly = True
+                
+            msg += f"• *{s.symbol}*  ({label})\n"
+            msg += f"  └ `₦{s.close_price:>7.2f}`\n"
+            
+        if has_anomaly:
+            msg += "\n*🔸 Note:* Extreme moves (>10%) are usually Dividend Mark-downs, not market sell-offs.\n"
         
+        msg += "━━━━━━━━━━━━━━━━\n\n"
+
+        # --- SECTION 2: ALERTS ---
         if breakouts:
             msg += "🔓 *RESISTANCE BREAKOUTS*\n"
-            msg += "_WHY: Price broke the ceiling. Buyers are in control._\n"
             for s in breakouts[:3]:
                 msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
             msg += "\n"
 
         if breakdowns:
             msg += "⚠️ *SUPPORT BREAKDOWNS*\n"
-            msg += "_WHY: The floor collapsed. High risk of further drop._\n"
             for s in breakdowns[:3]:
                 msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
             msg += "\n"
@@ -243,7 +265,6 @@ class NGXEngine:
 
         if spikes:
             msg += "🔊 *UNUSUAL VOLUME*\n"
-            msg += "_WHY: High activity usually confirms a trend._\n"
             for s in spikes[:3]:
                 msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
             msg += "\n"
