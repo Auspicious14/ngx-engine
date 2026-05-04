@@ -84,12 +84,30 @@ class TelegramNotifier:
             
 class WhatsAppNotifier:
     def __init__(self):
-        self.api_key = os.getenv("WHATSAPP_API_KEY")
-        self.phone_number = os.getenv("WHATSAPP_PHONE") # Your instance/sender ID
-        self.group_id = os.getenv("WHATSAPP_GROUP_ID")
-        # Update this URL based on your specific provider (e.g., UltraMsg, Whapi)
-        self.base_url = "https://api.ultramsg.com/instanceXXXX/messages/chat" 
+        self.id_instance = os.getenv("GREEN_API_ID")
+        self.api_token = os.getenv("GREEN_API_TOKEN")
+        self.group_id = os.getenv("WHATSAPP_GROUP_ID") 
+        # Green API URL format
+        self.base_url = f"https://api.green-api.com/waInstance{self.id_instance}/sendMessage/{self.api_token}"
 
+    async def send(self, message: str):
+        if not all([self.id_instance, self.api_token, self.group_id]):
+            return
+            
+        payload = {
+            "chatId": self.group_id,
+            "message": message
+        }
+        
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            try:
+                # Green API requires JSON POST
+                response = await client.post(self.base_url, json=payload)
+                return response.status_code == 200
+            except Exception as e:
+                print(f"WhatsApp Error: {e}")
+                return False
+                
     async def send(self, message: str):
         if not self.api_key or not self.group_id:
             return
