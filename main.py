@@ -3,15 +3,17 @@ import asyncio
 import httpx
 import pdfplumber
 import urllib.parse
-from datetime import datetime, date, timedelta # Added timedelta
+from datetime import datetime, date, timedelta
 from typing import List, Optional
-from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, Float, text, Index # Added Float
+from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, Float, text, Index
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from pydantic import BaseModel, field_validator
 from dotenv import load_dotenv
 
+# Load local .env for testing; GitHub Actions will use Secrets
 load_dotenv()
 
+# --- DATABASE MODELS ---
 class Base(DeclarativeBase):
     pass
 
@@ -30,6 +32,16 @@ class StockPriceDB(Base):
 
     __table_args__ = (Index('uix_symbol_date', 'symbol', 'trade_date', unique=True),)
 
+class EarningsCalendar(Base):
+    __tablename__ = 'earnings_calendar'
+    id = Column(Integer, primary_key=True)
+    symbol = Column(String, nullable=False)
+    period = Column(String)           
+    expected_date = Column(Date)      
+    actual_date = Column(Date)        
+    dividend_yield = Column(Float)    
+
+# --- DATA SCHEMAS ---
 class StockSchema(BaseModel):
     symbol: str
     company_name: str
@@ -40,6 +52,7 @@ class StockSchema(BaseModel):
     percent_change: float = 0.0
     volume: int
     trade_date: date
+    # Temporary fields for alert logic
     old_resistance: float = 0.0
     old_support: float = 0.0
     vol_increase: float = 0.0
@@ -64,15 +77,7 @@ class StockSchema(BaseModel):
             except ValueError: return 0
         return int(v or 0)
 
-class EarningsCalendar(Base):
-    __tablename__ = 'earnings_calendar'
-    id = Column(Integer, primary_key=True)
-    symbol = Column(String, nullable=False)
-    period = Column(String)           
-    expected_date = Column(Date)      
-    actual_date = Column(Date)        
-    dividend_yield = Column(Float)    
-    
+# --- NOTIFICATION SERVICES ---
 class TelegramNotifier:
     def __init__(self):
         self.token = os.getenv("TELEGRAM_TOKEN")
@@ -93,7 +98,7 @@ class WhatsAppNotifier:
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
-            print("⚠️ WhatsApp Credentials Missing")
+            print("⚠️ WhatsApp configuration missing.")
             return
             
         payload = {"chatId": self.group_id, "message": message}
@@ -104,7 +109,8 @@ class WhatsAppNotifier:
             except Exception as e:
                 print(f"WhatsApp Error: {e}")
                 return False
-                
+
+# --- CORE ENGINE ---
 class NGXEngine:
     def __init__(self):
         db_url = os.getenv("DATABASE_URL")
@@ -113,8 +119,8 @@ class NGXEngine:
         
         self.engine = create_engine(db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
-        self.wa_notifier = WhatsAppNotifier()
-        self.tg_notifier = TelegramNotifier()
+        self.wa = WhatsAppNotifier()
+        self.tg = TelegramNotifier()
         Base.metadata.create_all(self.engine)
 
     def get_market_alerts(self, stocks: List[StockSchema]):
@@ -123,6 +129,7 @@ class NGXEngine:
         
         try:
             for stock in stocks:
+                # 1. Technical Level Detection
                 levels = self.detect_levels(stock.symbol, stock.trade_date)
                 if levels:
                     res = float(levels[0]) if levels[0] else 0
@@ -134,13 +141,18 @@ class NGXEngine:
                         stock.old_support = sup
                         breakdowns.append(stock)
 
+                # 2. Price Momentum
                 if stock.percent_change >= 5.0:
                     momentum.append(stock)
 
-                avg_vol = session.query(text("AVG(volume)")).from_statement(text("""
-                    SELECT volume FROM stock_prices WHERE symbol = :symbol AND trade_date < :today
-                    ORDER BY trade_date DESC LIMIT 10
-                """)).params(symbol=stock.symbol, today=stock.trade_date).scalar()
+                # 3. Volume Spikes (Corrected Subquery)
+                avg_vol = session.execute(text("""
+                    SELECT AVG(volume) FROM (
+                        SELECT volume FROM stock_prices 
+                        WHERE symbol = :symbol AND trade_date < :today
+                        ORDER BY trade_date DESC LIMIT 10
+                    ) as subquery
+                """), {"symbol": stock.symbol, "today": stock.trade_date}).scalar()
 
                 if avg_vol and stock.volume > (float(avg_vol) * 2):
                     stock.vol_increase = round(stock.volume / float(avg_vol), 1)
@@ -169,6 +181,7 @@ class NGXEngine:
     async def send_daily_recap(self, breakouts, breakdowns, momentum, spikes):
         upcoming_earn, recently_reported = self.get_earnings_watch()
         today_str = datetime.now().strftime("%d %b %Y")
+        
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
 
@@ -194,7 +207,7 @@ class NGXEngine:
 
         if spikes:
             msg += "🔊 *UNUSUAL VOLUME*\n"
-            msg += "_WHY: Big banks are active here._\n"
+            msg += "_WHY: High activity usually confirms a trend._\n"
             for s in spikes[:3]:
                 msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
             msg += "\n"
@@ -211,9 +224,9 @@ class NGXEngine:
         msg += "💡 *TRADER'S TIP*\n"
         msg += "The 'Perfect Trade' is a **Breakout** + **High Volume**. 📊"
 
-        # Send to both platforms
-        await self.tg_notifier.send(msg)
-        await self.wa_notifier.send(msg)
+        # Broadcast
+        await self.tg.send(msg)
+        await self.wa.send(msg)
         
     async def download_report(self, target_date: date):
         delimiters = ["-", " ", "", "."]
@@ -287,6 +300,7 @@ class NGXEngine:
                     ON CONFLICT (symbol, trade_date) DO UPDATE SET 
                     close_price = EXCLUDED.close_price, percent_change = EXCLUDED.percent_change, volume = EXCLUDED.volume;
                 """)
+                # Exclude temporary schema fields from DB insert
                 session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase'}))
             session.commit()
         except Exception as e:
@@ -305,23 +319,33 @@ class NGXEngine:
             return stats
         finally: session.close()
 
+# --- MAIN EXECUTION ---
 if __name__ == "__main__":
     async def run_daily_sync():
+        print("📊 Starting Daily NGX Sync...")
         engine = NGXEngine()
         today = datetime.now().date()
         
         pdf = await engine.download_report(today)
         if not pdf:
-            print("No report found today.")
+            print(f"🛑 No report found for {today}.")
             return
             
         stocks = engine.parse_pdf(pdf, today)
-        if not stocks: return
+        if not stocks: 
+            print("🛑 PDF parsed but no stocks found.")
+            return
         
+        print(f"💾 Saving {len(stocks)} stocks to Database...")
         engine.save(stocks)
+        
+        print("🔍 Analyzing Market Alerts...")
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)
+        
+        print("📱 Sending Recap...")
         await engine.send_daily_recap(breakouts, breakdowns, momentum, spikes)
         
         if os.path.exists(pdf): os.remove(pdf)
+        print("✅ Sync Complete.")
 
     asyncio.run(run_daily_sync())
