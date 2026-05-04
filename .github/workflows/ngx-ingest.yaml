@@ -39,6 +39,9 @@ jobs:
           # Keep these if you still use them in your code
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_API_KEY: ${{ secrets.WHATSAPP_API_KEY }}
+          GREEN_API_ID: ${{ secrets.GREEN_API_ID }}
+          GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
+          WHATSAPP_GROUP_ID: ${{ secrets.WHATSAPP_GROUP_ID }}
         run: |
           if [ "${{ github.event.inputs.run_backfill }}" == "true" ]; then
             echo "🚀 Starting 45-day backfill..."
