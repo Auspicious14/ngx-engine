@@ -56,6 +56,7 @@ class StockSchema(BaseModel):
     old_resistance: float = 0.0
     old_support: float = 0.0
     vol_increase: float = 0.0
+    is_corporate_action: bool = False
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
     @classmethod
@@ -94,34 +95,21 @@ class WhatsAppNotifier:
         self.id_instance = os.getenv("GREEN_API_ID")
         self.api_token = os.getenv("GREEN_API_TOKEN")
         self.group_id = os.getenv("WHATSAPP_GROUP_ID") 
-        # Use the specific host you discovered
         self.api_url = os.getenv("WHATSAPP_API_URL", "https://7107.api.greenapi.com")
-        
-        # Construct the full endpoint URL
         self.base_url = f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
-            print("⚠️ WhatsApp configuration missing in .env/Secrets.")
+            print("⚠️ WhatsApp configuration missing.")
             return False
             
-        payload = {
-            "chatId": self.group_id, 
-            "message": message
-        }
-        
+        payload = {"chatId": self.group_id, "message": message}
         async with httpx.AsyncClient(timeout=30.0) as client:
             try:
                 response = await client.post(self.base_url, json=payload)
-                if response.status_code == 200:
-                    print(f"✅ WhatsApp message sent to {self.group_id}")
-                    return True
-                else:
-                    # This will tell you exactly WHY it failed (e.g., "Unauthorized")
-                    print(f"❌ WhatsApp Failed ({response.status_code}): {response.text}")
-                    return False
+                return response.status_code == 200
             except Exception as e:
-                print(f"📡 WhatsApp Connection Error: {e}")
+                print(f"📡 WhatsApp Error: {e}")
                 return False
 
 # --- CORE ENGINE ---
@@ -143,10 +131,10 @@ class NGXEngine:
         
         try:
             for stock in stocks:
-                # Flag corporate actions (>10.5% move) immediately
+                # Mark-down detection: moves > 10.5% are flagged as corporate actions
                 stock.is_corporate_action = abs(stock.percent_change) > 10.5
                 
-                # 1. Technical Level Detection (Resistance/Support)
+                # 1. Technical Level Detection
                 levels = self.detect_levels(stock.symbol, stock.trade_date)
                 if levels:
                     res = float(levels[0]) if levels[0] else 0
@@ -156,16 +144,16 @@ class NGXEngine:
                         stock.old_resistance = res
                         breakouts.append(stock)
                     
-                    # Ignore support breakdowns if they are caused by dividend mark-downs
+                    # Ignore support breakdowns if caused by dividend mark-downs
                     if sup > 0 and stock.close_price < sup and not stock.is_corporate_action:
                         stock.old_support = sup
                         breakdowns.append(stock)
 
-                # 2. Price Momentum (Normalized for Corporate Actions)
+                # 2. Price Momentum (Filter out corporate actions)
                 if stock.percent_change >= 5.0 and not stock.is_corporate_action:
                     momentum.append(stock)
 
-                # 3. Volume Spikes (The 'Smart Money' Tracker)
+                # 3. Volume Spikes
                 avg_vol = session.execute(text("""
                     SELECT AVG(volume) FROM (
                         SELECT volume FROM stock_prices 
@@ -199,14 +187,11 @@ class NGXEngine:
             session.close()
 
     def get_top_performers(self, stocks: List[StockSchema]):
-        # Filter out penny stocks or inactive ones if needed, then sort by percent_change
         sorted_stocks = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
-        
         gainers = sorted_stocks[:5]
-        # Filter for losers (negative change) and take the bottom 5
-        losers = [s for s in sorted_stocks if s.percent_change < 0]
-        losers = sorted(losers, key=lambda x: x.percent_change)[:5]
-        
+        # Filter for negative change and sort by most negative
+        losers_list = [s for s in stocks if s.percent_change < 0]
+        losers = sorted(losers_list, key=lambda x: x.percent_change)[:5]
         return gainers, losers
         
     async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
@@ -221,22 +206,17 @@ class NGXEngine:
         # --- SECTION 0: TOP GAINERS ---
         msg += "📈 *TOP 5 GAINERS*\n"
         for s in gainers:
-            # Monospace layout for clean columns on desktop, stacked for mobile
             msg += f"• *{s.symbol}*  (+{s.percent_change:.2f}%)\n"
             msg += f"  └ `₦{s.close_price:>7.2f}`\n"
         
         # --- SECTION 1: TOP LOSERS ---
         msg += "\n📉 *TOP 5 LOSERS*\n"
         for s in losers:
-            change_val = s.percent_change
-            label = f"{change_val:.2f}%"
-            
-            # Detect Anomaly for disclaimer
-            if abs(change_val) > 10.5:
-                label += " 🔸"
+            change_label = f"{s.percent_change:.2f}%"
+            if abs(s.percent_change) > 10.5:
+                change_label += " 🔸"
                 has_anomaly = True
-                
-            msg += f"• *{s.symbol}*  ({label})\n"
+            msg += f"• *{s.symbol}*  ({change_label})\n"
             msg += f"  └ `₦{s.close_price:>7.2f}`\n"
             
         if has_anomaly:
@@ -358,7 +338,7 @@ class NGXEngine:
                     close_price = EXCLUDED.close_price, percent_change = EXCLUDED.percent_change, volume = EXCLUDED.volume;
                 """)
                 # Exclude temporary schema fields from DB insert
-                session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase'}))
+                session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action'}))
             session.commit()
         except Exception as e:
             session.rollback()
