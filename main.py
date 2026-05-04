@@ -61,6 +61,16 @@ class StockSchema(BaseModel):
             except ValueError: return 0
         return int(v or 0)
 
+class EarningsCalendar(Base):
+    __tablename__ = 'earnings_calendar'
+    
+    id = Column(Integer, primary_key=True)
+    symbol = Column(String, nullable=False)
+    period = Column(String)           # e.g., "Q2 2026" or "FY 2025"
+    expected_date = Column(Date)      # NGX Deadline
+    actual_date = Column(Date)        # When it was actually released
+    dividend_yield = Column(Float)    # Optional: If they announce a dividend
+    
 class TelegramNotifier:
     def __init__(self):
         self.token = os.getenv("TELEGRAM_TOKEN")
@@ -71,7 +81,34 @@ class TelegramNotifier:
         if not self.token or not self.chat_id: return
         async with httpx.AsyncClient(timeout=15.0) as client:
             await client.post(self.url, json={"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"})
+            
+class WhatsAppNotifier:
+    def __init__(self):
+        self.api_key = os.getenv("WHATSAPP_API_KEY")
+        self.phone_number = os.getenv("WHATSAPP_PHONE") # Your instance/sender ID
+        self.group_id = os.getenv("WHATSAPP_GROUP_ID")
+        # Update this URL based on your specific provider (e.g., UltraMsg, Whapi)
+        self.base_url = "https://api.ultramsg.com/instanceXXXX/messages/chat" 
 
+    async def send(self, message: str):
+        if not self.api_key or not self.group_id:
+            return
+            
+        payload = {
+            "token": self.api_key,
+            "to": self.group_id,
+            "body": message
+        }
+        
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            try:
+                # Most gateways use a simple POST request
+                response = await client.post(self.base_url, data=payload)
+                return response.status_code == 200
+            except Exception as e:
+                print(f"WhatsApp Error: {e}")
+                return False
+                
 class NGXEngine:
     def __init__(self):
         db_url = os.getenv("DATABASE_URL")
@@ -85,57 +122,127 @@ class NGXEngine:
 
     def get_market_alerts(self, stocks: List[StockSchema]):
         session = self.Session()
-        breakouts = []
-        volume_spikes = []
+        breakouts = []       # Price > 30-day Resistance
+        breakdowns = []      # Price < 30-day Support
+        momentum = []        # Price Gain > 5%
+        volume_spikes = []   # Volume > 2x 10-day Average
         
         try:
             for stock in stocks:
-                # 1. Price Breakout (> 5% gain)
-                if stock.percent_change >= 5.0:
-                    breakouts.append(stock)
+                # 1. TECHNICAL LEVELS (Resistance & Support)
+                levels = self.detect_levels(stock.symbol, stock.trade_date)
+                if levels:
+                    res = float(levels[0]) if levels[0] else 0
+                    sup = float(levels[1]) if levels[1] else 0
 
-                # 2. Volume Spike (Current Volume > 2x 10-day Average)
-                # We calculate the avg volume for this symbol over the last 10 trading days
-                avg_vol_res = session.query(text("AVG(volume)")).from_statement(text("""
+                    # Resistance Breakout (The Ceiling)
+                    if res > 0 and stock.close_price > res:
+                        stock.old_resistance = res
+                        breakouts.append(stock)
+                    
+                    # Support Breakdown (The Floor)
+                    if sup > 0 and stock.close_price < sup:
+                        stock.old_support = sup
+                        breakdowns.append(stock)
+
+                # 2. PRICE MOMENTUM (The 5% Rule)
+                if stock.percent_change >= 5.0:
+                    momentum.append(stock)
+
+                # 3. VOLUME SPIKES (The 'Smart Money' Tracker)
+                # Compares today's volume to the average of the last 10 days
+                avg_vol = session.query(text("AVG(volume)")).from_statement(text("""
                     SELECT volume FROM stock_prices 
                     WHERE symbol = :symbol AND trade_date < :today
                     ORDER BY trade_date DESC LIMIT 10
                 """)).params(symbol=stock.symbol, today=stock.trade_date).scalar()
 
-                if avg_vol_res and stock.volume > (float(avg_vol_res) * 2):
+                if avg_vol and stock.volume > (float(avg_vol) * 2):
+                    stock.vol_increase = round(stock.volume / float(avg_vol), 1)
                     volume_spikes.append(stock)
 
-            return breakouts, volume_spikes
+            return breakouts, breakdowns, momentum, volume_spikes
         finally:
             session.close()
 
-    async def send_daily_recap(self, stocks: List[StockSchema], breakouts: List[StockSchema], volume_spikes: List[StockSchema]):
-        today_str = datetime.now().strftime("%B %d, %Y")
+    def get_earnings_watch(self):
+        session = self.Session()
+        today = datetime.now().date()
+        two_weeks_out = today + timedelta(days=14)
         
-        # Calculate market sentiment
-        gainers = [s for s in stocks if s.percent_change > 0]
-        losers = [s for s in stocks if s.percent_change < 0]
+        # Look for stocks that haven't reported yet but are nearing a deadline
+        # OR stocks that just reported in the last 3 days (to explain price jumps)
+        upcoming = session.query(EarningsCalendar).filter(
+            EarningsCalendar.actual_date == None,
+            EarningsCalendar.expected_date <= two_weeks_out
+        ).all()
         
-        msg = f"📊 *NGX Daily Recap - {today_str}*\n"
-        msg += f"━━━━━━━━━━━━━━━━━━━━\n"
-        msg += f"📈 Gainers: {len(gainers)} | 📉 Losers: {len(losers)}\n\n"
+        just_reported = session.query(EarningsCalendar).filter(
+            EarningsCalendar.actual_date >= (today - timedelta(days=3))
+        ).all()
+        
+        return upcoming, just_reported
+            
+    async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
+        today_str = datetime.now().strftime("%d %b %Y")
+        msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
+        msg += "━━━━━━━━━━━━━━━━\n\n"
 
+        # --- SECTION 1: BREAKOUTS ---
         if breakouts:
-            msg += "🚀 *PRICE BREAKOUTS (>5%)*\n"
-            for s in breakouts[:5]: # Top 5
-                msg += f"• {s.symbol}: ₦{s.close_price} (+{s.percent_change:.2f}%)\n"
+            msg += "🔓 *RESISTANCE BREAKOUTS*\n"
+            msg += "_WHY: These stocks broke their 'ceiling'. It means buyers are finally stronger than sellers, often leading to a new rally._\n"
+            for s in breakouts[:3]:
+                msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
             msg += "\n"
 
-        if volume_spikes:
-            msg += "🔊 *VOLUME SPIKES (>2x Avg)*\n"
-            for s in volume_spikes[:5]:
-                msg += f"• {s.symbol}: {s.volume:,} units\n"
+        # --- SECTION 2: BREAKDOWNS ---
+        if breakdowns:
+            msg += "⚠️ *SUPPORT BREAKDOWNS*\n"
+            msg += "_WHY: The 'floor' collapsed. This usually happens on bad news or when big investors are exiting. Be very careful here!_\n"
+            for s in breakdowns[:3]:
+                msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
             msg += "\n"
 
-        msg += "🔗 _Data synced to Supabase Engine_"
-        
+        # --- SECTION 3: MOMENTUM ---
+        if momentum:
+            msg += "🔥 *HIGH MOMENTUM (5%+)*\n"
+            msg += "_WHY: These stocks are moving fast. Watch for news like earnings or dividend announcements that might be driving this jump._\n"
+            for s in momentum[:3]:
+                msg += f"• *{s.symbol}*: +{s.percent_change:.2f}%\n"
+            msg += "\n"
+
+        # --- SECTION 4: VOLUME ---
+        if spikes:
+            msg += "🔊 *UNUSUAL VOLUME*\n"
+            msg += "_WHY: High volume means 'Smart Money' (Institutional banks) is active. It confirms that the price move is backed by real money._\n"
+            for s in spikes[:3]:
+                msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
+            msg += "\n"
+            
+        if upcoming_earn or recently_reported:
+            msg += "📝 *EARNINGS & DIVIDEND WATCH*\n"
+            msg += "_WHY: Financial results are the biggest drivers of price. 'Just Reported' explains today's move, while 'Upcoming' warns of future volatility._\n\n"
+            
+            for e in recently_reported:
+                msg += f"✅ *{e.symbol}*: Just Released {e.period} results! Check the PDF for dividend news.\n"
+            
+            for e in upcoming_earn:
+                days_left = (e.expected_date - datetime.now().date()).days
+                msg += f"⏳ *{e.symbol}*: {e.period} results due in {days_left} days. Expect price swings.\n"
+            msg += "\n"
+            
+        # --- FINAL TRADER TIP ---
+        msg += "💡 *TRADER'S TIP*\n"
+        if upcoming_earn:
+            msg += "Be careful buying stocks in the 'Earnings Watch' list today. A bad report can break even the strongest support level! 📉"
+        else:
+            msg += "The 'Perfect Trade' is a **Breakout** + **High Volume** + **5% Gain**. When all three hit at once, it’s a high-probability signal! 📊"
+        # Send triggers
         await self.notifier.send(msg)
-
+        wa = WhatsAppNotifier()
+        await wa.send(msg)
+        
     async def download_report(self, target_date: date):
         # 1. Define possible delimiters used by NGX staff
         delimiters = ["-", " ", "", "."]
@@ -241,6 +348,23 @@ class NGXEngine:
             print(f"DB Error: {e}")
         finally: session.close()
         return saved_count
+        
+    def detect_levels(self, symbol: str, trade_date: date):
+        session = self.Session()
+        try:
+            # We look at the last 30 trading days to find the 'range'
+            stats = session.query(
+                text("MAX(high_price) as resistance"),
+                text("MIN(low_price) as support")
+            ).from_statement(text("""
+                SELECT high_price, low_price FROM stock_prices 
+                WHERE symbol = :symbol AND trade_date < :today
+                ORDER BY trade_date DESC LIMIT 30
+            """)).params(symbol=symbol, today=trade_date).first()
+            
+            return stats # Returns (resistance, support)
+        finally:
+            session.close()
 
 if __name__ == "__main__":
     async def run_daily_sync():
