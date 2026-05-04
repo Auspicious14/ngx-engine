@@ -191,14 +191,36 @@ class NGXEngine:
             return upcoming, just_reported
         finally:
             session.close()
-            
-    async def send_daily_recap(self, breakouts, breakdowns, momentum, spikes):
+
+    def get_top_performers(self, stocks: List[StockSchema]):
+        # Filter out penny stocks or inactive ones if needed, then sort by percent_change
+        sorted_stocks = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
+        
+        gainers = sorted_stocks[:5]
+        # Filter for losers (negative change) and take the bottom 5
+        losers = [s for s in sorted_stocks if s.percent_change < 0]
+        losers = sorted(losers, key=lambda x: x.percent_change)[:5]
+        
+        return gainers, losers
+        
+    async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
         upcoming_earn, recently_reported = self.get_earnings_watch()
         today_str = datetime.now().strftime("%d %b %Y")
+        gainers, losers = self.get_top_performers(stocks)
+        upcoming_earn, recently_reported = self.get_earnings_watch()
         
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
-
+        msg += "📈 *TOP 5 GAINERS*\n"
+        
+        for s in gainers:
+            msg += f"`{s.symbol:<10} ₦{s.close_price:>6.2f}  (+{s.percent_change:>5.2f}%)`\n"
+        
+        msg += "\n📉 *TOP 5 LOSERS*\n"
+        for s in losers:
+            msg += f"`{s.symbol:<10} ₦{s.close_price:>6.2f}  ({s.percent_change:>6.2f}%)`\n"
+        msg += "━━━━━━━━━━━━━━━━\n\n"
+        
         if breakouts:
             msg += "🔓 *RESISTANCE BREAKOUTS*\n"
             msg += "_WHY: Price broke the ceiling. Buyers are in control._\n"
@@ -354,10 +376,9 @@ if __name__ == "__main__":
         engine.save(stocks)
         
         print("🔍 Analyzing Market Alerts...")
-        breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)
-        
+        breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
         print("📱 Sending Recap...")
-        await engine.send_daily_recap(breakouts, breakdowns, momentum, spikes)
+        await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
         
         if os.path.exists(pdf): os.remove(pdf)
         print("✅ Sync Complete.")
