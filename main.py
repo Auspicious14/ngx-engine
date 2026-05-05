@@ -1,25 +1,29 @@
 import os
+import json
 import asyncio
 import httpx
 import pdfplumber
 import urllib.parse
 import bs4
 from datetime import datetime, date, timedelta
-from typing import List, Optional, Tuple
+from typing import List, Optional
 from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, Float, text, Index
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from pydantic import BaseModel, field_validator
 from dotenv import load_dotenv
 
-# Load local .env for testing; GitHub Actions will use Secrets
 load_dotenv()
 
-# --- DATABASE MODELS ---
+# ---------------------------------------------------------------------------
+# DATABASE MODELS
+# ---------------------------------------------------------------------------
+
 class Base(DeclarativeBase):
     pass
 
+
 class StockPriceDB(Base):
-    __tablename__ = 'stock_prices'
+    __tablename__ = "stock_prices"
     id = Column(Integer, primary_key=True)
     symbol = Column(String(20), nullable=False)
     company_name = Column(String(255))
@@ -31,18 +35,23 @@ class StockPriceDB(Base):
     volume = Column(BigInteger)
     trade_date = Column(Date, nullable=False)
 
-    __table_args__ = (Index('uix_symbol_date', 'symbol', 'trade_date', unique=True),)
+    __table_args__ = (Index("uix_symbol_date", "symbol", "trade_date", unique=True),)
+
 
 class EarningsCalendar(Base):
-    __tablename__ = 'earnings_calendar'
+    __tablename__ = "earnings_calendar"
     id = Column(Integer, primary_key=True)
     symbol = Column(String, nullable=False)
-    period = Column(String)           
-    expected_date = Column(Date)      
-    actual_date = Column(Date)        
-    dividend_yield = Column(Float)    
+    period = Column(String)
+    expected_date = Column(Date)
+    actual_date = Column(Date)
+    dividend_yield = Column(Float)
 
-# --- DATA SCHEMAS ---
+
+# ---------------------------------------------------------------------------
+# DATA SCHEMAS
+# ---------------------------------------------------------------------------
+
 class StockSchema(BaseModel):
     symbol: str
     company_name: str
@@ -53,33 +62,43 @@ class StockSchema(BaseModel):
     percent_change: float = 0.0
     volume: int
     trade_date: date
-    # Metadata for alerts
+    # Alert metadata (not persisted)
     old_resistance: float = 0.0
     old_support: float = 0.0
     vol_increase: float = 0.0
     is_corporate_action: bool = False
 
-    @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
+    @field_validator("open_price", "high_price", "low_price", "close_price", mode="before")
     @classmethod
     def clean_currency(cls, v):
-        if not v or str(v).strip() in ["-", ""]: return 0.0
+        if not v or str(v).strip() in ["-", ""]:
+            return 0.0
         if isinstance(v, str):
-            cleaned = v.replace('₦', '').replace(',', '').strip()
-            try: return float(cleaned)
-            except ValueError: return 0.0
+            cleaned = v.replace("₦", "").replace(",", "").strip()
+            try:
+                return float(cleaned)
+            except ValueError:
+                return 0.0
         return float(v or 0)
 
-    @field_validator('volume', mode='before')
+    @field_validator("volume", mode="before")
     @classmethod
     def clean_volume(cls, v):
-        if not v or str(v).strip() in ["-", ""]: return 0
+        if not v or str(v).strip() in ["-", ""]:
+            return 0
         if isinstance(v, str):
-            cleaned = v.replace(',', '').strip()
-            try: return int(float(cleaned))
-            except ValueError: return 0
+            cleaned = v.replace(",", "").strip()
+            try:
+                return int(float(cleaned))
+            except ValueError:
+                return 0
         return int(v or 0)
 
-# --- NOTIFICATION SERVICES ---
+
+# ---------------------------------------------------------------------------
+# NOTIFICATION SERVICES
+# ---------------------------------------------------------------------------
+
 class TelegramNotifier:
     def __init__(self):
         self.token = os.getenv("TELEGRAM_TOKEN")
@@ -87,269 +106,826 @@ class TelegramNotifier:
         self.url = f"https://api.telegram.org/bot{self.token}/sendMessage"
 
     async def send(self, message: str):
-        if not self.token or not self.chat_id: return
+        if not self.token or not self.chat_id:
+            print("⚠️  Telegram config missing — skipping.")
+            return
         async with httpx.AsyncClient(timeout=15.0) as client:
             try:
-                await client.post(self.url, json={"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"})
-            except Exception as e: print(f"📡 TG Error: {e}")
-            
+                await client.post(
+                    self.url,
+                    json={"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"},
+                )
+                print("✅ Telegram sent.")
+            except Exception as e:
+                print(f"📡 Telegram Error: {e}")
+
+
 class WhatsAppNotifier:
     def __init__(self):
         self.id_instance = os.getenv("GREEN_API_ID")
         self.api_token = os.getenv("GREEN_API_TOKEN")
-        self.group_id = os.getenv("WHATSAPP_GROUP_ID") 
+        self.group_id = os.getenv("WHATSAPP_GROUP_ID")
         self.api_url = os.getenv("WHATSAPP_API_URL", "https://7107.api.greenapi.com")
-        self.base_url = f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
+        self.base_url = (
+            f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
+        )
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
-            print("⚠️ WhatsApp configuration missing.")
+            print("⚠️  WhatsApp config missing — skipping.")
             return False
-            
         payload = {"chatId": self.group_id, "message": message}
         async with httpx.AsyncClient(timeout=30.0) as client:
             try:
                 response = await client.post(self.base_url, json=payload)
-                return response.status_code == 200
+                ok = response.status_code == 200
+                print("✅ WhatsApp sent." if ok else f"⚠️  WhatsApp status: {response.status_code}")
+                return ok
             except Exception as e:
                 print(f"📡 WhatsApp Error: {e}")
                 return False
 
-# --- CORE ENGINE ---
+
+# ---------------------------------------------------------------------------
+# CORE ENGINE
+# ---------------------------------------------------------------------------
+
 class NGXEngine:
+    """
+    Download → Parse → Save → Alert pipeline for NGX daily equity data.
+
+    Download strategy (in order):
+      Stage 1 — NGX direct download redirect URLs
+      Stage 2 — doclib date-pattern PDF guessing (tries last N trading days)
+      Stage 3 — DataTables / AJAX JSON endpoint
+      Stage 4 — Full HTML scrape with cookie handshake + JS-rendered fallback
+      Stage 5 — Stooq CSV (international fallback, no geo-block)
+
+    Geo-block mitigation:
+      When running on foreign infrastructure (GitHub Actions etc.) set the
+      NG_PROXY_URL environment variable to a Nigerian residential/datacenter
+      proxy (e.g. http://user:pass@ng.proxy.com:8080).  The engine will route
+      all NGX requests through it automatically.
+    """
+
+    BASE_HEADERS = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/122.0.0.0 Safari/537.36"
+        ),
+        "Accept": (
+            "text/html,application/xhtml+xml,application/xml;"
+            "q=0.9,image/avif,image/webp,*/*;q=0.8"
+        ),
+        "Accept-Language": "en-US,en;q=0.5",
+        "Referer": "https://ngxgroup.com/",
+    }
+
     def __init__(self):
-        db_url = os.getenv("DATABASE_URL")
-        if db_url and db_url.startswith("postgres://"):
+        db_url = os.getenv("DATABASE_URL", "")
+        if db_url.startswith("postgres://"):
             db_url = db_url.replace("postgres://", "postgresql://", 1)
-        
+
         self.engine = create_engine(db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
         self.wa = WhatsAppNotifier()
         self.tg = TelegramNotifier()
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-            "Referer": "https://ngxgroup.com/"
-        }
+
+        # Optional Nigerian proxy to bypass geo-blocks on foreign CI runners
+        proxy_url = os.getenv("NG_PROXY_URL")
+        self.proxies = {"http://": proxy_url, "https://": proxy_url} if proxy_url else None
+        if self.proxies:
+            print(f"🔀 Using proxy: {proxy_url.split('@')[-1]}")  # hide credentials
+
         Base.metadata.create_all(self.engine)
 
-    async def download_report(self, target_date: date) -> Optional[str]:
-        """Stage 1: Redirects | Stage 2: Guessing | Stage 3: HTML Scrape"""
-        async with httpx.AsyncClient(timeout=40.0, follow_redirects=True, headers=self.headers) as client:
-            
-            # --- STAGE 1: LATEST REDIRECTS ---
-            latest_urls = [
-                "https://ngxgroup.com/ngx-download/daily-official-list-equities/",
-                "https://ngxgroup.com/ngx-download/market-data-pricelist-2/"
-            ]
-            for url in latest_urls:
-                try:
-                    res = await client.get(url)
-                    if res.status_code == 200 and b"%PDF" in res.content[:4]:
-                        path = f"ngx_latest_{target_date}.pdf"
-                        with open(path, "wb") as f: f.write(res.content)
-                        return path
-                except Exception: continue
+    # ------------------------------------------------------------------
+    # HELPERS
+    # ------------------------------------------------------------------
 
-            # --- STAGE 2: DATE-STRING GUESSING ---
-            delimiters = ["-", " ", ".", ""]
+    def _client(self, extra_headers: Optional[dict] = None, timeout: float = 40.0) -> httpx.AsyncClient:
+        headers = {**self.BASE_HEADERS, **(extra_headers or {})}
+        return httpx.AsyncClient(
+            timeout=timeout,
+            follow_redirects=True,
+            headers=headers,
+            proxies=self.proxies,
+        )
+
+    @staticmethod
+    def _is_pdf(content: bytes) -> bool:
+        return content[:4] == b"%PDF"
+
+    @staticmethod
+    def _trading_days_back(start: date, n: int = 7) -> List[date]:
+        """Return up to n past trading days (Mon–Fri) starting from start (inclusive)."""
+        days, cursor = [], start
+        while len(days) < n:
+            if cursor.weekday() < 5:  # 0=Mon … 4=Fri
+                days.append(cursor)
+            cursor -= timedelta(days=1)
+        return days
+
+    # ------------------------------------------------------------------
+    # STAGE 1 — Direct redirect URLs
+    # ------------------------------------------------------------------
+
+    async def _stage1_redirect(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
+        urls = [
+            "https://ngxgroup.com/ngx-download/daily-official-list-equities/",
+            "https://ngxgroup.com/ngx-download/market-data-pricelist-2/",
+        ]
+        for url in urls:
+            try:
+                res = await client.get(url)
+                if res.status_code == 200 and self._is_pdf(res.content):
+                    path = f"ngx_stage1_{target_date}.pdf"
+                    with open(path, "wb") as f:
+                        f.write(res.content)
+                    print(f"✅ Stage 1 hit: {url}")
+                    return path
+                else:
+                    print(f"Stage 1 miss ({res.status_code}): {url}")
+            except Exception as e:
+                print(f"Stage 1 error: {e}")
+        return None
+
+    # ------------------------------------------------------------------
+    # STAGE 2 — doclib date-pattern PDF guessing
+    # ------------------------------------------------------------------
+
+    async def _stage2_pdf_guess(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
+        candidate_dates = self._trading_days_back(target_date, n=5)
+        delimiters = ["-", " ", ".", ""]
+        templates = [
+            "Daily%20Official%20List%20-%20Equities%20for%20{date}.pdf",
+            "DAILY%20OFFICIAL%20LIST%20-%20EQUITIES%20FOR%20{date}.pdf",
+            "DAILY%20SUMMARY%20FOR%20{date}.pdf",
+            "Daily%20Summary%20for%20{date}.pdf",
+            "Equities{date}.pdf",
+        ]
+        for d in candidate_dates:
             for sep in delimiters:
-                date_str = target_date.strftime(f"%d{sep}%m{sep}%Y")
+                date_str = d.strftime(f"%d{sep}%m{sep}%Y")
                 encoded = urllib.parse.quote(date_str)
-                patterns = [
-                    f"Daily%20Official%20List%20-%20Equities%20for%20{encoded}.pdf",
-                    f"DAILY%20SUMMARY%20FOR%20{encoded}.pdf",
-                    f"Daily%20Summary%20for%20{encoded}.pdf"
-                ]
-                for p in patterns:
-                    url = f"https://doclib.ngxgroup.com/DownloadsContent/{p}"
+                for tmpl in templates:
+                    filename = tmpl.format(date=encoded)
+                    url = f"https://doclib.ngxgroup.com/DownloadsContent/{filename}"
                     try:
                         res = await client.get(url)
-                        if res.status_code == 200 and b"%PDF" in res.content[:4]:
-                            path = f"ngx_guess_{target_date}.pdf"
-                            with open(path, "wb") as f: f.write(res.content)
+                        if res.status_code == 200 and self._is_pdf(res.content):
+                            path = f"ngx_stage2_{d}.pdf"
+                            with open(path, "wb") as f:
+                                f.write(res.content)
+                            print(f"✅ Stage 2 hit ({d}): {url}")
                             return path
-                    except Exception: continue
-
-            # --- STAGE 3: HTML WEB SCRAPE (RELIABLE FAILOVER) ---
-            print("🌐 PDF fallback failed. Attempting HTML scrape...")
-            try:
-                web_url = "https://ngxgroup.com/exchange/data/equities-price-list/"
-                res = await client.get(web_url)
-                if res.status_code == 200 and "table" in res.text:
-                    path = f"ngx_scrape_{target_date}.html"
-                    with open(path, "w", encoding="utf-8") as f: f.write(res.text)
-                    return path
-            except Exception as e: print(f"🌐 Scrape Error: {e}")
-
+                    except Exception:
+                        continue
+        print("Stage 2: no PDF match found.")
         return None
+
+    # ------------------------------------------------------------------
+    # STAGE 3 — DataTables / AJAX JSON endpoint
+    # ------------------------------------------------------------------
+
+    async def _stage3_ajax(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
+        """
+        The NGX equities page often loads data via a DataTables server-side
+        AJAX call. Try several known endpoint patterns.
+        """
+        ajax_headers = {
+            **self.BASE_HEADERS,
+            "X-Requested-With": "XMLHttpRequest",
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+        }
+        endpoints = [
+            # DataTables draw requests
+            "https://ngxgroup.com/exchange/data/equities-price-list/?draw=1&columns[0][data]=symbol&start=0&length=1000",
+            "https://ngxgroup.com/exchange/data/equities-price-list/?draw=1&start=0&length=500",
+            # WordPress REST / custom routes
+            "https://ngxgroup.com/wp-json/ngx/v1/equities",
+            "https://ngxgroup.com/wp-json/ngx/v1/market-data",
+            # doclib REST API
+            "https://doclib.ngxgroup.com/REST/api/operations/getequitiesprices",
+            "https://doclib.ngxgroup.com/REST/api/operations/getsecurities",
+        ]
+        for url in endpoints:
+            try:
+                res = await client.get(url, headers=ajax_headers)
+                if res.status_code != 200:
+                    continue
+                ct = res.headers.get("content-type", "")
+                if "json" not in ct and not res.text.strip().startswith("{"):
+                    continue
+                data = res.json()
+                # DataTables wraps rows in "data" key
+                rows = data.get("data") or data.get("aaData") or []
+                if rows:
+                    path = f"ngx_stage3_{target_date}.json"
+                    with open(path, "w", encoding="utf-8") as f:
+                        json.dump({"data": rows}, f)
+                    print(f"✅ Stage 3 AJAX hit: {url} ({len(rows)} rows)")
+                    return path
+            except Exception as e:
+                print(f"Stage 3 error [{url}]: {e}")
+        print("Stage 3: no AJAX endpoint returned data.")
+        return None
+
+    # ------------------------------------------------------------------
+    # STAGE 4 — HTML scrape with cookie handshake
+    # ------------------------------------------------------------------
+
+    async def _stage4_html_scrape(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
+        """
+        Perform a warm-up GET on the homepage to collect Cloudflare / session
+        cookies, then request the price list page. Also tries the NGX Group
+        investor-relations route which sometimes has a static table.
+        """
+        scrape_urls = [
+            "https://ngxgroup.com/exchange/data/equities-price-list/",
+            "https://ngxgroup.com/ir/equities-market/",
+            "https://www.ngxgroup.com/exchange/data/equities-price-list/",
+        ]
+        try:
+            # Warm-up: collect cookies
+            warmup = await client.get("https://ngxgroup.com/")
+            cookies = dict(warmup.cookies)
+            print(f"Stage 4: warm-up {warmup.status_code}, cookies: {list(cookies.keys())}")
+        except Exception as e:
+            print(f"Stage 4 warm-up error: {e}")
+            cookies = {}
+
+        for url in scrape_urls:
+            try:
+                res = await client.get(url, cookies=cookies)
+                print(f"Stage 4 [{res.status_code}]: {url}")
+                if res.status_code == 200 and "<table" in res.text:
+                    # Quick sanity: look for at least one uppercase ticker-like token
+                    soup = bs4.BeautifulSoup(res.text, "html.parser")
+                    tables = soup.find_all("table")
+                    has_data = any(len(t.find_all("tr")) > 5 for t in tables)
+                    if has_data:
+                        path = f"ngx_stage4_{target_date}.html"
+                        with open(path, "w", encoding="utf-8") as f:
+                            f.write(res.text)
+                        print(f"✅ Stage 4 HTML hit: {url}")
+                        return path
+                    else:
+                        print(f"Stage 4: page loaded but table has <5 rows (JS-rendered?)")
+            except Exception as e:
+                print(f"Stage 4 error [{url}]: {e}")
+
+        print("Stage 4: no usable HTML found.")
+        return None
+
+    # ------------------------------------------------------------------
+    # STAGE 5 — Stooq CSV fallback (no geo-block, free)
+    # ------------------------------------------------------------------
+
+    async def _stage5_stooq_csv(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
+        """
+        Stooq provides Nigerian stock data as CSV and is not geo-blocked.
+        Downloads individual tickers; uses a curated top-50 NGX list.
+        This is a last-resort fallback that won't have full market coverage.
+        """
+        # Top NGX tickers — extend as needed
+        TOP_NGX = [
+            "DANGCEM", "MTNN", "AIRTELAFRI", "GTCO", "ZENITHBANK",
+            "ACCESSCORP", "FBNH", "UBA", "STANBIC", "TRANSCORP",
+            "SEPLAT", "OANDO", "NESTLE", "UNILEVER", "NB",
+            "BUACEMENT", "WAPCO", "FLOURMILL", "PRESCO", "OKOMUOIL",
+            "FIDELITYBK", "FCMB", "STERLING", "JAIZBANK", "TRIDENT",
+            "CHAMS", "CAVERTON", "CONOIL", "TOTALENERGIES", "ETERNA",
+        ]
+        rows = []
+        print(f"Stage 5: Stooq CSV fallback for {len(TOP_NGX)} tickers…")
+        for symbol in TOP_NGX:
+            url = (
+                f"https://stooq.com/q/d/l/?s={symbol.lower()}.ng"
+                f"&d1={target_date.strftime('%Y%m%d')}"
+                f"&d2={target_date.strftime('%Y%m%d')}&i=d"
+            )
+            try:
+                res = await client.get(url)
+                if res.status_code == 200 and "Date" in res.text:
+                    lines = res.text.strip().splitlines()
+                    if len(lines) >= 2:
+                        # CSV: Date,Open,High,Low,Close,Volume
+                        parts = lines[1].split(",")
+                        if len(parts) >= 5:
+                            rows.append(
+                                {
+                                    "symbol": symbol,
+                                    "company_name": symbol,
+                                    "open": parts[1],
+                                    "high": parts[2],
+                                    "low": parts[3],
+                                    "close": parts[4],
+                                    "volume": parts[5] if len(parts) > 5 else "0",
+                                }
+                            )
+            except Exception:
+                continue
+
+        if rows:
+            path = f"ngx_stage5_{target_date}.json"
+            with open(path, "w") as f:
+                json.dump({"stooq": rows}, f)
+            print(f"✅ Stage 5 Stooq: {len(rows)} tickers retrieved.")
+            return path
+
+        print("Stage 5: Stooq returned no data.")
+        return None
+
+    # ------------------------------------------------------------------
+    # ORCHESTRATOR
+    # ------------------------------------------------------------------
+
+    async def download_report(self, target_date: date) -> Optional[str]:
+        async with self._client() as client:
+            path = await self._stage1_redirect(client, target_date)
+            if path:
+                return path
+
+            path = await self._stage2_pdf_guess(client, target_date)
+            if path:
+                return path
+
+            path = await self._stage3_ajax(client, target_date)
+            if path:
+                return path
+
+            path = await self._stage4_html_scrape(client, target_date)
+            if path:
+                return path
+
+            path = await self._stage5_stooq_csv(client, target_date)
+            if path:
+                return path
+
+        print("🛑 All download stages exhausted.")
+        return None
+
+    # ------------------------------------------------------------------
+    # PARSERS
+    # ------------------------------------------------------------------
 
     def parse_source(self, path: str, trade_date: date) -> List[StockSchema]:
         if path.endswith(".pdf"):
-            return self.parse_pdf(path, trade_date)
+            return self._parse_pdf(path, trade_date)
         elif path.endswith(".html"):
-            return self.parse_html(path, trade_date)
+            return self._parse_html(path, trade_date)
+        elif path.endswith(".json"):
+            return self._parse_json(path, trade_date)
+        print(f"⚠️  Unknown source format: {path}")
         return []
 
-    def parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
+    def _parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
         data = []
         try:
             with pdfplumber.open(path) as pdf:
                 for page in pdf.pages:
                     table = page.extract_table()
-                    if not table: continue
+                    if not table:
+                        continue
+
+                    # Locate header row
                     header_idx = -1
                     for i, row in enumerate(table[:10]):
-                        if row and any(x and "Symbol" in str(x) for x in row):
+                        if row and any("Symbol" in str(x) for x in row if x):
                             header_idx = i
                             break
-                    if header_idx == -1: continue
+                    if header_idx == -1:
+                        continue
 
-                    for row in table[header_idx + 1:]:
-                        if not row or len(row) < 10 or not row[0]: continue
+                    for row in table[header_idx + 1 :]:
+                        if not row or len(row) < 10 or not row[0]:
+                            continue
                         symbol = str(row[0]).strip()
-                        if not symbol.isupper() or " " in symbol: continue
+                        if not symbol.isupper() or " " in symbol:
+                            continue
                         close_p = row[5]
-                        data.append(StockSchema(
-                            symbol=symbol, company_name=row[1],
-                            open_price=row[3] or close_p, high_price=close_p, 
-                            low_price=close_p, close_price=close_p,
-                            volume=row[11] if len(row) > 11 else row[-1], 
-                            trade_date=trade_date
-                        ))
-        except Exception as e: print(f"PDF Parse Error: {e}")
+                        try:
+                            data.append(
+                                StockSchema(
+                                    symbol=symbol,
+                                    company_name=str(row[1] or "").strip(),
+                                    open_price=row[3] or close_p,
+                                    high_price=row[4] or close_p,
+                                    low_price=row[5] or close_p,
+                                    close_price=close_p,
+                                    volume=row[11] if len(row) > 11 else row[-1],
+                                    trade_date=trade_date,
+                                )
+                            )
+                        except Exception:
+                            continue
+        except Exception as e:
+            print(f"PDF Parse Error: {e}")
+        print(f"PDF parsed: {len(data)} stocks.")
         return data
 
-    def parse_html(self, path: str, trade_date: date) -> List[StockSchema]:
+    def _parse_html(self, path: str, trade_date: date) -> List[StockSchema]:
         stocks = []
         try:
             with open(path, "r", encoding="utf-8") as f:
                 soup = bs4.BeautifulSoup(f.read(), "html.parser")
-            table = soup.find("table", {"id": "table_1"}) or soup.find("table")
-            if not table: return []
 
-            for row in table.find_all("tr")[1:]:
+            # Try multiple table selectors — NGX changes them occasionally
+            table = (
+                soup.find("table", {"id": "table_1"})
+                or soup.find("table", {"id": "DataTables_Table_0"})
+                or soup.find("table", class_=lambda c: c and "dataTable" in c)
+                or soup.find("table")
+            )
+            if not table:
+                print("HTML Parse: no table found.")
+                return []
+
+            rows = table.find_all("tr")
+            print(f"HTML Parse: found table with {len(rows)} rows.")
+
+            # Auto-detect header row and column positions
+            col_map = {}
+            for row in rows[:5]:
+                headers = [th.get_text(strip=True).lower() for th in row.find_all(["th", "td"])]
+                if "symbol" in headers or "ticker" in headers:
+                    for i, h in enumerate(headers):
+                        if "symbol" in h or "ticker" in h:
+                            col_map["symbol"] = i
+                        elif "company" in h or "name" in h or "security" in h:
+                            col_map["company"] = i
+                        elif h in ("open",):
+                            col_map["open"] = i
+                        elif h in ("high",):
+                            col_map["high"] = i
+                        elif h in ("low",):
+                            col_map["low"] = i
+                        elif "close" in h or "last" in h or "price" in h:
+                            col_map["close"] = i
+                        elif "vol" in h:
+                            col_map["volume"] = i
+                    break
+
+            # Fall back to positional defaults if header detection failed
+            if not col_map:
+                col_map = {
+                    "symbol": 0, "company": 1,
+                    "open": 3, "high": 4, "low": 5, "close": 6, "volume": 10,
+                }
+                print("HTML Parse: using positional column defaults.")
+
+            for row in rows[1:]:
                 cols = row.find_all("td")
-                if len(cols) < 10: continue
-                symbol = cols[0].get_text(strip=True)
-                if not symbol.isupper(): continue
-                stocks.append(StockSchema(
-                    symbol=symbol, company_name=cols[1].get_text(strip=True),
-                    open_price=cols[3].get_text(strip=True),
-                    high_price=cols[4].get_text(strip=True),
-                    low_price=cols[5].get_text(strip=True),
-                    close_price=cols[6].get_text(strip=True),
-                    volume=cols[10].get_text(strip=True),
-                    trade_date=trade_date
-                ))
-        except Exception as e: print(f"HTML Parse Error: {e}")
+                if len(cols) < max(col_map.values()) + 1:
+                    continue
+                symbol = cols[col_map["symbol"]].get_text(strip=True)
+                # Accept tickers with digits and hyphens (e.g. ETI-PLCA, TOTAL)
+                if not symbol or not any(c.isalpha() for c in symbol) or symbol[0].islower():
+                    continue
+                try:
+                    stocks.append(
+                        StockSchema(
+                            symbol=symbol,
+                            company_name=cols[col_map.get("company", 1)].get_text(strip=True),
+                            open_price=cols[col_map.get("open", 3)].get_text(strip=True),
+                            high_price=cols[col_map.get("high", 4)].get_text(strip=True),
+                            low_price=cols[col_map.get("low", 5)].get_text(strip=True),
+                            close_price=cols[col_map.get("close", 6)].get_text(strip=True),
+                            volume=cols[col_map.get("volume", 10)].get_text(strip=True),
+                            trade_date=trade_date,
+                        )
+                    )
+                except Exception:
+                    continue
+        except Exception as e:
+            print(f"HTML Parse Error: {e}")
+        print(f"HTML parsed: {len(stocks)} stocks.")
         return stocks
+
+    def _parse_json(self, path: str, trade_date: date) -> List[StockSchema]:
+        """
+        Handles two JSON shapes:
+          - DataTables AJAX: {"data": [[col0, col1, ...], ...]}
+          - Stooq fallback:  {"stooq": [{"symbol":…, "open":…, …}, …]}
+        """
+        stocks = []
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+
+            # --- Stooq shape ---
+            if "stooq" in payload:
+                for row in payload["stooq"]:
+                    try:
+                        stocks.append(
+                            StockSchema(
+                                symbol=row["symbol"],
+                                company_name=row.get("company_name", row["symbol"]),
+                                open_price=row.get("open", 0),
+                                high_price=row.get("high", 0),
+                                low_price=row.get("low", 0),
+                                close_price=row.get("close", 0),
+                                volume=row.get("volume", 0),
+                                trade_date=trade_date,
+                            )
+                        )
+                    except Exception:
+                        continue
+                print(f"JSON (Stooq) parsed: {len(stocks)} stocks.")
+                return stocks
+
+            # --- DataTables AJAX shape ---
+            rows = payload.get("data") or payload.get("aaData") or []
+            if not rows:
+                print("JSON Parse: no rows found.")
+                return []
+
+            # Detect if rows are dicts or lists
+            sample = rows[0]
+            if isinstance(sample, dict):
+                for row in rows:
+                    try:
+                        # Try common key names returned by NGX DataTables
+                        symbol = (
+                            row.get("symbol")
+                            or row.get("Symbol")
+                            or row.get("ticker")
+                            or ""
+                        ).strip()
+                        if not symbol:
+                            continue
+                        close_p = (
+                            row.get("close_price")
+                            or row.get("ClosingPrice")
+                            or row.get("close")
+                            or row.get("last_price")
+                            or 0
+                        )
+                        stocks.append(
+                            StockSchema(
+                                symbol=symbol,
+                                company_name=row.get("company_name") or row.get("CompanyName") or symbol,
+                                open_price=row.get("open_price") or row.get("OpeningPrice") or close_p,
+                                high_price=row.get("high_price") or row.get("HighPrice") or close_p,
+                                low_price=row.get("low_price") or row.get("LowPrice") or close_p,
+                                close_price=close_p,
+                                volume=row.get("volume") or row.get("Volume") or 0,
+                                trade_date=trade_date,
+                            )
+                        )
+                    except Exception:
+                        continue
+            elif isinstance(sample, list):
+                # Positional: [symbol, company, ?, open, high, low, close, ?, ?, ?, ?, volume, …]
+                for row in rows:
+                    if len(row) < 10 or not row[0]:
+                        continue
+                    symbol = str(row[0]).strip()
+                    if not symbol.isupper():
+                        continue
+                    close_p = row[6] if len(row) > 6 else row[4]
+                    try:
+                        stocks.append(
+                            StockSchema(
+                                symbol=symbol,
+                                company_name=str(row[1] or "").strip(),
+                                open_price=row[3] or close_p,
+                                high_price=row[4] or close_p,
+                                low_price=row[5] or close_p,
+                                close_price=close_p,
+                                volume=row[11] if len(row) > 11 else row[-1],
+                                trade_date=trade_date,
+                            )
+                        )
+                    except Exception:
+                        continue
+
+        except Exception as e:
+            print(f"JSON Parse Error: {e}")
+
+        print(f"JSON (AJAX) parsed: {len(stocks)} stocks.")
+        return stocks
+
+    # ------------------------------------------------------------------
+    # PERSISTENCE
+    # ------------------------------------------------------------------
 
     def save(self, stocks: List[StockSchema]):
         session = self.Session()
+        saved = 0
         try:
             for stock in stocks:
-                prev = session.query(StockPriceDB.close_price).filter(
-                    StockPriceDB.symbol == stock.symbol, StockPriceDB.trade_date < stock.trade_date
-                ).order_by(StockPriceDB.trade_date.desc()).first()
-
+                # Calculate percent change vs previous close
+                prev = (
+                    session.query(StockPriceDB.close_price)
+                    .filter(
+                        StockPriceDB.symbol == stock.symbol,
+                        StockPriceDB.trade_date < stock.trade_date,
+                    )
+                    .order_by(StockPriceDB.trade_date.desc())
+                    .first()
+                )
                 if prev and float(prev[0]) > 0:
-                    stock.percent_change = ((stock.close_price - float(prev[0])) / float(prev[0])) * 100
+                    stock.percent_change = (
+                        (stock.close_price - float(prev[0])) / float(prev[0])
+                    ) * 100
 
                 stmt = text("""
-                    INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
-                    VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
-                    ON CONFLICT (symbol, trade_date) DO UPDATE SET 
-                    close_price = EXCLUDED.close_price, percent_change = EXCLUDED.percent_change, volume = EXCLUDED.volume;
+                    INSERT INTO stock_prices
+                        (symbol, company_name, open_price, high_price, low_price,
+                         close_price, percent_change, volume, trade_date)
+                    VALUES
+                        (:symbol, :company_name, :open_price, :high_price, :low_price,
+                         :close_price, :percent_change, :volume, :trade_date)
+                    ON CONFLICT (symbol, trade_date) DO UPDATE SET
+                        close_price    = EXCLUDED.close_price,
+                        open_price     = EXCLUDED.open_price,
+                        high_price     = EXCLUDED.high_price,
+                        low_price      = EXCLUDED.low_price,
+                        percent_change = EXCLUDED.percent_change,
+                        volume         = EXCLUDED.volume;
                 """)
-                session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action'}))
+                session.execute(
+                    stmt,
+                    stock.model_dump(
+                        exclude={"old_resistance", "old_support", "vol_increase", "is_corporate_action"}
+                    ),
+                )
+                saved += 1
+
             session.commit()
+            print(f"💾 Saved {saved} stocks to DB.")
         except Exception as e:
             session.rollback()
             print(f"DB Error: {e}")
-        finally: session.close()
+        finally:
+            session.close()
+
+    # ------------------------------------------------------------------
+    # MARKET ALERTS
+    # ------------------------------------------------------------------
 
     def get_market_alerts(self, stocks: List[StockSchema]):
         session = self.Session()
         breakouts, breakdowns, momentum, volume_spikes = [], [], [], []
         try:
             for stock in stocks:
+                # Flag likely corporate actions (bonus, rights, etc.)
                 stock.is_corporate_action = abs(stock.percent_change) > 10.5
-                levels = session.query(text("MAX(high_price)"), text("MIN(low_price)")).from_statement(text("""
-                    SELECT high_price, low_price FROM stock_prices 
-                    WHERE symbol = :symbol AND trade_date < :today
-                    ORDER BY trade_date DESC LIMIT 30
-                """)).params(symbol=stock.symbol, today=stock.trade_date).first()
 
-                if levels:
-                    res, sup = (float(levels[0]) if levels[0] else 0), (float(levels[1]) if levels[1] else 0)
+                # 30-day resistance / support
+                levels = session.execute(
+                    text("""
+                        SELECT MAX(high_price), MIN(low_price)
+                        FROM stock_prices
+                        WHERE symbol = :symbol
+                          AND trade_date < :today
+                        ORDER BY trade_date DESC
+                        LIMIT 30
+                    """),
+                    {"symbol": stock.symbol, "today": stock.trade_date},
+                ).first()
+
+                if levels and levels[0] and levels[1]:
+                    res = float(levels[0])
+                    sup = float(levels[1])
+
                     if res > 0 and stock.close_price > res:
                         stock.old_resistance = res
                         breakouts.append(stock)
+
                     if sup > 0 and stock.close_price < sup and not stock.is_corporate_action:
                         stock.old_support = sup
                         breakdowns.append(stock)
 
+                # Strong momentum (≥5 % gain, not a corporate action)
                 if stock.percent_change >= 5.0 and not stock.is_corporate_action:
                     momentum.append(stock)
 
-                avg_vol = session.execute(text("""
-                    SELECT AVG(volume) FROM (
-                        SELECT volume FROM stock_prices 
-                        WHERE symbol = :symbol AND trade_date < :today
-                        ORDER BY trade_date DESC LIMIT 10
-                    ) as subquery
-                """), {"symbol": stock.symbol, "today": stock.trade_date}).scalar()
+                # Volume spike (>2× 10-day average)
+                avg_vol = session.execute(
+                    text("""
+                        SELECT AVG(volume) FROM (
+                            SELECT volume FROM stock_prices
+                            WHERE symbol = :symbol AND trade_date < :today
+                            ORDER BY trade_date DESC LIMIT 10
+                        ) sub
+                    """),
+                    {"symbol": stock.symbol, "today": stock.trade_date},
+                ).scalar()
 
-                if avg_vol and stock.volume > (float(avg_vol) * 2):
+                if avg_vol and stock.volume > float(avg_vol) * 2:
                     stock.vol_increase = round(stock.volume / float(avg_vol), 1)
                     volume_spikes.append(stock)
-            return breakouts, breakdowns, momentum, volume_spikes
-        finally: session.close()
 
-    async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
+            return breakouts, breakdowns, momentum, volume_spikes
+        finally:
+            session.close()
+
+    # ------------------------------------------------------------------
+    # NOTIFICATIONS
+    # ------------------------------------------------------------------
+
+    async def send_daily_recap(
+        self,
+        stocks: List[StockSchema],
+        breakouts: List[StockSchema],
+        breakdowns: List[StockSchema],
+        momentum: List[StockSchema],
+        spikes: List[StockSchema],
+    ):
         sorted_stocks = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
-        gainers, losers = sorted_stocks[:5], sorted(stocks, key=lambda x: x.percent_change)[:5]
-        
-        msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({datetime.now().strftime('%d %b %Y')})\n"
-        msg += "━━━━━━━━━━━━━━━━\n\n"
+        gainers = sorted_stocks[:5]
+        losers = sorted(stocks, key=lambda x: x.percent_change)[:5]
+
+        msg = (
+            f"🚀 *NGX ALPHA INTELLIGENCE* — {datetime.now().strftime('%d %b %Y')}\n"
+            f"━━━━━━━━━━━━━━━━\n\n"
+        )
+
         msg += "📈 *TOP GAINERS*\n"
-        for s in gainers: msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%)\n"
-        
+        for s in gainers:
+            msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%) ₦{s.close_price:.2f}\n"
+
         msg += "\n📉 *TOP LOSERS*\n"
-        for s in losers: msg += f"• *{s.symbol}* ({s.percent_change:.2f}%)\n"
-        
+        for s in losers:
+            msg += f"• *{s.symbol}* ({s.percent_change:.2f}%) ₦{s.close_price:.2f}\n"
+
         if breakouts:
-            msg += "\n🔓 *BREAKOUTS*\n"
-            for s in breakouts[:3]: msg += f"• *{s.symbol}* (Broke ₦{s.old_resistance})\n"
+            msg += "\n🔓 *RESISTANCE BREAKOUTS*\n"
+            for s in breakouts[:3]:
+                msg += f"• *{s.symbol}* broke ₦{s.old_resistance:.2f} → ₦{s.close_price:.2f}\n"
+
+        if breakdowns:
+            msg += "\n🔻 *SUPPORT BREAKDOWNS*\n"
+            for s in breakdowns[:3]:
+                msg += f"• *{s.symbol}* fell below ₦{s.old_support:.2f} → ₦{s.close_price:.2f}\n"
+
+        if momentum:
+            msg += "\n⚡ *MOMENTUM MOVERS (≥5%)*\n"
+            for s in momentum[:3]:
+                msg += f"• *{s.symbol}* +{s.percent_change:.2f}%\n"
 
         if spikes:
             msg += "\n🔊 *VOLUME SPIKES*\n"
-            for s in spikes[:3]: msg += f"• *{s.symbol}* ({s.vol_increase}x Vol)\n"
+            for s in spikes[:3]:
+                msg += f"• *{s.symbol}* {s.vol_increase}× avg vol\n"
 
-        msg += "\n💡 *TIP:* Breakout + Volume = Entry. 📊"
-        await self.tg.send(msg)
-        await self.wa.send(msg)
+        msg += f"\n📊 *{len(stocks)} stocks* processed today.\n"
+        msg += "💡 *TIP:* Breakout + Volume = Entry signal. Do your own research."
 
-# --- EXECUTION ---
+        await asyncio.gather(
+            self.tg.send(msg),
+            self.wa.send(msg),
+        )
+
+
+# ---------------------------------------------------------------------------
+# ENTRY POINT
+# ---------------------------------------------------------------------------
+
+async def run():
+    engine = NGXEngine()
+    today = datetime.now().date()
+
+    # Skip weekends — NGX doesn't trade Sat/Sun
+    if today.weekday() >= 5:
+        print(f"📅 {today} is a weekend. No NGX trading. Exiting.")
+        return
+
+    print(f"\n📊 NGX sync starting for {today}…")
+    source_path = await engine.download_report(today)
+
+    if not source_path:
+        msg = f"🛑 NGX SYNC FAILED ({today}) — all download stages exhausted."
+        print(msg)
+        # Still notify so you know it happened
+        await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
+        return
+
+    print(f"📂 Source: {source_path}")
+    stocks = engine.parse_source(source_path, today)
+
+    # Clean up temp file
+    try:
+        if os.path.exists(source_path):
+            os.remove(source_path)
+    except Exception:
+        pass
+
+    if not stocks:
+        msg = f"🛑 NGX PARSE FAILED ({today}) — source downloaded but no stocks parsed."
+        print(msg)
+        await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
+        return
+
+    engine.save(stocks)
+    breakouts, breakdowns, momentum_movers, spikes = engine.get_market_alerts(stocks)
+    await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum_movers, spikes)
+    print(f"✅ Done. {len(stocks)} stocks processed.")
+
+
 if __name__ == "__main__":
-    async def run():
-        engine = NGXEngine()
-        today = datetime.now().date()
-        source_path = await engine.download_report(today)
-        
-        if not source_path:
-            print("🛑 No source found.")
-            return
-
-        stocks = engine.parse_source(source_path, today)
-        if stocks:
-            engine.save(stocks)
-            alerts = engine.get_market_alerts(stocks)
-            await engine.send_daily_recap(stocks, *alerts)
-            if os.path.exists(source_path): os.remove(source_path)
-            print(f"✅ Processed {len(stocks)} stocks.")
-        else:
-            print("🛑 Parsing failed.")
-
     asyncio.run(run())
