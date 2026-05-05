@@ -5,3 +5,5 @@ psycopg2-binary
 sqlalchemy>=2.0.0
 python-dotenv
 pydantic>=2.0.0
+beautifulsoup4
+lxml
