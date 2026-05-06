@@ -195,8 +195,8 @@ class NGXEngine:
         # Optional Nigerian proxy to bypass geo-blocks on foreign CI runners
         proxy_url = os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY")
         # self.proxies = {"http://": proxy_url, "https://": proxy_url} if proxy_url else None
-        if self.proxies:
-            print(f"🔀 Using proxy: {proxy_url.split('@')[-1]}")  # hide credentials
+        if proxy_url:
+            print(f"🌍 Proxy configured: {proxy_url}")  
 
         Base.metadata.create_all(self.engine)
 
