@@ -2,10 +2,18 @@ name: NGX Daily Ingestion
 
 on:
   schedule:
-    # Runs Monday to Friday at 17:30 WAT (Lagos Time)
-    - cron: '30 16 * * 1-5'
+    # Primary run: Mon-Fri at 6:30 PM WAT (Lagos Time)
+    - cron: '30 17 * * 1-5'
   workflow_dispatch: 
     inputs:
+      target_date:
+        description: 'Date to fetch (YYYY-MM-DD), defaults to today'
+        required: false
+        default: ''
+      is_retry:
+        description: 'Whether this is a morning retry run'
+        required: false
+        default: 'false'
       run_backfill:
         description: 'Run 45-day historical backfill (crawler.py)?'
         required: true
@@ -15,7 +23,6 @@ on:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -36,19 +43,18 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Keep these if you still use them in your code
-          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
-          WHATSAPP_API_KEY: ${{ secrets.WHATSAPP_API_KEY }}
+          WHATSAPP_GROUP_ID: ${{ secrets.WHATSAPP_GROUP_ID }}
           GREEN_API_ID: ${{ secrets.GREEN_API_ID }}
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
-          WHATSAPP_GROUP_ID: ${{ secrets.WHATSAPP_GROUP_ID }}
-          HTTP_PROXY: ${{ secrets.NG_PROXY_URL }}
-          HTTPS_PROXY: ${{ secrets.NG_PROXY_URL }}
+          NG_PROXY_URL: ${{ secrets.NG_PROXY_URL }}
+          # New inputs for retry logic
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+          INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
+          INPUT_IS_RETRY: ${{ github.event.inputs.is_retry }}
         run: |
           if [ "${{ github.event.inputs.run_backfill }}" == "true" ]; then
-            echo "🚀 Starting 45-day backfill..."
             python crawler.py
           else
-            echo "📊 Running daily sync..."
             python main.py
           fi
