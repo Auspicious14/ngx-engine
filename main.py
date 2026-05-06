@@ -15,6 +15,62 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ---------------------------------------------------------------------------
+# HELPERS — called before any httpx.AsyncClient is constructed
+# ---------------------------------------------------------------------------
+
+def _clean_env(key: str) -> Optional[str]:
+    """
+    Read an environment variable and strip ALL whitespace / non-printable
+    characters that GitHub Actions sometimes appends to secret values.
+    Returns None if the result is empty.
+    """
+    val = (os.getenv(key) or "").strip()
+    val = "".join(c for c in val if c.isprintable())
+    return val or None
+
+
+def _get_proxy() -> Optional[str]:
+    """
+    Return a clean proxy URL, or None.
+    Only accepts values that start with a real URL scheme.
+    """
+    raw = (
+        _clean_env("NG_PROXY_URL")
+        or _clean_env("HTTP_PROXY")
+        or _clean_env("HTTPS_PROXY")
+    )
+    if raw and raw.startswith(("http://", "https://", "socks5://")):
+        return raw
+    return None
+
+
+def _make_client(
+    *,
+    proxy: Optional[str] = None,
+    extra_headers: Optional[dict] = None,
+    timeout: float = 40.0,
+    base_headers: Optional[dict] = None,
+) -> httpx.AsyncClient:
+    """
+    Central factory for ALL httpx.AsyncClient instances.
+
+    trust_env=False  — prevents httpx from reading HTTP_PROXY / HTTPS_PROXY
+                       from the OS environment on its own. Without this, any
+                       client (including Telegram/WhatsApp) picks up the proxy
+                       env var and crashes on its embedded newline.
+    proxy=           — httpx >= 0.28 spelling; None is safe.
+    """
+    headers = {**(base_headers or {}), **(extra_headers or {})}
+    return httpx.AsyncClient(
+        timeout=timeout,
+        follow_redirects=True,
+        headers=headers or None,
+        proxy=proxy,
+        trust_env=False,   # ← key fix: no env-var bleed-in
+    )
+
+
+# ---------------------------------------------------------------------------
 # DATABASE MODELS
 # ---------------------------------------------------------------------------
 
@@ -24,27 +80,27 @@ class Base(DeclarativeBase):
 
 class StockPriceDB(Base):
     __tablename__ = "stock_prices"
-    id = Column(Integer, primary_key=True)
-    symbol = Column(String(20), nullable=False)
-    company_name = Column(String(255))
-    open_price = Column(Numeric(10, 2))
-    high_price = Column(Numeric(10, 2))
-    low_price = Column(Numeric(10, 2))
-    close_price = Column(Numeric(10, 2))
+    id             = Column(Integer, primary_key=True)
+    symbol         = Column(String(20), nullable=False)
+    company_name   = Column(String(255))
+    open_price     = Column(Numeric(10, 2))
+    high_price     = Column(Numeric(10, 2))
+    low_price      = Column(Numeric(10, 2))
+    close_price    = Column(Numeric(10, 2))
     percent_change = Column(Numeric(10, 2), default=0.0)
-    volume = Column(BigInteger)
-    trade_date = Column(Date, nullable=False)
+    volume         = Column(BigInteger)
+    trade_date     = Column(Date, nullable=False)
 
     __table_args__ = (Index("uix_symbol_date", "symbol", "trade_date", unique=True),)
 
 
 class EarningsCalendar(Base):
     __tablename__ = "earnings_calendar"
-    id = Column(Integer, primary_key=True)
-    symbol = Column(String, nullable=False)
-    period = Column(String)
-    expected_date = Column(Date)
-    actual_date = Column(Date)
+    id             = Column(Integer, primary_key=True)
+    symbol         = Column(String, nullable=False)
+    period         = Column(String)
+    expected_date  = Column(Date)
+    actual_date    = Column(Date)
     dividend_yield = Column(Float)
 
 
@@ -53,99 +109,103 @@ class EarningsCalendar(Base):
 # ---------------------------------------------------------------------------
 
 class StockSchema(BaseModel):
-    symbol: str
-    company_name: str
-    open_price: float
-    high_price: float
-    low_price: float
-    close_price: float
+    symbol:         str
+    company_name:   str
+    open_price:     float
+    high_price:     float
+    low_price:      float
+    close_price:    float
     percent_change: float = 0.0
-    volume: int
-    trade_date: date
-    # Alert metadata (not persisted)
-    old_resistance: float = 0.0
-    old_support: float = 0.0
-    vol_increase: float = 0.0
-    is_corporate_action: bool = False
+    volume:         int
+    trade_date:     date
+    # Alert metadata — not persisted
+    old_resistance:      float = 0.0
+    old_support:         float = 0.0
+    vol_increase:        float = 0.0
+    is_corporate_action: bool  = False
 
     @field_validator("open_price", "high_price", "low_price", "close_price", mode="before")
     @classmethod
     def clean_currency(cls, v):
-        if not v or str(v).strip() in ["-", "", "nil", "N/A"]:
+        if not v or str(v).strip() in ("-", "", "nil", "N/A"):
             return 0.0
         if isinstance(v, str):
-            cleaned = v.replace("₦", "").replace(",", "").strip()
             try:
-                return float(cleaned)
+                return float(v.replace("₦", "").replace(",", "").strip())
             except ValueError:
                 return 0.0
         try:
-            return float(v or 0)
+            return float(v)
         except (TypeError, ValueError):
             return 0.0
 
     @field_validator("volume", mode="before")
     @classmethod
     def clean_volume(cls, v):
-        if not v or str(v).strip() in ["-", "", "nil", "N/A"]:
+        if not v or str(v).strip() in ("-", "", "nil", "N/A"):
             return 0
         if isinstance(v, str):
-            cleaned = v.replace(",", "").strip()
             try:
-                return int(float(cleaned))
+                return int(float(v.replace(",", "").strip()))
             except ValueError:
                 return 0
         try:
-            return int(v or 0)
+            return int(v)
         except (TypeError, ValueError):
             return 0
 
 
 # ---------------------------------------------------------------------------
 # NOTIFICATION SERVICES
+# Uses _make_client(proxy=None) so no proxy and no env bleed-in.
 # ---------------------------------------------------------------------------
 
 class TelegramNotifier:
     def __init__(self):
-        self.token = os.getenv("TELEGRAM_TOKEN")
-        self.chat_id = os.getenv("TELEGRAM_CHAT_ID")
-        self.url = f"https://api.telegram.org/bot{self.token}/sendMessage"
+        self.token   = _clean_env("TELEGRAM_TOKEN")
+        self.chat_id = _clean_env("TELEGRAM_CHAT_ID")
 
     async def send(self, message: str):
         if not self.token or not self.chat_id:
             print("⚠️  Telegram config missing — skipping.")
             return
-        async with httpx.AsyncClient(timeout=15.0) as client:
+        url = f"https://api.telegram.org/bot{self.token}/sendMessage"
+        async with _make_client(timeout=15.0) as client:   # proxy=None, trust_env=False
             try:
                 r = await client.post(
-                    self.url,
+                    url,
                     json={"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"},
                 )
-                print("✅ Telegram sent." if r.status_code == 200 else f"⚠️  Telegram {r.status_code}: {r.text[:100]}")
+                print("✅ Telegram sent." if r.status_code == 200
+                      else f"⚠️  Telegram {r.status_code}: {r.text[:120]}")
             except Exception as e:
                 print(f"📡 Telegram Error: {e}")
 
 
 class WhatsAppNotifier:
     def __init__(self):
-        self.id_instance = os.getenv("GREEN_API_ID")
-        self.api_token = os.getenv("GREEN_API_TOKEN")
-        self.group_id = os.getenv("WHATSAPP_GROUP_ID")
-        self.api_url = os.getenv("WHATSAPP_API_URL", "https://7107.api.greenapi.com")
-        self.base_url = (
-            f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
+        self.id_instance = _clean_env("GREEN_API_ID")
+        self.api_token   = _clean_env("GREEN_API_TOKEN")
+        self.group_id    = _clean_env("WHATSAPP_GROUP_ID")
+        api_url          = _clean_env("WHATSAPP_API_URL") or "https://7107.api.greenapi.com"
+        self.endpoint    = (
+            f"{api_url}/waInstance{self.id_instance}"
+            f"/sendMessage/{self.api_token}"
         )
 
     async def send(self, message: str):
         if not all([self.id_instance, self.api_token, self.group_id]):
             print("⚠️  WhatsApp config missing — skipping.")
             return False
-        payload = {"chatId": self.group_id, "message": message}
-        async with httpx.AsyncClient(timeout=30.0) as client:
+        async with _make_client(timeout=30.0) as client:   # proxy=None, trust_env=False
             try:
-                r = await client.post(self.base_url, json=payload)
+                r = await client.post(
+                    self.endpoint,
+                    json={"chatId": self.group_id, "message": message},
+                )
                 ok = r.status_code == 200
-                print("✅ WhatsApp sent." if ok else f"⚠️  WhatsApp {r.status_code}: {r.text[:100]}")
+                print("✅ WhatsApp sent." if ok
+                      else f"⚠️  WhatsApp {r.status_code}: {r.text[:120]}")
                 return ok
             except Exception as e:
                 print(f"📡 WhatsApp Error: {e}")
@@ -160,17 +220,16 @@ class NGXEngine:
     """
     Download → Parse → Save → Alert pipeline for NGX daily equity data.
 
-    Download strategy (in order):
-      Stage 1 — NGX direct download redirect URLs
-      Stage 2 — doclib date-pattern PDF guessing (tries last 5 trading days)
-      Stage 3 — DataTables / AJAX JSON endpoint
-      Stage 4 — Full HTML scrape with cookie handshake
-      Stage 5 — Stooq CSV (international fallback, no geo-block)
+    Download stages (in order):
+      1 — NGX direct redirect download URLs
+      2 — doclib date-pattern PDF guessing (last 7 trading days × all known patterns)
+      3 — DataTables / AJAX JSON endpoint
+      4 — Full HTML scrape with cookie handshake
+      5 — Stooq CSV per-ticker fallback (never geo-blocked)
 
     Geo-block mitigation:
-      Set NG_PROXY_URL (or HTTP_PROXY / HTTPS_PROXY) to a Nigerian proxy URL.
-      The engine strips whitespace/newlines before using it, so GitHub Actions
-      secret formatting never causes an InvalidURL crash.
+      Set NG_PROXY_URL (e.g. http://user:pass@host:port) for a Nigerian proxy.
+      Only NGX requests are routed through it; Telegram/WhatsApp are not.
     """
 
     BASE_HEADERS = {
@@ -188,55 +247,35 @@ class NGXEngine:
     }
 
     def __init__(self):
-        db_url = os.getenv("DATABASE_URL", "")
+        db_url = _clean_env("DATABASE_URL") or ""
         if not db_url:
-            raise RuntimeError("DATABASE_URL environment variable is not set.")
+            raise RuntimeError("DATABASE_URL is not set.")
         if db_url.startswith("postgres://"):
             db_url = db_url.replace("postgres://", "postgresql://", 1)
 
-        self.engine = create_engine(db_url, pool_pre_ping=True)
+        self.engine  = create_engine(db_url, pool_pre_ping=True)
         self.Session = sessionmaker(bind=self.engine)
-        self.wa = WhatsAppNotifier()
-        self.tg = TelegramNotifier()
-
-        # Read proxy once at init — strip ALL whitespace/newlines that GitHub
-        # Actions sometimes appends to secret values.
-        raw_proxy = (
-            os.getenv("NG_PROXY_URL")
-            or os.getenv("HTTP_PROXY")
-            or os.getenv("HTTPS_PROXY")
-            or ""
-        ).strip()
-        # Guard: only use if it looks like a valid URL scheme
-        self._proxy: Optional[str] = raw_proxy if raw_proxy.startswith(("http://", "https://", "socks5://")) else None
+        self.wa      = WhatsAppNotifier()
+        self.tg      = TelegramNotifier()
+        self._proxy  = _get_proxy()
 
         if self._proxy:
-            print(f"🌍 Proxy active: {self._proxy}")
+            print(f"🌍 Proxy active (NGX requests only): {self._proxy}")
         else:
-            print("ℹ️  No proxy configured — connecting directly.")
+            print("ℹ️  No proxy — connecting directly.")
 
         Base.metadata.create_all(self.engine)
 
-    # ------------------------------------------------------------------
-    # CLIENT FACTORY
-    # ------------------------------------------------------------------
-
-    def _client(self, extra_headers: Optional[dict] = None, timeout: float = 40.0) -> httpx.AsyncClient:
-        """
-        Return a configured AsyncClient.
-        proxy= is the correct kwarg for httpx ≥ 0.28 (replaces the old proxies= dict).
-        Passing None is safe — httpx ignores it.
-        """
-        headers = {**self.BASE_HEADERS, **(extra_headers or {})}
-        return httpx.AsyncClient(
-            timeout=timeout,
-            follow_redirects=True,
-            headers=headers,
-            proxy=self._proxy,  # None when not configured — httpx handles it gracefully
+    def _ngx_client(self, extra_headers: Optional[dict] = None) -> httpx.AsyncClient:
+        """Client for NGX requests — carries proxy + NGX headers."""
+        return _make_client(
+            proxy=self._proxy,
+            base_headers=self.BASE_HEADERS,
+            extra_headers=extra_headers,
         )
 
     # ------------------------------------------------------------------
-    # HELPERS
+    # UTILITIES
     # ------------------------------------------------------------------
 
     @staticmethod
@@ -244,8 +283,8 @@ class NGXEngine:
         return content[:4] == b"%PDF"
 
     @staticmethod
-    def _trading_days_back(start: date, n: int = 5) -> List[date]:
-        """Return up to n past trading days (Mon–Fri) starting from start (inclusive)."""
+    def _trading_days_back(start: date, n: int = 7) -> List[date]:
+        """Return up to n weekdays going back from start (inclusive)."""
         days, cursor = [], start
         while len(days) < n:
             if cursor.weekday() < 5:
@@ -258,18 +297,16 @@ class NGXEngine:
     # ------------------------------------------------------------------
 
     async def _stage1_redirect(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
-        urls = [
+        for url in [
             "https://ngxgroup.com/ngx-download/daily-official-list-equities/",
             "https://ngxgroup.com/ngx-download/market-data-pricelist-2/",
-        ]
-        for url in urls:
+        ]:
             try:
                 res = await client.get(url)
                 if res.status_code == 200 and self._is_pdf(res.content):
-                    path = f"ngx_stage1_{target_date}.pdf"
-                    with open(path, "wb") as f:
-                        f.write(res.content)
-                    print(f"✅ Stage 1 hit: {url}")
+                    path = f"ngx_s1_{target_date}.pdf"
+                    open(path, "wb").write(res.content)
+                    print(f"✅ Stage 1: {url}")
                     return path
                 print(f"Stage 1 miss ({res.status_code}): {url}")
             except Exception as e:
@@ -278,39 +315,53 @@ class NGXEngine:
 
     # ------------------------------------------------------------------
     # STAGE 2 — doclib date-pattern PDF guessing
+    # Covers all delimiter / ordering / template variants NGX has ever used.
     # ------------------------------------------------------------------
 
     async def _stage2_pdf_guess(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
-        candidate_dates = self._trading_days_back(target_date, n=5)
-        delimiters = ["-", " ", ".", ""]
+        candidate_dates = self._trading_days_back(target_date, n=7)
+        delimiters = ["-", " ", ".", "/", ""]
         templates = [
             "Daily%20Official%20List%20-%20Equities%20for%20{date}.pdf",
+            "Daily%20Official%20List-Equities%20for%20{date}.pdf",
             "DAILY%20OFFICIAL%20LIST%20-%20EQUITIES%20FOR%20{date}.pdf",
+            "Daily%20Official%20List%20{date}.pdf",
             "DAILY%20SUMMARY%20FOR%20{date}.pdf",
             "Daily%20Summary%20for%20{date}.pdf",
-            "Equities{date}.pdf",
+            "Equities%20Price%20List%20{date}.pdf",
+            "NGX%20Daily%20Official%20List%20{date}.pdf",
+            "equities-price-list-{date}.pdf",
         ]
+        base = "https://doclib.ngxgroup.com/DownloadsContent/"
+
         for d in candidate_dates:
-            for sep in delimiters:
-                date_str = d.strftime(f"%d{sep}%m{sep}%Y")
-                encoded = urllib.parse.quote(date_str)
-                for tmpl in templates:
-                    url = f"https://doclib.ngxgroup.com/DownloadsContent/{tmpl.format(date=encoded)}"
-                    try:
-                        res = await client.get(url)
-                        if res.status_code == 200 and self._is_pdf(res.content):
-                            path = f"ngx_stage2_{d}.pdf"
-                            with open(path, "wb") as f:
-                                f.write(res.content)
-                            print(f"✅ Stage 2 hit ({d}): {url}")
-                            return path
-                    except Exception:
-                        continue
-        print("Stage 2: no PDF match found.")
+            # Three date orderings: DD-MM-YYYY, MM-DD-YYYY, YYYY-MM-DD
+            date_fmts = [
+                d.strftime("%d{s}%m{s}%Y"),
+                d.strftime("%m{s}%d{s}%Y"),
+                d.strftime("%Y{s}%m{s}%d"),
+            ]
+            for fmt in date_fmts:
+                for sep in delimiters:
+                    date_str = fmt.replace("{s}", sep)
+                    encoded  = urllib.parse.quote(date_str)
+                    for tmpl in templates:
+                        url = base + tmpl.format(date=encoded)
+                        try:
+                            res = await client.get(url)
+                            if res.status_code == 200 and self._is_pdf(res.content):
+                                path = f"ngx_s2_{d}.pdf"
+                                open(path, "wb").write(res.content)
+                                print(f"✅ Stage 2 ({d}): {url}")
+                                return path
+                        except Exception:
+                            continue
+
+        print("Stage 2: no PDF found.")
         return None
 
     # ------------------------------------------------------------------
-    # STAGE 3 — DataTables / AJAX JSON endpoint
+    # STAGE 3 — DataTables / AJAX JSON
     # ------------------------------------------------------------------
 
     async def _stage3_ajax(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
@@ -320,8 +371,7 @@ class NGXEngine:
             "Accept": "application/json, text/javascript, */*; q=0.01",
         }
         endpoints = [
-            "https://ngxgroup.com/exchange/data/equities-price-list/?draw=1&columns[0][data]=symbol&start=0&length=1000",
-            "https://ngxgroup.com/exchange/data/equities-price-list/?draw=1&start=0&length=500",
+            "https://ngxgroup.com/exchange/data/equities-price-list/?draw=1&start=0&length=1000",
             "https://ngxgroup.com/wp-json/ngx/v1/equities",
             "https://ngxgroup.com/wp-json/ngx/v1/market-data",
             "https://doclib.ngxgroup.com/REST/api/operations/getequitiesprices",
@@ -332,16 +382,16 @@ class NGXEngine:
                 res = await client.get(url, headers=ajax_headers)
                 if res.status_code != 200:
                     continue
-                ct = res.headers.get("content-type", "")
-                if "json" not in ct and not res.text.strip().startswith("{"):
+                ct   = res.headers.get("content-type", "")
+                body = res.text.strip()
+                if "json" not in ct and not body.startswith(("{", "[")):
                     continue
                 data = res.json()
-                rows = data.get("data") or data.get("aaData") or []
-                if rows:
-                    path = f"ngx_stage3_{target_date}.json"
-                    with open(path, "w", encoding="utf-8") as f:
-                        json.dump({"data": rows}, f)
-                    print(f"✅ Stage 3 AJAX hit: {url} ({len(rows)} rows)")
+                rows = data.get("data") or data.get("aaData") or data.get("securities") or []
+                if len(rows) > 5:
+                    path = f"ngx_s3_{target_date}.json"
+                    json.dump({"data": rows}, open(path, "w", encoding="utf-8"))
+                    print(f"✅ Stage 3 AJAX: {url} ({len(rows)} rows)")
                     return path
             except Exception as e:
                 print(f"Stage 3 error [{url}]: {e}")
@@ -353,61 +403,45 @@ class NGXEngine:
     # ------------------------------------------------------------------
 
     async def _stage4_html_scrape(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
-        scrape_urls = [
-            "https://ngxgroup.com/exchange/data/equities-price-list/",
-            "https://ngxgroup.com/ir/equities-market/",
-            "https://www.ngxgroup.com/exchange/data/equities-price-list/",
-        ]
-        # Warm-up to collect session cookies / Cloudflare clearance
         cookies = {}
         try:
             warmup = await client.get("https://ngxgroup.com/")
             cookies = dict(warmup.cookies)
-            print(f"Stage 4 warm-up: {warmup.status_code}, cookies: {list(cookies.keys())}")
+            print(f"Stage 4 warm-up: {warmup.status_code}")
             await asyncio.sleep(1.5)
         except Exception as e:
             print(f"Stage 4 warm-up error: {e}")
 
-        for url in scrape_urls:
+        for url in [
+            "https://ngxgroup.com/exchange/data/equities-price-list/",
+            "https://ngxgroup.com/ir/equities-market/",
+            "https://www.ngxgroup.com/exchange/data/equities-price-list/",
+        ]:
             try:
                 res = await client.get(url, cookies=cookies)
-                print(f"Stage 4 [{res.status_code}]: {url} ({len(res.text)} bytes)")
-
+                print(f"Stage 4 [{res.status_code}] {len(res.text)}b: {url}")
                 if res.status_code != 200:
                     continue
-
                 body = res.text
-
-                # Reject Cloudflare challenge pages
                 if "cf-browser-verification" in body or "checking your browser" in body.lower():
-                    print("Stage 4: Cloudflare challenge — geo-block still active.")
+                    print("Stage 4: Cloudflare challenge — proxy not bypassing geo-block.")
                     continue
-
-                if "<table" not in body.lower():
-                    print("Stage 4: no <table> in response.")
-                    continue
-
-                soup = bs4.BeautifulSoup(body, "html.parser")
+                soup   = bs4.BeautifulSoup(body, "html.parser")
                 tables = soup.find_all("table")
-                has_data = any(len(t.find_all("tr")) > 5 for t in tables)
-                if not has_data:
-                    print("Stage 4: table found but <5 rows (probably JS-rendered).")
-                    continue
-
-                path = f"ngx_stage4_{target_date}.html"
-                with open(path, "w", encoding="utf-8") as f:
-                    f.write(body)
-                print(f"✅ Stage 4 HTML hit: {url}")
-                return path
-
+                if any(len(t.find_all("tr")) > 5 for t in tables):
+                    path = f"ngx_s4_{target_date}.html"
+                    open(path, "w", encoding="utf-8").write(body)
+                    print(f"✅ Stage 4 HTML: {url}")
+                    return path
+                print("Stage 4: table present but <5 rows (JS-rendered).")
             except Exception as e:
                 print(f"Stage 4 error [{url}]: {e}")
 
-        print("Stage 4: no usable HTML found.")
+        print("Stage 4: no usable HTML.")
         return None
 
     # ------------------------------------------------------------------
-    # STAGE 5 — Stooq CSV fallback (no geo-block)
+    # STAGE 5 — Stooq CSV fallback (never geo-blocked)
     # ------------------------------------------------------------------
 
     async def _stage5_stooq_csv(self, client: httpx.AsyncClient, target_date: date) -> Optional[str]:
@@ -419,39 +453,40 @@ class NGXEngine:
             "FIDELITYBK", "FCMB", "STERLING", "JAIZBANK", "TRIDENT",
             "CHAMS", "CAVERTON", "CONOIL", "TOTALENERGIES", "ETERNA",
         ]
-        rows = []
-        print(f"Stage 5: Stooq CSV fallback — {len(TOP_NGX)} tickers…")
-        for symbol in TOP_NGX:
-            url = (
-                f"https://stooq.com/q/d/l/?s={symbol.lower()}.ng"
-                f"&d1={target_date.strftime('%Y%m%d')}"
-                f"&d2={target_date.strftime('%Y%m%d')}&i=d"
-            )
-            try:
-                res = await client.get(url)
-                if res.status_code == 200 and "Date" in res.text:
-                    lines = res.text.strip().splitlines()
-                    if len(lines) >= 2:
-                        parts = lines[1].split(",")
-                        if len(parts) >= 5:
-                            rows.append({
-                                "symbol": symbol,
-                                "company_name": symbol,
-                                "open": parts[1],
-                                "high": parts[2],
-                                "low": parts[3],
-                                "close": parts[4],
-                                "volume": parts[5] if len(parts) > 5 else "0",
-                            })
-            except Exception:
-                continue
+        candidate_dates = self._trading_days_back(target_date, n=5)
+        print(f"Stage 5: Stooq CSV — {len(TOP_NGX)} tickers, up to {len(candidate_dates)} dates…")
 
-        if rows:
-            path = f"ngx_stage5_{target_date}.json"
-            with open(path, "w") as f:
-                json.dump({"stooq": rows}, f)
-            print(f"✅ Stage 5 Stooq: {len(rows)} tickers retrieved.")
-            return path
+        for d in candidate_dates:
+            rows = []
+            for symbol in TOP_NGX:
+                url = (
+                    f"https://stooq.com/q/d/l/?s={symbol.lower()}.ng"
+                    f"&d1={d.strftime('%Y%m%d')}&d2={d.strftime('%Y%m%d')}&i=d"
+                )
+                try:
+                    res = await client.get(url)
+                    if res.status_code == 200 and "Date" in res.text:
+                        lines = res.text.strip().splitlines()
+                        if len(lines) >= 2:
+                            parts = lines[1].split(",")
+                            if len(parts) >= 5 and parts[4].replace(".", "").isdigit():
+                                rows.append({
+                                    "symbol":       symbol,
+                                    "company_name": symbol,
+                                    "open":         parts[1],
+                                    "high":         parts[2],
+                                    "low":          parts[3],
+                                    "close":        parts[4],
+                                    "volume":       parts[5] if len(parts) > 5 else "0",
+                                })
+                except Exception:
+                    continue
+
+            if rows:
+                path = f"ngx_s5_{d}.json"
+                json.dump({"stooq": rows, "trade_date": str(d)}, open(path, "w"))
+                print(f"✅ Stage 5 Stooq: {len(rows)} tickers for {d}.")
+                return path
 
         print("Stage 5: Stooq returned no data.")
         return None
@@ -461,18 +496,21 @@ class NGXEngine:
     # ------------------------------------------------------------------
 
     async def download_report(self, target_date: date) -> Optional[str]:
-        async with self._client() as client:
-            for stage, fn in [
-                ("1 (redirect)",    lambda: self._stage1_redirect(client, target_date)),
-                ("2 (PDF guess)",   lambda: self._stage2_pdf_guess(client, target_date)),
-                ("3 (AJAX JSON)",   lambda: self._stage3_ajax(client, target_date)),
-                ("4 (HTML scrape)", lambda: self._stage4_html_scrape(client, target_date)),
-                ("5 (Stooq CSV)",   lambda: self._stage5_stooq_csv(client, target_date)),
+        async with self._ngx_client() as client:
+            for label, fn in [
+                ("1 (redirect)",    self._stage1_redirect),
+                ("2 (PDF guess)",   self._stage2_pdf_guess),
+                ("3 (AJAX JSON)",   self._stage3_ajax),
+                ("4 (HTML scrape)", self._stage4_html_scrape),
+                ("5 (Stooq CSV)",   self._stage5_stooq_csv),
             ]:
-                print(f"\n── Stage {stage} ──")
-                path = await fn()
-                if path:
-                    return path
+                print(f"\n── Stage {label} ──")
+                try:
+                    path = await fn(client, target_date)
+                    if path:
+                        return path
+                except Exception as e:
+                    print(f"Stage {label} unhandled error: {e}")
 
         print("\n🛑 All download stages exhausted.")
         return None
@@ -488,7 +526,7 @@ class NGXEngine:
             return self._parse_html(path, trade_date)
         elif path.endswith(".json"):
             return self._parse_json(path, trade_date)
-        print(f"⚠️  Unknown source format: {path}")
+        print(f"⚠️  Unknown format: {path}")
         return []
 
     def _parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
@@ -500,7 +538,6 @@ class NGXEngine:
                     table = page.extract_table()
                     if not table:
                         continue
-
                     header_idx = -1
                     for i, row in enumerate(table[:10]):
                         if row and any("Symbol" in str(x) for x in row if x):
@@ -508,7 +545,6 @@ class NGXEngine:
                             break
                     if header_idx == -1:
                         continue
-
                     for row in table[header_idx + 1:]:
                         if not row or len(row) < 10 or not row[0]:
                             continue
@@ -522,7 +558,7 @@ class NGXEngine:
                                 company_name=str(row[1] or "").strip(),
                                 open_price=row[3] or close_p,
                                 high_price=row[4] or close_p,
-                                low_price=row[5] or close_p,
+                                low_price=row[5]  or close_p,
                                 close_price=close_p,
                                 volume=row[11] if len(row) > 11 else row[-1],
                                 trade_date=trade_date,
@@ -547,13 +583,12 @@ class NGXEngine:
                 or soup.find("table")
             )
             if not table:
-                print("HTML Parse: no table found.")
+                print("HTML Parse: no table.")
                 return []
 
             rows = table.find_all("tr")
             print(f"HTML Parse: {len(rows)} rows.")
 
-            # Auto-detect column positions from header row
             col_map = {}
             for row in rows[:5]:
                 headers = [th.get_text(strip=True).lower() for th in row.find_all(["th", "td"])]
@@ -575,42 +610,38 @@ class NGXEngine:
                             col_map["volume"] = i
                     break
 
-            # Positional defaults if header detection failed
             if not col_map:
                 col_map = {"symbol": 0, "company": 1, "open": 3, "high": 4, "low": 5, "close": 6, "volume": 10}
-                print("HTML Parse: using positional column defaults.")
+                print("HTML Parse: positional defaults.")
 
             for row in rows[1:]:
                 cols = row.find_all("td")
                 if not cols or len(cols) < max(col_map.values()) + 1:
                     continue
 
-                def get(key, default=0):
-                    idx = col_map.get(key, default)
+                def get(key, fb=0):
+                    idx = col_map.get(key, fb)
                     return cols[idx].get_text(strip=True) if idx < len(cols) else ""
 
-                symbol = get("symbol", 0)
+                symbol = get("symbol")
                 if not symbol or not any(c.isalpha() for c in symbol) or symbol[0].islower():
                     continue
-
                 close_raw = get("close", 6)
                 if not close_raw or close_raw == "-":
                     continue
-
                 try:
                     stocks.append(StockSchema(
                         symbol=symbol,
                         company_name=get("company", 1) or symbol,
-                        open_price=get("open", 3) or close_raw,
-                        high_price=get("high", 4) or close_raw,
-                        low_price=get("low", 5) or close_raw,
+                        open_price=get("open", 3)   or close_raw,
+                        high_price=get("high", 4)   or close_raw,
+                        low_price=get("low", 5)     or close_raw,
                         close_price=close_raw,
-                        volume=get("volume", 10) or "0",
+                        volume=get("volume", 10)    or "0",
                         trade_date=trade_date,
                     ))
                 except Exception:
                     continue
-
         except Exception as e:
             print(f"HTML Parse Error: {e}")
         print(f"HTML parsed: {len(stocks)} stocks.")
@@ -619,14 +650,21 @@ class NGXEngine:
     def _parse_json(self, path: str, trade_date: date) -> List[StockSchema]:
         """
         Handles:
-          - DataTables AJAX: {"data": [[col0, col1, ...], ...]}
-          - DataTables AJAX: {"data": [{"symbol": ..., ...}, ...]}
-          - Stooq fallback:  {"stooq": [{"symbol":…, "open":…, …}, …]}
+          - DataTables AJAX array rows:  {"data": [[col0, col1, ...], ...]}
+          - DataTables AJAX object rows: {"data": [{"symbol": ..., ...}, ...]}
+          - Stooq fallback:              {"stooq": [...], "trade_date": "YYYY-MM-DD"}
         """
         stocks = []
         try:
             with open(path, "r", encoding="utf-8") as f:
                 payload = json.load(f)
+
+            # Use embedded trade_date if present (Stooq may have an earlier date)
+            if "trade_date" in payload:
+                try:
+                    trade_date = date.fromisoformat(payload["trade_date"])
+                except Exception:
+                    pass
 
             # --- Stooq shape ---
             if "stooq" in payload:
@@ -647,10 +685,15 @@ class NGXEngine:
                 print(f"JSON (Stooq) parsed: {len(stocks)} stocks.")
                 return stocks
 
-            # --- DataTables AJAX shape ---
-            rows = payload.get("data") or payload.get("aaData") or []
+            # --- DataTables / AJAX shape ---
+            rows = (
+                payload.get("data")
+                or payload.get("aaData")
+                or payload.get("securities")
+                or []
+            )
             if not rows:
-                print("JSON Parse: no rows found.")
+                print("JSON Parse: no rows.")
                 return []
 
             sample = rows[0]
@@ -666,14 +709,14 @@ class NGXEngine:
                             continue
                         close_p = (
                             row.get("close_price") or row.get("ClosingPrice")
-                            or row.get("close") or row.get("last_price") or 0
+                            or row.get("close")    or row.get("last_price") or 0
                         )
                         stocks.append(StockSchema(
                             symbol=symbol,
                             company_name=row.get("company_name") or row.get("CompanyName") or symbol,
-                            open_price=row.get("open_price") or row.get("OpeningPrice") or close_p,
-                            high_price=row.get("high_price") or row.get("HighPrice") or close_p,
-                            low_price=row.get("low_price") or row.get("LowPrice") or close_p,
+                            open_price=row.get("open_price")  or row.get("OpeningPrice") or close_p,
+                            high_price=row.get("high_price")  or row.get("HighPrice")    or close_p,
+                            low_price=row.get("low_price")    or row.get("LowPrice")     or close_p,
                             close_price=close_p,
                             volume=row.get("volume") or row.get("Volume") or 0,
                             trade_date=trade_date,
@@ -683,7 +726,7 @@ class NGXEngine:
 
             elif isinstance(sample, list):
                 for row in rows:
-                    if len(row) < 10 or not row[0]:
+                    if len(row) < 7 or not row[0]:
                         continue
                     symbol = str(row[0]).strip()
                     if not symbol.isupper():
@@ -695,7 +738,7 @@ class NGXEngine:
                             company_name=str(row[1] or "").strip(),
                             open_price=row[3] or close_p,
                             high_price=row[4] or close_p,
-                            low_price=row[5] or close_p,
+                            low_price=row[5]  or close_p,
                             close_price=close_p,
                             volume=row[11] if len(row) > 11 else row[-1],
                             trade_date=trade_date,
@@ -731,8 +774,7 @@ class NGXEngine:
                     stock.percent_change = round(
                         ((stock.close_price - float(prev[0])) / float(prev[0])) * 100, 2
                     )
-
-                stmt = text("""
+                session.execute(text("""
                     INSERT INTO stock_prices
                         (symbol, company_name, open_price, high_price, low_price,
                          close_price, percent_change, volume, trade_date)
@@ -747,17 +789,12 @@ class NGXEngine:
                         close_price    = EXCLUDED.close_price,
                         percent_change = EXCLUDED.percent_change,
                         volume         = EXCLUDED.volume;
-                """)
-                session.execute(
-                    stmt,
-                    stock.model_dump(
-                        exclude={"old_resistance", "old_support", "vol_increase", "is_corporate_action"}
-                    ),
-                )
+                """), stock.model_dump(
+                    exclude={"old_resistance", "old_support", "vol_increase", "is_corporate_action"}
+                ))
                 saved += 1
-
             session.commit()
-            print(f"💾 Saved {saved} stocks to DB.")
+            print(f"💾 Saved {saved} stocks.")
         except Exception as e:
             session.rollback()
             print(f"DB Error: {e}")
@@ -775,21 +812,15 @@ class NGXEngine:
             for stock in stocks:
                 stock.is_corporate_action = abs(stock.percent_change) > 10.5
 
-                levels = session.execute(
-                    text("""
-                        SELECT MAX(high_price), MIN(low_price)
-                        FROM stock_prices
-                        WHERE symbol = :symbol
-                          AND trade_date < :today
-                        ORDER BY trade_date DESC
-                        LIMIT 30
-                    """),
-                    {"symbol": stock.symbol, "today": stock.trade_date},
-                ).first()
+                levels = session.execute(text("""
+                    SELECT MAX(high_price), MIN(low_price)
+                    FROM stock_prices
+                    WHERE symbol = :symbol AND trade_date < :today
+                    ORDER BY trade_date DESC LIMIT 30
+                """), {"symbol": stock.symbol, "today": stock.trade_date}).first()
 
                 if levels and levels[0] and levels[1]:
-                    res = float(levels[0])
-                    sup = float(levels[1])
+                    res, sup = float(levels[0]), float(levels[1])
                     if res > 0 and stock.close_price > res:
                         stock.old_resistance = res
                         breakouts.append(stock)
@@ -800,16 +831,13 @@ class NGXEngine:
                 if stock.percent_change >= 5.0 and not stock.is_corporate_action:
                     momentum.append(stock)
 
-                avg_vol = session.execute(
-                    text("""
-                        SELECT AVG(volume) FROM (
-                            SELECT volume FROM stock_prices
-                            WHERE symbol = :symbol AND trade_date < :today
-                            ORDER BY trade_date DESC LIMIT 10
-                        ) sub
-                    """),
-                    {"symbol": stock.symbol, "today": stock.trade_date},
-                ).scalar()
+                avg_vol = session.execute(text("""
+                    SELECT AVG(volume) FROM (
+                        SELECT volume FROM stock_prices
+                        WHERE symbol = :symbol AND trade_date < :today
+                        ORDER BY trade_date DESC LIMIT 10
+                    ) sub
+                """), {"symbol": stock.symbol, "today": stock.trade_date}).scalar()
 
                 if avg_vol and stock.volume > float(avg_vol) * 2:
                     stock.vol_increase = round(stock.volume / float(avg_vol), 1)
@@ -828,19 +856,21 @@ class NGXEngine:
 
     async def send_daily_recap(
         self,
-        stocks: List[StockSchema],
-        breakouts: List[StockSchema],
+        stocks:     List[StockSchema],
+        breakouts:  List[StockSchema],
         breakdowns: List[StockSchema],
-        momentum: List[StockSchema],
-        spikes: List[StockSchema],
+        momentum:   List[StockSchema],
+        spikes:     List[StockSchema],
     ):
         if not stocks:
             return
 
-        sorted_stocks = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
-        gainers = [s for s in sorted_stocks if s.percent_change > 0][:5]
-        losers = sorted([s for s in stocks if s.percent_change < 0], key=lambda x: x.percent_change)[:5]
-
+        sorted_s = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
+        gainers  = [s for s in sorted_s if s.percent_change > 0][:5]
+        losers   = sorted(
+            [s for s in stocks if s.percent_change < 0],
+            key=lambda x: x.percent_change
+        )[:5]
         adv  = len([s for s in stocks if s.percent_change > 0])
         dec  = len([s for s in stocks if s.percent_change < 0])
         unch = len(stocks) - adv - dec
@@ -853,27 +883,22 @@ class NGXEngine:
             msg += "📈 *TOP GAINERS*\n"
             for s in gainers:
                 msg += f"• *{s.symbol}* +{s.percent_change:.2f}% @ ₦{s.close_price:.2f}\n"
-
         if losers:
             msg += "\n📉 *TOP LOSERS*\n"
             for s in losers:
                 msg += f"• *{s.symbol}* {s.percent_change:.2f}% @ ₦{s.close_price:.2f}\n"
-
         if breakouts:
             msg += "\n🔓 *RESISTANCE BREAKOUTS*\n"
             for s in breakouts[:3]:
                 msg += f"• *{s.symbol}* ₦{s.close_price:.2f} > ₦{s.old_resistance:.2f}\n"
-
         if breakdowns:
             msg += "\n🔻 *SUPPORT BREAKDOWNS*\n"
             for s in breakdowns[:3]:
                 msg += f"• *{s.symbol}* ₦{s.close_price:.2f} < ₦{s.old_support:.2f}\n"
-
         if momentum:
             msg += "\n⚡ *MOMENTUM (≥5%)*\n"
             for s in momentum[:3]:
                 msg += f"• *{s.symbol}* +{s.percent_change:.2f}%\n"
-
         if spikes:
             msg += "\n🔊 *VOLUME SPIKES*\n"
             for s in spikes[:3]:
@@ -891,10 +916,10 @@ class NGXEngine:
 
 async def run():
     engine = NGXEngine()
-    today = datetime.now().date()
+    today  = datetime.now().date()
 
     if today.weekday() >= 5:
-        print(f"📅 {today} is a weekend — NGX closed. Exiting.")
+        print(f"📅 {today} is a weekend — NGX closed.")
         return
 
     print(f"\n📊 NGX sync starting for {today}…\n")
@@ -909,7 +934,6 @@ async def run():
     print(f"\n📂 Source: {source_path}")
     stocks = engine.parse_source(source_path, today)
 
-    # Clean up temp file regardless of parse result
     try:
         if os.path.exists(source_path):
             os.remove(source_path)
@@ -917,7 +941,7 @@ async def run():
         pass
 
     if not stocks:
-        msg = f"🛑 NGX PARSE FAILED ({today}) — source downloaded but 0 stocks parsed."
+        msg = f"🛑 NGX PARSE FAILED ({today}) — downloaded but 0 stocks parsed."
         print(msg)
         await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
         return
