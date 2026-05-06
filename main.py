@@ -1346,4 +1346,3 @@ if __name__ == "__main__":
         print("✅ Sync Complete.")
 
     asyncio.run(run_daily_sync())
-    asyncio.run(run())
