@@ -910,25 +910,25 @@ class NGXEngine:
         await asyncio.gather(self.tg.send(msg), self.wa.send(msg))
 
     async def _schedule_morning_retry(target_date: date):
-    """
-    Dispatch a GitHub Actions workflow_dispatch event to retry
-    fetching target_date's data the following morning.
-    """
-    token = _clean_env("GITHUB_TOKEN")
-    repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
+        """
+        Dispatch a GitHub Actions workflow_dispatch event to retry
+        fetching target_date's data the following morning.
+        """
+        token = _clean_env("GITHUB_TOKEN")
+        repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
+        
+        if not token or not repo:
+            print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
+            return
     
-    if not token or not repo:
-        print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
-        return
-
-    url = f"https://api.github.com/repos/{repo}/actions/workflows/sync.yml/dispatches"
-    payload = {
-        "ref": "main",
-        "inputs": {
-            "target_date": str(target_date),
-            "is_retry": "true"
+        url = f"https://api.github.com/repos/{repo}/actions/workflows/sync.yml/dispatches"
+        payload = {
+            "ref": "main",
+            "inputs": {
+                "target_date": str(target_date),
+                "is_retry": "true"
+            }
         }
-    }
     # Use standard client factory
     async with _make_client(timeout=15.0) as client:
         try:
