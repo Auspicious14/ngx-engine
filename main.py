@@ -1024,7 +1024,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- DATABASE & SCHEMAS (Keep your existing models) ---
+# --- DATABASE MODELS ---
 class Base(DeclarativeBase): pass
 
 class StockPriceDB(Base):
@@ -1041,6 +1041,7 @@ class StockPriceDB(Base):
     trade_date = Column(Date, nullable=False)
     __table_args__ = (Index('uix_symbol_date', 'symbol', 'trade_date', unique=True),)
 
+# --- DATA SCHEMAS ---
 class StockSchema(BaseModel):
     symbol: str
     company_name: str
@@ -1054,12 +1055,12 @@ class StockSchema(BaseModel):
     old_resistance: float = 0.0
     old_support: float = 0.0
     vol_increase: float = 0.0
-    is_corporate_action: bool = False
+    is_extreme: bool = False
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
     @classmethod
     def clean_currency(cls, v):
-        if not v or str(v).strip() in ["-", ""]: return 0.0
+        if not v or str(v).strip() in ["-", "", "None"]: return 0.0
         cleaned = str(v).replace('₦', '').replace(',', '').strip()
         try: return float(cleaned)
         except: return 0.0
@@ -1067,7 +1068,7 @@ class StockSchema(BaseModel):
     @field_validator('volume', mode='before')
     @classmethod
     def clean_volume(cls, v):
-        if not v or str(v).strip() in ["-", ""]: return 0
+        if not v or str(v).strip() in ["-", "", "None"]: return 0
         cleaned = str(v).replace(',', '').strip()
         try: return int(float(cleaned))
         except: return 0
@@ -1077,42 +1078,44 @@ class TelegramNotifier:
     def __init__(self):
         self.token, self.chat_id = os.getenv("TELEGRAM_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
     async def send(self, msg):
-        if self.token:
-            url = f"https://api.telegram.org/bot{self.token}/sendMessage"
-            async with httpx.AsyncClient() as c: await c.post(url, json={"chat_id": self.chat_id, "text": msg, "parse_mode": "Markdown"})
+        if not self.token: return
+        url = f"https://api.telegram.org/bot{self.token}/sendMessage"
+        async with httpx.AsyncClient() as c: 
+            await c.post(url, json={"chat_id": self.chat_id, "text": msg, "parse_mode": "Markdown"})
 
 class WhatsAppNotifier:
     def __init__(self):
         self.inst, self.tok, self.grp = os.getenv("GREEN_API_ID"), os.getenv("GREEN_API_TOKEN"), os.getenv("WHATSAPP_GROUP_ID")
     async def send(self, msg):
-        if self.inst:
-            url = f"https://7107.api.greenapi.com/waInstance{self.inst}/sendMessage/{self.tok}"
-            async with httpx.AsyncClient() as c: await c.post(url, json={"chatId": self.grp, "message": msg})
+        if not self.inst: return
+        url = f"https://7107.api.greenapi.com/waInstance{self.inst}/sendMessage/{self.tok}"
+        async with httpx.AsyncClient() as c: 
+            await c.post(url, json={"chatId": self.grp, "message": msg})
 
-# --- THE ENGINE ---
+# --- CORE ENGINE ---
 class NGXEngine:
     def __init__(self):
         db_url = os.getenv("DATABASE_URL", "").replace("postgres://", "postgresql://")
         self.engine = create_engine(db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.tg, self.wa = TelegramNotifier(), WhatsAppNotifier()
-        self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/122.0.0.0"}
+        self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
         Base.metadata.create_all(self.engine)
 
     async def download_report(self, target_date: date) -> Optional[str]:
         async with httpx.AsyncClient(timeout=40.0, follow_redirects=True, headers=self.headers) as client:
-            # STRATEGY 1: Official Redirects
+            # 1. Direct Download
             try:
                 res = await client.get("https://ngxgroup.com/ngx-download/daily-official-list-equities/")
                 if res.status_code == 200 and b"%PDF" in res.content[:4]:
-                    with open(f"ngx_{target_date}.pdf", "wb") as f: f.write(res.content)
-                    return f"ngx_{target_date}.pdf"
+                    path = f"ngx_{target_date}.pdf"
+                    with open(path, "wb") as f: f.write(res.content)
+                    return path
             except: pass
 
-            # STRATEGY 2: Date-String Guessing (The PDF Hunter)
-            print("🔍 PDF Redirect failed. Falling back to date-string guessing...")
-            seps = ["-", " ", ".", ""]
-            for s in seps:
+            # 2. Brute Force Guessing
+            print("🔍 Guessing PDF filename...")
+            for s in ["-", " ", ".", ""]:
                 d_str = target_date.strftime(f"%d{s}%m{s}%Y")
                 encoded = urllib.parse.quote(d_str)
                 urls = [
@@ -1128,8 +1131,8 @@ class NGXEngine:
                             return path
                     except: continue
 
-            # STRATEGY 3: Web Scrape Fallback
-            print("🌐 PDF not found. Attempting HTML scrape...")
+            # 3. HTML Scrape Fallback
+            print("🌐 Falling back to HTML scrape...")
             try:
                 res = await client.get("https://ngxgroup.com/exchange/data/equities-price-list/")
                 if "table" in res.text:
@@ -1151,11 +1154,16 @@ class NGXEngine:
                     table = page.extract_table()
                     if not table: continue
                     for row in table:
-                        if not row or len(row) < 10 or not str(row[0]).isupper(): continue
+                        # Clean row: filter out None and empty strings
+                        r = [str(x).strip() if x else "" for x in row]
+                        if not r or len(r) < 10 or not r[0].isupper() or len(r[0]) > 15: continue
+                        
+                        # Robust Column Extraction (Prices are usually index 5, 6, or 7)
+                        close_val = r[6] if r[6] != "" else r[5]
                         stocks.append(StockSchema(
-                            symbol=row[0], company_name=row[1], open_price=row[3],
-                            high_price=row[4], low_price=row[5], close_price=row[6],
-                            volume=row[11] if len(row)>11 else row[-1], trade_date=trade_date
+                            symbol=r[0], company_name=r[1], open_price=r[3],
+                            high_price=r[4], low_price=r[5], close_price=close_val,
+                            volume=r[11] if len(r) > 11 else r[-1], trade_date=trade_date
                         ))
         except: pass
         return stocks
@@ -1165,18 +1173,15 @@ class NGXEngine:
         try:
             with open(path, "r", encoding="utf-8") as f:
                 soup = bs4.BeautifulSoup(f.read(), "html.parser")
-            # NGX uses 'table_1' for their Equities Price List
             rows = soup.select("table#table_1 tr") or soup.select("table tr")
             for row in rows[1:]:
-                cols = row.find_all("td")
+                cols = [c.get_text(strip=True) for c in row.find_all("td")]
                 if len(cols) < 10: continue
-                symbol = cols[0].get_text(strip=True)
-                if not symbol.isupper(): continue
+                if not cols[0].isupper(): continue
                 stocks.append(StockSchema(
-                    symbol=symbol, company_name=cols[1].get_text(strip=True),
-                    open_price=cols[3].get_text(strip=True), high_price=cols[4].get_text(strip=True),
-                    low_price=cols[5].get_text(strip=True), close_price=cols[6].get_text(strip=True),
-                    volume=cols[10].get_text(strip=True), trade_date=trade_date
+                    symbol=cols[0], company_name=cols[1], open_price=cols[3],
+                    high_price=cols[4], low_price=cols[5], close_price=cols[6],
+                    volume=cols[10], trade_date=trade_date
                 ))
         except: pass
         return stocks
@@ -1185,12 +1190,15 @@ class NGXEngine:
         session = self.Session()
         try:
             for s in stocks:
+                if s.close_price <= 0: continue
                 prev = session.query(StockPriceDB.close_price).filter(StockPriceDB.symbol==s.symbol, StockPriceDB.trade_date < s.trade_date).order_by(StockPriceDB.trade_date.desc()).first()
-                if prev: s.percent_change = ((s.close_price - float(prev[0])) / float(prev[0])) * 100
+                if prev and float(prev[0]) > 0:
+                    s.percent_change = ((s.close_price - float(prev[0])) / float(prev[0])) * 100
+                
                 stmt = text("""INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
                                VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
                                ON CONFLICT (symbol, trade_date) DO UPDATE SET close_price=EXCLUDED.close_price, percent_change=EXCLUDED.percent_change, volume=EXCLUDED.volume;""")
-                session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action'}))
+                session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_extreme'}))
             session.commit()
         finally: session.close()
 
@@ -1199,40 +1207,59 @@ class NGXEngine:
         brk_out, brk_down, mom, spk = [], [], [], []
         try:
             for s in stocks:
-                s.is_corporate_action = abs(s.percent_change) > 10.1
+                if s.close_price <= 0: continue
+                s.is_extreme = abs(s.percent_change) > 10.5
                 res = session.execute(text("SELECT MAX(high_price), MIN(low_price) FROM stock_prices WHERE symbol=:s AND trade_date < :d"), {"s":s.symbol, "d":s.trade_date}).fetchone()
                 if res and res[0]:
                     if s.close_price > float(res[0]): s.old_resistance=float(res[0]); brk_out.append(s)
-                    if s.close_price < float(res[1]) and not s.is_corporate_action: s.old_support=float(res[1]); brk_down.append(s)
-                if s.percent_change >= 5.0 and not s.is_corporate_action: mom.append(s)
+                    if s.close_price < float(res[1]) and not s.is_extreme: s.old_support=float(res[1]); brk_down.append(s)
+                if s.percent_change >= 5.0 and not s.is_extreme: mom.append(s)
                 avg_v = session.execute(text("SELECT AVG(volume) FROM (SELECT volume FROM stock_prices WHERE symbol=:s AND trade_date < :d ORDER BY trade_date DESC LIMIT 10) as sub"), {"s":s.symbol, "d":s.trade_date}).scalar()
                 if avg_v and s.volume > (float(avg_v)*1.5): s.vol_increase=round(s.volume/float(avg_v),1); spk.append(s)
             return brk_out, brk_down, mom, spk
         finally: session.close()
 
     async def send_daily_recap(self, stocks, brk_out, brk_down, mom, spk):
-        gainers = sorted(stocks, key=lambda x: x.percent_change, reverse=True)[:5]
-        losers = sorted(stocks, key=lambda x: x.percent_change)[:5]
+        # Filter for valid data only
+        valid_stocks = [s for s in stocks if s.close_price > 0]
+        # Get unique symbols to avoid duplicates (e.g. PRESCO twice)
+        unique_stocks = {s.symbol: s for s in valid_stocks}.values()
+        
+        gainers = sorted(unique_stocks, key=lambda x: x.percent_change, reverse=True)[:5]
+        losers = sorted(unique_stocks, key=lambda x: x.percent_change)[:5]
+        
         today = datetime.now().strftime("%d %b %Y")
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today})\n━━━━━━━━━━━━━━━━\n\n"
-        msg += "📈 *TOP 5 GAINERS*\n```\n"
-        for s in gainers: msg += f"{s.symbol:<10} ₦{s.close_price:>7.2f}  ({s.percent_change:>+6.2f}%)\n"
-        msg += "```\n📉 *TOP 5 LOSERS*\n```\n"
-        for s in losers: msg += f"{s.symbol:<10} ₦{s.close_price:>7.2f}  ({s.percent_change:>+6.2f}%)\n"
-        msg += "```\n━━━━━━━━━━━━━━━━\n\n"
+        
+        msg += "📈 *TOP 5 GAINERS*\n"
+        for s in gainers:
+            msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%)\n  └ ⁠ ₦ {s.close_price:,.2f} ⁠\n"
+        
+        msg += "\n📉 *TOP 5 LOSERS*\n"
+        for s in losers:
+            marker = " 🔸" if abs(s.percent_change) > 10 else ""
+            msg += f"• *{s.symbol}* ({s.percent_change:.2f}%{marker})\n  └ ⁠ ₦ {s.close_price:,.2f} ⁠\n"
+        
+        msg += "\n🔸 *Note:* Extreme moves (>10%) are usually Dividend Mark-downs.\n━━━━━━━━━━━━━━━━\n\n"
+
         if brk_out:
             msg += "🔓 *RESISTANCE BREAKOUTS*\n"
-            for s in brk_out[:5]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
+            for s in brk_out[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
+        
         if brk_down:
             msg += "\n⚠️ *SUPPORT BREAKDOWNS*\n"
-            for s in brk_down[:5]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
+            for s in brk_down[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
+
         if mom:
             msg += "\n🔥 *HIGH MOMENTUM (5%+)*\n"
-            for s in mom[:5]: msg += f"• *{s.symbol}*: {s.percent_change:>+6.2f}%\n"
+            for s in mom[:3]: msg += f"• *{s.symbol}*: +{s.percent_change:.2f}%\n"
+
         if spk:
             msg += "\n🔊 *UNUSUAL VOLUME*\n"
-            for s in spk[:5]: msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
+            for s in spk[:3]: msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
+
         msg += "\n💡 *TRADER'S TIP*\nThe 'Perfect Trade' is a *Breakout* + *High Volume*. 📊"
+        
         await self.tg.send(msg); await self.wa.send(msg)
 
 if __name__ == "__main__":
