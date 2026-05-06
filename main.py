@@ -947,43 +947,7 @@ class NGXEngine:
         except Exception as e:
             print(f"Retry dispatch error: {e}")
 
-    async def _schedule_morning_retry(target_date: date):
-    """
-    Dispatch a GitHub Actions workflow_dispatch event to retry
-    fetching target_date's data the following morning.
-    """
-    token = _clean_env("GITHUB_TOKEN")
-    repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
-    
-    if not token or not repo:
-        print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
-        return
-
-    url = f"https://api.github.com/repos/{repo}/actions/workflows/sync.yml/dispatches"
-    payload = {
-        "ref": "main",
-        "inputs": {
-            "target_date": str(target_date),
-            "is_retry": "true"
-        }
-    }
-    # Use standard client factory
-    async with _make_client(timeout=15.0) as client:
-        try:
-            r = await client.post(
-                url,
-                json=payload,
-                headers={
-                    "Authorization": f"Bearer {token}",
-                    "Accept": "application/vnd.github+json",
-                }
-            )
-            if r.status_code == 204:
-                print(f"📅 Morning retry scheduled for {target_date}.")
-            else:
-                print(f"⚠️  Retry dispatch failed: {r.status_code} {r.text[:120]}")
-        except Exception as e:
-            print(f"Retry dispatch error: {e}")
+   
 # ---------------------------------------------------------------------------
 # ENTRY POINT
 # ---------------------------------------------------------------------------
