@@ -909,31 +909,117 @@ class NGXEngine:
 
         await asyncio.gather(self.tg.send(msg), self.wa.send(msg))
 
+    async def _schedule_morning_retry(target_date: date):
+    """
+    Dispatch a GitHub Actions workflow_dispatch event to retry
+    fetching target_date's data the following morning.
+    """
+    token = _clean_env("GITHUB_TOKEN")
+    repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
+    
+    if not token or not repo:
+        print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
+        return
 
+    url = f"https://api.github.com/repos/{repo}/actions/workflows/sync.yml/dispatches"
+    payload = {
+        "ref": "main",
+        "inputs": {
+            "target_date": str(target_date),
+            "is_retry": "true"
+        }
+    }
+    # Use standard client factory
+    async with _make_client(timeout=15.0) as client:
+        try:
+            r = await client.post(
+                url,
+                json=payload,
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "Accept": "application/vnd.github+json",
+                }
+            )
+            if r.status_code == 204:
+                print(f"📅 Morning retry scheduled for {target_date}.")
+            else:
+                print(f"⚠️  Retry dispatch failed: {r.status_code} {r.text[:120]}")
+        except Exception as e:
+            print(f"Retry dispatch error: {e}")
+
+    async def _schedule_morning_retry(target_date: date):
+    """
+    Dispatch a GitHub Actions workflow_dispatch event to retry
+    fetching target_date's data the following morning.
+    """
+    token = _clean_env("GITHUB_TOKEN")
+    repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
+    
+    if not token or not repo:
+        print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
+        return
+
+    url = f"https://api.github.com/repos/{repo}/actions/workflows/sync.yml/dispatches"
+    payload = {
+        "ref": "main",
+        "inputs": {
+            "target_date": str(target_date),
+            "is_retry": "true"
+        }
+    }
+    # Use standard client factory
+    async with _make_client(timeout=15.0) as client:
+        try:
+            r = await client.post(
+                url,
+                json=payload,
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "Accept": "application/vnd.github+json",
+                }
+            )
+            if r.status_code == 204:
+                print(f"📅 Morning retry scheduled for {target_date}.")
+            else:
+                print(f"⚠️  Retry dispatch failed: {r.status_code} {r.text[:120]}")
+        except Exception as e:
+            print(f"Retry dispatch error: {e}")
 # ---------------------------------------------------------------------------
 # ENTRY POINT
 # ---------------------------------------------------------------------------
 
 async def run():
     engine = NGXEngine()
-    today  = datetime.now().date()
+    
+    # Support manual/retry dispatch with a specific date via environment variable
+    input_date = _clean_env("INPUT_TARGET_DATE")
+    is_retry   = _clean_env("INPUT_IS_RETRY") == "true"
+    today      = date.fromisoformat(input_date) if input_date else datetime.now().date()
 
     if today.weekday() >= 5:
         print(f"📅 {today} is a weekend — NGX closed.")
         return
 
-    print(f"\n📊 NGX sync starting for {today}…\n")
+    print(f"\n📊 NGX sync starting for {today} (Retry: {is_retry})…\n")
     source_path = await engine.download_report(today)
 
     if not source_path:
-        msg = f"🛑 NGX SYNC FAILED ({today}) — all download stages exhausted."
-        print(msg)
-        await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
+        # If this wasn't already a morning retry, schedule one
+        if not is_retry:
+            msg = f"⏳ NGX data not yet available for {today} — retry scheduled for tomorrow morning."
+            print(msg)
+            await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
+            await _schedule_morning_retry(today)
+        else:
+            msg = f"🛑 NGX SYNC FAILED ({today}) — exhausted all stages including morning retry."
+            print(msg)
+            await asyncio.gather(engine.tg.send(msg), engine.wa.send(msg))
         return
 
     print(f"\n📂 Source: {source_path}")
     stocks = engine.parse_source(source_path, today)
 
+    # ... (rest of cleanup and processing same as source 2)
     try:
         if os.path.exists(source_path):
             os.remove(source_path)
