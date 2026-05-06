@@ -1056,6 +1056,7 @@ class StockSchema(BaseModel):
     old_support: float = 0.0
     vol_increase: float = 0.0
     is_extreme: bool = False
+    has_history: bool = False  # NEW: track if prev close exists
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
     @classmethod
@@ -1080,7 +1081,7 @@ class TelegramNotifier:
     async def send(self, msg):
         if not self.token: return
         url = f"https://api.telegram.org/bot{self.token}/sendMessage"
-        async with httpx.AsyncClient() as c: 
+        async with httpx.AsyncClient() as c:
             await c.post(url, json={"chat_id": self.chat_id, "text": msg, "parse_mode": "Markdown"})
 
 class WhatsAppNotifier:
@@ -1089,7 +1090,7 @@ class WhatsAppNotifier:
     async def send(self, msg):
         if not self.inst: return
         url = f"https://7107.api.greenapi.com/waInstance{self.inst}/sendMessage/{self.tok}"
-        async with httpx.AsyncClient() as c: 
+        async with httpx.AsyncClient() as c:
             await c.post(url, json={"chatId": self.grp, "message": msg})
 
 # --- CORE ENGINE ---
@@ -1104,16 +1105,14 @@ class NGXEngine:
 
     async def download_report(self, target_date: date) -> Optional[str]:
         async with httpx.AsyncClient(timeout=40.0, follow_redirects=True, headers=self.headers) as client:
-            # 1. Direct Download
             try:
                 res = await client.get("https://ngxgroup.com/ngx-download/daily-official-list-equities/")
-                if res.status_code == 200 and b"%PDF" in res.content[:4]:
+                if res.status_code == 200 and res.content[:4] == b"%PDF":
                     path = f"ngx_{target_date}.pdf"
                     with open(path, "wb") as f: f.write(res.content)
                     return path
             except: pass
 
-            # 2. Brute Force Guessing
             print("🔍 Guessing PDF filename...")
             for s in ["-", " ", ".", ""]:
                 d_str = target_date.strftime(f"%d{s}%m{s}%Y")
@@ -1125,13 +1124,12 @@ class NGXEngine:
                 for url in urls:
                     try:
                         res = await client.get(url)
-                        if res.status_code == 200 and b"%PDF" in res.content[:4]:
+                        if res.status_code == 200 and res.content[:4] == b"%PDF":
                             path = f"ngx_guess_{target_date}.pdf"
                             with open(path, "wb") as f: f.write(res.content)
                             return path
                     except: continue
 
-            # 3. HTML Scrape Fallback
             print("🌐 Falling back to HTML scrape...")
             try:
                 res = await client.get("https://ngxgroup.com/exchange/data/equities-price-list/")
@@ -1147,25 +1145,83 @@ class NGXEngine:
         return self.parse_html(path, trade_date)
 
     def parse_pdf(self, path, trade_date):
+        """
+        FIX: Use header-aware column mapping instead of hardcoded indices.
+        NGX PDF columns (typical): Symbol | Company | Qty | Open | High | Low | Close | Chg | %Chg | Value | Volume | ...
+        We detect the header row and map dynamically.
+        """
         stocks = []
+        KNOWN_HEADERS = ["symbol", "company", "open", "high", "low", "close", "volume"]
+
+        def find_col(headers: list, candidates: list) -> int:
+            for c in candidates:
+                for i, h in enumerate(headers):
+                    if h and c in h.lower(): return i
+            return -1
+
         try:
             with pdfplumber.open(path) as pdf:
+                col_map = {}  # symbol_idx, open_idx, etc.
+
                 for page in pdf.pages:
                     table = page.extract_table()
                     if not table: continue
+
                     for row in table:
-                        # Clean row: filter out None and empty strings
                         r = [str(x).strip() if x else "" for x in row]
-                        if not r or len(r) < 10 or not r[0].isupper() or len(r[0]) > 15: continue
-                        
-                        # Robust Column Extraction (Prices are usually index 5, 6, or 7)
-                        close_val = r[6] if r[6] != "" else r[5]
+                        if not r or len(r) < 7: continue
+
+                        # Detect header row and build column map
+                        row_lower = [c.lower() for c in r]
+                        if any(kw in " ".join(row_lower) for kw in ["symbol", "open price", "high price"]):
+                            col_map = {
+                                "symbol":  find_col(r, ["symbol", "ticker"]),
+                                "company": find_col(r, ["company", "security"]),
+                                "open":    find_col(r, ["open"]),
+                                "high":    find_col(r, ["high"]),
+                                "low":     find_col(r, ["low"]),
+                                "close":   find_col(r, ["close", "last"]),
+                                "volume":  find_col(r, ["volume", "qty", "quantity", "shares"]),
+                            }
+                            continue
+
+                        # Skip rows that aren't stock data
+                        # Symbol must be uppercase alphanumeric, 2-15 chars
+                        sym_idx = col_map.get("symbol", 0)
+                        sym = r[sym_idx] if sym_idx >= 0 and sym_idx < len(r) else r[0]
+                        if not sym or not sym.replace("-", "").isupper() or len(sym) > 15 or len(sym) < 2: continue
+                        if sym in ("SYMBOL", "TICKER", "NAME"): continue
+
+                        def safe_get(idx):
+                            if idx < 0 or idx >= len(r): return ""
+                            return r[idx]
+
+                        # Fallback to positional if no header map found yet
+                        if not col_map:
+                            open_p, high_p, low_p, close_p, vol = r[3], r[4], r[5], r[6], r[11] if len(r) > 11 else r[-1]
+                            company = r[1]
+                        else:
+                            open_p  = safe_get(col_map.get("open", -1))
+                            high_p  = safe_get(col_map.get("high", -1))
+                            low_p   = safe_get(col_map.get("low", -1))
+                            close_p = safe_get(col_map.get("close", -1))
+                            vol     = safe_get(col_map.get("volume", -1))
+                            company = safe_get(col_map.get("company", 1))
+
+                        # Sanity check: close price must be a parseable number > 0
+                        try:
+                            cp = float(close_p.replace('₦', '').replace(',', '').strip())
+                            if cp <= 0: continue
+                        except: continue
+
                         stocks.append(StockSchema(
-                            symbol=r[0], company_name=r[1], open_price=r[3],
-                            high_price=r[4], low_price=r[5], close_price=close_val,
-                            volume=r[11] if len(r) > 11 else r[-1], trade_date=trade_date
+                            symbol=sym, company_name=company,
+                            open_price=open_p, high_price=high_p,
+                            low_price=low_p, close_price=close_p,
+                            volume=vol, trade_date=trade_date
                         ))
-        except: pass
+        except Exception as e:
+            print(f"PDF parse error: {e}")
         return stocks
 
     def parse_html(self, path, trade_date):
@@ -1183,72 +1239,178 @@ class NGXEngine:
                     high_price=cols[4], low_price=cols[5], close_price=cols[6],
                     volume=cols[10], trade_date=trade_date
                 ))
-        except: pass
+        except Exception as e:
+            print(f"HTML parse error: {e}")
         return stocks
 
-    def save(self, stocks):
+    def save(self, stocks: List[StockSchema]) -> List[StockSchema]:
+        """
+        FIX: Compute percent_change from DB prev close, set has_history flag,
+        and include percent_change in ON CONFLICT UPDATE so re-runs stay accurate.
+        Returns enriched stocks list.
+        """
         session = self.Session()
         try:
             for s in stocks:
                 if s.close_price <= 0: continue
-                prev = session.query(StockPriceDB.close_price).filter(StockPriceDB.symbol==s.symbol, StockPriceDB.trade_date < s.trade_date).order_by(StockPriceDB.trade_date.desc()).first()
-                if prev and float(prev[0]) > 0:
-                    s.percent_change = ((s.close_price - float(prev[0])) / float(prev[0])) * 100
-                
-                stmt = text("""INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
-                               VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
-                               ON CONFLICT (symbol, trade_date) DO UPDATE SET close_price=EXCLUDED.close_price, percent_change=EXCLUDED.percent_change, volume=EXCLUDED.volume;""")
-                session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_extreme'}))
-            session.commit()
-        finally: session.close()
 
-    def get_market_alerts(self, stocks):
+                prev = session.execute(
+                    text("""SELECT close_price FROM stock_prices
+                            WHERE symbol = :sym AND trade_date < :d
+                            ORDER BY trade_date DESC LIMIT 1"""),
+                    {"sym": s.symbol, "d": s.trade_date}
+                ).fetchone()
+
+                if prev and float(prev[0]) > 0:
+                    s.has_history = True
+                    s.percent_change = round(((s.close_price - float(prev[0])) / float(prev[0])) * 100, 2)
+                else:
+                    s.has_history = False
+                    s.percent_change = 0.0
+
+                stmt = text("""
+                    INSERT INTO stock_prices
+                        (symbol, company_name, open_price, high_price, low_price,
+                         close_price, percent_change, volume, trade_date)
+                    VALUES
+                        (:symbol, :company_name, :open_price, :high_price, :low_price,
+                         :close_price, :percent_change, :volume, :trade_date)
+                    ON CONFLICT (symbol, trade_date) DO UPDATE SET
+                        close_price     = EXCLUDED.close_price,
+                        open_price      = EXCLUDED.open_price,
+                        high_price      = EXCLUDED.high_price,
+                        low_price       = EXCLUDED.low_price,
+                        percent_change  = EXCLUDED.percent_change,
+                        volume          = EXCLUDED.volume;
+                """)
+                session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_extreme', 'has_history'}))
+
+            session.commit()
+        finally:
+            session.close()
+        return stocks
+
+    def get_market_alerts(self, stocks: List[StockSchema], lookback_days: int = 20):
+        """
+        FIX: 
+        - Only use stocks with history for breakout/breakdown/momentum signals
+        - Use rolling N-day high/low (configurable) instead of all-time
+        - Mark extreme movers before appending to momentum list
+        """
         session = self.Session()
         brk_out, brk_down, mom, spk = [], [], [], []
         try:
             for s in stocks:
-                if s.close_price <= 0: continue
+                if s.close_price <= 0 or not s.has_history: continue
+
                 s.is_extreme = abs(s.percent_change) > 10.5
-                res = session.execute(text("SELECT MAX(high_price), MIN(low_price) FROM stock_prices WHERE symbol=:s AND trade_date < :d"), {"s":s.symbol, "d":s.trade_date}).fetchone()
-                if res and res[0]:
-                    if s.close_price > float(res[0]): s.old_resistance=float(res[0]); brk_out.append(s)
-                    if s.close_price < float(res[1]) and not s.is_extreme: s.old_support=float(res[1]); brk_down.append(s)
-                if s.percent_change >= 5.0 and not s.is_extreme: mom.append(s)
-                avg_v = session.execute(text("SELECT AVG(volume) FROM (SELECT volume FROM stock_prices WHERE symbol=:s AND trade_date < :d ORDER BY trade_date DESC LIMIT 10) as sub"), {"s":s.symbol, "d":s.trade_date}).scalar()
-                if avg_v and s.volume > (float(avg_v)*1.5): s.vol_increase=round(s.volume/float(avg_v),1); spk.append(s)
+
+                # Rolling N-day resistance/support (exclude today)
+                res = session.execute(text("""
+                    SELECT MAX(high_price), MIN(low_price)
+                    FROM stock_prices
+                    WHERE symbol = :sym
+                      AND trade_date < :d
+                      AND trade_date >= :d - INTERVAL ':n days'
+                """), {"sym": s.symbol, "d": s.trade_date, "n": lookback_days}).fetchone()
+
+                # SQLAlchemy text() doesn't interpolate :n inside INTERVAL cleanly — use f-string for the number only
+                res = session.execute(text(f"""
+                    SELECT MAX(high_price), MIN(low_price)
+                    FROM stock_prices
+                    WHERE symbol = :sym
+                      AND trade_date < :d
+                      AND trade_date >= :d - INTERVAL '{lookback_days} days'
+                """), {"sym": s.symbol, "d": s.trade_date}).fetchone()
+
+                if res and res[0] and not s.is_extreme:
+                    rolling_high = float(res[0])
+                    rolling_low  = float(res[1])
+                    if s.close_price > rolling_high:
+                        s.old_resistance = rolling_high; brk_out.append(s)
+                    elif s.close_price < rolling_low:
+                        s.old_support = rolling_low; brk_down.append(s)
+
+                # Momentum: ≥5% gain, not an extreme/markdown move
+                if s.percent_change >= 5.0 and not s.is_extreme:
+                    mom.append(s)
+
+                # Volume spike vs 10-day avg
+                avg_v = session.execute(text(f"""
+                    SELECT AVG(volume)
+                    FROM (
+                        SELECT volume FROM stock_prices
+                        WHERE symbol = :sym AND trade_date < :d
+                        ORDER BY trade_date DESC LIMIT 10
+                    ) sub
+                """), {"sym": s.symbol, "d": s.trade_date}).scalar()
+
+                if avg_v and float(avg_v) > 0 and s.volume > float(avg_v) * 1.5:
+                    s.vol_increase = round(s.volume / float(avg_v), 1)
+                    spk.append(s)
+
             return brk_out, brk_down, mom, spk
-        finally: session.close()
+        finally:
+            session.close()
 
     async def send_daily_recap(self, stocks, brk_out, brk_down, mom, spk):
-        # Filter for valid data only
-        valid_stocks = [s for s in stocks if s.close_price > 0]
-        # Get unique symbols to avoid duplicates (e.g. PRESCO twice)
-        unique_stocks = {s.symbol: s for s in valid_stocks}.values()
-        
-        gainers = sorted(unique_stocks, key=lambda x: x.percent_change, reverse=True)[:5]
-        losers = sorted(unique_stocks, key=lambda x: x.percent_change)[:5]
-        
+        """
+        FIX:
+        - Only rank stocks that HAVE history (has_history=True) for gainers/losers
+        - Exclude extreme movers (>10.5%) from losers — likely dividend markdowns
+        - Deduplicate by symbol (keep first occurrence)
+        """
+        # Only use stocks with a real previous close
+        rankable = [s for s in stocks if s.close_price > 0 and s.has_history]
+        # Deduplicate
+        seen = set()
+        unique = []
+        for s in rankable:
+            if s.symbol not in seen:
+                seen.add(s.symbol); unique.append(s)
+
+        gainers = sorted(
+            [s for s in unique if not s.is_extreme],
+            key=lambda x: x.percent_change, reverse=True
+        )[:5]
+
+        losers = sorted(
+            [s for s in unique if not s.is_extreme],
+            key=lambda x: x.percent_change
+        )[:5]
+
+        # Separate extreme movers for transparency
+        extremes = sorted(
+            [s for s in unique if s.is_extreme],
+            key=lambda x: x.percent_change
+        )
+
         today = datetime.now().strftime("%d %b %Y")
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today})\n━━━━━━━━━━━━━━━━\n\n"
-        
+
         msg += "📈 *TOP 5 GAINERS*\n"
         for s in gainers:
-            msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%)\n  └ ⁠ ₦ {s.close_price:,.2f} ⁠\n"
-        
+            msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%)\n  └ ₦{s.close_price:,.2f}\n"
+
         msg += "\n📉 *TOP 5 LOSERS*\n"
         for s in losers:
-            marker = " 🔸" if abs(s.percent_change) > 10 else ""
-            msg += f"• *{s.symbol}* ({s.percent_change:.2f}%{marker})\n  └ ⁠ ₦ {s.close_price:,.2f} ⁠\n"
-        
-        msg += "\n🔸 *Note:* Extreme moves (>10%) are usually Dividend Mark-downs.\n━━━━━━━━━━━━━━━━\n\n"
+            msg += f"• *{s.symbol}* ({s.percent_change:.2f}%)\n  └ ₦{s.close_price:,.2f}\n"
+
+        if extremes:
+            msg += "\n🔸 *DIVIDEND MARKDOWNS (>10% move)*\n"
+            for s in extremes[:5]:
+                direction = "+" if s.percent_change > 0 else ""
+                msg += f"• *{s.symbol}*: {direction}{s.percent_change:.2f}% @ ₦{s.close_price:,.2f}\n"
+
+        msg += "\n━━━━━━━━━━━━━━━━\n\n"
 
         if brk_out:
-            msg += "🔓 *RESISTANCE BREAKOUTS*\n"
-            for s in brk_out[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
-        
+            msg += "🔓 *RESISTANCE BREAKOUTS* (20-day)\n"
+            for s in brk_out[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price:,.2f} (broke ₦{s.old_resistance:,.2f})\n"
+
         if brk_down:
-            msg += "\n⚠️ *SUPPORT BREAKDOWNS*\n"
-            for s in brk_down[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
+            msg += "\n⚠️ *SUPPORT BREAKDOWNS* (20-day)\n"
+            for s in brk_down[:3]: msg += f"• *{s.symbol}*: ₦{s.close_price:,.2f} (below ₦{s.old_support:,.2f})\n"
 
         if mom:
             msg += "\n🔥 *HIGH MOMENTUM (5%+)*\n"
@@ -1256,11 +1418,13 @@ class NGXEngine:
 
         if spk:
             msg += "\n🔊 *UNUSUAL VOLUME*\n"
-            for s in spk[:3]: msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
+            for s in spk[:3]: msg += f"• *{s.symbol}*: {s.vol_increase}x avg vol\n"
 
         msg += "\n💡 *TRADER'S TIP*\nThe 'Perfect Trade' is a *Breakout* + *High Volume*. 📊"
-        
-        await self.tg.send(msg); await self.wa.send(msg)
+
+        await self.tg.send(msg)
+        await self.wa.send(msg)
+
 
 if __name__ == "__main__":
     async def run():
@@ -1270,9 +1434,9 @@ if __name__ == "__main__":
         if not source: return print("🛑 No source found.")
         stocks = e.parse_source(source, today)
         if not stocks: return print("🛑 Parsing failed.")
-        e.save(stocks)
+        stocks = e.save(stocks)  # FIX: capture enriched return value
         out, dwn, mom, spk = e.get_market_alerts(stocks)
         await e.send_daily_recap(stocks, out, dwn, mom, spk)
         if os.path.exists(source): os.remove(source)
-        print("✅ Sync Complete.")
+        print(f"✅ Sync Complete. {len(stocks)} stocks processed.")
     asyncio.run(run())
