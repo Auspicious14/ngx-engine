@@ -194,7 +194,6 @@ class NGXEngine:
 
         # Optional Nigerian proxy to bypass geo-blocks on foreign CI runners
         proxy_url = os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY")
-        # self.proxies = {"http://": proxy_url, "https://": proxy_url} if proxy_url else None
         if proxy_url:
             print(f"🌍 Proxy configured: {proxy_url}")  
 
@@ -206,6 +205,7 @@ class NGXEngine:
 
     def _client(self, extra_headers: Optional[dict] = None, timeout: float = 40.0) -> httpx.AsyncClient:
         headers = {**self.BASE_HEADERS, **(extra_headers or {})}
+        proxy_url = os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY")
         return httpx.AsyncClient(
             timeout=timeout,
             follow_redirects=True,
