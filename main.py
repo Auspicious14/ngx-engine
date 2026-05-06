@@ -1280,15 +1280,15 @@
 #     asyncio.run(main())
 
 
-import os
+  import os
 import asyncio
 import httpx
 import pdfplumber
 import urllib.parse
 import bs4
-from datetime import datetime, date, timedelta
-from typing import List, Optional, Tuple
-from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, Float, text, Index
+from datetime import datetime, date
+from typing import List, Optional
+from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteger, Date, text, Index
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from pydantic import BaseModel, field_validator
 from dotenv import load_dotenv
@@ -1314,15 +1314,6 @@ class StockPriceDB(Base):
     trade_date = Column(Date, nullable=False)
 
     __table_args__ = (Index('uix_symbol_date', 'symbol', 'trade_date', unique=True),)
-
-class EarningsCalendar(Base):
-    __tablename__ = 'earnings_calendar'
-    id = Column(Integer, primary_key=True)
-    symbol = Column(String, nullable=False)
-    period = Column(String)           
-    expected_date = Column(Date)      
-    actual_date = Column(Date)        
-    dividend_yield = Column(Float)    
 
 # --- DATA SCHEMAS ---
 class StockSchema(BaseModel):
@@ -1373,7 +1364,7 @@ class TelegramNotifier:
         async with httpx.AsyncClient(timeout=15.0) as client:
             try:
                 await client.post(self.url, json={"chat_id": self.chat_id, "text": message, "parse_mode": "Markdown"})
-            except Exception as e: print(f"📡 TG Error: {e}")
+            except Exception: pass
             
 class WhatsAppNotifier:
     def __init__(self):
@@ -1384,18 +1375,13 @@ class WhatsAppNotifier:
         self.base_url = f"{self.api_url}/waInstance{self.id_instance}/sendMessage/{self.api_token}"
 
     async def send(self, message: str):
-        if not all([self.id_instance, self.api_token, self.group_id]):
-            print("⚠️ WhatsApp configuration missing.")
-            return False
-            
+        if not all([self.id_instance, self.api_token, self.group_id]): return False
         payload = {"chatId": self.group_id, "message": message}
         async with httpx.AsyncClient(timeout=30.0) as client:
             try:
                 response = await client.post(self.base_url, json=payload)
                 return response.status_code == 200
-            except Exception as e:
-                print(f"📡 WhatsApp Error: {e}")
-                return False
+            except Exception: return False
 
 # --- CORE ENGINE ---
 class NGXEngine:
@@ -1416,62 +1402,34 @@ class NGXEngine:
         Base.metadata.create_all(self.engine)
 
     async def download_report(self, target_date: date) -> Optional[str]:
-        """Stage 1: Redirects | Stage 2: Guessing | Stage 3: HTML Scrape"""
         async with httpx.AsyncClient(timeout=40.0, follow_redirects=True, headers=self.headers) as client:
-            
-            # --- STAGE 1: LATEST REDIRECTS ---
-            latest_urls = [
-                "https://ngxgroup.com/ngx-download/daily-official-list-equities/",
-                "https://ngxgroup.com/ngx-download/market-data-pricelist-2/"
-            ]
+            # Stage 1: Official PDF Links
+            latest_urls = ["https://ngxgroup.com/ngx-download/daily-official-list-equities/"]
             for url in latest_urls:
                 try:
                     res = await client.get(url)
                     if res.status_code == 200 and b"%PDF" in res.content[:4]:
-                        path = f"ngx_latest_{target_date}.pdf"
+                        path = f"ngx_{target_date}.pdf"
                         with open(path, "wb") as f: f.write(res.content)
                         return path
                 except Exception: continue
 
-            # --- STAGE 2: DATE-STRING GUESSING ---
-            delimiters = ["-", " ", ".", ""]
-            for sep in delimiters:
-                date_str = target_date.strftime(f"%d{sep}%m{sep}%Y")
-                encoded = urllib.parse.quote(date_str)
-                patterns = [
-                    f"Daily%20Official%20List%20-%20Equities%20for%20{encoded}.pdf",
-                    f"DAILY%20SUMMARY%20FOR%20{encoded}.pdf",
-                    f"Daily%20Summary%20for%20{encoded}.pdf"
-                ]
-                for p in patterns:
-                    url = f"https://doclib.ngxgroup.com/DownloadsContent/{p}"
-                    try:
-                        res = await client.get(url)
-                        if res.status_code == 200 and b"%PDF" in res.content[:4]:
-                            path = f"ngx_guess_{target_date}.pdf"
-                            with open(path, "wb") as f: f.write(res.content)
-                            return path
-                    except Exception: continue
-
-            # --- STAGE 3: HTML WEB SCRAPE (RELIABLE FAILOVER) ---
-            print("🌐 PDF fallback failed. Attempting HTML scrape...")
+            # Stage 2: Web Scrape Fallback (if PDF is delayed)
+            print("🌐 PDF not found. Attempting HTML scrape...")
             try:
                 web_url = "https://ngxgroup.com/exchange/data/equities-price-list/"
                 res = await client.get(web_url)
                 if res.status_code == 200 and "table" in res.text:
-                    path = f"ngx_scrape_{target_date}.html"
+                    path = f"ngx_{target_date}.html"
                     with open(path, "w", encoding="utf-8") as f: f.write(res.text)
                     return path
-            except Exception as e: print(f"🌐 Scrape Error: {e}")
-
+            except Exception: pass
         return None
 
     def parse_source(self, path: str, trade_date: date) -> List[StockSchema]:
         if path.endswith(".pdf"):
             return self.parse_pdf(path, trade_date)
-        elif path.endswith(".html"):
-            return self.parse_html(path, trade_date)
-        return []
+        return self.parse_html(path, trade_date)
 
     def parse_pdf(self, path: str, trade_date: date) -> List[StockSchema]:
         data = []
@@ -1486,7 +1444,6 @@ class NGXEngine:
                             header_idx = i
                             break
                     if header_idx == -1: continue
-
                     for row in table[header_idx + 1:]:
                         if not row or len(row) < 10 or not row[0]: continue
                         symbol = str(row[0]).strip()
@@ -1499,7 +1456,7 @@ class NGXEngine:
                             volume=row[11] if len(row) > 11 else row[-1], 
                             trade_date=trade_date
                         ))
-        except Exception as e: print(f"PDF Parse Error: {e}")
+        except Exception: pass
         return data
 
     def parse_html(self, path: str, trade_date: date) -> List[StockSchema]:
@@ -1509,7 +1466,6 @@ class NGXEngine:
                 soup = bs4.BeautifulSoup(f.read(), "html.parser")
             table = soup.find("table", {"id": "table_1"}) or soup.find("table")
             if not table: return []
-
             for row in table.find_all("tr")[1:]:
                 cols = row.find_all("td")
                 if len(cols) < 10: continue
@@ -1524,7 +1480,7 @@ class NGXEngine:
                     volume=cols[10].get_text(strip=True),
                     trade_date=trade_date
                 ))
-        except Exception as e: print(f"HTML Parse Error: {e}")
+        except Exception: pass
         return stocks
 
     def save(self, stocks: List[StockSchema]):
@@ -1534,10 +1490,8 @@ class NGXEngine:
                 prev = session.query(StockPriceDB.close_price).filter(
                     StockPriceDB.symbol == stock.symbol, StockPriceDB.trade_date < stock.trade_date
                 ).order_by(StockPriceDB.trade_date.desc()).first()
-
                 if prev and float(prev[0]) > 0:
                     stock.percent_change = ((stock.close_price - float(prev[0])) / float(prev[0])) * 100
-
                 stmt = text("""
                     INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
                     VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
@@ -1546,9 +1500,7 @@ class NGXEngine:
                 """)
                 session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action'}))
             session.commit()
-        except Exception as e:
-            session.rollback()
-            print(f"DB Error: {e}")
+        except Exception: session.rollback()
         finally: session.close()
 
     def get_market_alerts(self, stocks: List[StockSchema]):
@@ -1556,7 +1508,7 @@ class NGXEngine:
         breakouts, breakdowns, momentum, volume_spikes = [], [], [], []
         try:
             for stock in stocks:
-                stock.is_corporate_action = abs(stock.percent_change) > 10.5
+                stock.is_corporate_action = abs(stock.percent_change) > 10.1
                 levels = session.query(text("MAX(high_price)"), text("MIN(low_price)")).from_statement(text("""
                     SELECT high_price, low_price FROM stock_prices 
                     WHERE symbol = :symbol AND trade_date < :today
@@ -1571,67 +1523,98 @@ class NGXEngine:
                     if sup > 0 and stock.close_price < sup and not stock.is_corporate_action:
                         stock.old_support = sup
                         breakdowns.append(stock)
-
                 if stock.percent_change >= 5.0 and not stock.is_corporate_action:
                     momentum.append(stock)
-
                 avg_vol = session.execute(text("""
                     SELECT AVG(volume) FROM (
-                        SELECT volume FROM stock_prices 
-                        WHERE symbol = :symbol AND trade_date < :today
+                        SELECT volume FROM stock_prices WHERE symbol = :symbol AND trade_date < :today
                         ORDER BY trade_date DESC LIMIT 10
                     ) as subquery
                 """), {"symbol": stock.symbol, "today": stock.trade_date}).scalar()
-
-                if avg_vol and stock.volume > (float(avg_vol) * 2):
+                if avg_vol and stock.volume > (float(avg_vol) * 1.5):
                     stock.vol_increase = round(stock.volume / float(avg_vol), 1)
                     volume_spikes.append(stock)
             return breakouts, breakdowns, momentum, volume_spikes
         finally: session.close()
 
     async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
-        sorted_stocks = sorted(stocks, key=lambda x: x.percent_change, reverse=True)
-        gainers, losers = sorted_stocks[:5], sorted(stocks, key=lambda x: x.percent_change)[:5]
-        
-        msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({datetime.now().strftime('%d %b %Y')})\n"
+        gainers = sorted(stocks, key=lambda x: x.percent_change, reverse=True)[:5]
+        losers = sorted(stocks, key=lambda x: x.percent_change)[:5]
+        today_str = datetime.now().strftime("%d %b %Y")
+
+        msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
-        msg += "📈 *TOP GAINERS*\n"
-        for s in gainers: msg += f"• *{s.symbol}* (+{s.percent_change:.2f}%)\n"
-        
-        msg += "\n📉 *TOP LOSERS*\n"
-        for s in losers: msg += f"• *{s.symbol}* ({s.percent_change:.2f}%)\n"
-        
+
+        msg += "📈 *TOP 5 GAINERS*\n```\n"
+        for s in gainers:
+            msg += f"{s.symbol:<10} ₦{s.close_price:>7.2f}  ({s.percent_change:>+6.2f}%)\n"
+        msg += "```\n"
+
+        msg += "📉 *TOP 5 LOSERS*\n```\n"
+        for s in losers:
+            msg += f"{s.symbol:<10} ₦{s.close_price:>7.2f}  ({s.percent_change:>+6.2f}%)\n"
+        msg += "```\n━━━━━━━━━━━━━━━━\n\n"
+
         if breakouts:
-            msg += "\n🔓 *BREAKOUTS*\n"
-            for s in breakouts[:3]: msg += f"• *{s.symbol}* (Broke ₦{s.old_resistance})\n"
+            msg += "🔓 *RESISTANCE BREAKOUTS*\n"
+            msg += "WHY: Price broke the ceiling. Buyers are in control.\n"
+            for s in breakouts[:5]:
+                msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
+            msg += "\n"
+
+        if breakdowns:
+            msg += "⚠️ *SUPPORT BREAKDOWNS*\n"
+            msg += "WHY: The floor collapsed. High risk of further drop.\n"
+            for s in breakdowns[:5]:
+                msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
+            msg += "\n"
+
+        if momentum:
+            msg += "🔥 *HIGH MOMENTUM (5%+)*\n"
+            for s in momentum[:5]:
+                msg += f"• *{s.symbol}*: {s.percent_change:>+6.2f}%\n"
+            msg += "\n"
 
         if spikes:
-            msg += "\n🔊 *VOLUME SPIKES*\n"
-            for s in spikes[:3]: msg += f"• *{s.symbol}* ({s.vol_increase}x Vol)\n"
+            msg += "🔊 *UNUSUAL VOLUME*\n"
+            msg += "WHY: High activity usually confirms a trend.\n"
+            for s in spikes[:5]:
+                msg += f"• *{s.symbol}*: {s.vol_increase}x Normal Vol\n"
 
-        msg += "\n💡 *TIP:* Breakout + Volume = Entry. 📊"
+        msg += "\n💡 *TRADER'S TIP*\n"
+        msg += "The 'Perfect Trade' is a *Breakout* + *High Volume*. 📊"
+        
         await self.tg.send(msg)
         await self.wa.send(msg)
 
-# --- EXECUTION ---
+# --- MAIN EXECUTION ---
 if __name__ == "__main__":
-    async def run():
+    async def run_daily_sync():
+        print("📊 Starting Daily NGX Sync...")
         engine = NGXEngine()
         today = datetime.now().date()
-        source_path = await engine.download_report(today)
         
-        if not source_path:
-            print("🛑 No source found.")
+        source = await engine.download_report(today)
+        if not source:
+            print(f"🛑 No report found for {today} after all strategies.")
             return
-
-        stocks = engine.parse_source(source_path, today)
-        if stocks:
-            engine.save(stocks)
-            alerts = engine.get_market_alerts(stocks)
-            await engine.send_daily_recap(stocks, *alerts)
-            if os.path.exists(source_path): os.remove(source_path)
-            print(f"✅ Processed {len(stocks)} stocks.")
-        else:
+            
+        stocks = engine.parse_source(source, today)
+        if not stocks: 
             print("🛑 Parsing failed.")
+            return
+        
+        print(f"💾 Saving {len(stocks)} stocks to Database...")
+        engine.save(stocks)
+        
+        print("🔍 Analyzing Market Alerts...")
+        breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)
+        
+        print("📱 Sending Recap...")
+        await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
+        
+        if os.path.exists(source): os.remove(source)
+        print("✅ Sync Complete.")
 
+    asyncio.run(run_daily_sync())
     asyncio.run(run())
