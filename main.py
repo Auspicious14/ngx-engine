@@ -1155,8 +1155,14 @@ class NGXEngine:
         Base.metadata.create_all(self.engine)
 
     def _make_client(self, use_proxy=False):
-        p = self.proxy if use_proxy else None
-        return httpx.AsyncClient(timeout=40.0, follow_redirects=True, headers=self.headers, proxy=p, trust_env=False)
+        p = self.proxy.strip() if (use_proxy and self.proxy) else None
+        return httpx.AsyncClient(
+            timeout=40.0, 
+            follow_redirects=True, 
+            headers=self.headers, 
+            proxy=p, 
+            trust_env=False
+        )
 
     async def download_report(self, target_date: date) -> Optional[str]:
         # --- STAGE 1: Stooq (No Proxy, Best for GitHub Actions) ---
