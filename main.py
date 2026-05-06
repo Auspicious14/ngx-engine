@@ -914,8 +914,8 @@ class NGXEngine:
         Dispatch a GitHub Actions workflow_dispatch event to retry
         fetching target_date's data the following morning.
         """
-        token = _clean_env("GITHUB_TOKEN")
-        repo  = _clean_env("GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
+        token = _clean_env("NGX_GITHUB_TOKEN")
+        repo  = _clean_env("NGX_GITHUB_REPO")   # e.g. "auspicious/ngx-engine"
         
         if not token or not repo:
             print("⚠️  GITHUB_TOKEN or GITHUB_REPO not set — cannot schedule retry.")
