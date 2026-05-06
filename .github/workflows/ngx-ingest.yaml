@@ -48,8 +48,8 @@ jobs:
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
           NG_PROXY_URL: ${{ secrets.NG_PROXY_URL }}
           # New inputs for retry logic
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPO: ${{ github.repository }}
+          NGX_GITHUB_TOKEN: ${{ secrets.NGX_GITHUB_TOKEN }}
+          NGX_GITHUB_REPO: ${{ github.repository }}
           INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
           INPUT_IS_RETRY: ${{ github.event.inputs.is_retry }}
         run: |
