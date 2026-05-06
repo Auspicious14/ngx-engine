@@ -1123,7 +1123,7 @@ class NGXEngine:
     STOOQ_TICKERS = [
             # Banking & Financials
             "ACCESSCORP", "FBNH", "FCMB", "FIDELITYBK", "GTCO", "STANBIC", "STERLINGNG", 
-            "UBA", "UCAP", "UNITYBNK", "WEMABANK", "ZENITHBANK", "ETI" "JAIZBANK",
+            "UBA", "UCAP", "UNITYBNK", "WEMABANK", "ZENITHBANK", "ETI", "JAIZBANK",
             
             # Industrial & Telecom
             "DANGCEM", "BUACEMENT", "LAFARGE", "MTNN", "AIRTELAFRI", "CUTIX",
