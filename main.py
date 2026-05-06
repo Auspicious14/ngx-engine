@@ -193,8 +193,8 @@ class NGXEngine:
         self.tg = TelegramNotifier()
 
         # Optional Nigerian proxy to bypass geo-blocks on foreign CI runners
-        proxy_url = os.getenv("NG_PROXY_URL")
-        self.proxies = {"http://": proxy_url, "https://": proxy_url} if proxy_url else None
+        proxy_url = os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY")
+        # self.proxies = {"http://": proxy_url, "https://": proxy_url} if proxy_url else None
         if self.proxies:
             print(f"🔀 Using proxy: {proxy_url.split('@')[-1]}")  # hide credentials
 
@@ -210,7 +210,7 @@ class NGXEngine:
             timeout=timeout,
             follow_redirects=True,
             headers=headers,
-            proxies=self.proxies,
+            proxy=proxy_url,
         )
 
     @staticmethod
