@@ -929,23 +929,23 @@ class NGXEngine:
                 "is_retry": "true"
             }
         }
-    # Use standard client factory
-    async with _make_client(timeout=15.0) as client:
-        try:
-            r = await client.post(
-                url,
-                json=payload,
-                headers={
-                    "Authorization": f"Bearer {token}",
-                    "Accept": "application/vnd.github+json",
-                }
-            )
-            if r.status_code == 204:
-                print(f"📅 Morning retry scheduled for {target_date}.")
-            else:
-                print(f"⚠️  Retry dispatch failed: {r.status_code} {r.text[:120]}")
-        except Exception as e:
-            print(f"Retry dispatch error: {e}")
+        # Use standard client factory
+        async with _make_client(timeout=15.0) as client:
+            try:
+                r = await client.post(
+                    url,
+                    json=payload,
+                    headers={
+                        "Authorization": f"Bearer {token}",
+                        "Accept": "application/vnd.github+json",
+                    }
+                )
+                if r.status_code == 204:
+                    print(f"📅 Morning retry scheduled for {target_date}.")
+                else:
+                    print(f"⚠️  Retry dispatch failed: {r.status_code} {r.text[:120]}")
+            except Exception as e:
+                print(f"Retry dispatch error: {e}")
 
    
 # ---------------------------------------------------------------------------
