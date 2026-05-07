@@ -1131,7 +1131,7 @@ class NGXEngine:
                             return path
                     except: continue
         return None
-
+    # --- UPDATED PARSE_PDF LOGIC ---
     def parse_pdf(self, path, trade_date):
         stocks = []
         try:
@@ -1141,40 +1141,78 @@ class NGXEngine:
                     if not table: continue
                     for row in table:
                         r = [str(x).strip() if x else "" for x in row]
-                        # Valid tickers are uppercase, 3-10 chars, no spaces
                         if not r or len(r) < 10 or not r[0].isupper() or " " in r[0]: continue
                         
-                        # Find numeric indices dynamically to handle column shifts
-                        nums = [i for i, val in enumerate(r) if re.match(r'^-?[\d,.]+$', val.replace('₦',''))]
-                        if len(nums) < 4: continue # Need at least Open, High, Low, Close
+                        # 1. FIND NUMBERS: Extract indices of all numeric-looking strings
+                        nums_idx = [i for i, val in enumerate(r) if re.match(r'^-?[\d,.]+$', val.replace('₦',''))]
                         
-                        # Indices are usually: Open(nums[0]), High(nums[1]), Low(nums[2]), Close(nums[3])
+                        if len(nums_idx) < 4: continue 
+    
+                        # 2. THE CIRCUIT BREAKER: 
+                        # Prices on NGX (except maybe DANGCEM or SEPLAT) are rarely > 5,000.
+                        # Volume is usually > 10,000. We target the first block of 'reasonable' prices.
+                        potential_prices = []
+                        volume = 0
+                        for idx in nums_idx:
+                            val = self.clean_currency(r[idx])
+                            # If we hit a number like 20 million, that's almost certainly Volume, not Price.
+                            if val > 50000: 
+                                volume = int(val)
+                                continue
+                            potential_prices.append(val)
+    
+                        if len(potential_prices) < 4: continue
+    
+                        # Usually, the order is: Open, High, Low, Close
                         stocks.append(StockSchema(
-                            symbol=r[0], company_name=r[1], 
-                            open_price=r[nums[0]], high_price=r[nums[1]], 
-                            low_price=r[nums[2]], close_price=r[nums[3]],
-                            volume=r[-1] if r[-1].isdigit() else r[nums[-1]], 
+                            symbol=r[0], 
+                            company_name=r[1], 
+                            open_price=potential_prices[0], 
+                            high_price=potential_prices[1], 
+                            low_price=potential_prices[2], 
+                            close_price=potential_prices[3],
+                            volume=volume or self.clean_volume(r[-1]), 
                             trade_date=trade_date
                         ))
-        except: pass
+        except Exception as e:
+            print(f"⚠️ Parsing Error: {e}")
         return stocks
 
+# --- UPDATED SAVE LOGIC WITH OVERFLOW PROTECTION ---
     def save(self, stocks):
         session = self.Session()
         try:
             for s in stocks:
-                if s.close_price <= 0: continue
-                prev = session.query(StockPriceDB.close_price).filter(StockPriceDB.symbol==s.symbol, StockPriceDB.trade_date < s.trade_date).order_by(StockPriceDB.trade_date.desc()).first()
-                if prev and float(prev[0]) > 0:
-                    s.percent_change = ((s.close_price - float(prev[0])) / float(prev[0])) * 100
+                try:
+                    if s.close_price <= 0: continue
+                    
+                    prev = session.query(StockPriceDB.close_price).filter(
+                        StockPriceDB.symbol == s.symbol, 
+                        StockPriceDB.trade_date < s.trade_date
+                    ).order_by(StockPriceDB.trade_date.desc()).first()
+                    
+                    if prev and float(prev[0]) > 0:
+                        s.percent_change = ((s.close_price - float(prev[0])) / float(prev[0])) * 100
+                    
+                    # FINAL SANITY CHECK: NGX daily limit is 10%. 
+                    # If we see > 100%, it's likely a parsing glitch. Skip it.
+                    if abs(s.percent_change) > 100:
+                        print(f"⚠️ Skipping {s.symbol}: Impossible growth ({s.percent_change}%).")
+                        continue
+    
+                    stmt = text("""INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
+                                   VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
+                                   ON CONFLICT (symbol, trade_date) DO UPDATE SET close_price=EXCLUDED.close_price, percent_change=EXCLUDED.percent_change, volume=EXCLUDED.volume;""")
+                    session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_extreme'}))
                 
-                stmt = text("""INSERT INTO stock_prices (symbol, company_name, open_price, high_price, low_price, close_price, percent_change, volume, trade_date)
-                               VALUES (:symbol, :company_name, :open_price, :high_price, :low_price, :close_price, :percent_change, :volume, :trade_date)
-                               ON CONFLICT (symbol, trade_date) DO UPDATE SET close_price=EXCLUDED.close_price, percent_change=EXCLUDED.percent_change, volume=EXCLUDED.volume;""")
-                session.execute(stmt, s.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_extreme'}))
+                except Exception as e:
+                    print(f"❌ Failed to save {s.symbol}: {e}")
+                    continue
+                    
             session.commit()
-        finally: session.close()
-
+        finally:
+            session.close()
+            
     def get_market_alerts(self, stocks):
         session = self.Session()
         brk_out, brk_down, mom, spk = [], [], [], []
