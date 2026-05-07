@@ -6,14 +6,14 @@ on:
     - cron: '30 17 * * 1-5'
   workflow_dispatch: 
     inputs:
-      target_date:
-        description: 'Date to fetch (YYYY-MM-DD), defaults to today'
-        required: false
-        default: ''
-      is_retry:
-        description: 'Whether this is a morning retry run'
-        required: false
-        default: 'false'
+      # target_date:
+      #   description: 'Date to fetch (YYYY-MM-DD), defaults to today'
+      #   required: false
+      #   default: ''
+      # is_retry:
+      #   description: 'Whether this is a morning retry run'
+      #   required: false
+      #   default: 'false'
       run_backfill:
         description: 'Run 45-day historical backfill (crawler.py)?'
         required: true
@@ -50,11 +50,13 @@ jobs:
           # New inputs for retry logic
           NGX_GITHUB_TOKEN: ${{ secrets.NGX_GITHUB_TOKEN }}
           NGX_GITHUB_REPO: ${{ github.repository }}
-          INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
-          INPUT_IS_RETRY: ${{ github.event.inputs.is_retry }}
+          # INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
+          # INPUT_IS_RETRY: ${{ github.event.inputs.is_retry }}
         run: |
           if [ "${{ github.event.inputs.run_backfill }}" == "true" ]; then
+            echo "🚀 Starting 45-day backfill..."
             python crawler.py
           else
+            echo "📊 Running daily sync..."
             python main.py
           fi
