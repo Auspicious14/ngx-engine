@@ -1193,15 +1193,148 @@ class NGXEngine:
         losers = sorted(losers_list, key=lambda x: x.percent_change)[:5]
         return gainers, losers
         
+    def identify_high_conviction(self, breakouts: List[StockSchema], spikes: List[StockSchema]):
+        # Find tickers that appear in both lists
+        breakout_symbols = {s.symbol for s in breakouts}
+        spike_symbols = {s.symbol for s in spikes}
+        
+        perfect_trade_symbols = breakout_symbols.intersection(spike_symbols)
+        
+        high_conviction = []
+        for s in breakouts:
+            if s.symbol in perfect_trade_symbols:
+                # Simple projected target (e.g., 10% above breakout)
+                # and stop loss (the old resistance level)
+                s.target = round(s.close_price * 1.10, 2)
+                s.stop_loss = s.old_resistance
+                high_conviction.append(s)
+                
+        return high_conviction
+
+    def get_periodic_performance(self, label: str, days: int = 14):
+        session = self.Session()
+        today = datetime.now().date()
+        start_date = today - timedelta(days=days)
+        
+        try:
+            # Get the first price available on or after the start_date 
+            # and compare it to the most recent price.
+            query = text("""
+                WITH period_start AS (
+                    SELECT DISTINCT ON (symbol) symbol, close_price as old_price
+                    FROM stock_prices 
+                    WHERE trade_date >= :start_date
+                    ORDER BY symbol, trade_date ASC
+                ),
+                period_end AS (
+                    SELECT DISTINCT ON (symbol) symbol, close_price as new_price
+                    FROM stock_prices 
+                    ORDER BY symbol, trade_date DESC
+                )
+                SELECT s.symbol, s.old_price, e.new_price
+                FROM period_start s
+                JOIN period_end e ON s.symbol = e.symbol
+            """)
+            
+            results = session.execute(query, {"start_date": start_date}).fetchall()
+            
+            performance = []
+            for r in results:
+                change = ((float(r.new_price) - float(r.old_price)) / float(r.old_price)) * 100
+                performance.append({
+                    "symbol": r.symbol,
+                    "change": change,
+                    "price": float(r.new_price)
+                })
+                
+            # Sort and take top/bottom 5
+            sorted_perf = sorted(performance, key=lambda x: x['change'], reverse=True)
+            return sorted_perf[:5], sorted_perf[-5:]
+        finally:
+            session.close()
+
+    def find_next_resistance(self, symbol: str, current_price: float):
+        session = self.Session()
+        try:
+            # Find the highest high in the last 6 months that is above our current price
+            six_months_ago = datetime.now().date() - timedelta(days=180)
+            
+            target = session.query(text("MAX(high_price)")).from_statement(text("""
+                SELECT high_price FROM stock_prices 
+                WHERE symbol = :symbol 
+                AND high_price > :current_price
+                AND trade_date >= :lookback
+            """)).params(
+                symbol=symbol, 
+                current_price=current_price, 
+                lookback=six_months_ago
+            ).scalar()
+            
+            # Fallback: If no historical resistance is found (All-Time High), 
+            # use a standard 15% extension
+            return float(target) if target else round(current_price * 1.15, 2)
+        finally:
+            session.close()
+        
+    def get_high_conviction_trades(self, breakouts, spikes):
+        ideas = []
+        for s in breakouts:
+            # 1. Confirmation: Is it also in the spikes list?
+            is_high_volume = any(v.symbol == s.symbol for v in spikes)
+            
+            if is_high_volume:
+                # 2. Target: Look for the next historical ceiling
+                s.target = self.find_next_resistance(s.symbol, s.close_price)
+                
+                # 3. Stop Loss: Set it slightly below the breakout line (e.g., 2% below)
+                s.stop_loss = round(s.old_resistance * 0.98, 2)
+                
+                # 4. Filter: Only suggest if the Reward is at least 2x the Risk
+                risk = s.close_price - s.stop_loss
+                reward = s.target - s.close_price
+                
+                if risk > 0 and (reward / risk) >= 2:
+                    ideas.append(s)
+        return ideas
+
+    async def send_periodic_report(self, label: str, winners: list, losers: list):
+        msg = f"📊 *NGX {label} LEADERBOARD*\n"
+        msg += "━━━━━━━━━━━━━━━━\n\n"
+        
+        msg += "🏆 *TOP PERFORMERS*\n"
+        for s in winners:
+            msg += f"`{s['symbol']:<10} ₦{s['price']:>7.2f}  (+{s['change']:>5.1f}%)`\n"
+            
+        msg += "\n📉 *BIGGEST LAGGARDS*\n"
+        for s in reversed(losers): # Reverse so worst is at bottom
+            msg += f"`{s['symbol']:<10} ₦{s['price']:>7.2f}  ({s['change']:>6.1f}%)`\n"
+            
+        msg += "\n━━━━━━━━━━━━━━━━\n"
+        msg += "💡 *INSIGHT:* Look for winners that also appeared in daily 'Unusual Volume' alerts."
+        
+        await self.tg.send(msg)
+        await self.wa.send(msg)
+    
     async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
         upcoming_earn, recently_reported = self.get_earnings_watch()
         gainers, losers = self.get_top_performers(stocks)
         today_str = datetime.now().strftime("%d %b %Y")
         has_anomaly = False
+        high_conviction = self.identify_high_conviction(breakouts, spikes)
         
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
 
+        # --- SECTION: HIGH CONVICTION IDEAS ---
+        if high_conviction:
+            msg += "🎯 *HIGH CONVICTION TRADES*\n"
+            msg += "_Breakout confirmed by Volume Spike_\n"
+            for s in high_conviction:
+                msg += f"• *{s.symbol}*\n"
+                msg += f"  `Entry: ₦{s.close_price:<7} Vol: {s.vol_increase}x`\n"
+                msg += f"  `Target: ₦{s.target:<6} Stop: ₦{s.stop_loss:<6}`\n\n"
+            msg += "━━━━━━━━━━━━━━━━\n\n"
+            
         # --- SECTION 0: TOP GAINERS (Monospace Table) ---
         msg += "📈 *TOP 5 GAINERS*\n"
         for s in gainers:
@@ -1359,13 +1492,27 @@ if __name__ == "__main__":
     async def run_daily_sync():
         engine = NGXEngine()
         today = datetime.now().date()
+        
         pdf = await engine.download_report(today)
         if not pdf: return
         stocks = engine.parse_pdf(pdf, today)
+        
         if not stocks: return
         engine.save(stocks)
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
         await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
         if os.path.exists(pdf): os.remove(pdf)
+            
+        # 1. BI-WEEKLY: Every 2nd Friday
+        # (Logic: If it's Friday and the day of month is between 8-14 or 22-28)
+        if today.weekday() == 4 and (8 <= today.day <= 14 or 22 <= today.day <= 28):
+            winners, losers = e.get_periodic_performance("BI-WEEKLY", 14)
+            await e.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
+
+        # 2. MONTHLY: Last day of the month
+        next_day = today + timedelta(days=1)
+        if next_day.month != today.month:
+            winners, losers = e.get_periodic_performance("MONTHLY", 30)
+            await e.send_periodic_report("30-DAY MONTHLY", winners, losers)
 
     asyncio.run(run_daily_sync())
