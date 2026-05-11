@@ -1,0 +1,37 @@
+name: Evening Disclosure Sync
+
+on:
+  schedule:
+    - cron: '0 19 * * *' # 7 PM UTC = 8 PM Lagos (WAT)
+  workflow_dispatch: # Allows you to trigger it manually for testing
+
+jobs:
+  scrape_and_parse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate
+
+      - name: Run Scraper
+        run: python brain/scraper.py
+
+      - name: Run Parser
+        run: python brain/parser.py
+
+      - name: Upload to Google Drive
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
+          filename: "data/structured_data/*.md" # Syncing the clean AI-ready files
+          folderId: ${{ secrets.GDRIVE_FOLDER_ID }}
+          overwrite: true
