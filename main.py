@@ -1067,6 +1067,9 @@ class StockSchema(BaseModel):
     old_support: float = 0.0
     vol_increase: float = 0.0
     is_corporate_action: bool = False
+    # --- ADDED THESE FIELDS TO FIX THE ERROR ---
+    target: float = 0.0
+    stop_loss: float = 0.0
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
     @classmethod
@@ -1194,31 +1197,23 @@ class NGXEngine:
         return gainers, losers
         
     def identify_high_conviction(self, breakouts: List[StockSchema], spikes: List[StockSchema]):
-        # Find tickers that appear in both lists
         breakout_symbols = {s.symbol for s in breakouts}
         spike_symbols = {s.symbol for s in spikes}
-        
         perfect_trade_symbols = breakout_symbols.intersection(spike_symbols)
         
         high_conviction = []
         for s in breakouts:
             if s.symbol in perfect_trade_symbols:
-                # Simple projected target (e.g., 10% above breakout)
-                # and stop loss (the old resistance level)
                 s.target = round(s.close_price * 1.10, 2)
                 s.stop_loss = s.old_resistance
                 high_conviction.append(s)
-                
         return high_conviction
 
     def get_periodic_performance(self, label: str, days: int = 14):
         session = self.Session()
         today = datetime.now().date()
         start_date = today - timedelta(days=days)
-        
         try:
-            # Get the first price available on or after the start_date 
-            # and compare it to the most recent price.
             query = text("""
                 WITH period_start AS (
                     SELECT DISTINCT ON (symbol) symbol, close_price as old_price
@@ -1235,83 +1230,28 @@ class NGXEngine:
                 FROM period_start s
                 JOIN period_end e ON s.symbol = e.symbol
             """)
-            
             results = session.execute(query, {"start_date": start_date}).fetchall()
-            
             performance = []
             for r in results:
                 change = ((float(r.new_price) - float(r.old_price)) / float(r.old_price)) * 100
                 performance.append({
-                    "symbol": r.symbol,
-                    "change": change,
-                    "price": float(r.new_price)
+                    "symbol": r.symbol, "change": change, "price": float(r.new_price)
                 })
-                
-            # Sort and take top/bottom 5
             sorted_perf = sorted(performance, key=lambda x: x['change'], reverse=True)
             return sorted_perf[:5], sorted_perf[-5:]
-        finally:
-            session.close()
-
-    def find_next_resistance(self, symbol: str, current_price: float):
-        session = self.Session()
-        try:
-            # Find the highest high in the last 6 months that is above our current price
-            six_months_ago = datetime.now().date() - timedelta(days=180)
-            
-            target = session.query(text("MAX(high_price)")).from_statement(text("""
-                SELECT high_price FROM stock_prices 
-                WHERE symbol = :symbol 
-                AND high_price > :current_price
-                AND trade_date >= :lookback
-            """)).params(
-                symbol=symbol, 
-                current_price=current_price, 
-                lookback=six_months_ago
-            ).scalar()
-            
-            # Fallback: If no historical resistance is found (All-Time High), 
-            # use a standard 15% extension
-            return float(target) if target else round(current_price * 1.15, 2)
-        finally:
-            session.close()
-        
-    def get_high_conviction_trades(self, breakouts, spikes):
-        ideas = []
-        for s in breakouts:
-            # 1. Confirmation: Is it also in the spikes list?
-            is_high_volume = any(v.symbol == s.symbol for v in spikes)
-            
-            if is_high_volume:
-                # 2. Target: Look for the next historical ceiling
-                s.target = self.find_next_resistance(s.symbol, s.close_price)
-                
-                # 3. Stop Loss: Set it slightly below the breakout line (e.g., 2% below)
-                s.stop_loss = round(s.old_resistance * 0.98, 2)
-                
-                # 4. Filter: Only suggest if the Reward is at least 2x the Risk
-                risk = s.close_price - s.stop_loss
-                reward = s.target - s.close_price
-                
-                if risk > 0 and (reward / risk) >= 2:
-                    ideas.append(s)
-        return ideas
+        finally: session.close()
 
     async def send_periodic_report(self, label: str, winners: list, losers: list):
         msg = f"📊 *NGX {label} LEADERBOARD*\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
-        
         msg += "🏆 *TOP PERFORMERS*\n"
         for s in winners:
             msg += f"`{s['symbol']:<10} ₦{s['price']:>7.2f}  (+{s['change']:>5.1f}%)`\n"
-            
         msg += "\n📉 *BIGGEST LAGGARDS*\n"
-        for s in reversed(losers): # Reverse so worst is at bottom
+        for s in reversed(losers):
             msg += f"`{s['symbol']:<10} ₦{s['price']:>7.2f}  ({s['change']:>6.1f}%)`\n"
-            
         msg += "\n━━━━━━━━━━━━━━━━\n"
         msg += "💡 *INSIGHT:* Look for winners that also appeared in daily 'Unusual Volume' alerts."
-        
         await self.tg.send(msg)
         await self.wa.send(msg)
     
@@ -1325,7 +1265,6 @@ class NGXEngine:
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
 
-        # --- SECTION: HIGH CONVICTION IDEAS ---
         if high_conviction:
             msg += "🎯 *HIGH CONVICTION TRADES*\n"
             msg += "_Breakout confirmed by Volume Spike_\n"
@@ -1335,21 +1274,17 @@ class NGXEngine:
                 msg += f"  `Target: ₦{s.target:<6} Stop: ₦{s.stop_loss:<6}`\n\n"
             msg += "━━━━━━━━━━━━━━━━\n\n"
             
-        # --- SECTION 0: TOP GAINERS (Monospace Table) ---
         msg += "📈 *TOP 5 GAINERS*\n"
         for s in gainers:
             msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  (+{s.percent_change:>5.2f}%)`\n"
         
-        # --- SECTION 1: TOP LOSERS (Monospace Table) ---
         msg += "\n📉 *TOP 5 LOSERS*\n"
         for s in losers:
             change_val = s.percent_change
             change_str = f"({change_val:>6.2f}%)"
-            
             if abs(change_val) > 10.5:
                 change_str += " 🔸"
                 has_anomaly = True
-                
             msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  {change_str}`\n"
             
         if has_anomaly:
@@ -1357,7 +1292,6 @@ class NGXEngine:
         
         msg += "━━━━━━━━━━━━━━━━\n\n"
 
-        # --- SECTION 2: ALERTS ---
         if breakouts:
             msg += "🔓 *RESISTANCE BREAKOUTS*\n"
             for s in breakouts[:3]:
@@ -1399,17 +1333,10 @@ class NGXEngine:
         
     async def download_report(self, target_date: date):
         delimiters = ["-", " ", "", "."]
-        months_to_try = [target_date.month]
-        if target_date.month == 4: months_to_try.append(2)
-            
         candidate_strings = []
-        for m in months_to_try:
-            try:
-                candidate_date = target_date.replace(month=m)
-                for sep in delimiters:
-                    fmt = f"%d{sep}%m{sep}%Y"
-                    candidate_strings.append(candidate_date.strftime(fmt))
-            except ValueError: continue
+        for sep in delimiters:
+            fmt = f"%d{sep}%m{sep}%Y"
+            candidate_strings.append(target_date.strftime(fmt))
 
         async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
             for attempt_str in candidate_strings:
@@ -1437,7 +1364,6 @@ class NGXEngine:
                             header_idx = i
                             break
                     if header_idx == -1: continue
-
                     for row in table[header_idx + 1:]:
                         if not row or len(row) < 12 or not row[0]: continue
                         symbol = str(row[0]).strip()
@@ -1459,7 +1385,6 @@ class NGXEngine:
                 prev = session.query(StockPriceDB.close_price).filter(
                     StockPriceDB.symbol == stock.symbol, StockPriceDB.trade_date < stock.trade_date
                 ).order_by(StockPriceDB.trade_date.desc()).first()
-
                 if prev and float(prev[0]) > 0:
                     stock.percent_change = ((stock.close_price - float(prev[0])) / float(prev[0])) * 100
 
@@ -1469,7 +1394,9 @@ class NGXEngine:
                     ON CONFLICT (symbol, trade_date) DO UPDATE SET 
                     close_price = EXCLUDED.close_price, percent_change = EXCLUDED.percent_change, volume = EXCLUDED.volume;
                 """)
-                session.execute(stmt, stock.model_dump(exclude={'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action'}))
+                # EXCLUDED NEW FIELDS FROM DB INSERT
+                exclude_fields = {'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action', 'target', 'stop_loss'}
+                session.execute(stmt, stock.model_dump(exclude=exclude_fields))
             session.commit()
         except Exception as e:
             session.rollback()
@@ -1492,27 +1419,23 @@ if __name__ == "__main__":
     async def run_daily_sync():
         engine = NGXEngine()
         today = datetime.now().date()
-        
         pdf = await engine.download_report(today)
         if not pdf: return
         stocks = engine.parse_pdf(pdf, today)
-        
         if not stocks: return
         engine.save(stocks)
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
         await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
         if os.path.exists(pdf): os.remove(pdf)
-            
-        # 1. BI-WEEKLY: Every 2nd Friday
-        # (Logic: If it's Friday and the day of month is between 8-14 or 22-28)
-        if today.weekday() == 4 and (8 <= today.day <= 14 or 22 <= today.day <= 28):
-            winners, losers = e.get_periodic_performance("BI-WEEKLY", 14)
-            await e.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
 
-        # 2. MONTHLY: Last day of the month
+        # FIX: Changed 'e' to 'engine'
+        if today.weekday() == 4 and (8 <= today.day <= 14 or 22 <= today.day <= 28):
+            winners, losers = engine.get_periodic_performance("BI-WEEKLY", 14)
+            await engine.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
+
         next_day = today + timedelta(days=1)
         if next_day.month != today.month:
-            winners, losers = e.get_periodic_performance("MONTHLY", 30)
-            await e.send_periodic_report("30-DAY MONTHLY", winners, losers)
+            winners, losers = engine.get_periodic_performance("MONTHLY", 30)
+            await engine.send_periodic_report("30-DAY MONTHLY", winners, losers)
 
     asyncio.run(run_daily_sync())
