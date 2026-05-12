@@ -10,3 +10,4 @@ lxml
 pinecone 
 langchain-huggingface 
 sentence-transformers
+langchain_text_splitters
