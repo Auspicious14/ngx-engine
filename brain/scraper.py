@@ -102,16 +102,21 @@ class DisclosureScraper:
                 print(f"❌ API Error: {e}")
                 return []
                 
-    async def run_scraper():
-        print(f"🚀 Evening Sync Started: {datetime.now().strftime('%H:%M:%S')}")
-        scr = DisclosureScraper()
-        items = await scr.get_latest_items()
-        
-        # pdf_url already set from API — skip get_pdf_link entirely
-        for item in items:
-            await scr.download(item)
-        
-        print("🏁 Evening Sync Finished.")
+    async def get_pdf_link(self, item: DisclosureSchema) -> Optional[str]:
+        """Follows the landing URL to find the actual PDF source link."""
+        async with httpx.AsyncClient(headers=self.headers, timeout=20.0, follow_redirects=True) as client:
+            try:
+                res = await client.get(item.landing_url)
+                soup = BeautifulSoup(res.text, 'html.parser')
+                links = [a['href'] for a in soup.find_all('a', href=True) if '.pdf' in a['href'].lower()]
+                
+                if not links: return None
+
+                # Prioritize 'Financial_NewsDocs' as the gold standard source
+                high_value = [l for l in links if "Financial_NewsDocs" in l]
+                return high_value[0] if high_value else links[0]
+            except Exception:
+                return None
 
     async def download(self, item: DisclosureSchema):
         """Downloads unique filings based on their exact URL-defined filename."""
@@ -151,14 +156,11 @@ async def run_scraper():
     print(f"🚀 Evening Sync Started: {datetime.now().strftime('%H:%M:%S')}")
     scr = DisclosureScraper()
     items = await scr.get_latest_items()
-    print(f"DEBUG: Found {len(items)} items on the landing page.") # ADD THIS
-    # Process sequentially to prevent IP flagging and ensure orderly downloads
+    
+    # pdf_url already set from API — skip get_pdf_link entirely
     for item in items:
-        link = await scr.get_pdf_link(item)
-        if link:
-            item.pdf_url = link
-            item.category = scr._categorize(link, item.title)
-            await scr.download(item)
+        await scr.download(item)
+    
     print("🏁 Evening Sync Finished.")
 
 if __name__ == "__main__":
