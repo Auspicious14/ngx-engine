@@ -46,6 +46,12 @@ class DisclosureScraper:
                     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS vectorized_files (
+                    filename TEXT PRIMARY KEY,
+                    vectorized_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
 
     def _categorize(self, url: str, title: str) -> str:
         """Assigns a category for AI prioritization based on filename and title."""
