@@ -141,7 +141,7 @@ async def run_scraper():
     print(f"🚀 Evening Sync Started: {datetime.now().strftime('%H:%M:%S')}")
     scr = DisclosureScraper()
     items = await scr.get_latest_items()
-    
+    print(f"DEBUG: Found {len(items)} items on the landing page.") # ADD THIS
     # Process sequentially to prevent IP flagging and ensure orderly downloads
     for item in items:
         link = await scr.get_pdf_link(item)
