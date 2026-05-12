@@ -59,54 +59,59 @@ class DisclosureScraper:
         return "General_Disclosure"
 
     async def get_latest_items(self) -> List[DisclosureSchema]:
-        """Scrapes the main disclosure table for landing page links."""
-        async with httpx.AsyncClient(headers=self.headers, timeout=30.0, follow_redirects=True) as client:
+        api_url = (
+            "https://doclib.ngxgroup.com/_api/Web/Lists/GetByTitle('XFinancial_News')/items/"
+            "?$select=URL,Modified,Created,CompanyName,CompanySymbol,Type_of_Submission"
+            "&$orderby=Created%20desc"
+            "&$filter=Modified%20ge%20'2019-01-31T23:00:00.000Z'"
+            "&$Top=1000"
+        )
+        headers = {
+            **self.headers,
+            "Accept": "application/json;odata=verbose"
+        }
+        async with httpx.AsyncClient(headers=headers, timeout=30.0, follow_redirects=True) as client:
             try:
-                res = await client.get(BASE_URL)
+                res = await client.get(api_url)
                 res.raise_for_status()
-                print(f"📄 Response length: {len(res.text)}")
-                print(f"📄 First 2000 chars:\n{res.text[:2000]}")
+                data = res.json()
+                results = data["d"]["results"]
                 
-                soup = BeautifulSoup(res.text, 'html.parser')
-                
-                table = soup.find('table')
-                print(f"🔍 Table found: {table is not None}")
-                
-                if not table: return []
-
-                rows = table.find_all('tr')[1:] # Skip header
                 items = []
-                for row in rows:
-                    cols = row.find_all('td')
-                    link_tag = cols[1].find('a') if len(cols) > 1 else None
-                    if not link_tag: continue
-
+                for item in results:
+                    pdf_url = item.get("URL", {}).get("Url", "")
+                    title = item.get("URL", {}).get("Description", "Unknown")
+                    company = item.get("CompanyName", "Unknown")
+                    modified = item.get("Modified", "")
+                    
+                    if not pdf_url or ".pdf" not in pdf_url.lower():
+                        continue
+                    
                     items.append(DisclosureSchema(
-                        company=cols[0].text.strip(),
-                        title=link_tag.text.strip(),
-                        date_submitted=cols[2].text.strip(),
-                        landing_url=link_tag['href']
+                        company=company,
+                        title=title.upper(),
+                        date_submitted=modified[:10],  # ISO date YYYY-MM-DD
+                        landing_url=pdf_url,  # No landing page needed
+                        pdf_url=pdf_url,
+                        category=self._categorize(pdf_url, title)
                     ))
+                
+                print(f"✅ Found {len(items)} filings from SharePoint API")
                 return items
             except Exception as e:
-                print(f"❌ Table Scrape Error: {e}")
+                print(f"❌ API Error: {e}")
                 return []
-
-    async def get_pdf_link(self, item: DisclosureSchema) -> Optional[str]:
-        """Follows the landing URL to find the actual PDF source link."""
-        async with httpx.AsyncClient(headers=self.headers, timeout=20.0, follow_redirects=True) as client:
-            try:
-                res = await client.get(item.landing_url)
-                soup = BeautifulSoup(res.text, 'html.parser')
-                links = [a['href'] for a in soup.find_all('a', href=True) if '.pdf' in a['href'].lower()]
                 
-                if not links: return None
-
-                # Prioritize 'Financial_NewsDocs' as the gold standard source
-                high_value = [l for l in links if "Financial_NewsDocs" in l]
-                return high_value[0] if high_value else links[0]
-            except Exception:
-                return None
+    async def run_scraper():
+        print(f"🚀 Evening Sync Started: {datetime.now().strftime('%H:%M:%S')}")
+        scr = DisclosureScraper()
+        items = await scr.get_latest_items()
+        
+        # pdf_url already set from API — skip get_pdf_link entirely
+        for item in items:
+            await scr.download(item)
+        
+        print("🏁 Evening Sync Finished.")
 
     async def download(self, item: DisclosureSchema):
         """Downloads unique filings based on their exact URL-defined filename."""
