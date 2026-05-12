@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate \
-            pinecone langchain-huggingface sentence-transformers
+            pinecone langchain-huggingface sentence-transformers langchain-text-splitters
 
       - name: Run Scraper
         run: python brain/scraper.py
