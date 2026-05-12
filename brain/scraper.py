@@ -26,15 +26,14 @@ class DisclosureSchema(BaseModel):
 
 class DisclosureScraper:
     def __init__(self):
-        # Professional User-Agent to avoid blocks on GitHub runners
+        # Professional User-Agent for consistent access via GitHub Runners
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
         }
         self._init_db()
 
     def _init_db(self):
-        """Initializes tracking database. While GitHub resets the environment, 
-        this helps if you ever run it locally or use a persistent cache."""
+        """Initializes the metadata ledger to track unique filings."""
         with sqlite3.connect(DB_PATH) as conn:
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS processed_disclosures (
@@ -43,12 +42,13 @@ class DisclosureScraper:
                     title TEXT,
                     category TEXT,
                     pdf_url TEXT UNIQUE,
+                    filename TEXT UNIQUE,
                     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
 
     def _categorize(self, url: str, title: str) -> str:
-        """Tags the disclosure based on URL and Title keywords."""
+        """Assigns a category for AI prioritization based on filename and title."""
         text = (url + title).upper()
         if any(k in text for k in ["INSIDER", "DIRECTOR_DEALING"]):
             return "Insider_Dealing"
@@ -58,29 +58,22 @@ class DisclosureScraper:
             return "Dividend_Announcement"
         return "General_Disclosure"
 
-    def _generate_filename(self, item: DisclosureSchema) -> str:
-        """Creates a clean, Git-safe filename."""
-        # Remove non-alphanumeric chars to prevent Git commit errors
-        clean_company = re.sub(r'[^a-zA-Z0-9]', '_', item.company)
-        # Use the unique ID from the doclib URL to prevent overwriting
-        url_id = item.pdf_url.split('/')[-1] if item.pdf_url else "unknown"
-        return f"{item.category}_{clean_company}_{url_id}"
-
     async def get_latest_items(self) -> List[DisclosureSchema]:
-        """Fetches the main table from the NGX Disclosure page."""
+        """Scrapes the main disclosure table for landing page links."""
         async with httpx.AsyncClient(headers=self.headers, timeout=30.0, follow_redirects=True) as client:
             try:
                 res = await client.get(BASE_URL)
                 res.raise_for_status()
                 soup = BeautifulSoup(res.text, 'html.parser')
                 
-                rows = soup.find('table').find_all('tr')[1:] # Skip header
+                table = soup.find('table')
+                if not table: return []
+
+                rows = table.find_all('tr')[1:] # Skip header
                 items = []
                 for row in rows:
                     cols = row.find_all('td')
-                    if len(cols) < 2: continue
-                    
-                    link_tag = cols[1].find('a')
+                    link_tag = cols[1].find('a') if len(cols) > 1 else None
                     if not link_tag: continue
 
                     items.append(DisclosureSchema(
@@ -91,11 +84,11 @@ class DisclosureScraper:
                     ))
                 return items
             except Exception as e:
-                print(f"❌ Error fetching NGX table: {e}")
+                print(f"❌ Table Scrape Error: {e}")
                 return []
 
     async def get_pdf_link(self, item: DisclosureSchema) -> Optional[str]:
-        """Navigates to the individual disclosure page to grab the doclib URL."""
+        """Follows the landing URL to find the actual PDF source link."""
         async with httpx.AsyncClient(headers=self.headers, timeout=20.0, follow_redirects=True) as client:
             try:
                 res = await client.get(item.landing_url)
@@ -104,22 +97,24 @@ class DisclosureScraper:
                 
                 if not links: return None
 
-                # Prioritize the High-Value 'Financial_NewsDocs' path
+                # Prioritize 'Financial_NewsDocs' as the gold standard source
                 high_value = [l for l in links if "Financial_NewsDocs" in l]
                 return high_value[0] if high_value else links[0]
             except Exception:
                 return None
 
     async def download(self, item: DisclosureSchema):
-        """Downloads the PDF ONLY if it doesn't already exist in the Git folder."""
+        """Downloads unique filings based on their exact URL-defined filename."""
         if not item.pdf_url: return
         
-        filename = self._generate_filename(item)
-        path = os.path.join(RAW_PDF_DIR, filename)
+        # EXTRACT UNIQUE FILENAME: This is the ground truth for "uniqueness"
+        # Handles cases like Artrol Investment 04.05 vs 05.05 perfectly.
+        url_filename = item.pdf_url.split('/')[-1]
+        path = os.path.join(RAW_PDF_DIR, url_filename)
 
-        # CHECK GITHUB STORAGE: If the file is already in the repo, skip it!
+        # GITHUB STORAGE CHECK: Skip if the exact file is already in the repo
         if os.path.exists(path):
-            print(f"⏭️ Skipping (Already in Git): {item.company}")
+            print(f"⏭️ Skipping (Already stored): {url_filename}")
             return
 
         async with httpx.AsyncClient(headers=self.headers, timeout=60.0) as client:
@@ -129,30 +124,32 @@ class DisclosureScraper:
                     with open(path, "wb") as f:
                         f.write(res.content)
                     
-                    # Log in DB for local tracking
+                    # Update the local ledger
                     with sqlite3.connect(DB_PATH) as conn:
-                        conn.execute("INSERT OR IGNORE INTO processed_disclosures (company, title, category, pdf_url) VALUES (?,?,?,?)",
-                                    (item.company, item.title, item.category, item.pdf_url))
+                        conn.execute("""
+                            INSERT OR IGNORE INTO processed_disclosures (company, title, category, pdf_url, filename) 
+                            VALUES (?,?,?,?,?)
+                        """, (item.company, item.title, item.category, item.pdf_url, url_filename))
                     
-                    print(f"✅ Downloaded: {filename}")
+                    print(f"✅ Saved Unique Filing: {url_filename}")
                 else:
-                    print(f"⚠️ HTTP {res.status_code} for {item.company}")
+                    print(f"⚠️ HTTP {res.status_code} for {url_filename}")
             except Exception as e:
-                print(f"❌ Download Error: {e}")
+                print(f"❌ Download Failed for {url_filename}: {e}")
 
 async def run_scraper():
-    print(f"🕒 Sync Started: {datetime.now().strftime('%H:%M')}")
+    print(f"🚀 Evening Sync Started: {datetime.now().strftime('%H:%M:%S')}")
     scr = DisclosureScraper()
     items = await scr.get_latest_items()
     
-    # Process sequentially to respect server limits and avoid IP bans
+    # Process sequentially to prevent IP flagging and ensure orderly downloads
     for item in items:
         link = await scr.get_pdf_link(item)
         if link:
             item.pdf_url = link
             item.category = scr._categorize(link, item.title)
             await scr.download(item)
-    print("🏁 Sync Finished.")
+    print("🏁 Evening Sync Finished.")
 
 if __name__ == "__main__":
     asyncio.run(run_scraper())
