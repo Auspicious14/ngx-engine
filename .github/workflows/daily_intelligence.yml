@@ -3,10 +3,10 @@ name: Daily Intelligence Sync
 on:
   schedule:
     - cron: '0 19 * * *' # 7:00 PM UTC = 8:00 PM WAT (Lagos)
-  workflow_dispatch: # Manual trigger button
+  workflow_dispatch:
 
 permissions:
-  contents: write # CRITICAL: Allows the bot to push files back to your repo
+  contents: write
 
 jobs:
   sync:
@@ -23,7 +23,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate
+          pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate \
+            pinecone langchain-huggingface sentence-transformers
 
       - name: Run Scraper
         run: python brain/scraper.py
@@ -31,10 +32,14 @@ jobs:
       - name: Run Parser
         run: python brain/parser.py
 
+      - name: Run Vector Engine
+        env:
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+        run: python brain/vector_engine.py
+
       - name: Commit and Push Data
         run: |
           git config --global user.name "Alpha-Bot"
           git config --global user.email "actions@github.com"
           git add data/
-          # Only commit if there are actually new files
           git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git push)
