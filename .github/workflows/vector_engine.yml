@@ -1,4 +1,4 @@
-- name: Run Vector Engine
-  env:
-    PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
-  run: python brain/vector_engine.py
+name: Run Vector Engine
+env:
+  PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+run: python brain/vector_engine.py
