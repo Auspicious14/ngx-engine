@@ -64,9 +64,14 @@ class DisclosureScraper:
             try:
                 res = await client.get(BASE_URL)
                 res.raise_for_status()
+                print(f"📄 Response length: {len(res.text)}")
+                print(f"📄 First 2000 chars:\n{res.text[:2000]}")
+                
                 soup = BeautifulSoup(res.text, 'html.parser')
                 
                 table = soup.find('table')
+                print(f"🔍 Table found: {table is not None}")
+                
                 if not table: return []
 
                 rows = table.find_all('tr')[1:] # Skip header
