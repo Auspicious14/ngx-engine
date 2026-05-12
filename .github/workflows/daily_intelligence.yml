@@ -1,18 +1,21 @@
-name: Evening Disclosure Sync
+name: Daily Intelligence Sync
 
 on:
   schedule:
-    - cron: '0 19 * * *' # 7 PM UTC = 8 PM Lagos (WAT)
-  workflow_dispatch: # Allows you to trigger it manually for testing
+    - cron: '0 19 * * *' # 7:00 PM UTC = 8:00 PM WAT (Lagos)
+  workflow_dispatch: # Manual trigger button
+
+permissions:
+  contents: write # CRITICAL: Allows the bot to push files back to your repo
 
 jobs:
-  scrape_and_parse:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
@@ -28,10 +31,10 @@ jobs:
       - name: Run Parser
         run: python brain/parser.py
 
-      - name: Upload to Google Drive
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
-          filename: "data/structured_data/*.md" # Syncing the clean AI-ready files
-          folderId: ${{ secrets.GDRIVE_FOLDER_ID }}
-          overwrite: true
+      - name: Commit and Push Data
+        run: |
+          git config --global user.name "Alpha-Bot"
+          git config --global user.email "actions@github.com"
+          git add data/
+          # Only commit if there are actually new files
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git push)
