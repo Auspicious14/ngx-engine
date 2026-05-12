@@ -1062,14 +1062,18 @@ class StockSchema(BaseModel):
     percent_change: float = 0.0
     volume: int
     trade_date: date
-    # Temporary fields for alert logic
+    # Analytical fields for logic (Excluded from DB Save)
     old_resistance: float = 0.0
     old_support: float = 0.0
     vol_increase: float = 0.0
     is_corporate_action: bool = False
-    # --- ADDED THESE FIELDS TO FIX THE ERROR ---
     target: float = 0.0
     stop_loss: float = 0.0
+
+    @property
+    def traded_value(self) -> float:
+        """Calculates total Naira value traded for liquidity checks."""
+        return self.volume * self.close_price
 
     @field_validator('open_price', 'high_price', 'low_price', 'close_price', mode='before')
     @classmethod
@@ -1254,13 +1258,13 @@ class NGXEngine:
         msg += "💡 *INSIGHT:* Look for winners that also appeared in daily 'Unusual Volume' alerts."
         await self.tg.send(msg)
         await self.wa.send(msg)
-    
+        
     async def send_daily_recap(self, stocks, breakouts, breakdowns, momentum, spikes):
         upcoming_earn, recently_reported = self.get_earnings_watch()
         gainers, losers = self.get_top_performers(stocks)
+        high_conviction = self.identify_high_conviction(breakouts, spikes)
         today_str = datetime.now().strftime("%d %b %Y")
         has_anomaly = False
-        high_conviction = self.identify_high_conviction(breakouts, spikes)
         
         msg = f"🚀 *NGX ALPHA INTELLIGENCE* ({today_str})\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
@@ -1269,39 +1273,37 @@ class NGXEngine:
             msg += "🎯 *HIGH CONVICTION TRADES*\n"
             msg += "_Breakout confirmed by Volume Spike_\n"
             for s in high_conviction:
-                msg += f"• *{s.symbol}*\n"
+                liq = "✅" if s.traded_value >= 1000000 else "⚠️"
+                msg += f"• *{s.symbol}* {liq}\n"
                 msg += f"  `Entry: ₦{s.close_price:<7} Vol: {s.vol_increase}x`\n"
                 msg += f"  `Target: ₦{s.target:<6} Stop: ₦{s.stop_loss:<6}`\n\n"
             msg += "━━━━━━━━━━━━━━━━\n\n"
             
         msg += "📈 *TOP 5 GAINERS*\n"
         for s in gainers:
-            msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  (+{s.percent_change:>5.2f}%)`\n"
+            liq = "✅" if s.traded_value >= 1000000 else "⚠️"
+            msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  (+{s.percent_change:>5.2f}%) {liq}`\n"
         
         msg += "\n📉 *TOP 5 LOSERS*\n"
         for s in losers:
+            liq = "✅" if s.traded_value >= 1000000 else "⚠️"
             change_val = s.percent_change
             change_str = f"({change_val:>6.2f}%)"
             if abs(change_val) > 10.5:
                 change_str += " 🔸"
                 has_anomaly = True
-            msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  {change_str}`\n"
+            msg += f"`{s.symbol:<10} ₦{s.close_price:>7.2f}  {change_str} {liq}`\n"
             
         if has_anomaly:
             msg += "\n*🔸 Note:* Extreme moves (>10%) are usually Dividend Mark-downs, not market sell-offs.\n"
-        
+
+        msg += "\n*⚠️ LIQUIDITY ALERT:* ⚠️ traded < ₦1M today. Selling large volumes will cause 'Big War' (Slippage).\n"
         msg += "━━━━━━━━━━━━━━━━\n\n"
 
         if breakouts:
             msg += "🔓 *RESISTANCE BREAKOUTS*\n"
             for s in breakouts[:3]:
                 msg += f"• *{s.symbol}*: ₦{s.close_price} (Broke ₦{s.old_resistance})\n"
-            msg += "\n"
-
-        if breakdowns:
-            msg += "⚠️ *SUPPORT BREAKDOWNS*\n"
-            for s in breakdowns[:3]:
-                msg += f"• *{s.symbol}*: ₦{s.close_price} (Below ₦{s.old_support})\n"
             msg += "\n"
 
         if momentum:
@@ -1394,7 +1396,7 @@ class NGXEngine:
                     ON CONFLICT (symbol, trade_date) DO UPDATE SET 
                     close_price = EXCLUDED.close_price, percent_change = EXCLUDED.percent_change, volume = EXCLUDED.volume;
                 """)
-                # EXCLUDED NEW FIELDS FROM DB INSERT
+                # EXCLUDE ANALYTICAL FIELDS TO PREVENT DB ERROR
                 exclude_fields = {'old_resistance', 'old_support', 'vol_increase', 'is_corporate_action', 'target', 'stop_loss'}
                 session.execute(stmt, stock.model_dump(exclude=exclude_fields))
             session.commit()
@@ -1419,23 +1421,39 @@ if __name__ == "__main__":
     async def run_daily_sync():
         engine = NGXEngine()
         today = datetime.now().date()
+        
+        # 1. Download and Parse
         pdf = await engine.download_report(today)
-        if not pdf: return
+        if not pdf:
+            print(f"No report found for {today}")
+            return
+            
         stocks = engine.parse_pdf(pdf, today)
-        if not stocks: return
+        if not stocks:
+            print(f"Could not parse data from {pdf}")
+            return
+            
+        # 2. Database Save
         engine.save(stocks)
+        
+        # 3. Market Alerts
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
         await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
+        
+        # 4. Cleanup
         if os.path.exists(pdf): os.remove(pdf)
 
-        # FIX: Changed 'e' to 'engine'
-        if today.weekday() == 4 and (8 <= today.day <= 14 or 22 <= today.day <= 28):
-            winners, losers = engine.get_periodic_performance("BI-WEEKLY", 14)
-            await engine.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
+        # 5. Periodic Leaderboards (Friday check)
+        if today.weekday() == 4:
+            # Bi-Weekly (Every Friday between 8th-14th and 22nd-28th)
+            if (8 <= today.day <= 14) or (22 <= today.day <= 28):
+                winners, losers = engine.get_periodic_performance("BI-WEEKLY", 14)
+                await engine.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
 
-        next_day = today + timedelta(days=1)
-        if next_day.month != today.month:
-            winners, losers = engine.get_periodic_performance("MONTHLY", 30)
-            await engine.send_periodic_report("30-DAY MONTHLY", winners, losers)
+            # Monthly (Last Friday of the month)
+            next_day = today + timedelta(days=1)
+            if next_day.month != today.month:
+                winners, losers = engine.get_periodic_performance("MONTHLY", 30)
+                await engine.send_periodic_report("30-DAY MONTHLY", winners, losers)
 
     asyncio.run(run_daily_sync())
