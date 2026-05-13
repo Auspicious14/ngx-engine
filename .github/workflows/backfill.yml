@@ -21,6 +21,8 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
+        env:
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
         run: pip install httpx pinecone langchain_huggingface langchain_text_splitters
 
       # - name: Run Backfill
