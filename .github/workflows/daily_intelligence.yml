@@ -24,7 +24,8 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate \
-            pinecone langchain-huggingface sentence-transformers langchain-text-splitters
+            pinecone langchain-huggingface sentence-transformers langchain-text-splitters \
+            google-genai
 
       - name: Run Scraper
         run: python brain/scraper.py
@@ -37,9 +38,16 @@ jobs:
           PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
         run: python brain/vector_engine.py
 
-      - name: Commit and Push Data
+      - name: Run Market Monitor
+        run: python brain/monitor.py
+        env:
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and Push All Changes
         run: |
           git config --global user.name "Alpha-Bot"
           git config --global user.email "actions@github.com"
-          git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git push)
+          # Adding everything: db updates, new PDFs, MD files, and the report
+          git add data/ DAILY_MARKET_REPORT.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Data & Daily Briefing $(date +'%Y-%m-%d')" && git push)
