@@ -125,34 +125,30 @@ class DisclosureScraper:
                 return None
 
     async def download(self, item: DisclosureSchema):
-        """Downloads unique filings based on their exact URL-defined filename."""
         if not item.pdf_url: return
         
-        # EXTRACT UNIQUE FILENAME: This is the ground truth for "uniqueness"
-        # Handles cases like Artrol Investment 04.05 vs 05.05 perfectly.
         url_filename = item.pdf_url.split('/')[-1]
         path = os.path.join(RAW_PDF_DIR, url_filename)
-
-        # GITHUB STORAGE CHECK: Skip if the exact file is already in the repo
+    
+        # Always upsert metadata regardless of whether file exists
+        with sqlite3.connect(DB_PATH) as conn:
+            conn.execute("""
+                INSERT OR IGNORE INTO processed_disclosures 
+                (company, title, category, pdf_url, filename) 
+                VALUES (?,?,?,?,?)
+            """, (item.company, item.title, item.category, item.pdf_url, url_filename))
+    
         if os.path.exists(path):
             print(f"⏭️ Skipping (Already stored): {url_filename}")
             return
-
+    
         async with httpx.AsyncClient(headers=self.headers, timeout=60.0) as client:
             try:
                 res = await client.get(item.pdf_url)
                 if res.status_code == 200:
                     with open(path, "wb") as f:
                         f.write(res.content)
-                    
-                    # Update the local ledger
-                    with sqlite3.connect(DB_PATH) as conn:
-                        conn.execute("""
-                            INSERT OR IGNORE INTO processed_disclosures (company, title, category, pdf_url, filename) 
-                            VALUES (?,?,?,?,?)
-                        """, (item.company, item.title, item.category, item.pdf_url, url_filename))
-                    
-                    print(f"✅ Saved Unique Filing: {url_filename}")
+                    print(f"✅ Saved: {url_filename}")
                 else:
                     print(f"⚠️ HTTP {res.status_code} for {url_filename}")
             except Exception as e:
