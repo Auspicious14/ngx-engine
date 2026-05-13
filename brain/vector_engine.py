@@ -1,5 +1,6 @@
 import os
 import sqlite3
+import re
 from pinecone import Pinecone, ServerlessSpec
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -7,6 +8,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 MD_DIR = "data/processed_md"
 DB_PATH = "data/brain_metadata.db"
 
+def sanitize_id(text: str) -> str:
+    """Strip non-ASCII characters from Pinecone vector IDs."""
+    return re.sub(r'[^\x00-\x7F]', '_', text)
+    
 def get_unvectorized_files():
     """Returns only MD files not yet in Pinecone."""
     all_files = set(f for f in os.listdir(MD_DIR) if f.endswith(".md"))
@@ -57,7 +62,7 @@ def build_vector_store():
         for i, chunk in enumerate(chunks):
             embedding = embeddings.embed_query(chunk)
             vectors.append({
-                "id": f"{filename}__chunk{i}",
+                "id": sanitize_id(f"{filename}__chunk{i}"),
                 "values": embedding,
                 "metadata": {
                     "filename": filename,
