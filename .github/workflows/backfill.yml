@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: pip install httpx pinecone
+        run: pip install httpx pinecone langchain_huggingface langchain_text_splitters
 
       # - name: Run Backfill
       #   run: python brain/backfill_metadata.py
