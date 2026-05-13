@@ -36,26 +36,29 @@ def build_vector_store():
 
     print(f"🧠 Vectorizing {len(new_files)} new filings...")
 
-    # Init Pinecone
     pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
-    
-    if "ngx-brain" not in pc.list_indexes().names():
-        pc.create_index(
-            name="ngx-brain",
-            dimension=384,  # all-MiniLM-L6-v2 output size
-            metric="cosine",
-            spec=ServerlessSpec(cloud="aws", region="us-east-1")
-        )
     index = pc.Index("ngx-brain")
-
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
+
+    with sqlite3.connect(DB_PATH) as conn:
+        placeholders = ",".join("?" * len(new_files))
+        rows = conn.execute(f"""
+            SELECT filename, company, title, category 
+            FROM processed_disclosures 
+            WHERE filename IN ({placeholders})
+        """, list(new_files)).fetchall()
+    
+    db_meta = {row[0]: row[1:] for row in rows} 
 
     processed = []
     for filename in new_files:
         path = os.path.join(MD_DIR, filename)
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
+
+        meta = db_meta.get(filename, ("Unknown", filename, "General_Disclosure"))
+        company, title, category = meta
 
         chunks = splitter.split_text(content)
         vectors = []
@@ -66,16 +69,21 @@ def build_vector_store():
                 "values": embedding,
                 "metadata": {
                     "filename": filename,
-                    "text": chunk[:1000]  # Pinecone metadata limit
+                    "company": company,        
+                    "title": title,            
+                    "category": category,      
+                    "text": chunk[:1000]
                 }
             })
 
-        # Batch upsert (Pinecone limit: 100 vectors per call)
         for i in range(0, len(vectors), 100):
             index.upsert(vectors=vectors[i:i+100])
 
         processed.append(filename)
         print(f"  ✅ {filename} → {len(vectors)} chunks")
+
+    mark_vectorized(processed)
+    print(f"🏁 Done. {len(processed)} new filings added to Pinecone.")
 
     mark_vectorized(processed)
     print(f"🏁 Done. {len(processed)} new filings added to Pinecone.")
