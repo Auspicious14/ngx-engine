@@ -1,8 +1,10 @@
-# Add a separate workflow file: .github/workflows/backfill.yml
 name: One-Time Metadata Backfill
 
 on:
-  workflow_dispatch: # Manual trigger only
+  workflow_dispatch:
+
+permissions:
+  contents: write 
 
 jobs:
   backfill:
@@ -10,6 +12,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,4 +31,4 @@ jobs:
           git config --global user.name "Alpha-Bot"
           git config --global user.email "actions@github.com"
           git add data/brain_metadata.db
-          git diff --staged --quiet || git commit -m "Backfill: Populate metadata for existing PDFs" && git push
+          git diff --staged --quiet || (git commit -m "Backfill: Populate metadata for existing PDFs" && git push)
