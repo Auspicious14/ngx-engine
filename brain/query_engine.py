@@ -1,32 +1,40 @@
 import os
-import google.generativeai as genai
+from google import genai  # Updated SDK import
 from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 
+# Configuration
 PINECONE_API_KEY = os.environ["PINECONE_API_KEY"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 INDEX_NAME = "ngx-brain"
 
 class AlphaIntelligence:
     def __init__(self):
+        # 1. Initialize Pinecone
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.index = self.pc.Index(INDEX_NAME)
+        
+        # 2. Initialize Embeddings (HuggingFace local model)
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        genai.configure(api_key=GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-2.0-flash')  # faster + cheaper than 1.5
+        
+        # 3. Initialize Modern Gemini Client
+        # This replaces the old genai.configure() pattern
+        self.client = genai.Client(api_key=GEMINI_API_KEY)
 
     def ask(self, user_query: str, company_filter: str = None, category_filter: str = None):
         print(f"🔍 Query: {user_query}")
 
+        # Vectorize the question to search Pinecone
         query_vector = self.embeddings.embed_query(user_query)
 
-        # Build filter — supports company AND/OR category
+        # Build metadata filter
         search_filter = {}
         if company_filter:
             search_filter["company"] = company_filter
         if category_filter:
             search_filter["category"] = category_filter
         
+        # Retrieve the most relevant chunks
         results = self.index.query(
             vector=query_vector,
             top_k=7,
@@ -65,14 +73,16 @@ class AlphaIntelligence:
         EXECUTIVE SUMMARY:
         """
 
-        response = self.model.generate_content(prompt)
+        response = self.client.models.generate_content(
+            model="gemini-3.0-flash", 
+            contents=prompt
+        )
+        
         return response.text
-
 
 if __name__ == "__main__":
     brain = AlphaIntelligence()
 
-    # Test queries
     print(brain.ask("Tell me about recent director dealings at Zenith Bank."))
     print("---")
     print(brain.ask("Any recent financial results?", category_filter="Financial_Result"))
