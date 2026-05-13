@@ -1019,9 +1019,12 @@ from sqlalchemy import create_engine, Column, Integer, String, Numeric, BigInteg
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from pydantic import BaseModel, field_validator
 from dotenv import load_dotenv
+from brain.query_engine import AlphaIntelligence
+import asyncio
 
 # Load local .env for testing; GitHub Actions will use Secrets
 load_dotenv()
+brain = AlphaIntelligence()
 
 # --- DATABASE MODELS ---
 class Base(DeclarativeBase):
@@ -1416,6 +1419,25 @@ class NGXEngine:
             return stats
         finally: session.close()
 
+
+    async def process_market_event(self, ticker, percentage_change):
+        """
+        The 'Insight' Loop: Triggered when main.py detects a spike.
+        """
+        print(f"🚀 Spike Detected: {ticker} moved {percentage_change}%")
+        
+        research_query = f"Explain any recent filings, director dealings, or news for {ticker} that explain a {percentage_change}% movement."
+        
+        insight = brain.ask(user_query=research_query, company_filter=ticker)
+        
+        alert_msg = (
+            f"🔔 *MARKET ALERT: {ticker}*\n"
+            f"📈 Movement: {percentage_change}%\n\n"
+            f"📝 *Intelligence Insight:*\n{insight}"
+        )
+        
+        await self.tg.send(alert_msg) 
+        await self.wa.send(alert_msg)
 # --- MAIN ---
 if __name__ == "__main__":
     async def run_daily_sync():
