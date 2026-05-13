@@ -1,0 +1,30 @@
+# Add a separate workflow file: .github/workflows/backfill.yml
+name: One-Time Metadata Backfill
+
+on:
+  workflow_dispatch: # Manual trigger only
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install httpx
+
+      - name: Run Backfill
+        run: python brain/backfill_metadata.py
+
+      - name: Commit Updated DB
+        run: |
+          git config --global user.name "Alpha-Bot"
+          git config --global user.email "actions@github.com"
+          git add data/brain_metadata.db
+          git diff --staged --quiet || git commit -m "Backfill: Populate metadata for existing PDFs" && git push
