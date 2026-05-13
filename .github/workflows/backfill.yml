@@ -1,4 +1,4 @@
-name: One-Time Metadata Backfill
+name: One-Time Metadata Backfill Verify
 
 on:
   workflow_dispatch:
@@ -23,12 +23,15 @@ jobs:
       - name: Install Dependencies
         run: pip install httpx
 
-      - name: Run Backfill
-        run: python brain/backfill_metadata.py
+      # - name: Run Backfill
+      #   run: python brain/backfill_metadata.py
 
-      - name: Commit Updated DB
-        run: |
-          git config --global user.name "Alpha-Bot"
-          git config --global user.email "actions@github.com"
-          git add data/brain_metadata.db
-          git diff --staged --quiet || (git commit -m "Backfill: Populate metadata for existing PDFs" && git push)
+      - name: Verify Backfill
+        run: python test/script/verify_backfill.py
+
+      # - name: Commit Updated DB
+      #   run: |
+      #     git config --global user.name "Alpha-Bot"
+      #     git config --global user.email "actions@github.com"
+      #     git add data/brain_metadata.db
+      #     git diff --staged --quiet || (git commit -m "Backfill: Populate metadata for existing PDFs" && git push)
