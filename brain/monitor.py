@@ -1,31 +1,40 @@
 import os
-from brain.query_engine import AlphaIntelligence # Reusing your class
+import asyncio
+from brain.query_engine import AlphaIntelligence
+from main import TelegramNotifier, WhatsAppNotifier 
 from datetime import datetime
 
-def run_daily_monitor():
+async def run_daily_intelligence_sync():
     brain = AlphaIntelligence()
+    send_whatsapp_msg = WhatsAppNotifier()
+    send_telegram_msg = TelegramNotifier()
     
-    # Define the "Critical Triggers" you want to monitor daily
-    monitor_queries = [
-        "Summarize all new Dividend Announcements including amounts and qualification dates.",
-        "List all Director Dealings or Insider trades from today's filings.",
-        "Identify any earnings forecasts or financial results released today.",
-        "Were there any board changes or executive appointments announced?"
+    intelligence_queries = [
+        "List all new Dividend Announcements and qualification dates.",
+        "Summarize all Director Dealings or Insider trades from today's filings.",
+        "List any Executive or Board appointments/resignations.",
+        "Summarize any recently released Financial Results or Earnings Forecasts."
     ]
     
-    report_header = f"# 🚀 NGX Market Intelligence Brief: {datetime.now().strftime('%Y-%m-%d')}\n\n"
+    report_header = f"🧠 *NGX Intelligence Brief: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
     report_body = ""
 
-    for query in monitor_queries:
-        print(f"🤖 Monitoring: {query}")
+    for query in intelligence_queries:
         summary = brain.ask(query)
-        report_body += f"## {query}\n{summary}\n\n"
+        if "I don't have that specific data yet" not in summary:
+            report_body += f"📍 *{query}*\n{summary}\n\n"
 
-    # Save the briefing to a file that you can view directly on GitHub
-    with open("DAILY_MARKET_REPORT.md", "w", encoding="utf-8") as f:
-        f.write(report_header + report_body)
+    if not report_body:
+        final_report = report_header + "No significant corporate disclosures detected today."
+    else:
+        final_report = report_header + report_body
+
+    print("📡 Pushing Daily Intelligence to WhatsApp and Telegram...")
+    await send_telegram_msg.send(final_report)
+    await send_whatsapp_msg.send(final_report)
     
-    print("🏁 Daily Report Generated: DAILY_MARKET_REPORT.md")
+    with open("DAILY_MARKET_REPORT.md", "w", encoding="utf-8") as f:
+        f.write(final_report)
 
 if __name__ == "__main__":
-    run_daily_monitor()
+    asyncio.run(run_daily_intelligence_sync())
