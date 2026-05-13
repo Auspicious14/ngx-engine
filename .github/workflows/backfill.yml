@@ -29,6 +29,9 @@ jobs:
       - name: Verify Backfill
         run: python test/script/verify_backfill.py
 
+      - name: Re-index Pinecone
+        run: python brain/reindex_pinecone.py
+
       # - name: Commit Updated DB
       #   run: |
       #     git config --global user.name "Alpha-Bot"
