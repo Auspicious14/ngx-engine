@@ -1438,7 +1438,8 @@ class NGXEngine:
         
         await self.tg.send(alert_msg) 
         await self.wa.send(alert_msg)
-# --- MAIN ---
+
+
 if __name__ == "__main__":
     async def run_daily_sync():
         engine = NGXEngine()
@@ -1458,17 +1459,27 @@ if __name__ == "__main__":
         # 2. Database Save
         engine.save(stocks)
         
-        # 3. Market Alerts
+        # 3. Market Alerts & Daily Recap
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
         await engine.send_daily_recap(stocks, breakouts, breakdowns, momentum, spikes)
         
-        # 4. Cleanup
+        # 4. 🧠 INTELLIGENCE LOOP: Trigger research for each spike or breakout
+        # We loop through the 'spikes' list identified by the engine
+        for stock in spikes:
+            # Parameters: ticker (str), percentage_change (float)
+            await engine.process_market_event(stock.symbol, stock.percent_change)
+
+        # Optional: Trigger for breakouts too?
+        # for stock in breakouts:
+        #    await engine.process_market_event(stock.symbol, stock.percent_change)
+        
+        # 5. Cleanup
         if os.path.exists(pdf): os.remove(pdf)
 
-        # 5. Periodic Leaderboards (Friday check)
+        # 6. Periodic Leaderboards (Friday check)
         if today.weekday() == 4:
             # Bi-Weekly (Every Friday between 8th-14th and 22nd-28th)
-            if (8 <= today.day <= 14) or (22 <= today.day <= 28):
+            if today.weekday() == 4 and today.isocalendar()[1] % 2 == 0:
                 winners, losers = engine.get_periodic_performance("BI-WEEKLY", 14)
                 await engine.send_periodic_report("14-DAY BI-WEEKLY", winners, losers)
 
