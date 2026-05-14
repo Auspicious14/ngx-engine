@@ -50,6 +50,8 @@ jobs:
           # New inputs for retry logic
           NGX_GITHUB_TOKEN: ${{ secrets.NGX_GITHUB_TOKEN }}
           NGX_GITHUB_REPO: ${{ github.repository }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           # INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
           # INPUT_IS_RETRY: ${{ github.event.inputs.is_retry }}
         run: |
