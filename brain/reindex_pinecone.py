@@ -62,7 +62,7 @@ def reindex():
         for i in range(0, len(vectors), 100):
             index.upsert(vectors=vectors[i:i+100])
 
-        print(f"  ✅ {company} | {filename[:60]}")
+        print(f"  ✅ {company} | {date_submitted} | {filename[:50]}")
 
     print("🏁 Re-index complete.")
 
