@@ -19,41 +19,41 @@ class HybridParser:
     def _load_db_metadata(self) -> dict:
         try:
             with sqlite3.connect(self.db_path) as conn:
-                # Check if date_submitted column exists
+                # Ensure column exists
                 cols = [r[1] for r in conn.execute("PRAGMA table_info(processed_disclosures)").fetchall()]
-                
-                if "date_submitted" in cols:
-                    rows = conn.execute("""
-                        SELECT filename, company, title, category, date_submitted
-                        FROM processed_disclosures
-                        WHERE filename IS NOT NULL
-                    """).fetchall()
-                    meta = {}
-                    for filename, company, title, category, date_submitted in rows:
-                        meta[filename] = {
-                            "company": company or "Unknown",
-                            "title": title or "Unknown",
-                            "category": category or "General_Disclosure",
-                            "date_submitted": date_submitted or "N/A"
-                        }
-                else:
-                    # Column missing — add it and proceed without dates
-                    print("⚠️ date_submitted column missing — adding it now")
+                if "date_submitted" not in cols:
                     conn.execute("ALTER TABLE processed_disclosures ADD COLUMN date_submitted TEXT")
                     conn.commit()
-                    rows = conn.execute("""
-                        SELECT filename, company, title, category
-                        FROM processed_disclosures
-                        WHERE filename IS NOT NULL
-                    """).fetchall()
-                    meta = {}
-                    for filename, company, title, category in rows:
-                        meta[filename] = {
-                            "company": company or "Unknown",
-                            "title": title or "Unknown",
-                            "category": category or "General_Disclosure",
-                            "date_submitted": "N/A"
-                        }
+    
+                rows = conn.execute("""
+                    SELECT filename, company, title, category, date_submitted
+                    FROM processed_disclosures
+                    WHERE filename IS NOT NULL
+                """).fetchall()
+    
+                meta = {}
+                missing_dates = []
+                for filename, company, title, category, date_submitted in rows:
+                    # Extract date from filename if DB has none
+                    if not date_submitted or date_submitted == "N/A":
+                        date_submitted = self._extract_date_from_filename(filename)
+                        missing_dates.append((date_submitted, filename))
+    
+                    meta[filename] = {
+                        "company": company or "Unknown",
+                        "title": title or "Unknown",
+                        "category": category or "General_Disclosure",
+                        "date_submitted": date_submitted
+                    }
+    
+                # Backfill dates into DB for next run
+                if missing_dates:
+                    conn.executemany(
+                        "UPDATE processed_disclosures SET date_submitted = ? WHERE filename = ?",
+                        missing_dates
+                    )
+                    conn.commit()
+                    print(f"📅 Backfilled {len(missing_dates)} missing dates from filenames")
     
             print(f"📋 Loaded {len(meta)} metadata records from DB")
             return meta
