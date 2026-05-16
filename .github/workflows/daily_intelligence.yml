@@ -25,7 +25,7 @@ jobs:
         run: |
           pip install httpx beautifulsoup4 pydantic pdfplumber pandas tabulate \
             pinecone langchain-huggingface sentence-transformers langchain-text-splitters \
-            google-genai
+            google-genai sqlalchemy
 
       - name: Run Scraper
         run: python brain/scraper.py
