@@ -1,12 +1,15 @@
-# brain/backfill_metadata.py
 import asyncio
 import httpx
 import sqlite3
 import os
 import re
+import sys
 
 DB_PATH = "data/brain_metadata.db"
 RAW_DIR = "data/raw_pdfs"
+
+# Add project root to path so brain.parser is importable
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def _categorize(url: str, title: str) -> str:
     text = (url + title).upper()
@@ -35,7 +38,7 @@ async def backfill():
         res = await client.get(api_url)
         results = res.json()["d"]["results"]
 
-    # Build a lookup: filename → metadata
+    # Build lookup: filename → metadata from API
     api_lookup = {}
     for item in results:
         pdf_url = item.get("URL", {}).get("Url", "")
@@ -47,33 +50,80 @@ async def backfill():
             "title": item.get("URL", {}).get("Description", "Unknown").upper(),
             "category": _categorize(pdf_url, item.get("URL", {}).get("Description", "")),
             "pdf_url": pdf_url,
+            "date_submitted": item.get("Modified", "")[:10],
         }
 
-    # Get all existing PDF filenames on disk
     disk_files = [f for f in os.listdir(RAW_DIR) if f.endswith(".pdf")]
     print(f"📂 {len(disk_files)} PDFs on disk, {len(api_lookup)} in API")
 
-    inserted = 0
+    # --- Pass 1: Insert files found in API ---
+    inserted_from_api = 0
     with sqlite3.connect(DB_PATH) as conn:
+        # Ensure date_submitted column exists
+        try:
+            conn.execute("ALTER TABLE processed_disclosures ADD COLUMN date_submitted TEXT")
+        except Exception:
+            pass  # Column already exists
+
         for filename in disk_files:
             meta = api_lookup.get(filename)
             if not meta:
-                # API doesn't have it (older than 2019 or missing) — use filename fallback
-                meta = {
-                    "company": "Unknown",
-                    "title": filename.replace("_", " ").replace(".pdf", ""),
-                    "category": _categorize(filename, filename),
-                    "pdf_url": f"https://doclib.ngxgroup.com/Financial_NewsDocs/{filename}"
-                }
-            
+                continue
             conn.execute("""
                 INSERT OR IGNORE INTO processed_disclosures 
-                (company, title, category, pdf_url, filename)
-                VALUES (?,?,?,?,?)
-            """, (meta["company"], meta["title"], meta["category"], meta["pdf_url"], filename))
-            inserted += 1
+                (company, title, category, pdf_url, filename, date_submitted)
+                VALUES (?,?,?,?,?,?)
+            """, (
+                meta["company"], meta["title"], meta["category"],
+                meta["pdf_url"], filename, meta["date_submitted"]
+            ))
+            inserted_from_api += 1
+        conn.commit()
 
-    print(f"✅ Backfilled {inserted} records into processed_disclosures")
+    print(f"✅ Pass 1: {inserted_from_api} records inserted from API")
+
+    # --- Pass 2: Filename extraction for files not in API ---
+    from brain.parser import HybridParser
+    p = HybridParser.__new__(HybridParser)  # skip __init__ to avoid DB load
+
+    missing = [f for f in disk_files if f not in api_lookup]
+    print(f"⚠️  {len(missing)} files not in API — extracting from filename")
+
+    inserted_from_filename = 0
+    with sqlite3.connect(DB_PATH) as conn:
+        for filename in missing:
+            meta = p._extract_from_filename(filename)
+            conn.execute("""
+                INSERT OR IGNORE INTO processed_disclosures 
+                (company, title, category, pdf_url, filename, date_submitted)
+                VALUES (?,?,?,?,?,?)
+            """, (
+                meta["company"], meta["title"], meta["category"],
+                f"https://doclib.ngxgroup.com/Financial_NewsDocs/{filename}",
+                filename, meta["date_submitted"]
+            ))
+            inserted_from_filename += 1
+        conn.commit()
+
+    print(f"✅ Pass 2: {inserted_from_filename} records filled from filename extraction")
+
+    # --- Verify ---
+    with sqlite3.connect(DB_PATH) as conn:
+        total = conn.execute("SELECT COUNT(*) FROM processed_disclosures").fetchone()[0]
+        unknown = conn.execute(
+            "SELECT COUNT(*) FROM processed_disclosures WHERE company = 'Unknown'"
+        ).fetchone()[0]
+        sample = conn.execute("""
+            SELECT company, date_submitted, filename 
+            FROM processed_disclosures 
+            WHERE company != 'Unknown' 
+            LIMIT 5
+        """).fetchall()
+
+    print(f"\n📊 Total records: {total} | Still Unknown: {unknown}")
+    print("🔍 Sample:")
+    for row in sample:
+        print(f"   {row[1]} | {row[0]} | {row[2][:50]}")
 
 if __name__ == "__main__":
     asyncio.run(backfill())
