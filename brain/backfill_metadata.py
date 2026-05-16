@@ -94,14 +94,15 @@ async def backfill():
         for filename in missing:
             meta = p._extract_from_filename(filename)
             conn.execute("""
-                INSERT OR IGNORE INTO processed_disclosures 
+                INSERT INTO processed_disclosures 
                 (company, title, category, pdf_url, filename, date_submitted)
                 VALUES (?,?,?,?,?,?)
-            """, (
-                meta["company"], meta["title"], meta["category"],
-                f"https://doclib.ngxgroup.com/Financial_NewsDocs/{filename}",
-                filename, meta["date_submitted"]
-            ))
+                ON CONFLICT(filename) DO UPDATE SET
+                    company = excluded.company,
+                    title = excluded.title,
+                    category = excluded.category,
+                    date_submitted = excluded.date_submitted
+            """, (...))
             inserted_from_filename += 1
         conn.commit()
 
