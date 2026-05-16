@@ -135,45 +135,45 @@ class AlphaIntelligence:
         )
 
     def _get_market_leaders(self, days: int = 30, limit: int = 10) -> str:
-    try:
-        import psycopg2
-        conn = psycopg2.connect(os.environ["DATABASE_URL"])
-        cursor = conn.cursor()
-        
-        cursor.execute("""
-            WITH period_start AS (
-                SELECT DISTINCT ON (symbol) symbol, close_price as old_price
-                FROM stock_prices
-                WHERE trade_date >= CURRENT_DATE - INTERVAL '1 day' * %(days)s
-                ORDER BY symbol, trade_date ASC
-            ),
-            period_end AS (
-                SELECT DISTINCT ON (symbol) symbol, close_price as new_price, company_name
-                FROM stock_prices
-                ORDER BY symbol, trade_date DESC
-            )
-            SELECT e.symbol, e.company_name,
-                   ROUND(((e.new_price - s.old_price) / s.old_price * 100)::numeric, 2) as pct_change,
-                   e.new_price
-            FROM period_start s
-            JOIN period_end e ON s.symbol = e.symbol
-            WHERE s.old_price > 0
-            ORDER BY pct_change DESC
-            LIMIT %(limit)s
-        """, {"days": days, "limit": limit})
-        
-        rows = cursor.fetchall()
-        conn.close()
-
-        if not rows:
-            return "No stock performance data found."
-
-        result = f"Top {limit} performers over the last {days} days:\n"
-        for symbol, company, pct_change, price in rows:
-            result += f"  {symbol} ({company}): +{pct_change}% | Current price ₦{price}\n"
-        return result
-    except Exception as e:
-        return f"DB error: {e}"
+        try:
+            import psycopg2
+            conn = psycopg2.connect(os.environ["DATABASE_URL"])
+            cursor = conn.cursor()
+            
+            cursor.execute("""
+                WITH period_start AS (
+                    SELECT DISTINCT ON (symbol) symbol, close_price as old_price
+                    FROM stock_prices
+                    WHERE trade_date >= CURRENT_DATE - INTERVAL '1 day' * %(days)s
+                    ORDER BY symbol, trade_date ASC
+                ),
+                period_end AS (
+                    SELECT DISTINCT ON (symbol) symbol, close_price as new_price, company_name
+                    FROM stock_prices
+                    ORDER BY symbol, trade_date DESC
+                )
+                SELECT e.symbol, e.company_name,
+                       ROUND(((e.new_price - s.old_price) / s.old_price * 100)::numeric, 2) as pct_change,
+                       e.new_price
+                FROM period_start s
+                JOIN period_end e ON s.symbol = e.symbol
+                WHERE s.old_price > 0
+                ORDER BY pct_change DESC
+                LIMIT %(limit)s
+            """, {"days": days, "limit": limit})
+            
+            rows = cursor.fetchall()
+            conn.close()
+    
+            if not rows:
+                return "No stock performance data found."
+    
+            result = f"Top {limit} performers over the last {days} days:\n"
+            for symbol, company, pct_change, price in rows:
+                result += f"  {symbol} ({company}): +{pct_change}% | Current price ₦{price}\n"
+            return result
+        except Exception as e:
+            return f"DB error: {e}"
 
 
     def _get_volume_spikes(self, threshold: float = 2.0, days: int = 7) -> str:
