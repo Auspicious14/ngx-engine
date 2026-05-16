@@ -61,12 +61,12 @@ class AlphaIntelligence:
                 ),
                 types.FunctionDeclaration(
                     name="get_market_leaders",
-                    description="Query live stock price database for top performing stocks by percentage change. Use for questions about which stocks are growing, market trends, or investment opportunities.",
+                    description="Query live NGX stock price database for top performing stocks by price appreciation over a period. Use for: which stocks are growing, best performers, investment opportunities, what to buy.",
                     parameters=types.Schema(
                         type=types.Type.OBJECT,
                         properties={
                             "days": types.Schema(type=types.Type.INTEGER, description="Lookback period in days (default 30)"),
-                            "limit": types.Schema(type=types.Type.INTEGER, description="Number of stocks to return (default 10)"),
+                            "limit": types.Schema(type=types.Type.INTEGER, description="Number of top stocks to return (default 10)"),
                         },
                         required=[]
                     )
@@ -135,56 +135,94 @@ class AlphaIntelligence:
         )
 
     def _get_market_leaders(self, days: int = 30, limit: int = 10) -> str:
-        """Replace the query below with your actual schema."""
-        try:
-            import psycopg2
-            conn = psycopg2.connect(os.environ["DATABASE_URL"])
-            cursor = conn.cursor()
-            cursor.execute("""
-                SELECT symbol, ROUND(AVG(percent_change)::numeric, 2) as avg_change,
-                       SUM(volume) as total_volume
+    try:
+        import psycopg2
+        conn = psycopg2.connect(os.environ["DATABASE_URL"])
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            WITH period_start AS (
+                SELECT DISTINCT ON (symbol) symbol, close_price as old_price
                 FROM stock_prices
-                WHERE trade_date > NOW() - INTERVAL '%s days'
-                GROUP BY symbol
-                ORDER BY avg_change DESC
-                LIMIT %s
-            """, (days, limit))
-            rows = cursor.fetchall()
-            conn.close()
+                WHERE trade_date >= CURRENT_DATE - INTERVAL '1 day' * %(days)s
+                ORDER BY symbol, trade_date ASC
+            ),
+            period_end AS (
+                SELECT DISTINCT ON (symbol) symbol, close_price as new_price, company_name
+                FROM stock_prices
+                ORDER BY symbol, trade_date DESC
+            )
+            SELECT e.symbol, e.company_name,
+                   ROUND(((e.new_price - s.old_price) / s.old_price * 100)::numeric, 2) as pct_change,
+                   e.new_price
+            FROM period_start s
+            JOIN period_end e ON s.symbol = e.symbol
+            WHERE s.old_price > 0
+            ORDER BY pct_change DESC
+            LIMIT %(limit)s
+        """, {"days": days, "limit": limit})
+        
+        rows = cursor.fetchall()
+        conn.close()
 
-            if not rows:
-                return "No stock price data found."
+        if not rows:
+            return "No stock performance data found."
 
-            result = f"Top {limit} performers over {days} days:\n"
-            for symbol, avg_change, volume in rows:
-                result += f"  {symbol}: avg {avg_change}% change, volume {volume:,}\n"
-            return result
-        except Exception as e:
-            return f"DB error: {e}"
+        result = f"Top {limit} performers over the last {days} days:\n"
+        for symbol, company, pct_change, price in rows:
+            result += f"  {symbol} ({company}): +{pct_change}% | Current price ₦{price}\n"
+        return result
+    except Exception as e:
+        return f"DB error: {e}"
+
 
     def _get_volume_spikes(self, threshold: float = 2.0, days: int = 7) -> str:
-        """Replace the query below with your actual schema."""
         try:
             import psycopg2
             conn = psycopg2.connect(os.environ["DATABASE_URL"])
             cursor = conn.cursor()
+    
             cursor.execute("""
-                SELECT symbol, trade_date, volume,
-                       ROUND((volume / AVG(volume) OVER (PARTITION BY symbol))::numeric, 2) as volume_ratio
-                FROM stock_prices
-                WHERE trade_date > NOW() - INTERVAL '%s days'
+                WITH avg_volumes AS (
+                    SELECT symbol,
+                           AVG(volume) as avg_vol
+                    FROM stock_prices
+                    WHERE trade_date < CURRENT_DATE - INTERVAL '1 day' * %(days)s
+                      AND trade_date >= CURRENT_DATE - INTERVAL '1 day' * (%(days)s + 10)
+                    GROUP BY symbol
+                ),
+                recent AS (
+                    SELECT DISTINCT ON (symbol) 
+                           sp.symbol, sp.company_name, sp.volume, 
+                           sp.close_price, sp.percent_change, sp.trade_date
+                    FROM stock_prices sp
+                    WHERE sp.trade_date >= CURRENT_DATE - INTERVAL '1 day' * %(days)s
+                    ORDER BY symbol, trade_date DESC
+                )
+                SELECT r.symbol, r.company_name, r.trade_date, r.volume,
+                       r.close_price, r.percent_change,
+                       ROUND((r.volume / NULLIF(a.avg_vol, 0))::numeric, 1) as volume_ratio
+                FROM recent r
+                JOIN avg_volumes a ON r.symbol = a.symbol
+                WHERE r.volume > (a.avg_vol * %(threshold)s)
                 ORDER BY volume_ratio DESC
                 LIMIT 10
-            """, (days,))
+            """, {"days": days, "threshold": threshold})
+    
             rows = cursor.fetchall()
             conn.close()
-
+    
             if not rows:
-                return "No volume spikes detected."
-
-            result = "Volume spike alerts:\n"
-            for symbol, date, volume, ratio in rows:
-                result += f"  {symbol} on {date}: {ratio}x average volume ({volume:,})\n"
+                return f"No volume spikes detected above {threshold}x average in the last {days} days."
+    
+            result = f"Volume spikes (>{threshold}x average) in the last {days} days:\n"
+            for symbol, company, trade_date, volume, price, pct_change, ratio in rows:
+                result += (
+                    f"  {symbol} ({company}) on {trade_date}: "
+                    f"{ratio}x normal volume | "
+                    f"₦{price} ({pct_change:+.2f}%) | "
+                    f"Vol: {volume:,}\n"
+                )
             return result
         except Exception as e:
             return f"DB error: {e}"
