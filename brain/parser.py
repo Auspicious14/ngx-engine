@@ -40,15 +40,9 @@ class HybridParser:
             return {}
 
     def _extract_from_filename(self, filename: str) -> dict:
-        """
-        Extract best-effort metadata from the filename itself.
-        NGX filenames follow patterns like:
-        46811_CADBURY_NIGERIA_PLC.-_QUARTER_1_-_FINANCIAL_STATEMENTS_APRIL_2026.pdf
-        NAHCO_PLC_-_NOTICE_OF_45TH_ANNUAL_GENERAL_MEETING.pdf
-        """
         name = filename.replace(".pdf", "").replace(".md", "")
-
-        # Extract date from filename — pattern: MONTH_YYYY at the end
+    
+        # Extract date from filename
         months = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE",
                   "JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
         date_submitted = "N/A"
@@ -58,11 +52,11 @@ class HybridParser:
             if match:
                 date_submitted = f"{match.group(1)}-{str(i+1).zfill(2)}-01"
                 break
-
+    
         # Strip leading numeric ID (e.g. "46811_")
         clean = re.sub(r'^\d+_', '', name)
-
-        # Categorize
+    
+        # Categorize from full name
         upper = clean.upper()
         if any(k in upper for k in ["INSIDER", "DIRECTOR", "DEALING", "DIRECTORSDEALINGS"]):
             category = "Insider_Dealing"
@@ -72,14 +66,45 @@ class HybridParser:
             category = "Dividend_Announcement"
         else:
             category = "General_Disclosure"
-
-        # Extract company — everything before the first " - " or "_-_"
-        company_raw = re.split(r'_-_|-_|_-', clean)[0]
+    
+        # Extract company — stop at known suffix patterns
+        # NGX filenames: COMPANY_NAME-TITLE_CORPORATE_ACTIONS_MONTH_YEAR
+        # or:            COMPANY_NAME-TITLE_FINANCIAL_STATEMENTS_MONTH_YEAR
+        stop_patterns = [
+            r'[-_]CORPORATE[_\s]ACTIONS',
+            r'[-_]FINANCIAL[_\s]STATEMENTS',
+            r'[-_]FINANCIAL[_\s]RESULTS',
+            r'[-_]PRESS[_\s]RELEASE',
+            r'[-_]NOTICES?[_\s]OF',
+            r'[-_]NOTICE[_\s]OF',
+            r'[-_]BOARD[_\s]MEETING',
+            r'[-_]ANNUAL[_\s]GENERAL',
+            r'[-_]DIRECTOR',
+            r'[-_]DIVIDEND',
+            r'[-_]QUARTER',
+            r'[-_]AUDITED',
+            r'[-_]UNAUDITED',
+            r'[-_]AGM',
+            r'[-_]EGM',
+            r'[-_]AFS',
+        ]
+    
+        company_raw = clean
+        earliest_stop = len(clean)
+    
+        for pattern in stop_patterns:
+            match = re.search(pattern, clean.upper())
+            if match and match.start() < earliest_stop:
+                earliest_stop = match.start()
+    
+        company_raw = clean[:earliest_stop]
+        # Clean up trailing separators and "PLC." variations
+        company_raw = re.sub(r'[-_\s]+$', '', company_raw)
         company = company_raw.replace("_", " ").strip().upper()
-
+    
         # Title is the full clean name
         title = clean.replace("_", " ").strip().upper()
-
+    
         return {
             "company": company,
             "title": title,
