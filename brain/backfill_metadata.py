@@ -59,11 +59,10 @@ async def backfill():
     # --- Pass 1: Insert files found in API ---
     inserted_from_api = 0
     with sqlite3.connect(DB_PATH) as conn:
-        # Ensure date_submitted column exists
         try:
             conn.execute("ALTER TABLE processed_disclosures ADD COLUMN date_submitted TEXT")
         except Exception:
-            pass  # Column already exists
+            pass
 
         for filename in disk_files:
             meta = api_lookup.get(filename)
@@ -78,7 +77,10 @@ async def backfill():
                     title = excluded.title,
                     category = excluded.category,
                     date_submitted = excluded.date_submitted
-            """, (...))
+            """, (
+                meta["company"], meta["title"], meta["category"],
+                meta["pdf_url"], filename, meta["date_submitted"]
+            ))
             inserted_from_api += 1
         conn.commit()
 
@@ -104,7 +106,11 @@ async def backfill():
                     title = excluded.title,
                     category = excluded.category,
                     date_submitted = excluded.date_submitted
-            """, (...))
+            """, (
+                meta["company"], meta["title"], meta["category"],
+                f"https://doclib.ngxgroup.com/Financial_NewsDocs/{filename}",
+                filename, meta["date_submitted"]
+            ))
             inserted_from_filename += 1
         conn.commit()
 
