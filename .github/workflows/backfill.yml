@@ -23,11 +23,11 @@ jobs:
       - name: Install Dependencies
         run: pip install pinecone langchain-huggingface sentence-transformers langchain-text-splitters
 
-      # - name: Run Backfill
-      #   run: python brain/backfill_metadata.py
+      - name: Run Backfill
+        run: python brain/backfill_metadata.py
 
-      - name: Verify Backfill
-        run: python test/script/verify_backfill.py
+      # - name: Verify Backfill
+      #   run: python test/script/verify_backfill.py
 
       - name: Re-index Pinecone
         env:
