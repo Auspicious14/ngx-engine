@@ -134,7 +134,17 @@ class HybridParser:
             "category": category,
             "date_submitted": date_submitted
         }
-
+    def _extract_date_from_filename(self, filename: str) -> str:
+        """Extract date from NGX filename pattern: MONTH_YYYY"""
+        months = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE",
+                  "JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
+        name = filename.upper()
+        for i, month in enumerate(months):
+            match = re.search(rf'{month}[_\s](\d{{4}})', name)
+            if match:
+                return f"{match.group(1)}-{str(i+1).zfill(2)}-01"
+        return "N/A"
+    
     def _get_metadata(self, filename: str) -> dict:
         """DB first, filename fallback."""
         # Try DB lookup
