@@ -17,22 +17,44 @@ class HybridParser:
         self.db_meta = self._load_db_metadata()
 
     def _load_db_metadata(self) -> dict:
-        """Load ALL metadata from DB into memory once — keyed by filename."""
         try:
             with sqlite3.connect(self.db_path) as conn:
-                rows = conn.execute("""
-                    SELECT filename, company, title, category, date_submitted
-                    FROM processed_disclosures
-                    WHERE filename IS NOT NULL
-                """).fetchall()
-            meta = {}
-            for filename, company, title, category, date_submitted in rows:
-                meta[filename] = {
-                    "company": company or "Unknown",
-                    "title": title or "Unknown",
-                    "category": category or "General_Disclosure",
-                    "date_submitted": date_submitted or "N/A"
-                }
+                # Check if date_submitted column exists
+                cols = [r[1] for r in conn.execute("PRAGMA table_info(processed_disclosures)").fetchall()]
+                
+                if "date_submitted" in cols:
+                    rows = conn.execute("""
+                        SELECT filename, company, title, category, date_submitted
+                        FROM processed_disclosures
+                        WHERE filename IS NOT NULL
+                    """).fetchall()
+                    meta = {}
+                    for filename, company, title, category, date_submitted in rows:
+                        meta[filename] = {
+                            "company": company or "Unknown",
+                            "title": title or "Unknown",
+                            "category": category or "General_Disclosure",
+                            "date_submitted": date_submitted or "N/A"
+                        }
+                else:
+                    # Column missing — add it and proceed without dates
+                    print("⚠️ date_submitted column missing — adding it now")
+                    conn.execute("ALTER TABLE processed_disclosures ADD COLUMN date_submitted TEXT")
+                    conn.commit()
+                    rows = conn.execute("""
+                        SELECT filename, company, title, category
+                        FROM processed_disclosures
+                        WHERE filename IS NOT NULL
+                    """).fetchall()
+                    meta = {}
+                    for filename, company, title, category in rows:
+                        meta[filename] = {
+                            "company": company or "Unknown",
+                            "title": title or "Unknown",
+                            "category": category or "General_Disclosure",
+                            "date_submitted": "N/A"
+                        }
+    
             print(f"📋 Loaded {len(meta)} metadata records from DB")
             return meta
         except Exception as e:
@@ -98,10 +120,11 @@ class HybridParser:
                 earliest_stop = match.start()
     
         company_raw = clean[:earliest_stop]
-        # Clean up trailing separators and "PLC." variations
         company_raw = re.sub(r'[-_\s]+$', '', company_raw)
+        
         company = company_raw.replace("_", " ").strip().upper()
-    
+        parts = re.split(r'\.\-|\-', company_raw, maxsplit=1)
+        company = parts[0].replace("_", " ").strip().upper()
         # Title is the full clean name
         title = clean.replace("_", " ").strip().upper()
     
