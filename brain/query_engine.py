@@ -122,6 +122,7 @@ class AlphaIntelligence:
                 f"Company: {meta.get('company', 'N/A')}\n"
                 f"Category: {meta.get('category', 'N/A')}\n"
                 f"Title: {meta.get('title', 'N/A')}\n"
+                f"Date: {meta.get('date_submitted', 'N/A')}\n"
                 f"Content: {meta.get('text', '')}"
             )
         return "\n---\n".join(segments)
