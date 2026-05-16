@@ -11,6 +11,12 @@ DB_PATH = "data/brain_metadata.db"
 def sanitize_id(text: str) -> str:
     """Strip non-ASCII characters from Pinecone vector IDs."""
     return re.sub(r'[^\x00-\x7F]', '_', text)
+
+
+def extract_date_from_md(content: str) -> str:
+    """Pull date_submitted from the YAML front matter."""
+    match = re.search(r'date_submitted:\s*"([^"]+)"', content)
+    return match.group(1) if match else "N/A"
     
 def get_unvectorized_files():
     """Returns only MD files not yet in Pinecone."""
@@ -56,6 +62,7 @@ def build_vector_store():
         path = os.path.join(MD_DIR, filename)
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
+        date_submitted = extract_date_from_md(content)
 
         meta = db_meta.get(filename, ("Unknown", filename, "General_Disclosure"))
         company, title, category = meta
@@ -71,7 +78,8 @@ def build_vector_store():
                     "filename": filename,
                     "company": company,        
                     "title": title,            
-                    "category": category,      
+                    "category": category,   
+                    "date_submitted": date_submitted,
                     "text": chunk[:1000]
                 }
             })
