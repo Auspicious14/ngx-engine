@@ -70,13 +70,15 @@ async def backfill():
             if not meta:
                 continue
             conn.execute("""
-                INSERT OR IGNORE INTO processed_disclosures 
+                INSERT INTO processed_disclosures 
                 (company, title, category, pdf_url, filename, date_submitted)
                 VALUES (?,?,?,?,?,?)
-            """, (
-                meta["company"], meta["title"], meta["category"],
-                meta["pdf_url"], filename, meta["date_submitted"]
-            ))
+                ON CONFLICT(filename) DO UPDATE SET
+                    company = excluded.company,
+                    title = excluded.title,
+                    category = excluded.category,
+                    date_submitted = excluded.date_submitted
+            """, (...))
             inserted_from_api += 1
         conn.commit()
 
