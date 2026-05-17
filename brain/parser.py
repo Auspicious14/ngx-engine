@@ -185,27 +185,33 @@ class HybridParser:
             print(f"⚠️ Error reading {os.path.basename(pdf_path)}: {e}")
             return None
 
-    def process_all(self):
+    def process_all(self, batch_size: int = 100):
         files = [f for f in os.listdir(RAW_DIR) if f.endswith(".pdf")]
     
         if not files:
             print("📂 No PDFs found.")
             return
     
-        # Only process files not yet converted
+        # Only pending files
         pending = [f for f in files if not os.path.exists(
             os.path.join(STRUCTURED_DIR, f.replace(".pdf", ".md"))
         )]
     
-        print(f"🚀 Processing {len(pending)} new filings ({len(files)} total)...")
+        if not pending:
+            print("✅ All files already parsed.")
+            return
+    
+        # Take only first batch_size files this run
+        batch = pending[:batch_size]
+        print(f"🚀 Processing batch of {len(batch)} (remaining: {len(pending)} / {len(files)} total)...")
         new_count = 0
     
-        for i, file in enumerate(pending):
+        for i, file in enumerate(batch):
             output_name = file.replace(".pdf", ".md")
             output_path = os.path.join(STRUCTURED_DIR, output_name)
     
             meta = self._get_metadata(file)
-            print(f"🧠 [{i+1}/{len(pending)}] {meta['company']} | {meta['date_submitted']} | {file[:50]}")
+            print(f"🧠 [{i+1}/{len(batch)}] {meta['company']} | {meta['date_submitted']} | {file[:50]}")
     
             content = self.extract_content(os.path.join(RAW_DIR, file))
     
@@ -224,13 +230,14 @@ class HybridParser:
                     f.write(header + content)
                 new_count += 1
     
-            # Force garbage collection every 50 files to free memory
-            if i % 50 == 0:
+            if i % 25 == 0:
                 import gc
                 gc.collect()
-                print(f"  🧹 Memory freed at batch {i}")
     
-        print(f"✅ Done: {new_count} new filings converted.")
+        remaining_after = len(pending) - len(batch)
+        print(f"✅ Batch done: {new_count} new MDs. {remaining_after} files still pending.")
+        if remaining_after > 0:
+            print(f"⚠️ Re-trigger workflow to process next batch.")
 
     
 if __name__ == "__main__":
