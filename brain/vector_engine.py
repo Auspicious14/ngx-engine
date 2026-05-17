@@ -20,6 +20,9 @@ def extract_date_from_md(content: str) -> str:
     
 def get_unvectorized_files():
     """Returns only MD files not yet in Pinecone."""
+    if not os.path.exists(MD_DIR):
+        print("📂 No processed_md directory yet — nothing to vectorize.")
+        return set()
     all_files = set(f for f in os.listdir(MD_DIR) if f.endswith(".md"))
     with sqlite3.connect(DB_PATH) as conn:
         done = set(r[0] for r in conn.execute(
