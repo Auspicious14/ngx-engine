@@ -187,26 +187,28 @@ class HybridParser:
 
     def process_all(self):
         files = [f for f in os.listdir(RAW_DIR) if f.endswith(".pdf")]
-
+    
         if not files:
-            print("📂 No PDFs found. Scraper needs to run first.")
+            print("📂 No PDFs found.")
             return
-
-        print(f"🚀 Processing {len(files)} filings...")
+    
+        # Only process files not yet converted
+        pending = [f for f in files if not os.path.exists(
+            os.path.join(STRUCTURED_DIR, f.replace(".pdf", ".md"))
+        )]
+    
+        print(f"🚀 Processing {len(pending)} new filings ({len(files)} total)...")
         new_count = 0
-
-        for file in files:
+    
+        for i, file in enumerate(pending):
             output_name = file.replace(".pdf", ".md")
             output_path = os.path.join(STRUCTURED_DIR, output_name)
-
-            if os.path.exists(output_path):
-                continue
-
+    
             meta = self._get_metadata(file)
-            print(f"🧠 Parsing: {meta['company']} | {meta['date_submitted']} | {file[:50]}")
-
+            print(f"🧠 [{i+1}/{len(pending)}] {meta['company']} | {meta['date_submitted']} | {file[:50]}")
+    
             content = self.extract_content(os.path.join(RAW_DIR, file))
-
+    
             if content:
                 header = (
                     f"---\n"
@@ -218,14 +220,19 @@ class HybridParser:
                     f"parsed_at: \"{datetime.now().isoformat()}\"\n"
                     f"---\n\n"
                 )
-
                 with open(output_path, "w", encoding="utf-8") as f:
                     f.write(header + content)
                 new_count += 1
-
+    
+            # Force garbage collection every 50 files to free memory
+            if i % 50 == 0:
+                import gc
+                gc.collect()
+                print(f"  🧹 Memory freed at batch {i}")
+    
         print(f"✅ Done: {new_count} new filings converted.")
 
-
+    
 if __name__ == "__main__":
     parser = HybridParser()
     parser.process_all()
