@@ -15,6 +15,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Ensure data directories exist
+        run: |
+          mkdir -p data/processed_md data/raw_pdfs
+          touch data/processed_md/.gitkeep data/raw_pdfs/.gitkeep
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -43,6 +48,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Ensure data directories exist
+        run: mkdir -p data/processed_md data/raw_pdfs
 
       - name: Set up Python
         uses: actions/setup-python@v4
