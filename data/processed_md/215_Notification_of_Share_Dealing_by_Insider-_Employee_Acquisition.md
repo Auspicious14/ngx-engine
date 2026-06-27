@@ -1,0 +1,73 @@
+---
+company: "MTN Nigeria Communications Plc"
+title: "MTN NIGERIA COMMUNICATIONS PLC DIRECTORSDEALINGS"
+category: "Insider_Dealing"
+date_submitted: "N/A"
+source_file: "215_Notification_of_Share_Dealing_by_Insider-_Employee_Acquisition.pdf"
+parsed_at: "2026-06-27T20:09:20.509510"
+---
+
+Lagos | Nigeria: 18 June 2026
+Notification of Share Dealing by Insiders
+1. Details of the Director/Insider
+a) Name
+MTNN EMPLOYEE SHARE ACQUISITION TRUST
+2. Reason for the notification
+a) Position/status Related Party
+b) Initial notification/Amendment Initial Notification
+3. Details of the Issuer
+Name
+a) MTN Nigeria Communications PLC
+b) Legal Entity Identifier 1 0292003626J3K6UG9D04
+Details of the transaction(s): to be repeated for (i) each type of instrument; (ii) each type of
+4.
+transaction; (iii) each date; and (iv) each place where transactions have been conducted
+Description of the financial Ordinary Shares
+instrument, type of instrument
+a)
+Identification Code ISIN: NGMTNN000002
+b) Nature of the transaction Purchase of shares
+Price(s) and volume(s) Tranche 1: 8,000,000 @ N794.06 per share
+c) Tranche 2: 2,355,524 @ N804.11 per share
+Tranche 3: 580,747 @ N804.12 per share
+Aggregate information
+d) - Aggregated volume 10,936,271
+- Price N796.76
+Date (s) of Transaction Tranche 1: 09/06/26
+e) Tranche 2: 10/06/26
+Tranche 3: 11/06/26
+Place of Transaction Lagos
+f)
+Uto Ukpanah FCIS
+Company Secretary
+1 Legal Entity Identifier (LEI) is a unique global identifier of legal entities participating in financial transactions. These can be individuals,
+companies or government entities that participate in financial transactions. To get an LEI, please register via https://lei.cscs.ng/cscslei/lei-
+registration-process.php
+MTN Nigeria Communications PLC
+C orporate Head Office : MTN Plaza, Falomo, Ikoyi, Lagos.
+P.M.B. 80147 Adeola Odeku Post Office, Victoria Island, Lagos, Nigeria
+Website: www.mtn.ng
+RC 395010
+Directors: Dr. E. Ndukwe, OFR (Chairman) Dr. K. Olutokun Toriola (CEO) Mr. M. Kadri (CFO) Mr. M.K. Ahmad, OON Mr. M. Ajukwu Mr. A. Alli
+Dr. O. Johnson Mrs. E. Kola-Oyeneyin Mr. A.B. Mahmoud, SAN OON *Ms. T. Molefe *Mr. R. Mupita Mr. U. Nwuneli Mrs. I. M. Omoigui Okauru, MFR
+**Mr. T. Pennington ***Mr. J. Schulte-Bockum
+*South African **British ***German
+
+
+| 0   | 1                                                                                                                                                                                         | 2                                                                                                                        |
+|:----|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
+| 1.  | Details of the Director/Insider                                                                                                                                                           | nan                                                                                                                      |
+| a)  | Name                                                                                                                                                                                      | MTNN EMPLOYEE SHARE ACQUISITION TRUST                                                                                    |
+| 2.  | Reason for the notification                                                                                                                                                               | nan                                                                                                                      |
+| a)  | Position/status                                                                                                                                                                           | Related Party                                                                                                            |
+| b)  | Initial notification/Amendment                                                                                                                                                            | Initial Notification                                                                                                     |
+| 3.  | Details of the Issuer                                                                                                                                                                     | nan                                                                                                                      |
+| a)  | Name                                                                                                                                                                                      | MTN Nigeria Communications PLC                                                                                           |
+| b)  | Legal Entity Identifier 1                                                                                                                                                                 | 0292003626J3K6UG9D04                                                                                                     |
+| 4.  | Details of the transaction(s): to be repeated for (i) each type of instrument; (ii) each type of transaction; (iii) each date; and (iv) each place where transactions have been conducted | nan                                                                                                                      |
+| a)  | Description of the financial instrument, type of instrument Identification Code                                                                                                           | Ordinary Shares ISIN: NGMTNN000002                                                                                       |
+| b)  | Nature of the transaction                                                                                                                                                                 | Purchase of shares                                                                                                       |
+| c)  | Price(s) and volume(s)                                                                                                                                                                    | Tranche 1: 8,000,000 @ N794.06 per share Tranche 2: 2,355,524 @ N804.11 per share Tranche 3: 580,747 @ N804.12 per share |
+| d)  | Aggregate information - Aggregated volume - Price                                                                                                                                         | 10,936,271 N796.76                                                                                                       |
+| e)  | Date (s) of Transaction                                                                                                                                                                   | Tranche 1: 09/06/26 Tranche 2: 10/06/26 Tranche 3: 11/06/26                                                              |
+| f)  | Place of Transaction                                                                                                                                                                      | Lagos                                                                                                                    |
