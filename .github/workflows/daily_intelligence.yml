@@ -2,7 +2,7 @@ name: Daily Intelligence Sync
 
 on:
   schedule:
-    - cron: '0 19 * * *' # 7:00 PM UTC = 8:00 PM WAT (Lagos)
+    - cron: '0 19 * * *'
   workflow_dispatch:
 
 permissions:
@@ -36,12 +36,29 @@ jobs:
       - name: Run Parser
         run: python brain/parser.py
 
+      - name: Debug pending files
+        run: |
+          python -c "
+          import os
+          raw = [f for f in os.listdir('data/raw_pdfs') if f.endswith('.pdf')]
+          done = [f for f in os.listdir('data/processed_md') if f.endswith('.md')]
+          done_as_pdf = [f.replace('.md', '.pdf') for f in done]
+          pending = [f for f in raw if f not in done_as_pdf]
+          print(f'Raw PDFs: {len(raw)}')
+          print(f'Done MDs: {len(done)}')
+          print(f'Pending: {len(pending)}')
+          print('First 5 pending:')
+          for f in pending[:5]: print(f'  {f}')
+          "
+
       - name: Commit Parsed Files
         run: |
           git config --global user.name "Alpha-Bot"
           git config --global user.email "actions@github.com"
           git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push)
+          git status
+          git diff --quiet && git diff --staged --quiet && echo "NOTHING TO COMMIT" || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push && echo "PUSH SUCCESS")
+
       - name: Re-trigger if backlog remains
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -59,16 +76,6 @@ jobs:
           else
             echo "✅ Backlog cleared, stopping."
           fi
-      - name: Commit Parsed Files
-        run: |
-          git config --global user.name "Alpha-Bot"
-          git config --global user.email "actions@github.com"
-          git add data/
-          echo "=== Git Status ==="
-          git status
-          echo "=== Staged files count ==="
-          git diff --staged --name-only | wc -l
-          git diff --quiet && git diff --staged --quiet && echo "NOTHING TO COMMIT" || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push && echo "PUSH SUCCESS")
 
   vectorize:
     runs-on: ubuntu-latest
