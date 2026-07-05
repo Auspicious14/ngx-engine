@@ -185,7 +185,7 @@ class HybridParser:
             print(f"⚠️ Error reading {os.path.basename(pdf_path)}: {e}")
             return None
 
-    def process_all(self, batch_size: int = 100):
+    def process_all(self, batch_size: int = 50):
         files = [f for f in os.listdir(RAW_DIR) if f.endswith(".pdf")]
     
         if not files:
