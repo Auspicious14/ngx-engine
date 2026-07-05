@@ -42,6 +42,9 @@ jobs:
           git add data/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push)
       - name: Re-trigger if backlog remains
+        permissions:
+          contents: write
+          actions: write
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
