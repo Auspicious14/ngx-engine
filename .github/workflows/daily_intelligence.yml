@@ -41,6 +41,23 @@ jobs:
           git config --global user.email "actions@github.com"
           git add data/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push)
+      - name: Re-trigger if backlog remains
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          run: |
+            REMAINING=$(python -c "
+            import os
+            raw = len([f for f in os.listdir('data/raw_pdfs') if f.endswith('.pdf')])
+            done = len([f for f in os.listdir('data/processed_md') if f.endswith('.md')])
+            print(raw - done)
+            ")
+            echo "Remaining: $REMAINING"
+            if [ "$REMAINING" -gt "0" ]; then
+              echo "🔁 Backlog remains, re-triggering..."
+              gh workflow run "Daily Intelligence Sync" --ref main
+            else
+              echo "✅ Backlog cleared, stopping."
+            fi
 
   vectorize:
     runs-on: ubuntu-latest

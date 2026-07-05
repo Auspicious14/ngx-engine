@@ -230,6 +230,7 @@ class AlphaIntelligence:
     # ── Agentic loop ──────────────────────────────────────────────────────
 
     def ask(self, user_query: str, company_filter: str = None, category_filter: str = None) -> str:
+        time.sleep(4)
         print(f"🔍 Query: {user_query}")
 
         messages = [types.Content(
