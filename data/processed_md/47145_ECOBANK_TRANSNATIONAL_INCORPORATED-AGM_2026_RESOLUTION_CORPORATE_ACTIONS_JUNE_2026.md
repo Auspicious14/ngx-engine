@@ -1,0 +1,10 @@
+---
+company: "ECOBANK TRANSNATIONAL INCORPORATED"
+title: "ECOBANK TRANSNATIONAL INCORPORATED-AGM 2026 RESOLUTION"
+category: "Financial_Result"
+date_submitted: "2026-06-01"
+source_file: "47145_ECOBANK_TRANSNATIONAL_INCORPORATED-AGM_2026_RESOLUTION_CORPORATE_ACTIONS_JUNE_2026.pdf"
+parsed_at: "2026-07-06T20:15:08.795117"
+---
+
+[No extractable text — likely a scanned image PDF]

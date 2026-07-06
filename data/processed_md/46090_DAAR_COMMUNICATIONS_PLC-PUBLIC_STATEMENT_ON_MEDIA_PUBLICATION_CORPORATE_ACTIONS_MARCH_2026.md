@@ -1,0 +1,10 @@
+---
+company: "DAAR COMMUNICATIONS PLC"
+title: "DAAR COMMUNICATIONS PLC-PUBLIC STATEMENT ON MEDIA PUBLICATION"
+category: "Financial_Result"
+date_submitted: "2026-03-01"
+source_file: "46090_DAAR_COMMUNICATIONS_PLC-PUBLIC_STATEMENT_ON_MEDIA_PUBLICATION_CORPORATE_ACTIONS_MARCH_2026.pdf"
+parsed_at: "2026-07-06T20:15:08.866924"
+---
+
+[No extractable text — likely a scanned image PDF]

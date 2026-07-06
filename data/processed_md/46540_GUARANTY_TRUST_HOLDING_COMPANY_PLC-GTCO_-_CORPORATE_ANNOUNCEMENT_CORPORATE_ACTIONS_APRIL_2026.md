@@ -1,0 +1,10 @@
+---
+company: "GUARANTY TRUST HOLDING COMPANY PLC"
+title: "GUARANTY TRUST HOLDING COMPANY PLC-GTCO - CORPORATE ANNOUNCEMENT"
+category: "Financial_Result"
+date_submitted: "2026-04-01"
+source_file: "46540_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO_-_CORPORATE_ANNOUNCEMENT_CORPORATE_ACTIONS_APRIL_2026.pdf"
+parsed_at: "2026-07-06T20:15:08.871768"
+---
+
+[No extractable text — likely a scanned image PDF]

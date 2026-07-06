@@ -1,0 +1,10 @@
+---
+company: "ABBEY MORTGAGE BANK PLC"
+title: "ABBEY MORTGAGE BANK PLC-RESOLUTIONS PASSED AT 34TH ANNUAL GENERAL MEETING"
+category: "Financial_Result"
+date_submitted: "2026-05-01"
+source_file: "47058_ABBEY_MORTGAGE_BANK_PLC-RESOLUTIONS_PASSED_AT_34TH_ANNUAL_GENERAL_MEETING_CORPORATE_ACTIONS_MAY_2026.pdf"
+parsed_at: "2026-07-06T20:15:08.848601"
+---
+
+[No extractable text — likely a scanned image PDF]
