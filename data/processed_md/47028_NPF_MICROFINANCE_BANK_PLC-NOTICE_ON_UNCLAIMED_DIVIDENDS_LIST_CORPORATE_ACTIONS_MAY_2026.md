@@ -1,0 +1,10 @@
+---
+company: "NPF MICROFINANCE BANK PLC"
+title: "NPF MICROFINANCE BANK PLC-NOTICE ON UNCLAIMED DIVIDENDS LIST"
+category: "Financial_Result"
+date_submitted: "2026-05-01"
+source_file: "47028_NPF_MICROFINANCE_BANK_PLC-NOTICE_ON_UNCLAIMED_DIVIDENDS_LIST_CORPORATE_ACTIONS_MAY_2026.pdf"
+parsed_at: "2026-07-06T20:19:17.578657"
+---
+
+[No extractable text — likely a scanned image PDF]
