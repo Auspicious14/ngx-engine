@@ -1,0 +1,10 @@
+---
+company: "NESTLE NIGERIA PLC."
+title: "NESTLE NIGERIA PLC.-RESOLUTIONS PASSED AT THE 57TH AGM OF NESTLE NIGERIA PLC"
+category: "Financial_Result"
+date_submitted: "2026-06-01"
+source_file: "47082_NESTLE_NIGERIA_PLC.-RESOLUTIONS_PASSED_AT_THE_57TH_AGM_OF_NESTLE_NIGERIA_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf"
+parsed_at: "2026-07-06T21:39:33.277312"
+---
+
+[No extractable text — likely a scanned image PDF]

@@ -1,0 +1,10 @@
+---
+company: "ACCESS HOLDINGS PLC"
+title: "ACCESS HOLDINGS PLC - APPOINTMENT OF CHIEF EXECUTIVE OFFICERS FOR ACCESS ARM PENSIONS LIMITED AND OXYGEN X FINANCE COMPANY LIMITED"
+category: "Financial_Result"
+date_submitted: "N/A"
+source_file: "ACCESS_HOLDINGS_-_APPOINTMENT_OF_CEOS_OF_ACCESS_ARM_PENSIONS_AND_OXYGEN.pdf"
+parsed_at: "2026-07-06T21:39:38.346511"
+---
+
+[No extractable text — likely a scanned image PDF]
