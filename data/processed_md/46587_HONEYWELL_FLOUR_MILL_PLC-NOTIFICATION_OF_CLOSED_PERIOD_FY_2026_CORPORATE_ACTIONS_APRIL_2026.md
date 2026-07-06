@@ -1,0 +1,10 @@
+---
+company: "HONEYWELL FLOUR MILL PLC"
+title: "HONEYWELL FLOUR MILL PLC-NOTIFICATION OF CLOSED PERIOD FY 2026"
+category: "Financial_Result"
+date_submitted: "2026-04-01"
+source_file: "46587_HONEYWELL_FLOUR_MILL_PLC-NOTIFICATION_OF_CLOSED_PERIOD_FY_2026_CORPORATE_ACTIONS_APRIL_2026.pdf"
+parsed_at: "2026-07-06T20:31:41.885700"
+---
+
+[No extractable text — likely a scanned image PDF]

@@ -1,0 +1,10 @@
+---
+company: "JAIZ BANK PLC"
+title: "JAIZ BANK PLC-JAIZ BANK PLC DECLARATION OF DIVIDEND PAYMENT FOR 2025 FINANCIAL YEAR"
+category: "Financial_Result"
+date_submitted: "2026-05-01"
+source_file: "47036_JAIZ_BANK_PLC-JAIZ_BANK_PLC_DECLARATION_OF_DIVIDEND_PAYMENT_FOR_2025_FINANCIAL_YEAR_CORPORATE_ACTIONS_MAY_2026.pdf"
+parsed_at: "2026-07-06T20:30:21.149215"
+---
+
+[No extractable text — likely a scanned image PDF]
