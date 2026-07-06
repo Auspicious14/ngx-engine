@@ -246,7 +246,8 @@ class AlphaIntelligence:
         )
 
         response = self.client.models.generate_content(
-            model="gemini-2.5-flash",
+            # model="gemini-2.5-flash",
+            model="gemini-2.0-flash",
             contents=messages,
             config=config
         )
@@ -281,7 +282,8 @@ class AlphaIntelligence:
             messages.append(types.Content(role="user", parts=tool_results))
 
             response = self.client.models.generate_content(
-                model="gemini-2.5-flash",
+                # model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=messages,
                 config=config
             )
