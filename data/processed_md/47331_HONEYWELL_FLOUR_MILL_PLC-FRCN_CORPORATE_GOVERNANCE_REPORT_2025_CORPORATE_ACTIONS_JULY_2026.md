@@ -1,0 +1,10 @@
+---
+company: "HONEYWELL FLOUR MILL PLC"
+title: "HONEYWELL FLOUR MILL PLC-FRCN CORPORATE GOVERNANCE REPORT 2025"
+category: "Financial_Result"
+date_submitted: "2026-07-01"
+source_file: "47331_HONEYWELL_FLOUR_MILL_PLC-FRCN_CORPORATE_GOVERNANCE_REPORT_2025_CORPORATE_ACTIONS_JULY_2026.pdf"
+parsed_at: "2026-07-06T21:22:57.908274"
+---
+
+[No extractable text — likely a scanned image PDF]
