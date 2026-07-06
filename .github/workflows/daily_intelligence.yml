@@ -75,22 +75,22 @@ jobs:
                   print(f'❌ {f[:50]} | {size} bytes | ERROR: {e}')"
       - name: Re-trigger if backlog remains
         if: false
-          env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: |
-            REMAINING=$(python -c "
-            import os
-            raw = set(f.replace('.pdf', '.md') for f in os.listdir('data/raw_pdfs') if f.endswith('.pdf'))
-            done = set(f for f in os.listdir('data/processed_md') if f.endswith('.md'))
-            print(len(raw - done))
-            ")
-            echo "Remaining: $REMAINING"
-            if [ "$REMAINING" -gt "0" ]; then
-              echo "🔁 Backlog remains, re-triggering..."
-              gh workflow run "Daily Intelligence Sync" --ref main
-            else
-              echo "✅ Backlog cleared, stopping."
-            fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REMAINING=$(python -c "
+          import os
+          raw = set(f.replace('.pdf', '.md') for f in os.listdir('data/raw_pdfs') if f.endswith('.pdf'))
+          done = set(f for f in os.listdir('data/processed_md') if f.endswith('.md'))
+          print(len(raw - done))
+          ")
+          echo "Remaining: $REMAINING"
+          if [ "$REMAINING" -gt "0" ]; then
+            echo "🔁 Backlog remains, re-triggering..."
+            gh workflow run "Daily Intelligence Sync" --ref main
+          else
+            echo "✅ Backlog cleared, stopping."
+          fi
 
   vectorize:
     runs-on: ubuntu-latest
