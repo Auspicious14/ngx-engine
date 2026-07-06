@@ -1,0 +1,14 @@
+---
+company: "PREMIER PAINTS PLC."
+title: "PREMIER PAINTS PLC.-DIRECTORS' CIRCULAR OF PREMIER PAINTS PLC"
+category: "Financial_Result"
+date_submitted: "2026-06-01"
+source_file: "47178_PREMIER_PAINTS_PLC.-DIRECTORS'_CIRCULAR_OF_PREMIER_PAINTS_PLC_CORPORATE_ACTIONS_JUNE_2026.pdf"
+parsed_at: "2026-07-06T21:48:28.850002"
+---
+
+CamScanner
+
+Adedoyin
+Adeyinka
+CamScanner
