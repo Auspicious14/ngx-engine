@@ -1,0 +1,10 @@
+---
+company: "GUARANTY TRUST HOLDING COMPANY PLC"
+title: "GUARANTY TRUST HOLDING COMPANY PLC-GTCO - APPOINTMENT OF AN INED"
+category: "Financial_Result"
+date_submitted: "2026-03-01"
+source_file: "46199_GUARANTY_TRUST_HOLDING_COMPANY_PLC-GTCO_-_APPOINTMENT_OF_AN_INED_CORPORATE_ACTIONS_MARCH_2026.pdf"
+parsed_at: "2026-07-06T21:54:05.956878"
+---
+
+[No extractable text — likely a scanned image PDF]
