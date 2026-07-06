@@ -4,6 +4,7 @@ from google import genai
 from google.genai import types
 from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
+import time
 
 PINECONE_API_KEY = os.environ["PINECONE_API_KEY"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
