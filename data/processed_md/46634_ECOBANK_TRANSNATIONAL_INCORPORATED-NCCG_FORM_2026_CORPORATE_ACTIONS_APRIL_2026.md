@@ -1,0 +1,10 @@
+---
+company: "ECOBANK TRANSNATIONAL INCORPORATED"
+title: "ECOBANK TRANSNATIONAL INCORPORATED-NCCG FORM 2026"
+category: "Financial_Result"
+date_submitted: "2026-04-01"
+source_file: "46634_ECOBANK_TRANSNATIONAL_INCORPORATED-NCCG_FORM_2026_CORPORATE_ACTIONS_APRIL_2026.pdf"
+parsed_at: "2026-07-06T21:14:23.317114"
+---
+
+[No extractable text — likely a scanned image PDF]
