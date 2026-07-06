@@ -58,8 +58,23 @@ jobs:
           git add data/
           git status
           git diff --quiet && git diff --staged --quiet && echo "NOTHING TO COMMIT" || (git commit -m "Sync: New NGX Disclosures $(date +'%Y-%m-%d')" && git pull --rebase --strategy-option=theirs && git push && echo "PUSH SUCCESS")
-
+      - name: Check PDF accessibility
+        run: |
+          python -c "
+          import os, pdfplumber
+          raw_dir = 'data/raw_pdfs'
+          files = [f for f in os.listdir(raw_dir) if f.endswith('.pdf')][:5]
+          for f in files:
+              path = os.path.join(raw_dir, f)
+              size = os.path.getsize(path)
+              try:
+                  with pdfplumber.open(path) as pdf:
+                      pages = len(pdf.pages)
+                  print(f'✅ {f[:50]} | {size} bytes | {pages} pages')
+              except Exception as e:
+                  print(f'❌ {f[:50]} | {size} bytes | ERROR: {e}')"
       - name: Re-trigger if backlog remains
+      if: false
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
