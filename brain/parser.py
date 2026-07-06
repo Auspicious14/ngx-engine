@@ -167,6 +167,24 @@ class HybridParser:
             pass
         return ""
 
+    # def extract_content(self, pdf_path: str):
+    #     full_md = []
+    #     try:
+    #         with pdfplumber.open(pdf_path) as pdf:
+    #             for page in pdf.pages:
+    #                 text = page.extract_text()
+    #                 if text:
+    #                     full_md.append(text)
+    #                 tables = page.extract_tables()
+    #                 for table in tables:
+    #                     md_table = self._table_to_markdown(table)
+    #                     if md_table:
+    #                         full_md.append(f"\n{md_table}\n")
+    #         return "\n\n".join(full_md)
+    #     except Exception as e:
+    #         print(f"⚠️ Error reading {os.path.basename(pdf_path)}: {e}")
+    #         return None
+
     def extract_content(self, pdf_path: str):
         full_md = []
         try:
@@ -180,10 +198,18 @@ class HybridParser:
                         md_table = self._table_to_markdown(table)
                         if md_table:
                             full_md.append(f"\n{md_table}\n")
-            return "\n\n".join(full_md)
+
+            content = "\n\n".join(full_md)
+            
+            # Return placeholder for empty/image PDFs so they get marked done
+            if not content.strip():
+                return f"[No extractable text — likely a scanned image PDF]"
+            
+            return content
         except Exception as e:
             print(f"⚠️ Error reading {os.path.basename(pdf_path)}: {e}")
-            return None
+            # Return placeholder so file is marked done and skipped next run
+            return f"[Parse error: {e}]"
 
     def process_all(self, batch_size: int = 50):
         files = [f for f in os.listdir(RAW_DIR) if f.endswith(".pdf")]
