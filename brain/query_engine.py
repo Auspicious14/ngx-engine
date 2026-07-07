@@ -5,6 +5,9 @@ from google.genai import types
 from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 import time
+from groq import GroqClient
+
+
 
 PINECONE_API_KEY = os.environ["PINECONE_API_KEY"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
@@ -15,7 +18,8 @@ class AlphaIntelligence:
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.index = self.pc.Index(INDEX_NAME)
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        self.client = genai.Client(api_key=GEMINI_API_KEY)
+        # self.client = genai.Client(api_key=GEMINI_API_KEY)
+        self.client = GroqClient(api_key=os.environ["GROQ_API_KEY"])
 
         self.system_prompt = """
         You are Alpha, a specialized Nigerian Capital Market Intelligence Assistant.
@@ -245,12 +249,21 @@ class AlphaIntelligence:
             temperature=0.2
         )
 
-        response = self.client.models.generate_content(
-            # model="gemini-2.5-flash",
-            model="gemini-2.0-flash",
-            contents=messages,
-            config=config
+        response = self.client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {"role": "system", "content": self.system_prompt},
+                {"role": "user", "content": user_query}
+            ],
+            temperature=0.2
         )
+        return response.choices[0].message.content
+        # response = self.client.models.generate_content(
+        #     # model="gemini-2.5-flash",
+        #     model="gemini-2.0-flash",
+        #     contents=messages,
+        #     config=config
+        # )
 
         # Agentic loop — keep executing tools until Gemini returns final text
         while True:
@@ -281,12 +294,21 @@ class AlphaIntelligence:
             messages.append(response.candidates[0].content)
             messages.append(types.Content(role="user", parts=tool_results))
 
-            response = self.client.models.generate_content(
-                # model="gemini-2.5-flash",
-                model="gemini-2.0-flash",
-                contents=messages,
-                config=config
+            response = self.client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[
+                    {"role": "system", "content": self.system_prompt},
+                    {"role": "user", "content": user_query}
+                ],
+                temperature=0.2
             )
+            return response.choices[0].message.content
+            # response = self.client.models.generate_content(
+            #     # model="gemini-2.5-flash",
+            #     model="gemini-2.0-flash",
+            #     contents=messages,
+            #     config=config
+            # )
 
         return response.text
 
