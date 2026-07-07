@@ -5,7 +5,7 @@ from google.genai import types
 from pinecone import Pinecone
 from langchain_huggingface import HuggingFaceEmbeddings
 import time
-from groq import GroqClient
+from groq import Groq
 
 
 
@@ -19,7 +19,7 @@ class AlphaIntelligence:
         self.index = self.pc.Index(INDEX_NAME)
         self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
         # self.client = genai.Client(api_key=GEMINI_API_KEY)
-        self.client = GroqClient(api_key=os.environ["GROQ_API_KEY"])
+        self.client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
         self.system_prompt = """
         You are Alpha, a specialized Nigerian Capital Market Intelligence Assistant.
