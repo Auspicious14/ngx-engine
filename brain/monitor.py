@@ -1,40 +1,76 @@
 import os
 import asyncio
-from brain.query_engine import AlphaIntelligence
-from main import TelegramNotifier, WhatsAppNotifier 
 from datetime import datetime
+from brain.query_engine import AlphaIntelligence
 
 async def run_daily_intelligence_sync():
     brain = AlphaIntelligence()
-    send_whatsapp_msg = WhatsAppNotifier()
-    send_telegram_msg = TelegramNotifier()
+    today = datetime.now().strftime("%Y-%m-%d")
     
-    intelligence_queries = [
-        "List all new Dividend Announcements and qualification dates.",
-        "Summarize all Director Dealings or Insider trades from today's filings.",
-        "List any Executive or Board appointments/resignations.",
-        "Summarize any recently released Financial Results or Earnings Forecasts."
-    ]
+    print(f"🧠 NGX Intelligence Brief: {today}")
     
-    report_header = f"🧠 *NGX Intelligence Brief: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
-    report_body = ""
-
-    for query in intelligence_queries:
-        summary = brain.ask(query)
-        if "I don't have that specific data yet" not in summary:
-            report_body += f"📍 *{query}*\n{summary}\n\n"
-
-    if not report_body:
-        final_report = report_header + "No significant corporate disclosures detected today."
-    else:
-        final_report = report_header + report_body
-
-    print("📡 Pushing Daily Intelligence to WhatsApp and Telegram...")
-    await send_telegram_msg.send(final_report)
-    await send_whatsapp_msg.send(final_report)
+    # Call Pinecone directly — bypass LLM tool routing
+    sections = {
+        "Dividend Announcements": brain._search_disclosures(
+            query="dividend announcement qualification date closure date",
+            category="Dividend_Announcement"
+        ),
+        "Director Dealings": brain._search_disclosures(
+            query="director dealing insider transaction shares bought sold",
+            category="Insider_Dealing"
+        ),
+        "Board Appointments": brain._search_disclosures(
+            query="board appointment resignation executive director",
+            category="General_Disclosure"
+        ),
+        "Financial Results": brain._search_disclosures(
+            query="financial results earnings revenue profit quarterly annual",
+            category="Financial_Result"
+        ),
+    }
     
-    with open("DAILY_MARKET_REPORT.md", "w", encoding="utf-8") as f:
-        f.write(final_report)
+    # Build one context block
+    context = ""
+    for section, data in sections.items():
+        context += f"\n\n=== {section} ===\n{data}"
+    
+    # Single LLM call with all context
+    prompt = f"""
+    You are an NGX market intelligence assistant.
+    Today is {today}.
+    
+    Below are the ACTUAL NGX corporate disclosure documents retrieved for today.
+    Summarize ONLY what is in these documents. Do NOT add information from your training data.
+    If a section has no relevant data, say "None found today."
+    
+    {context}
+    
+    Write a concise daily brief with 4 sections:
+    1. Dividend Announcements
+    2. Director Dealings  
+    3. Board Changes
+    4. Financial Results
+    """
+    
+    from groq import Groq
+    client = Groq(api_key=os.environ["GROQ_API_KEY"])
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.1  # low temp = less hallucination
+    )
+    
+    brief = f"🧠 *NGX Intelligence Brief: {today}*\n\n"
+    brief += response.choices[0].message.content
+    
+    # Send as ONE message
+    from main import TelegramNotifier, WhatsAppNotifier
+    tg = TelegramNotifier()
+    wa = WhatsAppNotifier()
+    await tg.send(brief)
+    await wa.send(brief)
+    
+    print(brief)
 
 if __name__ == "__main__":
     asyncio.run(run_daily_intelligence_sync())

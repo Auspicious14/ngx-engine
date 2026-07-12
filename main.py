@@ -455,8 +455,13 @@ if __name__ == "__main__":
         
         # 4. 🧠 INTELLIGENCE LOOP: Trigger research for each spike or breakout
         # We loop through the 'spikes' list identified by the engine
-        for stock in spikes:
-            # Parameters: ticker (str), percentage_change (float)
+
+        meaningful_spikes = [
+            s for s in spikes 
+            if abs(s.percent_change) >= 2.0 and not s.is_corporate_action
+        ][:3]
+
+        for stock in meaningful_spikes:
             await engine.process_market_event(stock.symbol, stock.percent_change)
 
         # Optional: Trigger for breakouts too?
