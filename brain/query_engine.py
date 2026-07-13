@@ -88,6 +88,20 @@ class AlphaIntelligence:
                         required=[]
                     )
                 ),
+                types.FunctionDeclaration(
+                    name="get_technical_signals",
+                    description="Get technical analysis buy/sell signals based on RSI, MACD, and moving averages from live stock price data. Use for: what should I buy, which stocks have buy signals, technical analysis.",
+                    parameters=types.Schema(
+                        type=types.Type.OBJECT,
+                        properties={
+                            "action": types.Schema(
+                                type=types.Type.STRING,
+                                description="Filter by signal type: BUY, SELL, or omit for all"
+                            ),
+                        },
+                        required=[]
+                    )
+                ),
             ])
         ]
 
@@ -311,6 +325,29 @@ class AlphaIntelligence:
             # )
 
         return response.text
+    
+    def _get_technical_signals(self, action: str = None) -> str:
+        """Get technical buy/sell signals from SQL."""
+        try:
+            from main import NGXEngine
+            engine = NGXEngine()
+            signals = engine.get_technical_signals()
+            
+            if action:
+                signals = [s for s in signals if s["action"] == action.upper()]
+            
+            if not signals:
+                return "No technical signals today."
+            
+            result = ""
+            for s in signals[:10]:
+                result += (
+                    f"{s['action']}: {s['symbol']} @ ₦{s['price']:.2f} | "
+                    f"RSI {s['rsi']} | {s['macd_signal']} | {s['ma_signal']}\n"
+                )
+            return result
+        except Exception as e:
+            return f"Error fetching signals: {e}"
 
 
 if __name__ == "__main__":

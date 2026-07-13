@@ -428,6 +428,161 @@ class NGXEngine:
         
         await self.tg.send(alert_msg) 
         await self.wa.send(alert_msg)
+    
+    def get_technical_signals(self) -> list:
+        """Compute RSI, MACD, and MA crossover signals for all active stocks."""
+        session = self.Session()
+        try:
+            # Get last 50 days of price data for all stocks
+            rows = session.execute(text("""
+                SELECT symbol, trade_date, close_price
+                FROM stock_prices
+                WHERE trade_date >= CURRENT_DATE - INTERVAL '50 days'
+                ORDER BY symbol, trade_date ASC
+            """)).fetchall()
+        finally:
+            session.close()
+
+        # Group by symbol
+        from collections import defaultdict
+        stocks = defaultdict(list)
+        for symbol, date, price in rows:
+            stocks[symbol].append(float(price))
+
+        signals = []
+        for symbol, prices in stocks.items():
+            if len(prices) < 14:  # need at least 14 days for RSI
+                continue
+
+            signal = {
+                "symbol": symbol,
+                "price": prices[-1],
+                "rsi": self._calc_rsi(prices),
+                "macd_signal": self._calc_macd(prices),
+                "ma_signal": self._calc_ma_crossover(prices),
+            }
+            signal["action"] = self._determine_action(signal)
+            signals.append(signal)
+
+        # Return only actionable signals
+        return [s for s in signals if s["action"] != "HOLD"]
+
+    def _calc_rsi(self, prices: list, period: int = 14) -> float:
+        """Relative Strength Index — above 70 = overbought, below 30 = oversold."""
+        deltas = [prices[i+1] - prices[i] for i in range(len(prices)-1)]
+        gains = [d for d in deltas[-period:] if d > 0]
+        losses = [abs(d) for d in deltas[-period:] if d < 0]
+        
+        avg_gain = sum(gains) / period if gains else 0
+        avg_loss = sum(losses) / period if losses else 0
+        
+        if avg_loss == 0:
+            return 100.0
+        rs = avg_gain / avg_loss
+        return round(100 - (100 / (1 + rs)), 2)
+
+    def _calc_macd(self, prices: list) -> str:
+        """MACD crossover signal."""
+        if len(prices) < 26:
+            return "NEUTRAL"
+        
+        def ema(data, period):
+            k = 2 / (period + 1)
+            ema_val = data[0]
+            for price in data[1:]:
+                ema_val = price * k + ema_val * (1 - k)
+            return ema_val
+
+        ema12 = ema(prices[-12:], 12)
+        ema26 = ema(prices[-26:], 26)
+        macd = ema12 - ema26
+
+        # Previous MACD
+        prev_ema12 = ema(prices[-13:-1], 12)
+        prev_ema26 = ema(prices[-27:-1], 26)
+        prev_macd = prev_ema12 - prev_ema26
+
+        if macd > 0 and prev_macd <= 0:
+            return "BULLISH_CROSSOVER"
+        if macd < 0 and prev_macd >= 0:
+            return "BEARISH_CROSSOVER"
+        return "NEUTRAL"
+
+    def _calc_ma_crossover(self, prices: list) -> str:
+        """20-day vs 50-day moving average crossover."""
+        if len(prices) < 50:
+            return "NEUTRAL"
+        
+        ma20 = sum(prices[-20:]) / 20
+        ma50 = sum(prices[-50:]) / 50
+        prev_ma20 = sum(prices[-21:-1]) / 20
+        prev_ma50 = sum(prices[-51:-1]) / 50
+
+        if ma20 > ma50 and prev_ma20 <= prev_ma50:
+            return "GOLDEN_CROSS"   # bullish
+        if ma20 < ma50 and prev_ma20 >= prev_ma50:
+            return "DEATH_CROSS"    # bearish
+        return "NEUTRAL"
+
+    def _determine_action(self, signal: dict) -> str:
+        """Combine signals into BUY / SELL / HOLD."""
+        buy_signals = 0
+        sell_signals = 0
+
+        # RSI
+        if signal["rsi"] < 30:
+            buy_signals += 2   # oversold = strong buy signal
+        elif signal["rsi"] > 70:
+            sell_signals += 2  # overbought = strong sell signal
+
+        # MACD
+        if signal["macd_signal"] == "BULLISH_CROSSOVER":
+            buy_signals += 1
+        elif signal["macd_signal"] == "BEARISH_CROSSOVER":
+            sell_signals += 1
+
+        # MA crossover
+        if signal["ma_signal"] == "GOLDEN_CROSS":
+            buy_signals += 1
+        elif signal["ma_signal"] == "DEATH_CROSS":
+            sell_signals += 1
+
+        if buy_signals >= 2:
+            return "BUY"
+        if sell_signals >= 2:
+            return "SELL"
+        return "HOLD"
+    
+    async def send_technical_signals(self, signals: list):
+        buys = [s for s in signals if s["action"] == "BUY"]
+        sells = [s for s in signals if s["action"] == "SELL"]
+        
+        if not buys and not sells:
+            return
+
+        msg = "📊 *TECHNICAL SIGNALS TODAY*\n"
+        msg += "━━━━━━━━━━━━━━━━\n\n"
+
+        if buys:
+            msg += "🟢 *BUY SIGNALS*\n"
+            for s in buys[:5]:
+                msg += (
+                    f"• *{s['symbol']}* @ ₦{s['price']:.2f}\n"
+                    f"  RSI: {s['rsi']} | {s['macd_signal']} | {s['ma_signal']}\n"
+                )
+
+        if sells:
+            msg += "\n🔴 *SELL SIGNALS*\n"
+            for s in sells[:5]:
+                msg += (
+                    f"• *{s['symbol']}* @ ₦{s['price']:.2f}\n"
+                    f"  RSI: {s['rsi']} | {s['macd_signal']} | {s['ma_signal']}\n"
+                )
+
+        msg += "\n⚠️ _Not financial advice. Always do your own research._"
+
+        await self.tg.send(msg)
+        await self.wa.send(msg)
 
 
 if __name__ == "__main__":
@@ -448,6 +603,10 @@ if __name__ == "__main__":
             
         # 2. Database Save
         engine.save(stocks)
+
+        signals = engine.get_technical_signals()
+        if signals:
+            await engine.send_technical_signals(signals)
         
         # 3. Market Alerts & Daily Recap
         breakouts, breakdowns, momentum, spikes = engine.get_market_alerts(stocks)        
