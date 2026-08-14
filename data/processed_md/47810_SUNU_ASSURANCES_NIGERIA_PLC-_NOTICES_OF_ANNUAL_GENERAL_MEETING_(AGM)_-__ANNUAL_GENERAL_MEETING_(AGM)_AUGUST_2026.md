@@ -1,0 +1,10 @@
+---
+company: "SUNU ASSURANCES NIGERIA PLC"
+title: "SUNU ASSURANCES NIGERIA PLC- NOTICES OF ANNUAL GENERAL MEETING (AGM) - "
+category: "Financial_Result"
+date_submitted: "2026-08-01"
+source_file: "47810_SUNU_ASSURANCES_NIGERIA_PLC-_NOTICES_OF_ANNUAL_GENERAL_MEETING_(AGM)_-__ANNUAL_GENERAL_MEETING_(AGM)_AUGUST_2026.pdf"
+parsed_at: "2026-08-14T19:44:22.759995"
+---
+
+[No extractable text — likely a scanned image PDF]
