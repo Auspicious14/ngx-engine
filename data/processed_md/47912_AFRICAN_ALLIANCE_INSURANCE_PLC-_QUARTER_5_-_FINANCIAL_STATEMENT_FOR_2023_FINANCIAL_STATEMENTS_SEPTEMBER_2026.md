@@ -1,0 +1,11592 @@
+---
+company: "AFRICAN ALLIANCE INSURANCE PLC"
+title: "AFRICAN ALLIANCE INSURANCE PLC- AUDITED FINANCIAL STATEMENT FOR THE YEAR ENDED 31 DEC 2023"
+category: "Financial_Result"
+date_submitted: "2026-09-01"
+source_file: "47912_AFRICAN_ALLIANCE_INSURANCE_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2023_FINANCIAL_STATEMENTS_SEPTEMBER_2026.pdf"
+parsed_at: "2026-09-17T21:52:08.974444"
+---
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CONSOLIDATED AND SEPARATE FINANCIAL STATEMENTS
+31 DECEMBER 2023
+1
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CORPORATE INFORMATION
+Membership of the Board of Directors during the year ended 31 December 2023
+1 Sylva Ogwemoh (SAN) Chairman Member
+2 Joyce Ojemudia Managing Director Member
+3 Olabisi Adekola Executive Director Member
+4 Dr Abatcha Bulama Non-Executive Director Member
+5 Dr Adiele Ekechukwu Non-Executive Director Member
+6 Mr Macauly Atasie Non-Executive Director Member
+7 Dr Alex Nwuba Non-Executive Director Member
+COMPANY SECRETARY
+Tope Adebayo LLP
+FRC/2013/NBA/0000000001586
+RE-INSURERS
+African Reinsurance Corporation
+WAICA Reinsurance Corporation Plc
+Nigeria Reinsurance Corporation
+Continental Reinsurance Plc
+REGISTERED OFFICE
+112 Broad Street,
+Lagos.
+RC NO: 2176
+info@africanailianceplc.com
+2
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+HEAD OFFICE
+54 Awolowo Road, Ikoyi Lagos
+ACTUARIES
+BECODA CONSULTING
+FRC/2015/PRO/NAS/004/00000012946
+7, Ibiyinka Olorunnimbe Close,
+Victoria Island,
+Lagos, Nigeria
+REGISTRARS
+Carnation Registrars Limited
+2a, Gbagada Expressway, Anthony Village, Lagos.
+ESTATE SURVEYOR AND VALUER
+A.C Otegbulu& Co
+FRC/2013/NIESV/00000001582
+3
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+BANKERS
+Access Bank Limited
+Ecobank Nigeria Limited
+Fidelity Bank Plc
+First Bank of Nigeria Limited
+First City Monument Bank Limited
+Guaranty Trust Bank Limited
+Keystone Bank Limited
+Sterling Bank Plc
+Union Bank of Nigeria Plc
+AUDITORS
+Ukwuegbu, Ogbeleje & Co.
+(Chartered Accountants)
+23, Rasaki Shittu Street,
+Fagbile Estate, Isheri-Oshun,
+P.O.Box 53830, Ikoyi,
+Lagos.
+REGULATORY AUTHORITY
+National Insurance Commission (NAICOM)
+4
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+VISION
+“To be the most preferred life insurance specialist”
+MISSION
+‘We improve the quality of life of our clients and add value to our shareholders’
+CORE VALUES
+Accountability
+We are responsible
+Accessibility
+We are within your reach
+Integrity
+We keep our words
+Professionalism
+We provide quality service
+Loyalty
+We are committed to our stakeholders
+Creativity
+We are innovative
+5
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CERTIFICATION BY COMPANY SECRETARY
+In my capacity as Company Secretary, I hereby certify, in terms of the Companies and Allied Matters Act,
+that for the year ended 31 December 2023, the company has lodged all such returns as are required of a
+company in terms of this Act, and that all such returns are, to the best of my knowledge and belief, true,
+correct and up to date.
+COMPANY SECRETARY
+Tope Adebayo LLP
+FRC/2013/NBA/00000000001586
+Lagos, Nigeria.
+April 29, 2025
+6
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Statement of Directors’ Responsibilities in Relation to the Consolidated and Separate Financial
+Statements
+The Companies and Allied Matters Act, 2020 requires the directors to prepare financial statements for each
+financial year that presents fairly in all material respects, the state of financial affairs of the Company at the
+end of the year and of its profit or loss. This responsibility includes ensuring that the company:
+a) Keeps proper accounting records that disclose, with reasonable accuracy, the financial position of the
+Company and comply with the requirements of the Companies and Allied Matters Act 2020
+b) Establishes adequate internal control relevant to the preparation and fair presentation of financial
+statements that are free from material misstatement, whether due to fraud or error; and
+c) Prepares its financial statements using suitable accounting policies supported by reasonable and
+prudent judgements and estimates that are consistently applied.
+The Directors of African Alliance Insurance Plc accept responsibility for the preparation of the consolidated
+and separate financial statements that give a true and fair view of the financial position of the Company and
+Group as at 31 December 2023, and the results of its operations, cash flows and changes in equity for the
+year then ended, in compliance with International Financial Reporting Standards (“IFRS”) and in the manner
+required by the Companies and Allied Matters Act 2020, the Insurance Act, CAP 117 LFN 2003, relevant
+guidelines and circulars issued by the National Insurance Commission (NAICOM) and Financial Reporting
+Council Act 2011.
+The directors are of the opinion that the financial statements give a true and fair view of the state of the
+financial affairs of the Group and of the financial performance and cash flows for the year. The directors further
+accept responsibility for the maintenance of accounting records that may be relied upon in the preparation of
+financial statements, as well as adequate systems of internal financial control.
+Going Concern:
+As of 31 December 2023, the company had a negative insurance solvency margin of N4.43 billion
+(2022:(N4.04 billion)) and the total admissible assets less net insurance and investment contract liabilities
+amounted to N30.62 billion (2022: (N29.8 billion)). The solvency margin is below the N2.00 billion required of
+life insurance by the NAICOM.
+The Directors have set forth specific measures and actions to address this position and bring back the
+Company and Group to profit making and improved solvency position.
+By order of the Board
+Jacob Erhabor Oremeyi Onefuwa Longe
+Managing Director Executive Director – Finance
+FRC/2025/CIIN/002/580404 FRC/2025/PRO/ICAN/001/108374
+7
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+RISK MANAGEMENT DECLARATION
+The Board Governance, Establishment, and Enterprise Risk Committee of African Alliance Insurance
+Plc hereby declare as follows:
+a) The group and company have systems in place for the purpose of ensuring compliance with
+NAICOM guidelines.
+b) The Board is satisfied with the efficacy of the processes and systems surrounding the
+production of financial information of the group and company.
+c) The group and company have in place a Risk Management Strategy, developed in
+accordance with the requirements of NAICOM’s guideline on Enterprise Risk Management
+(ERM), setting out its approach to risk management; and
+d) The systems that are in place for managing and monitoring risks, and the risk management
+framework, are appropriate to the Group and company, having regard to such factors as the
+size, business mix and complexity of the Group and company’s operations.
+Jacob Erhabor Oremeyi Onefuwa Longe
+Managing Director Executive Director – Finance
+FRC/2025/CIIN/002/580404 FRC/2025/PRO/ICAN/001/108374
+8
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+ENTERPRISE RISK MANAGEMENT
+Enterprise risk management philosophy
+Our business provides financial guarantee to our clients and this is also linked to their longevity.
+Hence, the management of our business strongly focuses on mortality studies and investment
+performance
+A key business objective is meeting client genuine claims as and when they occur, achieving this
+objective involves us in many activities including:
+• correctly pricing the insurance risks,
+• ensuring our business contracts are adequately written, optimally investing both Insurance
+and Shareholder Funds,
+• timely reporting our financial activities internally and externally, deploying adequate operating
+and having adequate processes/people/systems
+The Board is committed to ensuring ERM is embraced by all the staff of the group and also ensure
+that our processes reflect our strategic objectives.
+Our Risk Culture
+The Group is building a risk culture whereby there is an adequate level of risk awareness across all
+business units and amongst all employees.
+Risks faced by the group are communicated across the group. The Risk Management Committee
+(RMC) ensures that the business units develop a risk culture where all Heads of Departments/Units
+are aware of the Group’s strategy objectives and risk Appetite and limits. The business process
+adheres to the stipulated risk limits and if they are likely to be exceeded, the information is escalated
+to the Risk Officer/RMC
+Risk management framework
+We have robust and effective risk management framework which seeks to protect our group’s capital
+base and earnings without hindering our business growth.
+We operate and maintain three lines of defense for the management and oversight of risk to ensure
+adherence to guiding principles and control. The lines of defense are
+First Line – Board and Management
+The Board of Directors set the tone for Risk Management through approving the Strategic objectives
+of the Group and the Group’s risk appetite and tolerance limits. The Risk Management Committee
+has the oversight role of ensuring that the business units adhere to the Boards directives and ensure
+the business units develop a risk culture where all leaders are aware of the group’s strategy.
+Risk Management Committee through the chairman reports on risk matters to the board. The Chief
+Risk Officer collates quarterly enterprise reports to the Risk Management Committee.
+Second Line – Risk Management Unit
+The group’s risk management department is responsible for designing risk framework methodologies
+and tools which supports the business in analysing and managing risks and providing early warning
+of adverse trends. The department reports to the Board, management and staff on risk identification,
+control and mitigation.
+9
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Third Line – Internal Audit
+This line of defense provides independent and objective assurance on the effectiveness of internal
+controls established by the Board, management and Risk Unit in the Group.
+Risk Appetite
+The Group has low appetite for taking risk. The Group intends at all times ensure that it is solvent
+and ensure that all obligations are met as at when due.
+The Group intent: to always be in compliance with applicable laws and regulations and be within its
+set tolerance limit.
+Risk management policies and procedures
+The Group has a risk management policy and procedural manual which sets out the Group’s risk
+governance framework. The document is implemented by the Risk Management Committee, and
+the committee reports on risk matters to the Board. The Chief Risk Officer collates quarterly
+enterprise - wide reports to the Risk Management Committee.
+Risk Classification
+Operational Risk
+This is the risk of loss from inadequate or failed internal processes, people and systems or from
+external events which arises from the potential that inadequate information systems, operational
+problems, breaches in internal controls, fraud, or unforeseen catastrophes will result in unexpected
+losses. The Group has policies that cover risk that may arise from people, systems and internal
+process failures. The policies include staff recruitment, training, retention plans, succession plans,
+remuneration and welfare benefits, designing standard operating procedure and policies, driving
+compliance culture, process automation, Information Technology support systems, data integrity, IT
+systems access, etc.
+Liquidity Risk
+Liquidity risk exist when there is insufficient cash flow to meet the Group’s operational and financial
+obligations and is usually associated with inability to liquidate assets or obtain funding from external
+sources to pay claims and other liabilities when due. The Group manages its liquidity risk through
+appropriate assets and liability management strategy through the Investment Management
+Committee. Monthly reports and review of liquidity gaps are conducted to assess the level of liquidity
+risk.
+Reinsurance Risk
+This is the risk of inadequate reinsurance cover to mitigate underwriting risk. It usually occurs when
+there is insolvency of a reinsurer, discovery of exposures without current reinsurance coverage, or
+exhaustion of reinsurance covers through multiple losses. The Group has documented reinsurance
+policies for adequate reinsurance arrangements and treaties for all categories of insurance business
+transacted. The policies include the process for Reinsurer selection, monitoring, claims recovery,
+etc.
+Underwriting Risk
+Underwriting is the process by which an insurer determines the conditions necessary and suitable
+to accept insurance risk. The risk crystallizes when there is, severe and frequent claims against the
+Group’s projected capacity. The Group has embedded internal control processes to guide its
+10
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+insurance business and guide against the risk of unexpected losses and capital erosion. There is
+well documented underwriting policies and procedure and are enforced throughout the organization.
+Business Risk
+The Group’s business risk is associated with gaining market shares and remains profitable. This risk
+is considered through documented process for product development and launch, business segment
+profitability analysis, stakeholder’s engagement as well as being embedded in our brand promise.
+Reputational Risk
+This is the risk of events that could cause public distrust and damages to the Group’s integrity,
+reputation and goodwill especially in the eyes of the customers, regulators, competitors, and the
+general public. We manage reputational risk through a structured approach for defining and
+implementing core values and acceptable standard of behaviour which the staff are expected to
+follow while conducting the day to day business of the Group. The Group risk assessment and
+monitoring process has embedded controls for testing reputational risk and the outcome of such
+exercise is communicated to the Board Risk Committee on a quarterly basis.
+Legal/Compliance Risk Management
+The Group has procedures to ensure that all statutory regulations are completely adhered to by the
+business unit at all time. These regulations include those set by NAICOM and other relevant
+agencies of government. There are internal control processes that identify potential breaches to the
+regulations and are promptly mitigated. Some of the control processes include:
+a) Know-your-customer (KYC) procedure
+b) Anti-money laundering/combating the financing
+c) Anti-bribery and corruption measures
+d) Guidelines for adherence to corporate governance
+e) Gift policies
+f) Whistle blowing policies
+Risk Report and Risk Map
+Issues arising from risk assessment process are collated and presented in a report called the Risk
+Report which forms the basis of constructing the risk map. The risk map draws senior management’s
+attention to the critical risk factors as well as the adequacy of existing controls to mitigate the risk.
+The risk map provides a snap short summary of the significant risk and the ratings and probability of
+occurrence within a specific period. This forms the basis for estimating the potential operational loss.
+Risk Control Self-Assessment (RCSA)
+The Group has a mechanism for risk assessment on periodic basis and this is known as Risk control
+self-assessment (RCSA) principle. It involves the tests and procedures or assessments that need to
+be performed periodically to assure that key controls are in place and are working effectively as
+designed. The control requirements are proactively assessed through Process risk analysis and
+review of policy requirements, loss events, and audit findings. The Group then set controls required
+to comply with policy requirements and test these processes for adequacy and risk mitigation
+capability. Risk Champions are engaged in each business or risk unit and facilitates the process of
+risk control self-assessment in the Group.
+11
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Key Risk Indicators
+The key risk indicator (KRI) provides trend analysis of risk exposures or deviation from standard
+processes. This helps the Risk Officers and Risk owners to promptly identify increasing threat to
+business activities and escalate to the appropriate senior levels for control and to probably review
+the risk appetite. The trend analysis is one of the sources of data for the risk report and risk map
+documented by the Group.
+Loss Events Reporting
+The Group has a Loss Event Register that captures all actual loss sustained during operational
+processes.
+Health, Safety and Environment Management
+The Health and Safety Management has been instituted to provide and maintain safe healthy working
+conditions, work equipment and systems for ail staff. This responsibility also extends to visitors,
+contractors and others who may potentially be affected by our activities. The Health and Safety Policy
+framework underpins the policy statements, roles and responsibilities of HSE officer with “Safety
+First” culture and zero tolerance for near misses approach.
+Business Continuity Plan (BCP)
+The business continuity plan (BCP) has been designed to promote resilience against operational
+threats especially with regards to continuity of critical operations, in the event of a disaster or
+disruption to critical operations. The BCP framework also addresses adherence to contingency
+planning procedures, in the event of emergencies. We aim to continually improve on inherent gaps
+identified during each simulation exercise. The Company is ISO 22301:2019 compliant and certified
+by MSECB.
+Data Privacy Protection Policy
+The data privacy protection policy is basically to enable us remain committed to ensuring that the
+privacy and personal information of our clients and employees (data subjects) are protected. African
+Alliance Insurance is also responsible for complying with extant Nigerian and applicable international
+laws and regulations on data protection. We have been enlisted as a data compliant organisation by
+the National Information Technology Development Agency (NITDA).
+12
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CERTIFICATION PURSUANT TO SECTION 60(2) OF INVESTMENT AND SECURITIES ACT NO. 27 OF
+2007
+We the undersigned hereby certify the following with regards to our audited report for the year ended
+31 December 2023 that:
+a. We have reviewed the report:
+b. To the best of our knowledge, the report does not contain:
+i. Any untrue statement of a material fact, or
+ii. Omit to state a material fact, which would make the statements, misleading in the light
+of circumstances under which such statements were made;
+c. To the best of our knowledge, the financial statements and other financial information included
+in the report fairly present in all material respects the financial condition and results of
+operation of the group and company as of, and for the periods presented in the report.
+d. We.
+(i) Are responsible for establishing and maintaining internal controls.
+(ii) Have designed such internal controls to ensure that material information relating to the
+company and its consolidated subsidiary is made known to such officers by others
+within those entries particularly during the period in which the periodic reports are being
+prepared.
+(iii) Have evaluated the effectiveness of the group’s internal controls as of date within 90
+days prior to the report.
+(iv) Have, present in the report our conclusions about the effectiveness of our internal
+controls based on our evaluation as of that date.
+e. We have disclosed to the auditors of the group and audit committee:
+(i) All significant deficiency in the design or operations of internal controls which would
+adversely affect the group and company’s ability to record, process, summarise and
+report financial data and have identified for the group’s auditors any material weakness
+in internal controls, and
+(ii) Any fraud, whether or not material, that involves management or other employees who
+have significant role in the group’s internal controls.
+f. We have identified in the report whether there were significant changes in internal controls or
+other factors that could significantly affect internal controls subsequent to the date of our
+evaluation, including any corrective actions with regard to significant deficiencies and material
+weaknesses.
+On behalf of the Directors of the Group and Company
+Jacob Erhabor Oremeyi Onefuwa Longe
+Managing Director Executive Director – Finance
+FRC/2025/CIIN/002/580404 FRC/2025/PRO/ICAN/001/108374
+13
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+DIRECTORS’ REPORT
+The directors submit their report together with the audited consolidated and separate financial
+statements for the year ended 31 December 2023, which disclose the state of affairs of the Group.
+(a) Incorporation and address
+The company was incorporated as a private limited liability company in 1960 under the extant
+Companies and Allied Matters Act with RC No 2176. The Company became a public liability
+company following the successful completion of the private placement exercise undertaken
+by the company in June 2008, On 17 September 2009, the Company became listed on the
+Nigerian Stock exchange. African Alliance Insurance Plc owns 100% equity of Axiom Air
+Limited, a cargo airline Company and 98% in Ghana Life Insurance Company Limited, a Life
+Company in Ghana.
+(b) Principal activities
+The principal activity of the Group is the provision of life assurance and pension business to
+corporate and retail customers in Nigeria and Ghana.
+(c) Operating Results
+The Group’s results for the 12-months period are set out on pages 63. The loss after tax was
+N3.30billion for the Group and of N3.30billion for the Company in 2023 and a profit after tax
+of N4.69 billion and N4.69 billion for the group and company in 2022 respectively have been
+transferred to retained earnings.
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Insurance Revenue 7,089,169 8,118,388 7,089,169 8,118,388
+Insurance Service Result (9,034,989) (3,182,815) (9,034,989) (3,182,815)
+Profit before tax (3,297,350) (4,685,150) (3,297,350) (4,685,150)
+Taxation (3,678) (5,304) (3,678) (5,304)
+Profit after tax (3,301,028) (4,690,455) (3,301,028) (4,690,455)
+(d) Dividends
+No dividend was proposed for year ended 31 December 2023.
+(e) Directors
+The directors who held office during the year and to the date of this report were:
+Sylva Ogwemoh (SAN) - Chairman
+Alh.Abatcha Bulama - Non Executive
+Dr. Adiele Ekechukwu - Non Executive
+Sir.Macauley Atasie - Non Executive
+Dr. Alex Nwuba - Non Executive
+Mrs. Joyce Ojemudia - MD/CEO
+Mrs. OlabisiAdekola -Executive Director
+14
+
+
+| 0                        | 1           | 2           | 3           | 4           |
+|:-------------------------|:------------|:------------|:------------|:------------|
+|                          | Group       | nan         | Company     | nan         |
+|                          | 31-Dec-23   | 31-Dec-22   | 31-Dec-23   | 31-Dec-22   |
+|                          | N’000       | N’000       | N’000       | N’000       |
+| Insurance Revenue        | 7,089,169   | 8,118,388   | 7,089,169   | 8,118,388   |
+| Insurance Service Result | (9,034,989) | (3,182,815) | (9,034,989) | (3,182,815) |
+| Profit before tax        | (3,297,350) | (4,685,150) | (3,297,350) | (4,685,150) |
+| Taxation                 | (3,678)     | (5,304)     | (3,678)     | (5,304)     |
+| Profit after tax         | (3,301,028) | (4,690,455) | (3,301,028) | (4,690,455) |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Appointment of Directors
+Mr. Sylva Ogwemoh (SAN) was re-elected as a Non-Executive Director of the company and
+Dr.Alex Nwuba was appointed in 2023.
+(f) Induction and Training
+The Group has in place an induction and formal orientation program for newly appointed
+Directors. During inductions, new Directors are provided with materials and are required to
+attend series of introductory meetings and retreats to become knowledgeable about the
+Company’s businesses and products and also become familiar with the senior management
+team.
+The Enterprise Risk and Governance Committee of the Board in collaboration with the
+Company Secretary is saddled with the responsibility of ensuring that Directors participate in
+continuing education programs so as to keep them abreast with the Group’s business
+objectives, operations, strategic plans, business environment as well as industry regulations
+and other external factors such as corporate governance requirements and best practices. As
+part of the programme, Directors are encouraged to periodically attend appropriate trainings
+or seminars which would be beneficial to the Directors in performing their service to the Board.
+(g) Performance Evaluation Process
+The Enterprise Risk and Governance Committee ensures that a formal evaluation process is
+in place to assess the composition and performance of the Board, Committees, and individual
+Directors annually. The assessment is conducted by an independent Consultant so as to
+guarantee objectivity and fairness. The essence of the evaluation process is to ensure that
+the Board, its committees and individual Directors are effective and productive and to also
+identify opportunities for improvement and skill set gaps (if any)
+(h) Board Composition and Procedure for Board Appointments.
+The Board is composed of individuals with enviable records of achievement in their respective
+fields. Directors are selected on the basis of certain core competencies and experience
+spanning across diverse industries and sectors including the Insurance industry, Finance,
+Media and Public relations, Politics and International relations, Banking, Retail and Consumer
+Products. In addition to having one or more of these core competencies, candidates for
+appointment as Directors are identified and considered on the basis of knowledge,
+experience, integrity, diversity, leadership, reputation and ability to understand the Company’s
+business.
+Also, there is a clear separation of responsibilities of the Chairman, CEO, Board and
+Management thus ensuring non-interference of the Board in management functions. The Non-
+Executive Directors are independent of Management and are free from any constraint that
+may materially affect their judgment as Directors of the Company.
+(i) Code of Business ethics for Directors and Employees
+In compliance with the Rulebook of the Nigerian Stock Exchange, the Company has in place
+a code of ethics and business conduct policy which serves as a guide for all Directors and
+Employees for acceptable and appropriate behavior in the Company. All Directors and
+Employees are encouraged to observe the highest standards of ethics and integrity in their
+conduct. This Policy can be found on the Company’s website www.africanallianceplc.com
+The Board ensures that there is an effective internal control and risk management system in
+place. The Shareholders’ Audit Committee is saddled with the supervisory role of receiving
+15
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+and reviewing reports from Internal Audit, while the Enterprise Risk Committee oversees the
+assessment of the Company’s risk and control processes and ensures that recommendations
+from the Committees are adequately implemented.
+(j) Directors’ shareholding
+The direct and indirect interests of the Directors in the issued share capital of the Company
+as recorded in the Register of Directors’ shareholding and/or as notified by the Directors for
+the purpose of Section 301 of the Companies and Allied Matters Act 2020 and the listing
+requirements of the Nigerian Stock Exchange as at 31 December, 2023 are as follows:
+Direct Indirect
+Names Shareholding Shareholding
+Olabisi Adekola 500,000 Nil
+(k) Directors’ interests in contracts
+None of the directors has notified the Group for the purpose of section 303 (1) of the
+Companies and Allied Matters Act 2020, of their direct or indirect interest in contracts or
+proposed contracts with the Group during the year.
+(i) Shareholding
+The shares of the company were fully owned by Nigerian Citizens and associations.
+The range of shareholding as at 31 December 2023 is as follows:
+Range of Shares Number of % Shareholders Units of Shares % holdings
+Shareholders Held
+1 – 1,000,000 1,189 79 257,705,297 1
+1,000,001 – 10,000,000 247 17 1,002,267,721 5
+10,000,001 – 50,000,000 34 2 848,472,896 4
+50,000,001 – 100,000,000 8 1 590,928,865 3
+100,000,001 – 500,000,000 15 1 3,308,925,221 16
+500,000,001– 1,000,000,000 2 0 1,508,000,000 7
+1,000,000.001 and above 2 0 13,068,700,000 64
+Total 1,497 100 20,585,000,000 100
+Major Shareholding
+The following shareholders held more than 5% of shares of the company according to the
+Register of members as at 31 December 2023:
+2023 2022
+Number of Percentage Number of Percentage
+Share held % shares held
+%
+Conau Limited 11,868,700,000 58 11,868,700,000 58
+Universal Insurance Plc 1,200,000,000 6 1,200,000,000 6
+13,068,700,000 64 13,068,700,000 64
+(m) Donations and gifts
+Contributions to charity and non-government organizations during the year amounts to
+N225,000 (2022: N520,000)
+16
+
+
+| 0               | 1                   | 2                     |
+|:----------------|:--------------------|:----------------------|
+| Names           | Direct Shareholding | Indirect Shareholding |
+| Olabisi Adekola | 500,000             | Nil                   |
+
+
+
+| 0                          | 1                      | 2              | 3                    | 4          |
+|:---------------------------|:-----------------------|:---------------|:---------------------|:-----------|
+| Range of Shares            | Number of Shareholders | % Shareholders | Units of Shares Held | % holdings |
+| 1 – 1,000,000              | 1,189                  | 79             | 257,705,297          | 1          |
+| 1,000,001 – 10,000,000     | 247                    | 17             | 1,002,267,721        | 5          |
+| 10,000,001 – 50,000,000    | 34                     | 2              | 848,472,896          | 4          |
+| 50,000,001 – 100,000,000   | 8                      | 1              | 590,928,865          | 3          |
+| 100,000,001 – 500,000,000  | 15                     | 1              | 3,308,925,221        | 16         |
+| 500,000,001– 1,000,000,000 | 2                      | 0              | 1,508,000,000        | 7          |
+| 1,000,000.001 and above    | 2                      | 0              | 13,068,700,000       | 64         |
+| Total                      | 1,497                  | 100            | 20,585,000,000       | 100        |
+
+
+
+| 0                       | 1               | 2                 | 3                | 4                 |
+|:------------------------|:----------------|:------------------|:-----------------|:------------------|
+|                         | 2023            | nan               | 2022             | nan               |
+|                         | Number of Share | Percentage held % | Number of shares | Percentage held % |
+| Conau Limited           | 11,868,700,000  | 58                | 11,868,700,000   | 58                |
+| Universal Insurance Plc | 1,200,000,000   | 6                 | 1,200,000,000    | 6                 |
+|                         | 13,068,700,000  | 64                | 13,068,700,000   | 64                |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+(n) Events after year end
+No material facts or circumstances arose between the dates of the statement of financial
+position and this report that will affect the financial position of African Alliance Insurance Plc
+as at 31 December 2023.
+(o) Human Resources
+Employment of Disabled Persons
+The Group continues to maintain a policy of giving fair consideration to the application for
+employment made by disabled persons with due regard to their abilities and aptitudes. The
+Group’s policy prohibits discrimination against disabled persons in the recruitment, training
+and career development of its employees. In the event of members of staff becoming disabled,
+efforts will be made to ensure that their employment with the Group continues, and
+appropriate training arranged to ensure that they fit into the Group’s working environment. As
+at 31 December 2023 the Group had no disabled persons in its employment.
+Health, Safety and Welfare at Work
+The Group enforces strict health and safety rules and practices at the work environment,
+which are reviewed and tested regularly. The Group retains top-class private hospitals where
+medical facilities are provided for staff and their immediate families at the Group’s expense.
+Fire prevention and fire-fighting equipment are installed in strategic locations within the
+Group’s premises. The Group operates a Workmen’s Compensation Insurance covers for the
+benefit of its employees. It also operates a contributory pension plan in line with the Pension
+Reform Act, 2014.
+Employee Involvement and Training
+The Group ensures, through various fora, that employees are informed on matters concerning
+them. Formal and informal channels are also employed in communication with employees
+with an appropriate two-way feedback mechanism. In addition, employees of the Group are
+nominated to attend both locally and internationally organized courses. These are
+complemented by on-the job training. All officers of the Group attend meetings and retreats
+where members of staff critically discuss the Group’s performance and recommend solutions
+to identified challenges.
+Gender analysis
+The number and percentage of women employed in the Group during the financial year vis-
+a-vis total workforce is as follows:
+Male Female Male % Female %
+number number
+Employees 56 58 49% 51%
+Gender analysis of Board and
+Top Management is as follows:
+Board 5 2 71% 29%
+Top Management 6 4 60% 40%
+Detailed analysis of the Board
+and Top management is as
+follow:
+Senior Manager 6 2 75% 25%
+General Manager 0 0 0% 0%
+Executive Director 0 1 0% 100%
+Chief Executive Officer 0 1 0% 100%
+Non-Executive Director 5 0 100% 0%
+17
+
+
+| 0                                                                                                | 1           | 2             | 3                 | 4                   |
+|:-------------------------------------------------------------------------------------------------|:------------|:--------------|:------------------|:--------------------|
+|                                                                                                  | Male number | Female number | Male %            | Female %            |
+| Employees                                                                                        | 56          | 58            | 49%               | 51%                 |
+| Gender analysis of Board and Top Management is as follows: Board Top Management                  | 5 6         | 2 4           | 71% 60%           | 29% 40%             |
+| Detailed analysis of the Board and Top management is as follow:                                  |             |               |                   |                     |
+| Senior Manager General Manager Executive Director Chief Executive Officer Non-Executive Director | 6 0 0 0 5   | 2 0 1 1 0     | 75% 0% 0% 0% 100% | 25% 0% 100% 100% 0% |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+(p) Contraventions
+The group has made no provision for penalties for contravening any regulations during the
+year including late filling penalty. The particulars thereof are as disclosed in Note 52 to the
+consolidated and separate financial.
+(q) Share Capital History
+The following changes have taken place in the company share capital since inception.
+Year Authorized (N) Issued & fully paid-up (N) Consideration
+Increase (N) Cumulative (N) Increase (N) Cumulative (N)
+1961 100,000 100,000 - 25,000 Cash
+1996 20,000,000 25,000 - 5,000,000
+1999 - 25,000,000 15,000,000 20,000,000 Cash
+2004 175,000,000 200,000,000 130,000,000 150,000,000 Cash
+2007 300,000,000 500,000,000 150,000,000 Cash
+2008 14,500,000,000 15,000,000,000 5,000,000,000 5,150,000,000 Cash
+2008 - 15,000,000,000 2,850,000,000 8,000,000,000 Share exchange
+2009 - 15,000,000,000 2,292,500,000 10,292,500,000 Right issue
+(r) Dividend History
+Dividend in the last ten years
+Year Profit (Loss) Dividend
+After Taxation Proposed
+2013 1,404,680 Nil
+2014 630,161 Nil
+2015 (4,757,340) Nil
+2016 3,537,386 Nil
+2017 (3,712,591) Nil
+2018 (2,658,566) Nil
+2019 (7,285,544) Nil
+2020 1,967,718 Nil
+2021 2,800,322 Nil
+2022 (4,690,454) Nil
+2023 (3,301,028) Nil
+Unclaimed Dividend
+The Company does not currently have any unclaimed dividend hence no list is provided.
+(s) Securities Trading Policy
+The Company also has in place a Securities Trading Policy in compliance with Rule 17.15
+Disclosure of Dealings in issuers’ shares, Rulebook of The Nigerian Stock Exchange, 2016.
+This policy can be found on the Company's website www.africanallianceplc.com
+(t) Auditors
+The Auditors, Messrs. Ukwuegbu, Ogbeleje & Co. (Chartered Accountants) after indicating
+their intention were appointed to continue as auditors for the Company in line with S.401(2)
+of CAMA 2020.
+African Alliance Insurance Plc consolidated financial statements have been authorised for
+issue by the Board of Directors on April 29, 2025.
+By Order of the Board
+Tope Adebayo & Co
+Company Secretary
+FRC/2013/NBA/00000000001586
+April 29, 2025
+18
+
+
+| 0    | 1              | 2              | 3                          | 4              | 5              |
+|:-----|:---------------|:---------------|:---------------------------|:---------------|:---------------|
+| Year | Authorized (N) | nan            | Issued & fully paid-up (N) | nan            | Consideration  |
+|      | Increase (N)   | Cumulative (N) | Increase (N)               | Cumulative (N) |                |
+| 1961 | 100,000        | 100,000        | -                          | 25,000         | Cash           |
+| 1996 | 20,000,000     | 25,000         | -                          | 5,000,000      |                |
+| 1999 | -              | 25,000,000     | 15,000,000                 | 20,000,000     | Cash           |
+| 2004 | 175,000,000    | 200,000,000    | 130,000,000                | 150,000,000    | Cash           |
+| 2007 | 300,000,000    | 500,000,000    |                            | 150,000,000    | Cash           |
+| 2008 | 14,500,000,000 | 15,000,000,000 | 5,000,000,000              | 5,150,000,000  | Cash           |
+| 2008 | -              | 15,000,000,000 | 2,850,000,000              | 8,000,000,000  | Share exchange |
+| 2009 | -              | 15,000,000,000 | 2,292,500,000              | 10,292,500,000 | Right issue    |
+
+
+
+| 0    | 1                            | 2                 |
+|:-----|:-----------------------------|:------------------|
+| Year | Profit (Loss) After Taxation | Dividend Proposed |
+| 2013 | 1,404,680                    | Nil               |
+| 2014 | 630,161                      | Nil               |
+| 2015 | (4,757,340)                  | Nil               |
+| 2016 | 3,537,386                    | Nil               |
+| 2017 | (3,712,591)                  | Nil               |
+| 2018 | (2,658,566)                  | Nil               |
+| 2019 | (7,285,544)                  | Nil               |
+| 2020 | 1,967,718                    | Nil               |
+| 2021 | 2,800,322                    | Nil               |
+| 2022 | (4,690,454)                  | Nil               |
+| 2023 | (3,301,028)                  | Nil               |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+AUDIT COMMITTEE REPORT
+In accordance with the provision of section 404(7) of the Companies and Allied Matters Act,
+2020, we hereby confirm that we have seen the Audit Plan and Scope as well as the
+Management Letter on the audit of the books of account of the Group and Company and the
+related management response.
+In our opinion, the plan and scope of the audit for the year ended 31 December 2023 were adequate.
+We have reviewed the auditor’s findings, and we are satisfied with the management
+response thereon.
+We also confirm that the accounting and reporting policies of the company are in
+accordance with legal requirements and ethical practices.
+Alh.KabirTundeSarumi
+FRC/2013/IODN/00000003715
+April 29, 2025
+MEMBERS OF THE STATUTORY AUDIT AND COMPLIANCE COMMITTEE
+Alh.KabirTunde Sarumi - Chairman
+Dr. Raphael Naji Attu - Member
+Ms. Juliet Ebere Gbaka - Member
+Dr.Abatcha Bulama - Member
+Mr. Macauley Atasie - Member
+19
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+MANAGEMENT DISCUSSION AND ANALYSIS
+The Management Discussion and Analysis (MD&A) presents management’s view of the financial
+results of the group’s operations and cash flows of African Alliance Insurance Plc and its subsidiaries
+for the year ended 31 December 2023.
+The nature of the business
+African Alliance Insurance Plc was incorporated as a Private Limited Liability Company on May
+6th1960 and was the first indigenous insurance company to carry out the business of Life Assurance
+in Nigeria. In 2005, African Alliance Insurance Plc pioneered the sale of Takaful (Islamic Insurance)
+in Nigeria through a robust selection of Sharia compliant insurance and investment products, also in
+the same year, the company went into a joint venture with First Securities Discount House Limited
+(FSDH) to set up Pension Alliance Limited (PAL), a licensed Pension Fund Administrator.
+Management objectives and strategies
+The Group has established a solid reputation for excellent customer service and prompt claims
+settlement. Our marketing efforts are co-ordinated through a network of 18 Branches manned by
+experienced managers and highly motivated sales personnel for effective field coverage. Other
+recent and on-going capacity building efforts and performance enhancers embarked on by the
+Company's management include information technology infrastructure to link our offices nationwide
+for more excellent standard of service delivery through improved on-line, real-time customer claims
+and policy handling processes.
+Result of operations:-(in thousands of Nigerian Naira)
+Group Group % Company Company %
+2023 2022 Chg. 2023 2022 Chg.
+Insurance Revenue 7,089,169 8,118,388 (14)% 7,089,169 8,118,388 (14)%
+Insurance Service Result (9,034,989) (3,182,815) (65)% (9,034,989) (3,182,815) (65)%
+Net Investment income 3,825,525 2,216,910 42% 3,825,525 2,216,910 42%
+Admin/Operating expense (1,095,964) (553,514) (49)% (1,095,964) (553,514) (49)%
+Profit/(Loss) after tax (3,301,028) (4,690,454) 42% (3,301,028) (4,690,454) 42%
+Critical performance measures and indicators
+Insurance Revenue –The Insurance Revenue decreased by 14% during the current year under
+review over previous year 2022. This is attributable to the stiff operating environment as well as
+inability to consolidate the subsidiary, Ghana Life audited financial statements.
+Insurance Service Result decreased by 65%.
+Investment income –This increased by 42% as of 31 December 2023. This is attributable to
+improvement in performance in the market which affected investment income of the Group.
+Operating Expenses –The operating expenses of the Group increased by 49% as at 31st December
+2023 when compared with previous year 31 December 2022. This is attributable to the increased
+cost of operation of the Group.
+Profit after tax –The Group made a loss after tax of N3.30billion as against N4.69billion loss in the
+previous year an increase of 42%.
+20
+
+
+| 0                        | 1           | 2           | 3      | 4            | 5            | 6      |
+|:-------------------------|:------------|:------------|:-------|:-------------|:-------------|:-------|
+|                          | Group 2023  | Group 2022  | % Chg. | Company 2023 | Company 2022 | % Chg. |
+| Insurance Revenue        | 7,089,169   | 8,118,388   | (14)%  | 7,089,169    | 8,118,388    | (14)%  |
+| Insurance Service Result | (9,034,989) | (3,182,815) | (65)%  | (9,034,989)  | (3,182,815)  | (65)%  |
+| Net Investment income    | 3,825,525   | 2,216,910   | 42%    | 3,825,525    | 2,216,910    | 42%    |
+| Admin/Operating expense  | (1,095,964) | (553,514)   | (49)%  | (1,095,964)  | (553,514)    | (49)%  |
+| Profit/(Loss) after tax  | (3,301,028) | (4,690,454) | 42%    | (3,301,028)  | (4,690,454)  | 42%    |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CORPORATE GOVERNANCE REPORT FOR 2023 FINANCIAL YEAR
+As leading life insurance company, African Alliance Insurance Plc has consistently improved on the
+vision championed by its founders over 60 years ago. This position has been achieved by adherence
+to sound corporate governance practices in its operations.
+The Group’s Corporate Governance practice is drawn from various applicable codes of corporate
+governance including the National Insurance Commission's (NAICOM) Corporate Governance
+Guidelines for Insurance and Reinsurance Companies 2021 (CGGIRC), Code of Corporate
+Governance for Public Companies in Nigeria 2011 issued by the Securities and Exchange
+Commission’s (SEC), and the Nigerian Code of Corporate Governance 2018 issued by the Financial
+Reporting Council (FRC).
+The Group has developed corporate policies and standards to encourage sound and transparent
+corporate governance framework to avoid potential conflicts of interest between all stakeholders
+whilst promoting ethical business practices. At all times, the Group's activities are conducted with
+high standards of professionalism, accountability and integrity.
+Governance Structure
+The overall responsibility for ensuring that the highest standard of corporate governance is
+implemented in the Group resides with the Board of Directors which is accountable to shareholders
+for creating and delivering sustainable value through management of the Group's business. The
+following structures have been put in place to ensure enforcement of the Group's corporate
+governance standard:
+1 Board of Directors
+2 Board Committees
+The Board
+The Board of Directors is responsible for providing entrepreneurial and strategic leadership as well
+as promoting ethical culture and responsible corporate citizenship. Serving as a link between
+Stakeholders and the Company, the Board exercises oversight control and supervisory powers in
+ensuring that Management acts in Shareholder’s best interest while sustaining the Company’s
+prosperity.
+Board Composition
+The Board comprises of the Chairman, Managing Director/Chief Executive Officer, Executive
+Director for Finance, 3 Non-Executive Directors and 1 Independent Non-Executive Director.
+The Board is a mix of Executive and Non-Executive Directors based on integrity, professionalism,
+career success, recognition, and the ability to add value to the organization. In reviewing Board
+composition, the Board ensures a mix with representatives from different industry sectors. Members
+of the Board bring various and varied competencies to bear on all Board deliberations and as a
+result, the Board derives its effectiveness from the various skills and vast experiences of each
+Director.
+The Board composition is as follows:
+Mr. Sylva Ogwemoh (SAN] - Chairman
+Alh.Abatcha Bulama - Non-Executive Director
+Dr. Adiele Ekechukwu - Independent Non-Executive Director
+Sir. Macauley Atasie - Non-Executive Director
+Dr. Alex Nwuba - Non-Executive Director
+Mrs.Joyce Ojemudia - Managing Director/ CEO
+Mrs. Olabisi Adekola - Executive Director
+21
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Board Meetings
+The Board is responsible for the effective control and monitoring of the Group’s strategies and meets
+regularly or as the need arises to review strategy implementation of the Company's plans by
+Management. Directors are provided with comprehensive information at each Board meeting and
+other meetings and are also briefed on business developments monthly. Likewise, the Board
+considers the Financial Statement of the Group for the period, reviews Management Accounts while
+considering the recommendations of the Board Committees and other reports pertaining to issues
+within the Board's responsibilities.
+Responsibilities of the Board
+The Board of Directors is the highest governing body in the Company. Its primary responsibility is to
+build long-term shareholders’ value and ensure effective oversight of Management. The Board is
+also saddled with the following responsibilities:
+a. Exercising leadership, enterprise, integrity and judgment in its oversight and control of the
+Company so as to achieve the Company’s continued survival and prosperity.
+b. Ensuring that the Board and its members work to achieve the company objectives.
+c. Ensuring compliance with the laws of the Federal Republic of Nigeria and other applicable
+regulations.
+d. Consider and approve the long term and short-term business strategies of the Company while
+monitoring their implementation by Management.
+e. Being accountable to the Company as well as identifying and managing the relationship with
+shareholders and other stakeholders.
+f. Establishing and maintaining the Company’s values and standards (including an ethical
+culture) as well as modeling these values and standards.
+g. Overseeing the internal audit functions, approving the internal audit plan, and appointing and
+removing the head of internal audit function on the recommendation of the Committee
+responsible for audit.
+h. Establishing the Company’s risk management framework and monitoring its effectiveness,
+setting the Company’s risk appetite, receiving and reviewing risk reports.
+i. Providing oversight over Information Technology Governance.
+j. Ensuring that management systems are in place to identify and manage environmental and
+social risks and their impact.
+Board Committees
+The oversight functions of the Board of Directors are exercised through its committees which reports
+and makes necessary recommendations to the Board. All Committees report to the Board and as
+such, conform to their terms of reference. During the year under review, the Board had five (5)
+Committees to ensure proper management and direction of the Group via interactive dialogue on a
+regular basis.
+The five standing Committees are:
+1. Audit and Compliance Committee,
+2. Board Investment and Finance Committee,
+3. Board Enterprise Risk Management and Governance Committee
+4. Board Remuneration Committee
+5. Board Audit Committee
+22
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Audit and Compliance Committee
+This Committee held four meetings during the year under review. Section 359(6) of the Companies
+and Allied Matters Act 2020 provides for the functions of this Committee. In addition, the 2011
+Securities and Exchange Commission (SEC) Code of Corporate Governance also assigns
+responsibilities to the Committee. Aside the Statutory Audit Committee, the Company has a Board
+Audit Committee.
+The Committee provides oversight responsibility for the audit, regulatory, compliance and risk
+functions of the Group. The Committee deliberates on the quarterly compliance reports and takes
+delivery of the audit reports and statements by the External Auditors. The Committee monitors the
+effectiveness of the Group's internal control system, and internal audit system. The Committee
+recommends the appointment of External Auditors and monitors its independence and quality while
+reviewing the External Auditors’ fees.
+Core Responsibilities of the Committee include.
+1. Ascertaining whether the accounting and reporting policies of the Company are in accordance
+with legal requirement and agreed ethical practices while reviewing the scope and planning
+of audit requirements.
+2. Reviewing the findings in the Management Letter in conjunction with the External Auditors
+and Management responses.
+3. Keeping under review the effectiveness of the Company’s system of accounting and internal
+control
+4. Making recommendations to the Board regarding the appointment, removal and remuneration
+of the External Auditors of the Company.
+5. Providing oversight over Management’s processes to ascertain the integrity of the Company’s
+financial statements, compliance with all applicable legal and other regulatory requirements;
+and assessing the qualification and independence of the External Auditors, and the
+performance of the Company’s internal audit function.
+As of December 31, 2023, the Audit and Compliance Committee is comprised of the following:
+1. AlhajiTunde Kabir Sarumi - Chairman
+2. Dr. Attu Naji Raphael - Member
+3. Ms Juliet Ebere Gbaka - Member
+4. Alh. Abatcha Bulama - Member
+5. Sir. Macauley Atasie - Member
+Board Finance, Investment and General-Purpose Committee
+The Board Finance, Investment and General-Purpose Committee monitors and reviews the Group’s
+investment policies, it ensures that the Group’s investment policies reflect the objectives of safety
+and maintenance of fair returns on investments. The Committee equally establishes standards, rules
+and guidelines for the Group’s investment management operations while reviewing the Group’s
+Investment strategy with a view to sustaining medium to long term competitive edge. The value of
+the Group’s market-to-market portfolios is also evaluated by this Committee. The Committee met
+four times during the year to review the Groups financial performance and deliberate on the
+management and performance of the investment portfolio.
+23
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Objectives of the Committee include:
+1. Assist the Board to oversee the overall management of the Company and Group’s finances.
+2. Support the Board in overseeing the Company’s investment strategy and portfolios to ensure
+consistency and compliance with set objectives.
+3. The Committee reviews and recommends the Company’s Annual Operating Budget to the
+Board for approval.
+4. The Committee reviews the capital adequacy and requirements of the Company and make
+recommendations to the Board.
+5. Ensure that the Company and Group’s Investment Portfolio is structured to meet the minimum
+requirement for Investments as per Insurance Act 2003.
+6. Review and make recommendations to the Board regarding investment strategy, policy and
+guidelines, its implementation and compliance with those policies and guidelines.
+7. Ensure that the liability of insurance contracts is adequately matched against their maturity
+profiles.
+8. Periodically review the performance of the major securities and financial instruments relative
+to the investment portfolio of the Company.
+9. The Committee annually reviews the company and group’s policies
+As of December 31, 2023, the Board Finance, Investment and General-Purpose Committee is
+comprised of the following:
+1. Mr. Sylva Ogwemoh (SAN) - Chairman
+2. Alh. Abatcha Bulama - Member
+3. Sir Macauley Atasie - Member
+4. Dr. AdieleEkechukwu - Member
+5. Mrs. Joyce Ojemudia - Member
+6. Mrs. Olabisi Adekola - Member
+7. Dr Alex Nwuba -Member
+Board Enterprise Risk Management, Compliance and Governance Committee
+The Enterprise Risk Management, Compliance and Governance Committee assists the Board in the
+development and implementation of a comprehensive Enterprise Risk Management framework in
+line with NAICOM’s risk management guidelines. The Enterprise Risk Management Board
+Committee supervises the Group’s effectiveness in assessing risks appetite vis-a-vis the Company’s
+set objectives. The Committee reviews and recommends for Board approval, the risk management
+policies and framework as well as assist the Board in its oversight of risk management strategy. It
+also reviews the adequacy and effectiveness of risk management and controls in the Company while
+exercising oversight over the process for the identification and assessment of risks across the
+Company and the adequacy of prevention, detection and reporting mechanisms. The Risk
+Committee is also saddled with the responsibility of reviewing the Company’s compliance level with
+applicable laws and regulatory requirements which may impact the Company's risk profile.
+Objectives of the Committee include:
+The development and implementation of a comprehensive enterprise risk management framework
+in line with NAICOM’s risk management guidelines, and where possible, international best practices
+on risk management.
+Reviewing and monitoring of the enterprise risk management practices of the Group and providing
+improvement recommendations where necessary.
+Overseeing the development and implementation of a Business Continuity Plan for the Company
+and group relative to existing and emerging risks.
+24
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Reviewing and monitoring the corporate governance practices and providing improvement
+recommendations where necessary.
+Monitoring the implementation of the corporate strategy in the context of prevailing trends in the
+business landscape.
+Supervising the strategic activities and initiatives of key operational functions of the Company and
+the group.
+Core responsibilities of the Committee include:
+Overseeing the development and periodic review of the enterprise risk management framework,
+policies and procedures.
+Reviewing the adequacy of the risk control activities and provide additional control measures where
+necessary.
+Ensuring that the enterprise risk management framework includes processes for the identification,
+assessment, control and mitigation of all categories of risks.
+Escalating high impact risks to the Board as deemed necessary for further consideration with a view
+to promptly intervening in the mitigation of such risks.
+Supporting the Board and Management in the process of defining short to medium term strategic
+aspirations and objectives for the Company and Reviewing the implementation status of key strategic
+initiatives as defined in the approved corporate strategy and make necessary recommendations.
+As of December 31, 2023, the Board Enterprise Risk Management and Governar.ee Committee
+comprised of the following:
+1. Mr. Sylva Ogwemoh (SAN) - Chairman
+2. Alh. Abatcha Bulama - Member
+3. Sir Macaulay Atasie - Member
+4. Dr. AdieleEkechukwu - Member
+5. Mrs. Joyce Ojemudia - Member
+6. Mrs. Olabisi Adekola - Member
+7. Dr Alex Nwuba - Member
+Board Remuneration Committee
+The Board Remuneration Committee was constituted late 2021 and is poised to hold its inaugural
+meeting in Q1 2022. In line with Paragraph 5.5 and 11.3.3 of NCCG, the Committee is composed of
+only Non-Executive Directors and is chaired by an Independent Non-Executive Director. The
+Committee oversees and advises the Board on remuneration policy, performance evaluation,
+adoption of incentive plans, and various governance responsibilities related to remuneration.
+Core responsibilities of the Committee include:
+1. Developing, reviewing and recommending changes in the Group’s policies bordering on
+compensation and provision of benefits to employees
+2. Reviewing and making recommendations to the Board concerning the nature and amount of
+compensation and benefits for Directors.
+3. Proffering advice and counsel to Executive Management regarding Human Resources
+Remuneration policy brought to the attention of the Committee from time to time.
+4. Providing detailed information on Directors’ remuneration in the Group’s annual report to
+ensure proper disclosure of Directors’ remuneration to stakeholders.
+25
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+As of 31 December 2023, the Board Remuneration Committee comprised of the following Non-
+Executive Directors:
+1. Dr. Adiele Ekechukwu - Chairman
+2. Mr. Sylva Ogwemoh (SAN) - Member
+3. Mr. Macauley Atasie - Member
+4. Alh. Abatcha Bulama - Member
+ATTENDANCE AT BOARD AND COMMITTEE MEETINGS
+BOARD MEETINGS
+Members Composition No of 28th 26th 30th 21st Nov,
+meetings Feb June. Aug, 2023
+attended(4) 2023 2023 2023
+Mr Sylva Ogwemoh Chairman 4 X X X X
+Mrs. Joyce Ojemudia Member 4 X X x X
+Mrs. OlabisiAdekola Member 4 X X X X
+Dr. AbatchaBulama Member 4 X X X X
+Mr. MacauleyAtasie Member 4 X X X X
+Dr. AdieleEkechukwu Member 4 X X X X
+Mr Alex Nwuba Member 4 X X X x
+AUDIT AND COMPLIANCE COMMITTEE
+Members No of 23 26th 30th
+21d Nov.
+Composition Meeting Feb May. Aug
+2023
+Attended(4) 2023 2023 2023
+AlhajiTundeKabirSarumi Chairman 4 X X X X
+Dr. Attu Naji Raphael Member 4 X X X X
+Ms Juliet EbereGbaka Member 4 X X X X
+Mr. MacauleyAtasie Member 4 X X X X
+Dr. AbatchaBulama Member 4 X X X X
+Mrs Joyce Ojemudia Member 4 X X X X
+Mrs Olabisi Adekola Member 4 X X X X
+BOARD FINANCE, INVESTMENT AND GENERAL PURPOSE COMMITTEE
+Members No of 22rd 1th 28th
+20th Nov.
+Composition Meeting Feb. Jun. Aug.
+2023
+Attended(4) 2023 2023 2023
+Mr Alex Nwuba Chairman 4 X X X X
+Mr. Sylva Ogwemoh Member 0 O O O O
+Mrs. Joyce Ojemudia Member 4 X X X X
+Mrs OlabisiAdekola Member 4 X X X X
+Dr. AbatchaBulama Member 4 X X X X
+Dr. AdieleEkechukwu Member 4 X X X X
+Mr. MacauleyAtasie Member 4 X X X X
+BOARD ENTERPRISES RISK MANAGEMENT AND GOVERNANCE COMMITTEE
+Members No of 27ST 6th 29th
+20th Nov.
+Composition Meeting Feb, June. Aug
+2023
+Attended(3) 2023 2023 2023
+Mr Alex Nwuba Chairman 1 X X X X
+Mr. MacauleyAtasie Member 4 O X X X
+Sylva Ogwemoh (SAN) Member 4 O O O O
+Dr. AdieleEkechukwu Member 4 X X X X
+Dr. AbatchaBulama Member 4 X X X X
+Mrs Joyce Ojemudia Member 4 X X X X
+Mrs OlabisiAdekola Member 4 X X X X
+BOARD AUDIT COMMITTEE
+Members No of 3th 17th
+Composition Meeting March. Aug
+Attended(2) 2023 2023
+Dr. AdieleEkechukwu Chairman 2 X X
+Sylva Ogwemoh (SAN) Member 2 X X
+Dr. AbatchaBulama Member 2 X X
+Sir. MacauleyAtasie Member 2 X X
+Mrs Joyce Ojemudia Member 2 X X
+Mrs OlabisiAdekola Member 2 X X
+Note: Connotation – X (Present), 0 (Absent), N/A (Not Applicable)
+26
+
+
+| 0                                                          | 1           | 2                          | 3              | 4               | 5              | 6              |   7 |   8 |   9 |
+|:-----------------------------------------------------------|:------------|:---------------------------|:---------------|:----------------|:---------------|:---------------|----:|----:|----:|
+| BOARD MEETINGS                                             | nan         | nan                        | nan            | nan             | nan            | nan            | nan | nan | nan |
+| Members                                                    | Composition | No of meetings attended(4) | 28th Feb 2023  | 26th June. 2023 | 30th Aug, 2023 | 21st Nov, 2023 |     |     |     |
+| Mr Sylva Ogwemoh                                           | Chairman    | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs. Joyce Ojemudia                                        | Member      | 4                          | X              | X               | x              | X              |     |     |     |
+| Mrs. OlabisiAdekola                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AbatchaBulama                                          | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mr. MacauleyAtasie                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AdieleEkechukwu                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mr Alex Nwuba                                              | Member      | 4                          | X              | X               | X              | x              |     |     |     |
+|                                                            |             |                            |                |                 |                |                |     |     |     |
+| AUDIT AND COMPLIANCE COMMITTEE                             | nan         | nan                        | nan            | nan             | nan            | nan            | nan | nan | nan |
+| Members                                                    | Composition | No of Meeting Attended(4)  | 23 Feb 2023    | 26th May. 2023  | 30th Aug 2023  | 21d Nov. 2023  |     |     |     |
+| AlhajiTundeKabirSarumi                                     | Chairman    | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. Attu Naji Raphael                                      | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Ms Juliet EbereGbaka                                       | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mr. MacauleyAtasie                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AbatchaBulama                                          | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs Joyce Ojemudia                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs Olabisi Adekola                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| BOARD FINANCE, INVESTMENT AND GENERAL PURPOSE COMMITTEE    | nan         | nan                        | nan            | nan             | nan            | nan            | nan | nan | nan |
+| Members                                                    | Composition | No of Meeting Attended(4)  | 22rd Feb. 2023 | 1th Jun. 2023   | 28th Aug. 2023 | 20th Nov. 2023 |     |     |     |
+| Mr Alex Nwuba                                              | Chairman    | 4                          | X              | X               | X              | X              |     |     |     |
+| Mr. Sylva Ogwemoh                                          | Member      | 0                          | O              | O               | O              | O              |     |     |     |
+| Mrs. Joyce Ojemudia                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs OlabisiAdekola                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AbatchaBulama                                          | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AdieleEkechukwu                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mr. MacauleyAtasie                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| BOARD ENTERPRISES RISK MANAGEMENT AND GOVERNANCE COMMITTEE | nan         | nan                        | nan            | nan             | nan            | nan            | nan | nan | nan |
+| Members                                                    | Composition | No of Meeting Attended(3)  | 27ST Feb, 2023 | 6th June. 2023  | 29th Aug 2023  | 20th Nov. 2023 |     |     |     |
+| Mr Alex Nwuba                                              | Chairman    | 1                          | X              | X               | X              | X              |     |     |     |
+| Mr. MacauleyAtasie                                         | Member      | 4                          | O              | X               | X              | X              |     |     |     |
+| Sylva Ogwemoh (SAN)                                        | Member      | 4                          | O              | O               | O              | O              |     |     |     |
+| Dr. AdieleEkechukwu                                        | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Dr. AbatchaBulama                                          | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs Joyce Ojemudia                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| Mrs OlabisiAdekola                                         | Member      | 4                          | X              | X               | X              | X              |     |     |     |
+| BOARD AUDIT COMMITTEE                                      | nan         | nan                        | nan            | nan             | nan            | nan            | nan | nan | nan |
+| Members                                                    | Composition | No of Meeting Attended(2)  |                | 3th March. 2023 | 17th Aug 2023  |                |     |     |     |
+| Dr. AdieleEkechukwu                                        | Chairman    | 2                          |                | X               | X              |                |     |     |     |
+| Sylva Ogwemoh (SAN)                                        | Member      | 2                          |                | X               | X              |                |     |     |     |
+| Dr. AbatchaBulama                                          | Member      | 2                          |                | X               | X              |                |     |     |     |
+| Sir. MacauleyAtasie                                        | Member      | 2                          |                | X               | X              |                |     |     |     |
+| Mrs Joyce Ojemudia                                         | Member      | 2                          |                | X               | X              |                |     |     |     |
+| Mrs OlabisiAdekola                                         | Member      | 2                          |                | X               | X              |                |     |     |     |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+STATEMENT ON THE BOARD’S LEVEL COMPLIANCE WITH REQUISITE CODE OF
+CORPORATE GOVERNANCE
+In furtherance of the Group’s corporate governance objectives and in line with the CGGIRC and
+NCCGC, a rigorous Board and corporate governance evaluation is conducted every year by an
+independent consultant to assess the overall performance of the Board and application of corporate
+governance principles in the given year. Report on the independent Board and corporate governance
+evaluation conducted in 2021 confirmed the Group’s substantial compliance with the various codes
+of corporate governance.
+27
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+CERTIFICATE OF CONSOLIDATED AND SEPARATE FINANCIAL STATEMENTS
+In accordance with section 405 of the Companies and Allied Act of Nigeria 2020, the Chief Executive
+Officer and the Chief Financial Officer certify that the consolidated and separate financial statements
+have been reviewed and based on their knowledge, the
+(i) audited financial statements do not contain any untrue statement of material fact or omit to
+state a material fact, which would make the statements misleading, in the light of the
+circumstances under which such statement was made; and
+(ii) audited financial statements and all other financial information included in the statements fairly
+present, in all material respects, the financial condition and results of operation of the group
+and company as of and for, the periods covered by the audited financial statements.
+We state that management and directors:
+(i) are responsible for establishing and maintaining internal controls and have designed such
+internal controls to ensure that material information relating to the Group and Company is
+made known to the officer by other officers of the group and company, particularly during the
+period in which the audited financial statement report is being prepared
+(ii) has evaluated the effectiveness of the Group’s and Company’s internal controls within 90
+days prior to the date of its audited financial statements, and
+(iii) certifies that Group's and company's internal controls are effective as of that date
+We have disclosed:
+(i) All significant deficiencies in the design or operation of internal controls which could adversely
+affect the groups and company’s ability to record, process, summarize and report financial
+data, and has identified for the group's and company's auditors any material weaknesses in
+internal controls, and
+(ii) Whether or not, there is any fraud that involves management or other employees who have a
+significant role in the group’s internal control; and
+(iii) As indicated in the report, whether there were significant changes in internal controls or in
+other factors that could significantly affect internal controls subsequent to the date of their
+evaluation, including any corrective actions with regard to significant deficiencies and material
+weaknesses.
+The financial statements of the Group and company for the year ended 31 December 2023 were
+approved by the Board of Directors on 29 April, 2025
+By order of the Board
+Jacob Erhabor Oremeyi Onefuwa Longe
+Managing Director Executive Director – Finance
+FRC/2025/CIIN/002/580404 FRC/2025/PRO/ICAN/001/108374
+28
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+NIGERIA STOCK EXCHANGE FREE FLOAT REPORT
+Company Name: African Alliance Insurance Plc
+Board Listed: Main Board
+Year End: December
+Reporting Period: Year ended 31 December 2023
+Share Price At End of Reporting Period: N0.20 (2022: N0.20)
+Shareholding Structure/Free Float Status
+31-Dec-23 31-Dec-22
+Unit Percentage Unit Percentage
+Description 20,585,000,000 100% 20,585,000,000 100%
+Issued Share Capital
+Substantial Shareholdings (5% and above) 11,816,192,187 57.66% 11,816,192,187 57.66%
+Conau Trade and Investment Limited 1,200,000,000 5.83% 1,200,000,000 5.83%
+Universal Insurance Plc 13,068,700,000 63.49% 13,068,700,000 63.49%
+Total Substantial Shareholding
+Directors Shareholdings (direct and indirect)
+excluding directors with substantial holdings
+MrsOlabisiAdekola 500,000 0.002% 500,000 0.002%
+Total Directors Shareholding 500,000 0.002% 500,000 0.002%
+Other Shareholdings
+African Alliance Staff Scheme 23,652,673 0.11% 23,652,673 0.11%
+Total Other Shareholdings 23,652,673 0.11% 23,652,673 0.11%
+Free Float in Units and Percentage 7,492,147,327 36.40% 7,492,147,327 36.40%
+Free Float in Value N1,498,429,465.40 N1,498,429,465.40
+Declaration:
+A) African Alliance Insurance Plc with a free float percentage of 36.40% as at 31 December 2023, is compliant
+with the Exchange s tree float requirements for companies listed on the Main Board.
+B) African Alliance Insurance Plc with a free float value or N1,498,429,465.40 as at 31 December 2023, is
+compliant with the Exchange’s free float requirements for companies listed on the Main Board.
+29
+
+
+| 0                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 1                                                                                                                                     | 2                                                                    | 3                                                                                                                                     | 4                                                                    |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------|
+| Company Name: African Alliance Insurance Plc Board Listed: Main Board Year End: December Reporting Period: Year ended 31 December 2023 Share Price At End of Reporting Period: N0.20 (2022: N0.20) Shareholding Structure/Free Float Status                                                                                                                                                                                                       | nan                                                                                                                                   | nan                                                                  | nan                                                                                                                                   | nan                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 31-Dec-23                                                                                                                             | nan                                                                  | 31-Dec-22                                                                                                                             | nan                                                                  |
+| Description Issued Share Capital Substantial Shareholdings (5% and above) Conau Trade and Investment Limited Universal Insurance Plc Total Substantial Shareholding Directors Shareholdings (direct and indirect) excluding directors with substantial holdings MrsOlabisiAdekola Total Directors Shareholding Other Shareholdings African Alliance Staff Scheme Total Other Shareholdings Free Float in Units and Percentage Free Float in Value | Unit 20,585,000,000 11,816,192,187 1,200,000,000 13,068,700,000 500,000 500,000 23,652,673 23,652,673 7,492,147,327 N1,498,429,465.40 | Percentage 100% 57.66% 5.83% 63.49% 0.002% 0.002% 0.11% 0.11% 36.40% | Unit 20,585,000,000 11,816,192,187 1,200,000,000 13,068,700,000 500,000 500,000 23,652,673 23,652,673 7,492,147,327 N1,498,429,465.40 | Percentage 100% 57.66% 5.83% 63.49% 0.002% 0.002% 0.11% 0.11% 36.40% |
+
+
+
+| 0                                                                                                                                                                                                       |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A) African Alliance Insurance Plc with a free float percentage of 36.40% as at 31 December 2023, is compliant with the Exchange s tree float requirements for companies listed on the Main Board.       |
+|                                                                                                                                                                                                         |
+| B) African Alliance Insurance Plc with a free float value or N1,498,429,465.40 as at 31 December 2023, is compliant with the Exchange’s free float requirements for companies listed on the Main Board. |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+RESULT AT A GLANCE
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+COMPREHENSIVE INCOME N’000 N’000 N’000 N’000
+STATEMENT
+Insurance Revenue 7,089,169 8,118,388 7,089,169 8,118,388
+Insurance Service Expenses (15,978,687) (11,320,878) (15,978,687) (11,320,878)
+Insurance Service Result (9,034,989) (3,182,815) (9,034,989) (3,182,815)
+Investment income 3,825,525 2,216,910 3,825,525 2,216,910
+Profit/(loss) before tax (3,297,350) (4,685,150) (3,297,350) (4,685,150)
+Profit/(loss) after tax (3,301,028) (4,690,455) (3,301,028) (4,690,455)
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+STATEMENT OF FINANCIAL POSITION N’000 N’000 N’000 N’000
+Total assets 48,792,897 53,473,361 48,792,897 50,588,832
+Insurance and investment contract 43,242,852 45,734,192 43,242,852 43,185,449
+liabilities
+Total liabilities 46,720,232 48,396,886 46,720,232 45,215,136
+Total Equity 2,072,666 5,076,475 2,072,666 5,373,696
+Profit/(Loss) per share (basic)-in kobo (32%) (45%) (32%) (45%)
+30
+
+
+| 0     | 1       |
+|:------|:--------|
+| Group | Company |
+
+
+
+| 0     | 1       |
+|:------|:--------|
+| Group | Company |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+UKWUEGBU, OGBELEJE & CO.
+(CHARTERED ACCOUNTANTS) RC. LAZ 029096
+23, Rasaki Shittu Street, Isheri-Osun; P.O. Box 53830, Falomo, Lagos.
+Newton Hotels Ltd Complex, Plot H2, Imo Specialist Hospital Rd, New Owerri, Imo State
+Tel no: 08033006646, 08033047135; Email: consultants@uocng.net, essenceicu@yahoo.com; Website:
+www.uocng.net.
+Partners: Ifechukwu C. Ukwuegbu, B.Sc, FCA, MNCS; Eva C. Ogbeleje, MPA, FCA, ACIT.
+INDEPENDENT AUDITOR’S REPORT
+To the members of African Alliance Insurance Plc
+Report on the audit of the financial statements of African Alliance Insurance Plc for the year ended 31st
+December 2023
+Our opinion
+The consolidated financial statements give a true and fair view of the consolidated and separate financial positions of
+African Alliance Insurance Plc (the company) and its subsidiary(together “the group”) as at 31 December 2023, and of
+their consolidated and separate financial performances and their consolidated and separate cash flows for the year then
+ended in accordance with International Financial Reporting Standards and the requirements of the Companies and Allied
+Matters Act Cap C20 LFN 2020, the Insurance Act 2003, circulars and relevant policy guidelines issued by the National
+Insurance Commission (NAICOM), the Pension Reform Act 2014, the Investment and Securities Act 2007 and the
+Financial Reporting Council of Nigeria Act, 2011.
+What we have audited:
+We have audited the accompanying consolidated and separate financial statements of African Alliance Insurance Plc
+(‘the company’) and its subsidiary (together ‘the group’)
+African Alliance Insurance Plc’s consolidated, and separate financial statements comprise:
+• The consolidated and separate statements of financial position as at 31 December 2023;
+• The consolidated and separate statements of comprehensive income for the year then ended.
+• The consolidated and separate statements of changes in equity for the year then ended.
+• The consolidated and separate statements of cash flows for the year then ended; and
+• The notes to the consolidated and separate financial statements, which include a summary of significant
+accounting policies and other explanatory notes.
+Emphasis of matter
+Without modifying our opinion, we draw attention to note 5.5 to the financial statements which indicates a negative
+solvency margin of N4.43billion. This is below the minimum regulatory capital of N2 billion required for life insurance
+business. The total admissible assets of the Company less the net insurance and investment contract liabilities was a
+deficit of N30.62 billion as of 31 December 2023. These conditions indicate the existence of a material uncertainty that
+may cast doubt on the company’s ability to continue as a going concern.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (ISAs). Our responsibilities under those
+standards are further described in the Auditor's responsibilities for the audit of the consolidated and separate financial
+statements section of our report.
+We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+Independence
+We are independent of the Group in accordance with the Institute of Chartered Accountants of Nigeria (ICAN)
+Professional Code of Conduct and Guide for Accountants and other independent requirements applicable to performing
+audits of financial statements in Nigeria. We have fulfilled our other ethical responsibilities in accordance with the ICAN
+Code and in accordance with other ethical requirement applicable to performing audits in Nigeria. The ICAN Code is
+consistent with the International Ethics Standards Board for Accountants’ Code of Ethics for Professional Accountants
+(IESBA Code) (Parts A and B).
+31
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Key audit matters
+Key audit matters are those matters that, in our professional judgement, were of most significance in our audit of the
+consolidated and separate financial statements of the current period. These matters were addressed in the context of
+our audit of the consolidated and separate financial statements, and in forming our opinion thereon, and we do not
+provide a separate opinion on these matters.
+We have fulfilled the responsibilities described in the Auditors’ responsibilities for the audit of the financial statements,
+including in relation to these matters. Accordingly, our audit included the performance of procedures designed to respond
+to our assessment of the risks of material misstatement of the financial statements. The results of our audit procedures,
+including the procedures performed to address the matter below, provide the basis for our opinion on the financial
+statements.
+Key Audit Matters identified:
+Valuation of Insurance and Investment contract liabilities.
+The company has material insurance and investment liabilities. The measurement of insurance and investment contract
+liabilities involves judgement over uncertain future outcomes like mortality, morbidity, lapse and surrender etc and also
+economic assumptions such as interest rates, return on investments which are the ultimate total settlement value of
+long-term liabilities, including any guarantees provided to policyholders.
+The insurance and investment contract liabilities of the group was N43.24 billion and for the company
+N43.24billion as stated in Note 18 & 19. This is a significant percentage (93%) of the overall liabilities of the
+company.
+The Group has significant life insurance contract liabilities. The valuation of insurance contract liabilities involves high
+estimation uncertainties and significant judgment over uncertain future outcomes. The measurement of insurance liabilities
+consists of the liability for remaining coverage (LRC) and the liability for incurred claims (LIC) including both reported but
+not settled claims as well as incurred but not reported claims (IBNR).
+The Group adopted IFRS 17 Insurance Contracts from 1 January 2023 and comparative figures have been restated. The
+Group uses both the Premium Allocation Approach (PAA) and General Measurement Model (GMM) under IFRS 17. The PAA
+is applied for the measurement of the groups of insurance contracts in the non-life and group life segment while the GMM is
+applied for the measurement of the groups of insurance contracts in the individual life segment The result of
+management’s assessments regarding the calculation of the liability for incurred claims depends on inputs, the choice of
+actuarial methods and the precision of management judgment in determining actuarial assumptions. Key assumptions
+with the greatest impact on the carrying amount in respect of non-life insurance contracts involve economic assumptions
+about inputs such as inflation rate, discount rates as well estimated future payments for claims, hence the eventual
+outcome is uncertain.
+The key actuarial assumptions used in the valuation of life insurance contract liabilities are judgmental, particularly with
+respect to the discount rates.
+The level of complexity, the assumptions and judgment involved in estimating these amounts make insurance
+contract liabilities a matter of significance to our audit.
+How our audit addressed the matter.
+We focused on this balance because of the complexity involved in the estimation process, and the significant judgements
+that management and the directors made in determining the balance.
+The valuation of the Group's gross and reinsurance incurred but not yet reported claims (“IBNR”) reserve is determined
+in line with the provisions of the Nigerian Insurance Act to the extent that they do not conflict with the requirements of
+the International Financial Reporting Standards (IFRS). It is dependent on a few subjective assumptions about future
+experience.
+Such assumptions include the loss ratio (the total losses paid by an insurance company in the form of claims and
+adjustment expenses as a proportion of total earned premiums) and recovery rate percentage (derived based on
+historical recovery to gross claim ratios).
+This estimate relies on the quality of the underlying data and involves complex and subjective judgements about future
+events, both internal and external to the business, for which minor changes in assumptions can result in material impacts
+to the estimate
+The valuations are carried out by third party valuers. The-valuers are engaged by the Group and performed their work
+in accordance with the International Valuation Standards. The valuers used by the Group are from a well-known firm,
+with experience in the markets in which the Group operates. We reviewed the journals posted and agreed the values in
+the financial statements as provided by the valuers.
+32
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Classification and measurement of financial assets based on IFRS 9 adoption.
+The Group had significant financial assets of N33.24 billion (2022: N36.32 billion). The Group adopted IFRS 9, effective
+January 1, 2018, which necessitated the development of new accounting policies and disclosures as well as significant
+judgements in determining the measurement category based on the business model and the cash flow characteristics
+of the financial assets. The adoption of the new standard resulted in significant changes to accounting policies,
+classification and measurement of financial instruments.
+The significant judgement involved in the adoption of IFRS 9, and classification and measurement of the Group’s financial
+assets make it a matter of significance to the audit.
+How we addressed the matter.
+Our audit procedures included the following:
+• We evaluated the appropriateness of the accounting policies adopted based on the requirements of IFRS 9, and
+our understanding of the Group’s businesses.
+• We gained an understanding of management’s processes, and the controls implemented to ensure the
+completeness and accuracy of the exercise.
+• We identified and tested relevant controls implemented in the classification and measurement of existing and
+new financial instruments.
+• We evaluated the reasonableness of management’s key assumptions/judgements over classification and
+measurement decisions as well as key judgements and estimates used.
+• We assessed the completeness, accuracy and relevance of data used and disclosures required by IFRS 9 in
+the Group financial statements.
+Other information
+The directors are responsible for the other information. The other information comprises: Directors’ report, Corporate
+governance report, Management discussion and analysis, Statement of directors’ responsibilities, Report of the audit
+committee, Hypothecation, Statement of value added and Five year financial summary but does not include the
+consolidated and separate financial statements and our auditor's report thereon, which we obtained prior to the date of
+this auditor's report, and: Business and financial highlights report, Chairman's statement, Chief Executive’s review,
+Report of external consultants, Technical, operations and product report, Investment report, Risk management report,
+Non-dealing period policy which are expected to be made available to us after that date.
+Our opinion on the consolidated and separate financial statements does not cover the other information and we do not
+express any form of assurance conclusion thereon.
+In connection with our audit of the consolidated and separate financial statements, our responsibility is to read the other
+information identified above and, in doing so, consider whether the other
+information is materially inconsistent with the consolidated and separate financial statements or our knowledge obtained
+in the audit, or otherwise appears to be materially misstated. If based on the work we have performed on the other
+information that we obtained prior to the date of this auditor's report, we conclude that there is a material misstatement
+of this other information, we are required to report that fact. We have nothing to report in this regard.
+When we read the complete annual report, if we conclude that there is a material misstatement
+therein, we are required to communicate the matter to those charged with governance.
+Responsibilities of the directors and those charged with governance for the financial statements
+The directors are responsible for the preparation of the consolidated and separate financial statements that give a true
+and fair view in accordance with International Financial Reporting Standards (IFRSs) and the requirements of the
+Companies and Allied Matters Act, 2020, the Financial Reporting Council of Nigeria Act 2011, and the Nigerian
+Insurance Act 2003, the Investment and Securities Act 2007 and National Insurance Commission (NAICOM) circulars,
+for such internal control as the directors determine is necessary to enable the preparation of consolidated and separate
+financial statements that are free from material misstatements, whether due to fraud or error.
+In preparing the consolidated and separate financial statements, the directors are responsible for assessing the Group's
+ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the Group or to cease operations, or have no
+realistic alternative but to do so. Those charged with governance are responsible for overseeing the Group's financial
+reporting process.
+Auditor's responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the consolidated and separate financial statements
+as a whole are free from material misstatement, whether due to fraud or error, and to issue an auditor's report that
+includes our opinion. Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted
+in accordance with ISAs will always detect a material misstatement when it exists. Misstatements can arise from fraud
+33
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+or error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence
+the economic decisions of users taken on the basis of these consolidated and separate financial statements.
+As part of an audit in accordance with ISAs, we exercise professional judgment and maintain professional scepticism
+throughout the audit. We also:
+• Identify and assess the risks of material misstatement of the consolidated and separate financial statements,
+whether due to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit
+evidence that is sufficient and appropriate to provide a basis for our opinion. The risk of not detecting a material
+misstatement resulting from fraud is higher than for one resulting from error, as fraud may involve collusion,
+forgery, intentional omissions, misrepresentations, or the override of internal control.
+• Obtain an understanding of internal control relevant to the audit in order to design audit procedures that are
+appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of the
+Group's internal control.
+• Evaluate the appropriateness of accounting policies used and the reasonableness of accounting estimates and
+related disclosures made by the directors.
+• Conclude on the appropriateness of the directors’ use of the going concern basis of accounting and, based on
+the audit evidence obtained, whether a material uncertainty exists related to events or conditions that may cast
+significant doubt on the Group's ability to continue as a going concern. If we conclude that a material uncertainty
+• exists, we are required to draw attention in our auditor's report to the related disclosures in the consolidated and
+separate financial statements or, if such disclosures are inadequate, to modify our opinion. Our conclusions are
+based on the audit evidence obtained up to the date of our auditor's report. However, future events or conditions
+may cause the Group to cease to continue as a going concern.
+• Evaluate the overall presentation, structure and content of the consolidated and separate financial statements,
+including the disclosures, and whether the consolidated and separate financial statements represent the
+underlying transactions and events in a manner that achieves fair presentation.
+• Obtain sufficient appropriate audit evidence regarding the financial information of the entities or business
+activities within the Group to express an opinion on the consolidated and separate financial statements. We are
+responsible for the direction, supervision and performance of the group audit. We remain solely responsible for
+our audit opinion.
+We communicate with those charged with governance regarding, among other matters, the planned scope and
+timing of the audit and significant audit findings, including any significant deficiencies in internal control that we
+identify during our audit.
+We also provide those charged with governance with a statement that we have complied with relevant ethical
+requirements regarding independence, and to communicate with them all relationships and other matters that
+may reasonably be thought to bear on our independence, and where applicable, related safeguards.
+From the matters communicated with those charged with governance, we determine those matters that were of
+most significance in the audit of the consolidated and separate financial statements of the current period and
+are therefore the key audit matters. We describe these matters in our auditor's report unless law or regulation
+precludes public disclosure about the matter or when, in extremely rare circumstances, we determine that a
+matter should not be communicated in our report because the adverse consequences of doing so would
+reasonably be expected to outweigh the public interest benefits of such communication.
+Report on other legal and regulatory requirements
+In accordance with the requirements of the Schedule 6 of the Companies and Allied Matters Act, CAP C20 LFN 2020
+and Section 28(2) of the Insurance Act 2003, we expressly state that:
+i) We have obtained all the information and explanations which to the best of our knowledge and belief were
+necessary for the purposes of our audit.
+ii) The Company has kept proper books of account, so far as appears from our examination of those books, and
+returns adequate for our audit have been received from branches not visited by us.
+iii) The Company's statements of financial position and comprehensive income are in agreement with the books of
+account and returns.
+34
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Contraventions
+The Company did contravene in the late submission of report to the National Insurance Commission, or the Insurance
+Act under review and some provisions of the Securities and Exchange Commission.
+Compliance with FRC Guideline on Assurance Engagement Report on Internal Control over Financial Reporting
+In accordance with the requirements of the Financial Reporting Council of Nigeria, we performed a limited assurance
+engagement and reported on management assessment of the Company’s internal control ever financial reporting as of
+December 31,2023. The work performed was done in accordance with ISAE 3000 (Revised) Assurance Engagements
+Other Than Audits or Reviews of Historical Financial Information and the FRC Guidance on Assurance Engagement
+Reports on Internal Control over Financial Reporting. We have issued an unmodified conclusion in our report dated April
+29, 2025
+Ukwuegbu, Ogbeleje& Co.
+(Chartered Accountants)
+Lagos, Nigeria
+Engagement Partner: Ifechukwu C. Ukwuegbu
+FRC/2014/PRO/ICAN/004/00000010453
+April 29, 2025
+35
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+SUMMARY OF MATERIAL ACCOUNTING POLICY INFORMATION
+The following are the statement of material accounting policies applied in the preparation of these
+financial statements. These policies have been consistently applied to all the years presented, unless
+otherwise stated.
+1.0 General Information
+The financial statements of the company for the year ended 31 December 2023 were authorised for
+issue in accordance with a resolution of the Directors. The company is a public limited company
+incorporated and domiciled in Nigeria. The Company was listed on the Nigerian Stock Exchange on
+17 September 2009. The registered office is located at 54, Awolowo Road, Ikoyi, Lagos.
+The Company is principally engaged in the business of providing risk underwriting for life and related
+financial services and pension services to its customers. Such services include provision of life
+insurance services to both corporate and individual customers.
+1.2 Principal Activities
+The principal business of the company is providing risk underwriting and related financial and
+hospitality services to its customers. Such services include provision of life insurance services
+to both corporate and individual customers.
+The Subsidiaries activities are:
+• Ghana Life Insurance Company Limited, a Life assurance company in Ghana.
+• Axiom Air Limited, a cargo airline company
+1.3 Components of Financial Statements
+The Financial statements comprise the Consolidated and Separate Statements of
+Comprehensive income, Consolidated and Separate statements of Financial Position,
+Consolidated and Separate Statement of Changes in Equity, Consolidated and Separate
+Statements of Cash Flows, and the accompanying Notes.
+Income and expenses (excluding the components of other comprehensive income) are
+recognised in the profit or loss segment of comprehensive income to arrive at the profit for the
+year.
+Other comprehensive income is recognised in the other comprehensive segment of the
+statement of other comprehensive income and comprises items of income and expenses that
+are not recognised in the statement ofprofit or loss as required or permitted by IFRS.
+The addition of the profit for the year and the other comprehensive income gives the total
+comprehensive income for the year.
+Reclassification adjustments are amounts reclassified to statement of comprehensive income
+in the current year that were recognised in other comprehensive income in the current or
+previous years. Transactions with the owners of the Group in their capacity as owners are
+recognised in the statement of changes in equity.
+1.4 Basis of preparation and measurement
+The financial statements are prepared in compliance with International Financial Reporting
+Standards (IFRS) and the requirements of the Companies and Allied Matters Act, Insurance
+36
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Act CAP 117 LFN 2003, the Financial Reporting Council of Nigeria Act 2011 and regulatory
+guidelines as pronounced from time to time by National Insurance Commission (NAICOM).
+Historical cost basis was used in preparation of the financial statements as modified by the
+measurement of certain items at revalued amounts as stated below:
+• Property, plant and equipment at valuation
+• Investment property at fair value
+• Investment at fair value
+• Impaired assets at their recoverable amounts
+1.5 Compliance with IFRS
+These financial statements have been prepared in accordance with the International Financial
+Reporting Standards (IFRS) and IFRS Interpretations Committee (IFRIC) Interpretations
+applicable to companies reporting under IFRS as issued by the International Accounting
+Standards Board (IASB). Additional information required by national regulations have been
+included where appropriate
+1.6 Going Concern status
+As at the end of the financial year 31 December 2023, the following going concern matters
+have been identified by the Directors of African Alliance Insurance Plc:
+1. The company’s solvency margin is below the regulatory requirement as stated in the
+Insurance Act CAP 117, LFN 2003. The company reported a negative solvency
+margin of N4.43billion for the year ended 31 December 2023 compared to a minimum
+of N2billion required for life assurance companies.
+2. The total admissible assets of the company less net insurance and investment contract
+liabilities amounted was a deficit of N30.62billion as at 31 December 2023.
+3. The company shareholders fund was N2.07 billion as at the end of 31 December 2023.
+The deficiency in solvency margin when compared with the minimum requirement for life
+business and deficiency in admissible asset over insurance and investment contract liabilities
+indicate that a material uncertainty exists in the company. However, the favourable position
+of the other factors gives the executive a lifeline for improvement
+The board of directors assessed its ability to continue as a going concern and is satisfied that
+it has the resources to continue in business for the foreseeable future based on the following
+action plans that it is current executing and will execute in due course.
+Action Plans
+The Board of Directors hereby confirm that the following action plans are currently undergoing
+various levels of execution. The directors believe that these actions will enable the company
+to address and revert to a going concern status without limitations.
+37
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+a. Rights issue of N2 billion shares to existing shareholders:
+The Directors have appointed relevant professional advisors to assist with the relevant
+processes of obtaining regulatory approval for a rights issue as soon as possible.
+Of significant impact is that Conau Trade and Investment Limited, the company’s majority
+shareholder, has underwritten to take on 100% of the rights in issue, when the right issues
+have been approved by the regulators and made available to the shareholders.
+Shareholders of the company at the last Annual General Meeting (AGM) had given their
+consent and approval to the offering. This is however subject to the final approval of the
+regulators (National Insurance Commission (NAICOM), Financial Reporting Council of
+Nigeria (FRCN) and Securities and Exchange Commission. We are confident that the
+regulators will give their nod to the offering.
+b. Injection of fresh capital by new investors:
+The Board of Directors are at the final stages of concluding arrangement with an independent
+investor with plans to inject about N7 billion into the company as fresh capital. However, the
+process involves the conduct of due diligence on the financial statements of the company.
+The above proposed capital injection has been approved by the shareholders at its last Annual
+General Meeting (AGM), and is in the following phases:
+a) Phase I – Transaction preparation/Investor engagement
+b) Phase II – Documentation/Early Regulatory engagement
+c) Phase III – Regulatory filings
+d) Phase IV – Allotment and listing
+The Board of Directors has received the special resolution of the Shareholders to proceed
+with the action plans and currently in progress.
+However, the success of this transaction is not under the control of the directors therefore
+there is material uncertainty as to the probability that this transaction will succeed.
+c. Renewal of overdraft facilities:
+The Board of Directors have approved that management access Bank overdraft from its
+bankers to the tune of N500 million. This is to enable the company meet its immediate
+operational requirements from time to time and its support working capital requirements. This
+is however subject to the approval by the bankers to access the revolving credits.
+The company’s request has now been approved by one of the banks. The approval is however
+subject to the following conditions to be fulfilled by the company:
+i. Receipt of Board Resolution authorizing borrowing of the facility, accepting the facility,
+appointing offers to execute documents, operate the facility and authorizing the bank
+to obtain and retain on the CRMS Taxpayer Identification Number (TIN) related
+information such as company name, registration number, address etc. and Bank
+Verification Number (BVN) related information such as Name, Address, Date of Birth,
+Gender, etc. of Directors.
+ii. Receipt of satisfactory credit check reports on the Borrower and its Directors from the
+Central bank of Nigeria (CBN) and two other credit bureaus.
+iii. Receipt of Personal Guarantee of the MD/CEO of the Borrower.
+iv. Receipt of fully executed Environmental and Social Risk Management (ESRM) tool kit.
+38
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+v. Receipt of irrevocable letter of domiciliation/undertaking from Borrower to domicile
+sales proceeds.
+vi. Receipt of favourable search report on the landed property pledged.
+vii. Receipt of all required documents for perfection of the pledged property.
+viii. Provision of valuation report on landed property valued by one bank’s approved valuer
+and must cover 130% of the facility amount.
+The entity has accepted the facility extended by the bank and commenced the process of
+complying with these conditions.
+d. Disposal of company’s interest in Ghana Life Assurance Limited:
+Directors are at the final stages of concluding the disposal of its interest in Ghana Life
+Assurance Limited to another investor. All documentation around the disposal has been
+submitted to the regulator, NAICOM, for its consent and approval. Directors are confident that
+the transaction will be approved by NAICOM, this is however subject to the timing of the
+approval by NAICOM.
+e. Sale of FGN bonds:
+As part of the strategy to meet likely claims and obligations that might arise from its clients,
+the Board has approved the partial disposal of FGN Bonds to enable management to meet
+any form of claims that might arise during the period.
+f. Other matters:
+i. Dividend from PAL Pensions: The Directors are confident that this company shall
+continue to pay out dividend of at least N400 million representing its portion of the
+dividend.
+ii. Growth in Premium Income: The Board and Management continue to strive to ensure
+that the premium income continue to grow. In the last few months new businesses
+have been won and these factored into the cash projection adapted for the going
+concern assessment. The Board is confident that this trend will continue.
+iii. De-Risking of all new businesses: As part of its strategy to ensure that toxic
+revenues are no longer part of the business of the company. Management has
+engaged in appropriate review of the nature of each business before they are
+accepted. Once any business does not meet its level of risk appetite the business is
+not accepted. This has manifest in the level of claims being recorded in the last few
+months. The Board is confident that as this process continues, we will continue to see
+value and significant reduction in the level of claims payout.
+While all of the above will help to address the liquidity challenges of the company, this
+does not however ameliorate the deficit of the solvency margin.
+Material uncertainty exists for each of these plans, because of events that might be
+beyond expectations of the Directors. There can be no assurance that the Company
+will be successful with these strategic initiatives. If such initiatives and plans are not
+successful, the Company and Group may be forced to limit its business activities or be
+unable to continue as a going concern, which will have a material adverse effect on
+operations and financial performance of the company. While the Directors are
+confident that these action plans will be successful and have prepared these financial
+39
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+statements on a going concern basis, material uncertainties exist that may cast
+significant doubt on the Company’s ability to continue as going concerns.
+1.7 Significant judgements and key sources of estimation uncertainty
+In the process of applying the accounting policies adopted by the Group, the Directors make
+certain judgements and estimates that may affect the carrying values of assets and liabilities
+in the next financial period. Such judgements and estimates are based on historical
+experience and other factors, including expectations of future events that are believed to be
+reasonable under the current circumstances. The directors evaluate these at each financial
+reporting date to ensure that they are still reasonable under the prevailing circumstances
+based on the information available.
+The preparation of the Group’s financial statements requires management to make
+judgements, estimates and assumptions that affect the reported amounts of revenues,
+expenses, assets and liabilities and the disclosure of contingent liabilities, at the reporting
+date, however, uncertainty about these assumptions and estimates could result in outcomes
+that could require a material adjustment to the carrying amount of the asset or liability affected
+in the future.
+The judgements made by the directors in the process of applying the Group's accounting
+policies that have the most significant effect on the amounts recognised in the financial
+statements include:
+- Fair value of unquoted equity financial instruments
+The fair value of financial instruments where no active market exists or where quoted prices
+are not otherwise available are determined by using valuation techniques. In these cases, the
+fair values are estimated from observable data using valuation models.
+- Taxation
+Whether it is probable that future taxable profits will be available against which temporary
+differences can be utilized.
+1.8 Functional and presentation currency
+The consolidated financial statements are presented in Nigerian Naira (Naira), rounded to the
+nearest thousand, this is also the functional currency of the Group.
+1.9 Presentation of financial statements
+The Group presents its statements of financial position broadly in order of liquidity. An analysis
+regarding recovery or settlement within twelve months after the reporting date (current) and
+more than 12 months after the reporting date (non-current) is presented in the Notes.
+2.0 Changes in accounting policy and disclosures
+New and amended standards and interpretations.
+New and amended standards adopted and interpretations.
+40
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+The Company applied for the first time, certain standards, and amendments, which are
+effective for annual periods beginning on or after 1 January 2022. Their adoption has not had
+any material impact on the disclosures or on the amounts reported in these financial
+statements.
+The Company has not early adopted any other standard, interpretation or amendment that
+has been issued but not yet effective.
+Interest Rate Benchmark Reform Phase 2 Amendments to IFRS 9, IAS 39, IFRS 7, IFRS
+4 and IFRS 16
+In the current year, IASB published the Phase 2 amendments Interest Rate Benchmark
+Reform Amendments to IFRS 9, IAS 39, IFRS 7, IFRS 4 and IFRS 16. Adopting these
+amendments enables the Company to reflect the effects of transitioning from interbank offered
+rates (IBOR) to alternative benchmark interest rate (also referred to as ‘risk free’ or RFRs)
+without giving rise to accounting impacts that would not provide useful information to users of
+financial statements.
+The amendments are relevant for the following types of hedging relationships and financial
+instruments of the Company, all of which extend beyond 2022:
+Fair value hedges where LIBOR-linked derivatives are designated as a fair value hedge of
+fixed rate debt in respect of the GBP LIBOR risk component.
+Cash flow hedges where IBOR-linked derivatives are designated as a cash flow hedge of
+IBOR-linked bank borrowings.
+Bills or exchange and lease liabilities which reference LIBORs and are subject to the interest
+rate benchmark reform. This standard does not apply to the Company in the current financial
+year.
+Covid-19-Related Rent Concessions beyond 30 June 2021 Amendments to IFRS 16.
+In March 2021, the Board amended the conditions of the practical expedient in IFRS 16 that
+provides relief to lessees from applying the IFRS 16 guidance on lease modifications to rent
+concessions arising as a direct consequence of the covid-19 pandemic. As a practical
+expedient, a lessee may elect not to assess whether a covid-19 related rent concession from
+a lessor is a lease modification. A lessee that makes this election accounts for any change in
+lease payments resulting from the Covid-19 related rent concession the same way it would
+account for the change under IFRS 16, if the change were not a lease modification.
+Amendments to IFRS 3 (Reference to the Conceptual Framework)
+The amendment updates IFRS 3, so that it refers to the 2018 Conceptual Framework instead
+of the 1989 Framework, it ads to IFRS 3, a requirement that, for transactions and other events
+within the scope of IAS 37 or IFRIC 21, an acquirer applies IAS 37 or IFRIC 21 (instead of the
+Conceptual Framework) to identify the liabilities it has assumed in a business combination, it
+add to IFRS 3 an explicit statement that an acquirer does not recognize contingent assets
+acquired in a business combination. Early application of the amendment is permitted if an
+entity also applies all other updated references (published together with the update
+Conceptual Framework) at the same time or earlier. There was no impact on the Group
+financial statements.
+41
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+IFRS 17 Insurance Contract Implementation.
+The Company adopted the IFRS 17 Standard in the year ended December 31, 2023.
+IFRS 17 establishes the principles for the recognition, measurement, presentation and
+disclosure of insurance contracts and supersedes IFRS 4 Insurance Contracts.
+IFRS 17 outlines a general model, which is modified for insurance contracts with direct
+participation features, described as the variable fee approach. The general model is simplified if
+certain criteria are met by measuring the liability for remaining coverage using the premium allocation
+approach.
+The general model uses current assumptions to estimate the amount, timing and uncertainty of future
+cash flows and it explicitly measures the cost of that uncertainty. It considers market interest rates,
+and the impact of policyholders’ options and guarantees. For the transition requirements, the date of
+initial application is the start of the annual reporting period in which the entity first applies the
+Standard, and the transition date is the beginning of the period immediately preceding the date of
+initial application.
+Impact of the initial application IFRS 17
+This standard is expected to have a material impact on the Group’s financial reporting and disclosure
+as the Group has companies who are predominately in the business of insurance contracts. African
+Alliance Insurance Plc and Ghana Life insurance have already commenced a project implementation
+exercise and have performed a high-level impact assessment of IFRS 17. The Group expects that
+the new standard will result in an important change to the accounting policies for insurance contract
+liabilities and is to have a significant impact on profit and total equity together with presentation and
+disclosure.
+The company adopted various measurement approach to the different portfolios of its insurance
+contracts as.
+Portfolio Measurement Approach
+Annuity General Model Approach
+Protection General Model Approach
+Endowment General Model Approach
+Investment-linked General Model Approach
+Individual life General Model Approach
+Group life Premium Allocation Approach
+42
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+New and revised IFRS Standards in issue but not yet effective
+A few standards, interpretations and amendments thereto, had been issued by the IASB which are effective
+but do not impact on these financial statements as summarized in the table below:
+Pronouncement Nature of Change
+Amendments to IFRS 10 The amendments to IFRS 10 and IAS 28 deal with situations where there is a sale
+Consolidated Financial or contribution of assets between an investor and its associate or joint venture.
+Statements and IAS 28 Specifically, the amendments state that gains or losses resulting from the loss of
+Investments in control of a subsidiary that does not contain a business in a transaction with an
+associates and Joint associate or a joint venture that is accounted for using the equity method, are
+Ventures—Sale or recognised in the parent's profit or loss only to the extent of the unrelated investors’
+Contribution of Assets interests in that associate or joint venture. Similarly, gains and losses resulting
+between an Investor and from the remeasurement of investments retained in any former subsidiary that has
+its Associate or Joint become an associate or a joint venture that is accounted for using the equity
+Venture method) to fair value are recognised in the former parent's profit or loss only to the
+extent of the unrelated investors' interests in the new associate or joint venture.
+The effective date of the amendments has yet to be set by the Board; however,
+earlier application of the amendments is permitted. The directors of the Company
+anticipate that the application of these amendments may have an impact on the
+Group’s consolidated financial statements in future periods should such
+transactions arise.
+43
+
+
+| 0                                                                                                                                                                                                     | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pronouncement                                                                                                                                                                                         | Nature of Change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Amendments to IFRS 10 Consolidated Financial Statements and IAS 28 Investments in associates and Joint Ventures—Sale or Contribution of Assets between an Investor and its Associate or Joint Venture | The amendments to IFRS 10 and IAS 28 deal with situations where there is a sale or contribution of assets between an investor and its associate or joint venture. Specifically, the amendments state that gains or losses resulting from the loss of control of a subsidiary that does not contain a business in a transaction with an associate or a joint venture that is accounted for using the equity method, are recognised in the parent's profit or loss only to the extent of the unrelated investors’ interests in that associate or joint venture. Similarly, gains and losses resulting from the remeasurement of investments retained in any former subsidiary that has become an associate or a joint venture that is accounted for using the equity method) to fair value are recognised in the former parent's profit or loss only to the extent of the unrelated investors' interests in the new associate or joint venture. The effective date of the amendments has yet to be set by the Board; however, earlier application of the amendments is permitted. The directors of the Company anticipate that the application of these amendments may have an impact on the Group’s consolidated financial statements in future periods should such transactions arise. |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Amendments to IAS 1 The amendments to IAS 1 affect only the presentation of liabilities as current or
+Presentation of non-current in the statement of financial position and not the amount or timing of
+Financial Statements— recognition of any asset, liability, income or expenses, or the information disclosed
+Classification of about those items.
+Liabilities as Current or
+Noncurrent The amendments clarify that the classification of liabilities as current or non-
+current is based on rights that are in existence at the end of the reporting period,
+specify that classification is unaffected by expectations about whether an entity
+will exercise its right to defer settlement of a liability, explain that rights are in
+existence if covenants are complied with at the end of the reporting period, and
+introduce a definition of ‘settlement’ to make clear that settlement refers to the
+transfer to the counterparty of cash, equity instruments, other assets or services.
+Amendments to IFRS Amendment to IFRS 16 Leases requires a seller-lessee impacts how a seller-
+16 (Lease Liability in a lessee to subsequently measure lease liabilities arising from a leaseback in a way
+Sale and Leaseback) that it does not recognize any amount of the gain or loss that relates to the right of
+use it retains. The amendment also requires the seller-lessee to include variable
+lease payments when it measures a lease liability arising from a sale-and-
+leaseback transaction.
+The amendments confirm the following.
+• On initial recognition, the seller-lessee includes variable lease payments
+when it measures a lease liability arising from a sale-and-leaseback
+transaction.
+• After initial recognition, the seller-lessee applies the general requirements
+for subsequent accounting of the lease liability such that it recognizes no
+gain or loss relating to the right of use it retains.
+A seller-lessee may adopt different approaches that satisfy the new requirements
+on subsequent measurement.
+The amendments are effective for annual reporting periods beginning on or after
+1 January, 2024.
+Under IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors, a
+seller-lessee will need to apply the amendments retrospectively to sale-and-
+leaseback transactions entered into or after the date of initial application of IFRS
+16. This means that it will need to identify and re-examine sale-and-leaseback
+transactions entered into since implementation of IFRS 16 in 2019, and potentially
+restate those that included variable lease payments. The impact of the adoption
+of this amendment on the group is being assessed. The amendments are effective
+for annual periods beginning on or after 1 January 2024, with early application
+permitted.
+Amendments 10 IAS 16 The amendments prohibit deducting from the cost of an item of property, plant and
+Property, Plant and equipment any proceeds from selling items produced before that asset is available
+Equipment—Proceeds for use, i.e. proceeds while bringing the asset to the location and condition
+before Intended Use necessary for it to be capable of operating in the manner intended by
+management. Consequently, an entity recognises such sales proceeds and
+related costs in profit or loss. The entity measures the cost of those items in
+accordance with IAS 2 Inventories.
+The amendments also clarify the meaning of ‘testing whether an asset is
+functioning properly’. IAS 16 now specifies this as assessing whether the technical
+and physical performance of the asset is such that it is capable of being used in
+the production or supply of goods or services, for rental to others, or for
+administrative purposes. If not presented separately in the statement of
+comprehensive income, the financial statements shall disclose the amounts of
+proceeds and cost included in profit or loss that relate to items produced that are
+not an output of the entity's ordinary activities, and which line item(s) in the
+statement of comprehensive income include(s) such proceeds and cost.
+The amendments are applied retrospectively, but only to items of property, plant
+and equipment that are brought to the location and condition necessary for them
+to be capable of operating in the manner intended by management on or after the
+44
+
+
+| 0                                                                                                                | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:-----------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Amendments to IAS 1 Presentation of Financial Statements— Classification of Liabilities as Current or Noncurrent | The amendments to IAS 1 affect only the presentation of liabilities as current or non-current in the statement of financial position and not the amount or timing of recognition of any asset, liability, income or expenses, or the information disclosed about those items. The amendments clarify that the classification of liabilities as current or non- current is based on rights that are in existence at the end of the reporting period, specify that classification is unaffected by expectations about whether an entity will exercise its right to defer settlement of a liability, explain that rights are in existence if covenants are complied with at the end of the reporting period, and introduce a definition of ‘settlement’ to make clear that settlement refers to the transfer to the counterparty of cash, equity instruments, other assets or services.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Amendments to IFRS 16 (Lease Liability in a Sale and Leaseback)                                                  | Amendment to IFRS 16 Leases requires a seller-lessee impacts how a seller- lessee to subsequently measure lease liabilities arising from a leaseback in a way that it does not recognize any amount of the gain or loss that relates to the right of use it retains. The amendment also requires the seller-lessee to include variable lease payments when it measures a lease liability arising from a sale-and- leaseback transaction. The amendments confirm the following. • On initial recognition, the seller-lessee includes variable lease payments when it measures a lease liability arising from a sale-and-leaseback transaction. • After initial recognition, the seller-lessee applies the general requirements for subsequent accounting of the lease liability such that it recognizes no gain or loss relating to the right of use it retains. A seller-lessee may adopt different approaches that satisfy the new requirements on subsequent measurement. The amendments are effective for annual reporting periods beginning on or after 1 January, 2024. Under IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors, a seller-lessee will need to apply the amendments retrospectively to sale-and- leaseback transactions entered into or after the date of initial application of IFRS 16. This means that it will need to identify and re-examine sale-and-leaseback transactions entered into since implementation of IFRS 16 in 2019, and potentially restate those that included variable lease payments. The impact of the adoption of this amendment on the group is being assessed. The amendments are effective for annual periods beginning on or after 1 January 2024, with early application permitted. |
+| Amendments 10 IAS 16 Property, Plant and Equipment—Proceeds before Intended Use                                  | The amendments prohibit deducting from the cost of an item of property, plant and equipment any proceeds from selling items produced before that asset is available for use, i.e. proceeds while bringing the asset to the location and condition necessary for it to be capable of operating in the manner intended by management. Consequently, an entity recognises such sales proceeds and related costs in profit or loss. The entity measures the cost of those items in accordance with IAS 2 Inventories. The amendments also clarify the meaning of ‘testing whether an asset is functioning properly’. IAS 16 now specifies this as assessing whether the technical and physical performance of the asset is such that it is capable of being used in the production or supply of goods or services, for rental to others, or for administrative purposes. If not presented separately in the statement of comprehensive income, the financial statements shall disclose the amounts of proceeds and cost included in profit or loss that relate to items produced that are not an output of the entity's ordinary activities, and which line item(s) in the statement of comprehensive income include(s) such proceeds and cost. The amendments are applied retrospectively, but only to items of property, plant and equipment that are brought to the location and condition necessary for them to be capable of operating in the manner intended by management on or after the                                                                                                                                                                                                                                                              |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+beginning of the earliest period presented in the financial statements in which the
+entity first applies the amendments.
+The entity shall recognise the cumulative effect of initially applying the
+amendments as an adjustment to the opening balance of retained earnings (or
+other component of equity, as appropriate) at the beginning of that earliest period
+presented.
+The amendments are effective for annual periods beginning on or after 1 January
+2022, with early application permitted.
+Amendments to IAS 37 The amendments specify that the ‘cost of fulfilling’ a contract comprises the ‘costs
+Provisions, Contingent that relate directly to the contract’. Costs that relate directly to a contract consist
+Liabilities and of both the incremental costs of fulfilling that contract examples would be direct
+Contingent Assets— labour or materials) and an allocation of other costs that relate directly to fulfilling
+Onerous Contracts— contracts (an example would be the allocation of the depreciation charge for an
+Cost of Fulfilling a item of property, plant and equipment used in fulfilling the contract).
+Contract
+The amendments apply to contracts for which the entity has not yet fulfilled all its
+obligations at the beginning of the annual reporting period in which the entity first
+applies the amendments. Comparatives are not restated. Instead, the entity shall
+recognise the cumulative effect of initially applying the amendments as an
+adjustment to the opening balance of retained earnings or other component of
+equity, as appropriate, at the date of initial application.
+The amendments are effective for annual periods beginning on or after 1 January
+2022, with early application permitted.
+Annual Improvements The Annual Improvements include amendments to four Standards:
+to IFRS Standards
+2018-2020— IFRS 1 First-time Adoption of International Financial Reporting Standards
+Amendments to IFRS 1 The amendment provides additional relief to a subsidiary which becomes a first-
+First-time Adoption of time adopter later than its parent in respect of accounting for cumulative translation
+international Financial differences. As a result of the amendment, a subsidiary that uses the exemption
+Reporting Standards, in IFRS 1:D16(a) can now also elect to measure cumulative translation differences
+IFRS 9 Financial for all foreign operations at the carrying amount that would be included in the
+Instruments, IFRS 16 parent's consolidated financial statements, based on the parent's date of transition
+Leases, and IAS 41 to IFRS Standards, if no adjustments were made for consolidation procedures and
+Agriculture for the effects of the business combination in which the parent acquired the
+subsidiary. A similar election is available to an associate or joint venture that uses
+the exemption in IFRS 1:D16(a).
+IFRS 9 Financial Instruments
+The amendment clarifies that in applying the ‘10 per cent’ test to assess whether
+to derecognise a financial liability, an entity includes only fees paid or received
+between the entity (the borrower) and the lender, including fees paid or received
+by either the entity or the ender on the other’s behalf. The amendment is applied
+prospectively to modifications and exchanges that occur on or after the date the
+entity first applies the amendment. The amendment is effective for annual periods
+beginning on or after 1 January 2022, with early application permitted.
+IFRS 16 Leases
+The amendment removes the illustration of the reimbursement of leasehold
+improvements. As the amendment to IFRS 16 only regards an illustrative example,
+no effective date is stated.
+IAS 41 Agriculture
+The amendment removes the requirement in IAS 41 for entities to exclude cash
+flows for taxation when measuring fair value. This aligns the fair value
+measurement in IAS 41 with the requirements of IFRS 13 Fair Value Measurement
+to use internally consistent cash flows and discount rates and enables preparers
+to determine whether to use pretax or post-tax cash lows and discount rates for
+the most appropriate fair value measurement.
+45
+
+
+| 0                                                                                                                                                                                                              | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                                                | beginning of the earliest period presented in the financial statements in which the entity first applies the amendments. The entity shall recognise the cumulative effect of initially applying the amendments as an adjustment to the opening balance of retained earnings (or other component of equity, as appropriate) at the beginning of that earliest period presented. The amendments are effective for annual periods beginning on or after 1 January 2022, with early application permitted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Amendments to IAS 37 Provisions, Contingent Liabilities and Contingent Assets— Onerous Contracts— Cost of Fulfilling a Contract                                                                                | The amendments specify that the ‘cost of fulfilling’ a contract comprises the ‘costs that relate directly to the contract’. Costs that relate directly to a contract consist of both the incremental costs of fulfilling that contract examples would be direct labour or materials) and an allocation of other costs that relate directly to fulfilling contracts (an example would be the allocation of the depreciation charge for an item of property, plant and equipment used in fulfilling the contract). The amendments apply to contracts for which the entity has not yet fulfilled all its obligations at the beginning of the annual reporting period in which the entity first applies the amendments. Comparatives are not restated. Instead, the entity shall recognise the cumulative effect of initially applying the amendments as an adjustment to the opening balance of retained earnings or other component of equity, as appropriate, at the date of initial application. The amendments are effective for annual periods beginning on or after 1 January 2022, with early application permitted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Annual Improvements to IFRS Standards 2018-2020— Amendments to IFRS 1 First-time Adoption of international Financial Reporting Standards, IFRS 9 Financial Instruments, IFRS 16 Leases, and IAS 41 Agriculture | The Annual Improvements include amendments to four Standards: IFRS 1 First-time Adoption of International Financial Reporting Standards The amendment provides additional relief to a subsidiary which becomes a first- time adopter later than its parent in respect of accounting for cumulative translation differences. As a result of the amendment, a subsidiary that uses the exemption in IFRS 1:D16(a) can now also elect to measure cumulative translation differences for all foreign operations at the carrying amount that would be included in the parent's consolidated financial statements, based on the parent's date of transition to IFRS Standards, if no adjustments were made for consolidation procedures and for the effects of the business combination in which the parent acquired the subsidiary. A similar election is available to an associate or joint venture that uses the exemption in IFRS 1:D16(a). IFRS 9 Financial Instruments The amendment clarifies that in applying the ‘10 per cent’ test to assess whether to derecognise a financial liability, an entity includes only fees paid or received between the entity (the borrower) and the lender, including fees paid or received by either the entity or the ender on the other’s behalf. The amendment is applied prospectively to modifications and exchanges that occur on or after the date the entity first applies the amendment. The amendment is effective for annual periods beginning on or after 1 January 2022, with early application permitted. IFRS 16 Leases The amendment removes the illustration of the reimbursement of leasehold improvements. As the amendment to IFRS 16 only regards an illustrative example, no effective date is stated. IAS 41 Agriculture The amendment removes the requirement in IAS 41 for entities to exclude cash flows for taxation when measuring fair value. This aligns the fair value measurement in IAS 41 with the requirements of IFRS 13 Fair Value Measurement to use internally consistent cash flows and discount rates and enables preparers to determine whether to use pretax or post-tax cash lows and discount rates for the most appropriate fair value measurement. |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+The amendment is applied prospectively, i.e. for fair value measurements on or
+after the date n entity initially applies the amendment.
+The amendment is effective for annual reporting periods beginning on or after 1
+January 2022, with earlier application permitted.
+Amendments to IAS 1 The amendments change the requirements in IAS 1 with regard to disclosure of
+Presentation of accounting policies. The amendments replace all instances of the term ‘significant
+Financial Statements accounting policies’ with ‘material accounting policy information’. Accounting
+and IFRS Practice policy information is material if, when considered together with other information
+Statement 2 Making included in an entity's financial statements, it can reasonably be expected to
+Materiality influence decisions that the primary users of general purpose financial statements
+Judgements— make on the basis of those financial statements.
+Disclosure of The supporting paragraphs in IAS 1 are also amended to clarify that accounting
+Accounting Policies policy information that relates to immaterial transactions, other events or
+conditions is immaterial and need not be disclosed. Accounting policy information
+may be material because of the nature of the related transactions, other events or
+conditions, even if the amounts are immaterial. However, not all accounting policy
+information relating to material transactions, other events or conditions is itself
+material.
+The Board has also developed guidance and examples to explain and
+demonstrate the application of the ‘four-step materiality process’ described in
+IFRS Practice Statement 2. The amendments to 1AS 1 are effective for annual
+periods beginning on or after 1 January 2023, with earlier application permitted
+and are applied prospectively. The amendments to IFRS Practice Statement 2 do
+not contain an effective date or transition requirements.
+Amendments to IAS 8 The amendments replace the definition of a change in accounting estimates with
+Accounting Policies, a definition of accounting estimates. Under the new definition, accounting
+Changes in Accounting estimates are “monetary amounts in financial statements that are subject to
+Estimates and Errors— measurement uncertainty”.
+Definition of Accounting The definition of a change in accounting estimates was deleted. However, the
+Estimates Board retained the concept of changes in accounting estimates in the Standard
+with the following clarifications:
+• A change in accounting estimate that results from new information or new
+developments is not the correction of an error.
+• The effects of a change in an input or a measurement technique used to
+develop an accounting estimate are changes on accounting estimates if they
+do not result from the correction of prior period errors
+The Board added two examples (Examples 4-5) to the Guidance on implementing
+IAS 8, which accompanies the Standard. The Board has deleted one example
+(Example 3) as it could cause confusion in light of the amendments. The
+amendments are effective for annual periods beginning on or after 1 January 2023
+to changes in accounting policies and changes in accounting estimates that occur
+on or after the beginning of that period, with earlier application permitted.
+Amendments to IAS 12 The amendments introduce a further exception from the initial recognition
+Income Taxes — exemption. Under the amendments, an entity does not apply the initial recognition
+Deferred Tax related to exemption for transactions that give rise to equal taxable and deductible temporary
+Assets and Liabilities differences.
+arising from a Single
+Transaction
+Depending on the applicable tax law, equal taxable and deductible temporary
+differences may arise on initial recognition of an asset and liability in a transaction
+that is not a business combination and affects neither accounting nor taxable
+profit. For example, this may arise upon recognition of a lease liability and the
+46
+
+
+| 0   | 1                                                                                                                                                                                                                                                                         |
+|:----|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     | The amendment is applied prospectively, i.e. for fair value measurements on or after the date n entity initially applies the amendment. The amendment is effective for annual reporting periods beginning on or after 1 January 2022, with earlier application permitted. |
+
+
+
+| 0                                                                                                                                                       | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Amendments to IAS 1 Presentation of Financial Statements and IFRS Practice Statement 2 Making Materiality Judgements— Disclosure of Accounting Policies | The amendments change the requirements in IAS 1 with regard to disclosure of accounting policies. The amendments replace all instances of the term ‘significant accounting policies’ with ‘material accounting policy information’. Accounting policy information is material if, when considered together with other information included in an entity's financial statements, it can reasonably be expected to influence decisions that the primary users of general purpose financial statements make on the basis of those financial statements. The supporting paragraphs in IAS 1 are also amended to clarify that accounting policy information that relates to immaterial transactions, other events or conditions is immaterial and need not be disclosed. Accounting policy information may be material because of the nature of the related transactions, other events or conditions, even if the amounts are immaterial. However, not all accounting policy information relating to material transactions, other events or conditions is itself material. The Board has also developed guidance and examples to explain and demonstrate the application of the ‘four-step materiality process’ described in IFRS Practice Statement 2. The amendments to 1AS 1 are effective for annual periods beginning on or after 1 January 2023, with earlier application permitted and are applied prospectively. The amendments to IFRS Practice Statement 2 do not contain an effective date or transition requirements. |
+| Amendments to IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors— Definition of Accounting Estimates                                 | The amendments replace the definition of a change in accounting estimates with a definition of accounting estimates. Under the new definition, accounting estimates are “monetary amounts in financial statements that are subject to measurement uncertainty”. The definition of a change in accounting estimates was deleted. However, the Board retained the concept of changes in accounting estimates in the Standard with the following clarifications: • A change in accounting estimate that results from new information or new developments is not the correction of an error. • The effects of a change in an input or a measurement technique used to develop an accounting estimate are changes on accounting estimates if they do not result from the correction of prior period errors The Board added two examples (Examples 4-5) to the Guidance on implementing IAS 8, which accompanies the Standard. The Board has deleted one example (Example 3) as it could cause confusion in light of the amendments. The amendments are effective for annual periods beginning on or after 1 January 2023 to changes in accounting policies and changes in accounting estimates that occur on or after the beginning of that period, with earlier application permitted.                                                                                                                                                                                                                                           |
+| Amendments to IAS 12 Income Taxes — Deferred Tax related to Assets and Liabilities arising from a Single Transaction                                    | The amendments introduce a further exception from the initial recognition exemption. Under the amendments, an entity does not apply the initial recognition exemption for transactions that give rise to equal taxable and deductible temporary differences. Depending on the applicable tax law, equal taxable and deductible temporary differences may arise on initial recognition of an asset and liability in a transaction that is not a business combination and affects neither accounting nor taxable profit. For example, this may arise upon recognition of a lease liability and the                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+corresponding right-of-use asset applying [FRS 16 at the commencement date of
+a lease.
+Following the amendments to IAS 12, an entity is required to recognise the related
+deferred tax asset and liability, with the recognition of any deferred tax asset being
+subject to the recoverability criteria in IAS 12.
+The Board also adds an illustrative example to IAS 12 that explains how the
+amendments are applied.
+The amendments apply to transactions that occur on or after the beginning of the
+earliest comparative period presented. In addition, at the beginning of the easiest
+comparative period an entity recognises:
+• A deferred tax asset (to the extent that it is probable that taxable profit will be
+available against which the deductible temporary difference can be utilised)
+and a deferred tax liability for all deductible and taxable temporary differences
+associated with:
+- Right-of-use assets and lease liabilities
+- Decommissioning, restoration and similar liabilities and the corresponding
+amounts recognised as part of the cost of the related asset
+• The cumulative effect of initially applying the amendments as an adjustment
+to the opening balance of retained earnings (or other component of equity, as
+appropriate) at that date.
+The amendments are effective for annual reporting periods beginning on or after
+1 January 2023, with earlier application permitted.
+47
+
+
+| 0   | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|:----|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     | corresponding right-of-use asset applying [FRS 16 at the commencement date of a lease. Following the amendments to IAS 12, an entity is required to recognise the related deferred tax asset and liability, with the recognition of any deferred tax asset being subject to the recoverability criteria in IAS 12. The Board also adds an illustrative example to IAS 12 that explains how the amendments are applied. The amendments apply to transactions that occur on or after the beginning of the earliest comparative period presented. In addition, at the beginning of the easiest comparative period an entity recognises: • A deferred tax asset (to the extent that it is probable that taxable profit will be available against which the deductible temporary difference can be utilised) and a deferred tax liability for all deductible and taxable temporary differences associated with: - Right-of-use assets and lease liabilities - Decommissioning, restoration and similar liabilities and the corresponding amounts recognised as part of the cost of the related asset • The cumulative effect of initially applying the amendments as an adjustment to the opening balance of retained earnings (or other component of equity, as appropriate) at that date. The amendments are effective for annual reporting periods beginning on or after 1 January 2023, with earlier application permitted. |
+
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.1 Significant accounting policies
+The Company has consistently applied the following accounting policies to all periods presented in these
+financial statements.
+Significant accounting policies are defined as those that reflect significant judgments and uncertainties,
+and potentially give rise to different results under different assumptions and conditions.
+Except for the considerations explained in Note 2 above, the Company consistently applied the following
+accounting policies to the periods presented in the financial statements.
+Consolidation
+2.1.1 Subsidiaries
+Subsidiaries are all entities (including structured entities) over which the Group has control. The
+Group controls an entity when the Group is exposed to, or has rights to, variable returns from its
+involvement with the entity and has the ability to affect those returns through its power over the
+entity. Subsidiaries are fully consolidated from the date on which control is transferred to the
+Group. They are deconsolidated from the date that control ceases.
+The Group applies the acquisition method to account for business combinations. The
+consideration transferred for the acquisition of a subsidiary is the fair values of the assets
+transferred, the liabilities incurred to the former owners of the acquiree and the equity interests
+issued by the Group. The consideration transferred includes the fair value of any asset or liability
+resulting from a contingent consideration arrangement. Identifiable assets acquired and
+liabilities and contingent liabilities assumed in a business combination are measured initially at
+their fair values at the acquisition date. The Group recognises any non-controlling interest in the
+acquiree on an acquisition-by-acquisition basis, either at fair value or at the non-controlling
+interest's proportionate share of the recognised amounts of acquiree's identifiable net assets.
+Acquisition-related costs are expensed as incurred.
+If the business combination is achieved in stages, the acquisition date carrying value of the
+acquirer's previously held equity interest in the acquiree is re-measured to fair value at the
+acquisition date; any gains or losses arising from such re-measurement are recognised in profit
+or loss.
+Any contingent consideration to be transferred by the Group is recognised at fair value at the
+acquisition date. Subsequent changes to the fair value of the contingent consideration that is
+deemed to be an asset or liability is recognised in accordance with IAS 39 either in profit or loss
+or as a change to other comprehensive income. Contingent consideration that is classified as
+equity is not re-measured, and its subsequent settlement is accounted for within equity.
+Inter-company transactions, balances and unrealised gains on transactions between Group
+companies are eliminated. Unrealised losses are also eliminated. When necessary, amounts
+reported by subsidiaries have been adjusted to conform with the Group’s accounting policies.
+2.1.2 Changes in ownership interests in subsidiaries without change of control
+Transactions with non-controlling interests that do not result in loss of control are accounted for
+as equity transactions - that is, as transactions with the owners in their capacity as owners. The
+difference between fair value of any consideration paid and the relevant share acquired of the
+carrying value of net assets of the subsidiary is recorded in equity. Gains or losses on disposals
+to non-controlling interests are also recorded in equity.
+48
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.1.3 Disposal of subsidiaries
+When the group ceases to have control, any retained interest in the entity is remeasured to its
+fair value at the date when control is lost, with the change in carrying amount recognised in profit
+or loss. The fair value is the initial carrying amount for the purposes of subsequently accounting
+for the retained interest as an associate, joint venture or financial asset. In addition, any amounts
+previously recognised in other comprehensive income in respect of that entity are accounted for
+as if the group hart directly disposed of the related assets or liabilities. This may mean that
+amounts previously recognised in other comprehensive income are reclassified to profit or loss.
+2.2 Foreign currencies
+Foreign currency transactions are translated into the functional currency using the exchange
+rates prevailing at the dates of the transactions. Foreign exchange gains and losses resulting from
+the settlement of such transactions and from the translation at year-end exchange rates of
+monetary assets and liabilities denominated in foreign currencies are recognised in the income
+statement, except when deferred in equity as qualifying cash flow hedges and qualifying net
+investment hedges. Foreign exchange gains and losses that relate to borrowings and cash and
+cash equivalents are presented in the income statement within ‘other income’.
+All other foreign exchange gains and losses are presented in the income statement within ‘Other
+income’ or other expenses. Changes in the fair value of monetary securities denominated in
+foreign currency classified as available for sale are analysed between translation differences
+resulting from changes in the amortised cost of the security; and other changes in the carrying
+amount of the security.
+Translation differences related to changes in amortised cost are recognised in profit or loss; other
+changes in carrying amount are recognised in equity. Translation differences on financial assets
+and liabilities held at fair value through profit and loss are reported as part of the fair value gain
+or loss. Translation differences on non-monetary financial assets such as equities classified as
+fair value through other comprehensive income financial 'assets are included in the fair value
+reserve in equity.
+2.3 Financial assets
+The Group classifies its financial assets into the following categories: fair value through profit or
+loss, fair value through other comprehensive income and amortized cost. The classification is
+determined by management at initial recognition and depends on the objective of the business
+model.
+2.3.1 Classification and Measurements
+Financial assets are classified and measured at initial recognition at fair value, including directly
+attributable transaction cost. Subsequent measurement is based on the business model objective
+of managing the assets as well as the cashflow characteristics of the asset.
+- Business Model Assessment
+Business model assessment involves determining if financial assets are managed in order to
+generate cash flows from collection of contractual cash flows, selling financial assets or both. The
+Group assesses business model at a portfolio level which reflects how the assets are managed
+together to achieve a particular business objective.
+49
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+- Financial assets at fair value through profit and loss
+Financial assets will be measured at fair value through the income statement if they do not meet
+the business model criteria of either “Hold to collect” or “Hold to collect and sell”. All equity
+instruments and similar securities (unless designated at inception to fair value through other
+comprehensive income); and all derivatives are measured at fair value through profit or loss. An
+entity have the option to designate a financial asset as measured at fair value through profit or
+loss if doing so eliminates or significantly reduces an accounting mismatch.
+- Financial assets at fair value through other comprehensive income
+Financial assets will be measured at fair value through other comprehensive income if they are
+held within a business model where the objective is achieved by both collecting contractual cash
+flows and selling financial assets (“Hold to collect and sell”), and their contractual cash flows
+represent solely payments of principal and interest.
+2.3.2 Financial assets measured at amortized cost
+Financial assets are measured at amortized cost if they are held within a business model whose
+objective is to hold for collection of contractual cash flows where those cash flows represent
+solely payments of principal and interest. After initial measurement, debt instruments in this
+category are carried at amortized cost using the effective interest rate method. Amortized cost is
+calculated considering any discount or premium on acquisition, transaction costs and fees that
+are an integral part of the effective interest rate. Amortization is included in Interest income in
+the Consolidated Statement of Income. Impairment on financial assets measured at amortized
+cost is calculated using the expected credit loss approach.
+2.3.3 Recognition and measurement
+Financial assets are initially recognised at fair value plus, in the case of all financial assets not
+carried at fair value through profit and loss, transaction costs that are directly attributable to
+their acquisition. Financial assets carried at fair value through profit and loss are initially
+recognised at fair value, and transaction costs are expensed in the statement of comprehensive
+income. Financial assets are derecognised when the rights to receive cash flows from them have
+expired or where they have been transferred and the Group has also transferred substantially all
+risks and rewards of ownership.
+Financial assets at fair value through other comprehensive income and financial assets at fair
+value through profit and loss are subsequently carried at fair value. Other financial assets are
+carried at amortised cost using the effective interest method.
+Gains and losses arising from changes in the fair value of the ‘financial assets at fair value through
+profit and loss’ category are included in the income statement in the period in which they arise.
+Dividend income from financial assets at fair value through profit and loss is recognised in the
+statement of comprehensive income as part of Investment income when the Group’s right to
+receive payments is established.
+Interest on financial assets fair value through other comprehensive income calculated using the
+effective interest method is recognised in the income statement. Dividends on equity instruments
+fair value through other comprehensive income are recognised in the income statement when
+the Group's right to receive payments is established. Both are included in the investment income
+line.
+50
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.4 Determination of fair value
+For financial instruments traded in active markets, the determination of fair values of financial
+assets and financial liabilities is based on quoted market prices or dealer price quotations. This
+includes listed equity securities and quoted debt instruments on major exchanges. The quoted
+market price used for financial assets held by the Group is the current bid price.
+A financial instrument is regarded as quoted in an active market if quoted prices are readily and
+regularly available from an exchange, dealer, broker, industry, company, pricing service or
+regulatory agency, and those prices represent actual and regularly occurring market transactions
+on an arm's length basis. If the above criteria are not met, the market is regarded as being
+inactive. Indications that a market is inactive are when there is a wide bid - offer spread or
+significant increase in the bid - offer spread or there are few recent transactions.
+For all other financial instruments, fair value is determined using valuation techniques. In these
+techniques, fair values are estimated from observable data in respect of similar financial
+instruments, using models to estimate the present value of expected future cash flows or other
+valuation techniques, using inputs (for example, NIBOR, MPR etc.) existing at the dates of the
+statement of financial position.
+The Group uses widely recognised money market rates in determining fair values of non-
+standardised financial instruments of lower complexity like placements, and treasury bills. These
+financial instruments models are generally market observable. The carrying value less
+impairment provision of trade receivables and payables are assumed to approximate their fair
+values.
+The fair value of financial liabilities for disclosure purposes is estimated by discounting the future
+contractual cash flows at tie current market interest rate that is available to the Group for similar
+financial instruments. In cases where the fair value of unlisted equity instruments cannot be
+determined reliably, the instruments are carried at cost less any impairments. The fair value for
+loans and receivables as well as liabilities to banks and customers are determined using a present
+value model on the basis of contractually agreed cash flows, taking into account credit quality,
+liquidity and costs. The fair values of contingent liabilities and irrevocable loan commitments
+correspond to their carrying amounts.
+2.4.1 De-recognition of financial instrument.
+The Group derecognises a financial asset only when the contractual rights to the cash flows from
+the asset expire or it transfers the financial asset and substantially all the risks and rewards of
+ownership of the asset to another entity. If the Group neither transfers nor retains substantially
+all the risks and rewards of ownership and continues to control the transferred asset, the Group
+recognises its retained interest in the asset and an associated liability for amounts it may have to
+pay. If the Group retains substantially all the risks and rewards of ownership of a transferred
+financial asset, the Group continues to recognise the financial asset and also recognises a
+collateralised borrowing for the proceeds received.
+2.4.2 Reclassification of financial assets
+For financial assets, reclassification is required between FVTPL, FVTOCI and amortised cost; if
+and only if the entity's business model objective for its financial assets changes so its previous
+business model assessment would no longer apply.
+IFRS 9 does not allow reclassification:
+• when the fair value option has been elected in any circumstance for a financial asset;
+• or equity investments (measured at FVTPL or FVTOCI); or
+• for financial liabilities.
+51
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+If an entity reclassifies a financial asset, it is required to apply the reclassification prospectively
+from the reclassification date, defined as the first day of the first reporting period following the
+change in business model that results in the entity reclassifying financial assets. Previously
+recognised gains, losses (including impairment gains or losses) or interest are not restated.
+2.4.3 Impairment of asset
+Financial assets carried at amortized cost and FVTOCI.
+The IFRS 9 impairment model is applicable to all financial assets at amortized cost, and debt
+instruments measured at fair value through other comprehensive income. IFRS 9 replaces the
+‘incurred loss’ model (IAS 39) with an Expected Credit Loss (‘ECL’) model, resulting in earlier
+recognition of credit losses compared with IAS 39. Expected credit losses are the unbiased
+probability weighted average credit losses determined by evaluating a range of possible
+outcomes and future economic conditions. The ECL model has three stages.
+Stage 1: As soon as a financial instrument is originated or purchased, an entity is required to
+recognize a 12-month expected credit loss in profit or loss and a loss allowance is established.
+For financial assets, interest revenue is calculated on the gross carrying amount (i.e. without
+deduction for expected credit losses).
+Stage 2: If the credit risk increases significantly and is not considered low, a full lifetime expected
+credit loss is recognized in profit or loss. The calculation of interest revenue is the same as for
+stage 1 above.
+Stage 3: If the credit risk of a financial asset increases to the point that it is considered credit-
+impaired, interest revenue is calculated based on the amortized cost (i.e. the gross carrying
+amount less the loss allowance). Financial assets in this stage will generally be assessed
+individually. Lifetime expected credit losses are recognized on these financial assets. Based on
+the criteria in stages 1-3, the Group sets reserves for impairment.
+No impairment reserve is set on financial assets measured at fair value through profit and loss.
+2.4.4 Financial liabilities
+Financial liabilities are classified into one of the following measurement categories:
+i. Amortized cost,
+ii. Fair Value through Profit or Loss (FVTPL)
+Financial Liabilities at fair value through profit or loss
+Financial Liabilities accounted for at fair value through profit or loss fall into two categories:
+financial liabilities held for trading and financial liabilities designated at fair value through profit
+or loss on inception. However, for financial liabilities designated at fair value through profit or
+loss, gains or losses attributable to changes in own credit risk are presented in Other
+Comprehensive Income.
+52
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Financial Liabilities at amortized cost
+Financial liabilities that are not classified at fair value through profit or loss fall into this category
+and are measured at amortized cost using the effective interest rate method.
+2.4.5 Offsetting financial instruments.
+Financial assets and liabilities are offset, and the net amount reported in the statement of
+financial position only when there is a legally enforceable right to offset the recognised amounts
+and there is an intention to settle on a net basis, or to realise the asset and settle the liability
+simultaneously.
+2.4.6 Cash and cash equivalents.
+Cash and cash equivalents include cash in hand, bank and call deposits and other short-term
+highly liquid investments with original maturities of three months or less, which are subject to
+insignificant risk of changes in their fair value and used by the Company to manage its short-term
+commitments. Cash and cash equivalents are measured at amortised cost in the statement of
+financial position.
+2.5 Trade receivables and payables related to insurance contracts.
+Receivables and payables are recognised when due. These include amounts due to and from
+agents, brokers and insurance contract holders.
+If there is objective evidence that the insurance receivable is impaired, the Group reduces the
+carrying amount of the insurance receivable accordingly and recognises that impairment loss in
+the income statement.
+Trade and other payables
+Trade payables
+Trade payables are recognised when due. These include amounts due to agents, reinsurers, co-
+assurers and insurance contract holders. Trade payables are recognised initially at fair value and
+subsequently measured at amortised cost using the effective interest method. The fair value of a
+non-interest-bearing liability is its discounted repayment amount. If the due date is less than one
+year, discounting is not applied.
+Accruals and other payables
+Other payables are recognised initially at fair value and subsequently measured at amortised cost
+using the effective interest method. The fair value of a non-interest-bearing liability is its
+discounted repayment amount. If the due date is less than one year, discounting is not applied.
+2.6 Investment in Associates
+As associate is an entity over which the Group has significant influence and that is neither a
+subsidiary nor an interest in a joint venture. Significant influence is the power to participate in
+the financial and operating policy decisions of the investee but is not control or joint control over
+those policies.
+The results and assets and liabilities of associates are incorporated in these consolidated
+financial statements using the equity method accounting, except when the investment is
+classified as held for sale, in which case it is accounted for in accordance with IFRS 5 - Noncurrent
+Asset Held for Sale and Discontinued Operations. Under the equity method, an investment in an
+associate is initially recognised in the consolidated and separate statement of financial position
+53
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+at cost and adjusted thereafter to recognize the Group’s share of the profit or loss and Other
+comprehensive income of the associate. When the Group’s share of losses of an associate exceeds
+the Group's interest in that associate (which includes any long-term interest that, in substance,
+form part of the Groups net investment in the associate), the Group discontinues recognizing its
+share of further losses. Additional losses are recognised only to the extent that the Group has
+incurred legal or constructive obligations or made payments on behalf of the associate.
+Any excess of the cost of acquisition over the Group’s share of the net fair value of the identifiable
+assets, liabilities and contingent liabilities of an associate recognised at the date of acquisition is
+recognised as goodwill, which is included within the carrying amount of the investment. Any
+excess of the Group’s share of the net fair value of the identifiable assets, liabilities and contingent
+liabilities over the cost of acquisition, after reassessment, is recognised immediately in profit or
+loss.
+The requirements of IAS 39 are applied to determine whether it is necessary to recognize any
+impairment loss with respect to the Group’s investment in an associate. When necessary, the
+entire carrying amount of the investment (including goodwill) is tested for impairment in
+accordance with IAS 36 Impairment of Assets as a single asset by comparing its recoverable
+amount (higher of value in use and fair value less costs to sell) with its carrying amount. Any
+impairment loss recognised forms part of the carrying amount of the investment. Any reversal of
+that impairment loss is recognised in accordance with IAS 36 to the extent that the recoverable
+amount of the investment subsequently increases.
+When a group entity transacts with its associate, profits and losses resulting from the
+transactions with the associate are recognised in the Group’s consolidated financial statements
+only to the extent of interests in the associate that are not related to the Group.
+2.7 Investment Properties
+Investment property is property held on earn rentals or for capital appreciation or both.
+Investment property, including interest in leasehold land, is initially recognised at cost including
+the transaction costs. Subsequently, investment property is carried at fair value representing the
+open market value at the statement of financial position date determined by annual valuation
+carried out by external registered valuer’s, gains or losses arising from changes in the fair value
+are included in determining the profit or loss for the year to which they relate.
+Investment properties are derecognized when either they have been disposed or when the
+investment property is permanently withdrawn from use and no future economic benefit is
+expected from its disposal. On disposal of an investment property, the difference between the
+disposal proceeds and the carrying amount is charged or credited to profit or loss.
+Transfers are made to or from investment property only when there is a change in use. For a
+transfer from investment property to owner occupied property, the deemed cost for subsequent
+accounting is the fair value at the date of change in use. If owner occupied property becomes an
+investment property, the Group accounts for such property in accordance with the policy stated
+under property and equipment up to the date of the change in use.
+When the Group completes the construction or development of a self-constructed investment
+property, any difference between the fair value of the property at that date and its previous
+carrying amount is recognised in the income statement.
+2.8 Intangible Assets
+Software license costs and computer software that is not an integral part of the related hardware
+are initially recognised at cost, and subsequently carried at cost less accumulated amortization
+and accumulated impairment losses. Costs that are directly attributable to the production of
+54
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+identifiable computer software products controlled by the Group are recognised as intangible
+assets.
+Amortization is calculated using the straight-line method to write down the cost of each license
+or item of software to its residual value over its estimated useful life.
+Amortization begins when the asset is available for use, i.e. when it is in the location and
+condition necessary for it to be capable of operating in the manner intended by management,
+even when idle. Amortization ceases at the earlier date that the asset is classified as held for sale
+and the date that the asset is derecognized and ceases temporarily, while the residual value
+exceeds or is equal to the carrying value.
+Gains or losses arising from derecognition of an intangible asset are measured as the difference
+between the net disposal proceeds and the carrying amount of the asset and are recognised in
+the income statement when the asset is derecognized.
+Intangibles recognised as assets are amortized over their useful lives, which does not exceed five
+years.
+2.9 Property, Plant and Equipment
+All categories of property and equipment are initially recognised at cost. Cost includes
+expenditure directly attributable to the acquisition of the assets. Computer software, including
+the operating system that is an integral part of the related hardware is capitalized as part of the
+computer equipment.
+Work in progress owner-occupied property that are included in property, plant and equipment
+are stated at cost to date and are not yet de-componentised as the asset has not been put into
+use.
+Subsequent cost is included in the asset’s carrying amount or recognised as a separate asset, as
+appropriate, only when it is probable that future economic benefits associated with the item will
+flow to the Group and the cost of the item can be measured reliably. Repairs and maintenance
+expenses are charged to the income statement in the year in which they are incurred.
+Increases in the carrying amount arising on revaluation are recognised in other comprehensive
+income and accumulated in equity under the heading of revaluation surplus. Decreases that offset
+previous increases of the same asset are recognised in other comprehensive income. All other
+decreases are charged to the statement of profit or loss.
+Freehold land is not depreciated. Depreciation is calculated using the straight line method to
+write down the cost or the revalued amount of each asset to its residual value over its estimated
+useful life using the following annual rates:
+Land 0%
+Buildings 2%
+Motor Vehicles 25%
+Computer Equipment 20%
+Furniture & Fittings 10%
+Office Equipment 10%
+Plant & Machinery 10%
+Aircraft (Componentized) & Aircraft Engines 4%
+Airframes (Body) 3%
+Landing gears 10%
+APU Avionic& other electronic parts 15%
+55
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Depreciation on an item of property, plant and equipment commences when it is available for
+use and continues to depreciate until it is derecognized, even if during that period the item is idle.
+Depreciation of an item ceases when the item is retired from active use and is being held for
+disposal.
+Where no part, of items of property, plant and equipment have a cost that is significant in relation
+to the total cost of the item, the same rate of depreciation is applied to the whole item.
+On an annual basis, the assets’ residual values, depreciation method and useful lives are
+reviewed, and adjusted if appropriate at each statement of financial position date.
+An item of property and equipment is derecognized upon disposal or when no future economic
+benefits are expected from its use or disposal.
+Gains and losses on disposal of property and equipment are determined by reference to their
+carrying amounts and are taken into account in determining operating profit.
+2.10 Leases
+Based on the accounting policy applied the Company recognizes a right-of-use asset and a lease
+liability at the commencement date of the contract for all leases conveying the right to control
+the use of an identified assets for a period. The commencement date is the date on which a lessor
+makes an underlying asset available for use by a lessee.
+The right-of-use assets are initially measured at cost, which comprises:
+• the amount of the initial measurement of the lease liability.
+• any lease payments made at or before the commencement date, less any lease incentives.
+• any initial direct costs incurred by the bank.
+• an estimate of costs to be incurred by the lessee in dismantling and removing the underlying
+assets or restoring the site on which the assets are located.
+After the commencement date the right-of-use assets are measured at cost less any accumulated
+depreciation and any accumulated impairment losses and adjusted for any re-measurement of
+the lease liability.
+Depreciation is calculated using the straight-line method over the estimated useful lives of the
+leased asset.
+The lease liability is initially measured at the present value of the lease payments that are not
+paid at that date. These include:
+• fixed payments, less any lease incentives receivable.
+• variable lease payments that depend on a rate, initially measured using the rate as at the
+commencement date:
+• amounts expected to be payable by the company under residual value guarantees.
+• the exercise price of a purchase option if the company is reasonably certain to exercise that
+option.
+The lease payments are discounted using the company's incremental borrowing rate or the rate
+implicit in the lease contract.
+2.11 Statutory Deposits
+Statutory Deposit represents 10% of the paid-up capital of the Company deposited with the
+Central Bank of Nigeria (CBN) pursuant to Section 10(3) of the Insurance Act CAP 117 LFN 2003.
+Statutory deposits are cash balances held with the Central Bank of Nigeria (CBN) in compliance
+with the Insurance Act, CAP 117, Laws of the Federation of Nigeria, 2003 for the life insurance
+56
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+companies. The deposits are only available is a last resort to the Company if it goes into
+liquidation. Statutory deposits are measured at amortised cost.
+2.12 Hypothecation of assets
+The Company structured its assets to meet the requirements of the Insurance Act 2003 such that
+policy holder’s assets and funds are not co-mingled with shareholders’. In particular, investment
+properties, investment securities (equities and fixed income securities) and insurance funds
+hypothecated to policyholders are distinguished from those owned by the shareholders.
+2.13 Retirement Benefit Obligations
+Defined Contribution Plan
+A defined contribution plan is a pension plan under which the company pays fixed contributions
+into a separate entity. The company has no legal or constructive obligations to pay further
+contributions if the fund does not hold sufficient assets to pay all employees the benefits relating
+to employee service in the current and prior periods.
+The company pays contributions to publicly or privately administered pension insurance plans
+on a mandatory, contractual or voluntary basis. The company has no further payment obligations
+once the contributions have been paid. The contributions are recognised as employee benefit
+expense when they are due. Prepaid contributions are recognised as an asset to the extent that a
+cash refund or a reduction in the future payments is available.
+In accordance with the provisions of the Pension Reform Act 2014. The company engage in a
+contributory pension with the employer and employee contributing a minimum of 10% and 8%
+of basic salary, housing and transport allowance respectively to each employee’s retirement
+savings account maintained with their nominated pension fund administrators.
+Short-term employee benefits
+Start-term employee benefit obligations are measured on an undiscounted basis and are
+expensed as the related service is provided.
+A liability is recognised for the amount expected to be paid under short-term cash bonus or
+profit-sharing plans if the company has a present legal or constructive obligation to pay this
+amount as a result of past service provided by the employee and obligation can be estimated
+reliably.
+Defined benefit and long-term benefits plan
+A defined benefit plan is a pension plan that defines an amount of pension benefit that an
+employee will receive on retirement, usually dependent on one or more factors, such as age, years
+of service and compensation.
+The liability recognised in the statement of financial position in respect of the defined benefit
+pension plan is the present value of the defined benefit obligation at the date of the statement of
+financial position less the fair value of plan assets, together with adjustments for unrecognised
+actuarial gains or losses and past service costs.
+Terminal Benefits/Severance pay
+This is determined on need - basis. The Company enters into Collective Bargaining Agreement
+with Staff Union (staff representatives) anytime there is a business imperative to optimize.
+Management endorses Collective Bargaining Agreement in this instance as the request comes up
+57
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.14 Provisions
+General Provisions are recognised when the Group has a present obligation (legal or
+constructive) as a result of a past event, and it is probable that an outflow of resources embodying
+economic benefits will be required to settle the obligation and a reliable estimate can be made of
+the amount of the obligation. Where the Group expects some or all of a provision to be
+reimbursed, the reimbursement is recognised as a separate asset but only when the
+reimbursement is virtually certain. The expense relating to any provision is presented in the
+income statement net of any reimbursement, if the effect of the time value of money is material,
+provisions are discounted using a current pre-tax rate that reflects, where appropriate, the risks
+specific to the liability. Where discounting is used, the increase in the provision due to the
+passage of time is recognised as a finance cost.
+2.15 Current Income Tax
+Current income tax is the amount of income tax payable on the taxable profit for the year
+determined in accordance with the Nigeria Income Tax Act. The tax rates and tax laws used to
+compute the amount are those that are enacted or substantively enacted as at the reporting date.
+2.16 Deferred Income Tax
+Deferred income tax is provided in full on all temporary differences except those arising on the
+initial recognition of an asset or liability.
+Deferred income tax is determined using the liability method on all temporary differences arising
+between the tax bases of assets and liabilities and their carrying values for financial reporting
+purposes, using tax rates and laws enacted or substantively enacted at the statement of financial
+position date and expected to apply when the related deferred income tax asset is realized or the
+deferred tax liability is settled.
+Deferred income tax assets are recognised only to the extent that it is probable that future taxable
+profits will be available against which the temporary differences can be utilized. The carrying
+amount of deferred tax assets is reviewed at each reporting date and reduced to the extent that
+it is no longer probable that sufficient taxable profit will be available to allow all or part of the
+deferred income tax asset to be utilized, unrecognized deferred tax assets are reassessed at each
+reporting date and are recognised to the extent that it has become probable that future taxable
+profit will allow the deferred tax asset to be recovered
+Deferred tax assets and liabilities are measured at the tax rates that are expected to apply to the
+year when the asset is realized or the liability is settled, based on tax rates (and tax laws) that
+have been enacted or substantively enacted, at the reporting date.
+Deferred tax relating to items recognised outside profit or loss is recognised outside profit or
+loss. Deferred tax items are recognised in correlation to the underlying transaction either in other
+comprehensive income or directly inequity.
+Deferred tax assets and deferred tax liabilities are offset, if a legally enforceable right exists to set
+off such:
+* Current tax assets against current income tax liabilities and
+* The deferred taxes relate to the same taxable entity and
+* The same taxation authority
+2.17 Share Capital and Share Premium
+Ordinary shares are recognized at par value and classified as ‘share capital’ in equity. Any
+amounts received over and above the par value of the shares issued are classified as ‘share
+premium’ in equity.
+58
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.18 Statutory Contingency Reserve
+The Group maintains contingency reserves in accordance with the provisions of Insurance Act
+2003 to cover fluctuations in securities and variations in statistical estimates at the rate equal to
+the higher of 1% of total premium or 10% of the net profit.
+2.19 Retained Earnings
+The retained earnings represent the amount available for dividend distribution to the equity
+shareholders of the company. See statement of changes in equities for movement in retained
+earnings.
+2.20 Assets Revaluation Reserve
+This represents the Group's revaluation reserve emanating from revaluation of certain assets
+2.21 Income Recognition
+Insurance Revenue
+Revenue on insurance contract is recognized as revenue when paid by the policy holder.
+For single premium business revenue is recognised on the date on which the policy is effect.
+Insurance revenue comprise the total premiums received for the whole period of cover provided
+by contracts entered during the accounting period and are recognised on the date on which the
+policy incepts. Revenue includes any adjustments arising in the accounting period for premiums
+receivable in respect of business written in prior accounting periods.
+Revenue collected by intermediaries, but not yet received, are assessed based on estimates from
+underwriting or past experience and are included in revenue collected.
+2.22 Investment Income
+Interest income is recognised in the income statement as it accrues and is calculated by using the
+effective interest rate method. Fees and commissions that are an integral part of the effective
+yield of the financial asset or liability are recognised as an adjustment to the effective interest
+rate of the instrument. Investment income consists of dividends, interest and rental income on
+investment properties, interest income on loans and receivables, realised gains and losses as well
+as unrealised gains and losses on fair value assets. Rental income is recognised on an accrual -
+basis.
+Interest income
+Interest income is recognised in profit or loss as it accrues and is calculated by using the effective
+interest rate method. Fees and commissions that are an integral part of the effective yield of the
+financial asset or liability are recognised as an adjustment to the effective interest rate of the
+instrument. The effective interest rate is the rate that exactly discounts estimated future cash
+payments or receipts through the expected life of the financial instrument or, when appropriate,
+a shorter period to the net carrying amount of the financial asset or financial liability.
+Dividend income
+Dividend income from investment is recognised when the shareholders’ right to receive payment
+have been established.
+59
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Realised gains and losses and unrealised gains and losses
+Realised gains and losses on investments include gains and losses on financial assets and
+investment properties. Realised gains and losses on the sale of investments are calculated as the
+difference between net sales proceeds and the original or amortised cost or fair value and are
+recorded on occurrence of the sale transaction.
+Unrealised gains or losses represent the difference between the carrying value at the year end
+and the carrying value at the previous year end or purchase value during the year, less the
+reversal of previously recognised unrealised gains and losses in respect of disposals during the
+year.
+Other operating income
+Other operating income represents income generated from sources other than premium revenue
+and investment income. It includes rental income, profit on disposal of property and equipment,
+salvage recoveries and other sundry income.
+2.23 Interest Income and Expense
+Interest income and expense are recognized in profit or loss using the effective interest method.
+The effective Interest rate is the rate that exactly discounts the estimated future cash (or, where
+appropriate, the next re-pricing date) to the carrying amount of the financial asset or liability.
+When calculating the effective interest rate, the entity estimates future cash flows considering all
+contractual terms of the financial instruments but not future credit losses.
+The calculation of the effective interest rate includes contractual fees and points paid or received
+transaction costs and discounts or premium that are integral part of the effective interest rate.
+Transaction costs are incremental costs that are directly attributable to the acquisition, issue or
+disposal of a financial asset or liability.
+Interest income and expense presented in the financial statement include:
+Interest on financial assets and liabilities measured at amortized cost calculated on an effective
+interest basis. Interest on financial assets measured at fair value through profit or loss calculated
+on an effective interest rate basis.
+Expense Recognition
+2.24 Expenses
+Expenses are recognised in the income statement when a decrease in future economic benefit
+related to a decrease in an asset or an increase of a liability has arisen that can be measured
+reliably. This means, in effect, that recognition of expenses occurs simultaneously with the
+recognition of an increase in liabilities or a decrease in assets (for example, the accrual of
+employee entitlements or the depreciation of equipment).
+When economic benefits are expected to arise over several accounting periods and the
+association with income can only be broadly or indirectly determined, expenses are recognised
+in the income statement on the basis of systematic and rational allocation procedures.
+This is often necessary in recognizing the equipment associated with the using up of assets such
+as property, plant and equipment in such cases the expense is referred to as a deprecation or
+amortization. These allocation procedures are intended to recognise expenses in the accounting
+periods in which the economic benefits associated with these items are consumed or expire, an
+expense is recognised immediately in the income statement when expenditure produces no
+future economic benefits or when, and to the extent that future economic benefits do not qualify,
+or cease to qualify, for recognition in the statement of financial position as an asset.
+60
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.25 Management expenses
+Management expenses are recognised in profit or loss when goods are received, or services
+rendered. They are expenses other than claims, maintenance and underwriting expenses and
+include employee benefits, depreciation charges and other operating expenses.
+2.26 Impairment of non-financial assets
+The group assesses at each reporting date whether there is an indication that an asset may be
+impaired. If any such indication exists, or when annual impairment testing for an asset is
+required, the Group estimates the asset’s recoverable amount. An impairment loss is recognised
+for the amount by which the asset’s carrying amount exceeds its recoverable amount, an asset’s
+recoverable amount is the higher of an asset’s or cash generating unit’s fair value less costs to
+sell and its value in use.
+The recoverable amount is determined for an individual asset, unless the asset does not generate
+cash inflows that are largely independent of those from other assets or Groups of assets. In
+assessing value in use, the estimated future cash flows are discounted to their present value using
+a pre-discount rate that reflects current market assessments of the time value of money and the
+risks specific to the asset, in determining fair value less costs to sell, an appropriate valuation
+model is used.
+Impairment losses of continuing operations are recognised in the income statement in those
+expenses categories consistent with the function of the impaired asset, except for property
+previously revalued where the revaluation was taken to comprehensive income, in this case the
+impairment is also recognised in comprehensive income up to the amount of any previous
+revaluation.
+An assessment is made at each reporting date as to whether there is any indication that
+previously recognised impairment losses may no longer exist or may have decreased. If such
+indication exists, the Group makes an estimate of recoverable amount. A previous impairment
+loss is reversed only if there has been a change in the estimates used to determine the asset's
+recoverable amount since the last impairment loss was recognised, if that is the case the carrying
+amount of the asset is increased to its recoverable amount.
+The increased amount cannot exceed the carrying amount that would have been determined, net
+of depreciation, had no impairment loss been recognised for the asset in prior years. Such
+reversal is recognised in the income statement unless the asset is carried at revalued amount, in
+which case the reversal is treated as a revaluation increase.
+2.27 Critical accounting estimates and judgements
+When preparing the financial statements management undertakes a number of judgements,
+estimates and assumptions about recognition and measurement of assets, liabilities, income and
+expenses. The actual results are likely to differ from the judgements, estimates and assumptions
+made by management and will seldom equal the estimated results. Information about the
+significant judgements, estimates and assumptions that have the most significant effect on the
+recognition and measurement of assets, liabilities, income and expenses are discussed.
+2.28 Process used to decide on assumptions.
+2.28.1 Valuation interest rate:
+The valuation interest rate is based on current market risk-free yields with adjustments. The use
+of a risk-free rate also implies that future investment margins (in excess of the risk-free return)
+will not be capital. Further the result is a “fair value” liability calculation which aids the
+comparability of accounts between insurers.
+61
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+The rate of interest used in the valuation is 12.83% PA, with the exception' of annuities which
+adopted an interest rate of 12.79%. The basis to be adopted for distribution of profits among
+policyholders and shareholders is determined by the Directors, considering the requirements of
+the 2003 Insurance Act with regards to such distributions and the advice of the Actuary.
+a. The directors acting on the advice of the Actuary, determine the principles upon which
+any distribution of profits to policy holders will be made
+b. Reversionary bonuses are allotted in respect of each full year’s premium paid
+c. Reversionary bonuses vest on the policy anniversary
+2.28.2 Expenses
+The Group makes provisions for expenses in its mathematical reserves of an amount which is not
+less than the amount expected to be incurred in fulfilling its long-term insurance contracts.
+Future maintenance expenses
+The regulatory maintenance expenses are derived from the best estimate maintenance expenses
+plus a prudence margin for adverse deviations. The best estimate maintenance expenses are
+calculated using the sum of the following:
+(1) Per policy maintenance charges
+(2) Allocated operating expenses
+The valuation expense assumptions are as follows:
+Current Valuation Previous valuation
+N’per policy N’per policy
+Type of Business
+Individual Life 20,975 20,975
+Deposit Based Policies 20,975 20,975
+Annuities 20,975 20,975
+2.28.3 Expense Inflation
+The above expenses are subject to inflation at 13.19% pa. Consumer Price Inflation at 31
+December 2023 was 21.34%. Both the expense inflation and expense assumption will be actively
+reviewed in subsequent valuations once more experience data and an expense analysis is made
+available.
+2.28.4 Mortality
+An appropriate base table of standard mortality is chosen depending on the type of contract. An
+investigation into Group’s experience over the most recent three years is performed, and
+statistical methods are used to adjust the rates reflected in the table to a best estimate of
+mortality for that year.
+The Mortality Table used in the valuation is the Mortality of Assured Lives 1967-70 (A6770)
+without adjustment. The annuities were valued using the UK’s (PA90)-2 Annuitants table.
++ Where negative reserves were calculated, these were set to zero to prevent policies being
+treated as assets.
++ Any policies subject to substandard terms were valued using the same basis as standard
+policies.
+For annuity, we have adopted the UK Pensioner table PA (90) with age rating of -1 to-2
+62
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+2.28.5 Withdrawals
+Surrenders are acceptable under the Endowment life assurance portfolio after policies have been
+in force for a pre-defined length of time (at which policies become eligible to receive a surrender
+value payout).
+2.28.6 Group life businesses
+Unexpired premium reserves (DPR) are reduced by a margin representing acquisition expenses,
+as these have been loaded into rates yet they have already been incurred. The acquisition expense
+ratio of 20% of gross premium was adopted. Group Life commission is currently paid at 9% of
+premium and a NAICOM (regulatory) fee is payable at 1% of premium. The remaining 10% of
+premium reflects the loading for additional acquisition expenses.
+2.28.7 Reinsurance agreements
+Reinsurance is allowed for in the valuation by having gross and reinsurance ceded records in the
+policy files. All reserves have been reported gross of reinsurance, with the value of the
+reinsurance asset reported separately.
+2.28.8 Changes in assumptions
+The Group did not change its assumptions for the insurance contracts.
+2.28.9 Insurance and Market risk sensitivities
+The sensitivity analysis of insurance and market risk is used as it provides a detailed
+understanding of the risks inherent in the business and to help develop a risk monitoring and
+management framework to ensure the risks remain within limits, taking into account the
+available capital and shareholder risk tolerance levels.
+2.29 Insurance contracts
+Key types of insurance contracts issued, and reinsurance contracts held.
+The Company issues the following type of contracts that are accounted for in accordance with
+IFRS 17 Insurance Contracts:
+Life insurance
+For the Life insurance products, the Group offers the following insurance contracts with
+indication of IFRS 17 methodologies applied on these contracts:
+(a) Individual Life With-profit Policies - These are
+endowment plans without participating features. The
+Group accounts for these policies applying the General
+Model.
+Individual Life Without-profit Policies including:
+Term life insurance contracts providing level or decreasing sum assured coverage for a
+•
+limited period in exchange for renewable fixed premiums.
+Whole of life assurance contracts.
+•
+The Company accounts for these policies applying the General Model.
+(b) Annuity Policies including:
+Fixed annuity contracts providing the annuitant with a guaranteed income payout for a
+•
+limited period.
+63
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Deferred annuity contracts providing the annuitant with a guaranteed income payout
+•
+for life, with the first payment due at the end of the deferment period, provided all
+contractual premiums were paid. The policyholder is entitled to a surrender benefit (a
+portion of the accumulation balance at a guaranteed interest rate) if premiums are not
+fully paid.
+The Company accounts for these policies applying the General Model.
+(c) Life Business – Deposit based policies.
+These contracts are individual term assurance plans providing a death
+benefit with non-distinct investment components. The Group accounts for
+these policies applying the General Model.
+(d) Group Life Insurance - The Group issues term assurance plans providing death
+benefits to employees of businesses with coverage of one year or less.
+The Company accounts for these contracts applying the Premium Allocation Approach (PAA).
+Reinsurance contracts
+The Company also holds the following types of reinsurance contracts to mitigate risk
+exposure.
+For the life business, the Company holds quota share reinsurance treaties and accounts
+•
+for these treaties applying the PAA.
+Definitions and classifications
+A.
+Insurance products sold by the Group are classified as insurance contracts when the Group
+accepts significant insurance risk from a policyholder by agreeing to compensate the
+policyholder if a specified uncertain future event adversely affects the policyholder.
+This assessment is made on a contract-by-contract basis at the contract issue date. In
+making this assessment, the Group considers all its substantive rights and obligations,
+whether they arise from contract, law or regulation.
+The Group determines whether a contract contains significant insurance risk by assessing if
+an insured event could cause the Group to pay to the policyholder additional amounts that
+are significant in any single scenario with commercial substance even if the insured event
+is extremely unlikely or the expected present value of the contingent cash flows is a small
+proportion of the expected present value of the remaining cash flows from the
+insurance contract.
+The Group does not issue any contracts with direct participating features
+Combining a set or series of contracts
+B.
+Sometimes, the Group enters two or more contracts at the same time with the same or
+related counterparties to achieve an overall commercial effect. The Group accounts for
+such a set of contracts as a single insurance contract when this reflects the substance of the
+contracts. When making this assessment, the Group considers whether:
+64
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+The rights and obligations are different when looked at together compared to when
+•
+looked at individually.
+The Group is unable to measure one contract without considering the other.
+•
+Separating components from insurance and reinsurance contracts
+C.
+The Group assesses its insurance and reinsurance products to determine whether they
+contain components which must be accounted for under another IFRS rather than IFRS 17
+(distinct non- insurance components). After separating any distinct components, an entity
+must apply IFRS 17 to all remaining components of the (host) insurance contract.
+Currently, the Group’s products do not include distinct components that require
+separation.
+Some term life contracts issued by the Group include a surrender option under which the
+surrender value is paid to the policyholder on maturity or earlier lapse of the contract.
+These surrender options have been assessed to meet the definition of a non-distinct
+investment component in IFRS 17.
+However, receipts and payments of the investment components are excluded from insurance
+revenue and insurance expenses. The surrender options are considered non-distinct
+investment components as the Group is unable to measure the value of the surrender option
+component separately from the life insurance portion of the contract.
+The standard requires an insurer to identify and separate distinct components in certain
+circumstances. When separated, those components are accounted for under the relevant
+IFRS (i.e., not under IFRS 17). Investment components that are highly interrelated with the
+insurance contract of which they form a part are considered non-distinct and are not
+separately accounted for. However, these non-distinct investment components are excluded
+from the insurance service results.
+Paragraph B18 of IFRS 17 states that an entity needs to assess the insurance risk excluding
+scenarios that have no commercial substance (ie no discernible effect on the economics of
+the transaction). Hence, for the purpose of determining if an insurance contract includes an
+investment component the entity needs to assess whether scenarios in which no payments are
+made have commercial substance. The entity does not consider a scenario for which no payment
+is made if that scenario has no commercial substance.
+For African Alliance, none of the products issued currently have distinct investment components.
+For African Alliance deposit-based endowments, unallocated investment income is what covers
+policy expenses and management expenses as well as guaranteed death benefits. This effectively
+implies that the investment component in these products is interrelated with the risk component.
+The investment component for African Alliance endowments comprises surrender and maturity
+benefit payable.
+65
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Level of aggregation
+D.
+IFRS 17 requires an entity to determine the level of aggregation for applying its requirements.
+The Group identifies portfolios by aggregating insurance contracts that are subject to similar
+risks and managed together. In grouping insurance contracts into portfolios, the Group
+considers the similarity of risks rather than the specific labelling of product lines. The Group has
+determined that all contracts within each product line, as defined for management purposes,
+have similar risks. Therefore, when contracts are managed together, they represent a portfolio
+of contracts.
+Each portfolio is subdivided into groups of contracts to which the recognition and measurement
+requirements of IFRS 17 are applied.
+At initial recognition, the Group segregates contracts based on when they were issued. A cohort
+contains all contracts that were issued within a 12- month period. Each cohort is then further
+disaggregated into three groups of contracts:
+Contracts that are onerous on initial recognition
+•
+Contracts that, on initial recognition, have no significant possibility of becoming onerous
+•
+subsequently
+Any remaining contracts
+•
+For the Retail Life business, the determination of whether a contract or a group of contracts is
+onerous is based on the expectations as at the date of initial recognition, with fulfilment cash
+flow expectations determined on a probability-weighted basis.
+The composition of groups established at initial recognition is not subsequently reassessed.
+The profitability of groups of contracts is assessed by actuarial valuation models that take into
+consideration existing and new businesses.
+For short term contracts accounted for applying the PAA, the Group determines that contracts
+are not onerous on initial recognition, unless there are facts and circumstances indicating
+otherwise. For contracts that are not onerous, the Group assesses, at initial recognition, that
+there is no significant possibility of becoming onerous subsequently by assessing the likelihood
+of changes in applicable facts and circumstances. The Group considers facts and circumstances
+to identify whether a group of contracts are onerous based on:
+Significant changes in external conditions including economic or regulatory changes e.g.
+•
+(PRAN rate review)
+Changes to the organization or processes
+•
+Changes in underwriting and pricing strategies
+•
+Trends in experience and expected variability in cashflows
+•
+66
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+Level of aggregation - continued
+This consideration is only required for Liability for Remaining Coverage (LRC) and not Liability
+for Incurred Claims (LIC) which is already measured at current fulfilment value. Fulfilment
+cashflows can be estimated at whichever aggregate level is deemed appropriate and then
+subsequently allocated into IFRS 17 portfolios and groups. The fact that incurred claims of a
+particular cohort is loss-making does not mean the LRC will be onerous as well. Judgement is
+applied to determine whether each cohort’s LRC will be like this incurred experience and hence
+onerous. For example, actions taken to improve profitability a historically loss-making cohort
+may indicate that the cohort will be non-onerous going forward.
+All short-term contracts have currently been assessed as having no possibility of becoming
+onerous. The Group expects that improvements will be sustained in future and therefore the
+cohort will be non-onerous. In subsequent periods, non-onerous contracts are re-assessed
+based on the likelihood of prevailing facts and circumstances leading to significant possibility
+of becoming onerous.
+Reinsurance contracts held are assessed for aggregation on an individual contract basis and are
+assessed separately from insurance contracts. The smallest unit of account is a reinsurance
+contract, even where this contract covers more than one type of insurance product. However,
+there are cases where a reinsurance contract covers separate and identifiable product lines
+which are only included in the same legal document for administrative convenience. These
+contracts have been separated into its different component.
+If two or more reinsurance contracts are written on a particular product line, these may be
+grouped together in the same portfolio as they will be covering risks of the same nature and
+will be managed together. While, facultative and excess of loss contracts are in separate
+groups; though they cover the same risks and are even managed together, differing
+measurement approaches as well as recognition requirements may apply
+E. Recognition
+Insurance contracts are recognised as at the date when the first payment is received by the
+policyholder. As African Alliance adheres to the statutory “no premium no cover”, the date
+premium is received from the policyholder will always be earlier or on the same date as the
+coverage period.
+This premium receipt date would then be used to separate the groups of insurance contracts
+into yearly cohorts. The contract groupings shall not be reassessed until they are derecognized.
+As required by the standard, African Alliance will recognize contracts from the date at which they
+are determined to be onerous, if this occurs before premium payment or cover commencement.
+F. Contract Boundaries
+The Group includes in the measurement of a group of insurance contracts all the future cash
+flows within the boundary of each contract in the group. Cash flows are within the boundary of
+an insurance contract if they arise from substantive rights and obligations that exist during the
+67
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+reporting period in which the Group can compel the policyholder to pay the premiums, or in
+which the Group has a substantive obligation to provide the policyholder with insurance
+contract services. A substantive obligation to provide insurance contract services ends when:
+The Group has the practical ability to reassess the risks of the particular policyholder and, as a
+•
+result, can set a price or level of benefits that fully reflects those risks. or
+Both of the following criteria are satisfied:
+•
+The Group has the practical ability to reassess the risks of the portfolio of insurance
+•
+contracts that contain the contract and, as a result, can set a price or level of benefits that
+fully reflects the risk of that portfolio.
+The pricing of the premiums up to the date when the risks are reassessed does not
+•
+consider the risks that relate to periods after the reassessment date.
+A liability or asset relating to expected premiums or claims outside the boundary of the insurance
+contract are not recognized. Such amounts relate to future insurance contracts.
+For life contracts with renewal periods, the Group assesses whether premiums and related cash
+flows that arise from the renewed contract are within the contract boundary. The pricing of the
+renewals is established by the Group by considering all the risks covered for the policyholder by
+the Group, that the Group would consider when underwriting equivalent contracts on the
+renewal dates for the remaining service. The Group reassesses contract boundary of each group
+at the end of each reporting period.
+68
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+G. Measurement of insurance contracts issued
+1. General Model
+1.1 Insurance contracts - initial measurement
+The Group measures a group of contracts on initial recognition as the sum of the expected
+fulfilment cash flows within the contract boundary and the Contractual Service Margin (CSM)
+representing the unearned profit in the contracts relating to services that will be provided under
+the contracts.
+Fulfilment cash flows within contract boundary
+The fulfilment cash flows are the current unbiased and probability-weighted estimates of the
+present value of the future cash flows, including a risk adjustment for non-financial risk. In
+arriving at a probability-weighted mean, the Group considers a range of scenarios to
+establish a full range of possible outcomes incorporating all reasonable and supportable
+information available without undue cost or effort about the amount, timing and
+uncertainty of expected future cash flows. The estimates of future cash flows reflect
+conditions existing at the measurement date including assumptions at that date about the
+future The Group estimates expected future cash flows for a group of contracts at a portfolio
+level and allocates them to the groups in that portfolio in a systematic and rational way.
+When estimating future cash flows, the Group includes all cash flows within the contract
+boundary including:
+Premiums and any additional cash flows resulting from those premiums.
+•
+Reported claims that have not yet been paid, claims incurred but not yet reported, future
+•
+claims expected to arise from the policy and potential cash inflows from recoveries on future
+claims covered by existing insurance contracts.
+An allocation of insurance acquisition cash flows attributable to the portfolio to which the
+•
+issued contract belongs.
+Claim handling costs.
+•
+Costs of providing contractual benefits in kind, such as home and vehicle repair
+•
+Policy administration and maintenance costs including recurring commissions expected to
+•
+be paid to intermediaries for policy administration services only (recurring commissions that
+are insurance acquisition cash flows are treated as such in the estimate of future cash flows)
+Transaction-based taxes
+•
+An allocation of fixed and variable overheads directly attributable to the fulfilment of
+•
+insurance contracts including overhead costs such as accounting, human resources,
+information technology and support, building depreciation, rent, and maintenance and
+utilities.
+Costs incurred for performing investment activities that enhance insurance coverage benefits
+•
+for the policyholder.
+Costs incurred for providing investment-related service and investment-return service to
+•
+policyholders.
+Other costs specifically chargeable to the policyholder under the terms of the contract.
+•
+69
+
+AFRICAN ALLIANCE
+INSURANCE PLC ANNUAL REPORT FOR
+THE YEAR ENDED
+31 DECEMBER 2023
+The Group does not provide investment-return services in respect of contracts that it issues, nor
+does it perform investment activities for the benefit of policyholders.
+The Group incorporates, in an unbiased way, all reasonable and supportable information
+available without undue cost or effort about the amount, timing and uncertainty of those
+future cash flows. The Company estimates the probabilities and amounts of future payments
+under existing contracts based on information obtained, including:
+Information about claims already reported by policyholders.
+•
+Other information about the known or estimated characteristics of the insurance contracts
+•
+Historical data about the Company’s own experience, supplemented, when necessary, with
+•
+data from other sources. Historical data is adjusted to reflect current conditions.
+Current pricing information, when available
+•
+The measurement of fulfilment cash flows includes insurance acquisition cash flows which are
+allocated as a portion of premium to profit or loss (through insurance revenue) over the period
+of the contract in a systematic and rational way based on the passage of time. The Group does
+not elect to accrete interest on insurance acquisition cash flows to be allocated to profit or loss.
+Discount Rate
+The time value of money and financial risk is measured separately from expected future cash
+flows with changes in financial risks recognized in profit or loss at the end of each reporting
+period unless the Group has elected the accounting policy to present the time value of money
+separately in profit or loss and other comprehensive income. The Group measures the time value
+of money using discount rates that reflect the liquidity characteristics of the insurance contracts
+and the characteristics of the cash flows, consistent with observable current market prices. They
+exclude the effect of factors that influence such observable market prices but do not affect the
+future cash flows of the insurance contracts (e.g., credit risk).
+In determining discount rates for cash flows, the Group uses the ‘bottom-up approach’ to
+estimate discount rates starting from a risk-free rate with similar characteristics, plus an
+illiquidity premium where applicable. Risk free rates are determined by reference to the yields
+of highly liquid FGN Bonds. The illiquidity premium is determined by reference to observable
+narrates, including sovereign debt, corporate debt and market swap rat
+70
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Risk adjustment for non-financial risk
+The Group measures the compensation it would require for bearing the uncertainty about the
+amount and timing of cash flows arising from insurance contracts, other than financial risk,
+separately as an adjustment for non-financial risk
+The Group uses the cost of capital method in estimating the risk adjustment. The level of
+capital and the cost of capital rate that feed this estimation technique are calibrated from
+the Group economic capital's approach within which the Group estimates the impact of non-
+financial risks. The economic capital approach includes a quantitative measure of the Group's
+risk appetite which allows a specific measure of the Group’s non-financial risk and the degree
+of its risk aversion for financial reporting purposes. The Group’s economical capital approach,
+and the risk adjustment calculation derived from it, include the benefits of diversification at
+the issuing entity level. This is allocated to all the groups of insurance contracts. Diversification
+benefits are derived from a study of the negative correlation that exists among the different
+non-financial variables impacting the cash flows from the portfolios of the Group and results
+in lower economic capital being necessary to absorb the residual level of uncertainty.
+Contractual service margin (CSM)
+The CSM is a component of the overall carrying amount of a group of insurance contracts
+representing unearned profit that the Group will recognize as it provides insurance contract
+services over the coverage period.
+At initial recognition, the Group measures the CSM at an amount that, unless a group of
+insurance contracts is onerous, results in no gains recognized in profit or loss arising from:
+The expected fulfilment cash flows of the group.
+•
+The amount of any derecognized asset for insurance acquisition cash flows allocated to the
+•
+group.
+Any other asset or liability previously recognized for cash flows related to the group.
+•
+Any cash flows that have already arisen on the contracts as of that date.
+•
+If a group of contracts is onerous, the Group recognizes a loss on initial recognition. This
+results in the carrying amount of the liability for the group being equal to the fulfilment cash
+flows, and the CSM of the group being nil. A loss component is recognized for any loss on initial
+recognition of the group of insurance contracts.
+The Group determines at initial recognition the group’s coverage units. The Group then
+allocates the group’s CSM based on the coverage units provided in the period.
+The Group allocates contracts acquired with claims in the settlement phase into annual groups
+based on the expected profitability of the contracts at the date of acquisition. The Group uses
+the consideration received or paid as an approximation of premiums to calculate the CSM
+on initial recognition.
+71
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Insurance acquisition cash flows
+The Group includes insurance acquisition cash flows in the measurement of a group of insurance
+contracts if they are directly attributable to either the individual contracts in a group, the group
+itself or the portfolio of insurance contracts to which the group belongs.
+The Group estimates, at a portfolio level, insurance acquisition cash flows not directly
+attributable to the group but directly attributable to the portfolio. The Group then
+allocates them to the group of newly written and renewed contracts on a systematic and
+rational basis.
+The Group applies judgement in determining the inputs used in the methodology to
+systematically and rationally allocate insurance acquisition cash flows to groups of insurance
+contracts. This includes judgements about whether insurance contracts are expected to arise
+from renewals of existing insurance contracts and, where applicable, the amount to be
+allocated to groups including future renewals and the volume of expected renewals from new
+contracts issued in the period.
+In the current and prior years, the Group did not allocate any insurance acquisition cash flows
+to future groups of insurance contracts, as it did not expect any renewal contracts to arise
+from new contracts issued in the period.
+In the current and prior year, the Group did not identify any facts and circumstances indicating
+that the assets may be impaired.
+Deferred acquisition costs (DAC)
+Under IFRS 4, the Group recognised deferred acquisition cash flows separately as assets. Under
+IFRS 17, insurance acquisition cash flows are allocated to existing and future groups of insurance
+contracts on a systematic and rational basis. For insurance contracts measured under the GMM,
+on initial recognition of a group of contracts, the allocated insurance acquisition cash flows
+decrease the CSM and are thus implicitly deferred within the CSM, leading to a lower amount of
+CSM amortisation recognised in revenue in future reporting periods as services are rendered.
+However, for presentation purposes, directly attributable acquisition costs allocated to a group
+of contracts are amortised as an insurance service expense in a systematic way based on the
+passage of time, with an equal amount recognised as insurance revenue.
+Under the PAA, the Group recognised insurance acquisition cash flows in the liability for
+remaining coverage (LRC) and amortised insurance acquisition cash flows as insurance service
+expenses.
+1.2. Insurance contracts – Subsequent Measurement (General Model)
+In estimating the total future fulfilment cash flows, the Group distinguishes between those
+relating to already incurred claims and those relating to future service. At the end of each
+reporting period, the carrying amount of the group of insurance contracts will reflect a
+current estimate of the liability for remaining coverage (LRC) as at that date and a current
+estimate of the liability for incurred claims (LIC).
+72
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+The LRC represents the Group’s obligation to investigate and pay valid claims under existing
+contracts for insured events that have not yet occurred, amounts that relate to other insurance
+contract services not yet provided (i.e. provision of investment-return and investment-related
+services) and investment components and other amounts not related to insurance contract
+services that have not yet been transferred to the LIC.
+The LRC is comprised of:
+the fulfilment cash flows relating to future service,
+(a)
+the CSM yet to be earned and
+(b)
+any outstanding premiums for insurance contract services already provided.
+(c)
+The LIC includes the Group’s liability to pay valid claims for insured events that have already
+incurred, other incurred insurance expenses arising from past coverage service and the
+liability for claims incurred but not yet reported. It also includes the Group’s liability to pay
+amounts the Group is obliged to pay the policyholder under the contract. This includes
+repayment of investment components, when a contract is derecognized. The current estimate
+of LIC comprises the fulfilment cash flows related to current and past service allocated to the
+group at the reporting date.
+Changes in fulfilment cash flows
+At the end of each reporting period, the Group updates the fulfilment cash flows for both LIC and
+LRC to reflect the current estimates of the amounts, timing and uncertainty of future cash
+flows, as well as discount rates and other financial variable.
+The Group has an accounting policy choice which calculates changes in fulfilment cash flows at
+the end of a reporting period for changes in non- financial assumptions, changes in discount
+rates and financial assumptions. The Group first calculates the changes in discount rates and
+financial assumptions on the fulfilment cash flows (as expected at the beginning of the period)
+and then calculate changes on those cash flows from the change in non-financial assumptions.
+Experience adjustments are the difference between:
+The expected cash flow estimates at the beginning of the period and the actual cash flows
+•
+for premiums received in the period (and any related cash flows paid such as insurance
+acquisition cash flows and insurance premium taxes)
+The expected cash flow estimates at the beginning of the period and the actual incurred
+•
+amounts of insurance service expenses in the period (excluding insurance acquisition
+expenses)
+Experience adjustments relating to current or past service are recognized in profit or loss. For
+incurred claims (including incurred but not reported) and other incurred insurance service
+expenses, experience adjustments always relate to current or past service. They are included in
+profit or loss as part of insurance service expenses.
+Experience adjustments relating to future service are included in the LRC by adjusting the CSM.
+The release of the CSM depends on whether the contract does not participate, participates
+indirectly, or directly participates in the performance of the specified underlying items.
+73
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+At the end of each reporting period, the Group re-estimates the LRC fulfilment cash flows,
+updating for changes in assumptions relating to financial and non-financial risks.
+Adjustments to the CSM
+The following changes in fulfilment cash flows are related to future service and adjust (or
+‘unlock’) the CSM of the group of insurance contracts:
+Experience adjustments relating to the premiums received in the period that relate to
+•
+future service, and any relate cash flows such as insurance acquisition cash flows and
+premium-based taxes measured at the ‘locked in’ discount rates applicable when the contracts
+in the group were initially recognized.
+The change in the estimate of the present value of expected future cash flows in the
+•
+liability for remaining coverage, related to non-financial variables, measured at the ‘locked in’
+discount rates applicable when the contracts in the group were initially recognized. All
+financial variables are locked in at initial recognition.
+Changes in the risk adjustment for non-financial risk relating to future service. The Group
+•
+has elected not to disaggregate the change in the risk adjustment for non-financial risk
+between:
+a change related to non-financial risk and
+•
+the effect of the time value of money and changes in the time value of money.
+•
+Differences between the amount of investment components that were expected to be
+•
+payable in the period and the amount of investment components that became payable. The
+amount of investment components expected to be payable in the period is measured at the
+discount rates applicable before it became payable
+Adjustments to the CSM - continued
+The following adjustments do not relate to future service and thus do not adjust the CSM:
+Changes in fulfilment cash flows for the effect of the time value of money and the effect of
+•
+financial risk and changes thereof.
+Changes in the fulfilment cash flows relating to the LIC.
+•
+Experience adjustments relating to insurance service expenses (excluding insurance acquisition
+•
+cash flows)
+Any further increases in fulfilment cash flows relating to future coverage are recognized in
+profit or loss as they occur, increasing the loss component of the group of insurance contracts.
+Any subsequent decreases in fulfilment cash flows related to future coverage do not adjust the
+CSM until the loss component of the group is fully reversed through profit or loss.
+At the end of the reporting period, the carrying amount of the CSM for a group of insurance
+contracts without direct participating features is the carrying amount at the beginning of
+the period adjusted for:
+The effect of any new contracts added to the group.
+•
+Interest accreted on the carrying amount of the CSM measured at the discount rates
+•
+determined at initial recognition.
+The changes in fulfilment cash flows related to future service, except:
+•
+74
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Increases in fulfilment cash flows that exceed the carrying amount of the CSM, giving
+•
+rise to a loss that results in the group of contracts becoming onerous or more
+onerous.
+Decreases in fulfilment cash flows that reverse a previously recognized loss on a group of
+•
+onerous contracts.
+The effect of any currency exchange differences on the CSM
+•
+The amount recognized as insurance revenue because of the transfer of insurance contract
+•
+services in the period, determined by the allocation of the CSM remaining at the end of the
+reporting period over the current and remaining coverage period.
+An amount of the CSM is released to profit or loss in each period during which
+the insurance contract services are provided. In determining the amount of
+the CSM to be released in each period, the Group follows three steps:
+Determine the total number of coverage units in the group. The amount of coverage units in
+•
+the group is determined by considering the quantity of benefits provided under the contract
+and the expected coverage period for each contract.
+Allocate the CSM at the end of the period (before any of it is released to profit or loss to
+•
+reflect the insurance contract services provided in the period) equally to each of the
+coverage units provided in the current period and expected to be provided in the future.
+Recognize in profit or loss the amount of CSM allocated to the coverage units provided during
+•
+the period.
+The number of coverage units change as insurance contract services are provided, contracts
+expire, lapse or surrender and new contracts are added to the group. The total number of
+coverage units depends on the expected duration of the obligations that the Group has from
+its contracts. These can differ from the legal contract maturity because of the impact of
+policyholder behavior and the uncertainty surrounding future insured events.
+By determining a few coverage units, the Group exercises judgement in estimating the
+likelihood of insured events occurring and policyholder behavior to the extent that they affect
+expected period of coverage in the group, the different levels of service offered across periods
+and the ‘quantity of benefits’ provided under a contract.
+1.3 Premium Allocation
+Approach Insurance
+contracts
+This is a simplification of the general model. The Group applies the PAA to the measurement of
+group life insurance contracts with a coverage period of each contract in the group of one
+year or less.
+Contracts with coverage period above one year which are not immediately eligible for the PAA,
+were subjected to a PAA eligibility by assessing the expected LRC cashflows under both the PAA
+and General Model approaches. However, there is no material difference in the measurement
+of the liability for remaining coverage between PAA and the general model, therefore, these
+qualified for PAA.
+75
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+On initial recognition, the Group measures the carrying amount of the Liability for remaining
+coverage for insurance contracts held as the premiums received - Gross Written premiums
+(which will be unearned at the start) less the acquisition costs (as the company has chosen not
+to expense acquisition costs as incurred). The Group has determined that there is no significant
+financing component in group life insurance contracts with a coverage period of one year or
+less. The Group does not discount the liability for remaining coverage to reflect the time
+value of money and financial risk for such insurance contracts.
+At subsequent measurement, the LRC is effectively the unearned premium reserve (UPR) under
+IFRS 4 less the deferred acquisition costs (DAC). Unlike IFRS 4, DAC will not be presented as an
+asset under IFRS17. It is instead reflected in the overall insurance contract liability for remaining
+coverage, without being identified as a separate component in the balance sheet.
+Premium Experience Adjustment: Where premium experience adjustments relate to current/
+past service and are treated at the end of the period, this will be immediately recognized in the
+P&L as insurance revenue.
+Insurance acquisition cash flows
+Insurance acquisition cash flows arise from the costs of selling, underwriting and starting a
+group of insurance contracts that are directly attributable to the portfolio of insurance
+contracts to which the group belongs. These include direct and indirect costs incurred in
+originating insurance contracts, including cashflows related to unsuccessful efforts to
+obtain new business.
+Under the PAA, an entity can choose to immediately expense insurance acquisition cash flows
+in the P&L when incurred if and only if each insurance contract in a group has a coverage
+period of one year or less. African Alliance has opted not to expense acquisition cash flows
+immediately when incurred.
+Alternatively, an entity can recognize insurance acquisition cash flows in the
+measurement of liability for remaining coverage (LRC) and amortize insurance
+acquisition cash flows in the P&L (systematically - in line with earning pattern of
+premium revenue OR passage of time, with the former being the method adopted by
+the company).
+The exiting IFRS 4 approach is to recognize a separate deferred acquisition cost (DAC) assets
+for costs associated with writing new insurance contracts (e.g., commissions paid to
+brokers). Under IFRS 17, if acquisition costs are paid before the related insurance groups are
+recognized, an entity shall recognize an asset. These assets are derecognized when the group
+of insurance contracts are recognized. If insurance acquisition cash flows are expected to be
+paid after the related group is recognized, then they are included as part of the measurement
+of insurance contracts (LRC).
+IFRS 17 allows for the deferral of acquisition costs to smooth out the recognition of profits.
+Paid acquisition costs are an asset that is amortized (or derecognized) when they are
+included in the measurement of the related group of insurance contracts. The Company
+has chosen to defer all insurance acquisition cash flows and recognize them over the
+coverage period of contracts or groups they are attributed to. Therefore, acquisition costs
+76
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+and related revenue are recognized over the same periods and in the same pattern, based
+on the passage of time.
+It must be noted that IFRS 17 requires allocation to future renewals if the acquisition
+cashflows are judged to support future renewals. Also, the expensing acquisition costs
+policy choice only applies for contracts with coverage period one year or less.
+For contracts measured under PAA in the Group, insurance acquisition costs comprise of
+costs:
+that are directly attributable to individual contracts or groups of contracts in a portfolio
+•
+belongs; with the costs being allocated to groups on a systematic and rationale method e.g.,
+Activity-Based Costing method or based on GWP proportions or claims cost etc.
+1.4 Onerous contracts
+The Group considers an insurance contract to be onerous if the expected fulfilment cash
+flows allocated to the contract, any previously recognized acquisition cash flows and any
+cash flows arising from the contract at the date of initial recognition in total result in a net
+cash outflow.
+On initial recognition, the onerous assessment is done on an individual contract level
+assessing future expected cash flows on a probability-weighted basis including a risk
+adjustment for non-financial risk. Contracts expected on initial recognition to be loss-
+making are grouped together and such groups are measured and presented separately.
+Once contracts are allocated to a group, they are not re-allocated to another group, unless
+they are substantively modified.
+On initial recognition, the CSM of the group of onerous contracts is nil and the group’s
+measurement consists entirely of fulfilment cash flows. A net outflow expected from a
+group of contracts determined to be onerous is the group’s ‘loss component’. It is initially
+calculated when the group is first considered to be onerous and is recognized at that
+date in profit or loss. The amount of the group’s loss component is tracked for the
+purposes of presentation and subsequent measurement.
+After the loss component is recognized, the Group allocates any subsequent changes in
+fulfilment cash flows of the LRC on a systematic basis between the loss component and the
+LRC excluding the loss component. For groups of onerous contracts, without direct
+participating features, the Group uses locked-in discount rates. They are determined at
+initial recognition to calculate the changes in the estimate of future cash flows relating to
+future service (both changes in a loss component and reversals of a loss component).
+For all issued contracts, other than those accounted for applying the PAA, the subsequent
+changes in the fulfilment cash flows of the LRC to be allocated are:
+Insurance finance income or expense
+•
+Changes in risk adjustment for non-financial risk recognized in profit or loss representing
+•
+release from risk in the period.
+Estimates of the present value of future cash flows for claims and expenses released from
+•
+the LRC because of incurred insurance service expenses in the period.
+77
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+The Group determines the systematic allocation of insurance service expenses incurred
+based on the percentage of loss component to the total fulfilment cash outflows included in
+the LRC, including the risk adjustment for non- financial risk, excluding any investment
+component amount.
+For contracts that are measured under PAA, the assumption is that there are no onerous
+contracts at initial recognition, unless facts and circumstances indicate otherwise. If the
+measurement of the LIC results in a loss-making group, this does not translate to the LRC
+being onerous. In this case, the group will be assessed as to whether its LRC will be like the
+incurred experience and hence considered to be onerous.
+If facts and circumstances indicate that a group of contracts is onerous during the coverage
+period, the onerous liability is calculated as the difference between:
+the carrying amount of the liability for remaining coverage; and
+•
+the FCF that relates to remaining coverage like what
+•
+is needed under the GMM. This difference is recognized
+as a loss and shall increase the liability for remaining
+coverage.
+I. Measurement of Reinsurance contracts held
+I.1 Recognition
+Proportional reinsurance contracts held will be first recognized on the later of the beginning
+of the coverage period of the reinsurance contract or the date that the first underlying
+insurance contract in the treaty is initially recognized.
+Non-Proportionate reinsurance coverage will be recognized at the beginning of the coverage
+period of the contract.
+I.2. Reinsurance contracts held measured under the PAA
+All reinsurance contracts with contract boundaries not exceeding one year are automatically
+considered to meet PAA eligibility. Most of the Group’s Surplus reinsurance contracts are
+immediately eligible for PAA as they are written on a clean-cut basis. At the end of the period,
+the reinsurer withdraws from the contract and the reinsurance held portfolio (including
+outstanding recoveries and ceded portion of unexpired premiums) is transferred to a new
+reinsurer.
+A smaller number of surplus reinsurance contracts and all Facultative contracts are written
+on an underwriting year basis. This basis extends the contract boundary beyond one year as
+coverage of contracts ceded to the treaty may continue even after the underwriting year has
+ended.
+Where the reinsurance contracts held covers a group of onerous underlying insurance
+contracts, the Group adjusts the carrying amount of the asset for remaining coverage and
+recognizes a gain when, in the same period, it reports a loss on initial recognition of an
+onerous group of underlying insurance contracts or on addition of onerous underlying
+insurance contracts to a group. The recognition of this gain results in the recognition for
+78
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+the loss recovery component of the asset for the remaining coverage of a group of
+reinsurance contracts held.
+I.3 Reinsurance contracts held measured under the General Model
+The Group’s quota shares life reinsurance and the facultative reinsurance contracts held
+are accounted for applying the measurement requirements of the General Model for
+estimates of cash flows and discount rates. The Group measures the reinsurance contracts
+held, and the underlying insurance contracts issued using consistent assumptions. The
+Group includes in the estimates of the present value of expected future cash flows for a
+group of reinsurance contracts held the effect of any risk of non-performance by the
+reinsurer, including the effects of any collateral and losses from disputes. The effect of non-
+performance risk of the reinsurer is assessed at each reporting date.
+In determining the asset representing the risk adjustment for non-financial risk transferred
+to the reinsurer, the Group assesses the amount of risk transferred by the Group to the
+reinsurer by calculating the risk adjustment of the underlying contracts before and after the
+effect of the reinsurance contracts held. The difference is recognised as the asset
+representing the risk adjustment reinsured.
+On initial recognition, the Group recognises any net cost or net gain on purchasing the
+group of reinsurance contracts held as a reinsurance CSM, unless the net cost of
+purchasing reinsurance coverage relates to events that occurred before the purchase of
+the group of reinsurance contracts, where the Group recognises such a cost immediately
+in profit or loss as an expense as part of insurance service result.
+For a group of reinsurance contracts held on initial recognition of an underlying
+onerous group of insurance contracts or on addition of onerous underlying insurance
+contracts to a group, the Group establishes a loss recovery component and, as a result,
+recognises a gain in profit or loss. The amount of the loss recovery component adjusts
+the CSM of a group of reinsurance contracts held. It is calculated at an amount equal to
+the loss recognised on the underlying insurance contracts multiplied by the percentage of
+claims on the underlying insurance contracts the Group expects to recover from the group
+of reinsurance contracts held. After initial recognition, the carrying amount of the loss-
+recovery component shall not exceed the portion of the carrying amount of the loss
+component of the onerous group of underlying insurance contracts that the entity
+expects to recover from the group of reinsurance contracts held. Reversal of the loss
+recovery component adjusts the CSM and the risk adjustment of the group of
+reinsurance contracts held. After establishing a reinsurance loss recovery component,
+except for further additions of onerous contracts to the underlying groups, its amount is
+adjusted for:
+Changes in fulfilment cash flows of underlying insurance contracts related to future service
+•
+and do not adjust the CSM of their respective groups
+Loss recovery component reversals to the extent those reversals are not changes in the
+•
+fulfilment cash flows of the group of reinsurance contracts held.
+79
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+These adjustments are calculated and presented in profit or loss.
+The Group adjusts the carrying amount of the CSM of a group of reinsurance contracts held
+at the end of a reporting period to reflect changes in the fulfilment cash flows applying the
+same approach as for insurance contracts issued, except when the underlying contract is
+onerous and the change in the fulfilment cash flows for underlying insurance contracts is
+recognised in profit or loss by adjusting the loss component. The respective changes in
+reinsurance contracts held is also recognised in profit and loss (adjusting the loss recovery
+component).
+J. Modification and Derecognition
+The Group derecognizes the original contract and recognizes the modified contract as a
+new contract, if the terms of insurance contracts are modified and the following conditions
+are met:
+If the modified terms were included at contract inception and the Group would have
+•
+concluded that the modified contract:
+Is outside of the scope of IFRS 17
+•
+Results in a different insurance contract due to separating components from the host
+•
+contract
+Results in a substantially different contract boundary
+•
+Would be included in a different group of contracts.
+•
+The original contract met the definition of an insurance contract with direct
+•
+participating features, but the modified contract no longer meets the definition.
+The original contract was accounted for applying the PAA, but the modified
+•
+contract no longer meets the PAA eligibility criteria for that approach.
+If the contract modification meets any of the conditions, the Group performs all assessments
+applicable at initial recognition, derecognizes the original contract and recognizes the new
+modified contract as if it was entered for the first time.
+If the contract modification does not meet any of the conditions, the Group treats the
+effect of the modification as changes in the estimates of fulfilment cash flows.
+For insurance contracts accounted for applying the General Model, a change in the estimates
+of fulfilment cash flows results in a revised end of period CSM (before the current period
+allocation). A portion of the revised end of period CSM is allocated to the current period, as
+is the revised CSM amount applied from the beginning of the period but reflecting the
+change in the coverage units due to the modification during the period.
+This portion is calculated using updated coverage unit amounts determined at the end of
+the period and weighted to reflect the fact that the revised coverage existed for only part
+of the current period.
+For insurance contracts accounted for applying the PAA, the Group adjusts insurance
+revenue prospectively from the time of the contract modification. The Group derecognizes
+an insurance contract when, and only when the contract is:
+80
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Extinguished (when the obligation specified in the insurance contract expires or is
+•
+discharged or cancelled)
+Modified and the derecognition criteria are met.
+•
+When the Group derecognizes an insurance contract from within a group of contracts, it:
+•
+Adjusts the fulfilment cash flows allocated to the group to eliminate the present
+•
+value of the future cash flows and risk adjustment for non- financial risk relating to the
+rights and obligations that have been derecognized from the group.
+Adjusts the CSM of the group for the change in the fulfilment cash flows (unless it relates
+•
+to the increase or reversal of the loss component).
+Adjusts the number of coverage units for expected remaining insurance contract
+•
+services to reflect the coverage units derecognized from the group and recognizes in
+profit or loss in the period the amount of CSM based on that adjusted number.
+When the Group transfers an insurance contract to a third party and that results in
+derecognition, the Group adjusts the CSM of the group from which the contract has been
+derecognized for the difference between the change in the carrying amount of the group
+caused by the derecognized fulfilment cash flows and the premium charged by the third
+party for the transfer.
+When the Group derecognizes an insurance contract due to modification, it derecognizes
+the original insurance contract and recognizes a new one. The Group adjusts the CSM of
+the group from which the modified contract has been derecognized for the difference
+between the change in the carrying amount of the group as a result of adjustment to
+fulfilment cash flows due to derecognition and the premium the Group would have
+charged had it entered into a contract with equivalent terms as the new contract at the
+date of the contract modification, less any additional premium actually charged for the
+modification.
+K. Presentation
+The Group has presented separately in the consolidated statement of financial position
+the carrying number of portfolios of insurance contracts that are assets and those that
+are liabilities, and the portfolios of reinsurance contracts held that are assets and those
+that are liabilities.
+The Group disaggregates the amounts recognized in the consolidated statement of profit or
+loss and other comprehensive income into an insurance service result sub-total that
+comprises insurance revenue and insurance service expenses and, separately from the
+insurance service result, the 'net insurance finance income or expenses' sub-total. The Group
+has voluntarily included the net insurance finance income or expenses line in another sub-
+total: net insurance and investment result, which also includes the income from all the assets
+backing the Group's insurance liabilities.
+The Group includes any assets for insurance acquisition cash flows recognized before the
+corresponding groups of insurance contracts are recognized in the carrying amount of the
+related portfolios of insurance contracts issued.
+The Group separately presents income or expenses from reinsurance contracts held from the
+expenses or income from insurance contracts issued.
+81
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+2.30 Insurance Revenue
+For the General Model, The Group’s insurance revenue depicts the provision of services
+arising from a group of insurance contracts at an amount that reflects the consideration to
+which the Group expects to be entitled in exchange for those services. Insurance revenue
+from a group of insurance contracts is therefore the relevant portion for the period of the
+total consideration for the contracts, (i.e., the amount of premiums paid to the Group
+adjusted for financing effect (the time value of money) and excluding any investment
+components).
+As the Group provides insurance services under a group of insurance contracts issued, it
+reduces its LRC and recognizes insurance revenue, which is measured at the amount of
+consideration the Group expects to be entitled to in exchange for those services.
+For groups of insurance contracts measured under the General Model, insurance revenue
+consists of the sum of the changes in the LRC due to:
+The insurance service expenses incurred in the period measured at the amounts expected
+•
+at the beginning of the period, excluding:
+Amounts allocated to the loss component.
+•
+Repayments of investment components.
+•
+Amounts that relate to transaction-based taxes collected on behalf of third parties.
+•
+Insurance acquisition expenses.
+•
+Amounts relating to risk adjustment for non-financial risk.
+•
+The change in the risk adjustment for non-financial risk, excluding:
+•
+Changes that relate to future service that adjust the CSM.
+•
+Amounts allocated to the loss component.
+•
+The amount of CSM for the services provided in the period.
+•
+Other amounts, such as experience adjustments for premium receipts that relate to current
+•
+or past service, if any
+Insurance revenue also includes the portion of premiums that relate to recovering those
+insurance acquisition cash flows included in the insurance service expenses in each period.
+Both amounts are measured in a systematic way based on the passage of time.
+For the Premium Allocation Approach (PAA), The insurance revenue for the period is the
+amount of expected premium receipts (excluding any investment component) allocated
+to the period.
+82
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+When applying the PAA, the Group recognizes insurance revenue for the period based on the
+passage of time by allocating expected premium
+receipts including premium experience adjustments to each period of service.
+At the end of each reporting period, the Group considers whether there was a change in facts
+and circumstances indicating a need to change, on a prospective basis, the premium receipt
+allocation due to changes in the expected pattern of claim occurrence.
+2.31 Insurance service expenses
+Insurance service expenses arising from a group of insurance contracts issued comprises:
+Changes in the LIC related to claims and expenses incurred in the period excluding
+•
+repayment of investment components.
+Changes in the LIC related to claims and expenses incurred in prior periods (related to
+•
+past service)
+Other directly attributable insurance service expenses incurred in the period.
+•
+Amortization of insurance acquisition cash flows, which is recognized at the same amount
+•
+in both insurance service expenses and insurance contra
+Loss component of onerous groups of contracts initially recognized in the period.
+•
+Changes in the LRC related to future service that do not adjust the CSM, because they are
+•
+changes in the loss components of onerous groups of c
+2.32 Income or expenses from reinsurance contracts held.
+The Group presents income or expenses from a group of reinsurance contracts held and
+reinsurance finance income or expenses in profit or loss for the period separately. Income
+or expenses from reinsurance contracts held are split into the following two amounts:
+Amount recovered from reinsurers.
+•
+An allocation of the premiums paid.
+•
+The Group presents cash flows that are contingent on claims as part of the amount
+recovered from reinsurers. Ceding commissions that are not contingent on claims of the
+underlying contracts are presented as a deduction in the premiums to be paid to the
+reinsurer which is then allocated to profit or loss.
+The Group establishes a loss recovery component of the asset for the remaining coverage
+for a group of reinsurance contracts held. This depicts the recovery of losses recognized on
+the initial recognition of an onerous group of underlying insurance contracts or on
+addition of onerous underlying insurance contracts to a group. The loss recovery
+83
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+component adjusts the CSM of the group of reinsurance contracts held. The loss recovery
+component is then adjusted to reflect:
+Changes in the fulfilment cash flows of the underlying insurance contracts that
+•
+relate to future service and do not adjust the CSM of the respective groups to which
+the underlying insurance contracts belong to.
+Reversals of loss recovery component to the extent those reversals are not changes
+•
+in the fulfilment cash flows of the group of reinsurance contracts held.
+Allocations of the loss recovery component against the amounts recovered from
+•
+reinsurers reported in line with the associated reinsured incurred claims or expenses.
+•
+2.33 Insurance finance income and expenses
+Insurance finance income or expenses present the effect of the time value of money and
+the change in the time value of money, together with the effect of financial risk and
+changes in financial risk of a group of insurance contracts and a group of reinsurance
+contracts held.
+The use of OCI presentation for insurance finance income and expenses
+The Group has an accounting policy choice to present all the period’s insurance finance
+income or expenses in profit or loss or to split the amount between profit or loss and other
+comprehensive income (OCI). When considering the choice of presentation of insurance
+finance income or expenses, the Group examines the assets held for that portfolio and how
+they are accounted for.
+Currently the Group present all the period’s insurance finance income or expenses in the
+profit or loss.
+The Group may reassess its accounting policy choice during the duration of a group of
+direct participating contracts when there is a change in whether the Group holds the
+underlying items or no longer holds the underlying items. When such change occurs, the
+Group includes the amount accumulated in OCI by the date of change as a reclassification
+adjustment to profit or loss spread across the period of change and future periods based on
+the method and on assumptions that applied immediately before the date of change.
+Comparatives are not restated.
+When applying the PAA, the Group does not discount the liability for remaining
+coverage to reflect the time value of money and financial risk for group life policies with
+a coverage period of one year or less. For those claims that the Group expects to be paid
+84
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+within one year or less from the date of incurrence, the Group does not adjust future cash
+flows for the time value of money and the effects of financial risks. However, claims
+expected to take more than one year to settle are discounted applying the discount rate
+at the time the incurred claim is initially recognized.
+L. Contracts existing at transition date
+On transition date, 1 January 2023, the Group:
+Has identified, recognized and measured each group of insurance contracts as if IFRS 17
+•
+had always applied (unless impracticable).
+Has identified, recognized and measured assets for insurance acquisition cash flows as
+•
+if IFRS 17 had always applied. However, no recoverability assessment was performed
+before the transition date. At transition date, a recoverability assessment was performed,
+and no impairment loss was identified.
+Derecognized any existing balances that would not exist had IFRS 17 always applied.
+•
+Recognized any resulting net difference in equity.
+•
+In determining the appropriate transition approach, the following were considered:
+the coverage period of the in-force policies
+•
+the availability of historical data and assumptions driving measurement and the ability to
+•
+obtain these without undue cost and effort.
+Full Retrospective approach
+1.
+On transition to IFRS 17, the Group applied the full retrospective approach unless
+impracticable to do so.
+The Group has applied the full retrospective approach on transition to all short-term
+contracts (group life) in force at the transition date.
+To do this, at the transition date, we have identified, recognized and measured each group of
+insurance contracts as if IFRS 17 had always applied; and derecognized any existing balances
+that would not exist had IFRS 17 always applied; and finally recognized any resulting net
+difference in equity.
+Fair Value approach
+2.
+The Group has applied the fair value approach on transition for individual life contracts
+as, prior to transition, it grouped contracts from multiple cohorts and years into a single
+unit for accounting purposes. Obtaining reasonable and supportable information to
+apply the full retrospective approach was impracticable without undue cost or effort. The
+Group has determined the CSM of the liability for remaining coverage at the transition
+date, as the difference between the fair value of the group of insurance contracts and the
+fulfilment cash flows measured at that date. In determining fair value, the Company has
+applied the requirements of IFRS 13 Fair Value Measurement, except for the demand
+deposit floor requirement.
+The Group has aggregated contracts issued more than one year apart in determining groups of insurance
+contracts under the fair value approach at transition as it did not have reasonable and supportable
+information to aggregate groups into those including only contracts issued within one year
+85
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+2.34 Transition
+The Company applied the fair value approach to all insurance contracts at transition (31 December
+2021) – that is, all contract issued on or before December 2021 have been measured at fair value,
+hence the CSM at the transition date have been calculated using fair value approach. The CSM for
+those group of insurance contracts were rolled forward to 31 December 2022 to produce the December
+2022 comparatives which has been used as the opening CSM for the 31 December 2023 reporting.
+For all contracts issued after 31 December 2021, the Fully Retrospective Approach has been used for
+each group of insurance contracts which are based on annual cohorts. This means that the contracts
+are each measured at inception date to determine the initial CSM and are disclose as new business
+CSM in each reporting period.
+Transition adjustment as at 1 January 2022
+Assets 31 Dec. IFRS 17 re- 1 Jan.
+2021 Reclassificati measureme 2022
+IFRS 4 on and nt IFRS 17
+derecognition
+Not ₦'000 ₦'000 ₦'000 ₦'000
+e
+Assets
+Cash and cash equivalents 1,308,629 1,308,629
+Financial assets 26,733,181 26,733,181
+Trade receivables - -
+Reinsurance contract assets A - 113,116 29,640 142,756
+Reinsurance assets B 113,116 (113,116) - -
+Deferred tax asset 146,476 - 146,476
+Other receivables and prepayments 2,710,190 - 2,710,190
+Investment in subsidiaries 542,729 542,729
+Investment in properties 8,030,000 - - 8,030,000
+Intangible assets 71,679 - 71,679
+Property, plant and equipment 847,736 847,736
+Statutory deposit 200,000 200,000
+Total assets 40,703,737 - 29,640 40,733,377
+Liabilities and equity
+Liabilities
+Insurance contract liabilities D 41,738,872 471,739 42,210,612
+86
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Investment contract liabilities 747,670 747,670
+Reinsurance contract liabilities -
+Borrowings - -
+Trade payables E 946,624 - 946,624
+Other payables F 852,615 852,615
+Employees benefit obligation 35,652 35,652
+Deferred commission income
+Income tax liabilities 582,882 582,882
+Deferred tax liabilities 92,107 92,107
+Total liabilities 44,996,422 - 471,739 45,468,161
+Equity
+Share capital 10,292,500 10,292,500
+Share premium 14,365,133
+14,365,133
+Contingency reserve 1,854,545 1,854,545
+Fair value reserves 1,616,522 1,616,522
+Non-current revaluation reserve 0 0
+Retained earnings/(accumulated G (32,421,38 442,102 (32,863,48
+losses) 5) 3)
+Total equity (4,292,685) 442,102 (4,734,787)
+Total liabilities and equity 40,703,736 - - 40,733,377
+87
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Reconciliation of Statement of financial position on transition as at 1 January 2022 and as at 31
+December 2022
+Total equity attributable to shareholders of the Company, as restated for the adoption of IFRS 17, is ₦
+(4.73) billion at the transition date of 1 January 2022. The total equity attributable to shareholders of the
+Company reported on an IFRS 4 basis at 31 December 2021 was ₦ (4.52) billion.
+The financial impacts on transition to IFRS 17 are summarised in the table below, which sets out the
+restated statement of financial position on the transition date:
+Transition Adjustment as at 31 December 2022
+31 Dec. Reclassificatio
+2022 n and IFRS 17 re- 31 Dec. 2022
+IFRS 4 derecognition measurement IFRS 17
+Note ₦'000 ₦'000 ₦'000 ₦'000
+Assets
+Cash and cash equivalents 1,060,089 - - 1,060,089
+Financial assets 36,317,807 36,317,807
+Trade receivables - -
+Reinsurance contract assets A 100,957 65,862 166,819
+Reinsurance assets B 100,957 (100,957) - -
+Deferred acquisition cost C - - - -
+Deferred tax asset 146,476 146,476
+Other receivables and
+prepayments 691,995 - 691,995
+Investment in subsidiaries 105,000 105,000
+Investment in properties 11,080,750 - - 11,080,750
+Intangible assets 56,850 - - 56,850
+Property, plant and equipment 763,047 - - 763,047
+88
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Statutory deposit 200,000 - - 200,000
+Total assets 50,522,970 - 65,862 50,588,811
+Liabilities and equity
+Liabilities
+Insurance contract liabilities 43,195,255 (786,449) 42,408,806
+Investment contract liabilities 776,643 - 776,643
+Trade payables K 665,407 - 665,407
+Other payables L 600,675 - - 600,675
+Income tax liabilities 558,187
+558,187
+Employee benefit obligation 113,310 - - 113,310
+Deferred tax liabilities 92,107 92,107
+Total liabilities 46,001,585 (786,449) 45,215,116
+Equity
+Share capital 10,292,500 - - 10,292,500
+Share premium 14,365,133 14,365,133
+Contingency reserve 1,922,695 - - 1,922,695
+fair value reserves 15,398,382 - - 15,398,382
+Non current revaluation reserve - -
+Retained earnings/(accumulated
+losses) M (37,457,337) - 852,321 (36,605,015)
+Total equity 4,521,374 - 852,321 5,373,695
+Total liabilities and equity 50,522,959 65,873 50,588,811
+89
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Explanatory Note.
+IFRS 17 - Insurance Contract Liabilities
+D Under IFRS 4, the group cedes insurance risk in the normal course of business on the bases of our treaty and
+facultative agreements. Reinsurance assets represent balances due from reinsurance companies. Amounts recoverable
+from reinsurers are estimated in a manner consistent with settled claims associated with the reinsurer’s policies
+and are in accordance with the related reinsurance contract.
+Under IFRS 17, Reinsurance contracts held are treated as independent contracts, grouped and measured
+according to the IFRS 17 requirements, e.g. with General Measurement Method or Premium Allocation Approach.
+Recoveries on Claims paid, is thus, the only Reinsurance component that remains unchanged from IFRS 4 to IFRS
+17.
+D Under IFRS 17, the Discounted Cashflow model is also used to determine adequate reserves for in-force long-term
+Life business contracts as at the valuation date. The results thereof are then used to ascertain adjustments necessary
+to reserve component balances including the Best Estimate of Liabilities, the Risk Adjustment factor and the Contractual
+Service Margin.
+This difference in treatment of the components of reserve, as well as difference in IFRS 17 prescribed methodology
+are responsible for the variations on IFRS 4 and IFRS 17 reserves for the Life business.
+Under IFRS 4, an assessment is made of whether the recognized life insurance liabilities are adequate by
+carrying out a liability adequacy test.
+The liability value is adjusted to the extent that it is insufficient to meet expected future benefits and expenses.
+In performing the adequacy test, current best estimates of future contractual cash flows, including related
+cash flows such as claims handling and policy administration expenses, policyholder options and
+guarantees, as well as investment income from assets backing such liabilities, are used. Discounted
+cash flows model is used in the valuation.
+Short-term contracts (Group Life) liabilities are similar in components under IFRS 17 and IFRS 4. Differences
+observed are due to grouping requirements which may increase the provision for premium deficiency
+(for onerous groups), the introduction by IFRS 17 of a Risk Adjustment factor and of Discounting for
+Outstanding and Incurred Claims projections.
+C Under IFRS 4, this is treated as those direct and indirect costs incurred during the financial year
+arising from the writing or renewing of insurance contracts and are deferred to the extent that these costs
+are recoverable out of future premiums. All other acquisition costs are recognized as an expense when
+incurred.
+Under IFRS 17, Deferred Acquisition Cost is included as a part of the Insurance Contract Liabilities and not as a
+standalone item, as it was under IFRS 4.
+E The company has elected to reclassify unallocated premiums & refunds and premium received in advance
+from Trade Payables to Other Technical Liabilities. They represent financial obligations arising from the group’s
+insurance business that are basically outside the scope of the definition of insurance contracts.
+G As at 1 January 2022, IFRS 4 retained earnings closed at N(32.42)bn for the company. The difference between
+this position and IFRS 17 is a net decrease of N442,098m.
+As at 31 December 2022, IFRS 4 retained earnings closed at N(37.46)bn for the company. The difference
+between this position and IFRS 17 is a net increase of N852,321m.
+This is due to the changes that have occurred from the transition to Insurance Revenue, Insurance
+Service Result, and the inclusion of Net Insurance/Reinsurance and Net Finance
+Income/(Expenses) in the IFRS 17 restated financial performance, the net movements in the IFRS
+9 Expected Credit Loss model adoption and the net impact of remeasurments, reclassification and
+derecognition of IFRS 4 Balance sheet item
+90
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Reconciliation of Statement of comprehensive income for the year ended 31
+C December 2022
+Transition adjustment as at 31 December 2022
+IFRS 17
+re-
+31 Dec. 2022 Reclassificati o measurem 31 Dec. 2022
+IFRS 4 and derecogniti o ent IFRS 17
+Note ₦'000 ₦'000 ₦'000 ₦'000
+Insurance revenue N 7,109,670 1,008,718 8,118,388
+Gross premium income O 7,109,670 (7,109,670) - -
+Reinsurance expenses P (219,692) 219,692 - -
+Net premium income 6,889,978 219,692 1,008,718 8,118,388
+-
+Insurance service expenses Q - (13,302,073) 1,981,195 (11,320,878)
+Net expense from reinsurance
+contracts held R - 29,363 (9,688) 19,675
+Fees and commission income S 62,570 (62,570) - -
+Insurance claim incurred S1 (9,406,703) 9,406,703 - -
+Net insurance benefits and claims T 123,915 - - 123,915
+Underwriting expenses U (1,263,437) 1,263,437 - -
+Changes in long term insurance U1 (1,155,699) 1,155,699 - -
+contract
+Insurance service result U2 - (6,039,125) 2,980,225 (3,058,900)
+Investment income V 989,715 - 3,274,899 4,264,614
+Other operating income W (2,047,704) - - (2,047,704)
+- 2,216,910 - 2,216,910
+Insurance finance -
+income/(expense) X - (3,165,731) (3,165,731)
+Reinsurance finance
+income/(expense) Y - - - -
+Net insurance finance expense - 2,216,910 (3,165,731) (948,821)
+91
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Net insurance and investment
+result - 2,216,910 (3,165,731) (948,821)
+Other operating and
+administrative expenses Z (953,791) 400,277 - (553,514)
+Unrealised fair value gain Z1
+2022 impairment gain/loss on Financial
+Assets
+Deferred tax derecognised on
+reclassification of financial assets - - -
+Net fair value gain/(loss) on investment
+properties
+Profit before taxation ( 4,962,507) - (3,165,731) (4,685,150)
+-
+Income tax expense (5,304) - (5,304)
+Profit for the year ( 4,967,811) - (3,165,731) (4,690,454)
+Other comprehensive income, net of tax
+Items that are or may be reclassified
+to profit or loss:
+Foreign currency translation
+difference of foreign
+operations
+Fair value changes in AFS financial assets - - - -
+Deferred tax impact of changes in AFS
+financial assets - - - -
+Items that will not be reclassified subsequently to profit or
+loss: 13,781,860 - 13,781,860
+PPE revaluation gains -
+Deferred tax impact of revaluation gains -
+Other comprehensive income,
+net of tax - - - -
+Total comprehensive income
+for the year 8,814,049 9,091,407
+Explanatory Notes
+N. Gross Premium income/Insurance Revenue
+Under IFRS 4, the gross premium is adjusted by change in insurance contract liabilities (UPR) to arrive at the Gross
+Premium Income.
+Under IFRS 17, the Insurance revenue is made up of the following items:
+• Expected benefits incurred – Under PAA model (Group Life), this is based on premium allocated in the reporting
+period due to passage of time and it is based on the coverage period of each contract using the start and end date
+for each contract. For contracts using General Model Approach (GMM), this is based on the expected insurance claims
+92
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+in the reporting period which are projected using actuarial assumptions.
+• Expected expenses incurred - This is the expected expenses projected in the actuarial model using the valuation
+assumptions. This applies to business using General Model Approach
+• Loss Component: systematic allocation – For group of insurance contracts that are loss making, the loss will
+need to be recognised immediately in P&L and this is shown in the insurance service expenses as “Loss Component:
+losses and reversal of losses”. However, this loss will need to be tracked from one valuation to another and the loss
+will need to be systematically allocated across the reporting periods in the coverage period and disclosed in both
+insurance revenue and insurance service expenses. So, this is in and out in the insurance service result.
+• Change in the risk adjustment - The change in risk adjustment is the difference between the current risk adjustment and
+the prior year-end risk adjustment.
+• CSM recognised – The Contractual Service Margin (CSM) is the unearned profit in the business for contracts using GM.
+The CSM recognised in the period is part of the profit released in the reporting period and it is calculated using the
+coverage units of the group of insurance contracts.
+• Recovery of acquisition cash flows – For businesses using GMM, the acquisition expenses is allowed at initial
+recognition. However, the acquisition expenses amortised in the period using the coverage unit is disclosed in P&L
+and it does not impact insurance service result. The corresponding impact is reported in insurance service
+expense.
+For the PAA model, Under IFRS 17, the Insurance revenue is the gross premium allocated to the reporting period. The
+allocation of the premium is based on the coverage period of each contract using the start and end date for each
+contract.
+The Group and Company have reclassified the Gross premium income and remeasured this balance and reported
+as Insurance Revenue
+Q. Insurance service expenses
+Insurance service expense: Under IFRS 17, the insurance service expenses is made up of the following items:
+• Incurred claims – This is actual claims reported in the period. Note that this is different from the actual claims paid
+in the period. The difference between the actual claims paid in the period and the actual claims reported in the period
+will feed into “changes in BEL related to LIC”.
+• Incurred Fulfilment expenses – The fulfilment expenses are the actual incurred expenses relating to the
+core running of the business
+• Amortisation of insurance acquisition cash flows – For businesses using GM, this is the opposite of
+the “recovery of acquisitions cash flows” in insurance revenue. For businesses using PAA model, this is the
+amortised acquisition expenses recognised in the reporting period.
+• Changes in BEL related to LIC – This represents the movement between movement in IBNR and outstanding
+claims in the reporting period after allowing for claims reported and claims paid in the period.• Changes in RA
+related to LIC – This is the change in risk adjustment relating to LIC in the reporting period where
+applicable.
+• Loss Component: systematic allocation – This line discloses the amortised losses for the reporting
+period. There is a corresponding line in the insurance revenue, so no impact on P&L statement.
+• Loss Component: losses and reversal of losses – This contains the impact of losses from group of insurance
+contracts (GICs) that are either onerous at inception or becomes onerous during the reporting period.
+R. Net expense from Reinsurance contracts held Reclassification of N19.68m previously reported as
+Reinsurance expenses for 01 January 2022 and 31 December 2022 now reclassified and presented as Net
+expenses from reinsurance contract for the company.
+T. Insurance benefit and claims
+U2. Insurance service result
+93
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+V. Investment income reclassified to current value
+W. Other operating income recorded with the impairement
+X. Net Finance income/expense from insurance contracts held
+The Group has remeasured and accounted for insurance and reinsurance contracts under IFRS 17
+The reinsurance finance expenses relate to changes in economic movements in reinsurance BEL and
+reinsurance CSM interest accretion. These items relate to unwind of the cashflows, change in economic
+assumptions, reinsurance CSM interest accretion.
+Explanatory notes to the reconciliation of the Statement of financial
+D position
+Outstanding claims recoverable plus Incurred But Not Reported (IBNR) claims was reclassified to derive
+the future cashflows for the total incurred claims. The adjusted future cashflows for total outstanding
+claims recoverable was discounted to present value (i.e. Best estimate liability - BEL).
+Transiition adjustment as at 31 December 2022
+Reclassificat IFRS 17
+31 Dec. ion and re-
+2022 derecognitio measurem 31 Dec. 2022
+IFRS 4 n ent IFRS 17
+Note ₦'000 ₦'000 ₦'000 ₦'000
+(i) Reinsurance assets
+Opening Balance Z 100,957 (100,957) - -
+Prepaid Minimum and Deposit reclassified to Other
+receivables - -
+Reclassification to reinsurance
+contract asset - -
+Closing balance 100,959 (100,957) - -
+All elements of reinsurance assets, comprising prepaid reinsurance, reinsurers' share of Incurred but
+not Reported (IBNR) claims as well as reinsurers' share of outstanding claims have been reclassified
+to reinsurance contract assets.
+(ii) Other receivables and prepayments
+Balance as per IFRS 4 A1 691,955 - 691,955
+Prepaid Minimum and Deposit reclassified from reinsurance
+assets
+94
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Reclassification to other payable - wrong
+account mapping A2
+Closing balance 691,955 - - 691,955
+(ii) Trade Payables
+-
+Reinsurance payable A3 62,943 (62,943) -
+- - -
+Balance, end of year 62,943 (62,943) - -
+The reinsurance payable was reclassified to the reinsurance contract asset
+(iii) Other payables/Deferred commission income
+Opening balance 665,407 - 665,407
+Deferred commisson income reclassified to
+reinsurance contract assets A4 - -
+Reclassification from other receivables -
+wrong account mapping A5 - -
+Effect of fair value gain wrongly posted - -
+Balance, end of year 665,407 - - 6 65,407
+Deferred commission income which was initially reported as part of Other Payables under IFRS 4 was
+also reclassified to Reinsurance contract assets as part of Asset for remaining coverage (ARC) under
+IFRS 17.
+(iv) Reinsurance contract assets
+Opening balance - - -
+ARC reclassified prepaid premium
+(IFRS 4) A6 82,932 82,932
+Reinsurance payabless reclassified (-) (-)
+Deferred commission income (DCI) -
+reclassified A7 - (-) (-)
+Impact of ARC remeasured under PAA
+(IFRS 17) - -
+ARC - Deferred commission income in
+force (IFRS 17) -
+Assets for remaining coverage
+(ARC) - 82,932 - 82,932
+95
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+AIC - reclassified from RA claims
+recovery under IFRS 4 A8 - 83,887 83,887
+AIC - impact of actuarial remeasurement (-) (-)
+AIC - unwinding of discount in the year -
+AIC - risk adjustment recognised - -
+Assets for incurred claims (AIC) - 83,887 (-) 83,887
+Closing balance - 166,819 (-) 166,819
+The Reinsurance contract asset has two components - Asset for Remaining coverage (ARC) and the
+Asset for incurred claims (AIC). The ARC comprises of the payment obligations for reinsured events
+that have not yet occurred and for other reinsurance contract services that have not yet been received
+(i.e., unearned reinsurance premium reserve and deferred commission income).
+Explanatory notes to the reconciliation of the Statement of financial position
+D –Contd
+The AIC comprises the outstanding recoverable for incurred claims that have not been settled, and for
+other reinsurance contract services already received. It is measured by calculating the present value of
+the risk-adjusted future cash flows. Outstanding claims recoverable plus Incurred But Not Reported
+(IBNR) was remeasured to derive the future cashflows for the total incurred claims. The adjusted future
+cashflows for total outstanding claims recoverable was discounted to present value (i.e. Best estimate
+liability-BEL).
+A risk adjustment for non-financial risk was added to the present value of future cashflows to account
+for any remaining uncertainty as to the ultimate amount of claims or their payout dates.
+Outstanding claims recoverable plus Incurred But Not Reported (IBNR) claims was reclassified to derive
+the future cashflows for the total incurred claims. The adjusted future cashflows for total outstanding
+claims recoverable was discounted to present value (i.e. Best estimate liability - BEL).
+Transiition adjustment as at 31 December 2022
+Reclassificat IFRS 17
+31 Dec. ion and re- 31 Dec.
+2022 derecognitio measurem 2022
+IFRS 4 n ent IFRS 17
+Note ₦'000 ₦'000 ₦'000 ₦'000
+(vi) Deferred acquisition cost
+Opening balance A9 - (-) - -
+Closing balance - (-) - -
+(v) Investment contract liabilities -
+Opening balance, welfare
+scheme - - - -
+96
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Reclassified from individual DA B1 - - - -
+Welfare scheme - - - -
+Opening balance, Individual DA
+Reclassified to insurance
+contracts liabilities B2 - - - -
+Reclassified to welfare scheme B3 - - - -
+Individual DA - - - -
+Closing balance - (-) - -
+Deferred acquisition cost (DAC) which was previously reported as a separate line in the statement of
+financial position under IFRS 4 now reports in Insurance contract liabiltiies as part of liability for
+remaining coverage (LRC).
+(vii) Insurance contract liabilities
+Opening balance - (-) -
+Amounts remeasured under LRC: - - -
+Premium Reserve for contracts under PAA - -
+-Claims and risk components reclassified
+from investment contract liabilities B4 - - -
+Deferred acquisition cost reclassified to LRC B5 (-) 0 -
+Impact of posting error
+LRC for contracts under PAA (IFRS 17) 40,593,841 40,593,841
+Contracts excluding loss components -
+Contracts with loss components -
+Liabiltiies for remaining coverage (LRC) - (-) 40,593,841 40,593,841
+Opening balance, IFRS 4 - (-) -
+Amount remeasured under LIC (IFRS 17: -
+Present value of future cash flows for contracts under PAA 1,814,966 1,814,966
+97
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Risk adjustment for contracts under PAA - -
+Impact of discounting (-) (-)
+Unwinding of discounting in the year - -
+Liabilties for incurred claims (LIC) - - 1,814,966 1,814,966
+Closing balance - (-) 42,408,806 42,408,806
+Insurance contract liability has two components - Liability for Remaining coverage (LRC)
+and theLiability for incurred claims (LIC).
+The LRC comprises the payment obligations for insured events that have not yet occurred and for
+other insurance contract services that have not yet been provided (i.e. unearned premium reserve
+and deferred acquisition/commission cost). These provisions were made against the payment
+obligations for insured events that have not yet occurred.
+The LIC comprises the payment obligations for incurred claims that have not yet been settled, and
+for other insurance contract services already provided. It is measured by calculating the present
+value of the risk-adjusted future cash flows. Outstanding claims plus IBNR was remeasured to
+derive the future cashflows for incurred claims, the adjusted future cashflows for total incurred
+claims was discounted to the present value (i.e. Best Estimate Liability (BEL), while also considering
+the time value of money. A risk adjustment for non-financial risk was added to the remeasured
+present value of the cash outflows to account for any remaining uncertainty as to the ultimate
+amount of claims or their payout dates.
+(vii
+i) Accumulated Losses
+Closing balance
+Opening balance (31,576,021) - (31,576,021)
+Profit for the year (4,967,811) (4,967,811)
+Transfer to contingency reserves (61,183) - - (61,183)
+Dividend declared and paid - - -
+Fair value gain on financial asset
+adjustment 0 (0)
+IFRS 17 impact - reinsurance
+contract assets B6 - - (0) (0)
+98
+
+
+| 0                                                                                                                                                                                                                                                                                                                                          | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                                                                                                                                                                            | Insurance contract liability has two components - Liability for Remaining coverage (LRC) and theLiability for incurred claims (LIC).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                            | The LRC comprises the payment obligations for insured events that have not yet occurred and for other insurance contract services that have not yet been provided (i.e. unearned premium reserve and deferred acquisition/commission cost). These provisions were made against the payment obligations for insured events that have not yet occurred.                                                                                                                                                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                            | The LIC comprises the payment obligations for incurred claims that have not yet been settled, and for other insurance contract services already provided. It is measured by calculating the present value of the risk-adjusted future cash flows. Outstanding claims plus IBNR was remeasured to derive the future cashflows for incurred claims, the adjusted future cashflows for total incurred claims was discounted to the present value (i.e. Best Estimate Liability (BEL), while also considering the time value of money. A risk adjustment for non-financial risk was added to the remeasured present value of the cash outflows to account for any remaining uncertainty as to the ultimate amount of claims or their payout dates. |
+|                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                            | nan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| (vii i) Accumulated Losses Closing balance Opening balance (31,576,021) - (31,576,021) Profit for the year (4,967,811) (4,967,811) Transfer to contingency reserves (61,183) - - (61,183) Dividend declared and paid - - - Fair value gain on financial asset adjustment 0 (0) IFRS 17 impact - reinsurance contract assets B6 - - (0) (0) | nan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+IFRS 17 iimpact - insurance
+contract liabilities B7 - - ( 0) (0)
+Balance, end of year (36,605,015) - ( 0) (36,605,015)
+Explanatory notes to the reconciliation of the
+E Statement of comprehensive income
+IFRS 17 also introduces significant changes in the
+presentation of the income statement:
+• Insurance related income statement lines under IFRS 4, such as Gross premium income,
+reinsurance expenses, reinsurance expenses have been derecognised under IFRS 17.
+• The insurance service result separately presents the result, before the effects of financial risks, for
+insurance and investment contracts, and comprises insurance revenue and insurance service expenses.
+• Insurance revenue represents the allocation over the life of the insurance contract of premiums
+received. Insurance revenue replaces net premium income.
+• Insurance service expense separately presents the claims and expenses incurred in fulfilling insurance.
+• The net insurance and investment result comprises investment return, the finance income/expense on
+insurance contract liabilities that arises from discounting, changes in financial risk and changes in the
+fair value of underlying items, and the previously presented movement in investment contract liabilities.
+Below is a detailed breakdown of the changes in the statement of profit or loss:
+Transiition adjustment as at 31 December 2022
+IFRS 31 Dec. 2022
+Reclassific 17 re- IFRS 17
+31 Dec 2022 ation and meas
+IFRS 4 derecogniti ureme
+on nt
+Note ₦'000 ₦'000 ₦'000 ₦'000
+(i) Gross premium -
+income - - -
+As per IFRS 4 B8 7,109,679
+(7,109,679) -
+Closing 7,109,679
+balance, IFRS (7,109,679) - -
+17
+(ii) Reinsurance -
+expenses - - -
+99
+
+
+| 0    | 1                        | 2    | 3                                             | 4                                    | 5                         | 6                    |
+|:-----|:-------------------------|:-----|:----------------------------------------------|:-------------------------------------|:--------------------------|:---------------------|
+|      |                          |      | Transiition adjustment as at 31 December 2022 | nan                                  | nan                       | nan                  |
+|      |                          |      | 31 Dec 2022 IFRS 4                            | Reclassific ation and derecogniti on | IFRS 17 re- meas ureme nt | 31 Dec. 2022 IFRS 17 |
+|      |                          | Note | ₦'000                                         | ₦'000                                | ₦'000                     | ₦'000                |
+| (i)  | Gross premium income     |      | -                                             | -                                    | -                         | -                    |
+|      | As per IFRS 4            | B8   | 7,109,679                                     | (7,109,679)                          |                           | -                    |
+|      | Closing balance, IFRS 17 |      | 7,109,679                                     | (7,109,679)                          | -                         | -                    |
+| (ii) | Reinsurance expenses     |      | -                                             | -                                    | -                         | -                    |
+
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+As per IFRS 4 B9 (219,692)
+219,692 -
+Closing (219,692)
+balance, IFRS 219,692 - -
+17
+(iii) Fee and -
+commission - - -
+income
+As per IFRS 4 C1 62,570
+(62,570) -
+Closing 62,570
+balance, IFRS (62,570) - -
+17
+(iv) Net insurance
+benefits and
+claims
+As per IFRS 4 (11,701,925)
+- 11,701,925
+Gross claims C2 - 11,701,925
+incurred - (11,701,925)
+reclassified to
+insurance service
+expenses
+Recoveries on C3 -
+coinsurance and - -
+reinsurance
+reclassified to net
+expenses on
+reinsurance
+contracts
+Closing (11,701,925) 11,701,925
+balance, IFRS - -
+17
+E Explanatory notes to the reconciliation of the Statement of
+comprehensive income – continued
+Transition adjustment as at 31 December 2022
+31 Dec. IFRS 17 31 Dec.
+2022 Reclassific re- 2022
+IFRS 4 ation and measure IFRS 17
+derecogniti ment
+on
+Note ₦'000 ₦'000 ₦'000 ₦'000
+100
+
+
+| 0     | 1                                                                                               | 2   | 3            | 4                                            | 5                                    | 6                        | 7            | 8                    |
+|:------|:------------------------------------------------------------------------------------------------|:----|:-------------|:---------------------------------------------|:-------------------------------------|:-------------------------|:-------------|:---------------------|
+|       | As per IFRS 4                                                                                   | B9  | (219,692)    | nan                                          | 219,692                              |                          | -            | nan                  |
+|       | Closing balance, IFRS 17                                                                        |     | (219,692)    | nan                                          | 219,692                              | -                        | -            | nan                  |
+| (iii) | Fee and commission income                                                                       |     | -            | nan                                          | -                                    | -                        | -            | nan                  |
+|       | As per IFRS 4                                                                                   | C1  | 62,570       | nan                                          | (62,570)                             |                          | -            | nan                  |
+|       | Closing balance, IFRS 17                                                                        |     | 62,570       | nan                                          | (62,570)                             | -                        | -            | nan                  |
+| (iv)  | Net insurance benefits and claims                                                               |     |              | nan                                          |                                      |                          |              | nan                  |
+|       | As per IFRS 4                                                                                   |     | (11,701,925) | nan                                          |                                      | -                        | 11,701,925   | nan                  |
+|       | Gross claims incurred reclassified to insurance service expenses                                | C2  | -            | nan                                          | 11,701,925                           | -                        | (11,701,925) | nan                  |
+|       | Recoveries on coinsurance and reinsurance reclassified to net expenses on reinsurance contracts | C3  | -            | nan                                          |                                      | -                        | -            | nan                  |
+|       | Closing balance, IFRS 17                                                                        |     | (11,701,925) | nan                                          | 11,701,925                           | -                        | -            | nan                  |
+| E     | Explanatory notes to the reconciliation of the Statement of comprehensive income – continued    | nan | nan          | nan                                          | nan                                  | nan                      |              | nan                  |
+|       |                                                                                                 | nan |              | Transition adjustment as at 31 December 2022 | nan                                  | nan                      | nan          | nan                  |
+|       |                                                                                                 | nan |              | 31 Dec. 2022 IFRS 4                          | Reclassific ation and derecogniti on | IFRS 17 re- measure ment | nan          | 31 Dec. 2022 IFRS 17 |
+|       |                                                                                                 | nan | Note         | ₦'000                                        | ₦'000                                | ₦'000                    | nan          | ₦'000                |
+
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+(v) Changes in life / annuity
+fund estimate
+As per IFRS 4 C4
+- - -
+(vi) Underwriting expenses
+As per IFRS 4 C5
+(1,263,437) 1,263,437 - -
+Closing balance, IFRS
+17 (1,263,437) 1,263,437 - -
+(vii) Insurance revenue
+Premium reclassified from C6
+Gross premium income - 7,109,679 7,109,679
+Impact of actuarial -
+remeasurement - 1,009,036 1,009,036
+Closing balance, IFRS
+17 - 7,109,679 1,009,036 8,118,715
+(viii Insurance service
+) expenses
+Gross claims incurred C7
+reclassified to insurance (11,701,925) 11,701,925
+service expenses
+Underwriting expenses C8
+reclassified (1,263,437) 1,263,437
+Correction 12,937,010
+ofunderstatement of (12,937,010)
+maintenance expenses
+IFRS 17 impact : Risk
+Adjustment 28,352 28,352
+IFRS 17 impact: Adjustment to claims expenses including discounting
+Closing balance, IFRS 17 -
+Net expense from reinsurance
+(ix) contracts
+Reinsurance premium
+expenses reclassified
+under IFRS 4 C9 - 219,692 219,692
+Fees and commision
+income reclassified
+under IFRS 4 D1 - 62,570 62,570
+Recoveries on
+reinsurance not
+treated in IFRS 4 D2 - - - -
+Impact of actuarial
+remeasurement (301,937) (301,937)
+IFRS 17 impact:
+Losses on onerous
+contracts - -
+Closing balance,
+IFRS 17 - 282,262 ( 301,937) (19,675)
+101
+
+
+| 0       | 1                                                                | 2   | 3           | 4            | 5          |   6 | 7            |
+|:--------|:-----------------------------------------------------------------|:----|:------------|:-------------|:-----------|----:|:-------------|
+| (v)     | Changes in life / annuity fund estimate                          |     | nan         |              |            |     | nan          |
+|         | As per IFRS 4                                                    | C4  |             | -            | -          | nan | -            |
+| (vi)    | Underwriting expenses                                            |     |             |              |            | nan |              |
+|         | As per IFRS 4                                                    | C5  | (1,263,437) | 1,263,437    | -          | nan | -            |
+|         | Closing balance, IFRS 17                                         |     | (1,263,437) | 1,263,437    | -          | nan | -            |
+| (vii)   | Insurance revenue                                                |     |             |              |            | nan |              |
+|         | Premium reclassified from Gross premium income                   | C6  | -           | 7,109,679    |            | nan | 7,109,679    |
+|         | Impact of actuarial remeasurement                                |     | -           | -            | 1,009,036  | nan | 1,009,036    |
+|         | Closing balance, IFRS 17                                         |     | -           | 7,109,679    | 1,009,036  | nan | 8,118,715    |
+| (viii ) | Insurance service expenses                                       |     |             |              |            | nan |              |
+|         | Gross claims incurred reclassified to insurance service expenses | C7  |             | (11,701,925) |            | nan | 11,701,925   |
+|         | Underwriting expenses reclassified                               | C8  |             | (1,263,437)  |            | nan | 1,263,437    |
+|         | Correction ofunderstatement of maintenance expenses              |     |             |              | 12,937,010 | nan | (12,937,010) |
+|         | IFRS 17 impact : Risk Adjustment                                 |     |             |              | 28,352     | nan | 28,352       |
+
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Insurance finance
+(x) income/(expense)
+Insurance finance
+income/(expenses) - - (3,165,731) (3,165,731)
+- -
+Reinsurance finance
+(xi) income/(expense)
+Reinsurance finance
+income/(expenses) - - 17,083 17,083
+E Explanatory notes to the reconciliation of the Statement of comprehensive income - continued
+Transiition adjustment as at 31 December 2022
+31 Dec. 2022 Reclassification 31 Dec. 2022
+IFRS 4 and derecognition IFRS 17 remeasurement IFRS 17
+Note ₦'000 N’000 N’000 N’000
+(xiii) Other operating income
+Rental Income D3
+Foreign exchange gain
+(xvi)
+Other income
+Profit on disposal of
+fixed assets
+Closing balance,
+IFRS 17
+Foreign exchange
+(xiv) gain
+Foreign exchange
+gain D4
+Closing balance,
+IFRS 17
+Net expected credit
+(xv) loss (charge)
+Total Impairment
+charge IFRS 4
+Impairment charge on reinsurance asset
+Closing balance,
+IFRS 17 -
+102
+
+AFRICAN ALLIANCE INSURANCE PLC
+ANNUAL REPORT FOR THE YEAR ENDED
+31 DECEMBER 2023
+Total operating
+(xvi) expenses
+Total operating
+expenses, IFRS 4 (953,791) 400,277 (553,514)
+Attributable expenses
+reclassified to
+insurance service
+expenses D5 -
+(953,791) 400,277 (553,514)
+Net impairment writeback/(charge) on financial
+(xvii) assets at amortised cost
+Total impairment as
+reported in IFRS 4
+Attributable expenses
+reclassified to insurance
+service expenses D6 -
+103
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+STATEMENT OF FINANCIAL
+POSITION AS AT DEC 31, 2023
+Note
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-21 31-Dec-23 31-Dec-22 31-Dec-21
+ASSETS N’000 N’000 N’000 N’000 N’000 N’000
+Restated Restated
+Cash and cash equivalents 6 820,949 1,141,679 1,389,861 739,360 1,060,089 1,308,630
+Financial assets 7
+'-fair value through profit or loss 7.1 33,179,295 36,259,511 26,651,293 33,175,007 36,255,223 26,647,005
+'- Amortised cost 7.4 62,491 62,583 86,176 62,782 62,583 86,176
+Trade receivables 8 88,884 88,884 88,884 - - -
+Reinsurance contract assets 9 135,120 166,819 113,116 135,120 166,819 113,116
+Other receivables and prepayments 10 690,101 728,369 1,117,988 653,727 691,995 2,710,190
+Investment properties 11 14,372,536 12,719,286 9,668,536 12,734,000 11,080,750 8,030,000
+Investment in subsidiary 12 - - - 105,000 105,000 542,729
+Investment in Associate 13 - - - - - -
+Defferred Tax Asset 25b 147,690 147,690 147,690 146,476 146,476 146,476
+Intangible assets 14 160,301 60,413 56,481 156,738 56,850 29,428
+Property plant and equipment 15 1,792,388 1,792,388 1,876,748 684,688 763,047 847,736
+Right of Use Assets 16 123,954 - 42,252 - - 42,252
+Statutory deposit 17 348,401 348,401 348,401 200,000 200,000 200,000
+Total assets 51,922,110 53,473,361 41,587,426 48,792,897 50,588,832 40,703,737
+LIABILITIES
+Insurance contract liabilities 18 39,559,241 42,408,806 40,852,662 40,323,718 42,408,806 39,090,388
+Investment contract liabilities 19 6,232,355 776,643 3,396,153 2,919,135 776,643 3,396,155
+Trade payable 20 1,823,505 838,925 1,184,874 1,649,987 665,407 946,624
+Other payables and accruals 21 743,164 732,289 803,762 611,550 600,675 736,881
+Provisions and accruals 0 114,472 132,652 0 0 61,700
+104
+
+
+| 0                                                  | 1    |   2 | 3          | 4          | 5              |   6 | 7          | 8          | 9              |
+|:---------------------------------------------------|:-----|----:|:-----------|:-----------|:---------------|----:|:-----------|:-----------|:---------------|
+| STATEMENT OF FINANCIAL POSITION AS AT DEC 31, 2023 |      |     |            |            |                |     |            |            |                |
+|                                                    | Note |     | Group      | nan        | nan            |     | nan        | nan        | nan            |
+|                                                    |      |     | 31-Dec-23  | 31-Dec-22  | 31-Dec-21      |     | 31-Dec-23  | 31-Dec-22  | 31-Dec-21      |
+| ASSETS                                             |      |     | N’000      | N’000      | N’000 Restated |     | N’000      | N’000      | N’000 Restated |
+| Cash and cash equivalents                          | 6    |     | 820,949    | 1,141,679  | 1,389,861      |     | 739,360    | 1,060,089  | 1,308,630      |
+| Financial assets                                   | 7    |     |            |            |                |     |            |            |                |
+| '-fair value through profit or loss                | 7.1  |     | 33,179,295 | 36,259,511 | 26,651,293     |     | 33,175,007 | 36,255,223 | 26,647,005     |
+| '- Amortised cost                                  | 7.4  |     | 62,491     | 62,583     | 86,176         |     | 62,782     | 62,583     | 86,176         |
+| Trade receivables                                  | 8    |     | 88,884     | 88,884     | 88,884         |     | -          | -          | -              |
+| Reinsurance contract assets                        | 9    |     | 135,120    | 166,819    | 113,116        |     | 135,120    | 166,819    | 113,116        |
+| Other receivables and prepayments                  | 10   |     | 690,101    | 728,369    | 1,117,988      |     | 653,727    | 691,995    | 2,710,190      |
+| Investment properties                              | 11   |     | 14,372,536 | 12,719,286 | 9,668,536      |     | 12,734,000 | 11,080,750 | 8,030,000      |
+| Investment in subsidiary                           | 12   |     | -          | -          | -              |     | 105,000    | 105,000    | 542,729        |
+| Investment in Associate                            | 13   |     | -          | -          | -              |     | -          | -          | -              |
+| Defferred Tax Asset                                | 25b  |     | 147,690    | 147,690    | 147,690        |     | 146,476    | 146,476    | 146,476        |
+| Intangible assets                                  | 14   |     | 160,301    | 60,413     | 56,481         |     | 156,738    | 56,850     | 29,428         |
+| Property plant and equipment                       | 15   |     | 1,792,388  | 1,792,388  | 1,876,748      |     | 684,688    | 763,047    | 847,736        |
+| Right of Use Assets                                | 16   |     | 123,954    | -          | 42,252         |     | -          | -          | 42,252         |
+| Statutory deposit                                  | 17   |     | 348,401    | 348,401    | 348,401        |     | 200,000    | 200,000    | 200,000        |
+| Total assets                                       |      |     | 51,922,110 | 53,473,361 | 41,587,426     |     |            | 50,588,832 | 40,703,737     |
+| nan                                                | nan  | nan | nan        | nan        | nan            |     |            | nan        | nan            |
+| nan                                                | nan  | nan | nan        | nan        | nan            | nan | 48,792,897 | nan        | nan            |
+| LIABILITIES                                        |      |     |            |            |                |     |            |            |                |
+| Insurance contract liabilities                     | 18   |     | 39,559,241 | 42,408,806 | 40,852,662     |     | 40,323,718 | 42,408,806 | 39,090,388     |
+| Investment contract liabilities                    | 19   |     | 6,232,355  | 776,643    | 3,396,153      |     | 2,919,135  | 776,643    | 3,396,155      |
+| Trade payable                                      | 20   |     | 1,823,505  | 838,925    | 1,184,874      |     | 1,649,987  | 665,407    | 946,624        |
+| Other payables and accruals                        | 21   |     | 743,164    | 732,289    | 803,762        |     | 611,550    | 600,675    | 736,881        |
+| Provisions and accruals                            |      |     | 0          | 114,472    | 132,652        |     | 0          | 0          | 61,700         |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Employee benefit liabilities 22i 26,143 47,346 35,652 92,107 113,310 35,652
+Borrowings 23 0 134,611 166,202 0 0 54,034
+Tax payable 24 594,723 591,045 615,741 561,865 558,187 582,882
+Deferred tax liability 25a 673,767 204,005 204,005 561,869 92,107 92,107
+Total liabilities 49,652,898 48,396,886 47,391,703 46,720,232 45,215,136 44,996,421
+EQUITY
+Share capital 26 10,292,500 10,292,500 10,292,500 10,292,500 10,292,500 10,292,500
+Share premium 26c 14,365,133 14,365,133 14,365,133 14,365,133 14,365,133 14,365,133
+Contingency reserves 27 2,032,514 1,971,330 1,903,181 1,983,877 1,922,694 1,854,545
+Retained earnings 28 (40,549,007) (37,186,798) (34,276,985) (39,967,227) (36,605,015) (32,421,384)
+Foreign exchange (Translation) 47 (856,957)
+reserve (361,968) (856,957)- 0
+Fair value reserves 29 16,131,871 16,131,870 2,625,201 15,398,383 15,398,383 1,616,522
+Total equity 2,269,214 4,717,079 (5,907,828) 2,072,666 5,373,696 (4,292,685)
+Non-controlling interest 48 358,172 359,395 143,550 - -
+Total equities and liabilities 51,922,110 53,473,361 41,587,426 48,792,897 50,588,832 40,703,737
+Signed on behalf of the Board of Directors on April 29, 2025 by
+Jacob Erhabor Oremeyi Onefuwa Longe
+Managing Director Executive Director – Finance
+FRC/2025/CIIN/002/580404 FRC/2025/PRO/ICAN/001/108374
+105
+
+
+| 0                                      | 1   |   2 | 3            | 4            | 5            | 6   | 7            | 8            | 9            |
+|:---------------------------------------|:----|----:|:-------------|:-------------|:-------------|:----|:-------------|:-------------|:-------------|
+| Employee benefit liabilities           | 22i |     | 26,143       | 47,346       | 35,652       |     | 92,107       | 113,310      | 35,652       |
+| Borrowings                             | 23  |     | 0            | 134,611      | 166,202      |     | 0            | 0            | 54,034       |
+| Tax payable                            | 24  |     | 594,723      | 591,045      | 615,741      |     | 561,865      | 558,187      | 582,882      |
+| Deferred tax liability                 | 25a |     | 673,767      | 204,005      | 204,005      |     | 561,869      | 92,107       | 92,107       |
+| Total liabilities                      |     |     | 49,652,898   | 48,396,886   | 47,391,703   |     | 46,720,232   | 45,215,136   | 44,996,421   |
+| nan                                    | nan | nan | nan          | nan          | nan          |     | nan          | nan          | nan          |
+| EQUITY                                 |     |     |              |              |              |     |              |              |              |
+| Share capital                          | 26  |     | 10,292,500   | 10,292,500   | 10,292,500   |     | 10,292,500   | 10,292,500   | 10,292,500   |
+| Share premium                          | 26c |     | 14,365,133   | 14,365,133   | 14,365,133   |     | 14,365,133   | 14,365,133   | 14,365,133   |
+| Contingency reserves                   | 27  |     | 2,032,514    | 1,971,330    | 1,903,181    |     | 1,983,877    | 1,922,694    | 1,854,545    |
+| Retained earnings                      | 28  |     | (40,549,007) | (37,186,798) | (34,276,985) |     | (39,967,227) | (36,605,015) | (32,421,384) |
+| Foreign exchange (Translation) reserve | 47  |     | (361,968)    | (856,957)-   | (856,957)    |     | 0            |              |              |
+| Fair value reserves                    | 29  |     | 16,131,871   | 16,131,870   | 2,625,201    |     | 15,398,383   | 15,398,383   | 1,616,522    |
+| Total equity                           |     |     | 2,269,214    | 4,717,079    | (5,907,828)  |     | 2,072,666    | 5,373,696    | (4,292,685)  |
+| Non-controlling interest               | 48  |     | 358,172      | 359,395      | 143,550      |     | -            |              | -            |
+|                                        |     |     |              |              |              |     |              |              |              |
+| Total equities and liabilities         |     |     | 51,922,110   | 53,473,361   | 41,587,426   |     |              | 50,588,832   | 40,703,737   |
+| nan                                    | nan | nan | nan          | nan          | nan          |     | 48,792,897   | nan          | nan          |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+STATEMENT OF COMPREHENSIVE INCOME
+For the period ended 31, DEC. 2023
+Group Company
+Notes 31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N'000 N'000 N'000 N'000
+Insurance Revenue 30 7,089,169 8,118,367 7,089,169 8,118,387
+Insurance service expenses 30.b(G)
+(15,978,687) (11,320,878) (15,978,687) (11,320,878)
+Insurance service result from (8,889,518) (3,202,491) (8,889,518) (3,202,491)
+insurance contracts issued
+Net income (expenses) from 30.b(P) (145,471) (19,675) (145,471) (19,675)
+reinsurance contracts held
+Insurance service result (9,034,989) (3,182,815) (9,034,989) (3,182,815)
+Investment Income 30.b(Y) 3,825,525 2,216,910 3,825,525 2,216,910
+Net fair value gain/(loss) on 30.b(R) - 3,155,432 - 3,155,432
+financial assets
+Net Investment income 3,825,515 5,372,342 3,825,515 5,372,342
+Impairment gain/loss on financial
+assets 6 4,713 - 4,713 -
+Net fair value gain/loss on
+investment properties 11 1,653,250 - 1,653,250 -
+Investment Result 5,483,478 5,372,342 5,483,478 5,372,342
+Finance income (expenses) from 30.b(R) 3,008,078 (3,165,731) 3,008,078 (3,165,731)
+insurance contracts issued
+Finance income (expenses) from - 17,083 - 17,083
+reinsurance Contracts issued
+24aa 3,008,078 (3,165,732) 3,008,078 (3,165,731)
+Net Insurance Finance expenses
+Net Insurance and Investment 24aa (2,201,386) - (2,201,386) -
+Result
+Other expenses (553,514) (553,514) (1,095,964) (553,514)
+Profit before Tax (1,639,387) (4,685,150) (1,639,387) (4,685,150)
+Income Tax expenses 24 (3,678) (5,304) (3,678) (5,304)
+Profit for the year (1,643,065) (4,690,454) (1,643,065) (4,690,454)
+106
+
+
+| 0                                                                                                                                  | 1       | 2                                   | 3                       | 4                                   | 5                       |
+|:-----------------------------------------------------------------------------------------------------------------------------------|:--------|:------------------------------------|:------------------------|:------------------------------------|:------------------------|
+|                                                                                                                                    |         | Group                               | nan                     | Company                             | nan                     |
+|                                                                                                                                    | Notes   | 31-Dec-23                           | 31-Dec-22               | 31-Dec-23                           | 31-Dec-22               |
+|                                                                                                                                    |         | N'000                               | N'000                   | N'000                               | N'000                   |
+| Insurance Revenue                                                                                                                  | 30      | 7,089,169                           | 8,118,367               | 7,089,169                           | 8,118,387               |
+| Insurance service expenses                                                                                                         | 30.b(G) | (15,978,687)                        | (11,320,878)            | (15,978,687)                        | (11,320,878)            |
+| Insurance service result from insurance contracts issued                                                                           |         | (8,889,518)                         | (3,202,491)             | (8,889,518)                         | (3,202,491)             |
+| Net income (expenses) from reinsurance contracts held                                                                              | 30.b(P) | (145,471)                           | (19,675)                | (145,471)                           | (19,675)                |
+| Insurance service result                                                                                                           |         | (9,034,989)                         | (3,182,815)             | (9,034,989)                         | (3,182,815)             |
+| Investment Income                                                                                                                  | 30.b(Y) | 3,825,525                           | 2,216,910               | 3,825,525                           | 2,216,910               |
+| Net fair value gain/(loss) on financial assets                                                                                     | 30.b(R) | -                                   | 3,155,432               | -                                   | 3,155,432               |
+| Net Investment income Impairment gain/loss on financial assets Net fair value gain/loss on investment properties Investment Result | 6 11    | 3,825,515 4,713 1,653,250 5,483,478 | 5,372,342 - - 5,372,342 | 3,825,515 4,713 1,653,250 5,483,478 | 5,372,342 - - 5,372,342 |
+| Finance income (expenses) from insurance contracts issued                                                                          | 30.b(R) | 3,008,078                           | (3,165,731)             | 3,008,078                           | (3,165,731)             |
+| Finance income (expenses) from reinsurance Contracts issued                                                                        |         | -                                   | 17,083                  | -                                   | 17,083                  |
+| Net Insurance Finance expenses                                                                                                     | 24aa    | 3,008,078                           | (3,165,732)             | 3,008,078                           | (3,165,731)             |
+| Net Insurance and Investment Result                                                                                                | 24aa    | (2,201,386)                         | -                       | (2,201,386)                         | -                       |
+| Other expenses                                                                                                                     |         | (553,514)                           | (553,514)               | (1,095,964)                         | (553,514)               |
+| Profit before Tax                                                                                                                  |         | (1,639,387)                         | (4,685,150)             | (1,639,387)                         | (4,685,150)             |
+| Income Tax expenses                                                                                                                | 24      | (3,678)                             | (5,304)                 | (3,678)                             | (5,304)                 |
+| Profit for the year                                                                                                                |         | (1,643,065)                         | (4,690,454)             | (1,643,065)                         | (4,690,454)             |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+STATEMENT OF CHANGES IN EQUITY – GROUP
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Share Share Contingency Fair value Translation Retained Non- Total
+capital premium reserve reserve reserve earnings controlling
+interest
+N'000 N'000 N'000 N'000 N'000 N'000 N'000 N'000
+1-Jan-23 10,292,500 14,365,133 1,971,330 16,131,871 (856,957) (37,186,798) 359,395 5,076,475
+Total comprehensive income for the year
+Profit for the year (3,301,028) - (3,301,028)
+Changes in fair value of FVOCI Investment - - - -
+Translation reserve - 494,988 (1,221) 493,767
+Gain on revaluation of PPE
+Additional reserve on sale of investment in Associate
+Defered tax on revaluation -
+Total Comprehensive income for the period - - 494,988 (3,303,249) - (2,807,261)
+-
+Transfer to contingency reserve - 61,184 (59,960) (1,224)
+Total transactions with owners, recognised directly in - - 61,184 - (59,960) (1,224) -
+equity
+31-Dec-23 2,032,514
+10,292,500 14,365,133 16,131,871 (361,968) (40,549,007) 358,172 2,269,214
+STATEMENT OF CHANGES IN EQUITY – GROUP
+FOR THE PERIOD ENDED 31 DECEMBER 2022
+Share Share Contingency Fair value Translation Retained Non- Total
+capital premium reserve reserve reserve earnings controlling
+interest
+N'000 N'000 N'000 N'000 N'000 N'000 N'000 N'000
+1-Jan-22
+10,292,500 14,365,133 1,903,181 2,625,241 (856,957) (34,276,925) 143,550 (5,804,276)
+Total comprehensive income for the period
+Profit for the year (2,843,087) (58,022) (2,901,109)
+Charges in fair value of FVOCI 13,486,298 275,231 13,761,529
+Translation reserve - -
+Gain on revaluation of PPE 20,331 20,331
+Additional reserve on sale of Investment in Associate
+Deferred tax on revaluation -
+Total Comprehensive income for the year - - 13,506,630 (2,843,087) 217,208 10,880,751
+-
+- 68,149 (66,786) (1,363)
+Transfer to contingency reserve - - - -
+- -
+107
+
+
+| 0                                                             | 1             | 2             | 3                   | 4                  | 5                   | 6                 | 7                         | 8           |
+|:--------------------------------------------------------------|:--------------|:--------------|:--------------------|:-------------------|:--------------------|:------------------|:--------------------------|:------------|
+| STATEMENT OF CHANGES IN EQUITY – GROUP                        |               |               |                     |                    |                     |                   |                           |             |
+| FOR THE PERIOD ENDED 31 DECEMBER 2023                         |               |               |                     |                    |                     |                   |                           |             |
+|                                                               | Share capital | Share premium | Contingency reserve | Fair value reserve | Translation reserve | Retained earnings | Non- controlling interest | Total       |
+|                                                               | N'000         | N'000         | N'000               | N'000              | N'000               | N'000             | N'000                     | N'000       |
+|                                                               |               |               |                     |                    |                     |                   |                           |             |
+| 1-Jan-23                                                      | 10,292,500    | 14,365,133    | 1,971,330           | 16,131,871         | (856,957)           | (37,186,798)      | 359,395                   | 5,076,475   |
+| Total comprehensive income for the year                       |               |               |                     |                    |                     |                   |                           |             |
+| Profit for the year                                           |               |               |                     |                    |                     | (3,301,028)       | -                         | (3,301,028) |
+| Changes in fair value of FVOCI Investment                     |               |               |                     | -                  |                     | -                 | -                         | -           |
+| Translation reserve                                           | -             |               |                     |                    | 494,988             | (1,221)           |                           | 493,767     |
+| Gain on revaluation of PPE                                    |               |               |                     |                    |                     |                   |                           |             |
+| Additional reserve on sale of investment in Associate         |               |               |                     |                    |                     |                   |                           |             |
+| Defered tax on revaluation                                    | -             |               |                     |                    |                     |                   |                           |             |
+| Total Comprehensive income for the period                     | -             | -             | -                   |                    | 494,988             | (3,303,249)       | -                         | (2,807,261) |
+| Transfer to contingency reserve                               | -             |               | 61,184              |                    |                     | (59,960)          | (1,224)                   |             |
+| Total transactions with owners, recognised directly in equity | -             | -             | 61,184              | -                  |                     | (59,960)          | (1,224)                   | -           |
+| 31-Dec-23                                                     | 10,292,500    | 14,365,133    | 2,032,514           | 16,131,871         | (361,968)           | (40,549,007)      | 358,172                   | 2,269,214   |
+| STATEMENT OF CHANGES IN EQUITY – GROUP                        |               |               |                     |                    |                     |                   |                           |             |
+| FOR THE PERIOD ENDED 31 DECEMBER 2022                         |               |               |                     |                    |                     |                   |                           |             |
+|                                                               | Share capital | Share premium | Contingency reserve | Fair value reserve | Translation reserve | Retained earnings | Non- controlling interest | Total       |
+|                                                               | N'000         | N'000         | N'000               | N'000              | N'000               | N'000             | N'000                     | N'000       |
+| 1-Jan-22                                                      | 10,292,500    | 14,365,133    | 1,903,181           | 2,625,241          | (856,957)           | (34,276,925)      | 143,550                   | (5,804,276) |
+| Total comprehensive income for the period                     |               |               |                     |                    |                     |                   |                           |             |
+| Profit for the year                                           |               |               |                     |                    |                     | (2,843,087)       | (58,022)                  | (2,901,109) |
+| Charges in fair value of FVOCI                                |               |               |                     | 13,486,298         |                     |                   | 275,231                   | 13,761,529  |
+| Translation reserve                                           | -             |               |                     |                    |                     |                   |                           | -           |
+| Gain on revaluation of PPE                                    |               |               |                     | 20,331             |                     |                   |                           | 20,331      |
+| Additional reserve on sale of Investment in Associate         |               |               |                     |                    |                     |                   |                           |             |
+| Deferred tax on revaluation                                   | -             |               |                     |                    |                     |                   |                           |             |
+| Total Comprehensive income for the year                       | -             | -             | -                   | 13,506,630         |                     | (2,843,087)       | 217,208                   | 10,880,751  |
+|                                                               | -             |               | 68,149              |                    |                     | (66,786)          | (1,363)                   |             |
+| Transfer to contingency reserve                               | -             | -             | -                   | -                  |                     | -                 |                           | -           |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+10,292,500 14,365,133 1,971,330 16,131,870 (856,957) (37,186,798) 359,395 5,076,475
+Total transactions with owners, recognised directly in - - 218,542 - (214,171) (4,371) -
+equity
+31-Dec-22 1,903,181
+10,292,500 14,365,133 2,625,241 (856,957) (34,276,925) 143,550 5,076,475
+108
+
+
+| 0                                                             | 1          | 2          |         3 | 4          | 5         | 6            | 7       | 8         |
+|:--------------------------------------------------------------|:-----------|:-----------|----------:|:-----------|:----------|:-------------|:--------|:----------|
+|                                                               | 10,292,500 | 14,365,133 | 1,971,330 | 16,131,870 | (856,957) | (37,186,798) | 359,395 | 5,076,475 |
+| Total transactions with owners, recognised directly in equity | -          | -          |   218,542 | -          |           | (214,171)    | (4,371) | -         |
+| 31-Dec-22                                                     | 10,292,500 | 14,365,133 | 1,903,181 | 2,625,241  | (856,957) | (34,276,925) | 143,550 | 5,076,475 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+STATEMENT OF CHANGES IN EQUITY - COMPANY
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Premium on
+Share Contingency Fair value Treasury acquisition of
+Share capital premium reserve reserve shares PAL Retained earnings Total
+N'000 N'000 N'000 N'000 N'000 N'000
+1-Jan-23 10,292,500 14,365,133 1,922,694 15,398,383 - - (336,605,055) 5,393,694
+Total comprehensive income for the year
+Treasury shares -
+Premium on acquisition of Associate -
+Profit for the year - (3,301,028) (3,301,028)
+Other comprehensive income for the year - -
+Total Comprehensive income for the period - - - - (3,301,028) (3,301,028)
+Transactions with owners, recorded directly in equity
+Transfer to contingency reserve - 61,183 (61,183) -
+Total transactions with owners, recognised directly in equity - - 61,183 - (61,183) -
+31-Dec-23 10,292,500 14,365,133 1,983,877 15,398,382 - - (39,967,227) 2,072,668
+STATEMENT OF CHANGES IN EQUITY – COMPANY
+FOR THE PERIOD ENDED 31 DECEMBER 2022
+Premium on
+Share Contingency Fair value Treasury acquisition of
+Share capital premium reserve reserve shares PAL Retained earnings Total
+N'000 N'000 N'000 N'000 N'000 N'000
+1-Jan-22 10,292,500 14,365,133 1,854,545 1,616,522 - - (32,421,384) (4,292,684)
+Total comprehensive income for the year
+Profit for the year -
+Other comprehensive gain/( Loss) for the year -
+Total Comprehensive loss for the year - (4,685,150) (4,685,150)
+- 13,781,861 13,781,081
+Transactions with owners, recorded directly in equity - - - 13,781,861 (4,685,150) 8,813,270
+Transfer to contingency reserve
+Total transactions with owners, recognised directly in equity - 68,149 (68,149) -
+- - 68,149 - (68,149) -
+31-Dec-22 10,292,500 14,365,133 1,922,694 15,398,383 - - (37,457,346) 4,521,364
+109
+
+
+| 0                                                                              | 1             | 2             | 3                   | 4                  | 5               | 6                             | 7                 | 8           |
+|:-------------------------------------------------------------------------------|:--------------|:--------------|:--------------------|:-------------------|:----------------|:------------------------------|:------------------|:------------|
+| STATEMENT OF CHANGES IN EQUITY - COMPANY FOR THE PERIOD ENDED 31 DECEMBER 2023 | nan           |               |                     |                    |                 |                               |                   |             |
+|                                                                                | Share capital | Share premium | Contingency reserve | Fair value reserve | Treasury shares | Premium on acquisition of PAL | Retained earnings | Total       |
+|                                                                                | N'000         | N'000         | N'000               | N'000              |                 |                               | N'000             | N'000       |
+| 1-Jan-23                                                                       | 10,292,500    | 14,365,133    | 1,922,694           | 15,398,383         | -               | -                             | (336,605,055)     | 5,393,694   |
+| Total comprehensive income for the year                                        |               |               |                     |                    |                 |                               |                   |             |
+| Treasury shares                                                                |               |               |                     |                    |                 |                               |                   | -           |
+| Premium on acquisition of Associate                                            |               |               |                     |                    |                 |                               |                   | -           |
+| Profit for the year                                                            | -             |               |                     |                    |                 |                               | (3,301,028)       | (3,301,028) |
+| Other comprehensive income for the year                                        | -             |               |                     | -                  |                 |                               |                   |             |
+| Total Comprehensive income for the period                                      | -             | -             | -                   | -                  |                 |                               | (3,301,028)       | (3,301,028) |
+| Transactions with owners, recorded directly in equity                          |               |               |                     |                    |                 |                               |                   |             |
+| Transfer to contingency reserve                                                | -             |               | 61,183              |                    |                 |                               | (61,183)          | -           |
+| Total transactions with owners, recognised directly in equity                  | -             | -             | 61,183              | -                  |                 |                               | (61,183)          | -           |
+| 31-Dec-23                                                                      | 10,292,500    | 14,365,133    | 1,983,877           | 15,398,382         | -               | -                             | (39,967,227)      | 2,072,668   |
+| STATEMENT OF CHANGES IN EQUITY – COMPANY                                       |               |               |                     |                    |                 |                               |                   |             |
+| FOR THE PERIOD ENDED 31 DECEMBER 2022                                          |               |               |                     |                    |                 |                               |                   |             |
+|                                                                                | Share capital | Share premium | Contingency reserve | Fair value reserve | Treasury shares | Premium on acquisition of PAL | Retained earnings | Total       |
+|                                                                                | N'000         | N'000         | N'000               | N'000              |                 |                               | N'000             | N'000       |
+| 1-Jan-22                                                                       | 10,292,500    | 14,365,133    | 1,854,545           | 1,616,522          | -               | -                             | (32,421,384)      | (4,292,684) |
+| Total comprehensive income for the year                                        |               |               |                     |                    |                 |                               |                   |             |
+| Profit for the year                                                            |               |               |                     |                    |                 |                               |                   | -           |
+| Other comprehensive gain/( Loss) for the year                                  |               |               |                     |                    |                 |                               |                   | -           |
+| Total Comprehensive loss for the year                                          | -             |               |                     |                    |                 |                               | (4,685,150)       | (4,685,150) |
+|                                                                                | -             |               |                     | 13,781,861         |                 |                               |                   | 13,781,081  |
+| Transactions with owners, recorded directly in equity                          | -             | -             | -                   | 13,781,861         |                 |                               | (4,685,150)       | 8,813,270   |
+| Transfer to contingency reserve                                                |               |               |                     |                    |                 |                               |                   |             |
+| Total transactions with owners, recognised directly in equity                  | -             |               | 68,149              |                    |                 |                               | (68,149)          | -           |
+|                                                                                | -             | -             | 68,149              | -                  |                 |                               | (68,149)          | -           |
+| 31-Dec-22                                                                      | 10,292,500    | 14,365,133    | 1,922,694           | 15,398,383         | -               | -                             | (37,457,346)      | 4,521,364   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+STATEMENT OF CASH FLOWS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+Cash flows from operating activities N’000 N’000 N’000 N’000
+Cash premium received 18.1a 5,386,767 4,910,568 5,386,767 4,910,568
+Premium received yet to be allocated 20i 1,004,068 - 1,004,068 -
+Cash received from deposit contract liabilities 19 724,374 654,546 724,374 654,546
+Cash withdrawals from deposit contract liabilities 19 (1,986,647) (55,411) (1,986,647) (55,411)
+Cash Claims recovered 995,314 131,561 995,314 131,561
+Claims paid 18.1a (12,013,832) (9,857,075) (12,013,832) (9,857,075)
+Cash paid to reinsurers/ coinsurers (31,849) (384,703) (31,849) (384,703)
+Commission received 32 -71,417 62,570 71,417 62,570
+Maintenance expenses paid 34 (38,244) (649,356) (38,244) (649,356)
+18.1a
+Acquisition costs (1,339,464) (1,223,520) (1,339,464) (1,223,520)
+Employee benefits paid 41 (995,314) (953,791) (995,314) (953,791)
+Other operating expenses paid - (987,055) - (987,055)
+Other income received 36 102,104 107,119 102,104 106,761
+Interest received 33 3,826,526 974,907 3,825,526 974,906
+Income tax paid 24 - (30,000) - (30,000)
+Net cash from operating activities 15,882,544 (4,566,370) 15,850,695 (4,566,728)
+Cash flow from investing activities:
+Purchases of plant and equipment 15 (71,200) (50,596) (71,200) (50,596)
+Purchase of intangible assets 14 (137,390) (18,857) (137,390) (18,857)
+Capital Improvement of investment properties 11 - - - -
+Proceeds from disposal of property and equipment 1,696 930 1,696 930
+Proceeds from disposal of investment in associate company 13 - - - -
+Capital injection made to subsidiary - - - -
+Cash received from associate company 13 - - - -
+Purchase of financial assets-Bonds FVTPL 7.2i (240,000) 935,352 (240,000) (935,352)
+Purchase of financial assets- Bonds amortized cost - - - -
+Proceeds from disposal of investments-equities FVTPL 36b - - -
+Cash received from disposal of bonds 36a 3,058,136 4,546,880 3,058,136 4,546,880
+866,099 866,09
+Cash received from redemption of bond -
+Dividend received 39 259,466 14,809 256,466 14,809
+Redemption of financial assets - Amortised cost - 24,327 - 24,327
+Right of Use 195,935 195,935
+Net cash used in investing activities 3,960,431 4,433,431 3,960,431 4,433,431
+Cash flow from financing activities: - -
+Purchase/Proceeds from disposal of associate 13 - - - -
+Payments for lease liability – Principal 16 (22,444) (62,129) (22,444) (62,129)
+Repayment of borrowings 23 - (42,124) - (42,124)
+Proceeds from borrowings 23 - - - -
+Net cash used in financing activities (22,444) (104,253) (22,444) (104,253)
+Net increase/(decrease) in cash and cash equivalents 13,073,830 (237,550) 13,073,830 (237,550) (2
+110
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Cash and cash equivalent at beginning of year '6.2 1,162,024 1,399,216 1,060,090 1,316,975
+Effect of foreign exchange rate changes - 10,327 -
+Net increase/decrease in cash and cash equivalents 13,073,830 (237,550) (13,073,830) (237,550) (2
+Cash and cash equivalent at end of period 820,949 1,162,024 739,360 1,079,426
+Reconciliation of statement of cash flows
+Cash and cash equivalents at gross amount 820,949 1,162,024 739,360 1,079,426
+Impact of bank overdraft - 23,922 - -
+Cash and cash equivalents at gross excluding overdraft 820,949 1,185,946 739,360 1,079,426
+Impact of expected credit loss - (44,268) - (19,336)
+Cash and cash equivalents at carrying amount 820,949 1,141,678 739,360 1,060,090
+111
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+1. General Information
+Africa Alliance Insurance Company is a public limited company incorporated and domiciled in
+Nigeria. The registered office is located at 54 Awolowo Road, Ikoyi, Lagos.
+The company is principally engaged in the business of providing risk underwriting for life,
+related financial and pension services, aviation and hospitality services to its customers.
+2. Summary of significant accounting policies
+The principal accounting policies applied in the preparation of these financial statements are
+disclosed under General information on the Reporting Entity and Summary of Significant
+Accounting Policies. These policies have been consistently applied to all the years presented
+unless otherwise stated.
+3. Solvency
+The solvency level at the valuation date was (221%) for the Company (2022: (302%)). The
+company’s assets do not match liabilities (see note 5.4). Hence, asset admissibility
+requirements and localization rules in section 25 of Insurance Act CAP I17 LFN 2003 were not
+met. The life fund shows a deficit of N30.6billion as at 31 December 2023
+The assets backing the life funds are as follows:
+Group Company
+2023 2022 2023 2022
+N’000 N’000 N’000 N’000
+Government Bonds 3,058,136 6,269,671 3,058,136 6,269,671
+Cash and cash equivalents 820,949 1,141,679 739,360 1,060,089
+Investment in quoted equity 270,453 139,134 270,453 139,134
+Total 4,149,538 7,550,485 4,067,949 7,468,894
+4. Management of insurance risk
+The risk under any insurance contract is the possibility that the insured event occurs and the
+uncertainty of the amount of the resulting claim. By the very nature of an insurance contract,
+this risk is random and therefore unpredictable.
+For a portfolio of insurance contracts where the theory of probability is applied to pricing and
+provisioning, the principal risk that the Group faces under its insurance contracts is that the
+actual claims and benefit payments exceed the carrying amount of the insurance liabilities.
+This could occur because the frequency or severity of claims and benefits are greater than
+estimated. Insurance events are random, and the actual number and amount of claims and
+benefits will vary from year to year from the level established using statistical techniques.
+Experience shows that the larger the portfolio of similar insurance contracts, the smaller the
+relative variability about the expected outcome will be. In addition, a more diversified
+portfolio is less likely to be affected by a change in any subset of the portfolio. The Group has
+developed its insurance underwriting strategy to diversify the type of insurance risks accepted
+and within each of these categories to achieve a sufficiently large population of risks to reduce
+the variability of the expected outcome. Factors that aggravate insurance risk include lack of
+risk diversification in terms of type and amount of risk. The Group issues contracts that
+transfer insurance and/or financial risk. This section summarises the nature and management
+of these risks.
+112
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+4.3 Sources of uncertainty in the estimation of future claim payments
+Claims on contracts are payable on a claims-occurrence basis. The Group is liable for all insured
+events that occurred during the term of the contract, even if the loss is discovered after the end
+of the contract term. As a result, liability claims are settled over a long period of time, and a
+larger element of the claims provision elates to incurred but not reported claims (IBNR).
+Uncertainty in the estimation of future benefits payments and premium receipts for insurance
+contracts arises from the unpredictability of long-term changes invariable such as the overall
+levels of mortality, accident level and the variability in policyholder behavior.
+The insurance liabilities have been made on the following principles:-
+Type of Business Valuation Method
+Individual Risk Business Gross premium valuation approach
+Individual Deposit Based business Deposit reserve: Account balance at valuation date
+Risk reserve: Gross premium
+Group Life UPR + IBNR
+Group Deposit Administration Account Balance at valuation date
+4.1 Underwriting risk
+Underwriting risk relates mainly to the uncertainty that the insured event will occur. The
+nature of an insurance contract is that the timing and size of claims are uncertain and therefore
+unpredictable. The principal underwriting risk is the risk that the actual outcome of mortality,
+morbidity and medical claims will result in volatile profits from one year to the next. Such
+volatility may result from large concentrations of risk or from charging in adequate premiums
+relative to the severity or incidence of the risk accepted. Inadequate policy wording may fail
+to protect the insurer from claims that were not envisaged when the product was priced.
+Insurance events are random and the actual number and amount of underwriting benefits will
+vary from the best estimates established from statistical techniques and taking cognizance of
+past experience. The Group manages these risks through its underwriting strategy,
+reinsurance arrangements and claims handling processes.
+The following policies and practices are used by the Group as part of its underwriting strategy
+to mitigate underwriting risk:
+i) All long-term insurance product additions and alterations, both within and outside of
+agreed business definitions, are required to pass through the approvals framework that
+forms part of the governance process. The contracted actuary approves the financial
+soundness of new and revised products.
+ii) The Group’s underwriting strategy aims to ensure that the underwriting risks are well
+diversified in terms of type (medical, occupational, financial) and amount of risk covered.
+Whilst this is difficult to measure at underwriting stage, the success or failure of the
+strategy may be measured by the historical stability of profits emerging from the book of
+business.
+iii) Product pricing and reserving policies also include specific allowance for the risk of
+HIV/AIDS.
+iv) The contracted actuary reports annually on the profitability of the business taking into
+consideration the reasonable benefit expectation of policy holders. All new rate tables are
+113
+
+
+| 0                                 | 1                                                                              |
+|:----------------------------------|:-------------------------------------------------------------------------------|
+| Type of Business                  | Valuation Method                                                               |
+| Individual Risk Business          | Gross premium valuation approach                                               |
+| Individual Deposit Based business | Deposit reserve: Account balance at valuation date Risk reserve: Gross premium |
+| Group Life                        | UPR + IBNR                                                                     |
+| Group Deposit Administration      | Account Balance at valuation date                                              |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+approved and authorized by the statutory actuary prior to being issued.
+v) The right to re-rate premiums is retained as far as possible, although this is limited by
+competitive pressure.
+vi) Investigations into mortality and morbidity experience are conducted when necessary to
+ensure that corrective action is taken.
+Claims risk is represented by the fact that the Group may incur unexpectedly high mortality
+and morbidity losses on any group of policies. Client service staffs are trained to identify and
+investigate fraudulent claims timeously. The legitimacy of claims is verified by internal,
+financial and operating controls that are designed to contain and monitor claims risks. The
+internal audit team also investigates and advises on improvements to internal control
+systems.
+4.2 Frequency and severity of claims
+The frequency and severity of claims can be affected by several factors. The most significant
+are the increasing level of death, job loss and level of awards for the damages suffered as a
+result of road accidents. Estimated inflation is also a significant factor due to the long period
+typically required to settle cases where information are not readily available. The Group
+manages these risks through its underwriting strategy, adequate reinsurance arrangements
+and proactive claims handling.
+The underwriting strategy attempts to ensure that the underwritten risks are well diversified
+in terms of type and amount of risk. Underwriting limits are in place to enforce appropriate
+risk selection criteria. For example, the Group has the right not to renew policies and it has the
+right to reject the payment of a fraudulent claim.
+The reinsurance arrangements include surplus and quota-share. The effect of such
+reinsurance arrangements is that the Group should not suffer total net insurance losses of
+more than N10million on any policy. The Group has specialized claims units dealing with the
+mitigation of risks surrounding claims. This unit investigates and adjusts all claims. The claims
+are reviewed individually on a quarterly basis and adjusted to reflect the latest information
+on the underlying facts, contractual terms and conditions, and other factors. The Group
+actively manages and pursues early settlements of claims to reduce its exposure to
+unpredictable developments.
+The concentration of insurance risk before and after reinsurance by class of business in
+relation to the type of insurance risk accepted is summarized below, with reference to the
+carrying amount of the estimated insurance liabilities (gross and net of reinsurance) arising
+from all life insurance contracts:
+Group 2023 2022
+Gross Re- Net Gross Re- Net liability
+liability Insurance liability liability Insurance
+N’000 N’000 N’000 N’000 N’000 N’000
+Life business
+Individual Traditional 6,859,845 6,859,845 8,543,182 8,543,182
+Investment linked contracts 2,919,135 2,919,135 4,089,863 4,089,863
+Group Credit Life
+Group Life – UPR 341,409 (17,070) 324,339 341,409 (17,070) 324,339
+Group Life – AURR 50,567 50,567 50,567 50,567
+Group Life – IBNR 838,867 (118,051) 754,981 838,867 (149,749) 754,981
+Annuity 29,903,761 29,903,761 29,903,761 29,903,761
+Additional reserves 911,505 911,505 911,505 911,505
+114
+
+
+| 0                                                             | 1                                                             |
+|:--------------------------------------------------------------|:--------------------------------------------------------------|
+| 2023                                                          | 2022                                                          |
+| Gross Re- Net liability Insurance liability N’000 N’000 N’000 | Gross Re- Net liability liability Insurance N’000 N’000 N’000 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Claims reserves- 976,098 976,098 1,055,037 1,055,037
+Total liability – life business 42,801,188 (100,957) 42,700,231 45,734,192 (100,957) 45,633,235
+Claims incurred by class of business during the period under review are shown below:
+2023 2022
+Gross Re- Net Gross Re- Net liability
+liability Insurance liability liability Insurance
+N’000 N’000 N’000 N’000 N’000 N’000
+Group Life 4,263,781 1,263,437 5,527,219 1,506,159 (123,915) 1,382,244
+Group Credit Life - -
+Annuity 714,905 - 714,905 4,263,781 - 4,263,781
+Term Life - -
+Individual Life 12,123,750 - 12,123,750 3,706,049 - 3,706,049
+17,102,436 1,263,437 18,365,874 9,475,989 (123,915) 9,352,074
+115
+
+
+| 0                               | 1                               |
+|:--------------------------------|:--------------------------------|
+| 42,801,188 (100,957) 42,700,231 | 45,734,192 (100,957) 45,633,235 |
+
+
+
+| 0                                                                           | 1                                                                             |
+|:----------------------------------------------------------------------------|:------------------------------------------------------------------------------|
+| 2023                                                                        | 2022                                                                          |
+| Gross Re- Net liability Insurance liability N’000 N’000 N’000               | Gross Re- Net liability liability Insurance N’000 N’000 N’000                 |
+| 4,263,781 1,263,437 5,527,219 - 714,905 - 714,905 - 12,123,750 - 12,123,750 | 1,506,159 (123,915) 1,382,244 - 4,263,781 - 4,263,781 - 3,706,049 - 3,706,049 |
+| 17,102,436 1,263,437 18,365,874                                             | 9,475,989 (123,915) 9,352,074                                                 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Company 2023 2022
+Gross Re- Net Gross Re- Net liability
+liability Insurance liability liability Insurance
+N’000 N’000 N’000 N’000 N’000 N’000
+Individual Traditional 6,859,845 6,859,845 6,859,845 6,859,845
+Investment linked contracts 4,089,863 4,089,863 4,089,863 4,089,863
+Credit Life - -
+Group Life – UPR 341,409 (17,070) 324,339 341,409 (17,070) 324,339
+Group Life – AURR 50,567 50,567 50,567 50,567
+Group Life – IBNR 838,867 (118,051) 754,981 838,867 (149,749) 754,981
+Annuity 29,903,761 29,903,761 29,903,761 29,903,761
+Additional reserves 911,505 911,505 911,505 911,505
+Outstanding claims 976,098 976,098 976,098 976,098
+Total liability – life business 43,971,917 (135,120) 43,870,961 43,971,917 (166,819) 43,870,961
+Claims incurred 2023 2022
+Gross Re- Net Gross Re- Net liability
+liability Insurance liability liability Insurance
+N’000 N’000 N’000 N’000 N’000 N’000
+Group Life 4,263,781 1,263,437 5,527,219 1,506,159 (123,915) 1,382,244
+Group Credit Life
+Annuity 714,905 714,905 4,263,781 4,263,781
+Term Life
+Individual Life 12,123,750 12,123,750 3,706,049 3,706,049
+17,102,436 1,263,437 18,365,874 9,475,989 (123,915) 9,352,074
+4.3.1 Individual business
+A gross premium method was used for individual risk business. This is a monthly cash flow
+projection approach taking into account the incidence of all expected future cash flows
+including office premiums, expenses and benefit payments satisfying the Liability Adequacy
+Test.
+Individual Deposit Business
+The reserves for individual deposit administration policies have been taken as the amount
+standing to the credit of the policy holders at the valuation date. Risk reserves have been held
+in addition to cover future expenses and the cost of life cover using a cash flow projection
+approach.
+4.3.2 Group business
+Reserves for Group Life business comprise an unexpired premium reserve (UPR) and where
+necessary, are serve for Incurred But Not Reported Claims (IBNR) to make an allowance for
+the delay in reporting of claims.
+The UPR represents the unexpired portion of the premium for each scheme, net of an expense
+margin reflecting the acquisition cost loadings. The adequacy of the UPR has been tested by
+comparing against an Additional Unexpired Risk Reserve (AURR), which has been calculated
+using pooled industry claims data for the underlying assumptions. An AURR will be held in
+cases where the UPR is deemed insufficient to meet claims in respect of the unexpired period.
+116
+
+
+| 0                                                                                                                                                                | 1                                                                                                                                                                |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2023                                                                                                                                                             | 2022                                                                                                                                                             |
+| Gross Re- Net liability Insurance liability N’000 N’000 N’000                                                                                                    | Gross Re- Net liability liability Insurance N’000 N’000 N’000                                                                                                    |
+| 6,859,845 6,859,845 4,089,863 4,089,863 - 341,409 (17,070) 324,339 50,567 50,567 838,867 (118,051) 754,981 29,903,761 29,903,761 911,505 911,505 976,098 976,098 | 6,859,845 6,859,845 4,089,863 4,089,863 - 341,409 (17,070) 324,339 50,567 50,567 838,867 (149,749) 754,981 29,903,761 29,903,761 911,505 911,505 976,098 976,098 |
+| 43,971,917 (135,120) 43,870,961                                                                                                                                  | 43,971,917 (166,819) 43,870,961                                                                                                                                  |
+
+
+
+| 0                                                                   | 1                                                                     |
+|:--------------------------------------------------------------------|:----------------------------------------------------------------------|
+| 2023                                                                | 2022                                                                  |
+| Gross Re- Net liability Insurance liability N’000 N’000 N’000       | Gross Re- Net liability liability Insurance N’000 N’000 N’000         |
+| 4,263,781 1,263,437 5,527,219 714,905 714,905 12,123,750 12,123,750 | 1,506,159 (123,915) 1,382,244 4,263,781 4,263,781 3,706,049 3,706,049 |
+| 17,102,436 1,263,437 18,365,874                                     | 9,475,989 (123,915) 9,352,074                                         |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+A loss ratio has been used for IBNR reserving, where the underlying claim rates are based on
+an analysis of historical group life claims experience, with judgement adopted where
+required.
+No separate reserve is proposed for claims handling costs for Group Life business as these are
+typically insignificant in size. Costs incurred are absorbed as part of the general business
+management costs.
+4.4 Process used to decide on assumption
+4.4.1 Valuation interest rate:
+The valuation interest rate is based on current market risk-free yields with adjustments. The
+use of a risk-free rate also implies that future investment margins (in excess of the risk-free
+return) will not be capitalized upon, which satisfies paragraph 27 of IFRS17. Further the result
+is a “fair value” liability calculation which aids the comparability of accounts between insurers.
+Net valuation interest rate of 12.16% pa & 13.94% pa were adopted for annuity and other long
+term businesses, which has been applied as a single long term rate of return. As at 31
+December, 2023, FGN bond yields of duration between 5 and 20 years were round 13.00%.
+The 30-year FGN bond yield was 13.28%.
+For the purpose of determining the valuation interest rate, we have considered a 0.5% prudent
+margin against the long term yield to arrive at a gross valuation interest rate of 12.16% and
+13.94%. This makes some allowance for the volatility and liquidity of the “riskfree” yields.
+Rate
+Type of Business Risk Annuity
+Assumed Average yield based on a long-term FGNbonds 13.94% 13.04%
+Less Prudent Margin 0.00% 0.00%
+Less Reinvestment Risk Margin 0.00% -0.25%
+Net Valuation Interest rate 13.94% 12.79%
+Rates Adopted 13.94% 12.79%
+The valuation
+Type of Business 31December 31December
+2023 valuation 2022 valuation
+Risk products 13.94% 13.94%
+Deposit Based policies 13.94% 13.94%
+Annuities 12.16% 12.16%
+4.4.2 Expenses
+The Group makes provisions for expenses in its mathematical reserves of an amount which is
+not less than the amount expected to be incurred in fulfilling its long-term insurance contracts.
+117
+
+
+| 0                      | 1                         | 2                         |
+|:-----------------------|:--------------------------|:--------------------------|
+| Type of Business       | 31December 2023 valuation | 31December 2022 valuation |
+| Risk products          | 13.94%                    | 13.94%                    |
+| Deposit Based policies | 13.94%                    | 13.94%                    |
+| Annuities              | 12.16%                    | 12.16%                    |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Future maintenance expenses
+The regulatory maintenance expenses are derived from the best estimate maintenance
+expenses plus a prudence margin for adverse deviations. The best estimate maintenance
+expenses are calculated using the sum of the following:
+(1) Per policy maintenance charges
+(2) Allocated operating expenses
+The valuation expense assumptions are as follows:
+Current valuation Previous valuation
+Types of Business N’per policy N’per policy
+Individual Life 20.975 pp pa 18.531 pp pa
+Deposit 20.975 pp pa 18.531 pp pa
+Annuities 20.975 pp pa 18.531 pp pa
+4.4.3 Expense Inflation
+The above expenses are subject to inflation at 13.19% pa. Consumer Price Inflation at 31
+December 2023 was 13.19%. In the long run, we anticipate consumer price inflation levels
+falling and, as well, the Company being efficient in its operations.
+4.4.4 Mortality
+There has been no change to the mortality assumption since the previous valuation. For
+annuity books we use UKPA 90 Ultimate Mortality Tables with an age rating of -2 for both
+males and females.
+The mortality table for the current valuation remains at the UK’s Mortality of Assured Lives
+1967-70 (A67-70) without adjustment for individual risk business.
+The industry analysis shows that the A67-70 table appears prudent based on recent
+experience. Further the reserves are less sensitive to the mortality basis.
+4.4.5 Withdrawals
+Withdrawals comprise both surrenders (voluntary) and lapses (involuntary). Surrenders are
+acceptable under the Endowment life assurance portfolio after policies have been in force for
+a pre-defined length of time (at which policies become eligible to receive a surrender value
+payout).
+118
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+4.4.6 Lapses
+We have made an allowance for future lapses (being an exit without payment, before a
+surrender value becomes payable) and surrenders under the endowment plans at the rates;
+Rate per annum Lapse Rate p.a Surrender Rate p.a
+Protection All endowments Traditional Anticipated
+Plan Endowment Endowment
+Year1 10.0% 20.0% 0.0% 0.0%
+Year2 7.5% 20.0% 0.0% 0.0%
+Year3 5.0% 0.0% 10.0% 5.0%
+Year4 2.5% 0.0% 7.5% 5.0%
+Year5+ 2.5% 0.0% 5.0% 5.0%
+i. For individual policies the valuation age has been taken as Age Last Birthday at the
+valuation date. The period to maturity has been taken as the full term of the policy less the
+expired term. Full credit has been taken for premiums due between the valuation date and
+the end of the premium paying term.
+ii. The valuation of the liabilities was made on the assumption that premiums have been
+credited to the accounts as they fall due, according to the frequency of the payment.
+iii. No specific adjustment has been made for immediate payment of claims.
+iv. No specific adjustment has been made for expenses after premiums have ceased in the
+case of limited payment policies i.e. they have been allocated at the same level of expenses
+as premium paying policies.
+v. For all protection business any negative reserves were set to zero to prevent policies being
+treated as assets.
+vi. Any policies subject to substandard terms were valued using the same basis as standard
+policies.
+4.4.7 Bonuses
+Reversionary bonuses are allotted in respect of each full year's premium paid. Reversionary
+bonuses vest on the policy anniversary.
+4.4.8 Group life businesses.
+Unexpired premium reserves (UPR) are reduced by a margin representing acquisition
+expenses, as these have been loaded into rates yet they have already been incurred
+Acquisition expense ratio of 20% of gross premium was adopted and a NAICOM (regulatory)
+fee is payable at 1% of premium, the remaining 10% of premium reflects the loading for
+additional acquisition expenses.
+Additional Reserves
+Additional reserves such as data contingencies and expense overrun reserves were estimated
+as necessary using the information available and reported in the main valuation.
+119
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+4.4.9 Reinsurance agreements
+Reinsurance is allowed for in the valuation by having gross and reinsurance ceded records in
+the policy files. All reserves has been reported gross of reinsurance, with the value of the
+reinsurance asset reported separately.
+4.4.10 Changes in assumptions
+The Group did not change its assumptions for the insurance contracts.
+4.5 Insurance and Market risk sensitivities
+The sensitivity analysis of insurance and market risk is used as it provides a detailed
+understanding of the risks inherent in the business and to help develop a risk monitoring and
+management framework to ensure the risks remain within limits, taking into account the
+available capital and shareholder risk tolerance levels.
+120
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+4.5a Sensitivity of liabilities to changes in long-term valuation assumptions
+Expenses Expenses - Expense Expense Mortality Mortality -
+Base VIR +1% VIR -1%
+N'000 +10% 10% inflation +2% inflation-2% +5%
+Individual Risk
+Reserves
+(Excluding
+Annuity) 6,859,845 6,594,047 7,148,747 6,979,840 6,740,792 6,946,519 6,783,816 6,868,365 6,851,377
+Annuity 28,579,682
+29,903,761 28,336,902 31,653,558 30,169,908 29,637,615 30,506,804 29,447,978 30,240,876
+Investment Linked
+Products 3,985,915 3,985,915 3,985,915 3,985,915 3,985,915 3,985,915 3,985,915 3,985,915 3,985,915
+Group DA 103,948 103,948 103,948 103,948 103,948 103,948 103,948 103,948 103,948
+Group Life – UPR 341,409 341,409 341,409 341,409 341,409 341,409 341,409 341,409 341,409
+Group Life -
+AURR 50,567 50,567 50,567 50,567 50,567 50,567 50,567 50,567 50,567
+Group Life -
+IBNR 838,867 838,867 838,867 838,867 838,867 838,867 838,867 838,867 838,867
+Outstanding
+Claims 976,098 976,098 976,098 976,098 976,098 976,098 976,098 976,098 976,098
+Additional
+Reserves 911,505 865,933 962,214 902,160 928,623 898,332 920,115 903,226
+920,875
+Reinsurance (100,957) (100,957) (100,957) (100,957) (100,957) (100,957) (100,957) (100,957) (100,957)
+Net liability 43,530,132
+43,870,960 41,992,731 45,960,366 44,266,471 43,476,414 44,577,795 43,325,974 44,225,204
+% change in Net
+Liability -4.3% 4.8% 0.9% -0.9% 1.6% -1.2% 0.8%
+Interest rate Interest Expenses 10% Expense Expense
++1% rate -1% Expenses Inflation +2% Inflation -2% Mortality
+Summary Base +10% +5% Mortality -5%
+Individual 42,296,298
+42,637,126 40,758,897 44,726,532 43,032,637 42,242,580 43,343,960 42,092,140 42,991,370
+Group
+1,334,791 1,334,791 1,334,791 1,334,791 1,334,791 1,334,791 1,334,791 1,334,791 1,334,791
+Gross liability 43,631,089
+43,971,917 42,093,688 46,061,323 44,367,428 43,577,371 44,678,752 43,426,931 44,326,161
+% change in
+Liability -4.3% 4.8% 0.9% -0.9% 1.6% -1.2% 0.8%
+All stresses were applied independently. The mortality stress has been applied in the opposite
+direction for annuities. For example the 5% strengthening of the mortality assumption was
+modeled as 5% higher mortality for annuitants.
+5. Management of Financial risk
+The Group is exposed to various financial risks in connection with its current operating
+activities, such as foreign currency risk, interest rate risk, credit risk, market risk and liquidity
+risk. These risks contribute to the key financial risk that the proceeds from the Group's
+financial assets are insufficient to fund the obligations arising from insurance policy contracts.
+The Company manages these risks through the activities of the Audit Committee and the
+Investment Committee. Each committee meets at least four times per annum to discuss
+financial risk issues. Management is responsible for implementing recommendations that
+have been agreed and reporting back to the relevant committee.
+121
+
+
+| 0                 | 1          | 2             | 3          | 4          | 5            | 6             | 7             | 8          | 9             |
+|:------------------|:-----------|:--------------|:-----------|:-----------|:-------------|:--------------|:--------------|:-----------|:--------------|
+| N'000             | Base       | VIR +1%       | VIR -1%    | Expenses   | Expenses -   | Expense       | Expense       | Mortality  | Mortality -   |
+| nan               | nan        | nan           | nan        | +10%       | 10%          | inflation +2% | inflation-2%  | +5%        |               |
+| nan               |            |               |            | nan        | nan          | nan           | nan           | nan        | nan           |
+| Individual Risk   |            |               |            |            |              |               |               |            |               |
+| Reserves          |            |               |            |            |              |               |               |            |               |
+| (Excluding        | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        | nan           |
+| Annuity)          | 6,859,845  | 6,594,047     | 7,148,747  | 6,979,840  | 6,740,792    | 6,946,519     | 6,783,816     | 6,868,365  | 6,851,377     |
+| Annuity           | 29,903,761 | 28,336,902    | 31,653,558 | 30,169,908 | 29,637,615   | 30,506,804    | 29,447,978    | 30,240,876 | 28,579,682    |
+|                   | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        |               |
+| Investment Linked |            |               |            |            |              |               |               |            |               |
+| Products          | 3,985,915  | 3,985,915     | 3,985,915  | 3,985,915  | 3,985,915    | 3,985,915     | 3,985,915     | 3,985,915  | 3,985,915     |
+| Group DA          | 103,948    | 103,948       | 103,948    | 103,948    | 103,948      | 103,948       | 103,948       | 103,948    | 103,948       |
+| Group Life – UPR  | 341,409    | 341,409       | 341,409    | 341,409    | 341,409      | 341,409       | 341,409       | 341,409    | 341,409       |
+| Group Life -      |            |               |            |            |              |               |               |            |               |
+| AURR              | 50,567     | 50,567        | 50,567     | 50,567     | 50,567       | 50,567        | 50,567        | 50,567     | 50,567        |
+| Group Life -      |            |               |            |            |              |               |               |            |               |
+| IBNR              | 838,867    | 838,867       | 838,867    | 838,867    | 838,867      | 838,867       | 838,867       | 838,867    | 838,867       |
+| Outstanding       |            |               |            |            |              |               |               |            |               |
+| Claims            | 976,098    | 976,098       | 976,098    | 976,098    | 976,098      | 976,098       | 976,098       | 976,098    | 976,098       |
+| Additional        |            |               |            |            |              |               |               |            |               |
+| Reserves          | 911,505    | 865,933       | 962,214    |            | 902,160      | 928,623       | 898,332       | 920,115    | 903,226       |
+|                   |            |               |            | 920,875    |              |               |               |            |               |
+| Reinsurance       | (100,957)  | (100,957)     | (100,957)  | (100,957)  | (100,957)    | (100,957)     | (100,957)     | (100,957)  | (100,957)     |
+| Net liability     | 43,870,960 | 41,992,731    | 45,960,366 | 44,266,471 | 43,476,414   | 44,577,795    | 43,325,974    | 44,225,204 | 43,530,132    |
+|                   | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        |               |
+| % change in Net   |            |               |            |            |              |               |               |            |               |
+| Liability         |            | -4.3%         | 4.8%       | 0.9%       | -0.9%        | 1.6%          | -1.2%         | 0.8%       |               |
+|                   |            | Interest rate | Interest   | Expenses   | Expenses 10% | Expense       | Expense       | Mortality  |               |
+| nan               | nan        | +1%           | rate -1%   | nan        |              | Inflation +2% | Inflation -2% | nan        | nan           |
+| Summary           | Base       |               |            | +10%       | nan          |               |               | +5%        | Mortality -5% |
+| Individual        | 42,637,126 | 40,758,897    | 44,726,532 | 43,032,637 | 42,242,580   | 43,343,960    | 42,092,140    | 42,991,370 | 42,296,298    |
+|                   | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        |               |
+| Group             | 1,334,791  | 1,334,791     | 1,334,791  | 1,334,791  | 1,334,791    | 1,334,791     | 1,334,791     | 1,334,791  | 1,334,791     |
+|                   | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        | nan           |
+| Gross liability   | 43,971,917 | 42,093,688    | 46,061,323 | 44,367,428 | 43,577,371   | 44,678,752    | 43,426,931    | 44,326,161 | 43,631,089    |
+|                   | nan        | nan           | nan        | nan        | nan          | nan           | nan           | nan        |               |
+| % change in       |            |               |            |            |              |               |               |            |               |
+| Liability         |            | -4.3%         | 4.8%       | 0.9%       | -0.9%        | 1.6%          | -1.2%         | 0.8%       |               |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The Audit Committee is a committee of the Board of African Alliance Insurance Plc and is
+responsible for the implementation and monitoring of overall risk management, internal
+financial controls and financial and actuarial reporting within the Group. The main
+responsibilities of this Committee are:
+i) Setting and overseeing the overall standard for financial and actuarial reporting, risk
+management and internal controls within the Group;
+ii) Monitoring the effectiveness of business risk management processes in the Group;
+iii) Reviewing and assessing the quality of the work done by professionals responsible for
+financial and actuarial reporting, risk management and internal control;
+iv) Engaging in discussions with external and internal auditors on the quality and
+acceptability of the control environment and reporting structures.
+The Investment Committee is a management committee and is responsible for
+i) Ensuring that insurance and investment contract liabilities are matched with
+appropriate supporting assets based on the type of benefits payable to the contract
+holders.
+ii) Ensuring that the long-term investment return on assets supporting policy liabilities are
+sufficient to fund policy holders' reasonable benefit expectations and the shareholders'
+profit entitlement;
+iii) The implementation and monitoring of the asset management process to ensure that the
+risks arising from trading positions are effectively managed within the pre-determined
+risk parameters.
+5.1 Market risk
+The business's operations are exposed to market risk. Market risk is the risk of adverse
+financial impact because of market movements such as currency exchange rates, interest rates
+and other price changes. Market risks arise due to fluctuations in both value of assets and
+liabilities. The company has established policies and procedures to manage market risk.
+The acquisition of policyholders’ assets is based on the design of the product and marketing
+descriptions. Within these parameters, investments are managed with the aim of maximising
+policyholder returns while limiting risk to acceptable levels within the framework of statutory
+requirements. The focus of risk measurement and management is to ensure that the potential
+risks inherent in an investment are reasonable for the future potential reward, exposure to
+investment risk is limited to acceptable levels, premium rates are adequate to compensate for
+investment risk and an adequate reserving policy is applied for long-term policy liabilities.
+The diverse product range requires a variety of approaches to the management of risk; these
+range from portfolio management practices and techniques such as optimization of expected
+risks and rewards based on investment objectives, to asset-liability matching in support of
+statement of financial position obligations.
+5.1.1 Foreign exchange risk
+Foreign exchange risk is the risk associated with movement in the foreign exchange prices
+from foreign currency denominated transactions which the Group is exposed to.
+The Group is exposed to foreign exchange currency risk primarily through certain transactions
+denominated in foreign currency. The Group is exposed to foreign currency denominated in
+dollars and Pound through bank balances in other foreign currencies.
+122
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The Group manages its exposure to foreign exchange risk using sensitivity analysis to assess
+potential changes in the value of foreign exchange positions and impact of such changes on the
+Group's income. There have been no major changes from the previous year in the exposure to
+risk or policies, procedures and methods used to measure the risk.
+The carrying amounts of the Group’s foreign currency-denominated assets as at end of the year
+are as follows:
+Currency Group Company
+31-Dec-23 31-Dec- 31-Dec-23 31-Dec-22
+22
+N’000 N’000 N’000 N’000
+Cash and bank Dollars 603 603 12,472
+12,472
+Pounds 305,035 305,037 328,036
+328,036
+The table below shows the effect of the closing rate of the USD and GBP was N990 /$1 (2022
+December: N448.55/$) and N1450/GBP (2022 December: N540.09 /GBP) respectively as at 31
+December 2022 with unfavourable/favourable change in USD/GBP against the naira with all
+other variables held constant.
+Changes in USD exchange rate Group Company
+Impact on PBT
+31-Dec- 31-Dec- 31-Dec- 31-Dec-22
+23 22 23
+N’000 N’000 N’000 N’000
+Increase/(decrease) by 10% (+/-) 60 1,247 60 1,247
+Increase/(decrease) by 15% (+/-) 90 1,871 90 1,871
+Changes in POUNDS exchange
+rate
+Increase/(decrease) by 10% (+/-) 30,504 32,804 30,504 32,804
+Increase/(decrease) by 15% (+/-) 45,756 49,205 45,756 49,205
+5.1.2 Interest-rate risk
+Interest rate risk is the risk that the fair value or future cash flows of a financial instrument or
+insurance contract or reinsurance contract will fluctuate because of changes in market
+interest rates. Interest rate risk also arises from fluctuations in future cash flows of a financial
+instrument because of changes in market interest rates.
+The company is exposed to interest rate risk as the company invest in short term investments
+at fixed interest rates. Interest rate risk also exists in products sold by the company. The
+company manages this risk by adopting close asset/liability matching criteria, to minimise the
+impact of mismatches between asset and liability values arising from interest rate movements
+and interest rate risk exposures from guarantees embedded in insurance liabilities. The
+123
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+company’s insurance contracts and investment contracts with DPF have certain options and
+guarantees that transfer interest rate risk to the company. These are:
+• options to surrender the insurance contract or the investment contract with DPF where
+the surrender value (i.e. the strike price of the option) is either a fixed amount or a fixed
+amount plus interest depending on the year in which the contract was issued.
+• guaranteed annuity options where the company has guaranteed at the inception of certain
+contracts that it will be paying a life annuity to the surviving policyholders at their
+retirement dates which will be calculated using the
+• higher of the current annuity rate at that date or the guaranteed annuity rate set in the
+contract. The guaranteed rate has fixed at inception both the level of mortality risk and the
+interest rate that will be used to calculate the annuity.
+Interest rate risk is managed through monitoring of interest rate sensitivity analysis across
+all investment portfolios. The table below shows the maturity profile of interest rate
+sensitivity analysis as at 31 December 2023, holding all other variables constant and
+assuming all interest rates are floating and move in line with prevailing interest rates. Based
+on historical data, 100 and 500 basis points changes are deemed to be reasonably possible
+and are used when reporting interest rate risk.
+124
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+31- December -2023
+-
+-
+62,291
+- - - - - 62,291
+- - - 3,581,570 26,264,848 713,970
+62,291
+-
+- - -
+-
+-
+- (1,489) 63,780
+443,010 - - 270,960
+- - - 348,401 348,401
+-
+505,305 271,422 398,706 3,837,413 33,435,595 38,448,441
+Interest bearing liabilities
+Investment contract liabilities - 109,808 229,808 1,188,654 1,867,885 3,396,154
+59 1,045
+Borrowings - - - - 591,045
+- 109,808 229,808 1,188,654 2,458,930 3,987,199
+161,614 168,899 2,648,759
+666,919 835,818 3,484,577
+1,616 1,689 26,488
+25,265 8,081 8,445 132,438
+(5,053) (1,616) (1,689) (26,488)
+(25,265) (8,081) (8,445) (132,438)
+Company Non Interest > 12 months
+Bearing N'000
+N'000 Interest 208,204
+ash and cash equivalents 1-3 months 3-6 months earning assets Total
+4
+inancial assets : N'000 N'000 6 - 12 months 6,269,671 N'000
+-
+-fair value through P or L - equities 246,122 375,291 N'000 26,264,848 1,063,808
+- - - 234,187 - 6,269,671
+-fair value through P or L - bonds
+- fair value through OCI 62,291 - - - 63,780 29,846,418
+- - - 3,581,570 62,291
+- Amortized cost
+2,067,408 - - (1,489) 62,291
+Other receivables and prepayments
+- - - - 238,763 2,306,171
+Statutory deposit
+- - - 200,000 200,000
+Interest bearing liabilities
+Investment contract liabilities 2,129,704 246,122 375,291 3,814,268 33,245,266 39,810,650
+Borrowings
+- 81,797 327,189 1,431,452 2,249,425 4,089,863
+Gap - - - - 558,187 558,187
+Cumulative gap - Sensitivity analysis - 81,797 327,189 1,431,452 2,807,612 4,648,050
+Increase by 100bp 2,129,704 164,324 48,102 30,437,654
+Increase by 500bp 2,129,704 2,294,028 2,342,130 2,382,816 35,162,600 35,161
+Decrease by 100bp 21,297 1,643 481 4,724,946 304,377
+Decrease by 500bp 106,485 8,216 2,405 1,521,883
+125
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+(21,297) (1,643) (481) 23,828 351,626
+(106,485) (8,216) (2,405) 119,141 (304,377) 1,758,130
+31- December, 2022
+Non Interest
+Interest earning
+Group
+Bearing assets
+1-3 months 3-6 months 6 - 12 months > 12 months Total
+N'000 N'000 N'000 N'000 N'000 N'000
+Cash and cash equivalents Financial assets:
+832 267,024 398,706 257,332 217,786 1,141,68
+-fair value through P or L - equities 139,13
+-fair value through P or L - bonds 6,269,67
+- - - - 139,134
+- fair value through OCI
+- - - 752,360 5,517,310
+- Amortized cost 29,846,41
+29,846,418 - - - -
+Other receivables and 62,291
+- - - 6,205 56,086
+prepayments Statutory 728,369
+deposit 448,601 - - - 279,768
+- - - - 348,401 348,401
+30,295,851 267,024 398,706 1,015,898 6,558,485 38,535,96
+Interest bearing liabilities
+Investment contract
+liabilities Borrowings - 109,808 229,808 1,188,654 1,867,885 3,396,154
+- - - - 134,611 134,611
+- 109,808 229,808 1,188,654 2,002,496 3,530,76
+Gap 157,216 168,899 (172,756) 4,555,989
+30,295,851
+Cumulative gap - Sensitivity analysis 30,453,067 30,621,966 30,449,209 35,005,199
+30,295,851 35,005,19
+Increase by 100bp 1,572 1,689 (1,728) 45,560 350,052
+302,959
+Increase by 500bp 7,861 8,445 (8,638) 227,799 1,750,260
+1,514,793
+Decrease by 100bp (1,572) (1,689) 1,728 (45,560) (350,052
+(302,959)
+Decrease by 500bp (7,861) (8,445) 8,638 (227,799) (1,750,260
+Non Interest
+Bearing TotaL
+N'000
+3-6 months Interest earning N'000
+Company 832 N'000 assets > 12 months N'000
+- 1-3 months N'000 6 - 12 months 208,055 1,060,089
+- 241,724 375,291 N'000 139,134 139,134
+Cash and cash equivalents Financial assets
+29,846,418 - - 234,187 5,517,310 6,269,671
+:
+- - - 752,360 56,086
+-fair value through P or L - equities
+-fair value through P or L - bonds
+430,774 - - -
+- fair value through OCI - - - 6,205 29,846,418
+- Amortized cost - - - 261,181 62,291
+Other receivables and - - - 200,000 200,000
+prepayments Statutory
+30,278,023 241,724 375,291 992,753 6,381,766 38,269,558
+deposit
+Interest bearing liabilities
+- 81,797 327,189 1,431,452 2,249,425
+Investment contract liabilities 4,089,863
+- - - - 22,444
+Borrowings
+- 81,797 1,431,452 2,271,869 4,112,907
+Gap 327,189
+Cumulative gap - Sensitivity analysis
+Increase by 100bp
+30,278,023 124 48,102
+30,278,023 159,926 30,486,052 (438,699) 4,109,898 34,157,251
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.2 Credit risk
+Credit risk arises from the inability or unwillingness of a counter party to a financial
+instrument to discharge its contractual obligations. The Group determines counter-party
+credit quality by reference to ratings from independent ratings agencies or, where such
+ratings are not available, by internal analysis. The Group seeks to avoid unacceptable
+concentration of credit risk to groups of counter-parties, to business sectors, product types,
+etc.
+Key areas where the Group is exposed to credit risk are:
+• Reinsurers’ share of insurance liabilities;
+• Amounts due from reinsurers in respect of claims already paid;
+• Amounts due from insurance contract holders;
+• Amounts due from insurance intermediaries
+• Amounts due from loans and receivables;
+• Amounts due from money market and cash positions
+The Group structures the levels of credit risk it accepts by placing limits on its exposure to a
+single counterparty, or groups of counterparties. Such risks are subject to an annual or more
+frequent review on a quarterly basis. Limits on the level of credit risk by category and territory
+are approved by the Management Committee.
+Reinsurance is used to manage insurance risk. This does not, however, discharge the Group’s
+liability as primary insurer. If a reinsurer fails to pay a claim for any reason, the Group remains
+liable for the payment to the policyholder. The creditworthiness of reinsurers is considered
+on an annual basis by reviewing their financial strength prior to finalization of any contract.
+The Group’s financial instruments do not represent a concentration of credit risk because the
+business deals with a variety of reinsurers and its premiums receivable and loans are spread
+among a number of major industries, customers and geographic areas. Amounts receivable in
+terms of long-term insurance business are secured by the underlying value of the unpaid
+policy benefits in terms of the policy contract. An appropriate level of provisioning is
+maintained based on the outstanding claims reserve on policies.
+The Group manages its exposure to credit risk through counterparty risk using established
+limits as approved by the Board. These limits are determined based on credit ratings of the
+counterparty amongst other factors. The investments portfolio is monitored on a monthly
+basis.
+125
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.2.1 Maximum exposure to credit risk before collateral and other credit enhancements.
+Group Company
+31-Dec-23 31-Dec- 31-Dec-23 31- Dec -22
+22
+N’000 N’000 N’000 N’000
+Cashandcashequivalents 820,949 1,141,679 739,360 1,060,089
+Investment securities 33,241,786 36,321,804 33,237,789 36,317,807
+Trade receivables 88,884 88,884 - -
+Reinsurance assets 135,120 166,819 135,120 166,819
+Other receivables 690,101 728,369 653,727 691,995
+Statutory deposit 348,401 348,401 200,000 200,000
+35,325,241 38,795,956 34,965,996 38,436,710
+5.2.2 Credit quality of financial assets
+All assets are classified as “Neither past due nor impaired”. Credit quality of trade receivables
+is summarised as follows:
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31- Dec-22
+N’000 N’000 N’000 N’000
+Neither past due nor impaired 34,546,256 37,912,841 34,312,269 37,678,561
+Individually impaired 778,985 817,253 653,727 691,955
+Gross 35,325,241 38,730,094 34,965,996 38,370,516
+Less: allowance for impairment 778,985 (3,777,366) 653,727 (3,777,367)
+Net 36,104,226 34,952,728 35,619,722 34,593,148
+No trade receivable balance was past due but not impaired in line with the regulatory
+requirement of 'No Premium No Cover'. The risk associated with Trade receivables is low.
+5.2.3 Credit quality of financial assets neither past due nor impaired
+The credit quality of financial assets that are neither past due nor impaired can be assessed by
+reference to internal credit ratings or to historical information about counterparty default
+rates.
+5.2.4 Management of credit risk
+The Board of Directors is responsible for oversight of the Entity's credit risk, including:
+126
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+• Formulating credit policies for The Entity, covering collateral requirements, credit
+assessment, risk grading and reporting, documentary and legal procedures, and
+compliance with regulatory and statutory requirements.
+• Establishing the authorisation structure for the approval and renewal of credit facilities.
+Authorisation limits are allocated to the Board of Directors as appropriate.
+• Reviewing and assessing credit risk in all credit exposures prior to making commitment
+to customers. Renewals and reviews of facilities are subject to the same review process
+• Developing and maintaining The Entity's criteria for categorising exposures, and to
+focus management on the attendant risks. The responsibility for approving and
+reviewing the Risk Assets Acceptance Criteria and Credit Risk Policy lies with the Board
+of Directors
+• Reviewing compliance of with exposure and concentration limits, and promotion of best
+practices throughout the entity in the management of credit risk.
+5.2.5 Credit Risk Management
+The Entity acknowledges that there are diverse intrinsic risks inherent in the vagaries of its
+business segments and, as a result, applies different parameters to adequately diminish the
+risks in each business segments.
+The Entity’s rating grades as defined by the Board of Directors, covering all the entity's credit
+exposure to corporate, commercial, conglomerates and multinationals. Obligor rating in the
+entity is handled by Relationship Managers with further review by Risk Management and
+Control before it goes through the approval process.
+The Entity's operational measurements for credit risk are in conformity with the impairment
+allowances required under the applicable reporting standard – IFRS 9, and are based on
+expected losses at the date of entering the contract.
+127
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The estimation of credit exposure is complex and requires the use of models, as the value of a
+product varies with changes in market variables, expected cash flows and the passage of time.
+The assessment of credit risk of a portfolio of assets entails further estimations as to the
+likelihood of defaults occurring, of the associated loss ratios and of default correlations between
+counterparties.
+The Entity has developed models to support the quantification of the credit risk. These rating
+and scoring models are in use for all key credit portfolios and form the basis for measuring
+default risks. In measuring credit risk, the Group considers three components: (i) the ‘probability
+of default’ (PD) by the client or counterparty on its contractual obligations; (ii) current
+exposures to the counterparty and its likely future development, from which the Group derive
+the ‘Exposure At Default’ (EAD); and (iii) the likely recovery ratio on the defaulted obligations
+(the ‘Loss Given Default’) (LGD). The models are reviewed regularly to monitor their robustness
+relative to actual performance and amended as necessary to optimise their effectiveness.
+For debt securities, external ratings are used by Risk Management department for managing of
+the credit risk exposures as supplemented by The Entity's own assessment through the use of
+internal ratings tools.
+Group
+31 December 2023 AAA AA A BB CC Total
+Policyholder Portfolio (N’000) (N’000) (N’000) (N’000) (N’000) (N’000)
+Cash and cash equivalents 820,949 - 820,949
+Marketable investment securities - 33,241,786 33,241,786
+Total 820,949 33,241,786 34,062,735
+Shareholder Portfolio
+Cash and bank balances - - - - - -
+Marketable investment securities - - - - - -
+Reinsurance assets 135,120 - - - - 135,120
+Statutory deposit 348,401 348,401
+Due from policy holders - - - - - -
+Total 483,521 483,521
+31 December 2022 AAA AA A BB CC Total
+Policyholder Portfolio
+Cash and cash equivalents 1,141,679 - 1,141,679
+Marketable investment securities - 36,259,512 36,259,512
+Total 1,141,679 36,259,512 37,401,191
+Shareholder Portfolio
+Cash and bank balances
+Marketable investment securities - - - - - -
+Reinsurance assets - - - - - -
+Statutory deposit 166,819 - - - - 166,819
+Due from policy holders 348,401 348,401
+Total 515,220 - - - - 515,220
+128
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Company
+31 December 2023 AAA AA A BB CC Total
+Policyholder Portfolio (N’000) (N’000) (N’000) (N’000) (N’000) (N’000)
+Cash and bank balances 739,360 - - - - 739,360
+Marketable investment securities 33,237,789 - - - - 33,237,789
+Total 33,977,149 - - - 33,977,149
+Shareholder Portfolio
+Cash and bank balances - - - - -
+Marketable investment securities - - - - - -
+Reinsurance assets 135,120 - - - - 135,120
+Statutory deposit 200,000 200,000
+Due from policy holders - - - - - -
+Total 335,120 - - - - 335,120
+31 December 2022 AAA AA A BB CC Total
+Policyholder Portfolio
+Cash and bank balances 1,060,089 - - - - 1,060,089
+Marketable investment securities 36,255,223 - - - - 36,255,223
+Total 37,315,312 - - - 37,315,312
+Shareholder Portfolio
+Cash and bank balances - - - - -
+Marketable investment securities - - - - - -
+Reinsurance assets 166,819 - - - - 166,819
+Statutory deposit 200,000 200,000
+Total - - - - - -
+366,819 - - - - 366,819
+5.2.6 Concentration of credit risk exposure
+a. Geographical sectors
+The concentration of credit risk exposure are all in Nigeria.
+b. Industry Sector
+The following table breaks down the Group’s credit exposure at carrying amounts, as
+categorised by the industry sectors of the Group’s counterparties.
+Group 31 December 2023 31 December 2022
+Premium Investment Other Total Premium Investment Other Total
+Receivable securities receivable Receivable securities receivable
+N’000 N’000 N’000 N’000 N’000 N’000 N’000 N’000
+Finance and insurance 34,062,735 34,062,735 37,463,483 37,463,483
+Public sector 348,401 348,401 348,401 348,401
+Retail 88,884 690,101 778,985 88,884 728,369 817,253
+88,884 34,062,735 1,038,502 35,190,121 88,884 37,463,483 1,076,770 38,629,137
+Company 31 December 2023 31 December 2022
+Premium Investment Other Total Premium Investment Other Total
+Receivable securities receivable Receivable securities receivable
+N’000 N’000 N’000 N’000 N’000 N’000 N’000 N’000
+Finance and insurance - 33,977,149 - 33,977,149 - 37,377,603 - 37,377,603
+Public sector 200,000 200,000 200,000 200,000
+- 33,977,149 200,000 34,177,149 - 37,377,603 200,000 37,577,603
+129
+
+
+| 0                                                                                                                                                    | 1                                                                                                                                                    |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 31 December 2023                                                                                                                                     | 31 December 2022                                                                                                                                     |
+| Premium Investment Other Total Receivable securities receivable N’000 N’000 N’000 N’000 34,062,735 34,062,735 348,401 348,401 88,884 690,101 778,985 | Premium Investment Other Total Receivable securities receivable N’000 N’000 N’000 N’000 37,463,483 37,463,483 348,401 348,401 88,884 728,369 817,253 |
+| 88,884 34,062,735 1,038,502 35,190,121                                                                                                               | 88,884 37,463,483 1,076,770 38,629,137                                                                                                               |
+
+
+
+| 0                                                                                                                                 | 1                                                                                                                                 |
+|:----------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 31 December 2023                                                                                                                  | 31 December 2022                                                                                                                  |
+| Premium Investment Other Total Receivable securities receivable N’000 N’000 N’000 N’000 - 33,977,149 - 33,977,149 200,000 200,000 | Premium Investment Other Total Receivable securities receivable N’000 N’000 N’000 N’000 - 37,377,603 - 37,377,603 200,000 200,000 |
+| - 33,977,149 200,000 34,177,149                                                                                                   | - 37,377,603 200,000 37,577,603                                                                                                   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.2.7 Offsetting financial assets and financial liabilities.
+The disclosures set out in the tables below include financial assets and financial liabilities that are
+subject to an enforceable master netting arrangement or similar agreement that covers similar financial
+instruments, irrespective of whether they are offset in the statement of financial position. As at year
+end, none of these agreement arrangements met the criteria for offsetting in the statement of financial
+position.
+Reinsurance payable and receivables results from the agreement entered into by the parties with a right
+of set-off on recognized amounts that is enforceable only following a predetermined events as stipulated
+within the treaty agreements. Under the requirements of ‘IFRS 17 - Insurance contract’, reinsurance
+assets and liabilities are disclosed gross. Each party to the agreement will have the option to settle all
+such amounts on a net basis in the event of default of the other party. An event of default includes a
+failure by a party to make payment when due.
+Group
+31 December 2023 Related amounts not offset in the statement
+Financial assets subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance receivables (note 9) 135,120 - 135,120 - - 135,120
+31 December 2023 Related amounts not offset in the statement
+Financial liabilities subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance payables (note 20) 112,117 - - - - 112,117
+31 December 2022 Related amounts not offset in the
+statement of financial position
+Financial assets subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance receivables (note 9) 166,819 - 166,819 - - 166,819
+130
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+31 December 2022 Related amounts not offset in the
+statement of financial position
+Financial liabilities subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance payables (note 20) 62,943 - - - - -
+Company
+31 December 2023 Related amounts not offset in the
+statement of financial position
+Financial assets subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance receivables (note 9) 135,120 - 135,120 - - 135,120
+31 December 2023 Related amounts not offset in the statement of financial position
+Financial liabilities subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance payables (note 20) 112,117 - 112,117 - - 112,117
+31 December 2022 Related amounts not offset in the statement of financial position
+Financial assets subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance receivables (note 9) 166,819 - 166,819 - - 166,819
+31 December 2022 Related amounts not offset in the
+statement of financial position
+Financial assets subject to offsetting, Net
+enforceable master netting arrangements Gross amounts of
+and similar agreements amount of financial
+financial assets
+131
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Gross liabilities presented Financial
+amount of offset in the in the instruments
+recognized statement of statement (including Cash
+financial financial financial of non-cash collateral Net
+asset position position collateral received amount
+N’000 N’000 N’000 N’000 N’000 N’000
+Reinsurance receivables (note 20) 62,943 - 62,943 - - -
+5.2.8 Impairment Model
+Premium debtors are measured at amortized cost, less provision for impaired receivables.
+Under IFRS, an asset is impaired if the carrying amount is greater than the recoverable
+amount. The entity applies the Expected Credit Loss model as per IFRS 9 to calculate
+impairment for trade receivables."
+Based on NAICOM’s “No Premium No Cover” guidelines which state that “all insurance covers
+shall be provided on a strict ‘no premium no cover’ basis”, only cover for which payment has
+been received shall be booked. However, brokers have a 30 day period to make payments from
+the date of the credit.
+After analysing this financial instrument based on NAICOM “No Premium No Cover”
+guidelines, a nil impairment standpoint was taken.
+The impairment requirements of IFRS 9 apply to all debt instruments that are measured at
+amortised cost or FVOCI, and to off-balance sheet lending commitments such as loan
+commitments and financial guarantees (hereafter collectively referred to as financial assets).
+Provisions are recognised upon initial recognition of the financial asset based on expectation
+of potential credit losses at the time of initial recognition. Under IFRS 9, the Company first
+evaluates individually whether objective evidence of impairment exists for loans that are
+individually significant and then collectively assess the loan and other receivables that are not
+significant and those which are significant but for which there is no objective evidence of
+impairment available under the individual assessment
+Staged Approach to the Determination of Expected Credit Losses
+IFRS 9 outlines a three-stage model for impairment based on changes in credit quality since
+initial recognition. These stages are as outlined below:
+Change in credit quality since initial recognition
+Recognition of expected credit losses
+12 month Lifetime expected Lifetime expected
+expected credit losses credit losses
+credit losses
+Interest revenue
+Effective interest
+Effective Effective interest
+on amortised cost
+interest on on gross carrying
+carrying amount
+gross amount
+(i.e. net of credit
+carrSytianggea m1 ou Stage 2 Stage 3
+allowances)
+nt
+Performing (initial Underperforming Non-performing
+recognition*) (Assets with (Credit impaired
+significant increase assets)
+in credit risk since
+initia1l r3e2c ognition*)
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+*Expect for purchased or originated credit impaired assets
+Stage 1: The Company recognises a credit loss allowance at an amount equal to the 12 month
+expected credit losses. This represents the portion of lifetime expected credit losses from
+default events that are expected within 12 months of the reporting date, assuming that credit
+risk has not increased
+Stage 2: The Company recognises a credit loss allowance at an amount equal to the lifetime
+expected credit losses (LTECL) for those financial assets that are considered to have
+experienced a significant increase in credit risk since initial recognition. A financial assets is
+significantly impaired if an entity compares the risk of a default occurring over the expected
+life of the financial instrument as at the reporting date with the risk of default as at the date of
+initial recognition. This requires the computation of ECL based on Lifetime probabilities of
+default that represents the probability of a default occurring over the remaining lifetime of the
+financial assets. Allowance for credit losses is higher in this stage because of an increase in
+credit risk and the impact of a longer time horizon being considered compared to 12 months
+in stage 1.
+Stage 3: The Company recognises a loss allowance at an amount equal to life-time expected
+credit losses, reflecting a probability of default (PD) of 100 % via the recoverable cash flows
+for the asset. For those financial assets that are credit impaired. The Company's definition of
+default is aligned with the regulatory definition. The regulatory definition of default hinged on
+the “No premium No cover” policy states that premium not collected after 3 months is deemed
+impaired and uncollected. The treatment of the loans and other receivables in stage 3 remains
+substantially the same as the treatment of impaired financial assets under IFRS 9 except for
+the portfolios of assets purchased or originated as credit impaired.
+The Company does not originate or purchase credit impaired loans or receivables
+Impairment Methodology
+Calculation of Expected Credit Losses
+Calculation of the expected credit loss is based on the key risk parameters of PD, LGD and ED
+according to the formular set below:
+ECL = PD x EAD x LGD
+The calculation of ECL incorporates forward-looking information in all the ECL components.
+This forward-looking information which includes inflation rate, Consumer Price Index (CPI),
+Exchange rate, Employment rate e.t.c will impact the various ECL components as follows:
+133
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+• Probability of default – The PDs will vary during various stages of an economic cycle. It is
+based on the likelihood that a borrower will default within one year (PD), assessment of
+the creditworthiness of the counterparty and transformation of 1 Year horizon into
+lifetime of the asset.
+• Loss Given Default – Collateral values will vary based on the stage of an economic cycle.
+• Exposure at default – Change in interest rates may affect the EAD e.g. higher interest rates
+may result in longer terms for loans causing a change in the
+Loss Given Default
+The Company applies historical experience to determine the expected loss given default ratios
+for each class of financial instruments. Where internal historical experience is not available,
+other sources, e.g. data available from rating companies as well as professional judgments are
+used to determine the LGD ratios that will apply. Collateral that is held against the financial
+assets is also considered in determining the LGD.
+The Company management has resolved to use the recovery rates as published by Moodys
+credit analytics for all credit exposures to sovereign denominated in foreign currencies and all
+corporate exposures.
+For sovereign exposures denominated in Naira which are assessed as low credit risk
+exposures, we have resolved to use LGDs within the rage of 5-10% based on the Central banks
+of Nigeria’s Revised Guidance Notes on Credit risk. Section 3.1 of the document addresses
+exposure to sovereigns and Central banks and states that financial institutions should assign
+a risk weight of 0% to the following:
+• Exposures to Federal Government of Nigeria (FGN) and Central Bank of Nigeria (CBN);
+• Instruments issued by other entities backed by express guarantee of the FGN
+• Inter-bank transactions guaranteed by the FGN or CBN; and
+Inter-bank transactions among supervised institutions collateralized by FGN Bonds, Treasury
+Bills or other similar sovereign bills.
+5.2.9 Liquidity risk
+Liquidity risk is the risk that the Company is unable to meet its obligations when they fall due as a
+result of policyholder benefit payments, cash requirements from contractual commitments, or other
+cash outflows, such as debt maturities. Such outflows would deplete available cash resources for
+operational, trading and investments activities. In extreme circumstances, lack of liquidity could
+result in reductions in the consolidated balance sheet and sales of assets, or potentially an inability
+to fulfill policyholder commitments. The risk that the Group will be unable to do so is inherent in all
+insurance operations and can be affected by a range of institution-specific and market-wide events
+including, but not limited to, credit events, merger and acquisition activity, systemic shocks and
+natural disasters.
+Monitoring and reporting take the form of cash flow measurement and projections for the next day,
+week and month respectively, as these are key periods for liquidity management. The starting point
+for those projections is an analysis of the undiscounted contractual cashflow at maturity of the
+financial liabilities and the expected collection date of the financial assets.
+134
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+All policyholder funds are invested in appropriate assets to meet the reasonable benefit expectations
+of policyholders, which include the expectation that funds will be available to pay out benefits as
+required by the policy contract. The disclosure in note 6 demonstrate that the Group has significant
+liquid resources. The value for policyholders' liabilities and the assets backing them are as per the
+carrying amount in the statement of the financial position.
+The maturity profile of the total policyholders' liabilities and assets backing them is shown below:
+Group
+31 December 2023 Carrying 0-3 months 3 to 9 9 to 1 year 1 to 5 years > 5 years Total
+amount months
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+Trade payables 1,871,887 187,189 467,972 655,160 280,783 280,783 1,871,887
+Other liabilities 1,277,960 127,796 319,490 447,286 191,694 191,694 1,277,960
+Investment linked contract 2,919,135 291,914 729,784 1,021,697 437,870 2,919,135
+liabilities 437,870
+Total financial liabilities 6,068,981 606,898 1,517,245 2,124,144 910,347 910,347 6,068,981
+Cash and bank balances 820,949 82,095 205,237 287,332 123,142 123,142 820,949
+Marketable investment 33,144,173 3,314,417 8,286,043 11,600,461 4,971,626 4,971,626 33,144,173
+securities
+Trade receivables 88,884 8,888 22,221 31,109 13,373 13,373 88,884
+Reinsurance contract assets 104,554 10,455 26,138 36,594 15,683 15,683 104,554
+Other receivables 653,727 65,373 163,432 228,804 98,059 98,059 653,727
+Total financial assets 34,812,287 3,481,229 8,703,072 12,184,301 5,221,843 5,221,843 34,812,287
+Net financial assets and 28,743,306 2,874,331 7,185,826 10,060,157 4,311,496 4,311,496 28,743,306
+liabilities
+Insurance contract liabilities - (42,611,406) (4,261,141) (10,652,857) (14,913,992) (6,391,711) (6,391,711) (42,611,406)
+Life fund ,
+Net policyholders’ assets (13,868,100) (1,386,810) (3,467,025) (4,853,835) (2,080,215) (2,080,215) (13,868,100)
+and liabilities
+Group
+31 December 2022 Carrying 0-3 months 3 to 9 9 to 1 year 1 to 5 years > 5 years Total
+amount months
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+Trade payables 838,925 83,893 209,731 293,624 125,839 125,839 838,925
+Other liabilities 1,505,292 150,529 376,323 526,852 225,794 225,794 1,505,292
+Investment linked contract 4,089,863 408,986 1,022,466 1,431,452 4,089,863
+liabilities 613,479 613,479
+Total financial liabilities 6,434,080 643,408 1,608,520 2,251,928 965,112 965,112 6,434,080
+Cash and bank balances 1,141,679 114,168 285,420 399,588 171,252 171,252 1,141,679
+Marketable investment 36,321,804 1,816,090 1,089,654 2,542,526 1,816,090 29,057,443 36,321,804
+securities
+Trade receivables 88,884 88,884 - - - - 88,884
+Reinsurance contract assets 100,957 - - 100,957 - - 100,957
+Other receivables 728,369 72,837 182,092 254,929 109,255 109,255 728,369
+Total financial assets 38,381,693 2,091,979 1,557,166 3,298,000 2,096,597 29,337,950 38,381,693
+Net financial assets and 31,947,613 1,448,571 (51,354) 1,046,073 1,131,486 28,372,837 31,947,613
+liabilities
+Insurance contract liabilities - (41,644,329) (1,496,744) (1,995,659), (3,193,054) (5,055,111) (29,903,761) (41,644,329)
+Life fund
+Net policyholders’ assets (9,696,716) (48,173) (2,047,013) (2,146,981) (3,923,625) (1,530,924) (9,696,716)
+and liabilities
+Net policyholders’ assets
+and liabilities (17,693,905) (1,136,875) (2,437,785) (2,146,360) (1,668,207) (10,303,678) (17,692,904)
+135
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Company
+31-Dec-23 Carrying 0-3 months 3 to 9 9 to 1 1 to 5 years > 5 years Total
+amount months year
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+Trade payables 1,649,987 164,999 412,497 577,496 247,698 1,649,987
+247,698
+Other liabilities 1,221,740 122,174 305,435 427,609 1,221,740
+183,261 183,261
+Investment linked contract 2,919,135 291,913 729,784 1,021,697 437,870 437,870 2,919,135
+liabilities
+Total financial liabilities 5,790,862 579,086 1,447,715 2,026,802 868,629 868,629 5,790,862
+Cash and bank balances 739,360 73,936 184,840 258,776 110,904 110,904 739,360
+Marketable investment securities 33,237,789 3,323,779 8,309,447 11,633,226 4,985,668 33,237,789
+4,985,668
+Trade receivables - - - - - -
+-
+Reinsurance contract assets 104,553 - - 104,554 - - 104,553
+Other receivables 653,727 65,373 163,432 228,804 98,059 653,727
+98,059
+Total financial assets 34,735,429 3,463,088 8,657,719 12,225,359 34,735,429
+5,194,631 5,194,631
+Net financial assets and 28,944,567 2,894,457 7,236,142 10,130,599 4,341,685 4,341,685 28,944,567
+liabilities
+Insurance contract liabilities –
+Life fund 40,849,131 4,084,913 10,212,283 14,297,196 6,127,370 6,127,370 40,849,131
+Net policyholders assets and
+liabilities 69,793,698 6,979,370 17,448,425 24,427,794 69,793,698
+10,469,055 10,469,055
+Company
+31-Dec-22 Carrying 0-3 months 3 to 9 9 to 1 1 to 5 years > 5 years Total
+amount months year
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+Trade payables 600,675 60,067 150,169 210,236 90,101 600,675
+90,101
+Other liabilities 1,293,384 129,338 323,346 452,685 194,008 1,293,384
+194,008
+Investment linked contract 4,089,863 408,986 1,022,466 1,431,452 613,479 613,479 4,089,863
+liabilities
+Total financial liabilities 5,983,923 598,392 1,495,981 2,094,373 897,588 897,588 5,983,923
+Cash and bank balances 1,060,089 106,009 265,022 371,031 159,013 159,013 1,060,089
+Marketable investment securities 36,317,514 1,815,876 1,089,525 2,542,226 29,054,011 36,317,514
+1,815,876
+Trade receivables - - - - -
+- -
+Reinsurance contract assets 100,957 - - 100,957 - - 100,957
+Other receivables 691,955 69,196 172,989 242,184 103,793 691,955
+103,793
+Total financial assets 38,170,516 1,991,080 1,527,536 3,256,399 29,316,818 38,170,516
+2,078,682
+Net financial assets and 32,186,593 1,392,688 31,556 1,162,026 1,181,094 28,419,229 32,186,593
+liabilities
+Insurance contract liabilities –
+Life fund (39,882,054) (1,496,744) (1,995,659) (3,193,054 (3,292,837) (29,903,761) (39,882,054)
+)
+Net policyholders assets and
+liabilities (7,695,461) (104,056) (1,964,103) (2,031,028 (1,484,532) (7,695,461)
+) (2,111,743)
+136
+
+
+| 0                                          | 1               | 2           | 3             | 4            | 5            | 6            | 7            |
+|:-------------------------------------------|:----------------|:------------|:--------------|:-------------|:-------------|:-------------|:-------------|
+| Company                                    |                 |             |               |              |              |              |              |
+| 31-Dec-23                                  | Carrying amount | 0-3 months  | 3 to 9 months | 9 to 1 year  | 1 to 5 years | > 5 years    | Total        |
+|                                            | N'000           | N'000       | N'000         | N'000        | N'000        | N'000        | N'000        |
+| Trade payables                             | 1,649,987       | 164,999     | 412,497       | 577,496      | 247,698      | 247,698      | 1,649,987    |
+| Other liabilities                          | 1,221,740       | 122,174     | 305,435       | 427,609      | 183,261      | 183,261      | 1,221,740    |
+| Investment linked contract liabilities     | 2,919,135       | 291,913     | 729,784       | 1,021,697    | 437,870      | 437,870      | 2,919,135    |
+| Total financial liabilities                | 5,790,862       | 579,086     | 1,447,715     | 2,026,802    | 868,629      | 868,629      | 5,790,862    |
+| Cash and bank balances                     | 739,360         | 73,936      | 184,840       | 258,776      | 110,904      | 110,904      | 739,360      |
+| Marketable investment securities           | 33,237,789      | 3,323,779   | 8,309,447     | 11,633,226   | 4,985,668    | 4,985,668    | 33,237,789   |
+| Trade receivables                          | -               | -           | -             | -            | -            | -            | -            |
+| Reinsurance contract assets                | 104,553         | -           | -             | 104,554      | -            | -            | 104,553      |
+| Other receivables                          | 653,727         | 65,373      | 163,432       | 228,804      | 98,059       | 98,059       | 653,727      |
+|                                            |                 |             |               |              |              |              |              |
+| Total financial assets                     | 34,735,429      | 3,463,088   | 8,657,719     | 12,225,359   | 5,194,631    | 5,194,631    | 34,735,429   |
+|                                            |                 |             |               |              |              |              |              |
+| Net financial assets and liabilities       | 28,944,567      | 2,894,457   | 7,236,142     | 10,130,599   | 4,341,685    | 4,341,685    | 28,944,567   |
+| Insurance contract liabilities – Life fund | 40,849,131      | 4,084,913   | 10,212,283    | 14,297,196   | 6,127,370    | 6,127,370    | 40,849,131   |
+|                                            |                 |             |               |              |              |              |              |
+| Net policyholders assets and liabilities   | 69,793,698      | 6,979,370   | 17,448,425    | 24,427,794   | 10,469,055   | 10,469,055   | 69,793,698   |
+| Company                                    |                 |             |               |              |              |              |              |
+| 31-Dec-22                                  | Carrying amount | 0-3 months  | 3 to 9 months | 9 to 1 year  | 1 to 5 years | > 5 years    | Total        |
+|                                            | N'000           | N'000       | N'000         | N'000        | N'000        | N'000        | N'000        |
+| Trade payables                             | 600,675         | 60,067      | 150,169       | 210,236      | 90,101       | 90,101       | 600,675      |
+| Other liabilities                          | 1,293,384       | 129,338     | 323,346       | 452,685      | 194,008      | 194,008      | 1,293,384    |
+| Investment linked contract liabilities     | 4,089,863       | 408,986     | 1,022,466     | 1,431,452    | 613,479      | 613,479      | 4,089,863    |
+| Total financial liabilities                | 5,983,923       | 598,392     | 1,495,981     | 2,094,373    | 897,588      | 897,588      | 5,983,923    |
+| Cash and bank balances                     | 1,060,089       | 106,009     | 265,022       | 371,031      | 159,013      | 159,013      | 1,060,089    |
+| Marketable investment securities           | 36,317,514      | 1,815,876   | 1,089,525     | 2,542,226    | 1,815,876    | 29,054,011   | 36,317,514   |
+| Trade receivables                          | -               | -           | -             | -            | -            | -            | -            |
+| Reinsurance contract assets                | 100,957         | -           | -             | 100,957      | -            | -            | 100,957      |
+| Other receivables                          | 691,955         | 69,196      | 172,989       | 242,184      | 103,793      | 103,793      | 691,955      |
+|                                            |                 |             |               |              |              |              |              |
+| Total financial assets                     | 38,170,516      | 1,991,080   | 1,527,536     | 3,256,399    | 2,078,682    | 29,316,818   | 38,170,516   |
+| Net financial assets and liabilities       | 32,186,593      | 1,392,688   | 31,556        | 1,162,026    | 1,181,094    | 28,419,229   | 32,186,593   |
+| Insurance contract liabilities – Life fund | (39,882,054)    | (1,496,744) | (1,995,659)   | (3,193,054 ) | (3,292,837)  | (29,903,761) | (39,882,054) |
+| Net policyholders assets and liabilities   | (7,695,461)     | (104,056)   | (1,964,103)   | (2,031,028 ) | (2,111,743)  | (1,484,532)  | (7,695,461)  |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The maturity of non-derivative financial liabilities and financial assets have been compiled based on
+undiscounted cash flows, which include estimated interest payments.
+5.2.10 Capital management policies and procedures
+The Company manages its capital to ensure that the company will be able to continue as going
+concern and comply with the regulators' capital requirements while maximising the return to
+stakeholders through the optimization of the debt and equity balance. The capital structure of the
+company consists of equity attributable to equity holders of the parent, comprising issued capital,
+reserves and retained earnings.
+In line with the Finance Act 2021 - Part ix – Insurance Act, as an existing company, the capital
+requirement is as shown below:
+Group Company
+2023 2022 2023 2022
+N'000 N'000 N'000 N'000
+Share capital 10,292,500 10,292,500 10,292,500 10,292,500
+Share premium 14,365,133 14,365,133 14,365,133 14,365,133
+Contingency reserves 2,032,514 1,971,330 1,983,877 1,922,695
+Retained earnings (40,549,007) (39,967,227) (36,605,015)
+(37,186,797)
+(13,858,860) (10,557,835) (13,325,716) (10,024,687)
+Less own shares - - - -
+(13,858,860) (10,557,835) (13,325,716) (10,024,687)
+Subordinated liabilities approved by the Commission.
+- - - -
+Other Instruments approved by the Commission.
+- - - -
+Capital requirements (13,858,860) (7,716,112) (13,326,716) (5,909,206)
+The Company's policy is to maintain a strong capital base to maintain investor, creditor and market
+confidence and to sustain the future development of the business. Management uses regulatory
+capital ratios to monitor its capital base. Capital is allocated between specific operations and
+activities and to a large extent driven by optimization of the return achieved on the capital allocated.
+The amount of capital allocated to each activity is based primarily on the regulatory capital. In some
+cases the regulatory requirements do not fully reflect the varying degree of risk associated with
+different activities. In such cases, the capital requirements may be flexed to reflect differing risk
+profiles, subject to the overall level of capital to support a particular operation not falling below the
+minimum required for regulatory purposes. The process of allocating capital to specific operations
+or activities is undertaken independently of those responsible for the operation by a committee.
+The National Insurance Commission (NAICOM) specifies the minimum amount and type of capital
+that must be held by the company to cover the insurance liabilities. The regulator measures the
+financial strength of insurance companies using the capital adequacy requirements for the category
+of company. This test compares insurer's capital against the risk profile.
+The company recorded a positive shareholders fund and Solvency Margin deficiency of N2,40 billion
+and N2.04billion respectively. The solvency margin is below the minimum regulatory capital of N2
+137
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+billion required by the National Insurance Commission (NAICOM) for life insurance business. The
+position of the capital requirement is favourable but will require more fund to meet the needs of the
+company capital management.
+5.3 Group Hypothecation
+2023
+Total Life Policy Annuity Investment Shareholder
+Holders Funds Contracts s’ funds
+Fund Funds
+Assets N'000 N'000 N'000 N'000 N'000
+Cash and Cash Equivalents 820,949 - - - 820,949
+Financial Assets
+-At fair value through profit or 3,058,136 892,405 212,470 1,953,201
+loss
+-Available for sale 270,453 231,812 38,641
+-Held to maturity 29,850,706 1,035,000 130,000 400,000 28,187,800
+-Loans and receivables 62,491 - 62,784
+Trade Receivables 88,884 - 88,884
+Reinsurance Contract Assets 135,120 104,554
+Deferred Acquisition Cost - -
+Other Receivables 690,101 159,953 493,774
+Investment in subsidiaries - - -
+Investment in Associates - -
+Investment Properties 14,372,536 6,671,786 3,308,750 1,420,000 2,972,000
+Deferred Tax Assets 147,690 - 147,690
+Intangible Asset 160,301 - 69,817
+Property Plant and Equipment 1,792,388 - 1,792,388
+Statutory Deposits 348,401 - 348,401
+Right of Use Assets 123,954 - 123,954
+Total Assets 51,922,110 9,095,510 3,714,004 3,811,902 35,045,658
+Liabilities
+Insurance Contract Liabilities 39,559,241 11,740,568 30,870,838
+Investment Contracts Liabilities 6,232,355 6,232,355
+Borrowings - -
+Trade Payable 1,823,505 1,823,505
+Other payables 743,164 743,164
+Employee Benefit Liability 26,143 26,143
+Income Tax liabilities 594,723 594,723
+Deferred tax liabilities 673,767 673,767
+Total Liabilities 49,652,898 11,740,568 30,870,838 6,232,355 3,391,540
+Surplus/(Deficit) 2,269,212 (2,645,058) (27,156,834) (2,420,453) 3
+138
+
+
+| 0                                     | 1          | 2                        | 3             | 4                          | 5                    |
+|:--------------------------------------|:-----------|:-------------------------|:--------------|:---------------------------|:---------------------|
+| 5.3 Group Hypothecation 2023          |            |                          |               |                            |                      |
+|                                       | Total      | Life Policy Holders Fund | Annuity Funds | Investment Contracts Funds | Shareholder s’ funds |
+| Assets                                | N'000      | N'000                    | N'000         | N'000                      | N'000                |
+| Cash and Cash Equivalents             | 820,949    | -                        | -             | -                          | 820,949              |
+| Financial Assets                      |            |                          |               |                            |                      |
+| -At fair value through profit or loss | 3,058,136  | 892,405                  | 212,470       | 1,953,201                  |                      |
+| -Available for sale                   | 270,453    | 231,812                  |               | 38,641                     |                      |
+| -Held to maturity                     | 29,850,706 | 1,035,000                | 130,000       | 400,000                    | 28,187,800           |
+| -Loans and receivables                | 62,491     | -                        | 62,784        |                            |                      |
+| Trade Receivables                     | 88,884     | -                        |               |                            | 88,884               |
+| Reinsurance Contract Assets           | 135,120    | 104,554                  |               |                            |                      |
+| Deferred Acquisition Cost             | -          | -                        |               |                            |                      |
+| Other Receivables                     | 690,101    | 159,953                  |               |                            | 493,774              |
+| Investment in subsidiaries            | -          | -                        |               |                            | -                    |
+| Investment in Associates              | -          | -                        |               |                            |                      |
+| Investment Properties                 | 14,372,536 | 6,671,786                | 3,308,750     | 1,420,000                  | 2,972,000            |
+| Deferred Tax Assets                   | 147,690    |                          | -             |                            | 147,690              |
+| Intangible Asset                      | 160,301    |                          | -             |                            | 69,817               |
+| Property Plant and Equipment          | 1,792,388  |                          | -             |                            | 1,792,388            |
+| Statutory Deposits                    | 348,401    |                          | -             |                            | 348,401              |
+| Right of Use Assets                   | 123,954    |                          | -             |                            | 123,954              |
+| Total Assets                          | 51,922,110 | 9,095,510                | 3,714,004     | 3,811,902                  | 35,045,658           |
+| Liabilities                           |            |                          |               |                            |                      |
+| Insurance Contract Liabilities        | 39,559,241 | 11,740,568               | 30,870,838    |                            |                      |
+| Investment Contracts Liabilities      | 6,232,355  |                          |               | 6,232,355                  |                      |
+| Borrowings                            | -          |                          |               |                            | -                    |
+| Trade Payable                         | 1,823,505  |                          |               |                            | 1,823,505            |
+| Other payables                        | 743,164    |                          |               |                            | 743,164              |
+| Employee Benefit Liability            | 26,143     |                          |               |                            | 26,143               |
+| Income Tax liabilities                | 594,723    |                          |               |                            | 594,723              |
+| Deferred tax liabilities              | 673,767    |                          |               |                            | 673,767              |
+| Total Liabilities                     | 49,652,898 | 11,740,568               | 30,870,838    | 6,232,355                  | 3,391,540            |
+| Surplus/(Deficit)                     | 2,269,212  | (2,645,058)              | (27,156,834)  | (2,420,453)                | 3                    |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.3 Group Hypothecation
+2022
+Total Life Policy Annuity Investment Shareholder
+Holders Funds Contracts s’ funds
+Fund Funds
+Assets N'000 N'000 N'000 N'000 N'000
+Cash and Cash Equivalents 1,141,679 710,237 154,936 276,506
+Financial Assets
+-At fair value through profit 6,269,671 4,121,485 212,470 1,935,716
+or loss
+-Available for sale 139,134 100,493 38,641
+-Held to maturity 29,850,706 929,000 78,100 409,000 28,434,606
+-Loans and receivables 62,292 - 62,292
+Trade Receivables 88,884 - 88,884
+Reinsurance Contract 100,957 100,957
+Assets
+Deferred Acquisition Cost - -
+Other Receivables 728,369 159,953 568,416
+Investment in subsidiaries - - -
+Investment in Associates - -
+Investment Properties 12,719,286 4,888,536 273,300 1,430,000 6,127,450
+Deferred Tax Assets 147,690 - 147,690
+Intangible Asset 60,413 - 60,413
+Property Plant and 1,792,388 - 1,792,388
+Equipment
+Statutory Deposits 348,401 - 348,401
+Right of Use Assets 23,490 - 23,490
+Total Assets 53,473,360 11,010,661 781,098 4,089,863 37,591,739
+Liabilities
+Insurance Contract 41,644,329 11,740,568 29,903,761
+Liabilities
+Investment Contracts 4,089,863 4,089,863
+Liabilities
+Borrowings 134,611 134,611
+Trade Payable 838,925 838,925
+Other payables 846,761 846,761
+Employee Benefit Liability 47,346 47,346
+Income Tax liabilities 591,045 591,045
+Deferred tax liabilities 204,005 204,005
+Total Liabilities 48,396,886 11,740,568 29,903,761 4,089,863 2,662,694
+Surplus/(Deficit) 5,076,473 (729,907) (29,122,663) (0) 34,929,045
+139
+
+
+| 0                                     | 1          | 2                        | 3             | 4                          | 5                    |
+|:--------------------------------------|:-----------|:-------------------------|:--------------|:---------------------------|:---------------------|
+| 5.3 Group Hypothecation 2022          |            |                          |               |                            |                      |
+|                                       | Total      | Life Policy Holders Fund | Annuity Funds | Investment Contracts Funds | Shareholder s’ funds |
+| Assets                                | N'000      | N'000                    | N'000         | N'000                      | N'000                |
+| Cash and Cash Equivalents             | 1,141,679  | 710,237                  | 154,936       | 276,506                    |                      |
+| Financial Assets                      |            |                          |               |                            |                      |
+| -At fair value through profit or loss | 6,269,671  | 4,121,485                | 212,470       | 1,935,716                  |                      |
+| -Available for sale                   | 139,134    | 100,493                  |               | 38,641                     |                      |
+| -Held to maturity                     | 29,850,706 | 929,000                  | 78,100        | 409,000                    | 28,434,606           |
+| -Loans and receivables                | 62,292     | -                        | 62,292        |                            |                      |
+| Trade Receivables                     | 88,884     | -                        |               |                            | 88,884               |
+| Reinsurance Contract Assets           | 100,957    | 100,957                  |               |                            |                      |
+| Deferred Acquisition Cost             | -          | -                        |               |                            |                      |
+| Other Receivables                     | 728,369    | 159,953                  |               |                            | 568,416              |
+| Investment in subsidiaries            | -          | -                        |               |                            | -                    |
+| Investment in Associates              | -          | -                        |               |                            |                      |
+| Investment Properties                 | 12,719,286 | 4,888,536                | 273,300       | 1,430,000                  | 6,127,450            |
+| Deferred Tax Assets                   | 147,690    |                          | -             |                            | 147,690              |
+| Intangible Asset                      | 60,413     |                          | -             |                            | 60,413               |
+| Property Plant and Equipment          | 1,792,388  |                          | -             |                            | 1,792,388            |
+| Statutory Deposits                    | 348,401    |                          | -             |                            | 348,401              |
+| Right of Use Assets                   | 23,490     |                          | -             |                            | 23,490               |
+| Total Assets                          | 53,473,360 | 11,010,661               | 781,098       | 4,089,863                  | 37,591,739           |
+| Liabilities                           |            |                          |               |                            |                      |
+| Insurance Contract Liabilities        | 41,644,329 | 11,740,568               | 29,903,761    |                            |                      |
+| Investment Contracts Liabilities      | 4,089,863  |                          |               | 4,089,863                  |                      |
+| Borrowings                            | 134,611    |                          |               |                            | 134,611              |
+| Trade Payable                         | 838,925    |                          |               |                            | 838,925              |
+| Other payables                        | 846,761    |                          |               |                            | 846,761              |
+| Employee Benefit Liability            | 47,346     |                          |               |                            | 47,346               |
+| Income Tax liabilities                | 591,045    |                          |               |                            | 591,045              |
+| Deferred tax liabilities              | 204,005    |                          |               |                            | 204,005              |
+| Total Liabilities                     | 48,396,886 | 11,740,568               | 29,903,761    | 4,089,863                  | 2,662,694            |
+| Surplus/(Deficit)                     | 5,076,473  | (729,907)                | (29,122,663)  | (0)                        | 34,929,045           |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.4 Company Hypothecation
+2023
+Investment
+Life Fund Annuity Total
+Item Contract
+N’000 N’000 N’000
+N’000
+Insurance Contract Liabilities
+40,323,718.00
+11,046,871.00 29,276,847.00
+Investment Contract Liabilities
+2,919,135.00 2,919,135.00
+-
+Gross Insurance Funds
+29,276,847 2,919,135 43,242,853
+11,046,871
+Less
+Reinsurance
+Receivables
+1 Reinsurance expenses
+prepaid - -
+2 Reinsurers' share of Claims
+expense paid (76,220) - - (76,220)
+3 Reinsurers' share of
+Unearned premium reserve
+(58,901) - - (58,901)
+4 Reinsurers' share of
+Incurred but not reported -
+claims (1,178) (1,178)
+5 Others (specify)
+- -
+Net Insurance 10,910,572 29,276,847 2,919,135 43,106,554
+Funds
+Admissible
+Assets
+1 Cash and Cash Equivalents 325,140 287,632 126,588 739,360
+2 Treasury bills and
+Government Bonds 2,214,107 275,278 568,751 3,058,136
+3 Corporate Bonds &
+Debenture 41,750 - 15,826 57,576
+4 Quoted Shares 101,215 - 30,103 131,318
+5 Unquoted Shares 46,292 21,060 27,045 94,397
+6 Loans to Policy holders - - -
+7 Investment Properties 5,759,230 494,948 2,150,822 8,405,000
+Total Admissible Assets 8,487,734 1,078,918 2,919,135 12,485,787
+SURPLUS (DEFICIT ) IN ASSETS COVER (2,422,838) ( 28,197,929) - (30,620,767)
+140
+
+
+| 0                                  | 1                                                     | 2             | 3             | 4                   | 5             |
+|:-----------------------------------|:------------------------------------------------------|:--------------|:--------------|:--------------------|:--------------|
+| 5.4 Company Hypothecation          | nan                                                   |               |               |                     |               |
+| 2023                               | nan                                                   |               |               |                     |               |
+| Item                               | nan                                                   | Life Fund     | Annuity       | Investment Contract | Total         |
+|                                    | nan                                                   | N’000         | N’000         | N’000               | N’000         |
+| Insurance Contract Liabilities     | nan                                                   | 11,046,871.00 | 29,276,847.00 |                     | 40,323,718.00 |
+| Investment Contract Liabilities    | nan                                                   | -             |               | 2,919,135.00        | 2,919,135.00  |
+| Gross Insurance Funds              | nan                                                   | 11,046,871    | 29,276,847    | 2,919,135           | 43,242,853    |
+| Less                               |                                                       |               |               |                     |               |
+| Reinsurance Receivables            |                                                       |               |               |                     |               |
+| 1                                  | Reinsurance expenses prepaid                          |               |               | -                   | -             |
+| 2                                  | Reinsurers' share of Claims expense paid              | (76,220)      | -             | -                   | (76,220)      |
+| 3                                  | Reinsurers' share of Unearned premium reserve         | (58,901)      | -             | -                   | (58,901)      |
+| 4                                  | Reinsurers' share of Incurred but not reported claims | (1,178)       |               | -                   | (1,178)       |
+| 5                                  | Others (specify)                                      |               |               | - 2,919,135         | - 43,106,554  |
+| Net Insurance Funds                |                                                       | 10,910,572    | 29,276,847    | nan                 | nan           |
+| Admissible Assets                  |                                                       |               |               |                     |               |
+| 1                                  | Cash and Cash Equivalents                             | 325,140       | 287,632       | 126,588             | 739,360       |
+| 2                                  | Treasury bills and Government Bonds                   | 2,214,107     | 275,278       | 568,751             | 3,058,136     |
+| 3                                  | Corporate Bonds & Debenture                           | 41,750        | -             | 15,826              | 57,576        |
+| 4                                  | Quoted Shares                                         | 101,215       | -             | 30,103              | 131,318       |
+| 5                                  | Unquoted Shares                                       | 46,292        | 21,060        | 27,045              | 94,397        |
+| 6                                  | Loans to Policy holders                               |               | -             | -                   | -             |
+| 7                                  | Investment Properties                                 | 5,759,230     | 494,948       | 2,150,822           | 8,405,000     |
+|                                    | Total Admissible Assets                               | 8,487,734     | 1,078,918     | 2,919,135           | 12,485,787    |
+| SURPLUS (DEFICIT ) IN ASSETS COVER | nan                                                   | (2,422,838)   | ( 28,197,929) | -                   | (30,620,767)  |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.4 Company Hypothecation
+2022
+Item Investment Annuity Total Life Total Policy holders
+Contract Insurance Fund Fund
+N’000 N’000 N’000 N’000 N’000
+Insurance Contract Liabilities 29,903,761 39,882,054 39,882,054 9,978,298
+Investment Contract Liabilities 4,089,863 4,089,863 4,089,863
+Gross Insurance Funds 4,089,863 29,903,761 43,971,918 43,971,918 9,978,298
+Less
+Reinsurance
+Receivables
+1 Reinsurance expenses
+prepaid -
+2 Reinsurers' share of Claims
+expense paid -
+3 Reinsurers' share of
+Unearned premium reserve -
+(17,070) (17,070) (17,070)
+4 Reinsurers' share of
+Incurred but not reported -
+claims (83,887) (83,887) (83,887)
+5 Others (specify)
+- - -
+Net Insurance 4,089,863 29,903,761 43,870,960 9,877,336 43,870,960
+Funds
+Admissible
+Assets
+1 Cash and Cash Equivalents 276,506 154,936 1,060,089 628,647 1,060,089
+2 Treasury bills and 1,935,716 212,469 6,269,670 4,121,485 6,269,670
+Government Bonds
+3 Corporate Bonds &
+Debenture - 62,292 62,292 62,292
+4 Quoted Shares 38,641 - 139,134 100,493 139,134
+5 Unquoted Shares 409,000 78,100 1,416,100 929,000 29,846,418
+6 Loan to Policy holders 159,958
+- 159,953 159,953
+7 Other Loans & Receivables 532,002
+8 Investment in Subsidiaries 105,000
+9 Investment in Associates
+10 Intangible Assets 33,360
+11 Right of Use Assets
+23,490
+12 Deferred Tax Assets 146,476
+13 Statutory Deposit 200,000
+14 Investment Properties 1,430,000 273,300 4,953,300 3,250,000 11,080,750
+Total Admissible Assets 4,089,863 781,097 14,060,538 9,189,578 49,658,634
+SURPLUS (DEFICIT ) IN ASSETS COVER 4,089,863 (29,122,664) (29,810,423) 5,787,674 (687,758)
+141
+
+
+| 0                                  | 1                                                     | 2                   | 3            | 4                         | 5          |
+|:-----------------------------------|:------------------------------------------------------|:--------------------|:-------------|:--------------------------|:-----------|
+| 5.4 Company Hypothecation          | nan                                                   |                     |              |                           |            |
+| 2022                               | nan                                                   |                     |              |                           |            |
+| Item                               | nan                                                   | Investment Contract | Annuity      | Total Life Insurance Fund | Total      |
+|                                    | nan                                                   | N’000               | N’000        | N’000                     | N’000      |
+| Insurance Contract Liabilities     | nan                                                   |                     | 29,903,761   | 39,882,054                | 39,882,054 |
+| Investment Contract Liabilities    | nan                                                   | 4,089,863           |              | 4,089,863                 | 4,089,863  |
+| Gross Insurance Funds              | nan                                                   | 4,089,863           | 29,903,761   | 43,971,918                | 43,971,918 |
+| Less                               |                                                       |                     |              |                           |            |
+| Reinsurance Receivables            |                                                       |                     |              |                           |            |
+| 1                                  | Reinsurance expenses prepaid                          |                     | -            |                           |            |
+| 2                                  | Reinsurers' share of Claims expense paid              |                     | -            |                           |            |
+| 3                                  | Reinsurers' share of Unearned premium reserve         |                     | -            | (17,070)                  | (17,070)   |
+| 4                                  | Reinsurers' share of Incurred but not reported claims |                     | -            | (83,887)                  | (83,887)   |
+| 5                                  | Others (specify)                                      |                     | - 29,903,761 | - 43,870,960              |            |
+| Net Insurance Funds                |                                                       | 4,089,863           | nan          | nan                       | 9,877,336  |
+| Admissible Assets                  |                                                       |                     |              |                           |            |
+| 1                                  | Cash and Cash Equivalents                             | 276,506             | 154,936      | 1,060,089                 | 628,647    |
+| 2                                  | Treasury bills and Government Bonds                   | 1,935,716           | 212,469      | 6,269,670                 | 4,121,485  |
+| 3                                  | Corporate Bonds & Debenture                           | -                   | 62,292       | 62,292                    |            |
+| 4                                  | Quoted Shares                                         | 38,641              | -            | 139,134                   | 100,493    |
+| 5                                  | Unquoted Shares                                       | 409,000             | 78,100       | 1,416,100                 | 929,000    |
+| 6                                  | Loan to Policy holders                                |                     | -            | 159,953                   | 159,958    |
+| 7                                  | Other Loans & Receivables                             |                     |              |                           |            |
+| 8                                  | Investment in Subsidiaries                            |                     |              |                           |            |
+| 9                                  | Investment in Associates                              |                     |              |                           |            |
+| 10                                 | Intangible Assets                                     |                     |              |                           |            |
+| 11                                 | Right of Use Assets                                   |                     |              |                           |            |
+| 12                                 | Deferred Tax Assets                                   |                     |              |                           |            |
+| 13                                 | Statutory Deposit                                     |                     |              |                           |            |
+| 14                                 | Investment Properties                                 | 1,430,000           | 273,300      | 4,953,300                 | 3,250,000  |
+|                                    | Total Admissible Assets                               | 4,089,863           | 781,097      | 14,060,538                | 9,189,578  |
+| SURPLUS (DEFICIT ) IN ASSETS COVER | nan                                                   | 4,089,863           | (29,122,664) | (29,810,423)              | 5,787,674  |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.5 Minimum Capital requirement
+The Company's issued and paid up share capital as at December, 2023 is N10,292,500 (2022: N10,292,500)
+The Solvency Margin for African Alliance
+Insurance Plc. as at 31 December 2023 is as Total Admissible Inadmissible
+follows:
+Assets N'000 N'000 N'000
+Cash & Cash Equivalent 739,360 739,360 -
+FVTPL- Quoted Equities 270,453 270,453 -
+FVTPL- Bonds 3,058,136 3,058,136 -
+FVTOCI 29,846,418 29,846,418 -
+Amortised Cost 62,292 62,292
+Trade Receivable - - -
+Reinsurance contract assets 135,120 135,120 -
+Other Receivable & Prepayment 653,729 171,471 482,250
+Investment properties 12,734,000 8,405,000 4,329,000
+Investment in Subsidiary 105,000 - 105,000
+Investment in Associate - - -
+Retirement benefit assets - - -
+Defferred Tax Asset 146,476 - 146,476
+Intangible assets 156,738 156,738 -
+Right of Use Assets - - -
+Property Plant & Equipment(Land & Building) 284,000 284,000
+Property Plant & Equipment (Others) 400,680 400,680 -
+Statutory Deposit 200,000 200,000 -
+Total Assets (a) 48,793,676 43,730,951 5,062,725
+Liabilities
+Insurance Contract Liabilities 40,323,718 40,323,718 -
+Investment Contract Liabilities 2,919,135 2,919,135 -
+Borrowing - - -
+Trade Payable 1,649,987 1,649,987 -
+Other Payables & Accruals 611,550 611,550 -
+Provision and Accruals - - -
+Employee Benefits Liabilities 92,107 92,107 -
+Deffered Tax Liabilities 561,869 - 561,869
+Tax Payable 561,865 561,865 -
+Total Liabilities (b) 46,720,232 46,158,362 561,869
+SOLVENCY MARGIN (a-b) (2,427,411)
+Subject to Higher of:
+Net Premium Income
+15% of Net premium income 917,751
+Or
+Minimum Capital Requirement 2,000,000
+Surplus/(Deficit) In Solvency Margin (4,427,411)
+Gross Solvency ratio (121) %
+Net Solvency ratio (221) %
+During the year the solvency margin was (221) % (2022: (302) %).
+The company did not meet the minimum capital requirement of N2 billion as stipulated by the Insurance Act
+142
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The Solvency Margin for African Alliance Insurance
+Total Admissible Inadmissible
+Plc. as at 31 December 2022 is as follows:
+Assets N'000 N'000 N'000
+Cash & Cash Equivalent 1,060,089 943,982 116,107
+FVTPL- Quoted Equities 139,135 139,135 -
+FVTPL- Bonds 6,269,671 6,269,671 -
+FVTOCI 29,846,418 29,846,418 -
+Amortised Cost 62,292 62,292
+Trade Receivable - - -
+Reinsurance Contract Assets 100,957 100,957 -
+Other Receivable & Prepayment 691,955 172,434 519,521
+Investment properties 11,080,750 5,335,966 5,744,784
+Investment in Subsidiary 105,000 - 105,000
+Investment in Associate - - -
+Retirement benefit assets - - -
+Defferred Tax Asset 146,476 - 146,476
+Intangible assets 33,360 33,360 -
+Right of Use Assets 23,490 - 23,490
+Property Plant & Equipment(Land & Building) 284,000 284,000
+Property Plant & Equipment (Others) 479,378 479,378 -
+Statutory Deposit 200,000 200,000 -
+Total Assets (a) 50,522,970 43,867,593 6,655,377
+Liabilities
+Insurance Contract Liabilities 39,882,054 39,882,054 -
+Investment Contract Liabilities 4,089,863 4,089,863 -
+Borrowing 22,444 22,444 -
+Trade Payable 600,675 600,675 -
+Other Payables & Accruals 708,927 708,927 -
+Provision and Accruals - - -
+Employee Benefits Liabilities 47,346 47,346 -
+Deffered Tax Liabilities 92,107 - 92,107
+Tax Payable 558,187 558,187 -
+Total Liabilities (b) 46,001,604 45,909,497 92,107
+SOLVENCY MARGIN (a-b) (2,041,906)
+Subject to Higher of:
+Net Premium Income 6,889,986
+15% of Net premium income 1,033,498
+Or
+Minimum Capital Requirement 2,000,000
+Surplus/(Deficit) In Solvency Margin (4,041,906)
+Gross Solvency ratio (202) %
+Net Solvency ratio (302) %
+The company’s capital objectives are to ensure that the company is properly capitalized and
+always funded, having regard to its regulatory needs, prudent management and the needs of
+all stakeholders.
+Precisely, the company has adopted the following capital management policies:
+(i) Maintenance, as a minimum, of capital sufficient to meet the statutory requirement.
+143
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+(ii) An Economic Capital at Risk (ECaR) approach is also used by the management and the
+board to ensure that obligations to policyholders can be met in adverse circumstances.
+(iii) Maintenance of an appropriate level of liquidity at all times. The company further ensures
+that it can always meet its expected capital and financing needs, having regard to business
+plans to guarantee its going concern status, forecast and any strategic initiatives.
+Sensitivities
+The company has both qualitative and quantitative risk management procedures to monitor the
+key risks and sensitivities of the business. This is achieved through scenario analysis and risk
+assessments. From an understanding of the principal risks, appropriate risk limits and control
+are defined. The Enterprise Risk Management committee plays a major role here.
+The risk types affecting the surplus capital of the company are market risk, credit risk, liquidity
+risk, liability risk, business risk and operational risk.
+The minimum capital required is compared with the equity maintained during the period in the table below:
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Shareholders’ equity 2,072,666 5,076,475 2,072,666 4,521,364
+Capital requirement on regulatory basis 2,000,000 2,000,000 2,000,000 2,000,000
+Shortfall in Solvency Margin (4,428,190) (4,041,905) (4,428,190) (4,041,905)
+Shortfall in Asset cover for contract liabilities (27,532,680) (29,852,571) (22,004,995) (27,810,423)
+5.5B Measurement basis of financial assets and liabilities
+Group 31 December 2023 31 December 2022
+Fair Value Amortised Total Fair Value Amortised Total
+Cost Cost
+N'000 N'000 N'000 N'000 N'000 N'000
+Cash and cash equivalents 820,949 - 820,949 1,141,679 - 1,141,679
+Investment securities 33,241,786 - 33,144,173 36,259,511 62,292 36,321,804
+Trade receivables - 88,884 88,884 - 88,884 88,884
+Reinsurance contract assets - 135,120 135,120 - 166,819 166,819
+Other assets - 653,727 653,727 - 728,369 728,369
+Statutory deposit 348,401 348,401 348,401 348,401
+Total Financial assets 34,062,715 1,262,506 35,325,241 37,401,190 1,394,76 38,730,094
+Financial liabilities - 134,611 134,611 - 134,611 134,611
+Bank overdraft - 1,871,887 1,871,887 - 838,925 838,925
+Trade payable - 634,912 634,912 - 1,485,153 1,485,153
+Other payables and accruals - - - -
+Investment linked contract liabilities
+Total Financial liabilities - 2,641,410 2,641,410 - 2,458,689 2,458,689
+144
+
+
+| 0            | 1            | 2            | 3            |
+|:-------------|:-------------|:-------------|:-------------|
+| 2,072,666    | 5,076,475    | 2,072,666    | 4,521,364    |
+| 2,000,000    | 2,000,000    | 2,000,000    | 2,000,000    |
+| (4,428,190)  | (4,041,905)  | (4,428,190)  | (4,041,905)  |
+| (27,532,680) | (29,852,571) | (22,004,995) | (27,810,423) |
+
+
+
+| 0                              | 1                                        | 2                                                       | 3                                | 4                                             | 5                                                         |
+|:-------------------------------|:-----------------------------------------|:--------------------------------------------------------|:---------------------------------|:----------------------------------------------|:----------------------------------------------------------|
+| 31 December 2023               | nan                                      | nan                                                     | 31 December 2022                 | nan                                           | nan                                                       |
+| Fair Value                     | Amortised Cost                           | Total                                                   | Fair Value                       | Amortised Cost                                | Total                                                     |
+| N'000 820,949 33,241,786 - - - | N'000 - - 88,884 135,120 653,727 348,401 | N'000 820,949 33,144,173 88,884 135,120 653,727 348,401 | N'000 1,141,679 36,259,511 - - - | N'000 - 62,292 88,884 166,819 728,369 348,401 | N'000 1,141,679 36,321,804 88,884 166,819 728,369 348,401 |
+| 34,062,715                     | 1,262,506                                | 35,325,241                                              | 37,401,190                       | 1,394,76                                      | 38,730,094                                                |
+| - - - -                        | 134,611 1,871,887 634,912 -              | 134,611 1,871,887 634,912                               | - - - -                          | 134,611 838,925 1,485,153 -                   | 134,611 838,925 1,485,153                                 |
+| -                              | 2,641,410                                | 2,641,410                                               | -                                | 2,458,689                                     | 2,458,689                                                 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Company 31 December 2023 31 December 2022
+Fair Value Amortised Cost Total Fair Value Amortised Total
+Cost
+N'000 N'000 N'000 N'000 N'000 N'000
+Cash and cash equivalents 739,360 - 739,360 1,060,089 - 1,060,089
+Investment securities 33,237,789 - 33,237,789 36,255,223 62,291 36,317,514
+Trade receivables - 135,120 135,120 - 166,819 166,819
+Reinsurance contract assets - 758,726 758,726 - 796,955 796,955
+Other assets - 200,000 200,000 - 200,000 200,000
+Statutory deposit
+Total Financial assets 33,977,149 1,093,846 35,070,995 37,315,311 1,226,065 38,541,3
+Financial liabilities
+Bank overdraft - - 22,444 22,444
+Trade payable 1,649,987 1,649,987 600,675 600,675
+Other payables and accruals 1,221,740 1,221,740 1,314,461 1,314,461
+Investment linked contract 2,919,135 2,919,135 4,089,863 4,089,863
+liabilities
+Total Financial liabilities 5,790,862 5,790,862 6,027,443 6,027,443
+5.6 Measurement of financial assets and liabilities at fair value
+The Group measures fair values using the following fair value hierarchy, which reflects the
+significance of the inputs used in making the measurements:
+Level 1: inputs that are quoted market prices (unadjusted) in active markets for identical
+instruments.
+Level 2: inputs other than quoted prices included within Level 1 that are observable either directly
+(i.e. as prices) or indirectly (i.e. derived from prices). This category includes instruments valued using:
+quoted market prices in active markets for similar instruments; quoted prices for identical or similar
+instruments in markets that are considered less than active; or other valuation techniques in which
+all significant inputs are directly or indirectly observable from market data. All level 2 valuation were
+derived using either the net present value and discounted cash flow models or comparison with
+similar instruments for which market observable prices exist.
+Level 3: inputs that are unobservable. This category includes all instruments for which the valuation
+technique includes inputs not based on observable data and the unobservable inputs have a
+significant effect on the instrument’s valuation. This category includes instruments that are valued
+based on quoted prices for similar instruments for which significant unobservable adjustments or
+assumptions are required to reflect differences between the instruments.
+There were no transfers from Level 1 to Level 2 or between level 2 or level 3 of the fair value
+hierarchy during the year.
+145
+
+
+| 0                              | 1                                 | 2                                                | 3                                | 4                                      | 5                                                  |
+|:-------------------------------|:----------------------------------|:-------------------------------------------------|:---------------------------------|:---------------------------------------|:---------------------------------------------------|
+| 31 December 2023               | nan                               | nan                                              | 31 December 2022                 | nan                                    | nan                                                |
+| Fair Value                     | Amortised Cost                    | Total                                            | Fair Value                       | Amortised Cost                         | Total                                              |
+| N'000 739,360 33,237,789 - - - | N'000 - - 135,120 758,726 200,000 | N'000 739,360 33,237,789 135,120 758,726 200,000 | N'000 1,060,089 36,255,223 - - - | N'000 - 62,291 166,819 796,955 200,000 | N'000 1,060,089 36,317,514 166,819 796,955 200,000 |
+| 33,977,149                     | 1,093,846                         | 35,070,995                                       | 37,315,311                       | 1,226,065                              | 38,541,3                                           |
+|                                | - 1,649,987 1,221,740 2,919,135   | - 1,649,987 1,221,740 2,919,135                  |                                  | 22,444 600,675 1,314,461 4,089,863     | 22,444 600,675 1,314,461 4,089,863                 |
+|                                | 5,790,862                         | 5,790,862                                        |                                  | 6,027,443                              | 6,027,443                                          |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.6.1 Fair value of financial assets and liabilities
+The table below summarises the carrying amounts and fair values of the financial assets and liabilities.
+Group Company
+31 December 2023 31 December 2022 31 December 2023 31 December 2022
+Carrying Carrying
+value Fair value value Fair value Fair value Fair value Fair value Fair value
+N'000 N'000 N'000 N'000 N'000 N'000 N'000 N'000
+Financial assets
+Statutory deposits 348,401 348,401 348,401 348,401 200,000 200,000 200,000 200,000
+Cash and bank balances 820,949 820,949 1,141,679 1,141,679 739,360 739,360 1,060,089 1,060,089
+Investment securities: - -
+FVTPL-equities 270,453 270,453 139,135 139,135 270,453 270,453 139,134 139,134
+FVTPL-bonds 3,058,136 3,058,136 6,269,671 6,269,671 3,058,136 3,058,136 6,269,671 6,269,671
+FVOCI 29,752,800 29,752,800 29,850,706 29,850,706 29,846,418 29,846,418 29,846,418 29,846,418
+Amortized cost 62,784 62,784 62,292 62,292 62,782 62,782 62,291 62,291
+Loan and receivables - - - -
+Trade receivables 88,884 88,884 88,884 88,884 - -
+Reinsurance contract 135,120 135,120 166,815 166,815 135,120 135,120 166,815 166,815
+assets
+Other receivables 634,912 634,912 728,369 728,369 653,727 653,727 691,955 691,955
+TOTAL 35,378,304 35,378,304 38,795,956 38,730,094 34,965,996 34,965,996 38,370,516 38,370,516
+Financial liabilities
+Trade payables 1,871,887 1,871,887 838,925 838,925 1,649,987 1,649,987 600,675 600,675
+Other liabilities 634,912 634,912 1,619,764 1,619,764 1,221,740 1,221,740 1,336,905 1,336,905
+Investment linked 2,919,135 2,919,135 4,089,863 4,089,863 2,919,135 2,919,135 4,089,863 4,089,863
+contract
+TOTAL 5,425,933 5,425,933 6,548,552 6,548,552 5,790,862 5,790,862 6,027,443 6,027,443
+5.7 The risk types affecting the surplus capital of the company are market risk, credit risk, insurance risk, liquidity
+risk, liability risk, business risk and operational risk.
+5.7.1 Financial instruments measured at fair value - Fair value hierarchy
+The following table analyses financial instruments measured at fair value at the reporting date, by the level in the
+fair value hierarchy into which the fair value measurement is categorised. The amounts are based on the values
+recognised in the statement of financial position.
+Group
+31 December 2023 Level 1 Level 2 Level 3 Total
+Fair value
+N’000 N’000 N’000 N’000
+Financial assets
+Investment securities:
+Financial assets designated at fair value through P or L 6,408,806 6,408,806
+Fair value through other comprehensive income 29,850,706 29,850,706
+Investment Properties 12,719,286 12,719,286
+6,408,806 12,719,286 29,850,706 48,978,797
+146
+
+
+| 0                           | 1                | 2          | 3                | 4          | 5                | 6          | 7                | 8          |
+|:----------------------------|:-----------------|:-----------|:-----------------|:-----------|:-----------------|:-----------|:-----------------|:-----------|
+|                             | Group            | nan        | nan              | nan        | Company          | nan        | nan              | nan        |
+|                             | 31 December 2023 | nan        | 31 December 2022 | nan        | 31 December 2023 | nan        | 31 December 2022 | nan        |
+|                             | Carrying value   | Fair value | Carrying value   | Fair value | Fair value       | Fair value | Fair value       | Fair value |
+|                             | N'000            | N'000      | N'000            | N'000      | N'000            | N'000      | N'000            | N'000      |
+| Financial assets            |                  |            |                  |            |                  |            |                  |            |
+| Statutory deposits          | 348,401          | 348,401    | 348,401          | 348,401    | 200,000          | 200,000    | 200,000          | 200,000    |
+| Cash and bank balances      | 820,949          | 820,949    | 1,141,679        | 1,141,679  | 739,360          | 739,360    | 1,060,089        | 1,060,089  |
+| Investment securities:      | -                | -          |                  |            |                  |            |                  |            |
+| FVTPL-equities              | 270,453          | 270,453    | 139,135          | 139,135    | 270,453          | 270,453    | 139,134          | 139,134    |
+| FVTPL-bonds                 | 3,058,136        | 3,058,136  | 6,269,671        | 6,269,671  | 3,058,136        | 3,058,136  | 6,269,671        | 6,269,671  |
+| FVOCI                       | 29,752,800       | 29,752,800 | 29,850,706       | 29,850,706 | 29,846,418       | 29,846,418 | 29,846,418       | 29,846,418 |
+| Amortized cost              | 62,784           | 62,784     | 62,292           | 62,292     | 62,782           | 62,782     | 62,291           | 62,291     |
+| Loan and receivables        | -                | -          |                  |            | -                | -          |                  |            |
+| Trade receivables           | 88,884           | 88,884     | 88,884           | 88,884     | -                | -          |                  |            |
+| Reinsurance contract assets | 135,120          | 135,120    | 166,815          | 166,815    | 135,120          | 135,120    | 166,815          | 166,815    |
+| Other receivables           | 634,912          | 634,912    | 728,369          | 728,369    | 653,727          | 653,727    | 691,955          | 691,955    |
+| TOTAL                       | 35,378,304       | 35,378,304 | 38,795,956       | 38,730,094 | 34,965,996       | 34,965,996 | 38,370,516       | 38,370,516 |
+| Financial liabilities       |                  |            |                  |            |                  |            |                  |            |
+| Trade payables              | 1,871,887        | 1,871,887  | 838,925          | 838,925    | 1,649,987        | 1,649,987  | 600,675          | 600,675    |
+| Other liabilities           | 634,912          | 634,912    | 1,619,764        | 1,619,764  | 1,221,740        | 1,221,740  | 1,336,905        | 1,336,905  |
+| Investment linked contract  | 2,919,135        | 2,919,135  | 4,089,863        | 4,089,863  | 2,919,135        | 2,919,135  | 4,089,863        | 4,089,863  |
+| TOTAL                       | 5,425,933        | 5,425,933  | 6,548,552        | 6,548,552  | 5,790,862        | 5,790,862  | 6,027,443        | 6,027,443  |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group
+31 December 2022 Level 1 Level 2 Level 3 Total
+Fair value
+N’000 N’000 N’000 N’000
+Financial assets
+Investment securities:
+Financial assets designated at fair value through P or L 6,408,806 6,408,806
+Fair value through other comprehensive income 29,850,706 29,850,706
+Investment Properties 12,719,286 12,719,286
+6,408,806 12,719,286 29,850,706 48,978,797
+Company
+31 December 2023 Level 1 Level 2 Level 3 Total
+Fair value
+N’000 N’000 N’000 N’000
+Financial assets
+Investment securities:
+Financial assets designated at fair value through P or L 3,328,589 3,328,589
+Financial assets designated at fair value through P or L 29,846,418 29,846,418
+Investment properties 12,734,000 12,734,000
+3,328,589 12,734,000 29,846,418 45,909,007
+Company
+31 December 2022 Level 1 Level 2 Level 3 Total
+Fair value
+N’000 N’000 N’000 N’000
+Financial assets
+Investment securities:
+Financial assets designated at fair value through P or L 6,408,805 6,408,805
+Financial assets designated at fair value through P or L 29,846,418 29,846,418
+Investment properties 11,080,750 11,080,750
+6,408,805 11,080,750 29,846,418 47,335,972
+147
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.7.2 Financial instruments not measured at fair value
+The following table sets out the fair values of financial instruments not measured at fair value and analyses them
+by the level in the fair value hierarchy into which each fair value measurement is categorized:
+Group
+31 December 2023 Level 1 Level 2 Level 3 Total Total
+Fair value carrying
+amount
+N’000 N’000 N’000 N’000 N’000
+Financial assets
+Cash & cash equivalents 820,949 820,949
+Investment securities:
+Fair value through profit or loss 3,058,136 3,058,136
+Trade receivables 88,884 88,884
+Reinsurance contract assets 135,120 135,120
+Other receivables 658,727 658,727
+Statutory deposit 348,401 348,401
+3,879,085 1,262,506 5,141,591
+Financial liabilities
+Trade payables - - - - -
+Other liabilities - - - - -
+Investment linked contract liabilities - - - - -
+Group
+31 December 2022 Level 1 Level 2 Level 3 Total Total
+Fair value carrying
+amount
+N’000 N’000 N’000 N’000 N’000
+Financial assets
+Cash & cash equivalents 739,360 739,360
+Investment securities:
+Fair value through profit or loss 3,058,136 3,058,136
+Trade receivables 88,884 88,884
+Reinsurance contract assets 166,815 166,815
+Other receivables 728,369 728,369
+Statutory deposit 348,401 348,401
+3,797,496 1,332,473 5,532,288
+Financial liabilities
+Trade payables - - - - -
+Other liabilities - - - - -
+Investment linked contract liabilities - - - - -
+148
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Company
+31 December 2023 Level 1 Level 2 Level 3 Total Total
+Fair value carrying
+amount
+N’000 N’000 N’000 N’000 N’000
+Financial assets
+Cash & bank balances - 739,360 739,360 739,360
+Investment securities: - - -
+Fair value through profit or loss-equities 270,453 - 270,453 270,453
+Fair value through profit or loss-bonds 3,058,136 - 3,058,136 3,058,136
+Fair value through other comprehensive 29,846,418 - 29,846,418 29,846,418
+income
+Reinsurance contract assets - 135,120 135,120 135,120
+Other receivables - 653,727 653,727 653,727
+Statutory deposit - 200,000 200,000 200,000
+33,175,007 1,728,206 - 34,903,214 34,903,214
+Financial liabilities
+Trade payables - - - - -
+Other liabilities - - - - -
+Investment linked contract liabilities - - - - -
+Company
+31 December 2022 Level 1 Level 2 Level 3 Total Total
+Fair value carrying
+amount
+N’000 N’000 N’000 N’000 N’000
+Financial assets
+Cash & bank balances - - -
+Investment securities: -
+Fair value through profit or loss-equities - -
+Fair value through profit or loss-bonds - -
+Fair value through other comprehensive - -
+income
+Reinsurance contract assets 166,819 166,819 166,819
+Other receivables 691,995 691,995 691,995
+Statutory deposit 200,000 200,000 200,000
+- 1,058,814 - 1,058,814 1,058,814
+Financial liabilities
+Trade payables - - - - -
+Other liabilities - - - - -
+Investment linked contract liabilities - - - - -
+There was no transfer between levels during the year under review.
+149
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+5.7.3 Financial instruments in level 3
+The financial instruments in level 3 above comprise unquoted equity instruments. The following table shows a
+reconciliation from the beginning balances to the ending balances for financial instruments in level 3 of the fair
+value hierarchy.
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+At 1 January 29,850,786 16,089,177 29,846,418 16,084,889
+Acquisition
+Translation adjustment
+Fair value changes - 13,761,529 - 13,761,529
+At 31 December 29,850,786 29,850,705 29,846,418 29,846,418
+These are investment in unquoted securities which are not traded or quoted on any stock market. The Company
+has no intention of disposing the securities in the foreseeable future.
+The Company holds equity instruments in non-listed companies designated at the fair value other comprehensive
+income. The Company holds non-controlling interest between (2%- 49%) in these companies.
+The unquoted equity instruments are carried at fair value (2021: carried at fair value) using market approach.
+The resulting fair value adjustment of all equities designated at fair value through other comprehensive income
+(FTOCI) are recorded in other income.
+5.7.3 a Sensitivity Analysis on Financial instruments in level 3
+Directors apply the discounted cash flow methodology for the fair measurement of its unquoted level 3 financial
+instruments, to determine their fair value at each reporting date. A significant number of the inputs, while not
+observable in the market, are however derived from market prices, rates or are estimated based on assumptions,
+and similar listed or quoted entities. These assumptions, judgement and estimation usually required for the
+adoption of an appropriate valuation model to be used, determination of expected cashflows on the financial
+instruments being valued, determination of the probability of counterparty default, and selection of appropriate
+discount rates and driven by the Directors. Fair value estimates obtained from such models are adjusted for
+factors such as the liquidity risk or model uncertainties, to the extent that Directors believes that a third-party
+market participant would take them into account in pricing a transaction. Model inputs and values are calibrated
+against historical data and published forecasts. This calibration process is inherently subjective, and it yields
+ranges of possible inputs and estimates of fair value.
+The group's valuation methodology takes into account growth in net earnings or cash flow, fixed capital
+investments, working capital investments and net borrowings, beta, risk free rate, market risk premium and
+assumed annual growth rate. These features are used to estimate expected future cashflows and discounted at a
+risk-adjusted rate. This technique is subject to inherent limitations such as estimation of the appropriate risk-
+adjusted discount rate, and different assumptions and inputs would yield different results.
+When assessing a DCF valuation, the adopted discount rate and adopted terminal yield have a strong
+interrelationship in deriving a fair value given the discount rate will determine the rate at which the terminal
+150
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+value is discounted to the present value. An increase in the discount rate and a decrease in the terminal yield will
+offset the impact on the fair value. Same impact will apply if there is a decrease in the discount rate and an increase
+in the terminal yield. A linear directional change in the discount rate and the terminal yield will potentially
+increase the impact on the fair value.
+Significant inputs Impact on fair value of an increase Impact on fair value of a decrease in
+in input input
+Risk free rate Increase Decrease
+Beta Decrease Increase
+Market risk premium Decrease Increase
+Assumed terminal growth rate Decrease Increase
+This is the premium estimated as required over the long term risk-free rate. In most cases, the unsystematic risk
+pertaining to countrywide factors such as sociopolitical risk, a country’s sovereign rating etc. is usually priced into
+risk-free instruments such as government bonds. The unsystematic risk pertaining to the stock market or
+particular industry is addressed by the market risk premium, while the beta is responsible for company-specific
+risks. We have used a market risk premium of 6% for the valuation, as we believe most of the inherent risks in the
+Nigerian capital market have been largely priced in the bond yields.
+Beta
+The beta of a stock measures the sensitivity of the excess expected return on an individual share relative to that
+of a benchmark equities market or index. It is best derived by the regression analysis of a company’s stock price
+returns to that of the benchmark market index. However, in cases where a company is not publicly listed, it can
+be derived by using a proxy from a similar company which is publicly listed, or by using the industry average.
+There are however cases where there are no comparable companies that are publicly listed to use as proxies. In
+such cases, betas are estimated or assumed based on the sensitivity of the industry to the stock market and/or
+the overall economy as a guide. The unquoted financial instruments valuation is peculiar in the sense that it is
+privately held and does not have ready and direct comparable publicly listed on the Nigerian Stock Exchange,
+although there are similar unlisted entities in the market. We assumed a beta of 1.28 for the unquoted financial
+instrument based on our perceived sensitivity of its industry to the Nigerian economy.
+Risk-Free rate
+The risk-free rate used in the valuation models is the yield of the most actively traded 10-yr FGN bond, as we
+believe this is the best reference for a risk-free instrument with a similar duration to the investment horizon of
+equities.
+The risk-free rate used in the unquoted financial instruments valuation reports was the current yield, 16% on the
+most actively traded 10-yr FGN bond in the Nigerian bond market at the time.
+151
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Assumed terminal growth rate
+This is the rate that the company is assumed to continue to grow after the forecasted years in the valuation. It is
+usually close to the GDP rate of the country where the company is situated. In certain cases, the assumed growth
+rate may exceed the current GDP as the industry may be in its growth phase.
+We have reduced the terminal growth rate for the unquoted financial instruments to 4% in line with growth
+projections for the country. It is important to note that huge potentials remain largely untapped in the Nigerian
+housing industry, predicated on a large and growing population with unmet housing needs.
+5.7.4 Fair valuation methods and assumptions
+i. Cash & cash equivalents
+This represents cash held in various bank accounts at the end of the year. The fair value of this amount is
+the carrying amount
+ii. Other receivables
+Other assets represent amount due from reinsurers and other related parties which usually have a short
+recycle period and as such the fair values of these balances approximate their carrying amount.
+iii. Statutory deposit
+This represents the deposit held by Central bank of Nigeria. i.e. 10% of the minimum capitalisation in
+compliance with the Insurance Act. The fair value of this balance is approximately its carrying amount.
+iv. Trade payables
+These represent amount payable to reinsurers and other creditors which have a short recycle period and
+as such the fair values of these balances approximate their carrying amount.
+v. Other liabilities
+These are amounts outstanding and are payable within a period of one year. Amount outstanding are
+assumed to approximate their respective fair values.
+vi. Insurance contract liabilities
+These are amounts payable to policyholders in the event of a claim. The carrying amount have been
+calculated by the actuary and the carrying amount represents the fair value as at 31 December, 2022.
+SEGMENT REPORTING
+Identification of reportable segments
+The business activities of African Alliance Insurance Plc. Group are first organized by product and type of service:
+life insurance activities and air freight activities.
+Information regarding the results of each reportable segment is included below. Performance is measured based
+on segment profit (or loss) before income taxes, as included in the internal management reports that are reviewed
+by the Group’s CEO. Segment profit is used to measure performance as management believes that such
+information is the most relevant in evaluating the results of certain segments relative toother entities that operate
+within this industry. Inter-segment pricing is determined on an arm’s length basis.
+Information reported to the chief operating decision maker (the CEO) for the purposes of resource allocation and
+assessment of segment performance focuses on types of goods or services delivered or provided. The Company's
+reportable segments under IFRS 8 are therefore as follows:
+- Life business
+- Air freight business
+152
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Life Business
+The Life reportable segment offers a wide variety of insurance products for both personal and corporate
+customers. The products offer range from provision of group life policies, traditional life policies with a segment
+of investment linked and annuity policies. The main source of income in this segment is the premium received
+from the insured on risk covered by the entity and the investment income earned on placements and deposit with
+financial institutions.
+Air Freight
+This reportable segment is a private company who provides cargo air transportation through relevant leasing
+arrangement.
+Segment revenues and results.
+The following is an analysis of the group revenue and results from continuing operations by reportable segment:
+Segment revenue Segment profit
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Life business 6,814,931 6,814,931 (4,749,368) (4,749,368)
+Internet income
+- Life Business 989,357 989,357
+- Air freight 358 358
+989,715 989,715
+Interest expense
+- Life Business
+- Air freight
+Depreciation &Amortisation
+- Life Business (251,098) (251,098)
+- Air freight
+(251,098) (251,098)
+Other income 224,681 224,681
+Impairment charges 18,640 18,640
+Fair value gain on investment properties 3,050,750 3,050,750
+Fair value through profit or loss 104,682 104,682
+Loss from investment contracts (94,347) (94,347)
+Gain on disposal of associate - -
+Share of profit of equity accounted investee - -
+Other operating and administrative expenses (2,178,926) (2,178,926)
+Finance cost (10,534) (10,534)
+Profit before tax (continuing operations) (2,895,804) (2,895,804)
+Segment revenue reported above represents revenue generated from external customers. There were no inter-
+segment sales in the current year.
+The accounting policies of the reportable segments are the same as the Group's accounting policies. Segment
+profit represents the profit before tax carried by each segment without allocation of other operating
+administration costs and director's salaries, share of profit of associates, investment income, other gains and
+losses as well as finance costs. This is the measure reported to the chief operating decision maker for the purposes
+of resource allocation and assessment of segment performance.
+153
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Segment assets
+31-Dec-23 31-Dec-22
+N’000 N’000
+Life business 53,466,950 53,466,950
+Air Freight 6,411 6,411
+53,473,361 53,473,361
+Segment liabilities
+Life business 45,030,250 45,030,250
+Air Freight 3,366,636 3,366,636
+48,396,886 48,396,886
+Other segment information
+Depreciation and amortization additions to non-current assets:
+Year end 31 Year end 31 Year end 31 Year end 31
+Dec 2023 Dec 2022 Dec 2023 Dec 2022
+N’000 N’000 N’000 N’000
+Life business 251,098 251,098 50,596 50,596
+Air Freight - -
+251,098 251,098 50,598 50,598
+154
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+6 Cash and cash equivalent Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Cash in Hand - 138
+Cash in bank (note 6.2) 295,056 374,855 273,904 353,703
+Short-term bank deposits 525,755 766,686 465,456 706,386
+820,949 1,141,679 739,360 1,060,089
+Short Term Bank Deposit
+Short Term Bank Deposit 574,737 810,954 489,505 725,722
+ECL Impairment ( notes 6.1) (44,268) (44,268) (19,336) (19,336)
+Additional ECL Impairment during the year (4,713) - (4,713) -
+525,756 766,686 465,456 706,386
+6.1 Movement in ECL adjustment on cash and cash equivalent is detailed below
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+At 1 January 44,268 33,277 19,336 8,345
+Movement for the year 4,713 10,991 4,713 10,991
+At 31 December 48,981 44,268 24,049 19,336
+6.2 Cash and cash equivalent for the purpose of cashflow
+Cash and cash equivalents includes cash in hand, deposits held at call with banks, other short-term highly liquid investments with
+original maturities of three months or less. They include:
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22
+31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Cash in hand - 138
+Cash in bank 273,904 374,855 273,904 355,158
+Short-term bank deposits 489,505 810,954 489,505 725,722
+Bank overdraft (see note 23) - (23,922)
+Cash and cash equivalent for cash flow purpose 763,408 1,162,025 763,408 1,079,425
+155
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+7 Financial assets
+7.1 FVTPL - Quoted equities
+These are quoted equities in the Nigerian Stock Exchange, the fair value were determined by reference to the quoted closing bid
+price at the end of the reporting year derived as follows:
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Quoted equity securities 270,453 139,134 270,453 139,134
+270,453 139,134 270,453 139,134
+7.1i Movement in FVTPL - Quoted equities
+At 1 January 139,135 147,544 139,135 147,544
+Transfer to Conau Trade and Investment Limited (note
+7.1ii) - - - -
+Disposal - - - -
+Fair value changes 131,318 (8,409) 131,318 (8,409)
+At 31 December 270,453 139,135 270,453 139,135
+7.1ii **During the year 2021, the entity's investment in quoted equities of 3,900,000,000 units in universal Insurance Plc
+s was transfer to CONAU Trade and Investment Limited as part of the purchase consideration towards the re-
+acquisition of its investment in PAL Pensions Limited at market value of N780 million included in the disposal amount
+above.
+For the purpose of cash flow, the market value of N780 million was not included as the transfer didn't involve
+exchange of cash between the parties (Conau Trade and Investment Limited and the Entity African Alliance Insurance)
+7.2 FVTPL - Debt Securities (bonds)
+Government and corporate bonds 2,929,077 6,156,579 2,929,077 6,156,579
+Fair value changes 129,058 113,092 129,058 113,092
+3,058,136 6,269,671 3,058,136 6,269,671
+7.2i Movement in FVTPL - Debt Securities (bonds)
+At 1 January 6,269,672 10,414,572 6,269,672 10,414,572
+Reclassification from Amortized cost – FVTPL - - - -
+Additions 240,000 935,352 240,000 935,352
+Redemption/disposal (3,580,594) (5,193,344) (3,580,594) (5,193,344)
+Interest income on bond - - - -
+Fair value changes 129,058 113,092 129,058 113,092
+3,058,136 6,269,671 3,058,136 6,269,671
+7.2ii Net fair value gains/(loss)
+Fair value gain on equity shares 131,318 (8,409) 131,318 (8,409)
+Fair value gain on Bonds 129,058 113,092 129,058 113,092
+260,377 104,682 260,377 104,682
+Fair value movement
+7.2iii As 1 January 338,838 225,746 338,838 225,746
+Fair value changes 129,058 113,092 129,058 113,092
+At 31 December 467,896 338,838 467,896 338,838
+156
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+7.2iv Redemption/disposal of bond
+Bonds dispose at cost - 4,447,728 - 4,447,728
+bonds mature at cost - 800,000 - 800,000
+Fair value changes on bond redeem and matured - (54,384) - (54,384)
+- 5,193,344 - 5,193,344
+Bond disposed – Proceed
+Bond matured - Proceed
+- 4,546,880 - 4,546,880
+- 866,090 - 866,099
+- 5,412,979 - 5,412,979
+7.3 FVOCI (Unquoted Equities)
+The unquoted equities carried as fair value through Other Comprehensive Income financial assets were fair valued using the
+fund prices advised by the investee companies
+Other unquoted equities (note 7.3i) 98,685 97,906 94,397 93,618
+Investment in PAL Pension Limited ( note 7.3ii) 29,752,800 29,752,800 29,752,800 29,752,800
+29,851,485 29,850,706 29,847,197 29,846,418
+7.3i Movement in FVOCI – other unquoted equities
+At 1 January 97,906 97,127 93,618 92,839
+Translation adjustment - - - -
+Fair value changes 779 779 779 779
+At 31 December 98,685 97,906 94,397 93,618
+7.3ii Movement in unquoted equities FVOCI
+At 1 January 29,752,800 15,992,050 29,846,418 15,992,050
+Additions - - - -
+Impairment (charge)/write back
+Fair value loss at the date of repurchase Note 29 - - - -
+Disposal - - - -
+Fair value changes - 13,760,750 - 13,760,750
+At 31 December 29,752,800 29,752,800 29,846,418 29,752,800
+7.4 Amortised cost - Debt securities
+Commercial paper - - - -
+Corporate bond 57,576 57,576 57,576 57,576
+Promissory notes - - - -
+Treasury Bills 6,205 6,205 6,205 6,205
+ECL Adjustment (999) (1,489) (999) (1,489)
+62,782 62,292 62,782 62,292
+7.4i Movement in Amortised cost - Debt securities
+At 1 January 62,292 88,108 63,781 88,108
+Reclassification from Amortized cost – FVTPL - - - -
+Additions - - - -
+Redemption - (24,327) - (24,327)
+ECL Adjustment (999) (1,489) (999) (1,489)
+At 31 December 61,293 62,292 62,782 62,292
+157
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+7.4 ii Movement in ECL adjustment on Amortised
+cost - Debt securities
+At 1 January (1,489) (1,932) (1,489) (1,932)
+Movement for the year 490 443 490 443
+At 31 December (999) (1,489) (999) (1,489)
+158
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+8 Premium receivables Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Premium receivables 88,884 88,884 - -
+Trade debtors 58,159 58,159 - -
+Impairment allowance (58,159) (58,159) - -
+88,884 88,884 - -
+8.1 Movement in impairments of trade
+receivables
+At 1 January 58,159 58,159 - -
+Additional charge during the year - - - -
+At 31 December 58,159 58,159 - -
+8.2 Premium receivables age analysis for the group relates to its subsidiary company, Ghana Life Insurance.
+Grou p
+31-Dec-23 31-Dec-22
+No of No of
+Age of Debt N'000 N'000
+Policies Policies
+Within 14 Days - - - -
+Within 15-30 Days 41 61,650 41 61,650
+Within 31- 90 Days 14 27,234 14 27,234
+Within 91-180 Days - - - -
+Above 180 Days - - - -
+55 88,884 55 88,884
+Movement in Premium
+2023 2022 2023 2022
+8.3 Receivables
+N'000 N'000 N'000 N'000
+Opening Trade Premium 88,884 88,884 - -
+Gross Premium Written 5,983,285 7,109,670
+5,983,285 7,109,670
+Total 6,072,169 5,983,285
+7,198,554 7,109,670
+Premium Received/Receipted (5,983,285)
+(5,983,285) (7,109,670) (5,983,285)
+Closing Premium Receivables - -
+88,884 88,884
+Less:
+Impairment (ECL) allowance - - - -
+88,884 88,884 - -
+159
+
+
+| 0              |   1 | 2      | 3     | 4         |
+|:---------------|----:|:-------|:------|:----------|
+| Grou p         | nan | nan    | nan   | nan       |
+| 31-Dec-23      | nan | nan    | nan   | 31-Dec-22 |
+| No of Policies | nan |        | N'000 | nan       |
+| -              |     | -      | nan   | nan       |
+| 41             |     | 61,650 | nan   | nan       |
+| 14             |     | 27,234 | nan   | nan       |
+| -              |     | -      | nan   | nan       |
+| -              | nan | nan    | nan   | nan       |
+
+
+
+| 0   |   1 |   2 |
+|:----|----:|----:|
+| nan |     |     |
+| -   | nan | nan |
+| 41  | nan | nan |
+| 14  | nan | nan |
+| -   | nan | nan |
+| -   | nan | nan |
+
+
+
+| 0      |
+|:-------|
+| 61,650 |
+| 27,234 |
+| -      |
+| -      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+9 Reinsurance contract assets: Group Company
+This is analysed as follows -
+31-Dec- 31-Dec- 1Jan 22 31-Dec- 31-Dec- 1-Jan-
+23 22 23 22 22
+Asset for Remaining
+coverage 76,220 82,932 51,223 76,220 82,932 51,223
+Asset for Incurred claims
+58,901 83,887 91,533 58,901 83,887 91,533
+Risk Adjustment -
+- -
+135,120 166,819 142,756 135,120 166,819 142,756
+GROUP LIFE
+9.1 Reinsurance contract Group Company
+assets: This is analysed as -
+follows
+31-Dec-23 31-Dec- 1 Jan 22 31-Dec 31-Dec- 1-Jan-
+22 23 22 22
+Asset for Remaining
+coverage 76,220 82,932 51,223 76,220 82,932 51,223
+Asset for Incurred claims
+58,901 83,887 91,533 58,901 83,887 91,533
+Risk
+Adjustment -
+135,120 166,819 142,756 135,120 166,819 142,756
+Reconciliation of the asset for remaining coverage and the asset for incurred
+9.1a claims for reinsurance contracts
+Asset for
+Asset for Remaining
+Incurred Claims
+Coverage (ARC)
+(AIC)
+Total
+Reconciliation of carrying
+Non-onerous Onerous AIC
+amounts by ARC/AIC:
+reinsurance
+Opening reinsurance
+contract assets 82,932 - 83,887 166,819
+Opening reinsurance
+contract liabilities - - - -
+Net opening balance 82,932 - 83,887 166,819
+160
+
+
+|   0 | 1                                                        |   2 |   3 |   4 |   5 |   6 | 7          |   8 | 9          |   10 | 11      | 12         |   13 | 14         |
+|----:|:---------------------------------------------------------|----:|----:|----:|----:|----:|:-----------|----:|:-----------|-----:|:--------|:-----------|-----:|:-----------|
+|   9 | Reinsurance contract assets: This is analysed as follows | nan | nan | nan | nan | nan | nan        | nan | nan        |  nan | nan     | nan        |  nan | nan        |
+|     |                                                          |     |     |     |     |     | 31-Dec- 23 |     | 31-Dec- 22 |      | 1Jan 22 | 31-Dec- 23 |      | 31-Dec- 22 |
+|     | Asset for Remaining coverage                             | nan | nan | nan |     |     | 76,220     |     | 82,932     |      | 51,223  | 76,220     |      | 82,932     |
+|     | Asset for Incurred claims                                | nan | nan | nan | nan | nan | 58,901     |     | 83,887     |      | 91,533  | 58,901     |      | 83,887     |
+|     | Risk Adjustment                                          | nan |     |     |     |     | -          |     | -          |      |         | -          |      |            |
+|     |                                                          |     |     |     |     |     | 135,120    |     | 166,819    |      | 142,756 | 135,120    |      | 166,819    |
+
+
+
+|   0 | 1                                                        |   2 |   3 |   4 |   5 |   6 | 7         |   8 | 9          |   10 | 11       | 12        |   13 | 14         |
+|----:|:---------------------------------------------------------|----:|----:|----:|----:|----:|:----------|----:|:-----------|-----:|:---------|:----------|-----:|:-----------|
+| 9.1 | Reinsurance contract assets: This is analysed as follows | nan | nan | nan | nan | nan | nan       | nan | nan        |  nan | nan      | nan       |  nan | nan        |
+|     |                                                          |     |     |     |     |     | 31-Dec-23 |     | 31-Dec- 22 |      | 1 Jan 22 | 31-Dec 23 |      | 31-Dec- 22 |
+|     | Asset for Remaining coverage                             | nan | nan | nan |     |     | 76,220    |     | 82,932     |      | 51,223   | 76,220    |      | 82,932     |
+|     | Asset for Incurred claims                                | nan | nan | nan | nan | nan | 58,901    |     | 83,887     |      | 91,533   | 58,901    |      | 83,887     |
+|     | Risk Adjustment                                          | nan |     |     |     |     |           |     | -          |      |          |           |      |            |
+|     |                                                          |     |     |     |     |     | 135,120   |     | 166,819    |      | 142,756  | 135,120   |      | 166,819    |
+
+
+
+|   0 | 1                                                          |   2 |   3 |   4 |   5 | 6                                  | 7       | 8                               | 9       |
+|----:|:-----------------------------------------------------------|----:|----:|----:|----:|:-----------------------------------|:--------|:--------------------------------|:--------|
+| nan |                                                            |     |     |     |     | Asset for Remaining Coverage (ARC) | nan     | Asset for Incurred Claims (AIC) | Total   |
+| nan | Reconciliation of carrying amounts by ARC/AIC: reinsurance | nan | nan | nan | nan | Non-onerous                        | Onerous | AIC                             | nan     |
+|     | Opening reinsurance contract assets                        | nan | nan | nan |     | 82,932                             | -       | 83,887                          | 166,819 |
+|     | Opening reinsurance contract liabilities                   | nan | nan | nan |     | -                                  | -       | -                               | -       |
+|     | Net opening balance                                        | nan | nan |     |     | 82,932                             | -       | 83,887                          | 166,819 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Reinsurance service
+expenses (152,333) - - (152,333)
+Insurance service
+expenses
+Incurred claims and other
+expenses - - 31,849 31,849
+Recoveries of changes
+related to assets for incurred
+claims - - (24,986) (24,987)
+Net expenses or income
+from reinsurance head - - 6,863 6,863
+(152,333) - 6,863 (145,471)
+Reinsurance finance
+income/expenses - - - -
+Total change in
+comprehensive income (152,333) - 6,863 (145,471)
+Premiums paid 145,621 - - 145,621
+Recoveries on claims and
+expenses paid - - (31,849) (31,849)
+Total cash flows 145,621 - (31,849) 113,772
+Closing Reinsurance contract
+assets 76,220 - 58,901 135,120
+Closing Reinsurance contract
+liabilities - - - -
+Net closing balance 76,220 - 58,901 135,120
+9.1b Reconciliation of the asset for remaining coverage and the asset for incurred claims for
+reinsurance contract
+Asset for
+Asset for Remaining
+Incurred
+Coverage (ARC)
+Claims Total
+Reconciliation of carrying amounts by Non-
+Onerous AIC
+ARC/AIC: reinsurance onerous
+Opening reinsurance contract assets 51,223 - 91,533 142,756
+Opening reinsurance contract
+liabilities - - - -
+Net opening balance 51,223 - 91,533 142,756
+Reinsurance service
+expenses (104,240) - - (104,240)
+Incurred claims and other expenses - - 123,915 123,915
+161
+
+
+|   0 | 1                                                           |   2 |   3 |   4 | 5         | 6   | 7        | 8         |
+|----:|:------------------------------------------------------------|----:|----:|----:|:----------|:----|:---------|:----------|
+|     | Reinsurance service expenses                                |     |     |     | (152,333) | -   | -        | (152,333) |
+|     | Insurance service expenses                                  | nan |     |     |           |     |          |           |
+|     | Incurred claims and other expenses                          | nan | nan |     | -         | -   | 31,849   | 31,849    |
+|     | Recoveries of changes related to assets for incurred claims | nan | nan |     |           |     | (24,986) | (24,987)  |
+| nan | nan                                                         | nan | nan | nan |           |     | nan      | nan       |
+| nan | nan                                                         | nan | nan | nan | -         | -   | nan      | nan       |
+|     | Net expenses or income from reinsurance head                | nan | nan |     | -         | -   | 6,863    | 6,863     |
+|     |                                                             | nan |     |     | (152,333) | -   | 6,863    | (145,471) |
+|     | Reinsurance finance income/expenses                         | nan |     |     | -         |     | -        | -         |
+| nan | nan                                                         | nan | nan | nan | nan       | -   | nan      | nan       |
+|     | Total change in comprehensive income                        | nan | nan |     | (152,333) | -   | 6,863    | (145,471) |
+|     | Premiums paid                                               |     |     |     | 145,621   | -   | -        | 145,621   |
+|     | Recoveries on claims and expenses paid                      | nan |     |     | -         | -   | (31,849) | (31,849)  |
+|     | Total cash flows                                            |     |     |     | 145,621   | -   | (31,849) | 113,772   |
+|     | Closing Reinsurance contract assets                         | nan | nan |     | 76,220    | -   | 58,901   | 135,120   |
+|     | Closing Reinsurance contract liabilities                    | nan | nan |     | -         | -   | -        | -         |
+|     | Net closing balance                                         |     |     |     | 76,220    | -   | 58,901   | 135,120   |
+
+
+
+|   0 | 1                                                          |   2 |   3 |   4 |   5 |   6 | 7                                  | 8       | 9                         | 10        |   11 |
+|----:|:-----------------------------------------------------------|----:|----:|----:|----:|----:|:-----------------------------------|:--------|:--------------------------|:----------|-----:|
+|     |                                                            |     |     | nan |     |     | Asset for Remaining Coverage (ARC) | nan     | Asset for Incurred Claims | Total     |      |
+|     | Reconciliation of carrying amounts by ARC/AIC: reinsurance | nan | nan | nan | nan | nan | Non- onerous                       | Onerous | AIC                       | nan       |      |
+|     | Opening reinsurance contract assets                        | nan | nan |     | nan | nan | 51,223                             | -       | 91,533                    | 142,756   |      |
+|     | Opening reinsurance contract liabilities                   | nan | nan |     | nan | nan | -                                  | -       | -                         | -         |      |
+|     | Net opening balance                                        | nan | nan | nan |     |     | 51,223                             | -       | 91,533                    | 142,756   |      |
+|     | Reinsurance service expenses                               | nan |     | nan |     |     | (104,240)                          | -       | -                         | (104,240) |      |
+|     | Incurred claims and other expenses                         | nan | nan |     | nan | nan |                                    | -       | 123,915                   | 123,915   |      |
+| nan | nan                                                        | nan | nan | nan | nan | nan | -                                  | nan     | nan                       | nan       |  nan |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Recoveries of changes related to
+assets for incurred claims - - (0) (0)
+Net expenses or income from
+reinsurance head - - 123,915 123,915
+Investment components - - - -
+(104,240) - 123,915 19,675
+Reinsurance finance income/expenses - - - -
+Total change in comprehensive
+income (104,240) - 123,915 19,675
+Premiums paid 135,948 - - 135,948
+Recoveries on claims and expenses paid - - (131,561) (131,561)
+Total cash flows 135,948 - (131,561) 4,387
+Closing reinsurance contract assets 82,932 - 83,887 166,819
+Closing reinsurance contract
+liabilities - - - -
+Net closing balance 82,932 - 83,887 166,819
+10 Other receivables and prepayments Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Mortgage Loans- staff 10,555 15,357 10,555 15,357
+Policy loans 180,696 199,354 180,696 178,360
+Due from agents 58,457 60,403 58,457 60,403
+Investment Income Receivable 0 4,654 0
+Prepayment Rent 4,408 4,416 4,408 4,416
+Prepayment – Others 48,490 145,135 48,490 86,377
+Staff Loans & Receivables 8,477 - 7,061
+8,477
+Interest receivables on loans - 2,134 - -
+Withholding tax receivables - 317,061
+317,061
+Deposit for Investment (note 10.2) - - - -
+Due from related company (note 10.3) 1,600,267 1,600,267 1,600,267 1,600,267
+Director's current account - - -
+Stock of raw materials & consumables 1,701 5,629 1,701 2,126
+Staff share loans 2,131,790 2,131,790 2,131,790 2,131,790
+Other receivables 533,402 19,537 390,123 66,105
+162
+
+
+| 0   | 1                                                           |   2 |   3 |   4 |   5 | 6         | 7   | 8         | 9         | 10   |
+|:----|:------------------------------------------------------------|----:|----:|----:|----:|:----------|:----|:----------|:----------|:-----|
+|     | Recoveries of changes related to assets for incurred claims | nan |     | nan | nan | -         | -   | (0)       | (0)       |      |
+|     | Net expenses or income from reinsurance head                | nan |     | nan | nan | -         | -   | 123,915   | 123,915   |      |
+|     | Investment components                                       | nan | nan |     |     | -         | -   | -         | -         |      |
+|     |                                                             | nan | nan |     |     | (104,240) | -   | 123,915   | 19,675    |      |
+|     | Reinsurance finance income/expenses                         | nan | nan |     |     | -         | -   | -         | -         |      |
+|     | Total change in comprehensive income                        | nan |     | nan | nan | (104,240) | -   | 123,915   | 19,675    |      |
+|     | Premiums paid                                               |     | nan |     |     | 135,948   | -   | -         | 135,948   |      |
+|     | Recoveries on claims and expenses paid                      | nan | nan |     |     | -         | -   | (131,561) | (131,561) |      |
+|     | Total cash flows                                            |     | nan |     |     | 135,948   | -   | (131,561) | 4,387     |      |
+|     | Closing reinsurance contract assets                         | nan |     | nan | nan | 82,932    | -   | 83,887    | 166,819   |      |
+|     | Closing reinsurance contract liabilities                    | nan |     | nan | nan | -         | -   | -         | -         |      |
+|     | Net closing balance                                         |     | nan |     |     | 82,932    | -   | 83,887    | 166,819   |      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+4,578,244 4,505,736 4,434,964 4,469,322
+Impairment allowance (note 10.1d) (3,888,143) (3,777,366) (3,781,232) (3,777,367)
+690,101 728,369 653,727 691,955
+Current 690,101 728,369 (87,745)
+Non-current - - 742,472 691,955
+690,101 728,369 653,727 691,955
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 December 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+10.1a The Movement in Other receivables and
+prepayments
+At 1 January 4,469,323 4,924,543 4,469,323 6,516,745
+Transfer from Loans and Receivables - - - -
+Additional loans and receivables - - - -
+Balances written off against provision - - - -
+Movement during the year 108,921 ( 418,808) 108,921 (2,047,423)
+At 31 December 4,578,244 4,506,736 4,578,244 4,469,322
+10.1 b Staff Share Loan:
+This amount is made up of African Alliance Company Plc share purchased during the private placement
+exercise on behalf of staff of the company and this has been fully impaired.
+Group Company
+10.1c The Movement in impairment allowance
+is as follows Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+At 1 January 3,777,367 3,806,555 3,777,367 3,806,556
+Impairment allowance no longer required 3,870 (29,189) 3,870 (29,189)
+Balances written off against provision - - - -
+At 31 December 3,781,237 3,777,366 3,781,237 3,777,367
+10.1d Impairment allowance
+Policy Loans 18,407 18,407 18,407 18,407
+Mortgage staff loans 2,842 2,935 2,842 2,935
+236
+236
+Due from agents 4,199 4,199
+163
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+-
+-
+Investment income receivables - -
+-
+-
+Deposit for investment - -
+1,600,267
+1,600,267
+Due to related company 1,600,267 1,600,267
+-
+-
+Placement - -
+7,002
+7,002
+Staff Account Receivable 7,002 7,002
+2,131,790
+2,131,790
+Staff Share loan 2,131,790 2,131,790
+-
+-
+Short term loan 143,279 -
+16,729
+16,729
+Other receivables 16,729 16,729
+- - - -
+3,924,516 3,777,367 3,781,237 3,777,367
+10.1e Movement in impairment allowance in
+other receivables
+Policy loans (note 10.1f) - - - -
+Mortgage Staff Loan 2,935 (2,979) 2,935 (2,979)
+Agency Loan 935 (26,210) 935 (26,210)
+Staff Account Receivable - - - -
+Short Term Loan - - - -
+Other Debit Balance - - - -
+3,870 (29,188) 3,870 (29,189)
+10.1 f Policy Loans
+The Company grants policy loan to customers with in-forced policies collaterised by the life insurance policy. There
+was no movement in impairment of policy loan during the year. Movement in impairment in the comparative period
+relates to excess impairment allowance write back.
+10.2 10.2 Deposits for shares/Investment
+First Ghana Building Company Limited, Ghana
+Paramount Hotel,Ghana
+Fountain Trust Limited
+Golden Securities Limited
+Ghana Life Insurance Limited
+10.2
+a Movement in Deposit for shares
+At 1 January
+Additional injection of funds during the year
+At 31 December
+The deposit for shares for subsidiary, Ghana Life, was impaired because the subsidiary has not been able to deliver dividend to shareholders sin
+statement was made available for the year 2022.
+10.2
+b Impairment Allowance
+164
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+At January 1
+Additional impairment
+At 31 December
+10
+3 Due from related company
+Universal Insurance Company
+This represents receivable balances from Universal Insurance Company Plc( a related company) from prior years.
+Balance has been fully provisioned in prior years in the books of African Alliance Insurance Company Plc.
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+11 Investment properties
+At 1 January 12,719,286 9,668,536 11,080,750 8,030,000
+Acquisition/improvement - - - -
+Transfer to Conau Trade and Investment Limited - - - -
+Transfer to Land & Building - - - -
+Fair value gain on revaluation 1,653,250 3,050,750 1,653,250 3,050,750
+At 31 December 14,372,536 12,719,286 12,734,000 11,080,750
+Of the investment properties, the following relates to insurance Funds:
+Insurance funds 8,405,000 8,578,551 8,405,000 7,473,437
+Shareholders funds 5,967,536 4,140,735 4,329,000 3,607,313
+14,372,536 12,719,286 12,734,000 11,080,750
+The properties were valued by A.C. Otegbulu& Partners Estate surveyors &Valuers, a registered member of Financial Reporting
+Council of Nigeria (FRCN/2013/NIESV/0000001582), in December, 2021 on the basis of determining the open market value of the
+investment properties. The open market value of all the properties were determined using recent comparable market prices.
+The properties are held for long term capital appreciation and rental income.
+11.1 *There was no acquisition or improvement on investment properties during the year
+11.2 Transfer to Conau Trade and Investment Limited
+Fair value as at disposal date - 1,220,000 - 1,220,000
+Carrying amount - (860,000) - (860,000)
+Gain on disposal - 360,000 - 360,000
+During the year 2021, Investment property on 29A Akin Adesola Victoria Island was transfer to Conau Trade and Investment
+11.2 a Limited as part of purchase considerations towards the re-acquisition of its investment in PAL Pensions Limited at market value of
+1.220 billion.
+The Investment property on 1 plot land Ajah Road, Ajah, Lagos was moved to land and building. The Company reclassified its
+11.3 investment property at 1 plot Ajah Road, Ajah, Lagos to Property, Plant and Equipment because it now occupy the whole building
+for its marketing and business generation purpose during the year 2021.
+Group Company
+Actual Actual Actual Actual
+165
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+11.4 A brief description of the properties held by Company
+are as follows
+13/17 Breadfruit Street, Lagos Island, Lagos State 4,920,000 4,822,000 4,920,000 4,822,000
+Pankere Village, Near Abijo GRA, IbejuLekki L.G.A. Lagos
+State 4,329,000 2,972,000 4,329,000 2,972,000
+245, Aba road Property, Port Harcourt, Rivers State 944,000 910,000 944,000 910,000
+Plot 2220/No 36 Suez Crescent,Wuse Zone 4, Abuja
+1,078,000 975,000 1,078,000 975,000
+73 Oyemekun street, Akure, Ondo State 38,000 31,250 38,000 31,250
+No 9B Crescent B, Oba Oyekan Estate, Lekki Phase 1,
+Lagos State 97,000 85,500 97,000 85,500
+112 Broad Street, Lagos 1,328,000 1,285,000 1,328,000 1,285,000
+Land & Residential properties held in Ghana Life
+Insurance 1,638,536 1,638,536 - -
+14,372,536 12,719,286 12,734,000 11,080,750
+166
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+A brief description of the properties held by the
+11.4a company in its name are as follows:
+13/17 Breadfruit Street, Lagos Island, Lagos State 4,920,000 4,822,000 4,920,000 4,822,000
+No 9B Crescent B, Oba Oyekan Estate, Lekki Phase 1,
+Lagos State 97,000 85,500 97,000 85,500
+73 Oyemekun street, Akure, Ondo State 38,000 31,250 38,000 31,250
+112 Broad Street, Lagos 1,328,000 1,285,000 1,328,000 1,285,000
+Plot 2220/ No 36 Suez Crescent, Wuse Zone 4, Abuja
+1,078,000 975,000 1,078,000 975,000
+245,Aba road Property, Port Harcourt, Rivers State 944,000 910,000 944,000 910,000
+Land & Residential properties held in Ghana Life
+Insurance 1,638,536 1,638,536 - -
+Insurance 10,043,536 9,747,286 8,405,000 8,108,750
+A brief description of the properties held by the
+company in the name of Conau Limited are as
+11.4b follows:
+Pankere Village Near Abijo GRA, IbejuLekki L.G.A.
+Lagos State 4,329,000 2,972,000 4,329,000 2,972,000
+- - - -
+- - - -
+4,329,000 2,972,000 4,329,000 2,972,000
+14,372,535 12,719,286 12,734,000 11,080,750
+Total investment property
+Investment properties are carried at fair value as at 31 December 2023 which has been determined by an independent
+professional valuer, AC Otegbulu $ Partners Estate Surveyors and valuers, a registered member of Financial Reporting
+Council of Nigeria (FRCN/2013/NIESV/00000013597) with the signing partner as Austin C. Otegbulu
+(FRC/2013/NIESV/00000001582). Valuations are performed on an annual basis and the fair value gains and losses are
+recognized in the profit or loss are recognized in the profit or loss account.
+The Properties have been valued using fair value basis. The fair value of all the properties are determined using recent
+comparable prices i.e. the highest price in terms of money, which the subject property asset will fetch in an open and
+competitive market under all conditions requisite to a fair value.
+None of the assets above are encumbered or pledged as security for loan as at 31 December 2023. Rental income earned
+during the year amounted to N95.62m (2022: N104.3m)
+167
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+11.5 Movement in Investment Properties
+11.5 a Group
+Opening Translatio Disposal/Tran
+Description balance n sfer Fair value Closing balance
+N'000 N'000 N'000 N'000 N'000
+13/17 Breadfruit Street, Lagos Island, Lagos
+State 4,822,000 - 98,000 4,920,000
+Pankere Village, Near Abijo GRA, IbejuLekki
+L.G.A. Lagos State 2,972,000 - 1,357,000 4,329,000
+245, Aba road Property, Port Harcourt,
+Rivers State 910,000 - 34,000 944,000
+Plot 2220/No. 36 Suez Crescent, Wuse
+Zone 4, Abuja 975,000 - 103,000 1,078,000
+73 Oyemekun Street, Akure, Ondo State
+31,250 - 6,750 38,000
+No 95, Crescent B, Oba Oyakan Estate,
+Lekki Phase 1, Lagos State 85,500 - 11,500 97,000
+112 Broad Street, Lagos
+1,285,000 - 43,000 1,328,000
+Land & Residential properties held in Ghana
+Life Insurance 1,638,536 - - - 1,638,536
+Insurance 12,719,286 - 1,653,250 14,372,536
+11.5b Movement in Investment Properties
+Company
+Opening Disposal/
+Description balance Additions Transfer Fair value Closing balance
+N'000 N'000 N'000 N'000 N'000
+13/17Breadfruit Street Lagos Island, Lagos - 98,000 4,920,000
+State 4,822,000
+Pankere Village, Near Abijo, GRA IbejuLekki - 1,357,000 4,329,000
+L.G.A, Lagos State 2,972,000
+245, Aba road Property, Port Harcourt, 34,000 944,000
+Rivers State 910,000 -
+Plot 2220/No 36 Suez Crescent, Wuse Zone - 103,000 1,078,000
+4, Abuja 975,000
+- 6,750 38,000
+73 Oyemekun street, Akure
+31,250
+No 9B Crescent B, Oba Oyekan Estate, - 11,500 97,000
+Lekki Phase 1, Lagos State 85,500
+- 43,000 1,328,000
+112 Broad Street, Lagos
+1,285,000
+11,080,750 - - 3,050,750 12,734,000
+168
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+11.6 INVESTMENT PROPERTIES NOT IN THE NAME OF AFRICAN ALLIANCE
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+TIITLE CARRYING
+DATE OF
+PROPERTIES TITLE OF DOCUMENTS DOCUME LOCATION AMOUNT
+ACQUISITION
+NT NO N'000
+Deed of Assignment &
+Pankere Village, Near Governor's Consent for Abijo GRA
+Abijo, IbejuLekki L.G.A Application to assignment Year 2008 N/A IbejuLekki, Lagos 4,329,000
+Lagos State between Land Owner and state
+Conau Limited
+INVESTMENT PROPERTIES IN THE NAME OF AFRICAN ALLIANCE
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+TIITLE CARRYING
+DATE OF
+PROPERTIES TITLE OF DOCUMENTS DOCUME LOCATION AMOUNT
+ACQUISITION
+NT NO N'000
+Lagos State Government
+13/17 Breadfruit Street, 13/17 Breadfruit
+Land Certificate and Deed Year 1960 L03746 4,920,000
+Lagos Island, Lagos State Street, Lagos
+of Assignment
+Plot C4, Rumuogba
+245 Aba road Property, Port Deed of Assignment &
+Year 2008 N/A Layout, Aba road, 944,000
+Harcourt, Rivers State Certificate of Occupancy
+Port Harcourt
+73 Oyemekun Street, Certificate of Right of 73 Oyemekun street,
+Year 1983 N/A 38,000
+Akure, Ondo State Occupancy Akure
+Block B House 9B
+No 9b Crescent B, Oba Oba
+Lagos State Government
+Oyekan Estate, Lekki Year 2004 N/A AdeyinkaOyekan 97,000
+Allocation Letter
+Phase 1, Lagos State Housing Estate
+Lekki, Lagos
+Deed of Assignment 2220 Suez Canal
+Plot 2220/ No 36 Suez
+between Federal Republic Crescent
+Crescent, Wuse Zone 4 Year 2008 N/A 1,078,000
+of Nigeria represented by SaniAbacha Estate,
+Abuja
+EFCC and Conau Limited Abuja
+Lagos State Government
+112 Broad Street,
+112 Broad Street, Lagos Land Certificate and Deed Year 1961 L03990 1,328,000
+Lagos
+of Assignment
+8,405,000
+169
+
+
+| 0                                                         | 1                                                                                                          | 2                   | 3                   | 4                                 | 5                     |
+|:----------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|:--------------------|:--------------------|:----------------------------------|:----------------------|
+| PROPERTIES                                                | TITLE OF DOCUMENTS                                                                                         | DATE OF ACQUISITION | TIITLE DOCUME NT NO | LOCATION                          | CARRYING AMOUNT N'000 |
+| Pankere Village, Near Abijo, IbejuLekki L.G.A Lagos State | Deed of Assignment & Governor's Consent for Application to assignment between Land Owner and Conau Limited | Year 2008           | N/A                 | Abijo GRA IbejuLekki, Lagos state | 4,329,000             |
+|                                                           |                                                                                                            |                     |                     |                                   |                       |
+
+
+
+| 0                                                               | 1                                                                                            | 2                   | 3                   | 4                                                               | 5                     |
+|:----------------------------------------------------------------|:---------------------------------------------------------------------------------------------|:--------------------|:--------------------|:----------------------------------------------------------------|:----------------------|
+| PROPERTIES                                                      | TITLE OF DOCUMENTS                                                                           | DATE OF ACQUISITION | TIITLE DOCUME NT NO | LOCATION                                                        | CARRYING AMOUNT N'000 |
+| 13/17 Breadfruit Street, Lagos Island, Lagos State              | Lagos State Government Land Certificate and Deed of Assignment                               | Year 1960           | L03746              | 13/17 Breadfruit Street, Lagos                                  | 4,920,000             |
+| 245 Aba road Property, Port Harcourt, Rivers State              | Deed of Assignment & Certificate of Occupancy                                                | Year 2008           | N/A                 | Plot C4, Rumuogba Layout, Aba road, Port Harcourt               | 944,000               |
+| 73 Oyemekun Street, Akure, Ondo State                           | Certificate of Right of Occupancy                                                            | Year 1983           | N/A                 | 73 Oyemekun street, Akure                                       | 38,000                |
+| No 9b Crescent B, Oba Oyekan Estate, Lekki Phase 1, Lagos State | Lagos State Government Allocation Letter                                                     | Year 2004           | N/A                 | Block B House 9B Oba AdeyinkaOyekan Housing Estate Lekki, Lagos | 97,000                |
+| Plot 2220/ No 36 Suez Crescent, Wuse Zone 4 Abuja               | Deed of Assignment between Federal Republic of Nigeria represented by EFCC and Conau Limited | Year 2008           | N/A                 | 2220 Suez Canal Crescent SaniAbacha Estate, Abuja               | 1,078,000             |
+|                                                                 |                                                                                              |                     |                     |                                                                 |                       |
+| 112 Broad Street, Lagos                                         | Lagos State Government Land Certificate and Deed of Assignment                               | Year 1961           | L03990              | 112 Broad Street, Lagos                                         | 1,328,000             |
+|                                                                 |                                                                                              |                     |                     |                                                                 | 8,405,000             |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 December 2023
+Group Company
+12 Investment in subsidiary Actual Actual Actual Actual
+The company's investment in subsidiary is as stated 31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+below:
+N’000 N’000 N’000 N’000
+Axiom Air Limited (Note 12a) - - 3,000,000 3,000,000
+Ghana Life Insurance Company Limited (Note 12b) - - 1,770,741 1,770,741
+- - 4,770,741 4,770,741
+Impairment allowance (note 12d) - - (4,665,741) (4,665,741)
+- - 105,000 105,000
+12a Axiom Air Limited: -
+The movement in Axiom Air Limited is as follows:
+On 1 January - - - -
+Additions, during the period (capital injection) - - - -
+Impairment allowance - - - -
+The company was incorporated on 17 July 2008 to carry on the business of airline owners and management, provide
+air transport for public use; to provide all necessary and or desirable services incidental to this objective, including
+booking, reservation, routing and ticketing services, baggage management, flight catering and entertainment and
+provision of hotel accommodation. The company is wholly owned.
+12b Ghana Life Insurance Company Limited
+The movement in Ghana Life Limited is as follows: Group Company
+On 1 January - - 1,770,741 1,770,741
+Additions, during the period (capital injection) - - - -
+Impairment allowance - - (1,665,741) (1,665,741)
+- - 105,000 105,000
+The company is a subsidiary of African Alliance Insurance Plc. The company is domiciled in Ghana and is permitted
+by its regulation to carry on the business of life insurance.
+For the year 2022 under review, the company was under the country,s regulators administration. No audited
+financial statement was made available to African Alliance Insurance Plc for the year 2022, thus the financials
+of the subsidiary for the year 2022 was excluded from consolidation. The subsidiary has not paid dividend
+since acquisition in 2008, hence the need to further impair the value of the subsidiary.
+12c Movement in the impairment in Ghana life is as Group Company
+follows
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+On 1 January - - 1,665,742 1,228,013
+Impairment charge/(written back) for the year - - - 437,728
+At 31 December - - 1,665,741 1,665,741
+12d Movement in impairment allowance in investment
+in subsidiary
+On 1 January - - 4,665,741 4,228,013
+Impairment charge/(written back) for the year - - - 437,728
+On 31 December - - 4,665,741 4,665,741
+Movement in impairment charge
+At 1 Jan Additional 31-Dec-23
+2023 charge
+Axiom Air Limited 3,000,000 3,000,000
+Ghana Life Insurance company 1,665,740 - 1,665,740
+4,665,740 - 4,665,740
+170
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Actual Actual Actual Actual
+31-Dec-22 31-Dec-21 31-Dec-22 31-Dec-21
+N’000 N’000 N’000 N’000
+13 Investment In associate - - - -
+Investment in Pension Alliance Limited - - - -
+14 Intangible assets Group Company
+2023 Software in Computer Total Computer Total
+Progress Software Software
+N’000 N’000 N’000 N’000
+Cost
+On 1 January 2023 24,375 165,820 190,195 153,164 153,164
+Additions - 137,390 137,390 137,390 137,390
+On 31 December 2023 24,375 303,210 327,585 290,554 290,554
+Amortisation
+On 1 January 2023 - 119,804 119,804 119,804 119,804
+Charge for the period - 42,480 42,480 14,012 14,012
+On 31 December 2023 - 167,284 167,284 133,816 133,816
+Net book amount
+On 31 December 2023 24,375 156,378 160,301 156,738 156,738
+On 31 December 2022 33,360 56,850 60,413 56,850 56,850
+14.1 Intangible assets Group Company
+2022 Software in Computer Total Computer Total
+Progress Software Software
+N’000 N’000 N’000 N’000
+Cost
+At 1 January 2022 24,375 146,963 171,338 134,307 134,307
+Additions - 18,857 18,857 18,857 18,857
+At 31 December 2022 24,375 165,820 190,195 153,164 153,164
+Amortisation
+At 1 January 2022 - 114,858 114,858 104,880 104,880
+Charge for the period - 14,924 14,924 14,924 14,924
+At 31 December 2022 - 129,783 129,782 119,803 119,803
+Net book amount
+At 31 December 2022 24,375 36,038 60,413 33,361 33,361
+At 31 December 2021 24,375 32,105 56,480 29,428 29,428
+171
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 December 2023
+15 Property and equipment
+Group 2023
+Plant & Aircraft
+Motor Furniture & Computer Office Machin
+Land Building Vehicles Fittings Equipment Equipment ery Total
+Cost N'000 N'000 N'000 N'000 N'000 N'000
+98,000 1,184,444 449,317 251,773 335,994 9,171 2,281,122 5,008,079
+At 1 January 2023 398,256
+- - 28,702 - 4,452 50,596
+Additions 17,442 - -
+Disposal - - (8,590) - - (8,590)
+Transfer from Investment Properties
+Derecognition - - - -
+Revaluation 2,000 18,331 - - - - - - 20,331
+At 31 December 2023 100,000 1,202,775 469,429 251,773 340,446 415,698 9,171 2,281,122 5,070,414
+Depreciation
+- 10,906 288,880 138,584 231,355 9,171 2,281,122 3,131,329
+At 1 January 2023 171,311
+- 3,381 59,876 17,517 37,154 155,287
+Charge for the year 37,359
+Disposal - (8,590) (8,590)
+Elimination of accum dep on revaluation - -
+Revaluation - - - -
+At 31 December 2023 - 14,287 340,166 156,101 268,509 208,670 9,171 2,281,122 3,278,026
+Net book amount
+At 31 December 2023 100,000 1,188,488 129,263 95,672 71,937 207,028 1,792,388
+At 31 December 2022 98,000 1,173,538 160,437 113,18 104,639 226,945 1,876,748
+172
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Property and
+equipment
+Group 2022
+Computer Plant & Aircraft
+Motor Furniture & Equipmen Office Machinery
+Land Building Vehicles Fittings t Equipment Total
+Cost N'000 N'000 N'000 N'000 N'000 N'000
+At 1 January 2022 98,000 1,184,444 449,317 251,773 335,996 398,256 9,171 2,281,122 5,008,079
+Additions - - 28,702 - 4,452 17,442 - - 50,596
+Disposal - - (8,590) - - (8,590)
+Transfer from
+Investment Properties
+Derecognition - - - -
+2,000 18,331 - - - 20,331
+Revaluation - - -
+At 31 December 2022 100,000 1,202,775 469,429 251,773 340,448 415,699 9,171 2,281,122 5,070,414
+Depreciation
+At 1 January 2022 - 10,906 288,880 138,584 231,355 171,311 9,171 2,281,122 3,131,329
+- 3,381 17,517 155,287
+Charge for the year 59,876 37,154 37,359
+Disposal - (8,590) (8,590)
+Elimination of accum - -
+dep on revaluation
+173
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Revaluation - - - -
+At 31 December 2022 - 14,287 340,166 156,101 268,509 208,670 9,171 2,281,122 3,278,026
+Net book amount
+At 31 December 2022 100,000 1,188,488 129,263 95,672 71,937 207,028 1,792,388
+160,437 113,18 104,639 226,945 1,876,748
+At 31 December 2021 98,000 1,173,538
+1. There were no capital commitment contracted or authorized at reporting date (2021: Nil)
+2. There were no capitalized borrowing cost related to the acquisition of property, plant and equipment during the year (2021: Nil).
+3. None of the assets are pledged during the year (2021: Nil).
+4. Management reports its property, plant and equipment at fair value as permitted by IAS 16.
+5. The revaluation gain is on building located at 1 plot land Ajah Epe, Lagos for African Alliance Insurance Plc.
+6. The revaluation gain on Land is located at 34 Association Avenue Ilupeju, Lagos
+174
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 December 2023
+15 Property and equipment
+Company
+Motor Furniture Computer Office
+Land Building Vehicles & Fittings Equipment Equipment Total
+N'000 N'000 N'000 N'000 N'000 N'000
+Cost
+At 1 January 2023 100,000 188,331 436,753 214,394 306,263 415,699 1,661,441
+Additions - - 58,151 - 7,837 5,212 71,200
+Disposal - - - (763) 408 (1,341) (1,696)
+Transfer from Investment Properties - -
+Derecognition - -
+Revaluation - - - - - - -
+At 31 December 2023 100,000 188,331 494,904 213,632 314,508 419,570 1,730,945
+Depreciation
+At 1 January 2023 - 4,331 307,490 133,309 244,263 208,670 898,063
+Charge for the year - 3,490 65,301 14,814 30,937 35,441 149,982
+Disposal - - (273) (176) (1,339) (1,788)
+Elimination of accumdep on - -
+revaluation
+Revaluation - - - -
+At 31 December 2023 - 7,821 372,790 147,849 275,024 1,046,256
+242,772
+Net book amount
+At 31 December 2023 100,000 180,510 122,114 65,782 39,484 176,798 684,689
+At 31 December 2022 100,000 184,000 129,763 81,086 62,000 207,027 763,376
+Property and equipment
+Company
+Motor Furniture Computer Office
+Land Building Vehicles & Fittings Equipment Equipment Total
+N'000 N'000 N'000 N'000 N'000 N'000
+Cost
+At 1 January 2022 98,000 170,000 416,641 214,394 301,811 398,256 1,599,102
+Additions - - 28,702 0.04209 4,452 17,442 50,596
+Disposal - - (8,590) (8,590)
+Transfer from Investment Properties - -
+Derecognition - -
+Revaluation 2,000 18,331 - - - - 20,331
+At 31 December 2022 100,000 188,331 436,753 214,394 306,263 415,699 1,661,441
+Depreciation
+At 1 January 2022 - 950 256,204 115,792 207,109 171,311 751,366
+Charge for the year - 3,381 59,876 17,517 37,154 37,359 155,287
+Disposal - (8,590) (8,590)
+Elimination of accumdep on - -
+revaluation
+Revaluation - - - -
+At 31 December 2022 - 4,331 307,490 133,309 244,263 208,670 898,063
+Net book amount
+At 31 December 2022 100,000 184,000 129,263 81,086 62,000 207,029 763,047
+At 31 December 2021 98,000 169,050 160,437 98,603 94,702 226,945 847,736
+1. There was no capital commitment contracted or authorized at reporting date (2021: Nil)
+2. There was no capitalized borrowing cost related to the acquisition of property, plant and equipment during the year (2021: Nil).
+3. None of the assets are pledged during the year (2021: Nil).
+4. Management reports its property, plant and equipment at fair value as permitted by IAS 16.
+5. The revaluation gain is on building located at 1 plot land Ajah Epe, Lagos for African Alliance Insurance Plc.
+6. The revaluation gain on Land is located at 34 Association Avenue Ilupeju, Lagos.
+175
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+15.2 Movement in revaluation of Property, plant and equipment
+15.2a Group 2023
+Nature At 1 Translation Additi Disposal Deprecia Fair At 31
+Description January ons / tion/ value December
+reclassif impairm
+ication ent
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+A story building on KM 20 Lekki Epe Buildin - -
+Expressway, Lagos g 99.000 - (4,331) 8,331 99,000
+A story building on KM 20 Lekki Epe
+Land
+Expressway, Lagos 85,000 10,000 85,000
+Bare Land 34 Association Avenue, -
+Land
+Ilupeju, Lagos. 100,000 - - 2,000 100,000
+Buildin -
+17 Aviation Road, Accra, Ghana
+g 1,014,444 - - (9,956) - 1,004,488
+1,282,444 - - - (14,287) 20,331 1,288,488
+15.2b Company 2023
+Nature At 1 Translation Additi Disposal Deprecia Fair At 31
+Description January ons / tion/ value December
+reclassif impairm
+ication ent
+N'000 N'000 N'000 N'000 N'000 N'000 N'000
+A story building on KM 20 Lekki Epe Buildin - - 8,331 99,000
+Expressway, Lagos g 95,000 - (4,331)
+A story building on KM 20 Lekki Epe
+Land
+Expressway, Lagos 75,000 10,000 85,000
+Bare Land 34 Association Avenue, -
+Land
+Ilupeju, Lagos. 98,000 - - 2,000 100,000
+Buildin -
+g - -
+268,000 - - 20,331 284,000
+- (4,331)
+Measurement at historical cost
+15.3 basis
+Had the Group's or Company's land and buildings been measured on a historical cost basis, their carrying amount would have been as
+follows:
+GROUP COMPANY
+31-Dec-23 31- 31- 31-Dec-22
+Dec- Dec-
+Description 22 23
+N'000 N'000 N'000 N'000
+A story building on KM 20 Lekki Epe
+160,669 160,66 160,6 160,669
+Expressway, Lagos
+9 69
+Bare Land 34 Association Avenue,
+Ilupeju, Lagos. 93,000 93,000 93,00 93,000
+0
+1,152,879
+17 Aviation Road, Accra, Ghana
+1,152, - -
+879
+1,406,548 1,406,
+548 253,6 253,669
+69
+176
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+16 Right of Use Assets
+At 1 January 23,490 42,252 23,490 42,252
+Additions 195,935 62,129 195,935 62,129
+Amortizations (95,472) (80,890) (95,472) (80,890)
+123,953 23,490 123,953 23,490
+ROU Assets Location Period 1-Jan Additions Charge for 31 December
+the current
+year
+Onitsha Office Onitsha 2 1/11/2021- - 1,800,000 1,800,000 -
+31/10/2022
+Breadfruits Office 13/17 Breadfruit Str. 13/01/2016- 802,860 - 522,793 280,068
+12/7/2023
+Head Office Ikoyi 54, Awolowo Road, Ikoyi 1/02/18- 26,114,400 24,105,600 2,008,800
+31/01/2023
+Ilupeju Agency 13, Town Planning Way 1/12/21- - 37,548,500 37,548,500 -
+Office Ilupeju, Lagos 30/11/2022
+Abuja office 79, Adetokunbo Ademola 1/07/2022- - 18,380,000 4,595,000 13,785,000
+Crescent Abuja 30/06/2024
+Abuja office 79, Adetokunbo Ademola 1/07/2020- 4,045,000 - 4,045,000 -
+Crescent Abuja 30/06/2022
+Abuja office 79, Adetokunbo Ademola 1/12/2021- 11,289,167 4,400,000 8,273,333 7,415,833
+Crescent Abuja 30/11/2023
+42,251,427 62,128,500 80,890,226
+17 Statutory deposit
+This represents 10% of the regulatory minimum share capital deposited with the Central Bank of Nigeria in accordance with
+the requirement of section a(i) and section 10(3) of Insurance Act. Interest Income earned on this deposit is included in
+investment income
+Group Company
+Actu
+al Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’00 N’000 N’000
+0 N’000
+348,
+Statutory deposit 401 348,401 200,000 200,000
+Non-current 348,401 200,000
+348, 200,000
+401
+177
+
+
+| 0                     | 1                                     | 2                     | 3          | 4          | 5                           | 6           |
+|:----------------------|:--------------------------------------|:----------------------|:-----------|:-----------|:----------------------------|:------------|
+| ROU Assets            | Location                              | Period                | 1-Jan      | Additions  | Charge for the current year | 31 December |
+| Onitsha Office        | Onitsha 2                             | 1/11/2021- 31/10/2022 | -          | 1,800,000  | 1,800,000                   | -           |
+| Breadfruits Office    | 13/17 Breadfruit Str.                 | 13/01/2016- 12/7/2023 | 802,860    | -          | 522,793                     | 280,068     |
+| Head Office Ikoyi     | 54, Awolowo Road, Ikoyi               | 1/02/18- 31/01/2023   | 26,114,400 |            | 24,105,600                  | 2,008,800   |
+| Ilupeju Agency Office | 13, Town Planning Way Ilupeju, Lagos  | 1/12/21- 30/11/2022   | -          | 37,548,500 | 37,548,500                  | -           |
+| Abuja office          | 79, Adetokunbo Ademola Crescent Abuja | 1/07/2022- 30/06/2024 | -          | 18,380,000 | 4,595,000                   | 13,785,000  |
+| Abuja office          | 79, Adetokunbo Ademola Crescent Abuja | 1/07/2020- 30/06/2022 | 4,045,000  | -          | 4,045,000                   | -           |
+| Abuja office          | 79, Adetokunbo Ademola Crescent Abuja | 1/12/2021- 30/11/2023 | 11,289,167 | 4,400,000  | 8,273,333                   | 7,415,833   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group Company
+Insurance Contract
+18 Liabilities 31-Dec-23 31-Dec-22 1 Jan 22 31-Dec-23 31-Dec-22 1 Jan 22
+N'000 N'000 N’000 N'000 N'000 N’000
+Liability for
+Remaining Coverage: 37,380,866 40,593,841 40,326,361 37,380,866 40,593,841 40,326,361
+Liability for Incurred
+Claims 2,942,852 1,814,966 1,884,251 2,942,852 1,814,966 1,884,251
+40,323,718 42,408,806 42,210,612 40,323,718 42,408,806 42,210,612
+178
+
+
+|   0 | 1                                 | 2          | 3          | 4          | 5          | 6          |
+|----:|:----------------------------------|:-----------|:-----------|:-----------|:-----------|:-----------|
+|     |                                   | Group      | nan        | nan        | nan        | nan        |
+|  18 | Insurance Contract Liabilities    | 31-Dec-23  | 31-Dec-22  | 1 Jan 22   | 31-Dec-23  | 31-Dec-22  |
+|     |                                   | N'000      | N'000      | N’000      | N'000      | N'000      |
+|     | Liability for Remaining Coverage: | 37,380,866 | 40,593,841 | 40,326,361 | 37,380,866 | 40,593,841 |
+|     | Liability for Incurred Claims     | 2,942,852  | 1,814,966  | 1,884,251  | 2,942,852  | 1,814,966  |
+|     |                                   | 40,323,718 | 42,408,806 | 42,210,612 | 40,323,718 | 42,408,806 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+2023
+18.1a Reconciliation of the liability for remaining coverage and the liability for
+incurred claims for insurance contracts
+Liability for
+Liability for Remaining
+Incurred
+Coverage (LRC)
+Claims
+Total
+Reconciliation of carrying Non-
+Onerous LIC
+amounts by LRC/LIC: onerous
+insurance
+Opening insurance
+contract assets - - - -
+Opening insurance
+contract liabilities 38,144,957 2,448,884 1,814,966 42,408,806
+Net opening balance 38,144,957 2,448,884 1,814,966 42,408,806
+Insurance revenue (7,089,169) - - (7,089,169)
+Insurance service
+expenses
+Incurred claims and
+other expenses - (1,805,332) 6,962,153 5,156,821
+Acquisition expenses 1,339,464 - - 1,339,464
+Changes related to
+future service - 8,437,384 - 8,437,384
+Changes related to past
+service - - 1,045,018 1,045,018
+Total Insurance
+service expenses 1,339,464 6,632,052 8,007,171 15,978,687
+Investment
+components (5,134,547) - 5,134,547 -
+Insurance service
+result (10,884,252) 6,632,052 13,141,718 8,889,518
+Insurance finance
+expenses (3,008,078) - - (3,008,078)
+Total change in
+comprehensive
+income (13,892,330) 6,632,052 13,141,718 5,881,440
+Premiums
+received 5,386,767 - - 5,386,767
+Claims and expenses
+paid - - (12,013,832) (12,013,832)
+Acquisition costs paid (1,339,464) - - (1,339,464)
+Total cash flows 4,047,303 - (12,013,832) (7,966,529)
+Closing insurance
+contract assets - - - -
+179
+
+
+|   0 | 1                                                        |   2 |   3 |   4 |   5 | 6                                      | 7           | 8                             | 9            |
+|----:|:---------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:------------|:------------------------------|:-------------|
+| nan |                                                          |     |     |     |     | Liability for Remaining Coverage (LRC) | nan         | Liability for Incurred Claims | Total        |
+| nan | Reconciliation of carrying amounts by LRC/LIC: insurance | nan | nan | nan | nan | Non- onerous                           | Onerous     | LIC                           | nan          |
+|     | Opening insurance contract assets                        | nan | nan | nan |     | -                                      | -           | -                             | -            |
+|     | Opening insurance contract liabilities                   | nan | nan | nan |     | 38,144,957                             | 2,448,884   | 1,814,966                     | 42,408,806   |
+|     | Net opening balance                                      | nan | nan |     |     | 38,144,957                             | 2,448,884   | 1,814,966                     | 42,408,806   |
+|     | Insurance revenue                                        | nan |     |     |     | (7,089,169)                            | -           | -                             | (7,089,169)  |
+|     | Insurance service expenses                               | nan | nan |     |     |                                        |             |                               |              |
+|     | Incurred claims and other expenses                       | nan | nan | nan |     | -                                      | (1,805,332) | 6,962,153                     | 5,156,821    |
+|     | Acquisition expenses                                     | nan | nan |     |     | 1,339,464                              | -           | -                             | 1,339,464    |
+|     | Changes related to future service                        | nan | nan | nan |     | -                                      | 8,437,384   | -                             | 8,437,384    |
+|     | Changes related to past service                          | nan | nan | nan |     | -                                      | -           | 1,045,018                     | 1,045,018    |
+|     | Total Insurance service expenses                         | nan | nan | nan |     | 1,339,464                              | 6,632,052   | 8,007,171                     | 15,978,687   |
+|     | Investment components                                    | nan | nan |     |     | (5,134,547)                            | -           | 5,134,547                     | -            |
+|     | Insurance service result                                 | nan | nan |     |     | (10,884,252)                           | 6,632,052   | 13,141,718                    | 8,889,518    |
+|     | Insurance finance expenses                               | nan | nan |     |     | (3,008,078)                            | -           | -                             | (3,008,078)  |
+|     | Total change in comprehensive income                     | nan | nan | nan |     | (13,892,330)                           | 6,632,052   | 13,141,718                    | 5,881,440    |
+|     | Premiums received                                        | nan |     |     |     | 5,386,767                              | -           | -                             | 5,386,767    |
+|     | Claims and expenses paid                                 | nan | nan |     |     | -                                      | -           | (12,013,832)                  | (12,013,832) |
+|     | Acquisition costs paid                                   | nan | nan |     |     | (1,339,464)                            | -           | -                             | (1,339,464)  |
+|     | Total cash flows                                         | nan |     |     |     | 4,047,303                              | -           | (12,013,832)                  | (7,966,529)  |
+|     | Closing insurance contract assets                        | nan | nan | nan |     | -                                      | -           | -                             | -            |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Closing insurance
+contract liabilities 28,299,930 9,080,936 2,942,852 40,323,718
+Net closing
+balance 28,299,930 9,080,936 2,942,852 40,323,718
+2023
+18.1a.1 Endowment
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance
+contracts - Endowment
+Liability
+Liability for Remaining for
+Coverage (LRC) Incurred
+Total
+Claims
+Non-
+Onerous LIC
+Reconciliation of carrying amounts by LRC/LIC: insurance onerous
+Opening insurance contract assets -
+Opening insurance contract liabilities 4,483,668 600,208 - 5,083,876
+Net opening balance 4,483,668 600,208 - 5,083,876
+Insurance
+revenue (733,833) - - (733,833)
+Insurance service expenses - - -
+Incurred claims and other
+expenses - (454,220) 297,797 (156,422)
+Acquisition expenses 573,221 - - 573,221
+Changes related to future service - 3,093,910 - 3,093,910
+Changes related to past service - - 490,979 490,979
+Total Insurance service expenses 573,221 2,639,689 788,777 4,001,687
+Investment components (2,614,282) - 2,614,282 -
+Insurance service result (2,774,895) 2,639,689 3,403,059 3,267,853
+Insurance finance expenses 380,982 - - 380,982
+Total change in comprehensive
+income (2,393,912) 2,639,689 3,403,059 3,648,836
+Premiums
+received 1,823,382 - - 1,823,382
+Claims and expenses paid - - (2,912,080) (2,912,080)
+180
+
+
+| 0   | 1                                      |   2 |   3 | 4   |          5 |         6 |         7 |          8 |
+|:----|:---------------------------------------|----:|----:|:----|-----------:|----------:|----------:|-----------:|
+|     | Closing insurance contract liabilities | nan | nan |     | 28,299,930 | 9,080,936 | 2,942,852 | 40,323,718 |
+|     | Net closing balance                    |     |     |     | 28,299,930 | 9,080,936 | 2,942,852 | 40,323,718 |
+
+
+
+| 0                                                                                                                                |   1 |   2 |   3 |   4 | 5                                      | 6         | 7                             | 8           |
+|:---------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:----------|:------------------------------|:------------|
+| 18.1a.1 Endowment                                                                                                                | nan |     |     |     |                                        |           |                               |             |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts - Endowment | nan | nan | nan | nan | nan                                    | nan       | nan                           | nan         |
+|                                                                                                                                  |     |     |     |     | Liability for Remaining Coverage (LRC) | nan       | Liability for Incurred Claims | Total       |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                         | nan | nan | nan | nan | Non- onerous                           | Onerous   | LIC                           | nan         |
+|                                                                                                                                  |     |     |     |     |                                        |           |                               |             |
+| Opening insurance contract assets                                                                                                | nan |     |     |     |                                        |           |                               | -           |
+| Opening insurance contract liabilities                                                                                           | nan |     |     |     | 4,483,668                              | 600,208   | -                             | 5,083,876   |
+| Net opening balance                                                                                                              | nan |     |     |     | 4,483,668                              | 600,208   | -                             | 5,083,876   |
+|                                                                                                                                  |     |     |     |     |                                        |           |                               |             |
+| Insurance revenue                                                                                                                |     |     |     |     | (733,833)                              | -         | -                             | (733,833)   |
+| Insurance service expenses                                                                                                       | nan |     |     |     | -                                      | -         | -                             |             |
+| Incurred claims and other expenses                                                                                               | nan |     |     |     | -                                      | (454,220) | 297,797                       | (156,422)   |
+| Acquisition expenses                                                                                                             | nan |     |     |     | 573,221                                | -         | -                             | 573,221     |
+| Changes related to future service                                                                                                | nan |     |     |     | -                                      | 3,093,910 | -                             | 3,093,910   |
+| Changes related to past service                                                                                                  | nan |     |     |     | -                                      | -         | 490,979                       | 490,979     |
+| Total Insurance service expenses                                                                                                 | nan |     |     |     | 573,221                                | 2,639,689 | 788,777                       | 4,001,687   |
+| Investment components                                                                                                            | nan |     |     |     | (2,614,282)                            | -         | 2,614,282                     | -           |
+| Insurance service result                                                                                                         | nan |     |     |     | (2,774,895)                            | 2,639,689 | 3,403,059                     | 3,267,853   |
+| Insurance finance expenses                                                                                                       | nan |     |     |     | 380,982                                | -         | -                             | 380,982     |
+| Total change in comprehensive income                                                                                             | nan |     |     |     | (2,393,912)                            | 2,639,689 | 3,403,059                     | 3,648,836   |
+|                                                                                                                                  |     |     |     |     |                                        |           |                               |             |
+| Premiums received                                                                                                                |     |     |     |     | 1,823,382                              | -         | -                             | 1,823,382   |
+| Claims and expenses paid                                                                                                         | nan |     |     |     | -                                      | -         | (2,912,080)                   | (2,912,080) |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Acquisition costs paid (573,221) - - (573,221)
+Total cash
+flows 1,250,161 - (2,912,080) (1,661,919)
+Closing insurance contract assets -
+Closing insurance contract liabilities 3,339,916 3,239,897 490,979 7,070,792
+Net closing
+balance 3,339,916 3,239,897 490,979 7,070,792
+18.1a.2 Protection
+Reconciliation of the liability for remaining coverage and the liability for
+incurred claims for insurance contracts - Protection
+Liability
+Liability for
+for
+Remaining Coverage
+Incurred
+(LRC) Total
+Claims
+Reconciliation of carrying amounts by Non-
+Onerous LIC
+LRC/LIC: insurance onerous
+Opening insurance contract
+assets -
+Opening insurance contract
+liabilities 87,987 - - 87,987
+Net opening balance 87,987 - - 87,987
+Insurance revenue (3,409) - - (3,409)
+Insurance service expenses - - -
+Incurred claims and other
+expenses - (36,546) 70,699 34,153
+Acquisition expenses 1,180 - - 1,180
+Changes related to future
+service - 266,895 - 266,895
+Changes related to past
+service - - 168,204 168,204
+Total Insurance service
+expenses 1,180 230,349 238,903 470,431
+Investment components (316,221) - 316,221 -
+Insurance service result (311,632) 230,349 555,124 473,840
+Insurance finance expenses 9,526 - - 9,526
+Total change in
+comprehensive income (302,106) 230,349 555,124 483,367
+Premiums received 11,347 - - 11,347
+Claims and expenses paid - - (386,920) (386,920)
+Acquisition costs paid (1,180) - - (1,180)
+181
+
+
+| 0                                      |   1 | 2   | 3   | 4   | 5         | 6         | 7           | 8           |
+|:---------------------------------------|----:|:----|:----|:----|:----------|:----------|:------------|:------------|
+| Acquisition costs paid                 | nan |     |     |     | (573,221) | -         | -           | (573,221)   |
+| Total cash flows                       |     |     |     |     | 1,250,161 | -         | (2,912,080) | (1,661,919) |
+|                                        |     |     |     |     |           |           |             |             |
+| Closing insurance contract assets      | nan |     |     |     |           |           |             | -           |
+| Closing insurance contract liabilities | nan |     |     |     | 3,339,916 | 3,239,897 | 490,979     | 7,070,792   |
+| Net closing balance                    |     |     |     |     | 3,339,916 | 3,239,897 | 490,979     | 7,070,792   |
+
+
+
+| 0                                                                                                                                 | 1                                                        |   2 |   3 |   4 |   5 |   6 | 7         | 8                                      | 9        | 10                            | 11   | 12        |
+|:----------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|----:|----:|----:|----:|----:|:----------|:---------------------------------------|:---------|:------------------------------|:-----|:----------|
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts - Protection | nan                                                      | nan | nan | nan | nan | nan | nan       | nan                                    |          |                               | nan  |           |
+|                                                                                                                                   | nan                                                      |     |     |     |     |     | nan       | Liability for Remaining Coverage (LRC) | nan      | Liability for Incurred Claims | nan  | Total     |
+|                                                                                                                                   | Reconciliation of carrying amounts by LRC/LIC: insurance | nan | nan | nan | nan | nan | nan       | Non- onerous                           | Onerous  | nan                           | LIC  | nan       |
+|                                                                                                                                   | nan                                                      |     |     |     |     |     |           | nan                                    |          |                               | nan  |           |
+|                                                                                                                                   | Opening insurance contract assets                        | nan | nan |     |     |     |           | nan                                    |          |                               | nan  | -         |
+|                                                                                                                                   | Opening insurance contract liabilities                   | nan | nan |     |     |     | 87,987    | nan                                    | -        | -                             | nan  | 87,987    |
+|                                                                                                                                   | Net opening balance                                      | nan | nan |     |     |     | 87,987    | nan                                    | -        | -                             | nan  | 87,987    |
+|                                                                                                                                   | nan                                                      |     |     |     |     |     |           | nan                                    |          |                               | nan  |           |
+|                                                                                                                                   | Insurance revenue                                        | nan | nan |     |     |     | (3,409)   | nan                                    | -        | -                             | nan  | (3,409)   |
+|                                                                                                                                   | Insurance service expenses                               | nan | nan |     |     |     | -         | nan                                    | -        | -                             | nan  |           |
+|                                                                                                                                   | Incurred claims and other expenses                       | nan | nan |     |     |     | -         | nan                                    | (36,546) | 70,699                        | nan  | 34,153    |
+|                                                                                                                                   | Acquisition expenses                                     | nan | nan |     |     |     | 1,180     | nan                                    | -        | -                             | nan  | 1,180     |
+|                                                                                                                                   | Changes related to future service                        | nan | nan |     |     |     | -         | nan                                    | 266,895  | -                             | nan  | 266,895   |
+|                                                                                                                                   | Changes related to past service                          | nan | nan |     |     |     | -         | nan                                    | -        | 168,204                       | nan  | 168,204   |
+|                                                                                                                                   | Total Insurance service expenses                         | nan | nan |     |     |     | 1,180     | nan                                    | 230,349  | 238,903                       | nan  | 470,431   |
+|                                                                                                                                   | Investment components                                    | nan | nan |     |     |     | (316,221) | nan                                    | -        | 316,221                       | nan  | -         |
+|                                                                                                                                   | Insurance service result                                 | nan | nan |     |     |     | (311,632) | nan                                    | 230,349  | 555,124                       | nan  | 473,840   |
+|                                                                                                                                   | Insurance finance expenses                               | nan | nan |     |     |     | 9,526     | nan                                    | -        | -                             | nan  | 9,526     |
+|                                                                                                                                   | Total change in comprehensive income                     | nan | nan | nan |     |     | (302,106) | nan                                    | 230,349  | 555,124                       | nan  | 483,367   |
+|                                                                                                                                   | nan                                                      |     |     |     |     |     |           | nan                                    |          |                               | nan  |           |
+|                                                                                                                                   | Premiums received                                        | nan | nan |     |     |     | 11,347    | nan                                    | -        | -                             | nan  | 11,347    |
+|                                                                                                                                   | Claims and expenses paid                                 | nan | nan |     |     |     | -         | nan                                    | -        | (386,920)                     | nan  | (386,920) |
+|                                                                                                                                   | Acquisition costs paid                                   | nan | nan |     |     |     | (1,180)   | nan                                    | -        | -                             | nan  | (1,180)   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total cash flows 10,167 - (386,920) (376,753)
+Closing insurance contract
+assets -
+Closing insurance contract
+liabilities (203,952) 230,349 168,203 194,600
+Net closing balance (203,952) 230,349 168,203 194,601
+18.1a.3 Investment Linked
+Reconciliation of the liability for remaining coverage and the liability for incurred
+claims for insurance contracts – Investment Linked
+Liability for
+Liability for Remaining
+Incurred
+Coverage (LRC) Claims Total
+Reconciliation of carrying amounts by LRC/LIC: insurance Non-onerous Onerous LIC
+Opening insurance contract assets -
+Opening insurance contract liabilities 3,705,154 - - 3,705,154
+Net opening balance 3,705,154 - - 3,705,154
+Insurance revenue (47,305) - - (47,305)
+Insurance service expenses - - -
+Incurred claims and other expenses - (493,527) 584,923 91,395
+Acquisition expenses 6,874 - - 6,874
+Changes related to future service - 1,333,470 - 1,333,470
+Changes related to past service - - 1,009,302 1,009,302
+Total Insurance service expenses 6,874 839,942 1,594,225 2,441,041
+Investment components (2,204,044) - 2,204,044 -
+Insurance service result (2,244,475) 839,943 3,798,269 2,393,736
+Insurance finance expenses 472,453 - - 472,453
+Total change in comprehensive income (1,772,022) 839,942 3,798,269 2,866,190
+Premiums received 720,970 - - 720,970
+(2,788,96
+Claims and expenses paid - - (2,788,967) 7)
+Acquisition costs paid (6,874) - - (6,874)
+182
+
+
+| 0                | 1                                      |   2 |   3 | 4   | 5   | 6   | 7         | 8       | 9         | 10        |
+|:-----------------|:---------------------------------------|----:|----:|:----|:----|:----|:----------|:--------|:----------|:----------|
+| Total cash flows | nan                                    |     |     |     |     |     | 10,167    | -       | (386,920) | (376,753) |
+|                  | Closing insurance contract assets      | nan | nan |     |     |     |           |         |           | -         |
+|                  | Closing insurance contract liabilities | nan | nan |     |     |     | (203,952) | 230,349 | 168,203   | 194,600   |
+|                  | Net closing balance                    | nan | nan |     |     |     | (203,952) | 230,349 | 168,203   | 194,601   |
+
+
+
+| 0                                                                                                                                        |   1 |   2 |   3 |   4 | 5                                      | 6         | 7                             | 8            |
+|:-----------------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:----------|:------------------------------|:-------------|
+| 18.1a.3 Investment Linked                                                                                                                | nan |     |     |     |                                        |           |                               |              |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts – Investment Linked | nan | nan | nan | nan | nan                                    | nan       |                               |              |
+|                                                                                                                                          |     |     |     |     | Liability for Remaining Coverage (LRC) | nan       | Liability for Incurred Claims | Total        |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                                 | nan | nan | nan | nan | Non-onerous                            | Onerous   | LIC                           | nan          |
+|                                                                                                                                          |     |     |     |     |                                        |           |                               |              |
+| Opening insurance contract assets                                                                                                        | nan | nan | nan |     |                                        |           |                               | -            |
+| Opening insurance contract liabilities                                                                                                   | nan | nan | nan |     | 3,705,154                              | -         | -                             | 3,705,154    |
+| Net opening balance                                                                                                                      | nan | nan |     |     | 3,705,154                              | -         | -                             | 3,705,154    |
+|                                                                                                                                          |     |     |     |     |                                        |           |                               |              |
+| Insurance revenue                                                                                                                        | nan |     |     |     | (47,305)                               | -         | -                             | (47,305)     |
+| Insurance service expenses                                                                                                               | nan | nan |     |     | -                                      | -         | -                             |              |
+| Incurred claims and other expenses                                                                                                       | nan | nan | nan |     | -                                      | (493,527) | 584,923                       | 91,395       |
+| Acquisition expenses                                                                                                                     | nan | nan |     |     | 6,874                                  | -         | -                             | 6,874        |
+| Changes related to future service                                                                                                        | nan | nan | nan |     | -                                      | 1,333,470 | -                             | 1,333,470    |
+| Changes related to past service                                                                                                          | nan | nan | nan |     | -                                      | -         | 1,009,302                     | 1,009,302    |
+| Total Insurance service expenses                                                                                                         | nan | nan | nan |     | 6,874                                  | 839,942   | 1,594,225                     | 2,441,041    |
+| Investment components                                                                                                                    | nan | nan |     |     | (2,204,044)                            | -         | 2,204,044                     | -            |
+| Insurance service result                                                                                                                 | nan | nan |     |     | (2,244,475)                            | 839,943   | 3,798,269                     | 2,393,736    |
+| Insurance finance expenses                                                                                                               | nan | nan |     |     | 472,453                                | -         | -                             | 472,453      |
+| Total change in comprehensive income                                                                                                     | nan | nan | nan |     | (1,772,022)                            | 839,942   | 3,798,269                     | 2,866,190    |
+|                                                                                                                                          |     |     |     |     |                                        |           |                               |              |
+| Premiums received                                                                                                                        | nan |     |     |     | 720,970                                | -         | -                             | 720,970      |
+| Claims and expenses paid                                                                                                                 | nan | nan |     |     |                                        |           | (2,788,967)                   | (2,788,96 7) |
+| nan                                                                                                                                      | nan | nan | nan | nan | -                                      | -         | nan                           | nan          |
+| Acquisition costs paid                                                                                                                   | nan | nan |     |     | (6,874)                                | -         | -                             | (6,874)      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+(2,074,87
+Total cash flows 714,097 - (2,788,967) 0)
+Closing insurance contract assets -
+Closing insurance contract liabilities 2,647,229 839,942 1,009,302 4,496,474
+Net closing balance 2,647,229 839,942 1,009,302 4,496,474
+18.1a.4 Credit Life
+Reconciliation of the liability for remaining coverage and the liability for
+incurred claims for insurance contracts – Credit Life
+Liability
+Liability for Remaining for
+Coverage (LRC) Incurred
+Total
+Claims
+Non-
+Onerous LIC
+Reconciliation of carrying amounts by LRC/LIC: insurance onerous
+Opening insurance contract assets -
+Opening insurance contract liabilities (605) 852 - 248
+Net opening balance (605) 852 - 248
+Insurance revenue (277) - - (277)
+Insurance service expenses - - -
+Incurred claims and other expenses - - - -
+Acquisition expenses - - - -
+Changes related to future service - - - -
+Changes related to past service - - - -
+Total Insurance service expenses - - - -
+Investment components - - - -
+Insurance service result (277) - - (277)
+Insurance finance expenses 29 - - 29
+Total change in comprehensive income (248) - - (248)
+Premiums received - - - -
+Claims and expenses paid - - - -
+Acquisition costs paid - - - -
+183
+
+
+| 0                                      |   1 |   2 | 3   |         4 | 5       | 6           | 7            |
+|:---------------------------------------|----:|----:|:----|----------:|:--------|:------------|:-------------|
+| Total cash flows                       |     |     |     |   714,097 | -       | (2,788,967) | (2,074,87 0) |
+| Closing insurance contract assets      | nan | nan |     |           |         |             | -            |
+| Closing insurance contract liabilities | nan | nan |     | 2,647,229 | 839,942 | 1,009,302   | 4,496,474    |
+| Net closing balance                    |     |     |     | 2,647,229 | 839,942 | 1,009,302   | 4,496,474    |
+
+
+
+| 0                                                                                                                                  |   1 |   2 |   3 |   4 | 5                                      | 6       | 7                             | 8     |
+|:-----------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:--------|:------------------------------|:------|
+| 18.1a.4 Credit Life                                                                                                                | nan |     |     |     |                                        |         |                               |       |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts – Credit Life | nan | nan | nan | nan | nan                                    |         |                               |       |
+|                                                                                                                                    |     |     |     |     | Liability for Remaining Coverage (LRC) | nan     | Liability for Incurred Claims | Total |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                           | nan | nan | nan | nan | Non- onerous                           | Onerous | LIC                           | nan   |
+|                                                                                                                                    |     |     |     |     |                                        |         |                               |       |
+| Opening insurance contract assets                                                                                                  | nan | nan | nan |     |                                        |         |                               | -     |
+| Opening insurance contract liabilities                                                                                             | nan | nan | nan |     | (605)                                  | 852     | -                             | 248   |
+| Net opening balance                                                                                                                | nan | nan |     |     | (605)                                  | 852     | -                             | 248   |
+|                                                                                                                                    |     |     |     |     |                                        |         |                               |       |
+| Insurance revenue                                                                                                                  | nan |     |     |     | (277)                                  | -       | -                             | (277) |
+| Insurance service expenses                                                                                                         | nan | nan |     |     | -                                      | -       | -                             |       |
+| Incurred claims and other expenses                                                                                                 | nan | nan | nan |     | -                                      | -       | -                             | -     |
+| Acquisition expenses                                                                                                               | nan | nan |     |     | -                                      | -       | -                             | -     |
+| Changes related to future service                                                                                                  | nan | nan | nan |     | -                                      | -       | -                             | -     |
+| Changes related to past service                                                                                                    | nan | nan | nan |     | -                                      | -       | -                             | -     |
+| Total Insurance service expenses                                                                                                   | nan | nan | nan |     | -                                      | -       | -                             | -     |
+| Investment components                                                                                                              | nan | nan |     |     | -                                      | -       | -                             | -     |
+| Insurance service result                                                                                                           | nan | nan |     |     | (277)                                  | -       | -                             | (277) |
+| Insurance finance expenses                                                                                                         | nan | nan |     |     | 29                                     | -       | -                             | 29    |
+| Total change in comprehensive income                                                                                               | nan | nan | nan |     | (248)                                  | -       | -                             | (248) |
+|                                                                                                                                    |     |     |     |     |                                        |         |                               |       |
+| Premiums received                                                                                                                  | nan |     |     |     | -                                      | -       | -                             | -     |
+| Claims and expenses paid                                                                                                           | nan | nan |     |     | -                                      | -       | -                             | -     |
+| Acquisition costs paid                                                                                                             | nan | nan |     |     | -                                      | -       | -                             | -     |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total cash flows - - - -
+Closing insurance contract assets -
+Closing insurance contract liabilities (852) 852 - 0
+Net closing balance (852) 852 - 0
+18.1a.5 Annuity
+Reconciliation of the liability for remaining coverage and the liability for
+incurred claims for insurance contracts – Annuity
+Liability
+Liability for Remaining for
+Coverage (LRC) Incurred
+Total
+Claims
+Non-
+Onerous LIC
+Reconciliation of carrying amounts by LRC/LIC: insurance onerous
+Opening insurance contract assets -
+Opening insurance contract liabilities 29,336,592 1,847,824 - 31,184,416
+Net opening balance 29,336,592 1,847,824 - 31,184,416
+Insurance revenue (3,676,394) - - (3,676,394)
+Insurance service expenses - - -
+Incurred claims and other expenses - (821,038) 4,191,713 3,370,676
+Acquisition expenses - - - -
+Changes related to future service - 3,743,110 - 3,743,110
+Changes related to past service - - - -
+Total Insurance service expenses - 2,922,072 4,191,713 7,113,785
+Investment components - - - -
+Insurance service result (3,676,394) 2,922,072 4,191,713 3,437,391
+Insurance finance expenses (3,871,069) - - (3,871,069)
+Total change in comprehensive income (7,547,463) 2,922,072 4,191,713 (433,678)
+Premiums received 34,469 - - 34,469
+Claims and expenses paid - - (4,191,713) (4,191,713)
+184
+
+
+| 0                                      |   1 |   2 |   3 | 4   | 5     | 6   | 7   | 8   |
+|:---------------------------------------|----:|----:|----:|:----|:------|:----|:----|:----|
+| Total cash flows                       | nan |     |     |     | -     | -   | -   | -   |
+|                                        |     |     |     |     |       |     |     |     |
+| Closing insurance contract assets      | nan | nan | nan |     |       |     |     | -   |
+| Closing insurance contract liabilities | nan | nan | nan |     | (852) | 852 | -   | 0   |
+| Net closing balance                    | nan |     |     |     | (852) | 852 | -   | 0   |
+
+
+
+| 0                                                                                                                              |   1 |   2 |   3 |   4 | 5                                      | 6         | 7                             | 8           |
+|:-------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:----------|:------------------------------|:------------|
+| 18.1a.5 Annuity                                                                                                                |     |     |     |     |                                        |           |                               |             |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts – Annuity | nan | nan | nan | nan | nan                                    |           |                               |             |
+|                                                                                                                                |     |     |     |     | Liability for Remaining Coverage (LRC) | nan       | Liability for Incurred Claims | Total       |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                       | nan | nan | nan | nan | Non- onerous                           | Onerous   | LIC                           | nan         |
+|                                                                                                                                |     |     |     |     |                                        |           |                               |             |
+| Opening insurance contract assets                                                                                              | nan | nan | nan |     |                                        |           |                               | -           |
+| Opening insurance contract liabilities                                                                                         | nan | nan | nan |     | 29,336,592                             | 1,847,824 | -                             | 31,184,416  |
+| Net opening balance                                                                                                            | nan | nan |     |     | 29,336,592                             | 1,847,824 | -                             | 31,184,416  |
+|                                                                                                                                |     |     |     |     |                                        |           |                               |             |
+| Insurance revenue                                                                                                              | nan |     |     |     | (3,676,394)                            | -         | -                             | (3,676,394) |
+| Insurance service expenses                                                                                                     | nan | nan |     |     | -                                      | -         | -                             |             |
+| Incurred claims and other expenses                                                                                             | nan | nan | nan |     | -                                      | (821,038) | 4,191,713                     | 3,370,676   |
+| Acquisition expenses                                                                                                           | nan | nan |     |     | -                                      | -         | -                             | -           |
+| Changes related to future service                                                                                              | nan | nan | nan |     | -                                      | 3,743,110 | -                             | 3,743,110   |
+| Changes related to past service                                                                                                | nan | nan | nan |     | -                                      | -         | -                             | -           |
+| Total Insurance service expenses                                                                                               | nan | nan | nan |     | -                                      | 2,922,072 | 4,191,713                     | 7,113,785   |
+| Investment components                                                                                                          | nan | nan |     |     | -                                      | -         | -                             | -           |
+| Insurance service result                                                                                                       | nan | nan |     |     | (3,676,394)                            | 2,922,072 | 4,191,713                     | 3,437,391   |
+| Insurance finance expenses                                                                                                     | nan | nan |     |     | (3,871,069)                            | -         | -                             | (3,871,069) |
+| Total change in comprehensive income                                                                                           | nan | nan | nan |     | (7,547,463)                            | 2,922,072 | 4,191,713                     | (433,678)   |
+|                                                                                                                                |     |     |     |     |                                        |           |                               |             |
+| Premiums received                                                                                                              | nan |     |     |     | 34,469                                 | -         | -                             | 34,469      |
+| Claims and expenses paid                                                                                                       | nan | nan |     |     | -                                      | -         | (4,191,713)                   | (4,191,713) |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Acquisition costs paid - - - -
+Total cash flows 34,469 - (4,191,713) (4,157,244)
+Closing insurance contract assets -
+Closing insurance contract liabilities 21,823,598 4,769,896 - 26,593,494
+Net closing balance 21,823,598 4,769,896 - 26,593,494
+18.1a.6 Group Life
+Reconciliation of the liability for remaining coverage and the liability
+for incurred claims for insurance contracts – Group Life
+Liability for Remaining Liability for
+Coverage (LRC) Incurred Claims
+Total
+One
+Reconciliation of carrying amounts by LRC/LIC:
+Non-onerous LIC
+rous
+insurance
+Opening insurance contract assets -
+Opening insurance contract liabilities 532,160 - 1,814,966 2,347,126
+Net opening balance 532,160 - 1,814,966 2,347,126
+Insurance revenue (2,634,768) - - (2,634,768)
+Incurred claims and other expenses - - 1,817,020 1,817,020
+Acquisition expenses 758,189 - - 758,189
+Changes related to future service - - - -
+Changes related to past service - - (623,466) (623,466)
+Total Insurance service expenses 758,189 - 1,193,553 1,951,742
+Investment components - - - -
+Insurance service result (1,876,579) - 1,193,553 (683,026)
+Total change in comprehensive income (1,876,579) - 1,193,553 (683,026)
+Premiums received 2,796,598 - - 2,796,598
+Claims and expenses paid - - (1,734,152) (1,734,152)
+185
+
+
+| 0                                      |   1 |   2 |   3 | 4   | 5          | 6         | 7           | 8           |
+|:---------------------------------------|----:|----:|----:|:----|:-----------|:----------|:------------|:------------|
+| Acquisition costs paid                 | nan | nan |     |     | -          | -         | -           | -           |
+| Total cash flows                       | nan |     |     |     | 34,469     | -         | (4,191,713) | (4,157,244) |
+|                                        |     |     |     |     |            |           |             |             |
+| Closing insurance contract assets      | nan | nan | nan |     |            |           |             | -           |
+| Closing insurance contract liabilities | nan | nan | nan |     | 21,823,598 | 4,769,896 | -           | 26,593,494  |
+| Net closing balance                    | nan |     |     |     | 21,823,598 | 4,769,896 | -           | 26,593,494  |
+
+
+
+| 0                                                                                                                                 |   1 |   2 |   3 |   4 | 5                                      | 6        | 7                             | 8           |
+|:----------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:---------|:------------------------------|:------------|
+| 18.1a.6 Group Life                                                                                                                | nan |     |     |     |                                        |          |                               |             |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts – Group Life | nan | nan | nan | nan | nan                                    |          |                               |             |
+|                                                                                                                                   |     |     |     |     | Liability for Remaining Coverage (LRC) | nan      | Liability for Incurred Claims | Total       |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                          | nan | nan | nan | nan | Non-onerous                            | One rous | LIC                           | nan         |
+| Opening insurance contract assets                                                                                                 | nan | nan | nan |     |                                        |          |                               | -           |
+| Opening insurance contract liabilities                                                                                            | nan | nan | nan |     | 532,160                                | -        | 1,814,966                     | 2,347,126   |
+| Net opening balance                                                                                                               | nan | nan |     |     | 532,160                                | -        | 1,814,966                     | 2,347,126   |
+| Insurance revenue                                                                                                                 | nan |     |     |     | (2,634,768)                            | -        | -                             | (2,634,768) |
+| Incurred claims and other expenses                                                                                                | nan | nan | nan |     |                                        | -        | 1,817,020                     | 1,817,020   |
+| nan                                                                                                                               | nan | nan | nan | nan | -                                      | nan      | nan                           | nan         |
+| Acquisition expenses                                                                                                              | nan | nan |     |     | 758,189                                |          |                               | 758,189     |
+| nan                                                                                                                               | nan | nan | nan | nan | nan                                    | -        | -                             | nan         |
+| Changes related to future service                                                                                                 | nan | nan | nan |     | -                                      | -        |                               | -           |
+| nan                                                                                                                               | nan | nan | nan | nan | nan                                    | nan      | -                             | nan         |
+| Changes related to past service                                                                                                   | nan | nan | nan |     | -                                      | -        | (623,466)                     | (623,466)   |
+| Total Insurance service expenses                                                                                                  | nan | nan | nan |     | 758,189                                | -        | 1,193,553                     | 1,951,742   |
+| Investment components                                                                                                             | nan | nan |     |     | -                                      | -        | -                             | -           |
+| Insurance service result                                                                                                          | nan | nan |     |     | (1,876,579)                            | -        | 1,193,553                     | (683,026)   |
+| Total change in comprehensive income                                                                                              | nan | nan | nan |     | (1,876,579)                            | -        | 1,193,553                     | (683,026)   |
+| Premiums received                                                                                                                 | nan |     |     |     | 2,796,598                              | -        | -                             | 2,796,598   |
+| Claims and expenses paid                                                                                                          | nan | nan |     |     | -                                      | -        | (1,734,152)                   | (1,734,152) |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Acquisition costs paid (758,189) - - (758,189)
+Total cash flows 2,038,409 - (1,734,152) 304,257
+Closing insurance contract assets -
+Closing insurance contract liabilities 693,990 - 1,274,367 1,968,357
+Net closing balance 693,990 - 1,274,367 1,968,357
+18.2 GMM Business
+Reconciliation of the liability for remaining coverage and the liability for
+incurred claims for insurance contracts – GMM Business
+Liability for
+Liability for Remaining
+Incurred
+Coverage (LRC) Claims Total
+Reconciliation of carrying amounts by LRC/LIC: insurance Non-onerous Onerous LIC
+Opening insurance contract assets -
+Opening insurance contract liabilities 37,612,797 2,448,884 - 40,061,681
+Net opening balance 37,612,797 2,448,884 - 40,061,681
+Insurance revenue (4,454,401) - - (4,454,401)
+Insurance service expenses - - -
+Incurred claims and other expenses - (1,805,332) 5,145,133 3,339,801
+Acquisition expenses 581,275 - - 581,274,547
+Changes related to future service - 8,437,384 - 8,437,384
+Changes related to past service - - 1,668,485 1,668,485
+Total Insurance service expenses 581,275 6,632,052 6,813,618 14,026,945
+Investment components (5,134,547) - 5,134,547 -
+Insurance service result (9,007,673) 6,632,052 11,948,165 9,572,544
+Insurance finance expenses (3,008,078) - - (3,008,078)
+Total change in comprehensive income (12,015,751) 6,632,052 11,948,165 6,564,466
+Premiums received 2,590,169 - - 2,590,169
+186
+
+
+| 0                                      |   1 |   2 | 3   | 4         | 5   | 6           | 7         |
+|:---------------------------------------|----:|----:|:----|:----------|:----|:------------|:----------|
+| Acquisition costs paid                 | nan |     |     | (758,189) | -   | -           | (758,189) |
+| Total cash flows                       |     |     |     | 2,038,409 | -   | (1,734,152) | 304,257   |
+| Closing insurance contract assets      | nan | nan |     |           |     |             | -         |
+| Closing insurance contract liabilities | nan | nan |     | 693,990   | -   | 1,274,367   | 1,968,357 |
+| Net closing balance                    |     |     |     | 693,990   | -   | 1,274,367   | 1,968,357 |
+
+
+
+| 0                                                                                                                                   |   1 |   2 |   3 |   4 | 5                                      | 6           | 7                             | 8           |
+|:------------------------------------------------------------------------------------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:------------|:------------------------------|:------------|
+| 18.2 GMM Business                                                                                                                   | nan |     |     |     |                                        |             |                               |             |
+| Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance contracts – GMM Business | nan | nan | nan | nan | nan                                    |             |                               |             |
+|                                                                                                                                     |     |     |     |     | Liability for Remaining Coverage (LRC) | nan         | Liability for Incurred Claims | Total       |
+| Reconciliation of carrying amounts by LRC/LIC: insurance                                                                            | nan | nan | nan | nan | Non-onerous                            | Onerous     | LIC                           | nan         |
+|                                                                                                                                     |     |     |     |     |                                        |             |                               |             |
+| Opening insurance contract assets                                                                                                   | nan | nan | nan |     |                                        |             |                               | -           |
+| Opening insurance contract liabilities                                                                                              | nan | nan | nan |     | 37,612,797                             | 2,448,884   | -                             | 40,061,681  |
+| Net opening balance                                                                                                                 | nan | nan |     |     | 37,612,797                             | 2,448,884   | -                             | 40,061,681  |
+|                                                                                                                                     |     |     |     |     |                                        |             |                               |             |
+| Insurance revenue                                                                                                                   | nan |     |     |     | (4,454,401)                            | -           | -                             | (4,454,401) |
+| Insurance service expenses                                                                                                          | nan | nan |     |     | -                                      | -           | -                             |             |
+| Incurred claims and other expenses                                                                                                  | nan | nan | nan |     | -                                      | (1,805,332) | 5,145,133                     | 3,339,801   |
+| Acquisition expenses                                                                                                                | nan | nan |     |     | 581,275                                | -           | -                             | 581,274,547 |
+| Changes related to future service                                                                                                   | nan | nan | nan |     | -                                      | 8,437,384   | -                             | 8,437,384   |
+| Changes related to past service                                                                                                     | nan | nan | nan |     | -                                      | -           | 1,668,485                     | 1,668,485   |
+| Total Insurance service expenses                                                                                                    | nan | nan | nan |     | 581,275                                | 6,632,052   | 6,813,618                     | 14,026,945  |
+| Investment components                                                                                                               | nan | nan |     |     | (5,134,547)                            | -           | 5,134,547                     | -           |
+| Insurance service result                                                                                                            | nan | nan |     |     | (9,007,673)                            | 6,632,052   | 11,948,165                    | 9,572,544   |
+| Insurance finance expenses                                                                                                          | nan | nan |     |     | (3,008,078)                            | -           | -                             | (3,008,078) |
+| Total change in comprehensive income                                                                                                | nan | nan | nan |     | (12,015,751)                           | 6,632,052   | 11,948,165                    | 6,564,466   |
+|                                                                                                                                     |     |     |     |     |                                        |             |                               |             |
+| Premiums received                                                                                                                   | nan |     |     |     | 2,590,169                              | -           | -                             | 2,590,169   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Claims and expenses paid - - (10,279,680) 10,279,680
+Acquisition costs paid (581,275) - - (581,275)
+Total cash flows 2,008,894 - (10,279,680) (8,270,786)
+Closing insurance contract assets -
+Closing insurance contract liabilities 27,605,940 9,080,936 1,668,485 38,355,361
+Net closing balance 27,605,940 9,080,936 1,668,485 38,355,361
+2023
+18.2a Reconciliation of components of insurance contract liabilities – GMM Business
+Estimates of
+Risk
+present value of CSM Total
+Reconciliation of carrying amounts by
+Adjustment
+future cashflows
+BEL/RA/CSM: insurance
+Opening insurance contract assets -
+Opening insurance contract liabilities 37,833,734 1,244,996 982,951 40,061,681
+Net opening balance 37,833,734 1,244,996 982,951 40,061,681
+Changes related to current services
+CSM for service provided 0 0 (263,776) (263,776)
+Risk Adjustment release for expired risks 0 (175,597) 0 (175,597)
+Experience adjustments (93,951) - - (93,951)
+Total changes related to current services (93,951) (175,597) (263,776) (533,325)
+Changes related to future services
+New contracts recognised (40,368) 8,920 39,226 7,777
+Changes in estimates reflected in CSM 217,689 4,210 (221,899) -
+Changes in estimates resulting in contract losses 8,402,379 27,228 - 8,429,607
+Total changes related to future services 8,579,700 40,357 (182,673) 8,437,384
+Adjustments to liabilities for incurred claims 1,668,485 - - 1,668,485
+Total changes that relate to past service 1,668,485 0 - 1,668,485
+187
+
+
+| 0                                      |   1 |   2 | 3   | 4          | 5         | 6            | 7           |
+|:---------------------------------------|----:|----:|:----|:-----------|:----------|:-------------|:------------|
+| Claims and expenses paid               | nan |     |     | -          | -         | (10,279,680) | 10,279,680  |
+| Acquisition costs paid                 | nan |     |     | (581,275)  | -         | -            | (581,275)   |
+| Total cash flows                       |     |     |     | 2,008,894  | -         | (10,279,680) | (8,270,786) |
+| Closing insurance contract assets      | nan | nan |     |            |           |              | -           |
+| Closing insurance contract liabilities | nan | nan |     | 27,605,940 | 9,080,936 | 1,668,485    | 38,355,361  |
+| Net closing balance                    |     |     |     | 27,605,940 | 9,080,936 | 1,668,485    | 38,355,361  |
+
+
+
+|   0 | 1   | 2   |
+|----:|:----|:----|
+|   0 | nan | 0   |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Insurance service result (10,154,234) 135,241 446,449 (9,572,544)
+Insurance finance expenses (3,134,083) - 126,005 (3,008,078)
+Total change in comprehensive
+income (7,020,151) 135,241 320,444 (6,564,466)
+Total cash flows (8,270,786) - - (8,270,786)
+Closing insurance contract assets -
+Closing insurance contract liabilities 36,583,099 1,109,756 662,507 38,355,361
+Net closing balance 36,583,099 1,109,756 662,507 38,355,361
+Expected release of Contractual Service Margin for insurance contracts issued
+CSM with positive sign
+Expected release of Contractual Investment
+Service Margin Annuity Protection Linked Credit Life
+Year 1 0 23,602 104,326 7
+Year 2 0 774 69,730
+Year 3 0 404 45,037
+Year 4 0 1,909 29,179
+Year 5 0 73 11,293
+Year 6 0 82 3,406
+Year 7 0 91 2,044
+Year 8 0 102 1,238
+Year 9 0 113 977
+Year 10 0 127 267
+Above Year 10 0 5,184 24
+Total CSM 0 32,460 267,519 72
+188
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | -   | -   |
+|     | nan | nan |
+
+
+
+| 0                                              |   1 |   2 |   3 |   4 | 5       | 6          | 7                 |   8 |
+|:-----------------------------------------------|----:|----:|----:|----:|:--------|:-----------|:------------------|----:|
+| Expected release of Contractual Service Margin | nan | nan | nan | nan | Annuity | Protection | Investment Linked | nan |
+|                                                |     |     |     |     |         |            |                   | nan |
+| Year 1                                         |     |     |     |     | 0       | 23,602     | 104,326           |   7 |
+| Year 2                                         |     |     |     |     | 0       | 774        | 69,730            |     |
+| Year 3                                         |     |     |     |     | 0       | 404        | 45,037            |     |
+| Year 4                                         |     |     |     |     | 0       | 1,909      | 29,179            |     |
+| Year 5                                         |     |     |     |     | 0       | 73         | 11,293            |     |
+| Year 6                                         |     |     |     |     | 0       | 82         | 3,406             |     |
+| Year 7                                         |     |     |     |     | 0       | 91         | 2,044             |     |
+| Year 8                                         |     |     |     |     | 0       | 102        | 1,238             |     |
+| Year 9                                         |     |     |     |     | 0       | 113        | 977               |     |
+| Year 10                                        |     |     |     |     | 0       | 127        | 267               |     |
+| Above Year 10                                  | nan |     |     |     | 0       | 5,184      | 24                |     |
+| Total CSM                                      | nan |     |     |     | 0       | 32,460     | 267,519           |  72 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Insurance contracts recognized in a year
+Investment
+Annuity Protection Linked Credit Life
+Estimates of future cash inflows - 640 86,717
+Estimates of future cash outflows
+- Claims - 340 491
+- Directly attributable
+expenses - 186 87,903
+- Acquisition cash flows - 40 4,081
+- 567 92,475
+Risk adjustment for non-financial risk - 16 2,019
+Contractual service margin - 57 -
+Total insurance contract liabilities at
+Inception - - 7,777
+2022
+18.1 a Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance
+contract
+Liability for Remaining Liability for
+Coverage (LRC) Incurred Claims Insurance Contract
+Reconciliation of carrying amounts Liabilities (ICL)
+Non-onerous Onerous LIC
+by LRC/LIC: insurance
+Opening insurance contract assets - - - -
+Opening insurance contract
+liabilities 40,326,361 - 1,884,251 42,210,612
+Net opening balance 40,326,361 - 1,884,251 42,210,612
+Insurance revenue (8,118,388) - - (8,118,388)
+Incurred claims and other expenses - (401,468) 7,724,936 7,323,468
+189
+
+
+| 0                                                 | 1                                |   2 |   3 |   4 | 5       | 6          | 7                 |   8 |
+|:--------------------------------------------------|:---------------------------------|----:|----:|----:|:--------|:-----------|:------------------|----:|
+|                                                   |                                  |     |     |     | Annuity | Protection | Investment Linked | nan |
+|                                                   |                                  |     |     |     |         |            |                   | nan |
+| Estimates of future cash inflows                  | nan                              | nan | nan |     | -       | 640        | 86,717            |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+| Estimates of future cash outflows                 | nan                              | nan | nan |     |         |            |                   |     |
+|                                                   | - Claims                         |     |     |     | -       | 340        | 491               |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+|                                                   | - Directly attributable expenses | nan | nan |     | -       | 186        | 87,903            |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+|                                                   | - Acquisition cash flows         | nan | nan |     |         |            |                   |     |
+| nan                                               | nan                              | nan | nan | nan | -       | 40         | 4,081             |     |
+|                                                   |                                  |     |     |     | -       | 567        | 92,475            |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+|                                                   |                                  |     |     |     |         |            |                   | nan |
+| Risk adjustment for non-financial risk            | nan                              | nan | nan |     | -       | 16         | 2,019             |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+| Contractual service margin                        | nan                              | nan |     |     | -       | 57         | -                 |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+| Total insurance contract liabilities at Inception | nan                              | nan | nan | nan | -       | -          | 7,777             |     |
+| nan                                               | nan                              | nan | nan | nan | nan     | nan        | nan               |     |
+
+
+
+| 0   | 1                                                        |   2 |   3 |   4 |   5 | 6                                      | 7         | 8                             | 9                                    | 10   |
+|:----|:---------------------------------------------------------|----:|----:|----:|----:|:---------------------------------------|:----------|:------------------------------|:-------------------------------------|:-----|
+|     |                                                          |     |     |     |     | Liability for Remaining Coverage (LRC) | nan       | Liability for Incurred Claims | Insurance Contract Liabilities (ICL) |      |
+|     | Reconciliation of carrying amounts by LRC/LIC: insurance | nan | nan | nan | nan | Non-onerous                            | Onerous   | LIC                           | nan                                  |      |
+|     | Opening insurance contract assets                        | nan | nan | nan | nan | -                                      | -         | -                             | -                                    |      |
+|     | Opening insurance contract liabilities                   | nan | nan | nan | nan | 40,326,361                             | -         | 1,884,251                     | 42,210,612                           |      |
+|     | Net opening balance                                      | nan | nan |     |     | 40,326,361                             | -         | 1,884,251                     | 42,210,612                           |      |
+|     | Insurance revenue                                        | nan |     |     |     | (8,118,388)                            | -         | -                             | (8,118,388)                          |      |
+|     | Incurred claims and other expenses                       | nan | nan | nan | nan | -                                      | (401,468) | 7,724,936                     | 7,323,468                            |      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Acquisition expenses 1,223,521 - - 1,223,521
+Changes related to future service - 2,850,352 - 2,850,352
+Changes related to past service
+- - (76,463) (76,463)
+Total Insurance service expenses 1,223,521 2,448,884 7,648,473 11,320,878
+Investment components (2,139,316) - 2,139,316 -
+Insurance service result (9,034,183) 2,448,884 9,787,789 3,202,490
+Insurance finance expenses 3,165,731 - - 3,165,731
+Total change in
+comprehensive income (5,868,452) 2,448,884 9,787,789 6,368,221
+Premiums received 4,910,568 - - 4,910,568
+Claims and expenses paid - - (9,857,075) (9,857,075)
+Acquisition costs paid (1,223,521) - - (1,223,520)
+Total cash flows 3,687,048 - (9,857,075) (6,170,027)
+Closing insurance contract assets - - - -
+Closing insurance contract liabilities
+38,144,957 2,448,884 1,814,966 42,408,806
+Net closing balance 38,144,957 2,448,884 1,814,966 42,408,806
+18.1a.1 Endowment
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for Insurance
+Contracts-- endowment
+Liability for Insurance
+Liability for Remaining Coverage
+Incurred Contract
+(LRC)
+Claims Liabilities (ICL)
+Reconciliation of carrying amounts by
+Non-onerous Onerous LIC
+LRC/LIC: insurance
+Opening insurance contract assets -
+Opening insurance contract
+liabilities 3,890,179 - - 3,890,180
+190
+
+
+|   0 | 1                                      |   2 |   3 |   4 |   5 | 6           | 7         | 8           | 9           |   10 |
+|----:|:---------------------------------------|----:|----:|----:|----:|:------------|:----------|:------------|:------------|-----:|
+|     | Acquisition expenses                   | nan | nan |     |     | 1,223,521   | -         | -           | 1,223,521   |      |
+|     | Changes related to future service      | nan | nan | nan | nan | -           | 2,850,352 |             | 2,850,352   |      |
+| nan | nan                                    | nan | nan | nan | nan | nan         | nan       | -           | nan         |  nan |
+|     | Changes related to past service        | nan | nan | nan | nan |             |           | (76,463)    | (76,463)    |      |
+| nan | nan                                    | nan | nan | nan | nan | -           | -         | nan         | nan         |  nan |
+|     | Total Insurance service expenses       | nan | nan | nan | nan | 1,223,521   | 2,448,884 | 7,648,473   | 11,320,878  |      |
+|     | Investment components                  | nan | nan |     |     | (2,139,316) | -         | 2,139,316   | -           |      |
+|     | Insurance service result               | nan | nan |     |     | (9,034,183) | 2,448,884 | 9,787,789   | 3,202,490   |      |
+|     | Insurance finance expenses             | nan | nan |     |     | 3,165,731   | -         | -           | 3,165,731   |      |
+|     | Total change in comprehensive income   | nan |     | nan | nan | (5,868,452) | 2,448,884 | 9,787,789   | 6,368,221   |      |
+|     | Premiums received                      |     | nan |     |     | 4,910,568   | -         | -           | 4,910,568   |      |
+|     | Claims and expenses paid               | nan | nan |     |     | -           | -         | (9,857,075) | (9,857,075) |      |
+|     | Acquisition costs paid                 | nan | nan |     |     | (1,223,521) | -         | -           | (1,223,520) |      |
+|     | Total cash flows                       |     | nan |     |     | 3,687,048   | -         | (9,857,075) | (6,170,027) |      |
+|     | Closing insurance contract assets      | nan | nan | nan | nan | -           | -         | -           | -           |      |
+|     | Closing insurance contract liabilities | nan | nan | nan | nan | 38,144,957  | 2,448,884 | 1,814,966   | 42,408,806  |      |
+|     | Net closing balance                    |     | nan |     |     | 38,144,957  | 2,448,884 | 1,814,966   | 42,408,806  |      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Net opening balance 3,890,179 - - 3,890,179
+Insurance revenue (633,887) - - (633,887)
+Insurance service expenses - - -
+Incurred claims and other
+expenses - (88,693) 366,918 278,225
+Acquisition expenses 318,006 - - 318,006
+Changes related to future service - 688,902 - 688,902
+Total Insurance service expenses 318,006 600,208 366,919 1,285,133
+Investment components (1,449,310) - 1,449,310 -
+Insurance service result (1,765,191) 600,208 1,816,229 651,246
+Insurance finance expenses 372,152 - - 372,152
+Total change in comprehensive
+income (1,393,039) 600,208 1,816,229 1,023,398
+Premiums received 2,304,534 - - 2,304,534
+Claims and expenses paid - - (1,816,229) (1,816,229)
+Acquisition costs paid (318,006) - - (318,006)
+Total cash flows 1,986,528 - (1,816,229) 170,299
+Closing insurance contract assets -
+Closing insurance contract liabilities 4,483,668 600,208 - 5,083,877
+Net closing balance 4,483,668 600,208 - 5,083,877
+191
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | -   | -   |
+|     | nan | nan |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+| nan | -   | -   |
+| nan | nan |     |
+| nan | nan | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | -   | -   |
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+18.1a.b Protection
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for
+insurance contracts--Protection
+Liability for
+Liability for Remaining Insurance
+Incurred
+Coverage (LRC) Contract
+Claims
+Liabilities
+Reconciliation of carrying amounts by
+Non-onerous Onerous LIC (ICL)
+LRC/LIC: insurance
+Opening insurance contract
+assets -
+Opening insurance contract
+liabilities 60,095 - - 60,095
+Net opening balance 60,095 - - 60,095
+Insurance revenue (89,438) - - (89,438)
+Insurance service expenses - - -
+Incurred claims and other
+expenses - - 45,393,274 45,393
+Acquisition expenses 7,653 - - 7,653
+Changes related to future
+service - - - -
+Changes related to past
+service - - - -
+Total Insurance service
+expenses 7,653 - 45,393 53,046
+Investment components - - - -
+Insurance service result (81,785) - 45,393 (36,392)
+Insurance finance expenses 21,923 - - 21,922
+Total change in comprehensive
+income (59,864) - 45,393 (14,470)
+Premiums received 95,408 - - 95,408
+Claims and expenses paid - - (45,393) (45,393)
+Acquisition costs paid (7,653) - - (7,653)
+Total cash flows 87,755 - (45,393) 42,362
+192
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+|     | nan | nan |
+| nan | -   | -   |
+| nan | nan |     |
+| nan | nan | -   |
+| -   | -   | nan |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | -   | -   |
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Closing insurance contract
+assets -
+Closing insurance contract
+liabilities 87,987 - - 87,986
+Net closing balance 87,987 - - 87,986
+18.1a.c Group Life
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for
+insurance contracts—Group Life
+Liability for
+Liability for Remaining Insurance
+Incurred
+Coverage (LRC) Contract
+Claims
+Liabilities
+Reconciliation of carrying amounts by LRC/LIC: Non-
+Onerous LIC (ICL)
+insurance onerous
+Opening insurance contract assets -
+Opening insurance contract liabilities 990,071 - 1,884,251 2,874,322
+Net opening balance 990,071 - 1,884,251 2,874,322
+Insurance revenue (2,303,089) - - (2,303,089)
+Insurance service expenses - - -
+Incurred claims and other expenses - - 2,308,021 2,308,021
+Acquisition expenses 590,677 - - 590,677
+Changes related to past service - - (76,463) (76,463)
+Total Insurance service expenses 590,677 - 2,231,558 2,822,235
+Investment components - - - -
+Insurance service result (1,712,411) - 2,231,558 519,146
+Insurance finance expenses - - - -
+Total change in comprehensive income (1,712,411) - 2,231,558 519,146
+Premiums received 1,845,177 - - 1,845,177
+193
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+| nan |     |     |
+| nan | -   | -   |
+| -   | -   | nan |
+
+
+
+| 0   |
+|:----|
+|     |
+| -   |
+
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Claims and expenses paid - - (2,300,843) (2,300,843)
+Acquisition costs paid (590,677) - - (590,677)
+Total cash flows 1,254,500 - (2,300,843) (1,046,343)
+Closing insurance contract assets -
+Closing insurance contract liabilities 532,160 - 1,814,966 2,347,126
+Net closing balance 532,160 - 1,814,966 2,347,126
+18.1a.d Investment Linked
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for
+insurance contracts—Investment Linked
+Liability for
+Liability for Remaining Insurance
+Incurred
+Coverage (LRC) Contract
+Claims
+Liabilities
+Reconciliation of carrying amounts by LRC/LIC:
+Non-onerous Onerous LIC (ICL)
+insurance
+Opening insurance contract assets -
+Opening insurance contract liabilities 4,128,749 - - 4,128,749
+Net opening balance 4,128,749 - - 4,128,749
+Insurance revenue (911,093) - - (911,093)
+Insurance service expenses - - -
+Incurred claims and other expenses - - 541,434 541,434
+Acquisition expenses 305,577 - - 305,577
+Changes related to future service - - - -
+Changes related to past service - - - -
+Total Insurance service expenses 305,577 - 541,434 847,011
+Investment components (690,006) - 690,006 -
+194
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+| nan |     |     |
+| nan | -   | -   |
+| nan | nan |     |
+| nan | nan | -   |
+| -   | -   | nan |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Insurance service result (1,295,522) - 1,231,440 (64,082)
+Insurance finance expenses 565,772 - - 565,772
+Total change in comprehensive income (729,750) - 1,231,440 501,690
+Premiums received 611,732 - - 611,732
+Claims and expenses paid - - (1,231,440) (1,231,440)
+Acquisition costs paid (305,577) - - (305,577)
+Total cash flows 306,155 - (1,231,440) (925,285)
+Closing insurance contract assets -
+Closing insurance contract liabilities 3,705,154 - - 3,705,154
+Net closing balance 3,705,154 - - 3,705,154
+18.1a.e Credit Life
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for
+insurance contracts—Credit Life
+Liability for Insuranc
+Liability for Remaining
+Incurred e
+Coverage (LRC)
+Claims Contract
+Reconciliation of carrying amounts by LRC/LIC: Non- Liabilitie
+Onerous LIC
+insurance onerous s (ICL)
+Opening insurance contract assets -
+Opening insurance contract liabilities 1,479 - - 1,479
+Net opening balance 1,479 - - 1,479
+Insurance revenue (3,441) - - (3,441)
+Insurance service expenses - - -
+Incurred claims and other expenses - - 2,849 2,849
+Acquisition expenses 1,608 - - 1,608
+195
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | -   | -   |
+| -   | -   | nan |
+| nan |     |     |
+| nan | -   | -   |
+
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+| nan |     |     |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Changes related to future service - 852 - 852
+Changes related to past service - - - -
+Total Insurance service expenses 1,608 852 2,849 5,309
+Investment components - - - -
+Insurance service result (1,833) 852 2,849 1,868
+Insurance finance expenses 178 - - 178
+Total change in comprehensive income (1,655) 852 2,849 2,046
+Premiums received 1,180 - - 1,180
+Claims and expenses paid - - (2,849) (2,849)
+Acquisition costs paid (1,608) - - (1,608)
+Total cash flows (428) - (2,849) (3,277)
+Closing insurance contract assets -
+Closing insurance contract liabilities (605) 852 - 248
+Net closing balance (605) 852 - 248
+18.1a.f Annuity
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance
+contracts—Annuity
+Liability for
+Liability for Remaining Insurance
+Incurred
+Coverage (LRC) Contract
+Claims
+Liabilities
+Reconciliation of carrying amounts by LRC/LIC:
+Non-onerous Onerous LIC (ICL)
+insurance
+Opening insurance contract assets -
+Opening insurance contract liabilities 31,255,788 - - 31,255,788
+Net opening balance 31,255,788 - - 31,255,788
+196
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | nan |     |
+| nan | nan | -   |
+| -   | -   | nan |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | -   | -   |
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Insurance revenue (4,177,441) - - (4,177,441)
+Insurance service expenses - - -
+Incurred claims and other expenses - (312,774) 4,460,320 4,147,546
+Acquisition expenses - - - -
+Changes related to future service - 2,160,598 - 2,160,598
+Changes related to past service - - - -
+Total Insurance service expenses - 1,847,824 4,460,320 6,308,144
+Investment components - - - -
+Insurance service result (4,177,441) 1,847,824 4,460,320 2,130,704
+Insurance finance expenses 2,205,707 - - 2,205,707
+Total change in comprehensive income (1,971,734) 1,847,824 4,460,320 4,336,411
+Premiums received 52,537 - - 52,537
+Claims and expenses paid - - (4,460,320) (4,460,320)
+Acquisition costs paid - - - -
+Total cash flows 52,537 - (4,460,320) (4,407,783)
+Closing insurance contract assets -
+Closing insurance contract liabilities 29,336,592 1,847,824 - 31,184,415
+Net closing balance 29,336,592 1,847,824 - 31,184,415
+18.2 GMM Business
+197
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+|     | nan | nan |
+| nan | -   | -   |
+| nan |     |     |
+| nan | nan | -   |
+| nan | nan |     |
+| -   | -   | nan |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan | -   | -   |
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Reconciliation of the liability for remaining coverage and the liability for incurred claims for insurance
+contracts—GMM Business
+Liability for
+Liability for Remaining Insurance
+Incurred
+Coverage (LRC) Contract
+Claims
+Liabilities
+Reconciliation of carrying amounts by LRC/LIC:
+Non-onerous Onerous LIC (ICL)
+insurance
+Opening insurance contract assets -
+Opening insurance contract liabilities 39,336,290 - - 39,336,290
+Net opening balance 39,336,290 - - 39,336,290
+Insurance revenue (5,815,299) - - (5,815,299)
+Insurance service expenses - - -
+Incurred claims and other expenses - (401,468) 5,416,915 5,015,447
+Acquisition expenses 632,843 - - 632,843
+Changes related to future service - 2,850,352 - 2,850,352
+Changes related to past service - - - -
+Total Insurance service expenses 632,843 2,448,884 5,416,915 8,498,643
+Investment components (2,139,316) - 2,139,316 -
+Insurance service result (7,321,772) 2,448,884 7,556,232 2,683,344
+Insurance finance expenses 3,165,731 - - 3,165,732
+Total change in comprehensive income (4,156,041) 2,448,884 7,556,232 5,849,075
+Premiums received 3,065,391 - - 3,065,391
+Claims and expenses paid - - (7,556,232) (7,556,232)
+Acquisition costs paid (632,843) - - (632,843)
+Total cash flows 2,432,547 - (7,556,232) (5,123,684)
+198
+
+
+| 0   | 1   |
+|:----|:----|
+| -   | -   |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+|     | nan | nan |
+| -   | nan | nan |
+|     | nan | nan |
+| nan | -   | -   |
+| nan |     |     |
+| nan | nan | -   |
+| nan | nan |     |
+| -   | -   | nan |
+
+
+
+| 0   | 1   | 2   |
+|:----|:----|:----|
+| nan |     |     |
+| nan | -   | -   |
+| -   | -   | nan |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Closing insurance contract assets -
+Closing insurance contract liabilities 37,612,797 2,448,884 - 40,061,681
+Net closing balance 37,612,797 2,448,884 - 40,061,681
+2022
+18.2a Reconciliation of components of insurance contract liabilities – GMM Business
+Estimates of Risk
+present value of Adjustmen CSM Total
+Reconciliation of carrying amounts
+future cashflows t
+by BEL/RA/CSM: insurance
+Opening insurance contract assets -
+Opening insurance contract
+liabilities 37,023,076 1,198,766 1,114,448 39,336,290
+Net opening balance 37,023,076 1,198,766 1,114,448 39,336,290
+Changes related to current
+services
+CSM for service provided 0 0 (301,700) (301,700)
+Risk Adjustment release for
+expired risks 0 (163,256) 0 (163,256)
+Experience adjustments 297,948 - - 297,948
+Total changes related to current
+services 297,948 (163,256) (301,700) (167,008)
+Changes related to future services
+New contracts recognised (172,624) 10,269 162,355 -
+Changes in estimates
+reflected in CSM 85,688 61,934 (147,622) -
+Changes in estimates resulting
+in contract losses 2,713,069 137,283 - 2,850,352
+Total changes related to future
+services 2,626,133 209,486 14,733 2,850,352
+Changes that relate to past service
+Adjustments to liabilities for
+incurred claims - - - -
+199
+
+
+|   0 | 1   | 2   |
+|----:|:----|:----|
+|   0 | nan | 0   |
+| nan | -   | -   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total changes that relate to past
+service 0 0 - -
+Insurance service result (2,924,081) (46,230) 286,967 (2,683,344)
+Insurance finance expenses 3,010,262 - 155,470 3,165,731
+Total change in comprehensive
+income (5,934,343) (46,230) 131,497 (5,849,075)
+Total cash flows (5,123,684) - - (5,123,684)
+Closing insurance contract assets -
+Closing insurance contract
+liabilities 37,833,734 1,244,996 982,951 40,061,680
+Net closing balance 37,833,734 1,244,996 982,951 40,061,680
+Expected release of Contractual Protecti Investment
+Service Margin Annuity on Linked Credit Life Total
+Year 1 185,490 416 301,700
+Year 2 0 27,886 178,255 54 324,744
+Year 3 0 3,016 121,330 0 231,816
+Year 4 0 6,960 90,752 0 131,432
+Year 5 0 3,807 74,918 0 110,438
+Year 6 0 1,920 51,255 0 157,547
+Year 7 0 6,661 23,433 0 118,250
+Year 8 0 1,729 15,806 0 44,792
+Year 9 0 2,666 11,524 0 42,187
+Year 10 0 1,308 8,053 0 109,909
+Above Year 10 0 24,405 23,220 0 534,644
+Total CSM 0 137,696 784,035 471 2,107,459
+Protecti Investment
+Annuity on Linked Credit Life Total
+200
+
+
+| 0   | 1   |
+|:----|:----|
+|     |     |
+| -   | -   |
+
+
+
+| 0   | 1                                              |   2 |   3 |   4 |   5 | 6       | 7           | 8                 | 9           | 10        |
+|:----|:-----------------------------------------------|----:|----:|----:|----:|:--------|:------------|:------------------|:------------|:----------|
+|     | Expected release of Contractual Service Margin | nan | nan | nan | nan | Annuity | Protecti on | Investment Linked | Credit Life | Total     |
+|     | Year 1                                         |     |     |     |     |         |             | 185,490           | 416         | 301,700   |
+|     | Year 2                                         |     |     |     |     | 0       | 27,886      | 178,255           | 54          | 324,744   |
+|     | Year 3                                         |     |     |     |     | 0       | 3,016       | 121,330           | 0           | 231,816   |
+|     | Year 4                                         |     |     |     |     | 0       | 6,960       | 90,752            | 0           | 131,432   |
+|     | Year 5                                         |     |     |     |     | 0       | 3,807       | 74,918            | 0           | 110,438   |
+|     | Year 6                                         |     |     |     |     | 0       | 1,920       | 51,255            | 0           | 157,547   |
+|     | Year 7                                         |     |     |     |     | 0       | 6,661       | 23,433            | 0           | 118,250   |
+|     | Year 8                                         |     |     |     |     | 0       | 1,729       | 15,806            | 0           | 44,792    |
+|     | Year 9                                         |     |     |     |     | 0       | 2,666       | 11,524            | 0           | 42,187    |
+|     | Year 10                                        |     |     |     |     | 0       | 1,308       | 8,053             | 0           | 109,909   |
+|     | Above Year 10                                  | nan |     |     |     | 0       | 24,405      | 23,220            | 0           | 534,644   |
+|     | Total CSM                                      | nan |     |     |     | 0       | 137,696     | 784,035           | 471         | 2,107,459 |
+
+
+
+| 0   | 1   | 2   | 3   | 4   | 5       | 6           | 7                 | 8           | 9     |
+|:----|:----|:----|:----|:----|:--------|:------------|:------------------|:------------|:------|
+|     |     |     |     |     | Annuity | Protecti on | Investment Linked | Credit Life | Total |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Estimates of future cash
+inflows 20,976 1,491 189,519 - 900,743
+Estimates of future cash
+outflows -
+- Claims 15,064 702 2,335 - 417,359
+- Directly
+attributable
+expenses 4,465 379 118,736 - 184,899
+- Acquisition cash
+flows 917 53 6,627 - 125,862
+20,447 1,135 127,696 - 728,119
+Risk adjustment for non-
+financial risk 203 20 3,480 - 10,268
+Contractual service margin 326 337 58,342,670 - 162,355
+Total insurance contract liabilities at
+Inception - - - - -
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 December 2023
+19 Investment contract liabilities
+The investment contract liabilities comprise interest-linked guaranteed investment funds.
+The movement in the investment contract liabilities is shown below:
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+At 1 January 4,089,863 3,396,155 4,089,863 3,396,155
+Deposits received during the year 724,374 654,546 724,374 654,546
+Deposits Admin. No longer required 3,313,220 (3,313,220) - (3,313,220)
+(55,411)
+Withdrawals during the year (1,986,647) (55,411) (1,986,647)
+Guaranteed interest in the year 91,545 94,573 91,545 94,573
+At 31 December 6,232,355 776,643 2,919,134 776,643
+Non-current 6,232,355 776,643 2,919,134 776,643
+Investment contract liabilities consist of group deposit administered funds and account balance of policy holders under
+investment linked insurance funds. Movement in the relevant funds are detailed below
+Group Company
+19.1 Liabilities on administered deposits Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+At 1 January 103,948 114,191 103,948 114,191
+Deposits received during the year - 728 3,810 728
+Deposit Adm. No longer required - -
+Withdrawals during the year - (12,000) 8,537 (12,000)
+201
+
+
+| 0                                                 | 1                                |   2 |   3 |   4 | 5      | 6     | 7          | 8   | 9       |
+|:--------------------------------------------------|:---------------------------------|----:|----:|----:|:-------|:------|:-----------|:----|:--------|
+|                                                   |                                  |     |     |     |        |       |            |     |         |
+| Estimates of future cash inflows                  | nan                              | nan |     | nan | 20,976 | 1,491 | 189,519    | -   | 900,743 |
+| Estimates of future cash outflows                 | nan                              | nan |     | nan |        |       |            |     | -       |
+| nan                                               | nan                              | nan | nan | nan |        |       |            |     | nan     |
+|                                                   | - Claims                         |     |     |     | 15,064 | 702   | 2,335      | -   | 417,359 |
+|                                                   | - Directly attributable expenses | nan |     | nan |        |       |            |     |         |
+| nan                                               | nan                              | nan | nan | nan | 4,465  | 379   | 118,736    | -   | 184,899 |
+|                                                   | - Acquisition cash flows         | nan |     | nan | 917    | 53    | 6,627      | -   | 125,862 |
+|                                                   |                                  |     |     |     | 20,447 | 1,135 | 127,696    | -   | 728,119 |
+|                                                   |                                  |     |     |     |        |       |            |     |         |
+| Risk adjustment for non- financial risk           | nan                              | nan |     | nan | 203    | 20    | 3,480      | -   | 10,268  |
+| Contractual service margin                        | nan                              | nan |     |     | 326    | 337   | 58,342,670 | -   | 162,355 |
+| Total insurance contract liabilities at Inception | nan                              | nan | nan | nan | -      | -     | -          | -   | -       |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Guaranteed interest in the year - 1,029 - 1,029
+At 31 December 103,948 103,948 116,294 103,948
+19.2 Investment linked fund
+At 1 January 3,985,915 3,281,964 3,985,915 3,281,964
+Deposits received during the year 720,564 653,818 720,564 653,818
+Withdrawals during the year (1,986,647) (43,411) (1,986,647) (43,411)
+Guaranteed interest in the year 83,008 93,544 83,008 93,544
+At 31 December 2,802,840 3,985,915 2,802,840 3,985,915
+19.3 In 2015, the Pension Transitional Arrangement Directorate (PTAD) transferred Legacy Funds and Assets for certain
+schemes to the Entity under the deposit Administration. A reconciliation was done by both parties to agree the total liability
+of N2,476,599,743.16 on 10 May 2021 and the total outstanding balance was paid into the Directorate’s E-Recovery
+Account on 30th June 2021.
+The excess of the amount carried in the books and the reconciled outstanding balance resulted in the recognition of the
+balance no longer required upon the certificate of non-indebtedness issued by PTAD on the 30th July 2021.
+202
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+20 Trade payable N’000 N’000 N’000 N’000
+Unallocated premium deposits 1,537,534 533,466 1,537,534 533,466
+Due to co-insurance - 3,929 - 3,929
+Due To/from Reinsurance 112,117 62,943 112,117 62,943
+Trade creditors 173,854 238,586 336 65,069
+1,823,505 838,925 1,649,987 665,407
+Current 1,823,505 838,925 1,649,987 665,407
+20i Unallocated premium deposits
+At 1 January 533,466 709,893 533,466 709,892
+Movement during the year 1,004,068 (176,427) 1,004,068 (176,426)
+At 31 December 1,537,534 533,466 1,537,534 533,466
+20ii The amount represent premium deposits for which policy holders are yet to be identified due to inadequate information.
+The Company has already set up a committee to review it and make recommendations to management. Please see
+below the age analysis of the payables
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+S/N Age of Unallocated Premium Deposit N’000 N’000 N’000 N’000
+1 0 - 90 days - - - -
+2 91- 180 days - - - -
+3 181-270 days - - - -
+4 271 -365 days 1,537,534 533,466 1,537,534 533,466
+5 366 days and above - - - -
+1,537,534 533,466 1,537,534 533,466
+20iii Trade Creditors
+Joramco - 40,162 - -
+Jordan Air motive - 198,088 - -
+Due to Frenchies suppliers 336 336 336 336
+336 238,586 336 336
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+21 Other payables and accruals N’000 N’000 N’000 N’000
+Agent savings (note 21i) - - - -
+PAYE and other withholding taxes payable 169,571 165,437 169,571 165,437
+Provisions and accruals 123,771 114,278 123,771 112,450
+Rent payable 23,131 123,197 23,131 123,196
+Other creditors (note 21ii) 154,878 337,165 154,878 284,713
+140,199 12,601 140,199 -
+Current (Payable within the period) 743,164 732,289 611,549 600,675
+203
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Agents savings relates to the contributions or savings deducted from the entity’s agent earnings which serves as security
+21(i) deposit against any loan granted to the agent.
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+22 Retirement benefit asset - - - -
+22i Retirement benefit liabilities
+Staff pension scheme 47,346 92,107 113,310
+Staff defined benefit plan - - -
+Contributory Pension Scheme
+The company and its employees makes joint contribution of 10% and 8% respectively of the basic salary, housing
+and transport allowance to each employee’s retirement savings account maintained with their nominated pension
+fund administrators.
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+23 Borrowings N’000 N’000 N’000 N’000
+Secured -at amortised cost
+- -
+Overdraft Facility 23,921 23,921 - 22,444
+Term Loan (i) 110,690 110,690 - -
+134,611 134,611 - 22,444
+(i) The Group through its subsidiary-Ghana Life Assurance Limited has an overdraft facility of GHC700,000 with Zenith Bank to
+finance early redemption of maturing obligations and other operating expenses. Interest rate is at 21% per annum.
+(ii) Term loan represents a cash backed loan facility of N80million granted by First bank, the facility has a tenor of 24 months at an
+interest rate of 5%.
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+(iii) Movement in overdraft facility N’000 N’000 N’000 N’000
+On 1 January 23,921 23,921 - -
+Additions - - - -
+Interest expense - - - -
+Repayment - - - -
+On 31 December 23,921 23,921 - -
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+Movement in Term Loan N’000 N’000 N’000 N’000
+On 1 January 110,690 142,280 22,444 54,034
+Additions - - - -
+Interest expense 10,534 - 10,534
+Repayment - - - -
+(110,690) (42,124) (22,444) (42,124)
+On 31 December - 110,690 - 22,444
+204
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+24 Tax payable N’000 N’000 N’000 N’000
+Company income tax payable:
+At 1 January 591,045 615,741 558,186 582,882
+Charge to profit and loss 5,304
+3,678 5,304 3,678
+- - - -
+Tax paid in the year - -
+- (30,000) - (30,000)
+At 31 December
+594,723 591,045 561,864 558,186
+Current
+594,723 591,045 561,864 558,186
+205
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+24aa Statement of Profit or Loss
+Statement of profit or Investment Credit
+A loss Annuity Protection Linked Group Life Life Endowment Investment Total
+Insurance
+A.1 revenue 3,676,394 (3,409) 47,305 2,634,768 277 733,834 - 7,089,169
+Insurance service
+A.2 expense (7,113,785) (470,431) (2,441,041) (1,951,742) - (4,001,687) - (15,978,687)
+Net income or expense from
+A.3 reinsurance contracts held - - - (145,471) - - - (145,471)
+Insurance service result (3,437,391) (473,840) (2,393,736) 537,555 277 (3,267,853) - (9,034,989)
+Investment
+A.4 income 2,542,771 3,256 166,144 217,157 - 556,113 340,084 3,825,525
+Insurance finance
+A.5 expenses 3,871,069 (9,526) (472,453) - (29) (380,982) - 3,008,078
+Reinsurance finance
+A.6 income - - - - - - - -
+Financial insurance
+result 6,413,840 (6,270) (306,309) 217,157 (29) 175,131 340,084 6,833,603
+Other expenses (102,091) (20,831) (288,529) (396,723) - (146,897) (140,894) (1,095,964)
+Profit before tax 2,874,358 (500,941) (2,988,574) 357,989 248 (3,239,619) 199,190 (3,297,350)
+Income tax (3,081) - - (384) (0) - (214) (3,678)
+Profit for the
+year 2,871,277 (500,941) (2,988,574) 357,605 247 (3,239,619) 198,976 (3,301,028)
+206
+
+
+| 0              | 1         | 2        | 3         | 4         | 5   | 6         | 7         | 8           |
+|:---------------|:----------|:---------|:----------|:----------|:----|:----------|:----------|:------------|
+|                |           |          |           |           |     |           |           |             |
+| Other expenses | (102,091) | (20,831) | (288,529) | (396,723) | -   | (146,897) | (140,894) | (1,095,964) |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Statement of other
+B comprehensive income
+Statement of other Investment Credit
+comprehensive income Annuity Protection Linked Group Life Life Endowment Investment Total
+Change in fair value of financial
+B.1 assets - - - - - - - -
+Amount reclassified to profit or
+B.2 loss - - - - - - - -
+Debt instruments at fair value
+through other comprehensive
+B.3 income - - - - - - - -
+Insurance finance
+B.4 expenses - - - - - - - -
+Reinsurance finance
+B.5 income - - - - - - - -
+Net insurance financial
+B.6 result - - - - - - - -
+Total gross comprehensive
+B.7 income - - - - - - - -
+Statement of financial
+C position
+207
+
+
+| 0                                 | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+|:----------------------------------|:----|:----|:----|:----|:----|:----|:----|:----|
+| Change in fair value of financial |     |     |     |     |     |     |     |     |
+| assets                            | -   | -   | -   | -   | -   | -   | -   | -   |
+| Amount reclassified to profit or  | -   | -   | -   | -   | -   | -   | -   | -   |
+| loss                              | nan | nan | nan | nan | nan | nan | nan | nan |
+
+
+
+| 0                   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+|:--------------------|:----|:----|:----|:----|:----|:----|:----|:----|
+| Insurance finance   |     |     |     |     |     |     |     |     |
+| expenses            | -   | -   | -   | -   | -   | -   | -   | -   |
+| Reinsurance finance | -   | -   | -   | -   | -   | -   | -   | -   |
+| income              | nan | nan | nan | nan | nan | nan | nan | nan |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Investment Credit
+Statement of financial position Annuity Protection Linked Group Life Life Endowment Investment Total
+Cash and cash
+C.1 equivalents 505,903 651 56,782 23,399 0 139,712 12,911 739,360
+C.2 Financial Assets 22,742,773 29,275 2,552,646 1,051,919 4 6,280,751 580,421 33,237,789
+Investment in
+C.3 subsidiaries 71,845 92 8,064 3,323 0 19,841 1,834 105,000
+Reinsurance contract
+C.4 assets - - - 135,120 - - - 135,120
+C.5 Investment Properties 8,713,169 11,216 977,965 403,010 2 2,406,270 222,370 12,734,000
+C.6 Intangible Assets 107,247 138 12,037 4,960 0 29,618 2,737 156,738
+C.7 Property and equipment 468,494 603 52,584 21,669 0 129,382 11,956 684,688
+C.8 Other receivable 447,309 576 50,206 20,689 0 123,531 11,416 653,727
+Trade
+C.9 Receivables - - - - - - - -
+Statutory
+C.10 deposit 136,849 176 15,360 6,330 0 37,793 3,493 200,000
+Deferred tax
+C.11 assets 100,225 129 11,249 4,636 0 27,679 2,558 146,476
+C.12 Total assets 33,293,814 42,857 3,736,893 1,675,056 6 9,194,576 849,695 48,792,897
+Current tax
+C.13 liabilities 396,673 1,531 40,257 22,158 17 86,367 14,862 561,865
+208
+
+
+| 0                      | 1          | 2      | 3         | 4         | 5   | 6         | 7       | 8          |
+|:-----------------------|:-----------|:-------|:----------|:----------|:----|:----------|:--------|:-----------|
+| Cash and cash          |            |        |           |           |     |           |         |            |
+| equivalents            | 505,903    | 651    | 56,782    | 23,399    | 0   | 139,712   | 12,911  | 739,360    |
+|                        |            |        |           |           |     |           |         |            |
+| Financial Assets       | 22,742,773 | 29,275 | 2,552,646 | 1,051,919 | 4   | 6,280,751 | 580,421 | 33,237,789 |
+| Investment in          | 71,845     | 92     | 8,064     | 3,323     | 0   | 19,841    | 1,834   | 105,000    |
+| subsidiaries           | nan        | nan    | nan       | nan       | nan | nan       | nan     | nan        |
+| Reinsurance contract   | -          | -      | -         | 135,120   | -   | -         | -       | 135,120    |
+| assets                 | nan        | nan    | nan       | nan       | nan | nan       | nan     | nan        |
+|                        |            |        |           |           |     |           |         |            |
+| Investment Properties  | 8,713,169  | 11,216 | 977,965   | 403,010   | 2   | 2,406,270 | 222,370 | 12,734,000 |
+|                        |            |        |           |           |     |           |         |            |
+| Intangible Assets      | 107,247    | 138    | 12,037    | 4,960     | 0   | 29,618    | 2,737   | 156,738    |
+|                        |            |        |           |           |     |           |         |            |
+| Property and equipment | 468,494    | 603    | 52,584    | 21,669    | 0   | 129,382   | 11,956  | 684,688    |
+|                        |            |        |           |           |     |           |         |            |
+| Other receivable       | 447,309    | 576    | 50,206    | 20,689    | 0   | 123,531   | 11,416  | 653,727    |
+| Trade                  | -          | -      | -         | -         | -   | -         | -       | -          |
+| Receivables            | nan        | nan    | nan       | nan       | nan | nan       | nan     | nan        |
+| Statutory              | 136,849    | 176    | 15,360    | 6,330     | 0   | 37,793    | 3,493   | 200,000    |
+| deposit                | nan        | nan    | nan       | nan       | nan | nan       | nan     | nan        |
+| Deferred tax           | 100,225    | 129    | 11,249    | 4,636     | 0   | 27,679    | 2,558   | 146,476    |
+| assets                 | nan        | nan    | nan       | nan       | nan | nan       | nan     | nan        |
+
+
+
+| 0           |       1 |     2 |      3 |      4 |   5 |      6 |      7 |       8 |
+|:------------|--------:|------:|-------:|-------:|----:|-------:|-------:|--------:|
+| Current tax |         |       |        |        |     |        |        |         |
+| liabilities | 396,673 | 1,531 | 40,257 | 22,158 |  17 | 86,367 | 14,862 | 561,865 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Investment contract
+C.14 liabilities - - - - - - 2,919,135 2,919,135
+Insurance contract
+C.15 liabilities 26,593,494 194,601 4,496,474 1,968,357 (0) 7,070,793 - 40,323,718
+Reinsurance contract
+C.16 liabilities - - - - - - - -
+C.17 Trade Payables 1,123,493 1,379 73,409 95,948 - 245,712 110,046 1,649,987
+C.18 Other payables 416,411 511 27,208 35,562 - 91,070 40,787 611,550
+Employees benefit
+C.19 obligations 62,717 77 4,098 5,356 - 13,716 6,143 92,107
+C.20 Deferred tax liabilities 382,583 470 24,998 32,673 - 83,672 37,474 561,869
+C.21 Total liabilities 28,975,370 198,568 4,666,443 2,160,054 17 7,591,331 3,128,448 46,720,232
+C.22 Share capital 7,324,576 12,879 757,715 399,836 290 1,610,603 186,602 10,292,500
+C.23 Share Premium 10,222,833 17,975 1,057,534 558,047 405 2,247,901 260,438 14,365,133
+Contingency
+C.24 Reserve 1,411,811 2,482 146,049 77,068 56 310,443 35,967 1,983,877
+Asset Revaluation
+C.25 reserve - - - - - - - -
+Retained
+C.26 earnings (23,820,680) (584,208) (6,121,865) (1,644,878) 1 (7,293,775) (501,822) (39,967,227)
+Fair value
+C.27 reserve 10,958,137 19,267 1,133,600 598,186 434 2,409,587 279,170 15,398,382
+(1,196
+C.28 Other reserves (1,778,234) 375,894 2,097,417 (473,259) ) 2,318,486 (2,539,108) -
+C.29 Total equity 4,318,443 (155,711) (929,550) (484,998) (11) 1,603,245 (2,278,752) 2,072,666
+209
+
+
+| 0                        | 1          | 2       | 3         | 4         | 5   | 6         | 7         | 8          |
+|:-------------------------|:-----------|:--------|:----------|:----------|:----|:----------|:----------|:-----------|
+| Investment contract      |            |         |           |           |     |           |           |            |
+| liabilities              | -          | -       | -         | -         | -   | -         | 2,919,135 | 2,919,135  |
+| Insurance contract       | 26,593,494 | 194,601 | 4,496,474 | 1,968,357 | (0) | 7,070,793 | -         | 40,323,718 |
+| liabilities              | nan        | nan     | nan       | nan       | nan | nan       | nan       | nan        |
+| Reinsurance contract     | -          | -       | -         | -         | -   | -         | -         | -          |
+| liabilities              | nan        | nan     | nan       | nan       | nan | nan       | nan       | nan        |
+|                          |            |         |           |           |     |           |           |            |
+| Trade Payables           | 1,123,493  | 1,379   | 73,409    | 95,948    | -   | 245,712   | 110,046   | 1,649,987  |
+|                          |            |         |           |           |     |           |           |            |
+| Other payables           | 416,411    | 511     | 27,208    | 35,562    | -   | 91,070    | 40,787    | 611,550    |
+| Employees benefit        | 62,717     | 77      | 4,098     | 5,356     | -   | 13,716    | 6,143     | 92,107     |
+| obligations              | nan        | nan     | nan       | nan       | nan | nan       | nan       | nan        |
+|                          |            |         |           |           |     |           |           |            |
+| Deferred tax liabilities | 382,583    | 470     | 24,998    | 32,673    | -   | 83,672    | 37,474    | 561,869    |
+
+
+
+| 0                 | 1            | 2         | 3           | 4           | 5      | 6           | 7           | 8            |
+|:------------------|:-------------|:----------|:------------|:------------|:-------|:------------|:------------|:-------------|
+|                   |              |           |             |             |        |             |             |              |
+| Share capital     | 7,324,576    | 12,879    | 757,715     | 399,836     | 290    | 1,610,603   | 186,602     | 10,292,500   |
+|                   |              |           |             |             |        |             |             |              |
+| Share Premium     | 10,222,833   | 17,975    | 1,057,534   | 558,047     | 405    | 2,247,901   | 260,438     | 14,365,133   |
+| Contingency       | 1,411,811    | 2,482     | 146,049     | 77,068      | 56     | 310,443     | 35,967      | 1,983,877    |
+| Reserve           | nan          | nan       | nan         | nan         | nan    | nan         | nan         | nan          |
+| Asset Revaluation | -            | -         | -           | -           | -      | -           | -           | -            |
+| reserve           | nan          | nan       | nan         | nan         | nan    | nan         | nan         | nan          |
+| Retained          | (23,820,680) | (584,208) | (6,121,865) | (1,644,878) | 1      | (7,293,775) | (501,822)   | (39,967,227) |
+| earnings          | nan          | nan       | nan         | nan         | nan    | nan         | nan         | nan          |
+| Fair value        | 10,958,137   | 19,267    | 1,133,600   | 598,186     | 434    | 2,409,587   | 279,170     | 15,398,382   |
+| reserve           | nan          | nan       | nan         | nan         | nan    | nan         | nan         | nan          |
+|                   |              |           |             |             |        |             |             |              |
+|                   |              |           |             |             | (1,196 |             |             |              |
+| Other reserves    | (1,778,234)  | 375,894   | 2,097,417   | (473,259)   | )      | 2,318,486   | (2,539,108) | -            |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total liabilities and
+C.30 equity 33,293,814 42,857 3,736,893 1,675,056 6 9,194,576 849,695 48,792,897
+210
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+25 Deferred tax liability N’000 N’000 N’000 N’000
+The analysis of deferred tax liabilities is as follows:
+Deferred tax liability to be incurred within 12
+months
+Deferred tax liability to be incurred after more than
+12months 204,005 204,005 92,107 92,107
+204,005 204,005 92,107 92,107
+The movement on the deferred tax liabilities account is as follows:
+25a At 1 January 204,005 204,005 92,107 92,107
+Foreign exchange difference arising from -
+translation - - -
+-
+469,762 - 469,762
+Income statement charge - - - -
+- -
+At 31 December 673,767 204,005 561,869 92,107
+Non- current 673,767 204,005 561,869 92,107
+25b Deferred tax asset
+The movement on the deferred tax asset account is as follows:
+At 1 January 147,690 147,690 146,476 146,476
+Exchange difference adjustment
+Foreign exchange difference arising from
+translation
+Income statement charge -
+At 31 December 147,690 147,690 146,476 146,476
+Non- current 147,690 147,690 146,476 146,476
+211
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+26 Share capital Actual Actual Actual Actual
+Ordinary Shares 31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+Number Number Number Number
+26a Authorised share capital ('000) 30,000,000 30,000,000 30,000,000 30,000,000
+Paid up share capital of 20.585 billion ordinary
+26b shares of 50 kobo each 10,292,500 10,292,500 10,292,500 10,292,500
+Paid up/(Cancelled) during the year
+At 31 December 10,292,500 10,292,500 10,292,500 10,292,500
+Number of shares 31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+Shares at the beginning of the year('000) 20,585,000 20,585,000 20,585,000 20,585,000
+Paid up/(Cancelled) during the year ('000):
+At 31 December 20,585,000 20,585,000 20,585,000 20,585,000
+212
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+26c Share premium N’000 N’000 N’000 N’000
+At 1 January 14,365,133 14,365,133 14,365,133 14,365,133
+Share Premium cancellation
+Capital Restructuring account - -
+At 31 December 14,365,133 14,365,133 14,365,133 14,365,133
+27 Contingency reserves
+At 1 January 1,971,330 1,903,181 1,922,694 1,854,545
+Transfer from retained earnings 61,183 68,149 61,183 68,149
+At 31 December 2,032,513 1,971,330 1,983,879 1,922,694
+In accordance with the insurance act, a contingency reserve is credited with the greater of 1% of total premiums or 10%
+of net profit. This shall accumulate until it reaches the amount of greater of minimum paid-up capital or 50 percent of
+net premium
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+28 Retained earnings N’000 N’000 N’000 N’000
+(32,421,386)
+At 1 January (37,186,795) (34,276,923) (36,605,015)
+(68,149)
+Transfer to contingency reserves (61,183) (68,149) (61,183)
+(4,971,811)
+Profit/(Loss) for the period (3,301,028) (2,901,108) (3,301,028)
+-
+Non-controlling interest 358,171 59,385 852,331 -
+At 31 December (40,549,007) (37,186,795) (39,967,227) (36,605,015)
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+29 Fair value reserves N’000 N’000 N’000 N’000
+At 1 January 16,131,871 2,625,241 15,398,382 1,616,522
+Gain/(Derecognition) on revaluation on land and
+building - 20,331 - 20,331
+Change in value of FVOCI financial assets (net
+of taxes) - 13,761,529 - 13,761,529
+Additional reserve on repurchase of PAL
+Pension Limited - -
+- -
+- (275,230)
+At 31 December 16,131,871 16,131,871 15,398,382 15,398,382
+213
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-22 31-Dec-22
+29a Fair value changes-statement of comprehensive N’000 N’000 N’000 N’000
+income
+Gain/(Derecognition) on revaluation on land and
+building - 20,331 - 20,331
+Change in value of available for sale financial assets
+(net of taxes) - 13,761,529 - 13,761,529
+Additional reserve on repurchase of PAL Pension - -
+Limited
+- - - -
+- 13,781,860 - 13,781,860
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+30 Insurance Revenue N’000 N’000 N’000 N’000
+Individual life 277 3,441 277 3,441
+Group life 2,634,768 2,303,089 2,634,768 2,303,089
+Annuity 3,676,394 4,177,441 3,676,394 4,177,441
+Protection 3,409 89,438 3,409 89,438
+Investment linked. 47,305 911,093 47,305 911,093
+Takaful 0 0 0 0
+Endowment (Esusu) 733,834 633,887 733,834 633,887
+Esusu 0 0 0 0
+Insurance Revenue 7,089,169 8,118,389 7,089,169 8,118,389
+214
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+2023
+Insurance Revenue
+Insurance Investment Credit Investm
+revenue Annuity Protection Linked Group Life Life Endowment ent Total
+Amounts relating to changes in
+LFRC
+Expected benefits
+incurred 4,180,165 4,147 47,043 2,623,956 166 236,332 - 7,091,810
+Expected expenses
+incurred 158,250 4,056 379,269 - 36 229,621 - 771,231
+Loss Component:
+systematic allocation (821,038) (36,546) (493,527) - - (454,221) - (1,805,331)
+Change in the risk
+adjustment 159,016 153 3,321 10,812 4 13,104 - 186,409
+CSM recognised - 23,602 104,326 - 72 135,776 - 263,776
+Recovery of acquisition cash
+flows - 1,180 6,874 - - 573,221 - 581,275
+Contracts not measured
+under PAA 3,676,394 (3,409) 47,305 277 733,834 - 7,089,169
+Contracts measured under
+PAA 2,634,768
+215
+
+
+| 0                                   | 1                     |   2 |   3 |   4 | 5         | 6         | 7          | 8                 | 9          | 10          | 11        | 12          | 13          |
+|:------------------------------------|:----------------------|----:|----:|----:|:----------|:----------|:-----------|:------------------|:-----------|:------------|:----------|:------------|:------------|
+| Insurance revenue                   | nan                   |     |     |     | nan       | Annuity   | Protection | Investment Linked | Group Life | Credit Life | Endowment | Investm ent | Total       |
+|                                     |                       |     |     |     | nan       |           |            |                   |            |             |           |             |             |
+| Amounts relating to changes in LFRC | nan                   | nan | nan |     | nan       |           |            |                   |            |             |           |             |             |
+|                                     | Expected benefits     | nan | nan |     | nan       | 4,180,165 | 4,147      | 47,043            | 2,623,956  | 166         | 236,332   | -           | 7,091,810   |
+|                                     | incurred              | nan | nan |     | nan       | nan       | nan        | nan               | nan        | nan         | nan       | nan         | nan         |
+|                                     | Expected expenses     | nan | nan |     | nan       | 158,250   | 4,056      | 379,269           | -          | 36          | 229,621   | -           | 771,231     |
+|                                     | incurred              | nan | nan |     | nan       | nan       | nan        | nan               | nan        | nan         | nan       | nan         | nan         |
+|                                     | Loss Component:       | nan | nan | nan | (821,038) | nan       | (36,546)   | (493,527)         | -          | -           | (454,221) | -           | (1,805,331) |
+|                                     | systematic allocation | nan | nan | nan | nan       | nan       | nan        | nan               | nan        | nan         | nan       | nan         | nan         |
+|                                     | Change in the risk    | nan | nan |     | nan       | 159,016   | 153        | 3,321             | 10,812     | 4           | 13,104    | -           | 186,409     |
+|                                     | adjustment            | nan | nan |     | nan       | nan       | nan        | nan               | nan        | nan         | nan       | nan         | nan         |
+|                                     | CSM recognised        | nan |     |     | nan       | -         | 23,602     | 104,326           | -          | 72          | 135,776   | -           | 263,776     |
+|                                     | nan                   | nan |     |     | nan       | nan       | nan        | nan               | nan        | nan         | nan       | nan         | nan         |
+| Recovery of acquisition cash        | nan                   | nan | nan |     | nan       |           |            |                   |            |             |           |             |             |
+| flows                               | nan                   | nan | nan |     | nan       | -         | 1,180      | 6,874             | -          | -           | 573,221   | -           | 581,275     |
+| Contracts not measured under PAA    | nan                   | nan | nan |     | nan       | 3,676,394 | (3,409)    | 47,305            |            | 277         | 733,834   | -           | 7,089,169   |
+| Contracts measured under PAA        | nan                   | nan | nan |     | nan       |           |            |                   | 2,634,768  |             |           |             |             |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total insurance
+revenue 3,676,394 (3,409) 47,305 2,634,768 277 733,834 - 7,089,169
+2023
+30b
+Insurance service
+expense
+Cre
+Insurance service Investment dit Investm
+expense Annuity Protection Linked Group Life Life Endowment ent Total
+Incurred
+A claims (3,984,749) (28,470) - (1,012,758) - - - (5,025,977)
+Incurred Fulfilment
+B expenses (206,964) (42,229) (584,923) (804,262) - (297,798) - (1,936,176)
+Amortisation of insurance
+C acquisition cash flows - (1,180) (6,874) (758,189) - (573,221) - (1,339,464)
+Changes in BEL related
+D to LIC - (168,203) (1,009,302) 623,466 - (490,979) - (1,045,019)
+Loss Component: systematic
+E allocation 821,038 36,546 493,527 - - 454,221 - 1,805,332
+Loss Component: losses and
+F reversal of losses (3,743,110) (266,895) (1,333,469) - - (3,093,910) - (8,437,384)
+Total insurance service
+G expense (7,113,785) (470,431) (2,441,041) (1,951,742) - (4,001,687) - (15,978,687
+Net income or expense from reinsurance
+contract held
+216
+
+
+| 0                       |   1 |   2 | 3   | 4   |         5 | 6       |      7 |         8 |   9 |      10 | 11   |        12 |
+|:------------------------|----:|----:|:----|:----|----------:|:--------|-------:|----------:|----:|--------:|:-----|----------:|
+| Total insurance revenue | nan | nan |     |     | 3,676,394 | (3,409) | 47,305 | 2,634,768 | 277 | 733,834 | -    | 7,089,169 |
+|                         |     |     |     |     |           |         |        |           |     |         |      |           |
+
+
+
+| 0   | 1                                                |   2 |   3 |   4 | 5           | 6           | 7          | 8                 | 9           | 10           | 11          | 12          | 13          |
+|:----|:-------------------------------------------------|----:|----:|----:|:------------|:------------|:-----------|:------------------|:------------|:-------------|:------------|:------------|:------------|
+|     | Insurance service expense                        | nan |     |     | nan         | Annuity     | Protection | Investment Linked | Group Life  | Cre dit Life | Endowment   | Investm ent | nan         |
+| A   | Incurred claims                                  |     |     |     | nan         | (3,984,749) | (28,470)   | -                 | (1,012,758) | -            | -           | -           | (5,025,977) |
+| B   | Incurred Fulfilment expenses                     | nan |     |     | nan         | (206,964)   | (42,229)   | (584,923)         | (804,262)   | -            | (297,798)   | -           | (1,936,176) |
+| C   | Amortisation of insurance acquisition cash flows | nan | nan | nan | -           | nan         | (1,180)    | (6,874)           | (758,189)   | -            | (573,221)   | -           | (1,339,464) |
+| D   | Changes in BEL related to LIC                    | nan |     |     | nan         | -           | (168,203)  | (1,009,302)       | 623,466     | -            | (490,979)   | -           | (1,045,019) |
+| E   | Loss Component: systematic allocation            | nan | nan |     | nan         |             |            |                   |             |              |             |             |             |
+| nan | nan                                              | nan | nan | nan | nan         | 821,038     | 36,546     | 493,527           | -           | -            | 454,221     | -           | 1,805,332   |
+| F   | Loss Component: losses and reversal of losses    | nan | nan | nan | (3,743,110) | nan         | (266,895)  | (1,333,469)       | -           | -            | (3,093,910) | -           | (8,437,384) |
+| G   | Total insurance service expense                  | nan | nan |     | nan         | (7,113,785) | (470,431)  | (2,441,041)       | (1,951,742) | -            | (4,001,687) | -           | nan         |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Cre
+Net income or expense from Investment dit Investm
+reinsurance contracts held Annuity Protection Linked Group Life Life Endowment ent Total
+Expected recovery for
+H claims - - - (151,834) - - - (151,834
+Reinsurance RA
+I allocation - - - (500) - - - (500
+Allocation of reinsurer
+J Insurance Revenue - - - (152,334) - - - (152,333
+Amounts recoverable for
+K claims - - - 31,849 - - - 31,84
+changes in BEL related to
+L reinsurance LIC - - - (24,987) - - - (24,986)
+Amounts recoverable from
+reinsurer - - - 6,863 - - - 6,863
+Net income or expense from
+M reinsurance contracts held - - - (145,471) - - - (145,471)
+Insurance finance expenses
+Cre
+Net finance expenses from Investment dit Investm
+insurance contracts Annuity Protection Linked Group Life Life Endowment ent Total
+Unwind of discount on
+N FCFs: LRC (3,631,707) (4,782) (396,502) - (24) (546,062) - (4,579,077)
+Effect of change in
+economic assumptions:
+O LRC (3,292,551) (858) (40,177) - - (45,025) - (3,378,611)
+Interest accretion on
+P CSM (0) (5,946) (51,487) - (6) (68,566) - (126,005)
+Effect of change in
+Discount rate
+Q assumptions: LRC 10,795,327 2,059 15,713 - - 278,671 - 11,091,770
+Total Net finance expenses
+R from insurance contracts 3,871,069 (9,526) (472,453) - (29) (380,982) - 3,008,078
+217
+
+
+| 0   | 1                                                     | 2                                         |   3 | 4       | 5   | 6          | 7                 | 8          | 9            | 10        | 11          | 12       |
+|:----|:------------------------------------------------------|:------------------------------------------|----:|:--------|:----|:-----------|:------------------|:-----------|:-------------|:----------|:------------|:---------|
+|     | Net income or expense from reinsurance contracts held | nan                                       | nan | Annuity | nan | Protection | Investment Linked | Group Life | Cre dit Life | Endowment | Investm ent | nan      |
+| H   |                                                       | Expected recovery for                     |     | nan     | -   | -          | -                 | (151,834)  | -            | -         | -           | (151,834 |
+| nan |                                                       | claims                                    |     | nan     | nan | nan        | nan               | nan        | nan          | nan       | nan         | nan      |
+| I   |                                                       | Reinsurance RA                            |     | nan     | -   | -          | -                 | (500)      | -            | -         | -           | (500     |
+| nan |                                                       | allocation                                |     | nan     | nan | nan        | nan               | nan        | nan          | nan       | nan         | nan      |
+| J   | Allocation of reinsurer Insurance Revenue             | nan                                       | nan | -       | nan | -          | -                 | (152,334)  | -            | -         | -           | nan      |
+| K   |                                                       | Amounts recoverable for claims            |     | nan     | -   | -          | -                 | 31,849     | -            | -         | -           | nan      |
+| L   |                                                       | changes in BEL related to reinsurance LIC | nan | -       | nan | -          | -                 | (24,987)   | -            | -         | -           | nan      |
+|     | Amounts recoverable from reinsurer                    | nan                                       |     | nan     | -   | -          | -                 | 6,863      | -            | -         | -           | nan      |
+| M   | Net income or expense from reinsurance contracts held | nan                                       |     | nan     | -   | -          | -                 | (145,471)  | -            | -         | -           | nan      |
+
+
+
+| 0   | 1                                                   | 2                                                  |   3 | 4           | 5   | 6          | 7                 | 8          | 9            | 10        | 11          |
+|:----|:----------------------------------------------------|:---------------------------------------------------|----:|:------------|:----|:-----------|:------------------|:-----------|:-------------|:----------|:------------|
+| nan | Net finance expenses from insurance contracts       | nan                                                | nan | Annuity     | nan | Protection | Investment Linked | Group Life | Cre dit Life | Endowment | Investm ent |
+| N   |                                                     | Unwind of discount on FCFs: LRC                    | nan | (3,631,707) | nan | (4,782)    | (396,502)         | -          | (24)         | (546,062) | -           |
+| O   |                                                     | Effect of change in economic assumptions: LRC      | nan | (3,292,551) | nan | (858)      | (40,177)          | -          | -            | (45,025)  | -           |
+| P   |                                                     | Interest accretion on CSM                          |     | nan         | (0) | (5,946)    | (51,487)          | -          | (6)          | (68,566)  | -           |
+| Q   |                                                     | Effect of change in Discount rate assumptions: LRC | nan | 10,795,327  | nan | 2,059      | 15,713            | -          | -            | 278,671   | -           |
+| R   | Total Net finance expenses from insurance contracts | nan                                                | nan | 3,871,069   | nan | (9,526)    | (472,453)         | -          | (29)         | (380,982) | -           |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Reinsurance finance income
+Cre
+Net finance expenses from Investment dit Investm
+reinsurance contracts Annuity Protection Linked Group Life Life Endowment ent Total
+Cre
+Investment income Investment dit Investm
+Annuity Protection Linked Group Life Life Endowment ent Total
+Interest revenue on
+financial assets not
+S measured at FVTPL 1,180,885 1,449 77,159 100,850 - 258,264 157,938 1,776,544
+T Fair value Gain or Loss 998,290 1,225 65,228 85,256 - 218,330 133,517 1,501,846
+Other investment
+U revenue 368,975 589 24,109 31,511 - 80,696 49,349 555,229
+Net impairment loss on
+V financial assets (5,379) (7) (351) (459) - (1,177) (720) (8,093)
+Total Net Investment
+W Income 2,542,771 3,256 166,144 217,157 0 556,113 340,084 3,825,525
+218
+
+
+| 0   | 1                                               | 2                                                          |   3 |   4 |   5 | 6         | 7         | 8          | 9                 | 10         | 11           | 12        | 13          |
+|:----|:------------------------------------------------|:-----------------------------------------------------------|----:|----:|----:|:----------|:----------|:-----------|:------------------|:-----------|:-------------|:----------|:------------|
+| nan | Net finance expenses from reinsurance contracts | nan                                                        | nan | nan | nan | Annuity   | nan       | Protection | Investment Linked | Group Life | Cre dit Life | Endowment | Investm ent |
+| nan | nan                                             | nan                                                        | nan |     |     | nan       |           |            |                   |            |              |           |             |
+| nan | nan                                             | nan                                                        | nan |     |     | nan       | Annuity   | Protection | Investment Linked | Group Life | Cre dit Life | Endowment | Investm ent |
+| nan |                                                 |                                                            |     |     |     | nan       |           |            |                   |            |              |           |             |
+| S   |                                                 | Interest revenue on financial assets not measured at FVTPL | nan | nan | nan | 1,180,885 | nan       | 1,449      | 77,159            | 100,850    | -            | 258,264   | 157,938     |
+| T   |                                                 | Fair value Gain or Loss                                    | nan | nan |     | nan       | 998,290   | 1,225      | 65,228            | 85,256     | -            | 218,330   | 133,517     |
+| U   |                                                 | Other investment revenue                                   | nan | nan |     | nan       | 368,975   | 589        | 24,109            | 31,511     | -            | 80,696    | 49,349      |
+| V   |                                                 | Net impairment loss on financial assets                    | nan | nan | nan | (5,379)   | nan       | (7)        | (351)             | (459)      | -            | (1,177)   | (720)       |
+| W   | Total Net Investment Income                     | nan                                                        | nan |     |     | nan       | 2,542,771 | 3,256      | 166,144           | 217,157    | 0            | 556,113   | 340,084     |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+2022
+Insurance revenue
+Protectio Investment Investme
+Insurance revenue Annuity n Linked Group Life Credit Life Endowment nt Total
+Amounts relating to changes
+in LFRC
+Expected benefits
+incurred 4,196,325 12,251 49,376 2,301,703 645 132,176 - 6,692,476
+Expected expenses
+incurred 138,295 11,753 366,449 - 747 210,950 - 728,195
+Loss Component: systematic
+allocation (312,774) - - - - (88,693) - (401,468)
+Change in the risk
+adjustment 155,594 441 4,201 1,386 25 2,994 - 164,642
+CSM recognised - 57,340 185,490 - 416 58,454 - 301,700
+Recovery of acquisition cash
+flows - 7,652 305,577 - 1,607 318,006 - 632,843
+Contracts not measured
+under PAA 4,177,441 89,438 911,093 3,441 633,887 - 8,118,388
+Contracts measured under
+PAA 2,303,089
+Total insurance revenue 4,177,441 89,438 911,093 2,303,089 3,441 633,887 - 8,118,388
+219
+
+
+| 0                                   | 1                          |   2 |   3 |   4 | 5         | 6           | 7                 | 8          | 9           | 10        | 11          | 12        |
+|:------------------------------------|:---------------------------|----:|----:|----:|:----------|:------------|:------------------|:-----------|:------------|:----------|:------------|:----------|
+| Insurance revenue                   | nan                        |     |     |     | Annuity   | Protectio n | Investment Linked | Group Life | Credit Life | Endowment | Investme nt | Total     |
+|                                     |                            |     |     |     |           |             |                   |            |             |           |             |           |
+| Amounts relating to changes in LFRC | nan                        | nan | nan |     |           |             |                   |            |             |           |             |           |
+|                                     | Expected benefits          | nan | nan |     |           |             |                   |            |             |           |             |           |
+|                                     | incurred                   | nan | nan |     | 4,196,325 | 12,251      | 49,376            | 2,301,703  | 645         | 132,176   | -           | 6,692,476 |
+|                                     | Expected expenses          | nan | nan |     |           |             |                   |            |             |           |             |           |
+|                                     | incurred                   | nan | nan |     | 138,295   | 11,753      | 366,449           | -          | 747         | 210,950   | -           | 728,195   |
+|                                     | Loss Component: systematic | nan | nan | nan |           |             |                   |            |             |           |             |           |
+|                                     | allocation                 | nan | nan | nan | (312,774) | -           | -                 | -          | -           | (88,693)  | -           | (401,468) |
+|                                     | Change in the risk         | nan | nan |     |           |             |                   |            |             |           |             |           |
+|                                     | adjustment                 | nan | nan |     | 155,594   | 441         | 4,201             | 1,386      | 25          | 2,994     | -           | 164,642   |
+|                                     | CSM recognised             | nan |     |     |           |             |                   |            |             |           |             |           |
+|                                     | nan                        | nan |     |     | -         | 57,340      | 185,490           | -          | 416         | 58,454    | -           | 301,700   |
+| Recovery of acquisition cash        | nan                        | nan | nan |     |           |             |                   |            |             |           |             |           |
+| flows                               | nan                        | nan | nan |     | -         | 7,652       | 305,577           | -          | 1,607       | 318,006   | -           | 632,843   |
+| Contracts not measured under PAA    | nan                        | nan | nan |     | 4,177,441 | 89,438      | 911,093           |            | 3,441       | 633,887   | -           | 8,118,388 |
+|                                     |                            |     |     |     |           |             |                   |            |             |           |             |           |
+| Contracts measured under PAA        | nan                        | nan | nan |     |           |             |                   | 2,303,089  |             |           |             |           |
+|                                     |                            |     |     |     |           |             |                   |            |             |           |             |           |
+| Total insurance revenue             | nan                        | nan |     |     | 4,177,441 | 89,438      | 911,093           | 2,303,089  | 3,441       | 633,887   | -           | 8,118,388 |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+2022
+30b
+Insurance services expenses
+Insurance service Protecti Investme Credit
+expense Annuity on nt Linked Group Life Life Endowment Investment Total
+A Incurred claims (4,263,781) (31,834) - (1,513,336) - - - (5,808,952)
+Incurred Fulfilment
+B expenses (196,539) (13,559) (541,434) (794,684) (2,848) (366,919) - (1,915,984)
+Amortisation of insurance
+C acquisition cash flows - (7,652) (305,577) (590,677) (1,607) (318,006) - (1,223,521)
+Changes in BEL related
+D to LIC - - - 76,462 - - - 76,463
+Loss Component: systematic
+E allocation 312,774 - - - - 88,693 - 401,468
+Loss Component: losses and
+F reversal of losses (2,160,598) - - - (852) (688,902) - (2,850,352)
+Total insurance service
+G expense (6,308,144) (53,046) (847,011) (2,822,235) (5,309) (1,285,133) - (11,320,878)
+220
+
+
+| 0   | 1                                                |   2 |   3 |   4 | 5           | 6           | 7                  | 8           | 9           | 10          | 11         | 12           |
+|:----|:-------------------------------------------------|----:|----:|----:|:------------|:------------|:-------------------|:------------|:------------|:------------|:-----------|:-------------|
+|     | Insurance service expense                        | nan |     |     | Annuity     | Protecti on | Investme nt Linked | Group Life  | Credit Life | Endowment   | Investment | Total        |
+| A   | Incurred claims                                  |     |     |     |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | (4,263,781) | (31,834)    | -                  | (1,513,336) | -           | -           | -          | (5,808,952)  |
+| B   | Incurred Fulfilment expenses                     | nan |     |     |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | (196,539)   | (13,559)    | (541,434)          | (794,684)   | (2,848)     | (366,919)   | -          | (1,915,984)  |
+| C   | Amortisation of insurance acquisition cash flows | nan | nan | nan |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | -           | (7,652)     | (305,577)          | (590,677)   | (1,607)     | (318,006)   | -          | (1,223,521)  |
+| D   | Changes in BEL related to LIC                    | nan |     |     |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | -           | -           | -                  | 76,462      | -           | -           | -          | 76,463       |
+| E   | Loss Component: systematic allocation            | nan | nan |     |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | 312,774     | -           | -                  | -           | -           | 88,693      | -          | 401,468      |
+| F   | Loss Component: losses and reversal of losses    | nan | nan | nan |             |             |                    |             |             |             |            |              |
+| nan | nan                                              | nan | nan | nan | (2,160,598) | -           | -                  | -           | (852)       | (688,902)   | -          | (2,850,352)  |
+| G   | Total insurance service expense                  | nan | nan |     | (6,308,144) | (53,046)    | (847,011)          | (2,822,235) | (5,309)     | (1,285,133) | -          | (11,320,878) |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Net income or expense from reinsurance contract held
+Net income or expense from Protecti Investme Credit
+reinsurance contracts held Annuity on nt Linked Group Life Life Endowment Investment Total
+Expected recovery for
+H claims - - - (104,087) - - - (104,087)
+Reinsurance RA
+I allocation - - - (153) - - - (153)
+Allocation of reinsurer Insurance
+J Revenue - - - (104,240) - - - (104,240)
+Amounts recoverable
+K for claims - - - 123,915 - - - 123,915
+Amounts recoverable from
+reinsurer - - - 123,914 - - - 123,914
+Net income or expense from
+reinsurance contracts held
+L - - - 19,675 - - - 19,675
+Insurance finance expenses
+Net finance expenses from Protecti Investme Credit
+insurance contracts Annuity on nt Linked Group Life Life Endowment Investment Total
+Unwind of discount on FCFs:
+M LRC (3,537,680) (6,532) (491,101) - (170) (461,901) - (4,497,383)
+Effect of change in economic
+N assumptions: LRC (790,326) (1,616) (52,718) - - (58,209) - (902,869)
+Interest accretion on
+O CSM (106,170) (692) (21,955) - (5) (26,648) - (155,470)
+Effect of change in Discount
+P rate assumptions: LRC 2,228,470 (13,082) - - (3) 174,606 - 2,389,990
+221
+
+
+| 0   | 1                                                     | 2                              |   3 | 4       | 5           | 6                  | 7          | 8           | 9         | 10         | 11        |   12 |
+|:----|:------------------------------------------------------|:-------------------------------|----:|:--------|:------------|:-------------------|:-----------|:------------|:----------|:-----------|:----------|-----:|
+|     | Net income or expense from reinsurance contracts held | nan                            | nan | Annuity | Protecti on | Investme nt Linked | Group Life | Credit Life | Endowment | Investment | Total     |      |
+| H   |                                                       | Expected recovery for          |     |         |             |                    |            |             |           |            |           |      |
+| nan |                                                       | claims                         |     | -       | -           | -                  | (104,087)  | -           | -         | -          | (104,087) |  nan |
+| I   |                                                       | Reinsurance RA                 |     |         |             |                    |            |             |           |            |           |      |
+| nan |                                                       | allocation                     |     | -       | -           | -                  | (153)      | -           | -         | -          | (153)     |  nan |
+| J   | Allocation of reinsurer Insurance Revenue             | nan                            | nan | -       | -           | -                  | (104,240)  | -           | -         | -          | (104,240) |      |
+| K   |                                                       | Amounts recoverable for claims |     | -       | -           | -                  | 123,915    | -           | -         | -          | 123,915   |      |
+|     | Amounts recoverable from reinsurer                    | nan                            |     | -       | -           | -                  | 123,914    | -           | -         | -          | 123,914   |      |
+| L   | Net income or expense from reinsurance contracts held | nan                            | nan | -       | -           | -                  | 19,675     | -           | -         | -          | 19,675    |      |
+
+
+
+| 0   | 1                                             | 2                                                  |   3 | 4           | 5           | 6                  | 7          | 8           | 9         | 10         | 11          | 12   |
+|:----|:----------------------------------------------|:---------------------------------------------------|----:|:------------|:------------|:-------------------|:-----------|:------------|:----------|:-----------|:------------|:-----|
+|     | Net finance expenses from insurance contracts | nan                                                | nan | Annuity     | Protecti on | Investme nt Linked | Group Life | Credit Life | Endowment | Investment | Total       |      |
+| M   |                                               | Unwind of discount on FCFs: LRC                    | nan | (3,537,680) | (6,532)     | (491,101)          | -          | (170)       | (461,901) | -          | (4,497,383) |      |
+| N   |                                               | Effect of change in economic assumptions: LRC      | nan | (790,326)   | (1,616)     | (52,718)           | -          | -           | (58,209)  | -          | (902,869)   |      |
+| O   |                                               | Interest accretion on CSM                          |     | (106,170)   | (692)       | (21,955)           | -          | (5)         | (26,648)  | -          | (155,470)   |      |
+| P   |                                               | Effect of change in Discount rate assumptions: LRC | nan | 2,228,470   | (13,082)    | -                  | -          | (3)         | 174,606   | -          | 2,389,990   |      |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+Total Net finance expenses from
+Q insurance contracts (2,205,707) (21,922) (565,772) - (178) (372,152) - (3,165,731)
+Investment income
+Income with positive sign
+Protectio Investment Credit
+Investment income Annuity n Linked Group Life Life Endowment Investment Total
+Interest revenue on financial
+R assets not measured at FVTPL 680,942 1,170 35,575 36,784 272 144,623 90,348 989,715
+S Fair value Gain or Loss 2,170,994 3,729 113,422 117,277 868 461,091 288,051 3,155,432
+T Other investment revenue 82,179 141 4,293 4,439 58 17,453 10,904 119,467
+Net impairment loss on financial
+U assets (1,408,857) (2,420) (73,604) (76,106) (563) (299,223) (186,930) (2,047,704)
+Total Net Investment
+V Income 1,525,257 2,620 79,686 82,394 635 323,945 202,374 2,216,910
+222
+
+
+| 0   | 1                                                   | 2           | 3        | 4         | 5   | 6     | 7         | 8   | 9           | 10   |
+|:----|:----------------------------------------------------|:------------|:---------|:----------|:----|:------|:----------|:----|:------------|:-----|
+| Q   | Total Net finance expenses from insurance contracts | (2,205,707) | (21,922) | (565,772) | -   | (178) | (372,152) | -   | (3,165,731) |      |
+
+
+
+| 0   | 1                           | 2                                                          |   3 |   4 |   5 | 6           | 7           | 8                 | 9          | 10          | 11        | 12         | 13          |
+|:----|:----------------------------|:-----------------------------------------------------------|----:|----:|----:|:------------|:------------|:------------------|:-----------|:------------|:----------|:-----------|:------------|
+|     | Investment income           | nan                                                        |     |     |     | Annuity     | Protectio n | Investment Linked | Group Life | Credit Life | Endowment | Investment | Total       |
+|     |                             |                                                            |     |     |     |             |             |                   |            |             |           |            |             |
+| R   |                             | Interest revenue on financial assets not measured at FVTPL | nan | nan | nan | 680,942     | 1,170       | 35,575            | 36,784     | 272         | 144,623   | 90,348     | 989,715     |
+| S   |                             | Fair value Gain or Loss                                    | nan | nan |     | 2,170,994   | 3,729       | 113,422           | 117,277    | 868         | 461,091   | 288,051    | 3,155,432   |
+| T   |                             | Other investment revenue                                   | nan | nan |     | 82,179      | 141         | 4,293             | 4,439      | 58          | 17,453    | 10,904     | 119,467     |
+| U   |                             | Net impairment loss on financial assets                    | nan | nan | nan | (1,408,857) | (2,420)     | (73,604)          | (76,106)   | (563)       | (299,223) | (186,930)  | (2,047,704) |
+| V   | Total Net Investment Income | nan                                                        | nan |     |     | 1,525,257   | 2,620       | 79,686            | 82,394     | 635         | 323,945   | 202,374    | 2,216,910   |
+
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER
+2023
+31
+Other income
+Rental income 95,622 104,317 95,622 104,317
+Gain upon disposal of investment properties - - - -
+- -
+Gain on disposal of PPE 930 930
+Gain on disposal of equities -
+Sundry charges on investment linked products - - - -
+Foreign exchange gain/(loss) 544,337 17,481 544,337 17,481
+Disposal of investment - 99,152 - 99,152
+Sundry( loss)/ income 6,482 2,444 6,482 2,444
+646,441 224,323 646,441 224,323
+31a Realised gain on disposal of investment in FGN bonds
+Proceeds on disposal of FGN bond - 4,376,361 - 4,376,361
+Bond (FVPL) disposed - (4,277,209) - (4,277,209)
+- 99,152 - 99,152
+31b Realized gain on disposal of equity instrument
+Proceeds on disposal of quoted equities investment - - - -
+Net carrying amount as disposal - - - -
+- - - -
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+32 Fair value gain/(loss) on financial asset N’000 N’000 N’000 N’000
+Bonds
+(282,723)
+(282,723) 113,092 113,092
+Quoted equities 131,318 (8,409) 131,318 (8,409)
+(151,404) 104,682 (151,404) 104,682
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+33 Investment income N’000 N’000 N’000 N’000
+179,723
+Interest income on cash and bank balances 179,723 46,376 46,376
+1,568,961
+Interest income on bonds 1,568,961 916,135 916,135
+Investment income on planned asset - - - -
+12,823 12,823
+Dividend Income 14,809 14,809
+12,030
+Interest income on statutory deposit 12,030 8,387 8,387
+3,007
+Interest income on loans and receivables 4,008 3,007 4,008
+1,501,846 3,155,432 1,501,846 3,155,432
+Fair value Gain or Loss
+Other investment revenue 555,229 119,467 555,229 119,467
+223
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+((2,047,704) (8,093) (2,047,704)
+Net impairment loss on financial assets
+Amounts Operating income
+Net foreign exchange income or expense
+Total Net Investment Income
+3,825,525 2,216,910 3,825,525 2,216,910
+Dividend Income
+Pension Alliance Limited - - -
+Others – Quoted & Unquoted - 14,809 - 14,809
+Total Dividend Income - 14,809 - 14,809
+34 Profit/(Loss) from investment contract:
+Investment income from investment contract
+liabilities 197 226 197 226
+Deposit administration no longer required(note
+19.3)
+Guaranteed interest (91,545) (94,573) (91,545) (94,573)
+(91,348) (94,347) (91,348) (94,347)
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+35 ECL Impairment on assets N’000 N’000 N’000 N’000
+Provision on due from related party no longer
+required - -
+Mortgage and policy loans - - - -
+Cash & cash equivalent (note 6.1) - 10,991 - 10,991
+Investment securities (note 7.4ii) - (443) - (443)
+Unquoted equities - - - -
+Staff account receivables - - - -
+Other receivables (note 10.1e) - (29,188) - (29,189)
+Short term loan - - - -
+- (18,640) - (18,640)
+36 ECL Allowance on cash and cash equivalents and financial assets – Group
+Movement
+At 31 December
+At 1 January during the year
+N’000 N’000 N’000
+Cash & Cash Equivalents 44,269 - 44,269
+Amortized cost-bonds 1,489 - 1,489
+Agency loans 237 - 237
+Mortgage loans 2,935 - 2,935
+Policy loans 18,409 - 18,409
+Staff Account Receivable 7,001 - 7,001
+Short term loan - - -
+Other debit balances 16,729 - 16,729
+91,070 - 91,070
+224
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+36a ECL Allowance on cash and cash equivalents and financial assets – Company
+Movement
+At 31 December
+At 1 January during the year
+N’000 N’000 N’000
+Cash & Cash Equivalents 19,336 - 19,336
+Amortized cost-bonds 1,489 - 1,489
+Agency loans 237 - 237
+Mortgage loans 2,935 - 2,935
+Policy loans 18,407 - 18,407
+Staff Account Receivable 7,002 - 7,002
+Short term loan - - -
+Other debit balances 16,729 - 16,729
+66,136 - 66,136
+37 Employee benefit expenses
+The number of persons employed excluding directors in the Group and in the Company during the year and at the end of
+the year ended 31 December, 2023 were 172 and 114, respectively (2022: 172 and 114)
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Wages and salaries 703,596 693,841 703,596 693,841
+Other Staff Cost 243,157 216,038 243,157 216,038
+Defined contribution pension costs 40,974 43,912 40,974 43,912
+Defined benefit pension cost 7,588 - 7,588 -
+995,314 953,791 995,314 953,791
+38 The number of employees of the company, other than directors, who received emoluments in the following ranges
+was:
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+N1,000,001 – N1,500,000 58 - 58- --
+N1,500,001 – N2,000,000 3 3 3 3
+N2,000,001 – N2,500,000 7 7 7 7
+N2,500,001 – N3,000,000 1 1 1 1
+N3,000,001 – N3,500,000 43 43 43 43
+N3,500,001 – N4,000,000 33 33 33 33
+Above N4,000,000 27 27 27 27
+172 172 114 114
+225
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The average number of full time persons employed by the Company during the year per level were as follow:
+Executive director 2 2 2 2
+Management staff 18 18 7 7
+Non-management staff 152 152 105 105
+172 172 114 114
+Directors’ remuneration
+Remuneration paid to the directors of the Company were as follows:
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Short term benefits:
+- Directors fees - 17,845 - 17,845
+- Directors sitting allowances - 9,700 - 9,700
+- Executive compensation - -
+- Other directors’ costs and expenses - - - -
+- 27,545 - 27,545
+Fees and other emoluments disclosed above include amounts paid to:
+The Chairman 3,328 - 3,328
+The highest paid director 14,400 - 14,400
+The number of directors who received fees and other emoluments (excluding pension contributions) in the following
+ranges was:
+Group Company
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+N’000 N’000 N’000 N’000
+Below N5,000,000 - - - -
+N5,000,000 – N10,000,000 - - - -
+N10,000,000 and above 5 5 5 5
+5 5 5 5
+226
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 31 DECEMBER 2023
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+12 months 12 months
+39 Other operating and administrative expenses N’000 N’000 N’000 N’000
+Directors’ emoluments 25,846 17,845 25,846 17,845
+Bank Charges 54,637 41,575 54,637 41,575
+Professional fee
+Motor vehicle running cost - - - -
+Auditors' remuneration 12,000 12,000 12,000 12,000
+Depreciation 149,982 155,285 149,982 155,285
+Amortisation on Rights of Use assets 95,472 80,890 95,472 80,890
+Amortisation on intangible assets 14,013 14,924 14,013 14,924
+NITDA - 8,309 - 8,309
+Consultancy expenses 168,478 92,940 168,478 92,940
+Security 12,929 11,005 12,929 11,005
+Rent and rates 38,052 16,854 38,052 16,854
+General maintenance and running costs 154,054 148,837 154,054 148,837
+Advert and Publicity 179,907 204,615 179,907 204,615
+Telecommunications 15,337 12,568 15,337 12,568
+Dues and Subscription 15,848 9,897 15,848 9,897
+Travels and accommodation 284,856 226,890 284,856 226,890
+Insurance supervision fees - 74,576 - 74,576
+Insurance expenses 33,462 23,749 33,462 23,749
+Printing and stationeries 10,021 2,617 10,021 2,617
+Industrial training fund 10,620 11,555 10,620 11,555
+Entertainment 22,212 9,576 22,212 9,576
+VAT expenses 28,746 16,010 28,746 16,010
+Nigeria Social Insurance Trust Fund(NSTIF) - 3,492 - 3,492
+Electricity and Water
+Loss on Disposal of Investment
+Foreign exchange loss 458,701 - 458,701 -
+Nigeria Police Levy - - - -
+Amortization of leasehold premises 12,134 31,707 12,134 31,707
+Office ICT expenses 137,853 149,211 137,853 149,211
+Donation 2,900 520 2,900 520
+Office cleaning expenses 20,109 27,721 20,109 27,721
+Medical expenses - 1,364 - 1,364
+- 28,644
+- - - - - -
+Information Technology levy - 23,585 23,585
+Other regulatory fees and fines 23,585 23,585
+Loss on disposal of PPE - -
+Stamp duties -
+Business registration cost
+Other Administrative Expenses 46,118
+48,980 46,118
+48,980
+2,007,148 1,476,234 2,007,148 1,476,234
+227
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+40 ECL Allowance on cash and cash equivalents and Financial Assets
+Cash & Cash Equivalents 4,713 10,991
+Amortised Cost-bonds 490 (443)
+Agency Loans (1,169) (26,210)
+Loans and Receivables 189 (2,979)
+8,093 (18,641)
+Group Company
+Actual Actual Actual Actual
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+41 Finance cost N’000 N’000 N’000 N’000
+Interest expense on borrowings - 10,534 - 10,534
+42 Income tax expense
+Current tax on profits for the year (note 24) 3,678 5,304 3,678 5,304
+Capital gains tax - -
+Deferred tax charge for the year - - - -
+3,678 5,304 3,678 5,304
+43 Related parties
+Shareholders 31-Dec-23 31-Dec-22
+Conau Limited 58% 58%
+Universal Insurance Plc 6% 6%
+Nature of the balance & transactions Related party 2022 2022
+N’000 N’000
+Intercompany receivables Axiom Air Ltd - -
+Intercompany receivable African Alliance Holding Limited - -
+Intercompany receivables Universal Insurance Company Plc 1,600-,267 1,600-,267
+Deposit for shares Ghana Life Insurance - -
+Conau Trade and Investment Limited Sale and repurchase of PAL - -
+228
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+44 Contingent liabilities and commitments
+(a) Legal proceedings
+The Group is presently in fifteen (15) legal proceedings (2022 fifteen (15)), the cases arose in the normal
+course of business. However, the outcome of the cases will not give rise to any significant loss from the
+review case files and confirmation from the company’s solicitor indicates that there were no material
+contingent liabilities in respect of pending litigations against the Group.
+The Directors are of the opinion that all known commitments and liabilities which are relevant in assessing
+the situation of the company have been taken into consideration in the preparation of these financial
+statements.
+The Company operates in the insurance industry and is subject to legal proceedings in the normal course
+of business. While it is not practicable to forecast or determine final results of all pending or threatened
+legal proceedings, management does not believe that such proceedings (including litigations) will have a
+material effect on its results and financial position.
+However, due to the material amount and the relationship that exist between the parties, this pending
+litigationis disclosed between the entity and the management of its former associate company PAL
+Pension Limited now investment measured at Fair Value through other comprehensive income:
+African Alliance Insurance Plc Vs Pension Alliance Limited - FHC/L/CS/193/2021.
+The Petitioner is minority shareholder and holds 49 percent of the total share of the 1st Respondent. The
+outstanding 51 percent shares is held by First Securities Discount House ( FSDH Merchant Bank Limited),
+the majority shareholder. The Board of Directors consisted of 12 members, in which the Petitioner
+retained a board seat, which was occupied by its erstwhile Managing Director, Mrs Funmi Omo. Following
+the resignation and exit from the Petitioner and the 1st Respondent in 2020, the Petitioner lost its only
+board seat. The Petitioner has proposed nominee to fill the causal vacancy created by the exit of its
+former Managing Director, its board nominee to ensure and protect its right of participation on the board
+of the company.
+By Article 27 and 28 of the Article of Association of the 1st Respondent, the directors of the company are
+authorized to appoint new directors and an additional director to fill a causal vacancy, while the
+appointment is to be approved by members at the general meeting.
+Since the Petitioner has no Director on the Board of the 1st Respondent, the majority shareholders have
+refused to appoint any director nominated by the Petitioner. The Petitioner is thus unable to participate
+in the management of the 1st Respondent despite being the only one shareholder aside the Majority
+shareholder.
+The Majority shareholder acting through its nominated board of directors, has advantage of the Petitioner’s
+lack of board participation to propose resolutions that are detrimental to the interest of the Petitioner.
+In 2020, the Respondent in collaboration with the Majority shareholder proposed written resolution of the Board
+of Directors for increase of the 1st Respondent’s share capital from N1,100,000,000 to N2,300,000,000 and
+authorizing the 1st respondent directors to raise up to N10,000,000,000 from local or foreign investors.
+The Petitioner opposed this on the basis that share capital can be increased by special resolution passed at
+general meetings and the proposed capital dilutes the Petitioner’s equity and violates the Petitioner’s
+preemptive rights including the re-election of exiting directors and appointment of a non-executive director.
+229
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+The petitioner thus filed this action for minority protection. It also filed a motion for interim and interlocutory
+injunctions asking for restraining orders. The Honourable court granted the application for interim injunction
+and the matter was adjourned to 17th January2022. The 1st, 2nd, 3rd and 4th Respondent entered their
+appearance in the suit and filed an application before the court.
+Financial implications
+In granting the interim order, the Honourable court ordered the AAI file a written undertaking to compensate
+the Respondent in damage if the interim order of the court ought not to have been made in the first instance.
+In the unlikely event that the Honourable Court holds that the order ought not to have been granted, the
+financial implications of the suit will be limited to the reasonable damages that the court will order to be paid
+to the Respondents. There are also the ancillary expenses for prosecuting the suit.
+(b) Capital commitments.
+At 31 December 2023, the Group has no capital commitments in respect of buildings and equipment
+purchases.
+45 Profit per share
+Basic earnings per share is calculated by dividing the profit per share attributable to equity holders of the
+company by the weighted average number of ordinary shares in issues.
+31-Dec-23 31-Dec-22 31-Dec-23 31-Dec-22
+Profit for the year N’000 (3,301,028) (6,967,811) (3,301,028) (4,967,811)
+Weighted number of shares at the end of the year (‘000) 20,585,000 20,585,000 20,585,000 20,585,000
+Basic Earnings per share (basic) – in kobo (0.16) (0.24) (0.16) (0.24)
+46 Proposed dividends
+There was no proposed dividend during the year (2022: NIL)
+47 Foreign exchange (Translation) reserve Group
+31-Dec-23 31-Dec-22
+The movement in translation reserve during the year is shown as follows: N’000 N’000
+At1January (856,957) (856,957)
+Exchange difference arising on translating the foreign operations -
+Non-controlling interest portion of the exchange difference (note 51) 494,988 -
+At 31 December (361,969) (856,957)
+48 Non-controlling interest
+At 1 January 359,395 359,395
+Share of profit/loss for the year, (1,224) -
+Changes in fair value of FVOCI Investments - -
+Share of contingency reserve - -
+Share of foreign exchange translation difference -
+Share of gain on revaluation of land and building
+At 31 December 358,171 359,395
+230
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+49 Contraventions 31-Dec-23 31-Dec-22
+Nature of penalties N’000 N’000
+Outstanding penalty for late submission to NAICOM - 3,585
+Penalty for late submission to Securities and Exchange Commission - 20,000,
+- 23,585
+50 Reconciliation of liabilities arising from financing activities
+Group 31-Dec-22 Cashflows Non-cash changes 31-Dec-23
+Amortization Accrued
+& Transfer Interest
+N’000 N’000 N’000 N’000 N’000
+Short-term borrowings (see note 23) 134,611 42,124 - 10,534 134,611
+Lease liabilities (see note 16) 23,490 62,129 (80,890) - 23,490
+Investment in Associate – PAL (see note 13) - - - - -
+208,454 104,253 (80,890) 10,534 158,101
+Company 31-Dec-22 Cashflows Non-cash changes 31-Dec-23
+Amortization Accrued
+& Transfer Interest
+N’000 N’000 N’000 N’000 N’000
+Short-term borrowings (see note 23) 54,034 42,124 - 10,534 22,444
+Lease liabilities (see note 16) 42,252 62,129 (80,890) - 23,490
+Investment in Associate – PAL (see note 13) - - - - -
+96,286 104,253 (80,890) 10,534 45,934
+231
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+OTHER NATIONAL DISCLOSURES
+232
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+AFRICAN ALLIANCE INSURANCE PLC
+VALUE ADDED STATEMENT
+For the period ended 31 December
+GROUP COMPANY
+2023 % 2022 % 2023 % 2022 %
+N,000 N,000 N'000 N'000
+Gross Premium Income 5,743,525 (284) % 6,889,987 (143) % 5,743,525 (284) % 6,889,987 (100) %
+Fees and Commission Income 71,417 (3) % 62,570 (1) % 71,417 (3) % 62,570 (1) %
+Net Investment Income 1,776,544 (37) % 895,368 (19) % 1,776,544 (37) % 895,368 (13) %
+Other Income 646,441 (9) % 224,681 (5) % 646,441 (9) % 224,323 (3) %
+8,237,927 (332) % 8,072,606 (168) % 8,237,927 (332) % 8,072,248 (117) %
+Claims incurred, commission paid , - - - -
+and other operating expenses (8,017,648) 432% (12,876,713) 268% (7,539,845) 432% (14,943,057) 217%
+Value Added 220,279 100% (4,804,107) 100% 698,082 100% (6,870,809) 100%
+Applied as follows:
+In payment of employees:
+Salaries, wages and other benefits 953,791 (74) % 953,791 (20) % 1,431,594 (205) % 953,791 (14) %
+In payment to providers of capital - - - - - -
+Interest on loan (3,678) (1)% 10,534 0% (3,678) (1)% 10,534 0%
+In payment to Government - - - - - -
+Taxation - - 5,304 0% - - 5,304 0%
+For future replacement of assets, - - - - - - - -
+expansion of business and payment - - - - - - -
+of dividend to shareholders:
+Depreciation &Amortisation 259,466 (22) % 282,806 (6) % 259,466 37% 282,806 (4) %
+Fair value reserve 1,502,846 (28) % (3,155,432) 66% 1,502,846 215% (3,155,432) 46%
+Profit/Loss for the year (2,491,145) 225% (2,901,109) 60% (2,491,145) (357) % (4,967,811) 72%
+Total (220,279) 100% (4,804,107) 100% 698,082 100% (6,870,809) 100%
+233
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+AFRICAN ALLIANCE INSURANCE PLC
+FIVE YEAR FINANCIAL SUMMARY
+FOR THE PERIOD ENDED 31 DECEMBER
+GROUP
+STATEMENT OF FINANCIAL POSITION 2023 2022 2021 2020 2019
+N'000 N'000 N'000 N'000 N'000
+Cash and Cash Equivalent 820,949 1,141,679 1,389,861 17,799,223 2,076,831
+Financial Assets 33,144,173 36,321,804 26,737,469 24,082,463 22,440,098
+Trade Receivables 88,884 88,884 88,884 11,603 125,469
+Reinsurance Assets 104,554 100,957 113,116 486,196 311,054
+Loans and receivables - - - - -
+Other receivables and Prepayments 797,006 728,369 1,117,988 596,544 667,926
+Investment Properties 14,372,536 12,719,286 9,668,536 10,774,958 10,432,005
+Investment in Subsidiary - - - - -
+Investment in Associates - - - - 1,545,042
+Retirement benefit asset - - - - -
+Deferred Tax Assets 147,690 147,690 147,690 147,972 147,935
+Intangible Assets 69,817 60,413 56,481 62,165 57,323
+Property Plant and Equipment 1,792,388 1,792,388 1,876,748 1,841,453 1,629,625
+Right of Use Assets 123,954 23,490 42,252 139,511 220,019
+Statutory Deposits 348,401 348,401 348,401 364,998 353,534
+- - - - -
+Total Assets 51,667,073 53,473,361 41,587,426 56,307,086 40,006,861
+Liabilities
+Insurance Contract Liabilities 42,611,406 41,644,329 40,852,662 53,185,432 41,521,103
+Investment Contract liabilities 2,919,135 4,089,863 3,396,153 5,143,523 5,651,964
+Trade Payables 1,871,887 838,925 1,184,874 877,560 1,027,469
+Other payables and accruals 634,912 752,678 803,762 621,143 344,386
+Provisions and accruals - 94,083 132,652 73,305 68,937
+Employee benefits liability 48,325 47,346 35,652 49,732 114,363
+Borrowing - 134,611 166,202 452,799 1,460,582
+Income tax liabilities 594,723 591,045 615,741 632,980 786,761
+Deferred tax liabilities 204,005 204,005 204,005 384,482 377,272
+Total Liabilities 48,884,392 49,396,886 47,391,703 61,420,956 51,352,837
+Equity
+Issued and paid Shared capital 10,292,500 10,292,500 10,292,500 10,292,500 10,292,500
+Share Premium 14,365,133 14,365,133 14,365,133 14,365,133 14,365,133
+Contingency Reserve 2,032,514 1,971,330 1,903,181 1,684,639 1,061,976
+Retained earning (39,825,536) (37,186,797) (34,276,925) (36,431,262) (37,346,004)
+Translation Reserve (570,748) (856,957) (856,957) (282,862) (686,898)
+Non-Controlling Interest 359,948 359,395 143,550 39,929 1,407
+Fair value reserve 16,131,871 16,131,871 2,625,241 5,218,054 965,911
+Total Equity 2,782,681 5,076,474 (5,804,277) (5,113,869) (11,345,975)
+TOTAL EQUITY & LIABILITIES 51,667,073 53,473,361 41,587,426 56,307,087 40,006,862
+INCOME STATEMENT
+Insurance Revenue 7,089,169 8,118,388 7,166,770 7,121,766 8,744,391
+Net Income/(expenses) from reinsurance (145,471) 19,675 7,030,064 7,008,642 8,487,440
+Profit/(Loss) before tax (3,301,023) (4,696,401) 2,185,421 1,615,155 (7,019,288)
+Taxation (3,678) (5,304) 231,424 (46,219) (18,737)
+Profit/(Loss) after taxation (2,491,145) (2,901,108) 2,416,845 1,568,936 (7,038,025)
+Other Comprehensive Income - 13,781,860 (3,107,253) 4,663,170 96,398
+Total Comprehensive Income/Loss 2,491,145 10,880,752 (690,408) 6,232,107 (6,941,627)
+234
+
+African Alliance Insurance Plc
+Consolidated and Separate Financial Statements
+For the Year ended 31 December 2023
+AFRICAN ALLIANCE INSURANCE PLC
+FIVE YEAR FINANCIAL SUMMARY
+FOR THE PERIOD ENDED 31 DECEMBER
+COMPANY
+STATEMENT OF FINANCIAL
+POSITION
+2023 2022 2021 2020 2019
+N'000 N'000 N'000 N'000 N'000
+Cash and Cash Equivalent 739,360 1,060,089 1,308,630 17,659,067 1,859,154
+Financial Assets 33,237,789 36,317,514 26,733,181 24,078,157 22,435,898
+Reinsurance Contract Assets 104,553 100,957 113,116 486,196 311,054
+Other Receivables and Prepayments 653,727 691,955 2,710,191 1,152,966 1,062,137
+Investment Properties 12,734,000 11,080,750 8,030,000 8,969,500 8,811,600
+Investment in Subsidiary 105,000 105,000 542,728 542,728 542,728
+Investment in Associate - - - - 1,545,042
+Retirement benefit asset - - - - -
+Deferred tax assets 146,476 146,476 146,476 146,476 146,476
+Intangible Assets 32,785 33,360 29,428 25,720 21,775
+Property Plant and Equipment 684,688 763,378 847,735 621,668 551,033
+Right of use Asset 123,952 23,490 42,252 139,511 220,019
+Statutory Deposits 200,000 200,000 200,000 200,000 200,000
+Total Assets 48,762,330 50,522,969 40,703,737 54,021,989 37,706,916
+Liabilities
+Insurance Contract Liabilities 40,849,131 39,882,054 39,090,388 51,198,654 39,673,313
+Investment Contract Liabilities 2,919,135 4,089,863 3,396,154 5,143,524 5,651,966
+Trade Payables 1,649,987 600,675 946,624 639,310 739,568
+Other payables and Accruals 611,550 685,797 736,881 518,338 300,344
+Provisions and Accruals - 23,131 61,700 22,500 33,500
+Employee benefits liability 48,325 47,346 35,652 49,732 114,363
+Borrowing - 22,444 54,034 252,759 940,159
+Income tax liabilities 561,865 558,187 582,882 600,123 753,905
+Deferred tax liabilities 92,107 92,107 92,107 92,107 92,107
+Total Liabilities 46,732,100 46,001,605 44,996,422 58,517,047 48,299,225
+Equity
+Issued and paid Shared capital 10,292,500 10,292,500 10,292,500 10,292,500 10,292,500
+Share Premium 14,365,133 14,365,133 14,365,133 14,365,133 14,365,133
+Contingency Reserve 1,983,877 1,922,695 1,854,544 1,570,986 964,214
+Retained earning (40,009,675) (37,457,344) (32,421,384) (34,938,147) (36,299,093)
+Fair value reserve 15,398,382 15,398,382 1,616,522 4,214,472 84,939
+Total Equity 2,030,218 4,521,365 (4,292,685) (4,495,056) (10,592,307)
+Total Liabilities & Equity 48,762,318 50,522,970 40,703,737 54,021,991 37,706,918
+STATEMENT OF COMPREHENSIVE
+INCOME 2023 2022 2021 2020 2,019
+N'000 N'000 N'000 N'000 N'000
+Insurance revenue 7,089,169 8,118,388 6,158,340 5,963,632 ,286,907
+Net Income/(expenses) from
+reinsurance (145,471) 19,675 6,022,576 5,850,508 7,029,956
+Profit/loss before tax (3,304,803) (4,685,150) 2,835,487 2,013,936 (7,266,832)
+Taxation (3,678) (5,304) (35,265) (46,218) (18,712)
+Profit after taxation (3,301,125) (4,679,846) 2,800,322 1,967,718 (7,285,544)
+Other comprehensive income - - (2,597,950) 4,129,533 (46,731)
+Total Comprehensives income - - 202,372 6,097,251 (7,332,275)
+235
