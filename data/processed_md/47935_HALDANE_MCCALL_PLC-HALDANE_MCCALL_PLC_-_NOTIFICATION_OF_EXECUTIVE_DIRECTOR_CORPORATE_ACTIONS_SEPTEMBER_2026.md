@@ -1,0 +1,10 @@
+---
+company: "HALDANE MCCALL PLC"
+title: "HALDANE MCCALL PLC-HALDANE MCCALL PLC - NOTIFICATION OF EXECUTIVE DIRECTOR"
+category: "Financial_Result"
+date_submitted: "2026-09-01"
+source_file: "47935_HALDANE_MCCALL_PLC-HALDANE_MCCALL_PLC_-_NOTIFICATION_OF_EXECUTIVE_DIRECTOR_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf"
+parsed_at: "2026-09-23T21:55:22.562247"
+---
+
+[No extractable text — likely a scanned image PDF]
