@@ -1,0 +1,10 @@
+---
+company: "NESTLE NIGERIA PLC."
+title: "NESTLE NIGERIA PLC.-NOTIFICATION OF CLOSED PERIOD AND BOARD MEETING"
+category: "Financial_Result"
+date_submitted: "2026-09-01"
+source_file: "47957_NESTLE_NIGERIA_PLC.-NOTIFICATION_OF_CLOSED_PERIOD_AND_BOARD_MEETING_CORPORATE_ACTIONS_SEPTEMBER_2026.pdf"
+parsed_at: "2026-09-28T23:37:09.332830"
+---
+
+[No extractable text — likely a scanned image PDF]
