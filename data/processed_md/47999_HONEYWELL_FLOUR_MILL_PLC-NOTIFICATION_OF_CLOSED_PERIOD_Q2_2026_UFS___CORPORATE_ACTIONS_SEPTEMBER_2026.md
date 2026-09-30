@@ -1,0 +1,10 @@
+---
+company: "HONEYWELL FLOUR MILL PLC"
+title: "HONEYWELL FLOUR MILL PLC-NOTIFICATION OF CLOSED PERIOD Q2 2026 UFS  "
+category: "Financial_Result"
+date_submitted: "2026-09-01"
+source_file: "47999_HONEYWELL_FLOUR_MILL_PLC-NOTIFICATION_OF_CLOSED_PERIOD_Q2_2026_UFS___CORPORATE_ACTIONS_SEPTEMBER_2026.pdf"
+parsed_at: "2026-09-30T22:47:36.725365"
+---
+
+[No extractable text — likely a scanned image PDF]

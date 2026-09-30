@@ -1,0 +1,72 @@
+---
+company: "MTN Nigeria Communications Plc"
+title: "MTN NIGERIA COMMUNICATIONS PLC DIRECTORSDEALINGS"
+category: "Financial_Result"
+date_submitted: "N/A"
+source_file: "215_MTN_Nigeria_Communications_Plc_Share_Dealing_-_Saidat_Badru_.pdf"
+parsed_at: "2026-09-30T22:47:37.681494"
+---
+
+Lagos | Nigeria : 30 September 2026
+Notification of Share Dealing by Insiders
+1. Details of the Director/Insider
+a) Name Saidat Badru
+2. Reason for the notification
+a) Position/status Manager, Financial Planning - Management Reporting
+b) Initial notification/Amendment Initial Notification
+3. Details of the Issuer
+Name
+a) MTN Nigeria Communications PLC
+b) Legal Entity Identifier 1 0292003626J3K6UG9D04
+Details of the transaction(s): to be repeated for (i ) each type of instrument; (ii) each type of
+4.
+transaction; (iii) each date; and (iv) each place where transactions have been conducted
+Description of the financial Ordinary Shares
+instrument, type of instrument
+a)
+Identification Code ISIN: NGMTNN000002
+b) Nature of the transaction Sale of shares
+Price(s) and volume(s) 22 shares @ N81 1.20 per share
+c)
+60 shares @ N811.50 per share
+Aggregate information
+d) - Aggregated volume 82 Ordinary Shares
+- Price Price N81 1.35
+Date (s) of Transaction 4 August 2026
+e)
+Place of Transaction Lagos
+f)
+Obafunmilayo Willoughby FCIS
+Deputy Company Secretary
+1 Legal Entity Identifier (LEI) is a unique global identifier of legal entities participating in financial transactions. These can be individuals,
+companies or government entities that participate in financial transactions. To get an LEI, please register via https://lei.cscs.ng/cscslei/lei-
+registration-process.php
+MTN Nigeria Communications PLC
+C orporate Head Office : MTN Plaza, Falomo, Ikoyi, Lagos.
+Registered Address : 4, Aromire Street, Off Alfred Rewane Road, Ikoyi, Lagos .
+Website: www.mtn.ng
+RC 395010
+Directors: Dr. E. Ndukwe, OFR (Chairman) Dr. K. Olutokun Toriola (CEO) Mr. M. Kadri (CFO) Mr. M.K. Ahmad, OON Mr. M. Ajukwu Mr. A. Alli
+Dr. O. Johnson (nee Akinnola ) Mr. A.B. Mahmoud, SAN OON *Ms. T. Molefe *Mr. R. Mupita Mr. U. Nwuneli Mrs. I. M. Omoigui Okauru, MFR
+**Mr. T. Pennington ***Mr. J. Schulte -Bockum
+*South African **British ***German
+*South African **German
+
+
+| 0   | 1                                                                                                                                                                                          | 2                                                            |
+|:----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------|
+| 1.  | Details of the Director/Insider                                                                                                                                                            | nan                                                          |
+| a)  | Name                                                                                                                                                                                       | Saidat Badru                                                 |
+| 2.  | Reason for the notification                                                                                                                                                                | nan                                                          |
+| a)  | Position/status                                                                                                                                                                            | Manager, Financial Planning - Management Reporting           |
+| b)  | Initial notification/Amendment                                                                                                                                                             | Initial Notification                                         |
+| 3.  | Details of the Issuer                                                                                                                                                                      | nan                                                          |
+| a)  | Name                                                                                                                                                                                       | MTN Nigeria Communications PLC                               |
+| b)  | Legal Entity Identifier 1                                                                                                                                                                  | 0292003626J3K6UG9D04                                         |
+| 4.  | Details of the transaction(s): to be repeated for (i ) each type of instrument; (ii) each type of transaction; (iii) each date; and (iv) each place where transactions have been conducted | nan                                                          |
+| a)  | Description of the financial instrument, type of instrument Identification Code                                                                                                            | Ordinary Shares ISIN: NGMTNN000002                           |
+| b)  | Nature of the transaction                                                                                                                                                                  | Sale of shares                                               |
+| c)  | Price(s) and volume(s)                                                                                                                                                                     | 22 shares @ N81 1.20 per share 60 shares @ N811.50 per share |
+| d)  | Aggregate information - Aggregated volume - Price                                                                                                                                          | 82 Ordinary Shares Price N81 1.35                            |
+| e)  | Date (s) of Transaction                                                                                                                                                                    | 4 August 2026                                                |
+| f)  | Place of Transaction                                                                                                                                                                       | Lagos                                                        |
