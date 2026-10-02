@@ -1,0 +1,10 @@
+---
+company: "MULTI-TREX INTEGRATED FOODS PLC"
+title: "MULTI-TREX INTEGRATED FOODS PLC- QUARTER 5 - FINANCIAL STATEMENT FOR 2025"
+category: "Financial_Result"
+date_submitted: "2026-10-01"
+source_file: "48035_MULTI-TREX_INTEGRATED_FOODS_PLC-_QUARTER_5_-_FINANCIAL_STATEMENT_FOR_2025_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf"
+parsed_at: "2026-10-02T22:43:36.234848"
+---
+
+[No extractable text — likely a scanned image PDF]

@@ -1,0 +1,42 @@
+---
+company: "VFD Group Plc"
+title: "VFD GROUP PLC-VFD GROUP-NOTICE OF CLOSED PERIOD"
+category: "Financial_Result"
+date_submitted: "2026-10-01"
+source_file: "48024_VFD_GROUP_PLC-VFD_GROUP-NOTICE_OF_CLOSED_PERIOD_CORPORATE_ACTIONS_OCTOBER_2026.pdf"
+parsed_at: "2026-10-02T22:44:18.437440"
+---
+
+INTERNAL
+A: 8, MacGregor Road, Ikoyi, Lagos.
+T: 0916 983 0370
+RC 829196 E:
+investor.relationa@vfdgroup.com
+W: www.vfdgroup.com
+Lagos, Nigeria
+October 2, 2026
+NOTIFICATION OF CLOSED PERIOD
+In accordance with the provisions of 17.18(a) Closed Period Rules, Rulebook of The
+Exchange, 2015 (As amended) (Issuers’ Rules), the Closed Period for trading in VFD Group
+Plc’s (“the Company”) shares has commenced in respect of the Third Quarter Unaudited
+Financial Statements & Accounts for the period ended 30th September, 2026.
+Consequently, no Insider, or consultant of the Company and their connected persons may
+directly or indirectly deal in the securities of the Company until 24 (twenty-four) hours after
+the release of the Third Quarter Unaudited Financial Statements & Accounts for the period
+ended 30th September, 2026 through the Issuers’ Portal of Nigerian Exchange Limited and
+by extension, the general public.
+All insiders of the Company and persons closely connected to them have been appropriately
+advised.
+For: VFD Group Plc
+Gbeminiyi Shoda
+Company Secretary
+Chairman: Olatunde Busari (SAN) Group Managing Director: Nonso Okpala Executive Directors: Folajimi Adeleye | Morenike Ominike
+Non-Executive Directors: Adeniyi Adenubi | Mobolaji Adewumi | Kelvin Orogun | Ibraheem Abe
+Independent Non-Executive Directors: Omolola Bolusire | Rashida Saleh | Nneka Okekearu
+INTERNAL
+
+
+| 0                 |
+|:------------------|
+| Gbeminiyi Shoda   |
+| Company Secretary |
