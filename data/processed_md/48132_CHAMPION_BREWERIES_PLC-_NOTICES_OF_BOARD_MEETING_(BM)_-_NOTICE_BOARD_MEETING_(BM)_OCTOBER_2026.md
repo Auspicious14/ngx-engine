@@ -1,0 +1,29 @@
+---
+company: "CHAMPION BREWERIES PLC"
+title: "CHAMPION BREWERIES PLC- NOTICES OF BOARD MEETING (BM) - NOTICE"
+category: "Financial_Result"
+date_submitted: "2026-10-01"
+source_file: "48132_CHAMPION_BREWERIES_PLC-_NOTICES_OF_BOARD_MEETING_(BM)_-_NOTICE_BOARD_MEETING_(BM)_OCTOBER_2026.pdf"
+parsed_at: "2026-10-23T21:48:00.883889"
+---
+
+Industrial Layout, Aka Offot, P. M.B. 1106, Uyo, Akwa Ibom State, Nigeria. RC 13388
+Email: info.cbplc@championbreweries.com
+www.championbreweries.com
+Uyo, 23 October 2026
+NOTIFICATION OF BOARD MEETING – CHAMPION BREWERIES PLC
+This is to notify the shareholders of Champion Breweries Plc (the Company), Nigerian Exchange Limited
+(NGX or The Exchange) and the investing public that a meeting of the Board of Directors of the Company
+has been scheduled to hold on Thursday, October 29, 2026, to among other items, consider and approve
+the Unaudited Financial Statements of the Company for the quarter ended 30 September 2026 (2026,
+Q3 UFS).
+Pursuant to Rule 17:18 (a) of The Exchange’s Rulebook on Closed Period (as amended), the Closed
+Period which commenced on October 1, 2026, shall remain in effect until twenty-four (24) hours after the
+release of the Company’s 2026 Q3 UFS to the public.
+Consequently, no Insider of the Company and their connected persons shall deal in the securities of the
+Company or with sensitive information, directly or indirectly during this Closed Period.
+Chief Tosan Atle Aiboni
+Company Secretary
+Directors: I.
+Jacob (Chairman), M. Sampath (Indian) (MD/CEO), R. Adebiyi (FD), O. Alabi, M. Akpobome (Mrs), S. Aigbedo, D.Ajayi, D. Butler (South African), E. Idiahi, T. Owoka, J.
+Shoboiki (Mrs.)
