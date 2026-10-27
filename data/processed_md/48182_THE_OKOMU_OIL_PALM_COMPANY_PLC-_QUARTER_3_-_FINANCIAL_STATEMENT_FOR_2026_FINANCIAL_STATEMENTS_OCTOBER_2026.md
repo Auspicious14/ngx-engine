@@ -1,0 +1,10 @@
+---
+company: "THE OKOMU OIL PALM COMPANY PLC"
+title: "THE OKOMU OIL PALM COMPANY PLC- QUARTER 3 - FINANCIAL STATEMENT FOR 2026"
+category: "Financial_Result"
+date_submitted: "2026-10-01"
+source_file: "48182_THE_OKOMU_OIL_PALM_COMPANY_PLC-_QUARTER_3_-_FINANCIAL_STATEMENT_FOR_2026_FINANCIAL_STATEMENTS_OCTOBER_2026.pdf"
+parsed_at: "2026-10-27T22:47:20.885804"
+---
+
+[No extractable text — likely a scanned image PDF]
