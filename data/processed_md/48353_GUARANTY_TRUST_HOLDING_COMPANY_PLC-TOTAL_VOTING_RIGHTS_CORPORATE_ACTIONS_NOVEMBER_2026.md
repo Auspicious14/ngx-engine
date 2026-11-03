@@ -1,0 +1,10 @@
+---
+company: "GUARANTY TRUST HOLDING COMPANY PLC"
+title: "GUARANTY TRUST HOLDING COMPANY PLC-TOTAL VOTING RIGHTS"
+category: "Financial_Result"
+date_submitted: "2026-11-01"
+source_file: "48353_GUARANTY_TRUST_HOLDING_COMPANY_PLC-TOTAL_VOTING_RIGHTS_CORPORATE_ACTIONS_NOVEMBER_2026.pdf"
+parsed_at: "2026-11-03T01:26:18.891811"
+---
+
+[No extractable text — likely a scanned image PDF]
