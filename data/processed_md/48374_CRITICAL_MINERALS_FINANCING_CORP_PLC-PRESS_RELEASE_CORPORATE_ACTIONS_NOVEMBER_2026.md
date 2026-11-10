@@ -1,0 +1,10 @@
+---
+company: "CRITICAL MINERALS FINANCING CORP PLC"
+title: "CRITICAL MINERALS FINANCING CORP PLC-PRESS RELEASE"
+category: "Financial_Result"
+date_submitted: "2026-11-01"
+source_file: "48374_CRITICAL_MINERALS_FINANCING_CORP_PLC-PRESS_RELEASE_CORPORATE_ACTIONS_NOVEMBER_2026.pdf"
+parsed_at: "2026-11-10T01:50:13.889340"
+---
+
+[No extractable text — likely a scanned image PDF]
